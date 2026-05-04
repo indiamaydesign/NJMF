@@ -11,6 +11,96 @@ Produces a self-contained HTML with:
 import csv, json, re
 from pathlib import Path
 
+NO_MONTHS = {
+    'januar': 1, 'februar': 2, 'mars': 3, 'april': 4,
+    'mai': 5, 'juni': 6, 'juli': 7, 'august': 8,
+    'september': 9, 'oktober': 10, 'november': 11, 'desember': 12,
+    'jan': 1, 'feb': 2, 'apr': 4,
+    'jun': 6, 'jul': 7, 'aug': 8, 'sep': 9, 'okt': 10, 'nov': 11, 'des': 12,
+    'january': 1, 'february': 2, 'march': 3, 'may': 5,
+    'june': 6, 'july': 7, 'october': 10, 'december': 12,
+}
+
+
+def parse_date_key(raw: str) -> tuple:
+    """Return (year, month, day) for chronological sorting; unknowns = 0."""
+    s = raw.strip()
+    sl = s.lower()
+
+    m = re.match(r'(\d{4})-(\d{1,2})-(\d{1,2})', s)
+    if m:
+        return (int(m.group(1)), int(m.group(2)), int(m.group(3)))
+
+    m = re.match(r'(\d{1,2})-(\d{1,2})-(\d{4})', s)
+    if m:
+        return (int(m.group(3)), int(m.group(2)), int(m.group(1)))
+
+    for mn in sorted(NO_MONTHS, key=len, reverse=True):
+        idx = sl.find(mn)
+        if idx == -1:
+            continue
+        before_ch = sl[idx - 1] if idx > 0 else ' '
+        after_ch  = sl[idx + len(mn)] if idx + len(mn) < len(sl) else ' '
+        if before_ch not in ' .,\t0123456789' or after_ch not in ' .,\t0123456789\n':
+            continue
+        month = NO_MONTHS[mn]
+        ym = re.search(r'\b(19\d{2})\b', sl)
+        year = int(ym.group(1)) if ym else 0
+        dm = re.search(r'(\d{1,2})(?:st|nd|rd|th)?[.\s,\-]*$', sl[:idx])
+        if dm:
+            day = int(dm.group(1))
+        else:
+            dm2 = re.match(r'[\s.,]*(\d{1,2})(?!\d)', sl[idx + len(mn):])
+            day = int(dm2.group(1)) if dm2 else 0
+        return (year, month, day)
+
+    m = re.match(r'(\d{1,2})[.](\d{1,2})[.](\d{2,4})', sl)
+    if m:
+        d_, mo_, yr_ = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if mo_ <= 12:
+            return (1900 + yr_ if yr_ < 100 else yr_, mo_, d_)
+
+    m = re.match(r'(\d{1,2})/(\d{1,2})\s*-\s*(\d{2,4})', sl)
+    if m:
+        d_, mo_, yr_ = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        return (1900 + yr_ if yr_ < 100 else yr_, mo_, d_)
+
+    m = re.match(r'(\d{1,2})/(\d{1,2})\s+(19\d{2})', sl)
+    if m:
+        return (int(m.group(3)), int(m.group(2)), int(m.group(1)))
+
+    m = re.match(r'(\d{1,2})-(\d{1,2})\s+(19\d{2})', sl)
+    if m:
+        return (int(m.group(3)), int(m.group(2)), int(m.group(1)))
+
+    m = re.match(r'(\d{1,2})/(\d{1,2})-(\d{2})', sl)
+    if m:
+        d_, mo_, yr_ = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        return (1900 + yr_, mo_, d_)
+
+    m = re.match(r'(\d{1,2})/(\d{1,2})/(\d{2,4})', sl)
+    if m:
+        d_, mo_, yr_ = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if mo_ <= 12:
+            return (1900 + yr_ if yr_ < 100 else yr_, mo_, d_)
+
+    m = re.match(r'(\d{1,2})[.](\d{1,2})(?:[.\s]|$)', sl)
+    if m:
+        d_, mo_ = int(m.group(1)), int(m.group(2))
+        if mo_ <= 12:
+            ym = re.search(r'\b(19\d{2})\b', sl)
+            return (int(ym.group(1)) if ym else 0, mo_, d_)
+
+    m = re.match(r'^(19\d{2})(?:\D|$)', sl)
+    if m:
+        return (int(m.group(1)), 0, 0)
+
+    ym = re.search(r'\b(19\d{2})\b', sl)
+    if ym:
+        return (int(ym.group(1)), 0, 0)
+
+    return (0, 0, 0)
+
 ROOT     = Path(__file__).parent.parent
 CSV_PATH = ROOT / "data" / "image_records.csv"
 OUT_PATH = ROOT / "public" / "timeline.html"
@@ -66,7 +156,7 @@ def extract_entries() -> list[dict]:
             "desc": desc,           # full text for lightbox
             "stem": stem,           # filename stem → images/previews/<stem>.jpg
         })
-    entries.sort(key=lambda e: (e["year"], e["date"]))
+    entries.sort(key=lambda e: parse_date_key(e["date"]))
     return entries
 
 
