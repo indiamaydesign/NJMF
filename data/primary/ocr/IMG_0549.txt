@@ -1,0 +1,38 @@
+NORSK SELSKAP FOR ELEKTRONISK INFORMASIONSSEHANDLING
+POSTBOKS 45. BLINDERN, OSLO 3
+NSEL 'S MOTEPROGRAM FOR VAREN 1973
+7.2 -
+PROSJEKT FRESH - UTVIKLING AV ET ADMINISTRATIVT INFORMASJONSSYSTEM
+FOR ENTREPRENØRBEDRIFTER
+ved DAGFINN HJELSETH
+Foredraget vil berøre prosjektets historikk (bakgrunn), mål, arbeids-
+metodikk, organisasjon etc.
+Det vil bli lagt vekt på å få frem de
+erfaringer en har gjort i arbeidet med prosjektet.
+21.2 - COMPUTER SCIENCE AND MATHEMATICS
+ved DONALD E. KNUTH
+What kind of mathematics is most useful in the study of computer
+programming? Typical elementary mathematical approaches wil!
+be Illustrated by analyzing some so-called "hashing" algori thms.
+14.3 - DATABASEERFARINGER FRA TYSK STORINDUSTRI
+ved LARS PETTER SKOU
+Foredraget vil omtale et dokumentasjonssystem for utvikling, kon-
+struks jon og produksjon av en større 3. generasjons datamaskin•
+28.3 - GENERALFORSAMLING
+11.4 - OM BRUK AV INVARIANTER VED PROGRAMMERING
+ved OLE-JOHAN DAHL
+En invariant er et utsagn som gjelder om verdiene til programvariable
+under utførelse av programmet.
+Invarianter er av stor betydning for
+forståelse, dokumentas jon og konstruks jon av program.
+9.5 - BEDRIFTENS DATABEHANDLING, ET REDSKAP FOR ARBEIDSTAGERNE?
+ved JAN ANNERSTEDT, OLAV T. BERGO OG KRISTEN NYGAARD.
+Foredragsholderne vil diskutere hvordan arbeidstagerne kan skaffe
+seg innflytelse over databehandlingen i bedriftene.
+Dette blir
+satt 1 relasjon til de nye lover og bestemmelser om "bedri.fts-
+demokrati."
+23.5 - MINICOMPUTER | BRYGGERI-VIRKSOMHET
+Omvisning på Ringnes Bryggeri.
+Oslo, 22. januar 1973
+Styret

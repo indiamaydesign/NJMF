@@ -1,0 +1,49 @@
+MORSE REGNESENTRAL I NORWEGIAN COMPUTING CENTER
+Narsissingses. 1 E, Bindero, Oslo 3, Nornag, tolefon 46 69 30
+Telex 16518
+Oslo, 10. april 1973
+Tillitsmannsutvalget
+v/ Margit Glomm
+Braathens SAFE
+Fornebu.
+Ref. telefonsamtale 28/3-1973
+Det er for meg vanskelig å trekke noen konklusjoner om det
+booking-systemet dere får. Likeledes er det vanskelig
+å foreta noen vurdering av dataskjerm-terminalene ut fra
+brosjyrematerialet jeg har tilgang til.
+Etter å ha lest
+brosjyrematerialet og referatet fra informasjonsmøtet
+7/2-73, vil jeg likevel komme med følgende bemerkninger:
+1. 40 timers opplæring for de som skal foreta booking er
+omtrent det man bør ha for å operere systemet. Det
+bør undersøkes om operatørene (og øvrig personell?)
+også kan få undervisning 1 hvordan systemet virker.
+Dette vil for betjeningen være mer tilfredsstillende
+enn bare å vite at når de og de data skrives på
+skjermen vil det bli reservert plasser.
+Et slikt
+kurs bør ikke på noen måte tilsvare den opplæring en
+vedlikeholdsingeniør må ha. Det bør undersøkes om
+slik opplæring er planlagt (evt. som frivillig etter-
+utdanning).
+2.
+Når det gjelder varmeutviklingen ved operatørplassene,
+er det vel så viktig å vurdere om varmen fra skjermene
+blir ledet slik at den vil forstyrre noen, som hvor
+mye varme som utvikles. Når det gjelder tydeligheten
+av det som står på skjermen, gir brosjyrene inntrykk
+av god kvalitet.
+Hvordan det imidlertid vil virke på
+kontorplassene med det lyset som er der, kan bare be-
+stemmes ved å prøve. Det går fram av brosjyrene at
+TWA, Air France, KIM, Finnair, Swissair m.fl. har noe
+utstyr fra samme leverandøx.
+Finnair har vel samme
+skjermtype 1 Helsingfors (?). Det anbefales at dexe
+tar kontakt med noen av disse for å høste erfaringer
+3.
+Andre databehandlingsoppgaver som Braathen vil gjøre
+bruk av (nå eller seinere) bør dere sørge for å være
+Iøpende orientert om. Dette vil antakelig best lykkes
+Post bes adressert til instituttet, ikke til enkeltpersoner.
+Mail should be addressed to the Institute, not to individual persons.

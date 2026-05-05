@@ -1,0 +1,43 @@
+Em kontrakt som omfatter relt til bruk av det nouke
+AUTOKON - systemet
+i skipskonstuksjon, ble undertegnet i
+При на 3.ктелнео оми і Змети анит
+3 millimer dollar, og
+Administation).
+Etter hvert bygges det nå opp kolossale biblioteker av
+datamaskinprogrammer for en raskt økende mengde anvendelser.
+En del av disse programmene har en meget lang levetid. De
+utfører omfattende, viktigeog stadig tilbakevendende opp-
+gaver, og det kan koste store
+¡tore Summer å lage dem. Den svenske
+staten har f.eks. nettopp inngått en kontrakt om å få laget
+et program som kan oversette programmer skrevet i programmerings-
+språket SIMULA. Kontraktsummen er på 2.5 millioner svenske
+kroner. Oversetterprogrammer for PL-1-språket sies å ha
+kostet ehnă meget mer,
+A Mousse AUTOKON- septemet en methapo
+Til å begynne med var det selve maskinutstyret som var den
+største utgiftsposten ved EDB. I dag er programutgiftene
+større. Dette medfører at bedriftene vil søke å bruke
+allerede ferdig utviklede programmer for en gitt anvendelse,
+selv om de må betale avgift for å bruke programmene. Det kan
+koster meget mer å lage nye programmer selv.
+- Det kan
+være vanskelig å bli kvitt programmer, selv om de viser seg
+å ha uheldige egenskaper i bruk i bedriften.
+Da de første datamaskinene ble tatt i bruk, var de
+betraktet som vidunder-maskiner. En trodde at et land
+som Norge f.eks. hadde så få oppgaver at vi bare ville
+ha bruk for et meget lite antall datamaskiner. Årsaken
+var ikke at en overvurderte maskinenes kapasitet, men
+at en ikke så deres muligheter for anvendelse og derfor
+undervurderte behovet for automatisk databehandling.
+Til å begynne med ble datamaskinene brukt til å utføre
+deler av mer sammensatte oppdrag, nemlig slike deler
+som enten besto av
+- gjentagelse av et stort antall ganger av trivielle,
+enkle oppdrag (opptelling av folketellingsresultater,
+utskrivning av fakturaer o.s.v.), eller
+- svært lange kjeder av kompliserte beregninger
+skyte-tabeller for artilleri, løsning av oppgaver
+i atom-fysikk o.s.v.).

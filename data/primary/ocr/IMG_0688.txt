@@ -1,0 +1,24 @@
+VI
+Svein Aarset ved Grafisk kontor, Norges Teknisk-Naturviten™
+skapelige Forskningsråd, har tegnet illustrasjonene
+etter egne og felles ideer. En del er bare uttegnet som
+skisser, dels på grunn av tidsnød, dels fordi vi regner
+med at en først senere vil kunne vurdere illustrasjonenes
+endelige utforming.
+Noen av skissene i kapittel 4 bygger i sin foreløpige
+utforming på en del tegninger av standard datamaskin-
+enheter i boka "Datamaskiner" av John O.E. Clark.
+Personalet på Norsk Regnesentral har gjort en stor innsats
+under sterkt tidspress for å få maskinskrevet og trykt boka.
+De som har vært med på dette slitet skal ha en stor og vel
+fortjent takk!
+3.
+Litt om arbeidet med boka.
+Mange av dem som kommer til å lese denne boka, vil ikke
+kjenne til NJMFs forskningsprosjekt. Vi siterer derfor
+fra "Innledning" til "Oppbygging av kunnskaper om data-
+behandling, planlegging og styring innen Norsk Jern- og
+Metallarbeiderforbund", av Kristen Nygaard og Olav Terje
+Bergo i samarbeid med Jan Balstad og Roar Løver
+(Arbeidsrapport nr. 1 fra NJMF's forskningsprosjekt,
+mars 1972):

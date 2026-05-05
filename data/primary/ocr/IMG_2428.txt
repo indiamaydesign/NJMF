@@ -1,0 +1,34 @@
+- 1
+Utskrift
+foregår i dag oftest ved hjelp av såkalte
+"linje-skrivere" som skriver en hel linje på opptil
+ca. 130 tegn i en operasjon. Hastigheten ligger i
+området 800 - 2000 linjer pr. minutt. (Antall tegn
+pr. sekund avhenger av hvor mange posisjoner på linjen
+som blir tatt i bruk).
+Lagringen foregår i forskjellige lagre, for ulike formål.
+Hovedlageret er beregnet på å virke direkte sammen med
+bearbeidingsenheten og må derfor ha en meget rask
+evne til å ta i mot, lagre og hente frem og
+avlevere data. Akkurat som i enhver annen produksjons-
+kjede gjelder det at de ulike ledd i kjeden er tilpasset
+hverandre.
+Bearbeidingsenheten tar i mot data fra innlesningsenheten.
+og overfører dem til den representasjonsform de skal ha
+inne i datamaskinen. Deretter blir data sendt tıl
+lageret. Bearbeidingsenheten foretar all senere frem-
+henting, behandling og forberedelse av data til utlesning.
+Bearbeidingsenheten vil som typisk arbeidshastighet ha
+(i 1972) ca. 1 million grunn-operasjoner pr. sekund.
+Grunn-operasjoner er f.eks.: å hente et tall i hovedlageret
+eller å sende det dit, å legge sammen to tall. Sammen-
+satte operasjoner, som for eksempel multiplikasjon, tar
+litt lengre tid (ca. 4-10 ganger).
+Forutsetningen for at vi kan ha nytte av de fantastisk
+høye hastighetene er at datamaskinen får beskjed om hva
+den skal gjøre like raskt som den selv gjør unna grunn-
+operasjonene. Dette krever at hele arbeidsprogrammet
+for et gitt oppdrag foreligger tilgjengelig i data-
+maskinen når utførelsen skal finne sted. Programmet
+lagres i datamaskinens lager sammen med de data som
+inngår i oppdragets løsning.

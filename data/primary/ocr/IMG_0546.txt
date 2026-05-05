@@ -1,0 +1,38 @@
+NORSK SELSKAP FOR ELEKTRONISK INFORMASIOWSPEHANDLING
+N.S.E.I
+POSTBORS 45 BLINDERN. OSLO 3
+NSEL's MOTEPROGRAM FOR VAREN_ 1973
+7.2 - PROSJEKT FRESH - UTVIKLING AV ET ADMINISTRATI VT INFORMAS JONSSYSTEM
+FOR ENTREPRENØRBEDRI FTER
+ved DAGFINN HJELSETH
+Foredraget vil. berøre: pros jektets historikk (bakgrunn), mål, arbelds-
+metodikk, organisas jon etc.
+Det vil bil lagt vekt på å
+få frem de
+erfaringer en har gjort l arbeldet med prosjektet.
+21.2 - COMPUTER SCIENCE AND MATHEMATICS
+ved DONALD E. KNUTH
+What kind of mathematics is most useful in the study of computer
+programming? Typical elementary mathematical approaches will
+be 1l lustrated by analyzing some. so-called "hashing" algorl thms.
+14.3 - DATABASEERFARINGER FRA TYSK STORİNDUSTRI
+ved LARS PETTER SKOU
+Foredraget vil omtale et dokumentasjonssystem for utvikling, kon-
+struksjon og produksjon av en større 3. generas jons datamaskin.
+28.3 - GENERALFORSAMLING
+11.4 - OM BRUK AV INVARIANTER VED PROGRAMMERING
+ved OLE- JCHAN DAHL
+En Invariant er et utsagn som jelder om verdlene tIl programvariable
+under ut førelse av programmet. Invarlanter ar av stor betydning for
+forståelse, dokumentas jon og konstruks jon ay program.
+9.5 - BEDRIFTENS DATABEHANDLING, ET REDSKAP FOR ARBE IDSTAGERNE?
+ved JAN ANNERSTEDT, OLAV T. BERGO OG KRISTEN NYGAARD.
+Foredragsholderne vil diskutere hordan arbeldstagerge kan skaffe
+seg Innflytelse over databehandlingen | bedriftene.
+Dette blir
+satt 1 relasjon til de nye lover og bestermelser on "bedrifts-
+demokratI. "
+23.5 - MINI COMPUTER I BRYGGERI - VIRKSOMET
+Omylsning på Ringnes Bryggerl.
+Oslo, 22. Januar 1973
+Sty ret
