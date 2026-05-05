@@ -260,6 +260,37 @@
 
     mark { background: var(--hl); color: var(--ink); padding: 0 1px; }
 
+    /* ── Star ───────────────────────────────────────────────────────── */
+
+    .en-star {
+      position: absolute;
+      top: 14px; right: 0;
+      background: none; border: none; cursor: pointer;
+      font-size: 16px; line-height: 1; padding: 2px 4px;
+      color: var(--faint);
+      opacity: 0;
+      transition: opacity .1s, color .1s;
+      z-index: 2;
+    }
+
+    .en:hover .en-star { opacity: 1; }
+    .en.starred .en-star { opacity: 1; color: #c8923a; }
+    .en.starred::before { background: #c8923a; }
+
+    /* Starred filter button */
+    #starred-filter {
+      display: flex; align-items: center; gap: 6px;
+      background: none; border: 1px solid var(--faint);
+      font-family: inherit; font-size: 9px; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--mid);
+      padding: 5px 10px; cursor: pointer; width: 100%;
+      transition: border-color .12s, color .12s, background .12s;
+      margin-top: 10px;
+    }
+    #starred-filter:hover { border-color: var(--mid); color: var(--ink); }
+    #starred-filter.on { background: #fdf6ec; border-color: #c8923a; color: #c8923a; }
+    #starred-filter .sf-star { font-size: 13px; }
+
     /* ── Terminus ────────────────────────────────────────────────────── */
 
     .terminus { position: relative; padding: 52px 0 80px; }
@@ -487,6 +518,7 @@
                placeholder="Keyword or historical actor…">
         <button id="search-clear" title="Clear">&#215;</button>
       </div>
+      <button id="starred-filter"><span class="sf-star">★</span> Starred only</button>
       <div class="chips" id="chips"><button class="chip" data-term="Nygaard">Kristen Nygaard</button>
         <button class="chip" data-term="DEMOS">DEMOS</button>
         <button class="chip" data-term="EDB">EDB</button>
@@ -591,9 +623,11 @@ function render() {
     const rows = ents.map((e, i) => {
       const preview = 'images/previews/' + e.stem + '.jpg';
       const snippet = e.desc.length > 200 ? e.desc.slice(0, 197) + '…' : e.desc;
-      return `<article class="en" data-idx="${DATA.indexOf(e)}"
+      const isStar  = starred.has(e.stem);
+      return `<article class="en${isStar ? ' starred' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}"
           data-s="${esc((e.date+' '+e.box+' '+e.desc+' '+(e.ocr||'')).toLowerCase())}"
           title="Click to view document">
+        <button class="en-star" title="${isStar ? 'Unstar' : 'Star'}" data-stem="${esc(e.stem)}">${isStar ? '★' : '☆'}</button>
         <div class="en-left">
           <div class="en-date">${esc(e.date)}</div>
           <div class="en-box">${esc(e.box)}</div>
@@ -622,11 +656,68 @@ function render() {
   });
 
   document.querySelectorAll('.en').forEach(el => {
-    el.addEventListener('click', () => {
+    el.addEventListener('click', e => {
+      if (e.target.closest('.en-star')) return;
       const idx = parseInt(el.dataset.idx, 10);
       lbOpen(DATA[idx]);
     });
   });
+
+  document.querySelectorAll('.en-star').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      toggleStar(btn.dataset.stem);
+    });
+  });
+}
+
+// ── Starred ───────────────────────────────────────────────────────────
+
+const PRE_STARRED = new Set([
+  'IMG_3167', 'IMG_3174', 'IMG_3175 2',  // 13 May 1970
+  'IMG_2404', 'IMG_0689',                 // 17 May 1972
+  'IMG_0338',                             // 13 Sep 1972 — Thorsrud
+]);
+
+const STARRED_KEY = 'njmf-starred';
+
+function loadStarred() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STARRED_KEY));
+    if (Array.isArray(saved)) return new Set(saved);
+  } catch (_) {}
+  return new Set(PRE_STARRED);
+}
+
+function saveStarred() {
+  localStorage.setItem(STARRED_KEY, JSON.stringify([...starred]));
+}
+
+let starred = loadStarred();
+
+// Seed localStorage with pre-starred on first visit
+if (!localStorage.getItem(STARRED_KEY)) saveStarred();
+
+let starredOnly = false;
+
+function toggleStar(stem) {
+  if (starred.has(stem)) {
+    starred.delete(stem);
+  } else {
+    starred.add(stem);
+  }
+  saveStarred();
+
+  // Update just the affected entry in place
+  const el = document.querySelector(`.en[data-stem="${CSS.escape(stem)}"]`);
+  if (el) {
+    const isNow = starred.has(stem);
+    el.classList.toggle('starred', isNow);
+    const btn = el.querySelector('.en-star');
+    if (btn) { btn.textContent = isNow ? '★' : '☆'; btn.title = isNow ? 'Unstar' : 'Star'; }
+  }
+
+  if (starredOnly) filter(document.getElementById('search').value);
 }
 
 // ── Filter ────────────────────────────────────────────────────────────
@@ -638,7 +729,9 @@ function filter(q) {
     const sec  = document.getElementById('yr' + yr);
     let secVis = 0;
     sec.querySelectorAll('.en').forEach(el => {
-      const match = !ql || (el.dataset.s || '').includes(ql);
+      const textMatch = !ql || (el.dataset.s || '').includes(ql);
+      const starMatch = !starredOnly || starred.has(el.dataset.stem);
+      const match = textMatch && starMatch;
       el.classList.toggle('gone', !match);
       if (match) secVis++;
       const d = el.querySelector('.en-desc');
@@ -647,15 +740,15 @@ function filter(q) {
         : esc(d.dataset.snip);
     });
     sec.classList.toggle('gone', secVis === 0);
-    if (ql && secVis > 0) sec.classList.remove('collapsed');
+    if ((ql || starredOnly) && secVis > 0) sec.classList.remove('collapsed');
     const ct = document.getElementById('ct' + yr);
-    if (ct) ct.textContent = ql
+    if (ct) ct.textContent = (ql || starredOnly)
       ? secVis + ' / ' + byYear[yr].length
       : byYear[yr].length + ' entries';
     shown += secVis;
   });
   document.getElementById('entry-count').textContent =
-    ql ? shown + ' matching' : TOTAL + ' entries';
+    (ql || starredOnly) ? shown + ' matching' : TOTAL + ' entries';
 }
 
 // ── Search events ─────────────────────────────────────────────────────
@@ -800,6 +893,14 @@ document.getElementById('lb-backdrop').addEventListener('click', lbClose);
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && lb.classList.contains('open')) lbClose();
+});
+
+// ── Starred filter button ─────────────────────────────────────────────
+
+document.getElementById('starred-filter').addEventListener('click', function() {
+  starredOnly = !starredOnly;
+  this.classList.toggle('on', starredOnly);
+  filter(inp.value);
 });
 
 // ── Init ──────────────────────────────────────────────────────────────
