@@ -285,7 +285,7 @@
       text-transform: uppercase; color: var(--mid);
       padding: 5px 10px; cursor: pointer; width: 100%;
       transition: border-color .12s, color .12s, background .12s;
-      margin-top: 10px;
+      margin-top: 12px;
     }
     #starred-filter:hover { border-color: var(--mid); color: var(--ink); }
     #starred-filter.on { background: #fdf6ec; border-color: #c8923a; color: #c8923a; }
@@ -518,7 +518,6 @@
                placeholder="Keyword or historical actor…">
         <button id="search-clear" title="Clear">&#215;</button>
       </div>
-      <button id="starred-filter"><span class="sf-star">★</span> Starred only</button>
       <div class="chips" id="chips"><button class="chip" data-term="Nygaard">Kristen Nygaard</button>
         <button class="chip" data-term="DEMOS">DEMOS</button>
         <button class="chip" data-term="EDB">EDB</button>
@@ -530,6 +529,7 @@
     </div>
     <div class="sb-ft">
       <div id="entry-count">118 entries</div>
+      <button id="starred-filter"><span class="sf-star">★</span> Starred only</button>
     </div>
     <div style="padding:14px 20px 0; flex-shrink:0; border-top: 1px solid var(--rule); margin-top: auto;">
       <div style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--faint);margin-bottom:8px;">Secondary Sources</div>
