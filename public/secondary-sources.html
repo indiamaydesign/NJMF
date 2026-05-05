@@ -163,6 +163,42 @@
       color: var(--faint);
     }
 
+    /* Researcher notes */
+    .notes-hd {
+      padding: 12px 20px 6px;
+      font-size: 9px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--faint);
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+
+    .note-entry {
+      padding: 10px 20px;
+      cursor: pointer;
+      border-left: 2px solid transparent;
+      border-bottom: 1px solid var(--rule);
+      transition: background .1s, border-color .1s;
+    }
+    .note-entry:hover { background: var(--hl); }
+    .note-entry.active { background: var(--hl); border-left-color: #c8923a; }
+
+    .note-date {
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 3px;
+    }
+    .note-title {
+      font-size: 11.5px;
+      font-style: italic;
+      color: var(--mid);
+      line-height: 1.4;
+    }
+    .note-entry.active .note-title { color: var(--ink); }
+
     /* Page list */
     .page-list {
       flex: 1;
@@ -401,6 +437,9 @@
         <button class="chip" data-term="Johansen">Johansen</button>
       </div>
     </div>
+
+    <div class="notes-hd">Researcher Notes</div>
+    <div id="notes-list"></div>
 
     <div class="sb-ft">
       <div id="page-count">45 pages</div>
@@ -689,8 +728,98 @@ document.addEventListener('keydown', e => {
   }
 });
 
+// ── Researcher Notes ──────────────────────────────────────────────────
+
+const NOTES = [
+  {
+    id: 'note-oct71-political',
+    date: 'Oct–Nov 1971',
+    title: 'NR internal meetings — political agenda',
+    ref: 'Box 2, Binder III',
+    body: `Three internal NR meetings from autumn 1971 reveal that the agenda for the research project went well beyond introducing IT to the workplace — the goal was explicitly political: to reshape how knowledge and expertise are distributed in society, and to influence broader discourse by redefining key terms and concepts.
+
+Meeting of 13.10.71 at NR. Present: Roar (unidentified), Kristen [Nygaard], Olav [Terje Bergo], Jan B. [probably Balstad — the union man].
+
+In this meeting they discuss the importance of ensuring the research actually transfers power to workers. They write:
+
+"The workers movement has up until now to a too large degree been too uncritical in regard to 'experts'. We have to contribute to the tearing down of barriers between researchers and the research objects."
+
+A meeting with roughly the same participants on 07.10.71 contains the phrase:
+
+"We should not pin our hopes on building a parallel apparatus for knowledge mediation, but we must try to see what we can use and then gain control over that."
+
+This is not simply about building a tool for the workers movement. They are looking to make changes to society and influence the discourse in general by redefining how certain words and terms are used.
+
+Finally, a meeting of 05.10.71 contains this direct quote from Marx — in quotation marks and explicitly attributed:
+
+"The liberation of the working class has to be its own doing."
+
+Even in their internal meetings, the agenda for NR's work was clearly political.`
+  }
+];
+
+let activeNoteId = null;
+
+function renderNotes() {
+  const el = document.getElementById('notes-list');
+  el.innerHTML = NOTES.map(n => `
+    <div class="note-entry" data-note-id="${esc(n.id)}">
+      <div class="note-date">${esc(n.ref)}</div>
+      <div class="note-title">${esc(n.title)}</div>
+    </div>`).join('');
+
+  el.querySelectorAll('.note-entry').forEach(entry => {
+    entry.addEventListener('click', () => openNote(entry.dataset.noteId));
+  });
+}
+
+function openNote(id) {
+  const note = NOTES.find(n => n.id === id);
+  if (!note) return;
+  activeNoteId = id;
+  activeIdx = -1;
+
+  // Deselect any page entry
+  document.querySelectorAll('.pl-entry.active').forEach(e => e.classList.remove('active'));
+
+  // Highlight note entry
+  document.querySelectorAll('.note-entry').forEach(e => {
+    e.classList.toggle('active', e.dataset.noteId === id);
+  });
+
+  // Hide image, show placeholder
+  const ph = document.getElementById('img-placeholder');
+  const imgEl = document.getElementById('page-img');
+  imgEl.src = '';
+  imgEl.classList.add('loading');
+  ph.style.display = 'flex';
+  ph.innerHTML = '<div class="ph-txt">Researcher Note</div>';
+
+  // Nav
+  document.getElementById('nav-label').textContent = note.ref;
+  document.getElementById('nav-prev').disabled = true;
+  document.getElementById('nav-next').disabled = true;
+
+  // Text pane
+  document.getElementById('text-title').textContent = note.title;
+  document.getElementById('text-loc').textContent = note.ref;
+  const ocrEl = document.getElementById('ocr-text');
+  ocrEl.className = '';
+
+  // Render note body as paragraphs
+  const paras = note.body.split(/\n{2,}/).map(p => p.trim()).filter(Boolean);
+  ocrEl.innerHTML = paras.map(p => {
+    // Indent quoted passages (lines starting with ")
+    if (p.startsWith('"')) return `<p style="padding-left:1.4em;border-left:2px solid var(--faint);margin-left:0.2em;font-style:italic;">${esc(p)}</p>`;
+    return `<p>${esc(p)}</p>`;
+  }).join('');
+
+  ocrEl.parentElement.scrollTop = 0;
+}
+
 // ── Init ──────────────────────────────────────────────────────────────
 
+renderNotes();
 renderList();
 openPage(0);
 </script>
