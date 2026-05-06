@@ -478,7 +478,7 @@
     /* Metadata sidebar */
     #lb-meta {
       flex-shrink: 0;
-      width: 280px;
+      width: 320px;
       border-left: 1px solid var(--rule);
       display: flex;
       flex-direction: column;
@@ -531,10 +531,58 @@
       font-size: 9px;
       letter-spacing: 0.16em;
       color: var(--faint);
-      margin-top: auto;
       padding-top: 16px;
       border-top: 1px solid var(--rule);
     }
+
+    /* Transcript */
+    #lbm-transcript-wrap {
+      margin-top: 24px;
+      border-top: 1px solid var(--rule);
+      padding-top: 20px;
+    }
+
+    #lbm-transcript-wrap .lbm-label { margin-bottom: 10px; }
+
+    #lbm-transcript {
+      font-size: 12px;
+      line-height: 1.9;
+      color: var(--ink);
+      font-style: italic;
+      max-height: 220px;
+      overflow: hidden;
+      position: relative;
+      transition: max-height .3s ease;
+    }
+
+    #lbm-transcript.expanded { max-height: 2000px; }
+
+    #lbm-transcript p { margin-bottom: 0.8em; }
+
+    #lbm-transcript:not(.expanded)::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 60px;
+      background: linear-gradient(transparent, var(--bg));
+      pointer-events: none;
+    }
+
+    #lbm-transcript mark { background: var(--hl); color: var(--ink); padding: 0 1px; font-style: normal; }
+
+    #lbm-read-more {
+      display: block;
+      margin-top: 8px;
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--mid);
+      background: none; border: none;
+      cursor: pointer; padding: 0;
+      font-family: inherit;
+      transition: color .1s;
+    }
+    #lbm-read-more:hover { color: var(--ink); }
   </style>
 </head>
 <body>
@@ -620,6 +668,12 @@
       <div id="lbm-desc"></div>
 
       <div id="lbm-file"></div>
+
+      <div id="lbm-transcript-wrap">
+        <div class="lbm-label">OCR Transcript</div>
+        <div id="lbm-transcript"></div>
+        <button id="lbm-read-more">Read more ↓</button>
+      </div>
     </div>
 
   </div>
@@ -924,11 +978,40 @@ function lbOpen(entry) {
     ? stems.join(' · ')
     : stems[0];
 
+  // Transcript
+  const raw = entry.ocr || '';
+  const q   = document.getElementById('search').value.trim();
+  const transcriptEl  = document.getElementById('lbm-transcript');
+  const readMoreBtn   = document.getElementById('lbm-read-more');
+  const transcriptWrap = document.getElementById('lbm-transcript-wrap');
+
+  if (raw) {
+    transcriptWrap.style.display = '';
+    const paras = raw.split(/\n{2,}/).map(p => p.replace(/\n/g,' ').replace(/\s+/g,' ').trim()).filter(Boolean);
+    transcriptEl.innerHTML = paras.map(p => '<p>' + highlight(p, q) + '</p>').join('');
+    transcriptEl.classList.remove('expanded');
+    readMoreBtn.textContent = 'Read more ↓';
+
+    // Only show read-more if content overflows
+    requestAnimationFrame(() => {
+      const overflows = transcriptEl.scrollHeight > 225;
+      readMoreBtn.style.display = overflows ? 'block' : 'none';
+    });
+  } else {
+    transcriptWrap.style.display = 'none';
+  }
+
   lbLoadStem(stems[0], thumbs);
 
   lb.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
+
+document.getElementById('lbm-read-more').addEventListener('click', function() {
+  const t = document.getElementById('lbm-transcript');
+  const expanded = t.classList.toggle('expanded');
+  this.textContent = expanded ? 'Collapse ↑' : 'Read more ↓';
+});
 
 function lbClose() {
   lb.classList.remove('open');
