@@ -376,6 +376,38 @@
     }
 
     /* Image area */
+    /* Annotation panel in lightbox */
+    #lbm-annotation { margin-bottom: 16px; }
+    .lbma-bar {
+      border-left: 3px solid #b07d2a;
+      padding: 10px 12px;
+      background: rgba(176,125,42,0.06);
+      border-radius: 0 4px 4px 0;
+    }
+    #lbm-annotation[data-level="critical"] .lbma-bar {
+      border-left-color: #8a3a2a;
+      background: rgba(138,58,42,0.07);
+    }
+    #lbm-annotation[data-level="notable"] .lbma-bar {
+      border-left-color: #4a6080;
+      background: rgba(74,96,128,0.06);
+    }
+    .lbma-label {
+      font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: #b07d2a; font-weight: 600; margin-bottom: 4px;
+    }
+    #lbm-annotation[data-level="critical"] .lbma-label { color: #8a3a2a; }
+    #lbm-annotation[data-level="notable"] .lbma-label { color: #4a6080; }
+    .lbma-headline {
+      font-size: 12px; font-weight: 600; color: #e8e0d4;
+      line-height: 1.4; margin-bottom: 6px;
+    }
+    .lbma-body { font-size: 11px; color: #bbb; line-height: 1.6; margin-bottom: 6px; }
+    .lbma-link { font-size: 10px; color: #888; font-style: italic; }
+
+    /* Archive list badge */
+    .en.has-ann { border-left: 2px solid #b07d2a; padding-left: 10px; }
+
     #lb-img-area {
       flex: 1;
       min-width: 0;
@@ -1009,6 +1041,15 @@
       <div class="lbm-label">Archival reference</div>
       <div class="lbm-val" id="lbm-box"></div>
 
+      <div id="lbm-annotation" style="display:none;">
+        <div class="lbma-bar">
+          <div class="lbma-label" id="lbma-label"></div>
+          <div class="lbma-headline" id="lbma-headline"></div>
+          <div class="lbma-body" id="lbma-body"></div>
+          <div class="lbma-link" id="lbma-link"></div>
+        </div>
+      </div>
+
       <div class="lbm-label">Description</div>
       <div id="lbm-desc"></div>
 
@@ -1060,7 +1101,8 @@ function render() {
       const isStar   = starred.has(e.stem);
       const nPhotos  = (e.stems || [e.stem]).length;
       const photoTag = nPhotos > 1 ? `<span class="en-photos">&#128247; ${nPhotos}</span>` : '';
-      return `<article class="en${isStar ? ' starred' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}"
+      const hasAnn   = !!(ANNOTATIONS[e.stem] || (e.stems||[]).some(s => ANNOTATIONS[s]));
+      return `<article class="en${isStar ? ' starred' : ''}${hasAnn ? ' has-ann' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}"
           data-s="${esc((e.date+' '+e.box+' '+e.desc+' '+(e.ocr||'')).toLowerCase())}"
           title="Click to view document">
         <button class="en-star" title="${isStar ? 'Unstar' : 'Star'}" data-stem="${esc(e.stem)}">${isStar ? '★' : '☆'}</button>
@@ -1301,10 +1343,65 @@ function lbLoadStem(stem, thumbs) {
   lbImg.src = src;
 }
 
+const ANNOTATIONS = {
+  'IMG_0338': {
+    level: 'critical',
+    headline: 'The Thorsrud connection — the only paper trail',
+    body: 'This is the only known document where the Thorsrud/Nygaard tension surfaces as a live internal dispute. Knut Lange — a researcher from Arbeidspsykologisk Institutt (Thorsrud's institute) who sat on the NJMF steering committee — explicitly writes that he wishes he could consult Thorsrud but has to think for himself. Secondary literature (Ehn, Avtalt Spill) describes this split only as a clean theoretical disagreement. This letter shows it was a live internal fight inside the project itself.',
+    link: 'Crossover tab → "I would have liked to talk with Thorsrud about this"'
+  },
+  'IMG_0438': {
+    level: 'major',
+    headline: 'Lange's resignation — internal conflict invisible in secondary sources',
+    body: 'Lange's formal withdrawal from the NJMF steering committee. He accuses the draft Grunnbok (Working Report 2) of weak pedagogy, lack of empirical grounding from the four factories, and a "primitive" polemical style. Neither Ehn nor Avtalt Spill mention this — they present the Thorsrud/Nygaard separation as gradual and theoretical. This document shows it ended in an explicit, named dispute with a named researcher from the AFI lineage.',
+    link: 'Crossover tab → "Lange resigns — the bridge breaks"'
+  },
+  'IMG_0649': {
+    level: 'major',
+    headline: 'Two traditions planned to collaborate — the rupture came later',
+    body: 'The original 1971 project plan included a sub-project directly using Thorsrud's "psychological job requirements" framework, and proposed attaching a researcher from Arbeidspsykologisk Institutt (Thorsrud's own institute). At the outset, the two lineages were planning to work together, not against each other. The adversarial framing developed later, through Lange's departure and the project's own ideological evolution. This complicates any clean "Nygaard vs. Thorsrud" narrative.',
+    link: 'Crossover tab → "Joint sub-project planned on psychological job requirements"'
+  },
+  'IMG_2398': {
+    level: 'major',
+    headline: 'The founding document — and a direct rebuke of Thorsrud',
+    body: 'The 1970 landsmøte resolution that launched the whole project. It also contains language that directly critiques the Samarbeidsprosjektet approach: the resolution warns that autonomous work-group experiments "must not be confused with and must not divert attention from" actions that increase collective union power. Corroborated by Avtalt Spill (p. 193) but that source paraphrases — this is the original text of the explicit rejection.',
+    link: 'Crossover tab → 1970; Milestones tab → 1970 Landsmøte'
+  },
+  'IMG_2404': {
+    level: 'major',
+    headline: 'Marx and Engels — the ideological register secondary sources omit',
+    body: 'A Nygaard document from May 1972 with explicit references to Marx and Engels on working-class liberation — the ideological framing that later became the Grunnbok preface. Ehn and Avtalt Spill describe the project in terms of "conflict perspective" and "emancipation" but avoid direct Marxist citation. This document shows the project was operating in an openly Marxist register, which makes the eventual 1975 rammeavtale — signed by NAF/employers — all the more remarkable.',
+    link: 'Secondary sources → Ehn, "Scandinavian Design" (1992), pp. 103–108'
+  },
+  'IMG_3186': {
+    level: 'notable',
+    headline: 'Project closure — names the bridge to the 1980s',
+    body: 'The August 1973 Forbundsstyret decision formally closing the project and appointing a follow-up committee. Among those named: Jan Balstad, who is listed in Avtalt Spill as one of two "godfathers" of the 1982 HABUT bedriftsutvikling agreement. The committee's mandate connects the radical 1973 project directly to the institutionalised frameworks of the following decade.',
+    link: 'Crossover tab → 1982; Jan Balstad arc'
+  }
+};
+
 function lbOpen(entry) {
   document.getElementById('lbm-date').textContent = entry.date;
   document.getElementById('lbm-box').textContent  = entry.box || '—';
   document.getElementById('lbm-desc').textContent = entry.desc;
+
+  // Annotation panel
+  const stem = entry.stem || (entry.stems && entry.stems[0]);
+  const ann  = ANNOTATIONS[stem] || (entry.stems || []).map(s => ANNOTATIONS[s]).find(Boolean);
+  const annEl = document.getElementById('lbm-annotation');
+  if (ann) {
+    document.getElementById('lbma-label').textContent    = ann.level === 'critical' ? '★ Critical find' : ann.level === 'major' ? 'Notable find' : 'Context';
+    document.getElementById('lbma-headline').textContent = ann.headline;
+    document.getElementById('lbma-body').textContent     = ann.body;
+    const linkEl = document.getElementById('lbma-link');
+    linkEl.textContent = ann.link ? '→ ' + ann.link : '';
+    annEl.dataset.level = ann.level;
+    annEl.style.display = '';
+  } else {
+    annEl.style.display = 'none';
+  }
 
   const stems = entry.stems || [entry.stem];
 
