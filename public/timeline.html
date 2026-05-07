@@ -1755,10 +1755,11 @@ function secSourceUrl(src) {
 
 function renderMilestones() {
   const root = document.getElementById('ms-root');
+  const lms = MILESTONES.map(m => localise(m, NO_MILESTONES[m.id]));
   root.innerHTML = `
     <p class="ms-intro">Key moments in the NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to see linked archive documents and secondary sources.</p>
     <div class="ms-track">
-      ${MILESTONES.map(_m => { const m = localise(_m, NO_MILESTONES[_m.id]);
+      ${lms.map(m => {
         const peopleTags = (m.people || []).map(p =>
           `<span class="ms-person">${esc(p)}</span>`
         ).join('');
