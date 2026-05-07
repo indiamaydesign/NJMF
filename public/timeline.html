@@ -583,6 +583,191 @@
       transition: color .1s;
     }
     #lbm-read-more:hover { color: var(--ink); }
+
+    /* ── View tabs ── */
+    .view-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 40px;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .vtab {
+      font-family: 'Playfair Display', serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 14px 0 12px;
+      margin-right: 28px;
+      cursor: pointer;
+      color: var(--mid);
+      transition: color .15s;
+    }
+    .vtab:hover { color: var(--ink); }
+    .vtab.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+    /* ── Milestone timeline ── */
+    #view-milestones {
+      padding: 48px 56px 80px;
+      max-width: 860px;
+    }
+    .ms-intro {
+      font-size: 13px;
+      color: var(--mid);
+      margin-bottom: 48px;
+      line-height: 1.7;
+      max-width: 560px;
+    }
+    .ms-track {
+      position: relative;
+      padding-left: 52px;
+    }
+    .ms-track::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: 8px;
+      bottom: 0;
+      width: 1px;
+      background: var(--rule);
+    }
+    .ms-item {
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .ms-dot {
+      position: absolute;
+      left: -44px;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid var(--bg);
+      outline: 1px solid currentColor;
+      box-shadow: 0 0 0 3px var(--bg);
+    }
+    .ms-year {
+      position: absolute;
+      left: -108px;
+      top: 7px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--mid);
+      text-align: right;
+      width: 56px;
+    }
+    .ms-card {
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 18px 22px 16px;
+      cursor: pointer;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .ms-card:hover {
+      border-color: #c0beba;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .ms-card.open {
+      border-color: var(--ink);
+    }
+    .ms-phase {
+      font-size: 9px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .ms-title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 0;
+    }
+    .ms-date {
+      font-size: 10.5px;
+      color: var(--mid);
+      margin-top: 3px;
+    }
+    .ms-body {
+      display: none;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule);
+      font-size: 13px;
+      line-height: 1.75;
+      color: var(--ink);
+    }
+    .ms-card.open .ms-body { display: block; }
+    .ms-sources {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .ms-src-label {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .ms-doc-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .ms-doc-thumb {
+      width: 48px;
+      height: 64px;
+      object-fit: cover;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      cursor: pointer;
+      transition: opacity .15s, border-color .15s;
+      background: var(--img-bg, #f4f3f0);
+    }
+    .ms-doc-thumb:hover { opacity: 0.8; border-color: var(--ink); }
+    .ms-sec-link {
+      display: inline-block;
+      font-size: 11.5px;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--faint);
+      padding-bottom: 1px;
+      transition: border-color .15s;
+    }
+    .ms-sec-link:hover { border-color: var(--ink); }
+    .ms-sec-links { display: flex; flex-direction: column; gap: 5px; }
+
+    /* Phase colours */
+    .ph-pre  { color: #8a8a88; }
+    .ph-p1   { color: #b07d2a; }
+    .ph-p2   { color: #5a7a42; }
+    .ph-leg  { color: #4a6080; }
+    .ms-item.ph-pre  .ms-dot { color: #8a8a88; }
+    .ms-item.ph-p1   .ms-dot { color: #b07d2a; }
+    .ms-item.ph-p2   .ms-dot { color: #5a7a42; }
+    .ms-item.ph-leg  .ms-dot { color: #4a6080; }
+
+    .ms-people { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+    .ms-person {
+      font-size: 9.5px;
+      letter-spacing: 0.06em;
+      padding: 2px 7px;
+      border: 1px solid var(--faint);
+      border-radius: 20px;
+      color: var(--mid);
+    }
   </style>
 </head>
 <body>
@@ -622,8 +807,21 @@
 
   <!-- ── Timeline ── -->
   <main class="main" id="main">
-    <div id="tl-root"></div>
-    <div class="terminus">
+
+    <div class="view-tabs" id="view-tabs">
+      <button class="vtab active" data-view="archive">Archive</button>
+      <button class="vtab" data-view="milestones">Milestones</button>
+    </div>
+
+    <div id="view-archive">
+      <div id="tl-root"></div>
+    </div><!-- /view-archive -->
+
+    <div id="view-milestones" style="display:none;">
+      <div id="ms-root"></div>
+    </div>
+
+    <div class="terminus" id="tl-terminus">
       <div class="t-label">The moment</div>
       <div class="t-text">DEMOS project &thinsp;&middot;&thinsp; 1975</div>
     </div>
@@ -1036,6 +1234,222 @@ document.getElementById('starred-filter').addEventListener('click', function() {
 
 // ── Init ──────────────────────────────────────────────────────────────
 render();
+
+// ── Milestones ────────────────────────────────────────────────────────────
+
+const MILESTONES = [
+  {
+    id: 'lo-naf-62',
+    year: '1962', displayDate: '1962',
+    phase: 'Prehistory', phaseKey: 'ph-pre',
+    people: ['Thorsrud', 'Emery'],
+    title: 'LO/NAF Collaboration Project launched',
+    body: 'Einar Thorsrud, based at the Institute for Industrial Environment Research (IFIM/NTH) in Trondheim, launches Samarbeidsprosjektet LO/NAF — a pioneering effort to democratise Norwegian working life through field experiments at factory sites. The project will later relocate to Oslo and become the intellectual foundation for the NJMF project.',
+    docs: [],
+    links: [{ label: 'AFI / OsloMet History', src: 'afi-history' }]
+  },
+  {
+    id: 'afi-64',
+    year: '1964', displayDate: '1964',
+    phase: 'Prehistory', phaseKey: 'ph-pre',
+    people: ['Thorsrud', 'Qvale', 'Gustavsen'],
+    title: 'AFI (Work Research Institute) founded',
+    body: 'The Norwegian government establishes Arbeidsforskningsinstituttene (AFI) — three co-located institutes under joint governance by the state, LO, NAF, and the University of Oslo. Thorsrud joins as head of the psychology institute, bringing the LO/NAF project with him. Thoralf Qvale joins as a researcher in 1967.',
+    docs: [],
+    links: [{ label: 'AFI / OsloMet History', src: 'afi-history' }]
+  },
+  {
+    id: 'landsmote-70',
+    year: '1970', displayDate: 'Landsmøte 1970',
+    phase: 'Phase 1 — Launch', phaseKey: 'ph-p1',
+    people: ['Tangnes'],
+    title: 'NJMF Landsmøte passes EDB resolution',
+    body: 'At NJMF\'s 1970 congress delegates pass a resolution on EDB (data processing) and wage systems, declaring that the union must build its own capacity to analyse and counter technology-led changes to work. Kåre Tangnes\' introductory lecture on new business economics methods prompts a debate that results in a landmark motion: where management refuses cooperation, the union must conduct its own investigations. This launches the NJMF research project.',
+    docs: ['IMG_2398', 'IMG_3098', 'IMG_3138 2', 'IMG_3212'],
+    links: [{ label: 'Scandinavian Design — The NJMF Project', src: 'ehn-scandinavian-design' }]
+  },
+  {
+    id: 'project-launch-71',
+    year: '1971', displayDate: 'January 1971',
+    phase: 'Phase 1 — Launch', phaseKey: 'ph-p1',
+    people: ['Nygaard', 'Bergo', 'Balstad'],
+    title: 'Research project formally begins at Norsk Regnesentral',
+    body: 'NJMF formally initiates its research project in cooperation with Norsk Regnesentral, led by Kristen Nygaard. A project group of two researchers and two union staff is formed. Four factory clubs are selected as sites. The original design — researchers studying workers — is quickly revised; the new model has researchers supporting workers in conducting their own investigations.',
+    docs: ['IMG_0562', 'IMG_0644', 'IMG_0656'],
+    links: [{ label: 'Scandinavian Design — The NJMF Project', src: 'ehn-scandinavian-design' }]
+  },
+  {
+    id: 'nr-meetings-71',
+    year: '1971', displayDate: 'Oct – Nov 1971',
+    phase: 'Phase 1 — Research', phaseKey: 'ph-p1',
+    people: ['Nygaard', 'Bergo', 'Balstad'],
+    title: 'Internal NR meetings reveal political agenda',
+    body: 'Three internal meetings at Norsk Regnesentral document an explicitly political project agenda: tearing down barriers between researchers and research subjects, securing worker control over knowledge, and reshaping public discourse by redefining terms like "planning" and "control". Marx is cited directly in the minutes: "The liberation of the working class has to be its own doing."',
+    docs: [],
+    links: [{ label: 'Researcher Note — NR meetings Oct–Nov 1971', note: 'note-oct71-political' }]
+  },
+  {
+    id: 'working-groups-7173',
+    year: '1971–73', displayDate: '1971 – 1973',
+    phase: 'Phase 1 — Research', phaseKey: 'ph-p1',
+    people: ['Nygaard', 'Bergo', 'Aarset', 'Skau'],
+    title: 'Worker investigation groups active at four factories',
+    body: 'Investigation groups of union members at each of four factory sites (including Hydraulik A/S) meet two to three times weekly. They analyse planning and control systems, propose reorganisations, draft local union policies, and build shared knowledge about EDB. The archive\'s 109 primary documents date largely from this period.',
+    docs: ['IMG_0647', 'IMG_3210', 'IMG_0560', 'IMG_0659'],
+    links: []
+  },
+  {
+    id: 'local-avtale-74',
+    year: '1974', displayDate: 'January 1974',
+    phase: 'Phase 2 — Agreements', phaseKey: 'ph-p2',
+    people: [],
+    title: 'First local data agreement signed',
+    body: 'The first collective agreement regulating the design and introduction of computer-based systems is concluded at the local level — a direct outcome of the working groups\' investigative work. It establishes union rights to information and consultation on EDB projects before decisions are taken.',
+    docs: ['IMG_2381', 'IMG_3190'],
+    links: [{ label: 'Scandinavian Design — The NJMF Project', src: 'ehn-scandinavian-design' }]
+  },
+  {
+    id: 'central-avtale-75',
+    year: '1975', displayDate: 'April 1975',
+    phase: 'Phase 2 — Agreements', phaseKey: 'ph-p2',
+    people: [],
+    title: 'Central LO/NAF data agreement',
+    body: 'A landmark central agreement between LO and NAF is signed. Management must inform and consult shop stewards before introducing computer-based systems; workers gain the right to appoint dedicated "data shop stewards" (datatillitsmenn) with access to all relevant documentation. Hundreds of local agreements follow across Norwegian industry.',
+    docs: [],
+    links: [
+      { label: 'Scandinavian Design — The NJMF Project', src: 'ehn-scandinavian-design' },
+      { label: 'Avtalt Spill (2010)', src: 'avtalt-spill' }
+    ]
+  },
+  {
+    id: 'demos-75',
+    year: '1975', displayDate: '1975 – 1979',
+    phase: 'Legacy', phaseKey: 'ph-leg',
+    people: ['Ehn', 'Sandberg'],
+    title: 'DEMOS project — Sweden',
+    body: 'Inspired directly by NJMF, Swedish researchers and LO launch DEMOS ("trade unions, industrial democracy, and computers") across four enterprises. The union-led investigation at a locomotive repair shop in Örebro produces the influential demand: "We are opposed to Detailed Control." The model spreads across Scandinavia.',
+    docs: [],
+    links: [{ label: 'Scandinavian Design — The DEMOS Project', src: 'ehn-scandinavian-design' }]
+  },
+  {
+    id: 'mbl-77',
+    year: '1977', displayDate: 'January 1977',
+    phase: 'Legacy', phaseKey: 'ph-leg',
+    people: ['Qvale'],
+    title: 'Swedish MBL enacted; Norwegian Work Environment Act',
+    body: 'Sweden enacts the Medbestämmandelagen (MBL), requiring employers to negotiate with unions before major changes in production including new computer systems. Prime Minister Palme calls it the greatest reform since universal suffrage. Norway passes its own Work Environment Act the same year, giving workers the right to stop dangerous production.',
+    docs: [],
+    links: [{ label: 'Scandinavian Design — Designing for Democracy', src: 'ehn-scandinavian-design' }]
+  },
+  {
+    id: 'utopia-81',
+    year: '1981', displayDate: '1981 – 1985',
+    phase: 'Legacy', phaseKey: 'ph-leg',
+    people: ['Ehn'],
+    title: 'UTOPIA project — next-generation participatory design',
+    body: 'Nordic graphic workers\' unions and Scandinavian researchers launch UTOPIA, designing new computer tools for skilled newspaper page makeup. The project introduces the "tool perspective" and design-by-doing (mockups, prototypes) as core methods — techniques that influence participatory design practice globally and are still in use today.',
+    docs: [],
+    links: [
+      { label: 'Scandinavian Design — The UTOPIA Project', src: 'ehn-scandinavian-design' },
+      { label: 'Scandinavian Design — Philosophical Foundation', src: 'ehn-scandinavian-design' }
+    ]
+  }
+];
+
+let openMilestoneId = null;
+
+function openByStem(stem) {
+  const entry = DATA.find(e => e.stem === stem || (e.stems && e.stems.includes(stem)));
+  if (entry) lbOpen(entry);
+}
+
+function secSourceUrl(src) {
+  return 'secondary-sources.html';
+}
+
+function renderMilestones() {
+  const root = document.getElementById('ms-root');
+  root.innerHTML = `
+    <p class="ms-intro">Key moments in the NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to see linked archive documents and secondary sources.</p>
+    <div class="ms-track">
+      ${MILESTONES.map(m => {
+        const peopleTags = (m.people || []).map(p =>
+          `<span class="ms-person">${esc(p)}</span>`
+        ).join('');
+        const docThumbs = m.docs.map(stem =>
+          `<img class="ms-doc-thumb" src="images/previews/${stem}.jpg" title="${stem}" data-stem="${stem}" alt="${stem}">`
+        ).join('');
+
+        const secLinks = m.links.map(lk => {
+          if (lk.note) {
+            return `<a class="ms-sec-link" href="secondary-sources.html" target="_blank">${esc(lk.label)} ↗</a>`;
+          }
+          return `<a class="ms-sec-link" href="secondary-sources.html" target="_blank">${esc(lk.label)} ↗</a>`;
+        }).join('');
+
+        const hasSources = m.docs.length > 0 || m.links.length > 0;
+
+        return `<div class="ms-item ${m.phaseKey}" data-ms-id="${m.id}">
+          <div class="ms-dot"></div>
+          <div class="ms-year">${esc(m.year)}</div>
+          <div class="ms-card" data-ms-id="${m.id}">
+            <div class="ms-phase ${m.phaseKey}">${esc(m.phase)}</div>
+            <div class="ms-title">${esc(m.title)}</div>
+            <div class="ms-date">${esc(m.displayDate)}</div>
+            ${peopleTags ? `<div class="ms-people">${peopleTags}</div>` : ''}
+            <div class="ms-body">
+              <p>${esc(m.body)}</p>
+              ${hasSources ? `<div class="ms-sources">
+                ${m.docs.length > 0 ? `<div>
+                  <div class="ms-src-label">Primary documents</div>
+                  <div class="ms-doc-row">${docThumbs}</div>
+                </div>` : ''}
+                ${m.links.length > 0 ? `<div>
+                  <div class="ms-src-label">Secondary sources</div>
+                  <div class="ms-sec-links">${secLinks}</div>
+                </div>` : ''}
+              </div>` : ''}
+            </div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`;
+
+  // Wire up card clicks
+  root.querySelectorAll('.ms-card').forEach(card => {
+    card.addEventListener('click', e => {
+      // Don't toggle if clicking a link or thumb
+      if (e.target.closest('a') || e.target.classList.contains('ms-doc-thumb')) return;
+      const id = card.dataset.msId;
+      const isOpen = card.classList.contains('open');
+      root.querySelectorAll('.ms-card.open').forEach(c => c.classList.remove('open'));
+      if (!isOpen) card.classList.add('open');
+    });
+  });
+
+  // Wire up doc thumbnails
+  root.querySelectorAll('.ms-doc-thumb').forEach(img => {
+    img.addEventListener('click', () => openByStem(img.dataset.stem));
+  });
+}
+
+// ── Tab switching ─────────────────────────────────────────────────────────
+
+document.getElementById('view-tabs').addEventListener('click', e => {
+  const btn = e.target.closest('.vtab');
+  if (!btn) return;
+  const view = btn.dataset.view;
+  document.querySelectorAll('.vtab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const isArchive = view === 'archive';
+  document.getElementById('view-archive').style.display  = isArchive ? '' : 'none';
+  document.getElementById('view-milestones').style.display = isArchive ? 'none' : '';
+  document.getElementById('tl-terminus').style.display = isArchive ? '' : 'none';
+  if (!isArchive && !document.getElementById('ms-root').hasChildNodes()) {
+    renderMilestones();
+  }
+});
+
 </script>
 </body>
 </html>
