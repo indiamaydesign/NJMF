@@ -768,6 +768,140 @@
       border-radius: 20px;
       color: var(--mid);
     }
+
+    /* ── Crossover view ── */
+    #view-crossover { padding: 0 0 80px; }
+    .cx-intro-band {
+      padding: 32px 56px 28px;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: 1fr 140px 1fr;
+      gap: 0;
+      align-items: end;
+    }
+    .cx-lane-hd { padding-bottom: 4px; }
+    .cx-lane-hd-left  { text-align: right; padding-right: 24px; }
+    .cx-lane-hd-right { text-align: left;  padding-left:  24px; }
+    .cx-lane-pill {
+      display: inline-block;
+      font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+      font-weight: 700; padding: 3px 10px; border-radius: 20px; color: #fff;
+      margin-bottom: 6px;
+    }
+    .cx-lane-title { font-size: 14px; font-weight: 700; line-height: 1.3; }
+    .cx-lane-sub   { font-size: 10.5px; color: var(--mid); margin-top: 2px; }
+
+    /* Grid body */
+    .cx-body { position: relative; }
+    .cx-beat {
+      display: grid;
+      grid-template-columns: 1fr 140px 1fr;
+      position: relative;
+    }
+    /* Spine line runs full height */
+    .cx-beat::after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 0.5px);
+      top: 0; bottom: 0;
+      width: 1px;
+      background: var(--rule);
+      pointer-events: none;
+    }
+    .cx-cell-l { padding: 10px 24px 10px 56px; display: flex; justify-content: flex-end; }
+    .cx-cell-r { padding: 10px 56px 10px 24px; display: flex; justify-content: flex-start; }
+    .cx-cell-s { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 14px; position: relative; z-index: 1; }
+    .cx-yr {
+      font-size: 9px; letter-spacing: 0.1em; font-weight: 700;
+      color: var(--mid); background: var(--bg);
+      padding: 1px 4px;
+    }
+    /* Event nodes */
+    .cx-node {
+      max-width: 320px; width: 100%;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 12px 15px 11px;
+      cursor: pointer;
+      transition: border-color .12s, box-shadow .12s;
+      background: var(--bg);
+    }
+    .cx-node:hover { border-color: #c0beba; box-shadow: 0 2px 6px rgba(0,0,0,.05); }
+    .cx-node.open  { border-color: var(--ink); }
+    .cx-node-title { font-size: 12.5px; font-weight: 600; line-height: 1.35; }
+    .cx-node-people { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 6px; }
+    .cx-node-person {
+      font-size: 9px; letter-spacing: 0.05em;
+      padding: 1px 6px; border: 1px solid var(--faint); border-radius: 20px; color: var(--mid);
+    }
+    .cx-node-body {
+      display: none; margin-top: 10px; padding-top: 10px;
+      border-top: 1px solid var(--rule);
+      font-size: 11.5px; line-height: 1.7; color: var(--ink);
+    }
+    .cx-node.open .cx-node-body { display: block; }
+    .cx-node-docs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+
+    /* Crossover bands — full-width rows */
+    .cx-cross-row {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 140px 1fr;
+      position: relative;
+      margin: 4px 0;
+      z-index: 2;
+    }
+    .cx-cross-row::before {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      top: 50%; height: 2px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    /* significance colours */
+    .cx-cross-row.sig-major    .cx-cross-card { border-color: #b07d2a; }
+    .cx-cross-row.sig-major::before { background: linear-gradient(to right, #b07d2a44, #b07d2a, #b07d2a44); }
+    .cx-cross-row.sig-critical .cx-cross-card { border-color: #8a3a2a; border-width: 2px; }
+    .cx-cross-row.sig-critical::before { background: linear-gradient(to right, #8a3a2a44, #8a3a2a, #8a3a2a44); }
+    .cx-cross-row.sig-divergence .cx-cross-card { border-color: #556; border-style: dashed; }
+    .cx-cross-row.sig-divergence::before { background: linear-gradient(to right, #55566644, #556, #55566644); }
+    .cx-cross-row.sig-minor    .cx-cross-card { border-color: #4a6080; }
+    .cx-cross-row.sig-minor::before { background: linear-gradient(to right, #4a608044, #4a6080, #4a608044); }
+    .cx-cross-spacer { } /* empty cells flanking the card */
+    .cx-cross-card {
+      border: 1.5px solid #b07d2a; border-radius: 4px;
+      background: var(--bg); padding: 12px 16px;
+      cursor: pointer; position: relative; z-index: 1;
+      transition: box-shadow .12s;
+      text-align: center;
+    }
+    .cx-cross-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.08); }
+    .cx-cross-label {
+      font-size: 11px; font-weight: 700; line-height: 1.3;
+    }
+    .cx-cross-sig {
+      font-size: 8.5px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--mid); margin-bottom: 5px;
+    }
+    .cx-cross-body {
+      display: none; margin-top: 10px; padding-top: 10px;
+      border-top: 1px solid var(--rule);
+      font-size: 11.5px; line-height: 1.75; text-align: left;
+    }
+    .cx-cross-card.open .cx-cross-body { display: block; }
+    .cx-cross-quote {
+      margin: 10px 0 4px;
+      padding: 8px 14px;
+      border-left: 2px solid var(--faint);
+      font-style: italic;
+      font-size: 12px;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .cx-cross-people { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 8px; justify-content: left; }
+    .cx-cross-docs   { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+    .cx-cross-sec { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--mid); margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -811,6 +945,7 @@
     <div class="view-tabs" id="view-tabs">
       <button class="vtab active" data-view="archive">Archive</button>
       <button class="vtab" data-view="milestones">Milestones</button>
+      <button class="vtab" data-view="crossover">Crossover</button>
     </div>
 
     <div id="view-archive">
@@ -820,6 +955,8 @@
     <div id="view-milestones" style="display:none;">
       <div id="ms-root"></div>
     </div>
+
+    <div id="view-crossover" style="display:none;"><div id="cx-root"></div></div>
 
     <div class="terminus" id="tl-terminus">
       <div class="t-label">The moment</div>
@@ -1442,13 +1579,224 @@ document.getElementById('view-tabs').addEventListener('click', e => {
   document.querySelectorAll('.vtab').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   const isArchive = view === 'archive';
-  document.getElementById('view-archive').style.display  = isArchive ? '' : 'none';
-  document.getElementById('view-milestones').style.display = isArchive ? 'none' : '';
-  document.getElementById('tl-terminus').style.display = isArchive ? '' : 'none';
-  if (!isArchive && !document.getElementById('ms-root').hasChildNodes()) {
-    renderMilestones();
-  }
+  const isMilestones = view === 'milestones';
+  const isCrossover  = view === 'crossover';
+  document.getElementById('view-archive').style.display    = isArchive   ? '' : 'none';
+  document.getElementById('view-milestones').style.display = isMilestones ? '' : 'none';
+  document.getElementById('view-crossover').style.display  = isCrossover  ? '' : 'none';
+  document.getElementById('tl-terminus').style.display     = isArchive   ? '' : 'none';
+  if (isMilestones && !document.getElementById('ms-root').hasChildNodes()) renderMilestones();
+  if (isCrossover  && !document.getElementById('cx-root').hasChildNodes()) renderCrossover();
 });
+
+
+// ── Crossover view ────────────────────────────────────────────────────────
+
+const CX_DATA = [
+  {
+    year: 'c. 1950',
+    left: { title: 'Tavistock Institute / Fred Emery', people: ['Emery', 'Trist'], body: 'British sociotechnical systems theory: work groups need both technical and social requirements met simultaneously. Emery and Trist develop the theoretical foundation that Thorsrud will apply to Scandinavia.', docs: [] },
+    right: null, cross: null
+  },
+  {
+    year: '1962',
+    left: { title: 'LO/NAF Samarbeidsprosjektet', people: ['Thorsrud', 'Emery'], body: 'Thorsrud, at IFIM/NTH in Trondheim, launches the LO/NAF Collaboration Project with Emery — field experiments in autonomous work groups at Norwegian factories. The goal: democratise working life through sociotechnical redesign.', docs: [] },
+    right: null, cross: null
+  },
+  {
+    year: '1964',
+    left: { title: 'AFI founded — Thorsrud leads psychology institute', people: ['Thorsrud', 'Lange', 'Qvale'], body: 'AFI (Arbeidsforskningsinstituttet) is established in Oslo. Thorsrud moves from Trondheim and brings the project with him. Knut Lange and Thoralf Qvale join as researchers. The project becomes the dominant research activity at the new institute.', docs: [] },
+    right: null, cross: null
+  },
+  {
+    year: '1965–69',
+    left: { title: 'Industrial democracy field experiments', people: ['Thorsrud', 'Emery', 'Qvale'], body: 'Field experiments at Christiania Spigerverk, Hunsfoss, Norsk Hydro, and NOBØ introduce autonomous work groups. The approach spreads internationally — but in Norway, union networks fail to carry it forward. Qvale later diagnoses this failure for LO.', docs: [] },
+    right: null, cross: null
+  },
+  {
+    year: '1970',
+    left: null,
+    right: { title: 'NJMF Landsmøte — EDB resolution passed', people: [], body: 'NJMF\'s 1970 congress resolves to build the union\'s own research capacity on data processing, planning, and control. Where management refuses cooperation, the union must conduct its own investigations. The project is born.', docs: ['IMG_2398', 'IMG_3098'] },
+    cross: {
+      label: 'Knut Lange: AFI enters the NJMF project',
+      significance: 'major',
+      body: 'AFI\'s Knut Lange — one of Thorsrud\'s own researchers at Arbeidspsykologisk Institutt — is formally named as the AFI representative on the NJMF steering committee. For the first time, the two lineages are institutionally joined in the same project.',
+      people: ['Lange', 'Thorsrud'],
+      docs: ['IMG_0561', 'IMG_0636'],
+      quote: null
+    }
+  },
+  {
+    year: '1971',
+    left: null,
+    right: { title: 'Research project begins at Norsk Regnesentral', people: ['Nygaard', 'Bergo', 'Balstad', 'Lange'], body: 'Kristen Nygaard leads the research team at Norsk Regnesentral. Lange sits on the steering committee as the AFI bridge. The original design — researchers studying workers — is quickly replaced: researchers will support workers in their own investigations.', docs: ['IMG_0562', 'IMG_0644'] },
+    cross: null
+  },
+  {
+    year: 'Sept 1972',
+    left: null, right: null,
+    cross: {
+      label: '"I would have liked to talk with Thorsrud about this"',
+      significance: 'critical',
+      body: 'Knut Lange, writing from Hedmark in the middle of an escalating methodological crisis with Nygaard over Working Report 2, reaches toward the Thorsrud tradition for guidance — but Thorsrud is travelling. Lange must think for himself. A direct, documented line from inside the NJMF project back to AFI.',
+      people: ['Lange', 'Thorsrud', 'Nygaard'],
+      docs: ['IMG_0338'],
+      quote: 'Jeg skulle gjerne ha snakket med Thorsrud om dette, men han er bortreist, så jeg får forsøke å tenke selv.'
+    }
+  },
+  {
+    year: '1972–73',
+    left: null,
+    right: { title: 'Working groups active at four factory sites', people: ['Nygaard', 'Bergo', 'Aarset', 'Skau'], body: 'Investigation groups at each factory club meet two to three times weekly, building knowledge about EDB systems, drafting demands, and proposing reorganisations. The archive\'s 109 primary documents date from this period.', docs: ['IMG_0647', 'IMG_0560'] },
+    cross: {
+      label: 'Lange resigns — the bridge breaks',
+      significance: 'divergence',
+      body: 'Following irreconcilable disputes with Nygaard over AR2 (Working Report 2), Lange formally withdraws from the NJMF steering committee. The institutional connection between AFI and the NJMF project is severed. From here, the two lineages develop separately.',
+      people: ['Lange', 'Nygaard'],
+      docs: ['IMG_0442', 'IMG_0438'],
+      quote: null
+    }
+  },
+  {
+    year: '1973',
+    left: { title: 'Gustavsen succeeds Thorsrud at AFI', people: ['Gustavsen', 'Thorsrud'], body: 'Bjørn Gustavsen takes over as institute director. Thorsrud continues as senior researcher. The AFI line begins moving toward democratic dialogue and broad-based participation — distinct from but parallel to what the NJMF line is developing.', docs: [] },
+    right: { title: 'NJMF project complete — 8 research reports', people: ['Nygaard', 'Bergo'], body: 'The project concludes. Eight research reports document findings across four factory sites. The collective resource approach is established as a distinct methodology — explicitly positioned against the sociotechnical tradition.', docs: [] },
+    cross: null
+  },
+  {
+    year: '1974–75',
+    left: null,
+    right: { title: 'Local then central LO/NAF data agreement', people: [], body: 'First a local (Jan 1974), then a landmark central (Apr 1975) agreement between LO and NAF establishes union rights to information on computer systems and creates the datatillitsmann (data shop steward) role. Hundreds of local agreements follow.', docs: ['IMG_2381'] },
+    cross: null
+  },
+  {
+    year: '1975–79',
+    left: { title: 'AFI: workplace development programmes', people: ['Gustavsen', 'Qvale'], body: 'Gustavsen and colleagues develop broader participatory workplace change programmes — less expert-led than the sociotechnical experiments, more dialogue-based. A quiet convergence with the direction the NJMF line is taking.', docs: [] },
+    right: { title: 'DEMOS project — Sweden', people: ['Ehn', 'Sandberg'], body: 'Inspired directly by NJMF, Swedish researchers and LO launch DEMOS across four enterprises. Pelle Ehn and Åke Sandberg deepen the collective resource approach. The "We are opposed to Detailed Control" report becomes a touchstone.', docs: [] },
+    cross: {
+      label: 'Qvale bridges — evaluates both traditions',
+      significance: 'minor',
+      body: 'Thoralf Qvale (AFI, from Thorsrud\'s original team) writes the key LO evaluation of why the sociotechnical approach failed to deliver union-led democratisation. Ehn cites it in the NJMF chapter as the founding critique that justified the collective resource approach. Qvale thus contributes to the NJMF line\'s self-definition.',
+      people: ['Qvale'],
+      docs: [],
+      quote: null
+    }
+  },
+  {
+    year: '1977',
+    left: null,
+    right: { title: 'Swedish MBL; Norwegian Work Environment Act', people: [], body: 'Legislative victories: MBL gives Swedish workers codetermination rights in production decisions. The NJMF/DEMOS line\'s political programme becomes law. Parallel Norwegian legislation strengthens work environment rights.', docs: [] },
+    cross: null
+  },
+  {
+    year: '1981–85',
+    left: { title: 'Gustavsen: democratic dialogue conferences', people: ['Gustavsen'], body: 'Gustavsen develops the "dialogue conference" — a broad-based method for organisational change drawing hundreds of workers and managers into structured conversation. Sometimes framed as Everyday Democracy: bottom-up, discourse-led, not expert-designed.', docs: [] },
+    right: { title: 'UTOPIA project — design-by-doing', people: ['Ehn', 'Bødker'], body: 'Ehn and the Nordic Graphic Workers\' Union design new tools for skilled newspaper work. The tool perspective and design-by-doing methods (mockups, prototypes) define participatory design practice globally.', docs: [] },
+    cross: null
+  },
+  {
+    year: '1990s+',
+    left: { title: 'Broad-based workplace development', people: ['Gustavsen'], body: 'The AFI tradition contributes to national workplace development programmes (BW in Norway). More participatory and worker-driven than the sociotechnical origins — the two lineages have each evolved toward the other, without ever fully converging.', docs: [] },
+    right: { title: 'Participatory Design — global field', people: ['Ehn', 'Bødker', 'Nygaard'], body: 'PDC (Participatory Design Conference, from 1990) establishes PD as an international field. The NJMF project is recognised as the founding case. Nygaard\'s work on SIMULA and language as tool shapes the whole tradition.', docs: [] },
+    cross: null
+  }
+];
+
+function renderCrossover() {
+  const root = document.getElementById('cx-root');
+
+  const leftColor  = '#b07d2a';
+  const rightColor = '#4a6080';
+
+  function nodeHTML(n, side) {
+    if (!n) return '';
+    const id = 'cx-' + side + '-' + Math.random().toString(36).slice(2,7);
+    const people = (n.people||[]).map(p => `<span class="cx-node-person">${esc(p)}</span>`).join('');
+    const docs   = (n.docs||[]).map(s => `<img class="ms-doc-thumb" src="images/previews/${esc(s)}.jpg" data-stem="${esc(s)}" title="${esc(s)}" alt="${esc(s)}">`).join('');
+    return `<div class="cx-node" data-cx-id="${id}">
+      <div class="cx-node-title">${esc(n.title)}</div>
+      ${people ? `<div class="cx-node-people">${people}</div>` : ''}
+      <div class="cx-node-body">
+        <p>${esc(n.body)}</p>
+        ${docs ? `<div class="cx-node-docs">${docs}</div>` : ''}
+      </div>
+    </div>`;
+  }
+
+  function crossHTML(c, yr) {
+    if (!c) return '';
+    const id = 'cxc-' + Math.random().toString(36).slice(2,7);
+    const people = (c.people||[]).map(p => `<span class="cx-node-person">${esc(p)}</span>`).join('');
+    const docs   = (c.docs||[]).map(s => `<img class="ms-doc-thumb" src="images/previews/${esc(s)}.jpg" data-stem="${esc(s)}" title="${esc(s)}" alt="${esc(s)}">`).join('');
+    const sigLabel = {major:'Crossover', critical:'★ Critical crossover', divergence:'Divergence', minor:'Connection'}[c.significance] || 'Crossover';
+    return `<div class="cx-cross-row sig-${esc(c.significance)}">
+      <div class="cx-cross-spacer"></div>
+      <div class="cx-cross-card" data-cx-id="${id}">
+        <div class="cx-cross-sig">${sigLabel}</div>
+        <div class="cx-cross-label">${esc(c.label)}</div>
+        <div class="cx-cross-body">
+          <p>${esc(c.body)}</p>
+          ${c.quote ? `<div class="cx-cross-quote">${esc(c.quote)}</div>` : ''}
+          ${people ? `<div class="cx-cross-people">${people}</div>` : ''}
+          ${docs ? `<div><div class="cx-cross-sec">Primary documents</div><div class="cx-cross-docs">${docs}</div></div>` : ''}
+        </div>
+      </div>
+      <div class="cx-cross-spacer"></div>
+    </div>`;
+  }
+
+  const beatsHTML = CX_DATA.map(beat => {
+    const hasContent = beat.left || beat.right || beat.cross;
+    if (!hasContent) return '';
+
+    const yr = `<div class="cx-yr">${esc(beat.year)}</div>`;
+    return `<div class="cx-beat">
+      <div class="cx-cell-l">${nodeHTML(beat.left, 'l')}</div>
+      <div class="cx-cell-s">${yr}</div>
+      <div class="cx-cell-r">${nodeHTML(beat.right, 'r')}</div>
+      ${beat.cross ? crossHTML(beat.cross, beat.year) : ''}
+    </div>`;
+  }).join('');
+
+  root.innerHTML = `
+    <div class="cx-intro-band">
+      <div class="cx-lane-hd cx-lane-hd-left">
+        <div class="cx-lane-pill" style="background:${leftColor}">Thorsrud / Samarbeidsprosjektet</div>
+        <div class="cx-lane-title">Sociotechnical Design<br>& Everyday Democracy</div>
+        <div class="cx-lane-sub">AFI · Tavistock · Gustavsen</div>
+      </div>
+      <div></div>
+      <div class="cx-lane-hd cx-lane-hd-right">
+        <div class="cx-lane-pill" style="background:${rightColor}">NJMF / Nygaard</div>
+        <div class="cx-lane-title">Collective Resource<br>& Participatory Design</div>
+        <div class="cx-lane-sub">Norsk Regnesentral · Ehn · Bødker</div>
+      </div>
+    </div>
+    <div class="cx-body">${beatsHTML}</div>`;
+
+  // clicks — nodes
+  root.querySelectorAll('.cx-node[data-cx-id]').forEach(n => {
+    n.addEventListener('click', e => {
+      if (e.target.classList.contains('ms-doc-thumb')) return;
+      root.querySelectorAll('.cx-node.open').forEach(o => { if (o !== n) o.classList.remove('open'); });
+      n.classList.toggle('open');
+    });
+  });
+
+  // clicks — crossover cards
+  root.querySelectorAll('.cx-cross-card[data-cx-id]').forEach(c => {
+    c.addEventListener('click', e => {
+      if (e.target.classList.contains('ms-doc-thumb')) return;
+      root.querySelectorAll('.cx-cross-card.open').forEach(o => { if (o !== c) o.classList.remove('open'); });
+      c.classList.toggle('open');
+    });
+  });
+
+  // doc thumbnails
+  root.querySelectorAll('.ms-doc-thumb').forEach(img => {
+    img.addEventListener('click', e => { e.stopPropagation(); openByStem(img.dataset.stem); });
+  });
+}
 
 </script>
 </body>
