@@ -890,6 +890,16 @@
       font-size: 11.5px; line-height: 1.75; text-align: left;
     }
     .cx-cross-card.open .cx-cross-body { display: block; }
+    .cx-sources { margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px; }
+    .cx-sources summary {
+      font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+      cursor: pointer; color: #999; list-style: none; user-select: none; display: block;
+    }
+    .cx-sources summary::-webkit-details-marker { display: none; }
+    .cx-sources summary::before { content: '+ '; }
+    details[open].cx-sources summary::before { content: '− '; }
+    .cx-sources ul { margin: 6px 0 0 0; padding-left: 14px; }
+    .cx-sources li { font-size: 11px; color: #aaa; font-style: italic; line-height: 1.6; margin-bottom: 1px; }
     .cx-cross-quote {
       margin: 10px 0 4px;
       padding: 8px 14px;
@@ -1465,7 +1475,7 @@ const MILESTONES = [
     people: ['Ehn', 'Sandberg'],
     title: 'DEMOS project — Sweden',
     body: 'Inspired directly by NJMF, Swedish researchers and LO launch DEMOS ("trade unions, industrial democracy, and computers") across four enterprises. The union-led investigation at a locomotive repair shop in Örebro produces the influential demand: "We are opposed to Detailed Control." The model spreads across Scandinavia.',
-    docs: [],
+    docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 105–114'],
     links: [{ label: 'Scandinavian Design — The DEMOS Project', src: 'ehn-scandinavian-design' }]
   },
   {
@@ -1595,48 +1605,48 @@ document.getElementById('view-tabs').addEventListener('click', e => {
 const CX_DATA = [
   {
     year: 'c. 1950',
-    left: { title: 'Tavistock Institute / Fred Emery', people: ['Emery', 'Trist'], body: 'British sociotechnical systems theory: work groups need both technical and social requirements met simultaneously. Emery and Trist develop the theoretical foundation that Thorsrud will apply to Scandinavia.', docs: [] },
+    left: { title: 'Tavistock Institute / Fred Emery', people: ['Emery', 'Trist'], body: 'British sociotechnical systems theory: work groups need both technical and social requirements met simultaneously. Emery and Trist develop the theoretical foundation that Thorsrud will apply to Scandinavia.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 96–100', 'Bergh, Avtalt Spill (2010), pp. 181–190'] },
     right: null, cross: null
   },
   {
     year: '1962',
-    left: { title: 'LO/NAF Samarbeidsprosjektet', people: ['Thorsrud', 'Emery'], body: 'Thorsrud, at IFIM/NTH in Trondheim, launches the LO/NAF Collaboration Project with Emery — field experiments in autonomous work groups at Norwegian factories. The goal: democratise working life through sociotechnical redesign.', docs: [] },
+    left: { title: 'LO/NAF Samarbeidsprosjektet', people: ['Thorsrud', 'Emery'], body: 'Thorsrud, at IFIM/NTH in Trondheim, launches the LO/NAF Collaboration Project with Emery — field experiments in autonomous work groups at Norwegian factories. The goal: democratise working life through sociotechnical redesign.', docs: [], sources: ['AFI institutional history (OSLM/AKT-47, 1964–2013)', 'Bergh, Avtalt Spill (2010), pp. 181–190'] },
     right: null, cross: null
   },
   {
     year: '1964',
-    left: { title: 'AFI founded — Thorsrud leads psychology institute', people: ['Thorsrud', 'Lange', 'Qvale'], body: 'AFI (Arbeidsforskningsinstituttet) is established in Oslo. Thorsrud moves from Trondheim and brings the project with him. Knut Lange and Thoralf Qvale join as researchers. The project becomes the dominant research activity at the new institute.', docs: [] },
+    left: { title: 'AFI founded — Thorsrud leads psychology institute', people: ['Thorsrud', 'Lange', 'Qvale'], body: 'AFI (Arbeidsforskningsinstituttet) is established in Oslo. Thorsrud moves from Trondheim and brings the project with him. Knut Lange and Thoralf Qvale join as researchers. The project becomes the dominant research activity at the new institute.', docs: [], sources: ['AFI institutional history (OSLM/AKT-47, 1964–2013)'] },
     right: null, cross: null
   },
   {
     year: '1965–69',
-    left: { title: 'Industrial democracy field experiments', people: ['Thorsrud', 'Emery', 'Qvale'], body: 'Field experiments at Christiania Spigerverk, Hunsfoss, Norsk Hydro, and NOBØ introduce autonomous work groups. The approach spreads internationally — but in Norway, union networks fail to carry it forward. Qvale later diagnoses this failure for LO.', docs: [] },
+    left: { title: 'Industrial democracy field experiments', people: ['Thorsrud', 'Emery', 'Qvale'], body: 'Field experiments at Christiania Spigerverk, Hunsfoss, Norsk Hydro, and NOBØ introduce autonomous work groups. The approach spreads internationally — but in Norway, union networks fail to carry it forward. Qvale later diagnoses this failure for LO.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 100–103', 'Bergh, Avtalt Spill (2010), pp. 187–196'] },
     right: null, cross: null
   },
   {
     year: '1970',
     left: null,
-    right: { title: 'NJMF Landsmøte — EDB resolution passed', people: [], body: 'NJMF\'s 1970 congress resolves to build the union\'s own research capacity on data processing, planning, and control. Critically, the resolution explicitly warns that autonomous work-group experiments "must not be confused with and must not divert attention from" actions that increase collective union power — a direct public rebuke of the Samarbeidsprosjektet\'s individual-workplace focus. Where management refuses cooperation, the union must conduct its own investigations.', docs: ['IMG_2398', 'IMG_3098'] },
+    right: { title: 'NJMF Landsmøte — EDB resolution passed', people: [], body: 'NJMF\'s 1970 congress resolves to build the union\'s own research capacity on data processing, planning, and control. Critically, the resolution explicitly warns that autonomous work-group experiments "must not be confused with and must not divert attention from" actions that increase collective union power — a direct public rebuke of the Samarbeidsprosjektet\'s individual-workplace focus. Where management refuses cooperation, the union must conduct its own investigations.', docs: ['IMG_2398', 'IMG_3098'], sources: ['Bergh, Avtalt Spill (2010), p. 193'] },
     cross: {
       label: 'Knut Lange: AFI enters the NJMF project',
       significance: 'major',
       body: 'AFI\'s Knut Lange — one of Thorsrud\'s own researchers at Arbeidspsykologisk Institutt — is formally named as the AFI representative on the NJMF steering committee. For the first time, the two lineages are institutionally joined in the same project.',
       people: ['Lange', 'Thorsrud'],
       docs: ['IMG_0561', 'IMG_0636'],
-      quote: null
+      quote: null, sources: ['AFI institutional history (OSLM/AKT-47, 1964–2013)']
     }
   },
   {
     year: '1971',
     left: null,
-    right: { title: 'Research project begins at Norsk Regnesentral', people: ['Nygaard', 'Bergo', 'Balstad', 'Lange'], body: 'Kristen Nygaard leads the research team at Norsk Regnesentral. Lange sits on the steering committee as the AFI bridge. The original design — researchers studying workers — is quickly replaced: researchers will support workers in their own investigations.', docs: ['IMG_0562', 'IMG_0644'] },
+    right: { title: 'Research project begins at Norsk Regnesentral', people: ['Nygaard', 'Bergo', 'Balstad', 'Lange'], body: 'Kristen Nygaard leads the research team at Norsk Regnesentral. Lange sits on the steering committee as the AFI bridge. The original design — researchers studying workers — is quickly replaced: researchers will support workers in their own investigations.', docs: ['IMG_0562', 'IMG_0644'], sources: [] },
     cross: {
       label: 'Joint sub-project planned on psychological job requirements',
       significance: 'minor',
       body: 'The original 1971 project plan (IMG_0649) includes a sub-project on formulating "psychological job requirements" — Thorsrud and Emery\'s framework from the Samarbeidsprosjektet — and explicitly proposes attaching a researcher from Arbeidspsykologisk Institutt (Thorsrud\'s institute) to this work. At the outset, the two lineages were planning to collaborate, not compete. The theoretical rupture came later, through Lange\'s departure and the project\'s own evolution.',
       people: ['Lange', 'Nygaard', 'Thorsrud'],
       docs: ['IMG_0649'],
-      quote: null
+      quote: null, sources: []
     }
   },
   {
@@ -1648,37 +1658,37 @@ const CX_DATA = [
       body: 'Knut Lange, writing from Hedmark in the middle of an escalating methodological crisis with Nygaard over Working Report 2, reaches toward the Thorsrud tradition for guidance — but Thorsrud is travelling. Lange must think for himself. A direct, documented line from inside the NJMF project back to AFI.',
       people: ['Lange', 'Thorsrud', 'Nygaard'],
       docs: ['IMG_0338'],
-      quote: 'Jeg skulle gjerne ha snakket med Thorsrud om dette, men han er bortreist, så jeg får forsøke å tenke selv.'
+      quote: 'Jeg skulle gjerne ha snakket med Thorsrud om dette, men han er bortreist, så jeg får forsøke å tenke selv.', sources: []
     }
   },
   {
     year: '1972–73',
     left: null,
-    right: { title: 'Working groups active at four factory sites', people: ['Nygaard', 'Bergo', 'Aarset', 'Skau'], body: 'Investigation groups at each factory club meet two to three times weekly, building knowledge about EDB systems, drafting demands, and proposing reorganisations. The archive\'s 109 primary documents date from this period.', docs: ['IMG_0647', 'IMG_0560'] },
+    right: { title: 'Working groups active at four factory sites', people: ['Nygaard', 'Bergo', 'Aarset', 'Skau'], body: 'Investigation groups at each factory club meet two to three times weekly, building knowledge about EDB systems, drafting demands, and proposing reorganisations. The archive\'s 109 primary documents date from this period.', docs: ['IMG_0647', 'IMG_0560'], sources: [] },
     cross: {
       label: 'Lange resigns — the bridge breaks',
       significance: 'divergence',
       body: 'Following irreconcilable disputes with Nygaard over AR2 (Working Report 2), Lange formally withdraws from the NJMF steering committee. The institutional connection between AFI and the NJMF project is severed. From here, the two lineages develop separately.',
       people: ['Lange', 'Nygaard'],
       docs: ['IMG_0442', 'IMG_0438'],
-      quote: null
+      quote: null, sources: []
     }
   },
   {
     year: '1973',
-    left: { title: 'Gustavsen succeeds Thorsrud at AFI', people: ['Gustavsen', 'Thorsrud'], body: 'Bjørn Gustavsen takes over as institute director. Thorsrud continues as senior researcher. The AFI line begins moving toward democratic dialogue and broad-based participation — distinct from but parallel to what the NJMF line is developing.', docs: [] },
-    right: { title: 'NJMF project complete — 8 research reports', people: ['Nygaard', 'Bergo'], body: 'The project concludes. Eight research reports document findings across four factory sites. The collective resource approach is established as a distinct methodology — explicitly positioned against the sociotechnical tradition.', docs: [] },
+    left: { title: 'Gustavsen succeeds Thorsrud at AFI', people: ['Gustavsen', 'Thorsrud'], body: 'Bjørn Gustavsen takes over as institute director. Thorsrud continues as senior researcher. The AFI line begins moving toward democratic dialogue and broad-based participation — distinct from but parallel to what the NJMF line is developing.', docs: [], sources: ['AFI institutional history (OSLM/AKT-47, 1964–2013)'] },
+    right: { title: 'NJMF project complete — 8 research reports', people: ['Nygaard', 'Bergo'], body: 'The project concludes. Eight research reports document findings across four factory sites. The collective resource approach is established as a distinct methodology — explicitly positioned against the sociotechnical tradition.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 103–108'] },
     cross: null
   },
   {
     year: '1974–75',
     left: null,
-    right: { title: 'Local then central LO/NAF data agreement', people: [], body: 'First a local (Jan 1974), then a landmark central (Apr 1975) agreement between LO and NAF establishes union rights to information on computer systems and creates the datatillitsmann (data shop steward) role. Hundreds of local agreements follow.', docs: ['IMG_2381'] },
+    right: { title: 'Local then central LO/NAF data agreement', people: [], body: 'First a local (Jan 1974), then a landmark central (Apr 1975) agreement between LO and NAF establishes union rights to information on computer systems and creates the datatillitsmann (data shop steward) role. Hundreds of local agreements follow.', docs: ['IMG_2381'], sources: ['Bergh, Avtalt Spill (2010), pp. 193–196', 'Ehn, "Scandinavian Design" (1992), pp. 103–105'] },
     cross: null
   },
   {
     year: '1975–79',
-    left: { title: 'AFI: workplace development programmes', people: ['Gustavsen', 'Qvale'], body: 'Gustavsen and colleagues develop broader participatory workplace change programmes — less expert-led than the sociotechnical experiments, more dialogue-based. A quiet convergence with the direction the NJMF line is taking.', docs: [] },
+    left: { title: 'AFI: workplace development programmes', people: ['Gustavsen', 'Qvale'], body: 'Gustavsen and colleagues develop broader participatory workplace change programmes — less expert-led than the sociotechnical experiments, more dialogue-based. A quiet convergence with the direction the NJMF line is taking.', docs: [], sources: ['Bergh, Avtalt Spill (2010), pp. 196–203'] },
     right: { title: 'DEMOS project — Sweden', people: ['Ehn', 'Sandberg'], body: 'Inspired directly by NJMF, Swedish researchers and LO launch DEMOS across four enterprises. Pelle Ehn and Åke Sandberg deepen the collective resource approach. The "We are opposed to Detailed Control" report becomes a touchstone.', docs: [] },
     cross: {
       label: 'Qvale bridges — evaluates both traditions',
@@ -1686,31 +1696,31 @@ const CX_DATA = [
       body: 'Thoralf Qvale (AFI, from Thorsrud\'s original team) writes the key LO evaluation of why the sociotechnical approach failed to deliver union-led democratisation. Ehn cites it in the NJMF chapter as the founding critique that justified the collective resource approach. Qvale thus contributes to the NJMF line\'s self-definition.',
       people: ['Qvale'],
       docs: [],
-      quote: null
+      quote: null, sources: ['Ehn, "Scandinavian Design" (1992), p. 103 (citing Qvale 1976, unpublished LO evaluation)']
     }
   },
   {
     year: '1977',
     left: null,
-    right: { title: 'Swedish MBL; Norwegian Work Environment Act', people: [], body: 'Legislative victories: MBL gives Swedish workers codetermination rights in production decisions. The NJMF/DEMOS line\'s political programme becomes law. In Norway, the Arbeidsmiljøloven passes — the only industrialised country to legislate directly on work organisation (§12). Ehn later calls this "unique worldwide." Norway is now ahead of Sweden on legal grounding for participation.', docs: [] },
+    right: { title: 'Swedish MBL; Norwegian Work Environment Act', people: [], body: 'Legislative victories: MBL gives Swedish workers codetermination rights in production decisions. The NJMF/DEMOS line\'s political programme becomes law. In Norway, the Arbeidsmiljøloven passes — the only industrialised country to legislate directly on work organisation (§12). Ehn later calls this "unique worldwide." Norway is now ahead of Sweden on legal grounding for participation.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 103–105', 'Bergh, Avtalt Spill (2010), pp. 197–200'] },
     cross: {
       label: '§12 Arbeidsmiljøloven — both lineages written into law',
       significance: 'major',
       body: 'The 1977 Work Environment Act is the legislative moment where both traditions converge on paper. §12 (work organisation) owes its framing to the NJMF/NR data-rights lineage; the verneombud (safety representative) provisions were drafted by Bjørn Gustavsen at AFI — Thorsrud\'s successor. The two research lineages that had been fighting internally since 1972 simultaneously shape national legislation. Avtalt Spill notes that AFI\'s research had "greater influence on the work environment act than on the 1966 Hovedavtalen."',
       people: ['Gustavsen', 'Nygaard'],
       docs: [],
-      quote: null
+      quote: null, sources: ['Bergh, Avtalt Spill (2010), pp. 197–200', 'Ehn, "Scandinavian Design" (1992), p. 104']
     }
   },
   {
     year: '1981–85',
-    left: { title: 'Gustavsen: democratic dialogue conferences', people: ['Gustavsen'], body: 'Gustavsen develops the "dialogue conference" — a broad-based method for organisational change drawing hundreds of workers and managers into structured conversation. Sometimes framed as Everyday Democracy: bottom-up, discourse-led, not expert-designed.', docs: [] },
-    right: { title: 'UTOPIA project — design-by-doing', people: ['Ehn', 'Bødker'], body: 'Ehn and the Nordic Graphic Workers\' Union design new tools for skilled newspaper work. The tool perspective and design-by-doing methods (mockups, prototypes) define participatory design practice globally.', docs: [] },
+    left: { title: 'Gustavsen: democratic dialogue conferences', people: ['Gustavsen'], body: 'Gustavsen develops the "dialogue conference" — a broad-based method for organisational change drawing hundreds of workers and managers into structured conversation. Sometimes framed as Everyday Democracy: bottom-up, discourse-led, not expert-designed.', docs: [], sources: ['Bergh, Avtalt Spill (2010), pp. 200–203'] },
+    right: { title: 'UTOPIA project — design-by-doing', people: ['Ehn', 'Bødker'], body: 'Ehn and the Nordic Graphic Workers\' Union design new tools for skilled newspaper work. The tool perspective and design-by-doing methods (mockups, prototypes) define participatory design practice globally.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 114–132'] },
     cross: null
   },
   {
     year: '1982',
-    left: { title: 'HABUT — bedriftsutvikling enters Hovedavtalen', people: ['Gustavsen', 'Balstad'], body: 'Tilleggsavtale I (HABUT) is added to the main LO/NAF agreement, creating a joint framework for workplace development. Gustavsen\'s AFI shapes the "broad participation" methodology. The LO/NAF collaboration project and the NJMF line have now both contributed to the same institutional settlement.', docs: [] },
+    left: { title: 'HABUT — bedriftsutvikling enters Hovedavtalen', people: ['Gustavsen', 'Balstad'], body: 'Tilleggsavtale I (HABUT) is added to the main LO/NAF agreement, creating a joint framework for workplace development. Gustavsen\'s AFI shapes the "broad participation" methodology. The LO/NAF collaboration project and the NJMF line have now both contributed to the same institutional settlement.', docs: [], sources: ['Bergh, Avtalt Spill (2010), pp. 198–203'] },
     right: null,
     cross: {
       label: 'Jan Balstad: from NJMF committee member to HABUT godfather',
@@ -1718,13 +1728,13 @@ const CX_DATA = [
       body: 'Jan Balstad — a working member of the NJMF project\'s Arbeidsutvalg in 1971–73 — is one of two people later credited as a "godfather" of the 1982 HABUT bedriftsutvikling agreement (celebrated at its 25th anniversary in 2007). A single career traces the full arc: from the radical NJMF research project to the institutionalised, LO/NAF-jointly-managed development programme. The individual biography is the clearest evidence of how the two lineages eventually merged.',
       people: ['Balstad', 'Gustavsen'],
       docs: [],
-      quote: null
+      quote: null, sources: ['Bergh, Avtalt Spill (2010), pp. 198–203 (Balstad named as HABUT godfather at 2007 anniversary)']
     }
   },
   {
     year: '1990s+',
-    left: { title: 'Broad-based workplace development', people: ['Gustavsen'], body: 'The AFI tradition contributes to national workplace development programmes (BW in Norway). More participatory and worker-driven than the sociotechnical origins — the two lineages have each evolved toward the other, without ever fully converging.', docs: [] },
-    right: { title: 'Participatory Design — global field', people: ['Ehn', 'Bødker', 'Nygaard'], body: 'PDC (Participatory Design Conference, from 1990) establishes PD as an international field. The NJMF project is recognised as the founding case. Nygaard\'s work on SIMULA and language as tool shapes the whole tradition.', docs: [] },
+    left: { title: 'Broad-based workplace development', people: ['Gustavsen'], body: 'The AFI tradition contributes to national workplace development programmes (BW in Norway). More participatory and worker-driven than the sociotechnical origins — the two lineages have each evolved toward the other, without ever fully converging.', docs: [], sources: ['Bergh, Avtalt Spill (2010), pp. 200–203'] },
+    right: { title: 'Participatory Design — global field', people: ['Ehn', 'Bødker', 'Nygaard'], body: 'PDC (Participatory Design Conference, from 1990) establishes PD as an international field. The NJMF project is recognised as the founding case. Nygaard\'s work on SIMULA and language as tool shapes the whole tradition.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 96–99'] },
     cross: null
   }
 ];
@@ -1734,6 +1744,12 @@ function renderCrossover() {
 
   const leftColor  = '#b07d2a';
   const rightColor = '#4a6080';
+
+  function sourcesHTML(srcs) {
+    if (!srcs || !srcs.length) return '';
+    const items = srcs.map(s => `<li>${esc(s)}</li>`).join('');
+    return `<details class="cx-sources"><summary>Secondary sources</summary><ul>${items}</ul></details>`;
+  }
 
   function nodeHTML(n, side) {
     if (!n) return '';
@@ -1746,6 +1762,7 @@ function renderCrossover() {
       <div class="cx-node-body">
         <p>${esc(n.body)}</p>
         ${docs ? `<div class="cx-node-docs">${docs}</div>` : ''}
+        ${sourcesHTML(n.sources)}
       </div>
     </div>`;
   }
@@ -1766,6 +1783,7 @@ function renderCrossover() {
           ${c.quote ? `<div class="cx-cross-quote">${esc(c.quote)}</div>` : ''}
           ${people ? `<div class="cx-cross-people">${people}</div>` : ''}
           ${docs ? `<div><div class="cx-cross-sec">Primary documents</div><div class="cx-cross-docs">${docs}</div></div>` : ''}
+          ${sourcesHTML(c.sources)}
         </div>
       </div>
       <div class="cx-cross-spacer"></div>
