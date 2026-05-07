@@ -818,8 +818,9 @@
       display: inline-block;
       font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
       font-weight: 700; padding: 3px 10px; border-radius: 20px; color: #fff;
-      margin-bottom: 6px;
+      margin-bottom: 3px;
     }
+    .cx-lane-pill-sub { font-size: 10px; color: var(--mid); margin-bottom: 6px; }
     .cx-lane-title { font-size: 14px; font-weight: 700; line-height: 1.3; }
     .cx-lane-sub   { font-size: 10.5px; color: var(--mid); margin-top: 2px; }
 
@@ -985,22 +986,22 @@
   <main class="main" id="main">
 
     <div class="view-tabs" id="view-tabs">
-      <button class="vtab active" data-view="archive">Archive</button>
-      <button class="vtab" data-view="milestones">Milestones</button>
+      <button class="vtab active" data-view="milestones">Milestones</button>
       <button class="vtab" data-view="crossover">Crossover</button>
+      <button class="vtab" data-view="archive">Archive</button>
     </div>
 
-    <div id="view-archive">
+    <div id="view-archive" style="display:none;">
       <div id="tl-root"></div>
     </div><!-- /view-archive -->
 
-    <div id="view-milestones" style="display:none;">
+    <div id="view-milestones">
       <div id="ms-root"></div>
     </div>
 
     <div id="view-crossover" style="display:none;"><div id="cx-root"></div></div>
 
-    <div class="terminus" id="tl-terminus">
+    <div class="terminus" id="tl-terminus" style="display:none;">
       <div class="t-label">The moment</div>
       <div class="t-text">DEMOS project &thinsp;&middot;&thinsp; 1975</div>
     </div>
@@ -1903,13 +1904,15 @@ function renderCrossover() {
   root.innerHTML = `
     <div class="cx-intro-band">
       <div class="cx-lane-hd cx-lane-hd-left">
-        <div class="cx-lane-pill" style="background:${leftColor}">Thorsrud / Samarbeidsprosjektet</div>
+        <div class="cx-lane-pill" style="background:${leftColor}">Thorsrud</div>
+        <div class="cx-lane-pill-sub">Samarbeidsprosjektet</div>
         <div class="cx-lane-title">Sociotechnical Design<br>& Everyday Democracy</div>
         <div class="cx-lane-sub">AFI · Tavistock · Gustavsen</div>
       </div>
       <div></div>
       <div class="cx-lane-hd cx-lane-hd-right">
-        <div class="cx-lane-pill" style="background:${rightColor}">NJMF / Nygaard</div>
+        <div class="cx-lane-pill" style="background:${rightColor}">Nygaard</div>
+        <div class="cx-lane-pill-sub">NJMF</div>
         <div class="cx-lane-title">Collective Resource<br>& Participatory Design</div>
         <div class="cx-lane-sub">Norsk Regnesentral · Ehn · Bødker</div>
       </div>
@@ -1939,6 +1942,8 @@ function renderCrossover() {
     img.addEventListener('click', e => { e.stopPropagation(); openByStem(img.dataset.stem); });
   });
 }
+
+renderMilestones();
 
 </script>
 </body>
