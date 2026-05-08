@@ -1142,14 +1142,16 @@ function render() {
       const isStar   = starred.has(e.stem) || hasAnn;
       const nPhotos  = (e.stems || [e.stem]).length;
       const photoTag = nPhotos > 1 ? `<span class="en-photos">&#128247; ${nPhotos}</span>` : '';
-      const hasPub   = !!getPublication(e);
+      const pub      = getPublication(e);
+      const hasPub   = !!pub;
+      const boxLabel = pub ? REPORTS_NB[pub.report].short : e.box;
       return `<article class="en${isStar ? ' starred' : ''}${hasAnn ? ' has-ann' : ''}${hasPub ? ' has-pub' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}"
           data-s="${esc((e.date+' '+e.box+' '+e.desc+' '+(e.ocr||'')).toLowerCase())}"
           title="Click to view document">
         <button class="en-star" title="${isStar ? 'Unstar' : 'Star'}" data-stem="${esc(e.stem)}">${isStar ? '★' : '☆'}</button>
         <div class="en-left">
           <div class="en-date">${esc(e.date)}</div>
-          <div class="en-box">${esc(e.box)}</div>
+          <div class="en-box">${esc(boxLabel)}</div>
         </div>
         <div class="en-right">
           <div class="en-desc" data-orig="${esc(e.desc)}" data-snip="${esc(snippet)}">${esc(snippet)}${photoTag}</div>
