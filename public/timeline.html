@@ -1138,10 +1138,10 @@ function render() {
     const ents = byYear[yr];
     const rows = ents.map((e, i) => {
       const snippet  = e.desc.length > 200 ? e.desc.slice(0, 197) + '…' : e.desc;
-      const isStar   = starred.has(e.stem);
+      const hasAnn   = !!(ANNOTATIONS[e.stem] || (e.stems||[]).some(s => ANNOTATIONS[s]));
+      const isStar   = starred.has(e.stem) || hasAnn;
       const nPhotos  = (e.stems || [e.stem]).length;
       const photoTag = nPhotos > 1 ? `<span class="en-photos">&#128247; ${nPhotos}</span>` : '';
-      const hasAnn   = !!(ANNOTATIONS[e.stem] || (e.stems||[]).some(s => ANNOTATIONS[s]));
       const hasPub   = !!getPublication(e);
       return `<article class="en${isStar ? ' starred' : ''}${hasAnn ? ' has-ann' : ''}${hasPub ? ' has-pub' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}"
           data-s="${esc((e.date+' '+e.box+' '+e.desc+' '+(e.ocr||'')).toLowerCase())}"
@@ -1449,7 +1449,11 @@ const PUBLICATIONS = {
   'IMG_2389':   { report: 'innforing', para: 1205 },
   'IMG_2453':   { report: 'innforing', para: 1273 },
   'IMG_2466':   { report: 'innforing', para: 1383 },
-  'IMG_3132 2': { report: 'innforing', para: 2087 }
+  'IMG_3132 2': { report: 'innforing', para: 2087 },
+  // The 1970 Landsmøte resolution: text reproduced verbatim in Innføring
+  // (verified via distinctive terms — Tangnes, Overenskomst og lønnsformer,
+  // produksjonsfaktor — all present)
+  'IMG_2398':   { report: 'innforing', para: 703 }
 };
 
 // Find a publication for an entry: text-match first, then box-label fallback
