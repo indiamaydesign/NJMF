@@ -889,6 +889,13 @@
     }
     .cx-node:hover { border-color: #c0beba; box-shadow: 0 2px 6px rgba(0,0,0,.05); }
     .cx-node.open  { border-color: var(--ink); }
+    /* "Cousin" beats — methodologically related but not in the direct lineage */
+    .cx-node.cousin { border-style: dashed; opacity: 0.85; background: #faf8f3; }
+    .cx-node.cousin::before {
+      content: 'Methodological cousin'; display: block;
+      font-size: 8.5px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: #b8a873; margin-bottom: 6px; font-weight: 600;
+    }
     .cx-node-title { font-size: 12.5px; font-weight: 600; line-height: 1.35; }
     .cx-node-people { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 6px; }
     .cx-node-person {
@@ -2052,6 +2059,19 @@ const CX_DATA = [
     left: { title: 'Broad-based workplace development', people: ['Gustavsen'], body: 'The AFI tradition contributes to national workplace development programmes (BW in Norway). More participatory and worker-driven than the sociotechnical origins — the two lineages have each evolved toward the other, without ever fully converging.', docs: [], sources: ['Bergh, Avtalt Spill (2010), pp. 200–203'] },
     right: { title: 'Participatory Design — global field', people: ['Ehn', 'Bødker', 'Nygaard'], body: 'PDC (Participatory Design Conference, from 1990) establishes PD as an international field. The NJMF project is recognised as the founding case. Nygaard\'s work on SIMULA and language as tool shapes the whole tradition.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 96–99'] },
     cross: null
+  },
+  {
+    year: '2000s+',
+    left: null,
+    right: {
+      cousin: true,
+      title: 'Service design at AHO — methods inherited, politics dropped',
+      people: ['Clatworthy', 'Morrison', 'Bratteteig (×UiO)'],
+      body: 'AHO\'s Institute of Design becomes an internationally significant node in service design — Centre for Service Innovation, the AT-ONE method, deep collaboration with Norwegian public sector and industry. The toolkit (co-design workshops, prototyping with users, stakeholder mapping, "design-by-doing") descends recognisably from UTOPIA. But the institutional family is different: design school not informatics, with formative influences from Scandinavian industrial design and the international service-design wave (Live|Work, IDEO). The political content — workers\' collective resources, class conflict, the union as design subject — has largely dropped out, replaced by user-centred / customer / citizen framings. AHO and UiO Informatics cross-pollinate (Bratteteig collaborates across), but service design at AHO is best read as a methodological cousin to the NJMF tradition rather than a direct descendant. Including it on this lane is a position, not a settled fact: some scholars frame service design as PD\'s continuation; others see it as design-thinking that picked up some PD vocabulary while shedding its politics.',
+      docs: [],
+      sources: ['Simonsen & Robertson (eds.), Routledge International Handbook of Participatory Design (2013)', 'AHO Centre for Connected Care / Centre for Service Innovation']
+    },
+    cross: null
   }
 ];
 
@@ -2070,9 +2090,10 @@ function renderCrossover() {
   function nodeHTML(n, side) {
     if (!n) return '';
     const id = 'cx-' + side + '-' + Math.random().toString(36).slice(2,7);
+    const cls = 'cx-node' + (n.cousin ? ' cousin' : '');
     const people = (n.people||[]).map(p => `<span class="cx-node-person">${esc(p)}</span>`).join('');
     const docs   = (n.docs||[]).map(s => `<img class="ms-doc-thumb" src="images/previews/${esc(s)}.jpg" data-stem="${esc(s)}" title="${esc(s)}" alt="${esc(s)}">`).join('');
-    return `<div class="cx-node" data-cx-id="${id}">
+    return `<div class="${cls}" data-cx-id="${id}">
       <div class="cx-node-title">${esc(n.title)}</div>
       ${people ? `<div class="cx-node-people">${people}</div>` : ''}
       <div class="cx-node-body">
