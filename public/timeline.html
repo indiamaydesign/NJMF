@@ -1674,12 +1674,22 @@ const MILESTONES = [
     links: [{ label: 'Scandinavian Design — The NJMF Project', src: 'ehn-scandinavian-design' }]
   },
   {
+    id: 'raastad-lunch-70',
+    year: '1970', displayDate: 'Spring 1970 (per Bergo)',
+    phase: 'Phase 1 — Launch', phaseKey: 'ph-p1',
+    people: ['Raastad', 'Nygaard', 'Bergo'],
+    title: 'A lunch in Oslo (Bergo\'s recollection)',
+    body: 'In Olav Terje Bergo\'s 2025 oral history, he recalls Hans Jørgen Raastad — leader of AUF (Labour Party Youth) — arranging a lunch in Oslo in 1970 with Kristen Nygaard. Bergo says they "agreed that I would join Kristen at the Norwegian Computing Center when I finished my studies at NHH and the University in 1971." This conversation is not captured by any document in the archive. It is one participant\'s reconstruction fifty years on, and may foreground the lunch more decisively than it felt at the time. Listed here because it is the only available account of how the Bergo–Nygaard collaboration originated, and because it points to a Bergen student-network precursor to the project that the published secondary literature does not discuss.',
+    docs: [],
+    links: [{ label: 'Bergo oral history (2025)', src: 'bergo-oral-history-2025' }]
+  },
+  {
     id: 'njmf-letter-may70',
     year: '1970', displayDate: '13 May 1970',
     phase: 'Phase 1 — Launch', phaseKey: 'ph-p1',
     people: ['Tangnes', 'Balstad'],
     title: 'NJMF formally requests NR\'s participation',
-    body: 'In the weeks after the Landsmøte resolution, NJMF writes to Norsk Regnesentral asking them to take on the research project on planning, control and EDB. The opening move of the founding correspondence — sets in motion the responses from NR (10 June) and AFI (12 June). According to Olav Terje Bergo\'s 2025 oral history, the actual decision to bring Bergo into the project had already been made informally — at a 1970 lunch in Oslo arranged by Hans Jørgen Raastad (leader of AUF). The letters formalised what the lunch had already settled.',
+    body: 'In the weeks after the Landsmøte resolution, NJMF writes to Norsk Regnesentral asking them to take on the research project on planning, control and EDB. The opening move of the documented founding correspondence — sets in motion the responses from NR (10 June) and AFI (12 June). In Olav Terje Bergo\'s 2025 oral history, he recalls that the personal decision for him to join the project had already been settled informally over a 1970 lunch in Oslo arranged by Hans Jørgen Raastad (leader of AUF). That account is one perspective recorded fifty years on; the archive itself shows only the formal letter chain.',
     docs: ['IMG_3167'],
     links: [{ label: 'Bergo oral history (2025)', src: 'bergo-oral-history-2025' }]
   },
@@ -1689,7 +1699,7 @@ const MILESTONES = [
     phase: 'Phase 1 — Launch', phaseKey: 'ph-p1',
     people: ['Berntsen', 'Nygaard', 'Lange'],
     title: 'NR accepts — and AFI is already at the table',
-    body: 'Drude Berntsen (NR institute director) and Kristen Nygaard reply on Norsk Regnesentral letterhead, formally accepting the project. Critically, their letter records that NR has already held conferences with NJMF representatives and a representative of Arbeidspsykologisk Institutt (Thorsrud\'s institute) before responding. Two days later (12 June), Knut Lange replies on full Arbeidsforskningsinstituttene letterhead. The two traditions are coordinating from the very first week — six years before the secondary literature\'s account begins.',
+    body: 'Drude Berntsen (NR institute director) and Kristen Nygaard reply on Norsk Regnesentral letterhead, formally accepting the project. Their letter records that NR has already held conferences with NJMF representatives and a representative of Arbeidspsykologisk Institutt (Thorsrud\'s institute) before responding. Two days later (12 June), Knut Lange replies on full Arbeidsforskningsinstituttene letterhead. The two traditions are coordinating in the very first weeks — earlier than the standard secondary-literature framing of an AFI/NJMF "encounter" suggests.',
     docs: ['IMG_3170', 'IMG_1110'],
     links: [{ label: 'Bergo oral history (2025)', src: 'bergo-oral-history-2025' }]
   },
@@ -1722,6 +1732,16 @@ const MILESTONES = [
     body: 'Investigation groups of union members at each of four factory sites (including Hydraulik A/S) meet two to three times weekly. They analyse planning and control systems, propose reorganisations, draft local union policies, and build shared knowledge about EDB. The archive\'s 109 primary documents date largely from this period.',
     docs: ['IMG_0647', 'IMG_3210', 'IMG_0560', 'IMG_0659'],
     links: []
+  },
+  {
+    id: 'eu-referendum-72',
+    year: '1972', displayDate: '25 Sept 1972',
+    phase: 'Phase 1 — Research', phaseKey: 'ph-p1',
+    people: ['Nygaard', 'Bergo'],
+    title: 'EU referendum loss (Bergo\'s reading: a possible funding shadow)',
+    body: 'Norway votes against EU membership. Per Bergo\'s 2025 oral history, he and Nygaard had been "key members of the strategy group" against Norwegian EU membership — a stance that put them at odds with Labour Party and trade union leadership, who had campaigned for membership. Bergo proposes (in retrospect) that this political damage may have contributed to the project\'s funding cutoff in 1974: "It\'s may be the reason we did not get funding for further research in Norway." This causal claim is Bergo\'s reconstruction, not corroborated by documents in our archive. Worth noting because it coincides chronologically with Lange\'s resignation (11–13 September 1972) and the AFI rupture — multiple political pressures bear on the project in the same fortnight.',
+    docs: [],
+    links: [{ label: 'Bergo oral history (2025)', src: 'bergo-oral-history-2025' }]
   },
   {
     id: 'local-avtale-74',
@@ -1900,6 +1920,12 @@ const CX_DATA = [
     year: '1965–69',
     left: { title: 'Industrial democracy field experiments', people: ['Thorsrud', 'Emery', 'Qvale'], body: 'Field experiments at Christiania Spigerverk, Hunsfoss, Norsk Hydro, and NOBØ introduce autonomous work groups. The approach spreads internationally — but in Norway, union networks fail to carry it forward. Qvale later diagnoses this failure for LO.', docs: [], sources: ['Ehn, "Scandinavian Design" (1992), pp. 100–103', 'Bergh, Avtalt Spill (2010), pp. 187–196'] },
     right: null, cross: null
+  },
+  {
+    year: 'Spring 1970',
+    left: null,
+    right: { title: 'A Bergen precursor (in Bergo\'s account)', people: ['Raastad', 'Nygaard', 'Bergo'], body: 'In Olav Terje Bergo\'s 2025 oral history, the project\'s research approach has a Bergen precursor: a network of social-democratic NHH (business-economy) students recruiting external competence to assist West Coast trade unions struggling against industrial decline. Hans Jørgen Raastad (AUF) arranges a lunch in Oslo where Bergo agrees to join Nygaard at NR after graduation. This is Bergo\'s reconstruction; no NJMF document captures the lunch, and the Bergen network ("Sosialistiske siviløkonomer") does not appear in published secondary literature on participatory design. Listed as one perspective worth weighing — not as the established origin story.', docs: [], sources: ['Bergo oral history (2025)'] },
+    cross: null
   },
   {
     year: '1970',

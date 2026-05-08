@@ -4,23 +4,30 @@ Olav Terje Bergo — Oral history interviews
 Source PDF: public/images/primary/raw/Oral history/Olav interviews.pdf
 
 ═══════════════════════════════════════════════════════════════════════
-KEY FINDINGS FROM THE BERGO INTERVIEWS
+WHAT BERGO ADDS — HIS ACCOUNT, FIFTY YEARS ON
 ═══════════════════════════════════════════════════════════════════════
 
-1. THE PROJECT'S ORIGIN STORY: A 1970 LUNCH IN OSLO
-   The single most consequential moment for the NJMF project's research
-   direction was an informal lunch in 1970, not any letter in the archive.
-   Hans Jørgen Raastad — leader of the Social Democratic Youth (AUF) at
-   the end of the 1960s — told Kristen Nygaard about Bergo's initiative
-   to recruit business-economy students from NHH (Bergen) to assist trade
-   unions on the West Coast. Hans then "invited Kristen and me to a
-   lunch in 1970 and we agreed that I would join Kristen at the Norwegian
-   Computing Center when I finished my studies at NHH and the University
-   in 1971."
+Note on framing: this is one participant's recollection, recorded in
+2025. It surfaces angles absent from the published secondary literature
+(Ehn 1992, Bergh 2010), but it is one perspective among many — to be
+weighed against the archival material, not used to overwrite it.
 
-   This decision — the informal pairing of Nygaard with Bergo, and the
-   importation of Bergo's NHH-network methodology into Norsk Regnesentral
-   — is the foundational moment that no archival letter captures.
+1. BERGO'S ORIGIN STORY: A 1970 LUNCH IN OSLO
+   In Bergo's account, the consequential moment for his joining the
+   project was an informal lunch in 1970. Hans Jørgen Raastad — leader
+   of the Social Democratic Youth (AUF) at the end of the 1960s — told
+   Kristen Nygaard about Bergo's initiative recruiting business-economy
+   students from NHH (Bergen) to assist trade unions on the West Coast.
+   Bergo says: "Hans invited Kristen and me to a lunch in 1970 and we
+   agreed that I would join Kristen at the Norwegian Computing Center
+   when I finished my studies at NHH and the University in 1971."
+
+   This is not corroborated by any archival document — it lives only
+   in Bergo's memory. Worth noting for the historiography: it is the
+   kind of foundational moment that almost certainly happened in some
+   form, but the exact framing ("we agreed I would join") is Bergo's
+   reconstruction and may be more decisive in retrospect than it felt
+   at the time.
 
 2. THE BERGEN PRECURSOR: "SOSIALISTISKE SIVILØKONOMER"
    Before joining NR, Bergo was leader of a social-democratic student
@@ -123,9 +130,11 @@ KEY FINDINGS FROM THE BERGO INTERVIEWS
    Bergo has — and what he plans to deposit at Arbeiderbevegelsens
    Arkiv (Labour Movement Archive) once sorted.
 
-9. SWEDEN'S APPARENT PRIMACY IS A PUBLICATION ARTEFACT
-   Bergo addresses head-on why secondary literature treats Sweden as
-   the origin of participatory design:
+9. BERGO ON WHY SWEDEN OFTEN GETS THE CREDIT
+   Bergo's view on why secondary literature treats Sweden as the origin
+   of participatory design (one perspective among several — Ehn 1992
+   himself credits Norway as the lineage's origin, so this is not
+   universal):
 
    "Forklaringen på det kan være at Kristen og jeg var omstridte
    forskere i Norge, og mange akademikere oppfattet oss som politiske
@@ -157,30 +166,38 @@ KEY FINDINGS FROM THE BERGO INTERVIEWS
      arbetslivet", LiberFörlag, Stockholm 1978
 
 ═══════════════════════════════════════════════════════════════════════
-COMMENTARY: HOW THIS RECONFIGURES THE NARRATIVE
+ANGLES BERGO'S ACCOUNT OPENS UP — TO BE WEIGHED, NOT ADOPTED
 ═══════════════════════════════════════════════════════════════════════
 
-The Bergo interview supplies the project's "before" and "after" — both
-of which are missing from the published archive:
+The Bergo interview is one participant's reconstruction fifty years on.
+It opens up two angles on the project that the published secondary
+literature (Ehn 1992, Bergh 2010) does not foreground. These are
+hypotheses to test against the archive, not corrections to the record.
 
-BEFORE: The project's intellectual origin is not at NR or in the 1970
-Landsmøte resolution. It is in Bergen, in a network of social-democratic
-business-economy students helping struggling West Coast trade unions
-in the late 1960s. Bergo brought that methodology — work groups,
-study groups, recruiting external competence — into NR via the
-Raastad lunch. The "researchers studying workers" → "researchers
-supporting workers in their own investigations" pivot, which secondary
-literature attributes to a methodological insight inside the project,
-was actually imported pre-formed from Bergen's student-trade-union
-work.
+BEFORE — Bergen as a possible precursor:
+   Bergo positions the project's research method as something he had
+   already been practising in Bergen with West Coast trade unions, and
+   carried with him into NR via the 1970 Raastad lunch. If true, this
+   would qualify the standard story that the "researchers studying
+   workers" → "researchers supporting workers' own investigations"
+   pivot was a methodological insight discovered inside the NJMF
+   project. Worth investigating: the Bergen "Sosialistiske
+   siviløkonomer" network does not appear in any NJMF document we
+   currently have, so this is testable only by going outside our
+   archive (e.g. asking Hallvard Bakke, Roar Flåthen, Jan Balstad).
 
-AFTER: The project's funding cutoff in 1974 is not (only) a story about
-the rise of competing programmes. It is also possibly a story about
-Labour Party retribution against Nygaard and Bergo for their leading
-role in the anti-EU campaign of 1972. The same political moment that
-breaks the AFI bridge (Lange's resignation, September 1972) coincides
-with the EU referendum that breaks the project's relationship with
-Labour leadership.
+AFTER — EU politics as a possible cause of the 1974 funding cutoff:
+   Bergo claims his and Nygaard's leading role in the anti-EU campaign
+   of 1972 cost them Labour Party and trade union goodwill, contributing
+   to the funding non-renewal of 1974. The September 1972 EU referendum
+   loss does coincide chronologically with Lange's resignation and the
+   AFI rupture. Whether the political punishment hypothesis holds, or
+   whether the 1974 cutoff has more conventional explanations
+   (project completion, strategic shift toward agreements rather than
+   research), is a research question — not a settled finding.
 
-Both reframings are absent from Ehn (Scandinavian Design, 1992) and
-Bergh (Avtalt Spill, 2010).
+Both angles are valuable for the historiography because they shift
+attention away from "the published Norwegian story" toward less-tracked
+threads: a Bergen student network, and the way Cold War / EU politics
+shaped what kinds of research could continue. Treat them as starting
+points for further investigation, not as the new received version.
