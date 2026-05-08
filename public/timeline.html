@@ -1071,16 +1071,16 @@
         </div>
         <div class="type-filter-label">Document type</div>
         <div class="type-filter" id="type-filter">
-          <label class="type-row"><input type="checkbox" data-type="letter" checked> <span>Letters</span></label>
-          <label class="type-row"><input type="checkbox" data-type="report" checked> <span>Reports</span></label>
-          <label class="type-row"><input type="checkbox" data-type="draft" checked> <span>Report drafts</span></label>
-          <label class="type-row"><input type="checkbox" data-type="meeting" checked> <span>Meeting minutes</span></label>
-          <label class="type-row"><input type="checkbox" data-type="proposal" checked> <span>Plans / proposals</span></label>
-          <label class="type-row"><input type="checkbox" data-type="agenda" checked> <span>Programmes / agendas</span></label>
-          <label class="type-row"><input type="checkbox" data-type="memo" checked> <span>Memos / notater</span></label>
-          <label class="type-row"><input type="checkbox" data-type="admin" checked> <span>Admin / budgets</span></label>
-          <label class="type-row"><input type="checkbox" data-type="handwritten" checked> <span>Handwritten</span></label>
-          <label class="type-row"><input type="checkbox" data-type="misc" checked> <span>Other</span></label>
+          <label class="type-row"><input type="checkbox" data-type="letter"> <span>Letters</span></label>
+          <label class="type-row"><input type="checkbox" data-type="report"> <span>Reports</span></label>
+          <label class="type-row"><input type="checkbox" data-type="draft"> <span>Report drafts</span></label>
+          <label class="type-row"><input type="checkbox" data-type="meeting"> <span>Meeting minutes</span></label>
+          <label class="type-row"><input type="checkbox" data-type="proposal"> <span>Plans / proposals</span></label>
+          <label class="type-row"><input type="checkbox" data-type="agenda"> <span>Programmes / agendas</span></label>
+          <label class="type-row"><input type="checkbox" data-type="memo"> <span>Memos / notater</span></label>
+          <label class="type-row"><input type="checkbox" data-type="admin"> <span>Admin / budgets</span></label>
+          <label class="type-row"><input type="checkbox" data-type="handwritten"> <span>Handwritten</span></label>
+          <label class="type-row"><input type="checkbox" data-type="misc"> <span>Other</span></label>
         </div>
       </div>
       <div class="sb-ft">
@@ -1231,7 +1231,8 @@ function getDocType(e) {
   return 'misc';
 }
 const ALL_TYPES = ['letter','report','draft','meeting','proposal','agenda','memo','admin','handwritten','misc'];
-const ACTIVE_TYPES = new Set(ALL_TYPES);
+// Pattern: empty = no filter (show all). Tick to narrow.
+const ACTIVE_TYPES = new Set();
 
 // People mentioned — return Set of canonical name keys present in the entry
 const NAME_KEYS = ['Nygaard','Bergo','Lange','Thorsrud','Tangnes','Balstad','Skau','Aarset','Elgsa','Berntsen'];
@@ -1381,9 +1382,9 @@ function toggleStar(stem) {
 
 function filter(q) {
   const ql = q.toLowerCase().trim();
-  const allTypes = ACTIVE_TYPES.size === ALL_TYPES.length;
+  const anyTypes = ACTIVE_TYPES.size > 0;
   const anyNames = ACTIVE_NAMES.size > 0;
-  const filtered = ql || starredOnly || !allTypes || anyNames;
+  const filtered = ql || starredOnly || anyTypes || anyNames;
   let shown = 0;
   years.forEach(yr => {
     const sec  = document.getElementById('yr' + yr);
@@ -1391,7 +1392,7 @@ function filter(q) {
     sec.querySelectorAll('.en').forEach(el => {
       const textMatch = !ql || (el.dataset.s || '').includes(ql);
       const starMatch = !starredOnly || starred.has(el.dataset.stem);
-      const typeMatch = allTypes || ACTIVE_TYPES.has(el.dataset.type);
+      const typeMatch = !anyTypes || ACTIVE_TYPES.has(el.dataset.type);
       const nameMatch = !anyNames || (el.dataset.people || '').split(',').some(n => ACTIVE_NAMES.has(n));
       const match = textMatch && starMatch && typeMatch && nameMatch;
       el.classList.toggle('gone', !match);
@@ -1422,18 +1423,12 @@ document.getElementById('name-filter').addEventListener('change', e => {
   filter(document.getElementById('search').value);
 });
 
-// Type filter checkboxes — keep ACTIVE_TYPES in sync; require ≥1 checked
+// Type filter checkboxes — empty = no filter; tick to narrow
 document.getElementById('type-filter').addEventListener('change', e => {
   const cb = e.target.closest('input[type="checkbox"]');
   if (!cb) return;
   const t = cb.dataset.type;
-  if (cb.checked) {
-    ACTIVE_TYPES.add(t);
-  } else if (ACTIVE_TYPES.size > 1) {
-    ACTIVE_TYPES.delete(t);
-  } else {
-    cb.checked = true; // re-check; can't have zero
-  }
+  if (cb.checked) ACTIVE_TYPES.add(t); else ACTIVE_TYPES.delete(t);
   filter(document.getElementById('search').value);
 });
 
