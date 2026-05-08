@@ -1016,14 +1016,25 @@
                placeholder="Keyword or historical actor…">
         <button id="search-clear" title="Clear">&#215;</button>
       </div>
-      <div class="chips" id="chips"><button class="chip" data-term="Nygaard">Kristen Nygaard</button>
+      <div class="chips" id="chips">
         <button class="chip" data-term="DEMOS">DEMOS</button>
         <button class="chip" data-term="EDB">EDB</button>
         <button class="chip" data-term="Regnesentral">Regnesentral</button>
-        <button class="chip" data-term="Bergo">Olav Terje Bergo</button>
         <button class="chip" data-term="NTNF">NTNF</button>
-        <button class="chip" data-term="Aarset">Svein Aarset</button>
-        <button class="chip" data-term="Skau">Leif Skau</button></div>
+      </div>
+      <div class="type-filter-label">People mentioned</div>
+      <div class="type-filter" id="name-filter">
+        <label class="type-row"><input type="checkbox" data-name="Nygaard"> <span>Kristen Nygaard</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Bergo"> <span>Olav Terje Bergo</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Lange"> <span>Knut Lange</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Thorsrud"> <span>Einar Thorsrud</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Tangnes"> <span>Kåre Tangnes</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Balstad"> <span>Jan Balstad</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Skau"> <span>Leif Skau</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Aarset"> <span>Svein Aarset</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Elgsa"> <span>Knut Elgsaass</span></label>
+        <label class="type-row"><input type="checkbox" data-name="Berntsen"> <span>Drude Berntsen</span></label>
+      </div>
       <div class="type-filter-label">Document type</div>
       <div class="type-filter" id="type-filter">
         <label class="type-row"><input type="checkbox" data-type="letter" checked> <span>Letters</span></label>
@@ -1153,6 +1164,16 @@ function getDocType(e) {
 }
 const ACTIVE_TYPES = new Set(['letter', 'report', 'misc']);
 
+// People mentioned — return Set of canonical name keys present in the entry
+const NAME_KEYS = ['Nygaard','Bergo','Lange','Thorsrud','Tangnes','Balstad','Skau','Aarset','Elgsa','Berntsen'];
+function getPeople(e) {
+  const text = (e.ocr || '') + ' ' + (e.desc || '');
+  const set = new Set();
+  for (const k of NAME_KEYS) if (text.includes(k)) set.add(k);
+  return set;
+}
+const ACTIVE_NAMES = new Set(); // empty = no filter
+
 // ── Utilities ─────────────────────────────────────────────────────────
 
 function esc(s) {
@@ -1190,7 +1211,8 @@ function render() {
       const hasPub   = !!pub;
       const boxLabel = pub ? REPORTS_NB[pub.report].short : e.box;
       const docType = getDocType(e);
-      return `<article class="en${isStar ? ' starred' : ''}${hasAnn ? ' has-ann' : ''}${hasPub ? ' has-pub' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}" data-type="${docType}"
+      const people  = [...getPeople(e)].join(',');
+      return `<article class="en${isStar ? ' starred' : ''}${hasAnn ? ' has-ann' : ''}${hasPub ? ' has-pub' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}" data-type="${docType}" data-people="${people}"
           data-s="${esc((e.date+' '+e.box+' '+e.desc+' '+(e.ocr||'')).toLowerCase())}"
           title="Click to view document">
         <button class="en-star" title="${isStar ? 'Unstar' : 'Star'}" data-stem="${esc(e.stem)}">${isStar ? '★' : '☆'}</button>
@@ -1291,6 +1313,8 @@ function toggleStar(stem) {
 function filter(q) {
   const ql = q.toLowerCase().trim();
   const allTypes = ACTIVE_TYPES.size === 3;
+  const anyNames = ACTIVE_NAMES.size > 0;
+  const filtered = ql || starredOnly || !allTypes || anyNames;
   let shown = 0;
   years.forEach(yr => {
     const sec  = document.getElementById('yr' + yr);
@@ -1299,7 +1323,8 @@ function filter(q) {
       const textMatch = !ql || (el.dataset.s || '').includes(ql);
       const starMatch = !starredOnly || starred.has(el.dataset.stem);
       const typeMatch = allTypes || ACTIVE_TYPES.has(el.dataset.type);
-      const match = textMatch && starMatch && typeMatch;
+      const nameMatch = !anyNames || (el.dataset.people || '').split(',').some(n => ACTIVE_NAMES.has(n));
+      const match = textMatch && starMatch && typeMatch && nameMatch;
       el.classList.toggle('gone', !match);
       if (match) secVis++;
       const d = el.querySelector('.en-desc');
@@ -1308,16 +1333,25 @@ function filter(q) {
         : esc(d.dataset.snip);
     });
     sec.classList.toggle('gone', secVis === 0);
-    if ((ql || starredOnly || !allTypes) && secVis > 0) sec.classList.remove('collapsed');
+    if (filtered && secVis > 0) sec.classList.remove('collapsed');
     const ct = document.getElementById('ct' + yr);
-    if (ct) ct.textContent = (ql || starredOnly || !allTypes)
+    if (ct) ct.textContent = filtered
       ? secVis + ' / ' + byYear[yr].length
       : byYear[yr].length + ' entries';
     shown += secVis;
   });
   document.getElementById('entry-count').textContent =
-    (ql || starredOnly || !allTypes) ? shown + ' matching' : TOTAL + ' entries';
+    filtered ? shown + ' matching' : TOTAL + ' entries';
 }
+
+// Name filter checkboxes (multi-select OR; empty = no filter)
+document.getElementById('name-filter').addEventListener('change', e => {
+  const cb = e.target.closest('input[type="checkbox"]');
+  if (!cb) return;
+  const n = cb.dataset.name;
+  if (cb.checked) ACTIVE_NAMES.add(n); else ACTIVE_NAMES.delete(n);
+  filter(document.getElementById('search').value);
+});
 
 // Type filter checkboxes — keep ACTIVE_TYPES in sync; require ≥1 checked
 document.getElementById('type-filter').addEventListener('change', e => {
