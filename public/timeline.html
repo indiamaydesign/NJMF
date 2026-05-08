@@ -325,8 +325,26 @@
     }
     .type-row:hover { color: var(--ink); }
     .type-row input[type="checkbox"] {
-      width: 16px; height: 16px; cursor: pointer; accent-color: var(--ink);
-      margin: 0; flex-shrink: 0;
+      appearance: none; -webkit-appearance: none;
+      width: 16px; height: 16px;
+      border: 2px solid var(--mid);
+      border-radius: 4px;
+      background: var(--bg);
+      cursor: pointer; margin: 0; flex-shrink: 0;
+      position: relative;
+      transition: border-color .12s, background-color .12s;
+    }
+    .type-row:hover input[type="checkbox"] { border-color: var(--ink); }
+    .type-row input[type="checkbox"]:checked {
+      background: var(--ink); border-color: var(--ink);
+    }
+    .type-row input[type="checkbox"]:checked::after {
+      content: ''; position: absolute;
+      left: 3px; top: 0;
+      width: 5px; height: 9px;
+      border: solid var(--bg);
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
     }
     .type-row input[type="checkbox"]:checked + span { color: var(--ink); }
 
