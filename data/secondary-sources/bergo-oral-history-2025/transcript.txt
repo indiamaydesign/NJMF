@@ -1,0 +1,186 @@
+Olav Terje Bergo — Oral history interviews
+13 May 2025 (and follow-up correspondence)
+
+Source PDF: public/images/primary/raw/Oral history/Olav interviews.pdf
+
+═══════════════════════════════════════════════════════════════════════
+KEY FINDINGS FROM THE BERGO INTERVIEWS
+═══════════════════════════════════════════════════════════════════════
+
+1. THE PROJECT'S ORIGIN STORY: A 1970 LUNCH IN OSLO
+   The single most consequential moment for the NJMF project's research
+   direction was an informal lunch in 1970, not any letter in the archive.
+   Hans Jørgen Raastad — leader of the Social Democratic Youth (AUF) at
+   the end of the 1960s — told Kristen Nygaard about Bergo's initiative
+   to recruit business-economy students from NHH (Bergen) to assist trade
+   unions on the West Coast. Hans then "invited Kristen and me to a
+   lunch in 1970 and we agreed that I would join Kristen at the Norwegian
+   Computing Center when I finished my studies at NHH and the University
+   in 1971."
+
+   This decision — the informal pairing of Nygaard with Bergo, and the
+   importation of Bergo's NHH-network methodology into Norsk Regnesentral
+   — is the foundational moment that no archival letter captures.
+
+2. THE BERGEN PRECURSOR: "SOSIALISTISKE SIVILØKONOMER"
+   Before joining NR, Bergo was leader of a social-democratic student
+   organisation on the West Coast. He had been recruiting NHH business-
+   economy students into "Demokrati i hverdagen" (Everyday Democracy)
+   campaign work, helping struggling West Coast trade unions whose
+   industries were being hollowed out by competition from Portugal and
+   Northern Ireland. After graduation, this informal network — which
+   they called "Sosialistiske siviløkonomer" (Socialist Business
+   Economists) — saw most members headhunted to Oslo. The network later
+   "disintegrated" but several stayed in trade union work for life.
+
+   Notable alumni from this Bergen network:
+   - Hallvard Bakke → Minister of Culture
+   - Svein Ragnar Kristensen → drafted "Arbeidsmiljøloven" judicially
+   - Ole Berrefjord → staff of PM Gro Harlem Brundtland
+   - Mats Sandman → Minister in Brundtland government
+   - Alf Hildrum → CEO of Amedia, chief editor of TV1
+   - Roar Flåthen (Kongsberg Våpenfabrikk trade union) → leader of LO
+   - Jan Balstad → top LO leader, founded FAFO
+
+3. NORSK REGNESENTRAL AS A "REBEL" INSTITUTION
+   Bergo describes NR as "a rebel group of researchers, young and radical
+   researchers, mainly mathematicians." Nygaard and his team had resigned
+   en masse from the Norwegian Defence Research Institute (FFI) to found
+   NR. Nygaard travelled to Washington and convinced Univac to donate
+   "the largest computer in Europe at the time" to NR.
+
+   NR funded itself primarily through customer-paid research; key early
+   customers were Kongsberg Våpenfabrikk and Televerket. Simula —
+   originally developed by Nygaard, Ole Johan Dahl and Graham Birtwhistle
+   as an internal NR tool for designing telecommunication networks —
+   became the conceptual foundation for object-oriented programming.
+
+4. NYGAARD'S POLITICAL CROSSOVER
+   When Bergo met Nygaard, Nygaard was "between parties" — formerly on
+   the central board of Venstre (Liberals), having organised the election
+   campaign of Aftenposten editor Aft­on Hegton (sic). Bergo convinced
+   Nygaard to join Labour. Nygaard later became prominent in both Labour
+   leadership and trade union leadership, but eventually left Labour
+   too — described by Bergo as "such an innovative and rebellious mind,
+   that he also did not fit into the Labour Party either."
+
+5. THE MARXIST-LENINIST SHADOW
+   Throughout the project, a Marxist-Leninist grouping was active on
+   shop floors and in universities, and was succeeding in taking over
+   some large local trade unions. Bergo says: "the establishment in the
+   labor movement and the party, they suspected me of really being a
+   hidden member of this communist movement. So I was not, I was not.
+   But I talked to them and I had to work with them..." This explains
+   the political register of the NJMF project's published documents
+   (Marx and Engels references in IMG_2404 etc.) — the project sat
+   inside an actively contested political-cultural space, not in a
+   purely academic sociotechnical conversation.
+
+6. THE EU 1972 REFERENDUM AS A POSSIBLE CAUSE OF FUNDING CUTOFF
+   This is a NEW causal claim absent from secondary literature.
+
+   Bergo: "The great controversial issue at the time, was the campaign
+   for Norwegian membership in the EU. Kristen and I were working
+   against Norwegian membership, and the leadership of the Labour Party
+   and the Trade Union Corporation didn't like it. It was even worse
+   when the Labour Government and the Norwegian elite lost at the
+   referendum in September 1972. It's may be the reason we did not get
+   funding for further research in Norway."
+
+   September 1972 is also the month of IMG_0338 (Lange's "I would have
+   liked to talk with Thorsrud") and IMG_0442 (Lange's private resigna-
+   tion to Hansen) — the rupture of the AFI bridge happens in the same
+   weeks as the EU referendum loss. Worth investigating whether the
+   funding politics and the methodological dispute were entangled.
+
+   Bergo: "In '74, we did not get any more friends, so they went to
+   Denmark, and I went to my home." Nygaard left for Aarhus University;
+   Bergo went back to journalism (Norwegian Broadcasting, 1975).
+
+7. BRATTVÅG AND KONGSBERG AS THE TWO CORE FACTORY ENGAGEMENTS
+   Bergo singles out two factory clubs as "really trade unions full of
+   ideas and talents and it was pure joy to work with them": Hydraulik
+   Brattvåg and Kongsberg Våpenfabrikk. The KVPOL system development
+   at Kongsberg was a deep collaboration where the trade union convinced
+   management to embed worker competence into the production control
+   system: "It really was a win-win-process."
+
+8. THE 100KG ATTIC: WHERE OUR PRIMARY DOCUMENTS COME FROM
+   When the interviewer expressed interest in the project, Bergo wrote:
+   "Det førte til at jeg har vært på loftet i dag, og hentet ned ca
+   100 kg notater og rapporter fra Jern & Metall-prosjektet. Det var
+   mer materiale der enn jeg husket, og det har ligget der fra vi
+   flyttet til Bergen i 1984. Du er den første forskeren som har vært
+   interessert!"
+
+   Translation: "It led me to go up in the attic today and bring down
+   about 100 kg of notes and reports from the Iron & Metal project.
+   There was more material there than I remembered, and it has been
+   there since we moved to Bergen in 1984. You are the first researcher
+   who has been interested!"
+
+   The 109 primary documents in our archive are a fraction of what
+   Bergo has — and what he plans to deposit at Arbeiderbevegelsens
+   Arkiv (Labour Movement Archive) once sorted.
+
+9. SWEDEN'S APPARENT PRIMACY IS A PUBLICATION ARTEFACT
+   Bergo addresses head-on why secondary literature treats Sweden as
+   the origin of participatory design:
+
+   "Forklaringen på det kan være at Kristen og jeg var omstridte
+   forskere i Norge, og mange akademikere oppfattet oss som politiske
+   aktivister, som vi også var. Men våre kritikere mente at da kunne
+   vi ikke være akademiske forskere. I Sverige og Danmark ble vi ønsket
+   velkommen både av fagbevegelsen og av universitetsmiljøene. Så der
+   kan det ha kommet akademiske publikasjoner om deltakende design
+   tidligere enn i Norge. Men det var i Norge metoden ble utviklet og
+   iverksatt, og det var Kristen og jeg som dro til Stockholm, Gøteborg
+   og Århus og fortalte dem om hva vi holdt på med."
+
+   Translation: "The explanation may be that Kristen and I were
+   contested researchers in Norway, and many academics regarded us as
+   political activists, which we also were. But our critics meant that
+   we could not be academic researchers. In Sweden and Denmark we were
+   welcomed by both the trade union movement and the university
+   environments. So there may have come academic publications on
+   participatory design earlier than in Norway. But the method was
+   developed and implemented in Norway, and Kristen and I were the
+   ones who travelled to Stockholm, Gothenburg and Aarhus and told
+   them about what we were doing."
+
+   Three Swedish publications Bergo names from his attic boxes:
+   - Pelle Ehn & Bo Göranson, "Perspektiv på Systemutvecklingsprosessen",
+     SINFDOK, Stockholm 1974
+   - Pelle Ehn & Åke Sandberg, "Fackföreningsrörelsen och forsknings-
+     makten", DEMOS, Stockholm 1976
+   - Åke Sandberg, "En ny företagsekonomi? Kunskap för demokrati i
+     arbetslivet", LiberFörlag, Stockholm 1978
+
+═══════════════════════════════════════════════════════════════════════
+COMMENTARY: HOW THIS RECONFIGURES THE NARRATIVE
+═══════════════════════════════════════════════════════════════════════
+
+The Bergo interview supplies the project's "before" and "after" — both
+of which are missing from the published archive:
+
+BEFORE: The project's intellectual origin is not at NR or in the 1970
+Landsmøte resolution. It is in Bergen, in a network of social-democratic
+business-economy students helping struggling West Coast trade unions
+in the late 1960s. Bergo brought that methodology — work groups,
+study groups, recruiting external competence — into NR via the
+Raastad lunch. The "researchers studying workers" → "researchers
+supporting workers in their own investigations" pivot, which secondary
+literature attributes to a methodological insight inside the project,
+was actually imported pre-formed from Bergen's student-trade-union
+work.
+
+AFTER: The project's funding cutoff in 1974 is not (only) a story about
+the rise of competing programmes. It is also possibly a story about
+Labour Party retribution against Nygaard and Bergo for their leading
+role in the anti-EU campaign of 1972. The same political moment that
+breaks the AFI bridge (Lange's resignation, September 1972) coincides
+with the EU referendum that breaks the project's relationship with
+Labour leadership.
+
+Both reframings are absent from Ehn (Scandinavian Design, 1992) and
+Bergh (Avtalt Spill, 2010).
