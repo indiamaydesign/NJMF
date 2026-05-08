@@ -10,9 +10,9 @@
   <style>
     :root {
       --ink:   #0f0f0e;
-      --mid:   #808080;
-      --faint: #d0d0ce;
-      --rule:  #ebebea;
+      --mid:   #555555;
+      --faint: #777777;
+      --rule:  #d8d8d6;
       --hl:    #f2efe6;
       --bg:    #ffffff;
       --img-bg:#f4f3f0;
@@ -312,21 +312,23 @@
     .en.starred .en-star { opacity: 1; color: #c8923a; }
     .en.starred::before { background: #c8923a; }
 
-    /* Document-type filter */
+    /* Document-type filter — checkbox list */
     .type-filter-label {
       font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
       color: var(--faint); margin: 18px 0 6px;
     }
-    .type-filter { display: flex; flex-wrap: wrap; gap: 4px; }
-    .type-btn {
-      flex: 1; min-width: 70px;
-      font-size: 10.5px; padding: 5px 8px;
-      background: transparent; border: 1px solid var(--rule);
-      color: var(--mid); cursor: pointer; border-radius: 3px;
-      transition: all .12s; font-family: inherit;
+    .type-filter { display: flex; flex-direction: column; gap: 4px; }
+    .type-row {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 12px; color: var(--mid);
+      cursor: pointer; padding: 3px 0; user-select: none;
     }
-    .type-btn:hover { border-color: var(--mid); color: var(--ink); }
-    .type-btn.active { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+    .type-row:hover { color: var(--ink); }
+    .type-row input[type="checkbox"] {
+      width: 13px; height: 13px; cursor: pointer; accent-color: var(--ink);
+      margin: 0;
+    }
+    .type-row input[type="checkbox"]:checked + span { color: var(--ink); }
 
     /* Starred filter button */
     #starred-filter {
@@ -411,7 +413,7 @@
     }
     #lbm-pub-link:hover { text-decoration: underline; }
     .lbm-pub-arrow { color: #6b87ad; font-size: 11px; margin-left: 4px; }
-    .lbm-pub-hint  { font-size: 10px; color: #777; margin-top: 4px; font-style: italic; }
+    .lbm-pub-hint  { font-size: 10px; color: #555; margin-top: 4px; font-style: italic; }
 
     /* Archive list — published-in indicator */
     .en.has-pub .en-box::after {
@@ -443,11 +445,11 @@
     #lbm-annotation[data-level="critical"] .lbma-label { color: #8a3a2a; }
     #lbm-annotation[data-level="notable"] .lbma-label { color: #4a6080; }
     .lbma-headline {
-      font-size: 12px; font-weight: 600; color: #e8e0d4;
+      font-size: 12px; font-weight: 600; color: #1a1a1a;
       line-height: 1.4; margin-bottom: 6px;
     }
-    .lbma-body { font-size: 11px; color: #bbb; line-height: 1.6; margin-bottom: 6px; }
-    .lbma-link { font-size: 10px; color: #888; font-style: italic; }
+    .lbma-body { font-size: 11px; color: #333; line-height: 1.6; margin-bottom: 6px; }
+    .lbma-link { font-size: 10px; color: #555; font-style: italic; }
 
     /* Archive list badge */
     .en.has-ann { border-left: 2px solid #b07d2a; padding-left: 10px; }
@@ -977,13 +979,13 @@
     .cx-sources { margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px; }
     .cx-sources summary {
       font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
-      cursor: pointer; color: #999; list-style: none; user-select: none; display: block;
+      cursor: pointer; color: #555; list-style: none; user-select: none; display: block;
     }
     .cx-sources summary::-webkit-details-marker { display: none; }
     .cx-sources summary::before { content: '+ '; }
     details[open].cx-sources summary::before { content: '− '; }
     .cx-sources ul { margin: 6px 0 0 0; padding-left: 14px; }
-    .cx-sources li { font-size: 11px; color: #aaa; font-style: italic; line-height: 1.6; margin-bottom: 1px; }
+    .cx-sources li { font-size: 11px; color: #555; font-style: italic; line-height: 1.6; margin-bottom: 1px; }
     .cx-cross-quote {
       margin: 10px 0 4px;
       padding: 8px 14px;
@@ -1024,9 +1026,9 @@
         <button class="chip" data-term="Skau">Leif Skau</button></div>
       <div class="type-filter-label">Document type</div>
       <div class="type-filter" id="type-filter">
-        <button class="type-btn active" data-type="letter">Letters</button>
-        <button class="type-btn active" data-type="report">Reports</button>
-        <button class="type-btn active" data-type="misc">Archival misc</button>
+        <label class="type-row"><input type="checkbox" data-type="letter" checked> <span>Letters</span></label>
+        <label class="type-row"><input type="checkbox" data-type="report" checked> <span>Reports</span></label>
+        <label class="type-row"><input type="checkbox" data-type="misc" checked> <span>Archival misc</span></label>
       </div>
     </div>
     <div class="sb-ft">
@@ -1317,17 +1319,17 @@ function filter(q) {
     (ql || starredOnly || !allTypes) ? shown + ' matching' : TOTAL + ' entries';
 }
 
-// Type filter clicks — toggle in/out of the ACTIVE_TYPES set
-document.getElementById('type-filter').addEventListener('click', e => {
-  const btn = e.target.closest('.type-btn');
-  if (!btn) return;
-  const t = btn.dataset.type;
-  if (ACTIVE_TYPES.has(t) && ACTIVE_TYPES.size > 1) {
-    ACTIVE_TYPES.delete(t);
-    btn.classList.remove('active');
-  } else if (!ACTIVE_TYPES.has(t)) {
+// Type filter checkboxes — keep ACTIVE_TYPES in sync; require ≥1 checked
+document.getElementById('type-filter').addEventListener('change', e => {
+  const cb = e.target.closest('input[type="checkbox"]');
+  if (!cb) return;
+  const t = cb.dataset.type;
+  if (cb.checked) {
     ACTIVE_TYPES.add(t);
-    btn.classList.add('active');
+  } else if (ACTIVE_TYPES.size > 1) {
+    ACTIVE_TYPES.delete(t);
+  } else {
+    cb.checked = true; // re-check; can't have zero
   }
   filter(document.getElementById('search').value);
 });
@@ -1879,11 +1881,11 @@ const MILESTONES = [
   },
   {
     id: 'fire-90s',
-    year: '1990', displayDate: 'Early 1990s',
+    year: '1992', displayDate: '1992 – 1994',
     phase: 'Legacy', phaseKey: 'ph-leg',
     people: ['Braa', 'Bratteteig', 'Kaasbøll', 'Øgrim'],
     title: 'FIRE — the lineage continues at UiO Informatics',
-    body: 'The FIRE project at the University of Oslo Department of Informatics — Kristin Braa, Tone Bratteteig, Jens Kaasbøll, Leikny Øgrim — frames itself as "integration and redesign" at the workplace level. Carries the work-oriented PD tradition through the 1990s under a new institutional home (UiO\'s informatics department, of which Nygaard had been a founding figure). Same Bratteteig as Florence — she is the through-line linking the 1980s healthcare work to 1990s university research and into the 2000s service-design ecosystem.',
+    body: 'FIRE (Functional Integration through REdesign), 1992–1994, at the University of Oslo Department of Informatics. Jørn Braa, Tone Bratteteig, Jens Kaasbøll and Leikny Øgrim work on principles and techniques for redesigning computer-based systems so they become functionally integrated across groups of users with partly conflicting goals. A deliberate broadening from the Collective Resource approach toward dialogue-based strategies that take organisational complexity (multiple interest groups, multiple coexisting systems) more seriously. Carries the work-oriented PD tradition through the early 1990s under a new institutional home — UiO Informatics, where Nygaard had been a founding figure. Same Bratteteig as Florence: she is the through-line linking 1980s healthcare PD to 1990s university research.',
     docs: [],
     links: [
       { label: 'Bjerknes & Bratteteig 1995 — User Participation and Democracy', src: 'bjerknes-bratteteig-1995' },
@@ -2136,9 +2138,9 @@ const CX_DATA = [
     }
   },
   {
-    year: 'Early 1990s',
+    year: '1992–94',
     left: null,
-    right: { title: 'FIRE — the lineage continues at UiO Informatics', people: ['Braa', 'Bratteteig', 'Kaasbøll', 'Øgrim'], body: 'The FIRE project at the University of Oslo Department of Informatics — Kristin Braa, Tone Bratteteig, Jens Kaasbøll, Leikny Øgrim — frames itself as "integration and redesign" at the workplace level. Carries the work-oriented PD tradition through the 1990s under a new institutional home (UiO\'s emerging informatics department, of which Nygaard had been a founding figure). The Florence team continues here.', docs: [], sources: ['Braa, Bratteteig, Kaasbøll, Øgrim — UiO Department of Informatics, early 1990s', 'Bjerknes & Bratteteig, "User Participation and Democracy" (1995) — Scandinavian PD self-history'] },
+    right: { title: 'FIRE — the lineage continues at UiO Informatics', people: ['Braa', 'Bratteteig', 'Kaasbøll', 'Øgrim'], body: 'FIRE (Functional Integration through REdesign), 1992–1994, at UiO Department of Informatics. Jørn Braa, Tone Bratteteig, Jens Kaasbøll and Leikny Øgrim broaden the work-oriented PD tradition toward redesign of existing systems — taking organisational complexity (multiple interest groups, multiple coexisting systems) more seriously than the original Collective Resource framework did. The Florence team carries on under a new institutional home: UiO Informatics, where Nygaard had been a founding figure.', docs: [], sources: ['Bjerknes & Bratteteig, "User Participation and Democracy" (1995) — primary citation; Bratteteig is a FIRE co-author', 'Kaasbøll & Øgrim 1994; Braa 1994'] },
     cross: null
   },
   {
