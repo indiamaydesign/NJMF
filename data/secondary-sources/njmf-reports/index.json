@@ -1,0 +1,111 @@
+[
+  {
+    "urn": "URN:NBN:no-nb_digibok_2013110508463",
+    "sesamid": "5c391b83e771918ea288541a797c166d",
+    "title": "Innføring",
+    "year": "1975",
+    "pages": 257,
+    "authors": [
+      "Bergo, Olav Terje"
+    ],
+    "n_paragraphs": 2283,
+    "n_unique_tokens": 8768,
+    "label": "Innføring (1975)"
+  },
+  {
+    "urn": "URN:NBN:no-nb_digibok_2014033148108",
+    "sesamid": "561be2c6f154fcbe5a0210923a19382c",
+    "title": "Bedriftspolitisk handlingsprogram for bedriftsklubben ved A/S Hydraulik, Brattvåg",
+    "year": "1974",
+    "pages": 147,
+    "authors": [
+      "Nygaard, Kristen",
+      "Bergo, Olav Terje"
+    ],
+    "n_paragraphs": 1184,
+    "n_unique_tokens": 5257,
+    "label": "Hydraulik handlingsprogram (1974)"
+  },
+  {
+    "urn": "URN:NBN:no-nb_digibok_2013082606034",
+    "sesamid": "9b76c4e81acda234fcf30c46a3b7235b",
+    "title": "En  Vurdering av styrings- og informasjonssystemet KVPOL",
+    "year": "1974",
+    "pages": 133,
+    "authors": [
+      "Bergo, Olav Terje",
+      "Nygaard, Kristen"
+    ],
+    "n_paragraphs": 1104,
+    "n_unique_tokens": 5269,
+    "label": "KVPOL vurdering (1974)"
+  },
+  {
+    "urn": "URN:NBN:no-nb_digibok_2012102308129",
+    "sesamid": "7fd566c5fa62ce2feef8df4cab88d7f8",
+    "title": "Norsk jern- og metallarbeiderforbund og forskningsressursene : noen fakta og synspunkter",
+    "year": "1973",
+    "pages": 93,
+    "authors": [
+      "Bergo, Olav Terje",
+      "Nygaard, Kristen"
+    ],
+    "n_paragraphs": 501,
+    "n_unique_tokens": 3029,
+    "label": "Forskningsressursene (1973)"
+  },
+  {
+    "urn": "URN:NBN:no-nb_digibok_2009070800062",
+    "sesamid": "a1dc6de108c63d8ca3a0173fd325e36f",
+    "title": "Planlegging, styring og databehandling : grunnbok for fagbevegelsen. 1 : Innføring",
+    "year": "1974",
+    "pages": 247,
+    "authors": [
+      "Nygaard, Kristen",
+      "Bergo, Olav Terje"
+    ],
+    "n_paragraphs": 2364,
+    "n_unique_tokens": 8467,
+    "label": "Grunnbok Vol 1 (1974)"
+  },
+  {
+    "urn": "URN:NBN:no-nb_digibok_2013053008142",
+    "sesamid": "3b2a61a5175b48731ebb2744613087f8",
+    "title": "Planlegging, styring og databehandling : grunnbok for fagbevegelsen. 2 : Datamaskiner, systemer og språk",
+    "year": "1974",
+    "pages": 283,
+    "authors": [
+      "Nygaard, Kristen",
+      "Bergo, Olav Terje"
+    ],
+    "n_paragraphs": 2943,
+    "n_unique_tokens": 8650,
+    "label": "Grunnbok Vol 2 (1974)"
+  },
+  {
+    "urn": "URN:NBN:no-nb_digibok_2012032009038",
+    "sesamid": "ad913130d1be7b59546df88f3e711f8b",
+    "title": "Styring, informasjon og demokrati i arbeidslivet : forskning for fagbevegelsen",
+    "year": "1972",
+    "pages": 45,
+    "authors": [
+      "Bergo, Olav Terje"
+    ],
+    "n_paragraphs": 174,
+    "n_unique_tokens": 1292,
+    "label": "Styring, informasjon og demokrati (1972)"
+  },
+  {
+    "urn": "URN:NBN:no-nb_digibok_2015052009082",
+    "sesamid": "a6f3abe69fac4085795b30d0b39cdffb",
+    "title": "Fagorganiserte funksjonærer og datateknologi : et forslag til forskningsprosjekt",
+    "year": "1975",
+    "pages": 49,
+    "authors": [
+      "Bergo, Olav Terje"
+    ],
+    "n_paragraphs": 256,
+    "n_unique_tokens": 1335,
+    "label": "Fagorganiserte funksjonærer og datateknologi (1975)"
+  }
+]

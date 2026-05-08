@@ -376,6 +376,34 @@
     }
 
     /* Image area */
+    /* Publication panel in lightbox */
+    #lbm-publication { margin-bottom: 14px; }
+    .lbm-pub-bar {
+      border-left: 3px solid #4a6080;
+      padding: 8px 12px;
+      background: rgba(74,96,128,0.08);
+      border-radius: 0 4px 4px 0;
+    }
+    .lbm-pub-label {
+      display: block;
+      font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: #6b87ad; font-weight: 600; margin-bottom: 4px;
+    }
+    #lbm-pub-link {
+      color: #c9d3e5; font-size: 12px; line-height: 1.4;
+      text-decoration: none; font-weight: 500;
+    }
+    #lbm-pub-link:hover { text-decoration: underline; }
+    .lbm-pub-arrow { color: #6b87ad; font-size: 11px; margin-left: 4px; }
+    .lbm-pub-hint  { font-size: 10px; color: #777; margin-top: 4px; font-style: italic; }
+
+    /* Archive list — published-in indicator */
+    .en.has-pub .en-box::after {
+      content: ' · published';
+      color: #6b87ad; font-weight: 500; font-size: 10px;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+
     /* Annotation panel in lightbox */
     #lbm-annotation { margin-bottom: 16px; }
     .lbma-bar {
@@ -1042,6 +1070,17 @@
       <div class="lbm-label">Archival reference</div>
       <div class="lbm-val" id="lbm-box"></div>
 
+      <div id="lbm-publication" style="display:none;">
+        <div class="lbm-pub-bar">
+          <span class="lbm-pub-label">Published in</span>
+          <a id="lbm-pub-link" href="#" target="_blank" rel="noopener">
+            <span id="lbm-pub-title"></span>
+            <span class="lbm-pub-arrow">↗</span>
+          </a>
+          <div id="lbm-pub-hint" class="lbm-pub-hint"></div>
+        </div>
+      </div>
+
       <div id="lbm-annotation" style="display:none;">
         <div class="lbma-bar">
           <div class="lbma-label" id="lbma-label"></div>
@@ -1103,7 +1142,8 @@ function render() {
       const nPhotos  = (e.stems || [e.stem]).length;
       const photoTag = nPhotos > 1 ? `<span class="en-photos">&#128247; ${nPhotos}</span>` : '';
       const hasAnn   = !!(ANNOTATIONS[e.stem] || (e.stems||[]).some(s => ANNOTATIONS[s]));
-      return `<article class="en${isStar ? ' starred' : ''}${hasAnn ? ' has-ann' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}"
+      const hasPub   = !!getPublication(e);
+      return `<article class="en${isStar ? ' starred' : ''}${hasAnn ? ' has-ann' : ''}${hasPub ? ' has-pub' : ''}" data-idx="${DATA.indexOf(e)}" data-stem="${esc(e.stem)}"
           data-s="${esc((e.date+' '+e.box+' '+e.desc+' '+(e.ocr||'')).toLowerCase())}"
           title="Click to view document">
         <button class="en-star" title="${isStar ? 'Unstar' : 'Star'}" data-stem="${esc(e.stem)}">${isStar ? '★' : '☆'}</button>
@@ -1383,10 +1423,67 @@ const ANNOTATIONS = {
   }
 };
 
+// Map of digitised NJMF reports
+const REPORTS_NB = {
+  hydraulik:   { sesamid: '561be2c6f154fcbe5a0210923a19382c', label: 'Forskningsrapport Nr. 7: Hydraulik handlingsprogram (1974)' },
+  forskres:    { sesamid: '7fd566c5fa62ce2feef8df4cab88d7f8', label: 'Forskningsrapport Nr. 8: Forskningsressursene (1973)' },
+  innforing:   { sesamid: '5c391b83e771918ea288541a797c166d', label: 'Innføring (1975)' },
+  grunnbok1:   { sesamid: 'a1dc6de108c63d8ca3a0173fd325e36f', label: 'Grunnbok Vol 1: Innføring (1974)' },
+  grunnbok2:   { sesamid: '3b2a61a5175b48731ebb2744613087f8', label: 'Grunnbok Vol 2: Datamaskiner, systemer og språk (1974)' },
+  kvpol:       { sesamid: '9b76c4e81acda234fcf30c46a3b7235b', label: 'KVPOL vurdering (1974)' }
+};
+
+// High-confidence text-match: stem → report key + paragraph hint
+const PUBLICATIONS = {
+  'IMG_3130':   { report: 'forskres',  para: 154 },
+  'IMG_3134':   { report: 'forskres',  para: 293 },
+  'IMG_1230':   { report: 'grunnbok1', para: 1556 },
+  'IMG_3138 2': { report: 'grunnbok1', para: 2300 },
+  'IMG_3057':   { report: 'grunnbok2', para: 1838 },
+  'IMG_1220':   { report: 'grunnbok2', para: 2795 },
+  'IMG_3118':   { report: 'hydraulik', para: 789 },
+  'IMG_3127':   { report: 'hydraulik', para: 943 },
+  'IMG_3098':   { report: 'hydraulik', para: 964 },
+  'IMG_3100':   { report: 'hydraulik', para: 1094 },
+  'IMG_2390':   { report: 'innforing', para: 299 },
+  'IMG_2389':   { report: 'innforing', para: 1205 },
+  'IMG_2453':   { report: 'innforing', para: 1273 },
+  'IMG_2466':   { report: 'innforing', para: 1383 },
+  'IMG_3132 2': { report: 'innforing', para: 2087 }
+};
+
+// Find a publication for an entry: text-match first, then box-label fallback
+function getPublication(entry) {
+  const stems = entry.stems || [entry.stem];
+  for (const s of stems) {
+    if (PUBLICATIONS[s]) return { ...PUBLICATIONS[s], confidence: 'text-match' };
+  }
+  const box = entry.box || '';
+  if (/Forskningsrapport Nr\.\s*7\b/.test(box)) return { report: 'hydraulik', confidence: 'series' };
+  if (/Forskningsrapport Nr\.\s*8\b/.test(box)) return { report: 'forskres',  confidence: 'series' };
+  return null;
+}
+
 function lbOpen(entry) {
   document.getElementById('lbm-date').textContent = entry.date;
   document.getElementById('lbm-box').textContent  = entry.box || '—';
   document.getElementById('lbm-desc').textContent = entry.desc;
+
+  // Publication panel (link to nb.no report)
+  const pub = getPublication(entry);
+  const pubEl = document.getElementById('lbm-publication');
+  if (pub) {
+    const r = REPORTS_NB[pub.report];
+    document.getElementById('lbm-pub-title').textContent = r.label;
+    document.getElementById('lbm-pub-link').href = 'https://www.nb.no/items/' + r.sesamid;
+    const hint = pub.confidence === 'text-match'
+      ? 'Likely matches paragraph ' + pub.para + ' (text-similarity)'
+      : 'Identified via archival box label';
+    document.getElementById('lbm-pub-hint').textContent = hint;
+    pubEl.style.display = '';
+  } else {
+    pubEl.style.display = 'none';
+  }
 
   // Annotation panel
   const stem = entry.stem || (entry.stems && entry.stems[0]);

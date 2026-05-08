@@ -1,0 +1,563 @@
+{
+  "matched": [
+    {
+      "stem": "IMG_3130",
+      "date": "22. august 1973",
+      "box": "Forskningsrapport Nr. 8",
+      "report_label": "Forskningsressursene (1973)",
+      "report_urn": "URN:NBN:no-nb_digibok_2012102308129",
+      "para_idx": 154,
+      "raw_score": 37,
+      "norm_score": 0.425,
+      "n_tokens": 87,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3134",
+      "date": "1972",
+      "box": "Forskningsrapport Nr. 8",
+      "report_label": "Forskningsressursene (1973)",
+      "report_urn": "URN:NBN:no-nb_digibok_2012102308129",
+      "para_idx": 293,
+      "raw_score": 54,
+      "norm_score": 0.358,
+      "n_tokens": 151,
+      "matched": true
+    },
+    {
+      "stem": "IMG_1230",
+      "date": "1973",
+      "box": "Olaw Terje Bergø J&M-prosjektet Røyrøta 14",
+      "report_label": "Grunnbok Vol 1 (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2009070800062",
+      "para_idx": 1556,
+      "raw_score": 49,
+      "norm_score": 0.282,
+      "n_tokens": 174,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3138 2",
+      "date": "1970",
+      "box": "Forskningsrapport Nr. 8",
+      "report_label": "Grunnbok Vol 1 (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2009070800062",
+      "para_idx": 2300,
+      "raw_score": 51,
+      "norm_score": 0.283,
+      "n_tokens": 180,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3057",
+      "date": "1972",
+      "box": "Databehandling, Planlegging og Styring – Del i",
+      "report_label": "Grunnbok Vol 2 (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2013053008142",
+      "para_idx": 1838,
+      "raw_score": 36,
+      "norm_score": 0.409,
+      "n_tokens": 88,
+      "matched": true
+    },
+    {
+      "stem": "IMG_1220",
+      "date": "August 2, 1971",
+      "box": "Kapittel 2",
+      "report_label": "Grunnbok Vol 2 (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2013053008142",
+      "para_idx": 2795,
+      "raw_score": 26,
+      "norm_score": 0.382,
+      "n_tokens": 68,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3118",
+      "date": "1972",
+      "box": "Forskningsrapport Nr. 7",
+      "report_label": "Hydraulik handlingsprogram (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2014033148108",
+      "para_idx": 789,
+      "raw_score": 51,
+      "norm_score": 0.362,
+      "n_tokens": 141,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3127",
+      "date": "1972",
+      "box": "Forskningsrapport Nr. 7",
+      "report_label": "Hydraulik handlingsprogram (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2014033148108",
+      "para_idx": 943,
+      "raw_score": 50,
+      "norm_score": 0.309,
+      "n_tokens": 162,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3098",
+      "date": "1970",
+      "box": "Forskningsrapport Nr. 7",
+      "report_label": "Hydraulik handlingsprogram (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2014033148108",
+      "para_idx": 964,
+      "raw_score": 83,
+      "norm_score": 0.546,
+      "n_tokens": 152,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3100",
+      "date": "1972",
+      "box": "Forskningsrapport Nr. 7",
+      "report_label": "Hydraulik handlingsprogram (1974)",
+      "report_urn": "URN:NBN:no-nb_digibok_2014033148108",
+      "para_idx": 1094,
+      "raw_score": 37,
+      "norm_score": 0.253,
+      "n_tokens": 146,
+      "matched": true
+    },
+    {
+      "stem": "IMG_2390",
+      "date": "mai 1972",
+      "box": "Box 670492",
+      "report_label": "Innføring (1975)",
+      "report_urn": "URN:NBN:no-nb_digibok_2013110508463",
+      "para_idx": 299,
+      "raw_score": 39,
+      "norm_score": 0.429,
+      "n_tokens": 91,
+      "matched": true
+    },
+    {
+      "stem": "IMG_2389",
+      "date": "Mai 1972",
+      "box": "Box 670492",
+      "report_label": "Innføring (1975)",
+      "report_urn": "URN:NBN:no-nb_digibok_2013110508463",
+      "para_idx": 1205,
+      "raw_score": 11,
+      "norm_score": 0.379,
+      "n_tokens": 29,
+      "matched": true
+    },
+    {
+      "stem": "IMG_2453",
+      "date": "Januar 1973",
+      "box": "Del I",
+      "report_label": "Innføring (1975)",
+      "report_urn": "URN:NBN:no-nb_digibok_2013110508463",
+      "para_idx": 1273,
+      "raw_score": 28,
+      "norm_score": 0.262,
+      "n_tokens": 107,
+      "matched": true
+    },
+    {
+      "stem": "IMG_2466",
+      "date": "1972",
+      "box": "Del I",
+      "report_label": "Innføring (1975)",
+      "report_urn": "URN:NBN:no-nb_digibok_2013110508463",
+      "para_idx": 1383,
+      "raw_score": 31,
+      "norm_score": 0.261,
+      "n_tokens": 119,
+      "matched": true
+    },
+    {
+      "stem": "IMG_3132 2",
+      "date": "1972",
+      "box": "Forskningsrapport Nr. 8",
+      "report_label": "Innføring (1975)",
+      "report_urn": "URN:NBN:no-nb_digibok_2013110508463",
+      "para_idx": 2087,
+      "raw_score": 48,
+      "norm_score": 0.312,
+      "n_tokens": 154,
+      "matched": true
+    }
+  ],
+  "unmatched": [
+    {
+      "stem": "IMG_2398",
+      "reason": "weak match: Innføring (1975) (score 0.25)"
+    },
+    {
+      "stem": "IMG_3212",
+      "reason": "weak match: Innføring (1975) (score 0.17)"
+    },
+    {
+      "stem": "IMG_0559",
+      "reason": "weak match: Innføring (1975) (score 0.04)"
+    },
+    {
+      "stem": "IMG_0655",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.10)"
+    },
+    {
+      "stem": "IMG_1069",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.03)"
+    },
+    {
+      "stem": "IMG_1104",
+      "reason": "weak match: Innføring (1975) (score 0.07)"
+    },
+    {
+      "stem": "IMG_3167",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.05)"
+    },
+    {
+      "stem": "IMG_3170",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.10)"
+    },
+    {
+      "stem": "IMG_1110",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.07)"
+    },
+    {
+      "stem": "IMG_0660",
+      "reason": "weak match: Innføring (1975) (score 0.07)"
+    },
+    {
+      "stem": "IMG_1108",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0561",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0636",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_1133",
+      "reason": "weak match: Innføring (1975) (score 0.10)"
+    },
+    {
+      "stem": "IMG_0565",
+      "reason": "weak match: Innføring (1975) (score 0.06)"
+    },
+    {
+      "stem": "IMG_2356",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.07)"
+    },
+    {
+      "stem": "IMG_0560",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.07)"
+    },
+    {
+      "stem": "IMG_0644",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0647",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0649",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0656",
+      "reason": "weak match: Styring, informasjon og demokrati (1972) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0659",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.15)"
+    },
+    {
+      "stem": "IMG_1080",
+      "reason": "weak match: Innføring (1975) (score 0.04)"
+    },
+    {
+      "stem": "IMG_1097",
+      "reason": "weak match: Innføring (1975) (score 0.05)"
+    },
+    {
+      "stem": "IMG_0562",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.05)"
+    },
+    {
+      "stem": "IMG_3210",
+      "reason": "weak match: Innføring (1975) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0643",
+      "reason": "weak match: Styring, informasjon og demokrati (1972) (score 0.18)"
+    },
+    {
+      "stem": "IMG_0556",
+      "reason": "weak match: Innføring (1975) (score 0.14)"
+    },
+    {
+      "stem": "IMG_0555",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.06)"
+    },
+    {
+      "stem": "IMG_0576",
+      "reason": "weak match: Innføring (1975) (score 0.04)"
+    },
+    {
+      "stem": "IMG_2428",
+      "reason": "weak match: Innføring (1975) (score 0.20)"
+    },
+    {
+      "stem": "IMG_2464",
+      "reason": "weak match: Grunnbok Vol 1 (1974) (score 0.21)"
+    },
+    {
+      "stem": "IMG_3173 2",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.14)"
+    },
+    {
+      "stem": "IMG_3214",
+      "reason": "weak match: Innføring (1975) (score 0.25)"
+    },
+    {
+      "stem": "IMG_0531",
+      "reason": "weak match: Innføring (1975) (score 0.14)"
+    },
+    {
+      "stem": "IMG_0532",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.17)"
+    },
+    {
+      "stem": "IMG_0610",
+      "reason": "weak match: Innføring (1975) (score 0.15)"
+    },
+    {
+      "stem": "IMG_0652",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.08)"
+    },
+    {
+      "stem": "IMG_1129",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.12)"
+    },
+    {
+      "stem": "IMG_1172",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0537",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.04)"
+    },
+    {
+      "stem": "IMG_2397",
+      "reason": "weak match: Innføring (1975) (score 0.13)"
+    },
+    {
+      "stem": "IMG_2404",
+      "reason": "weak match: Innføring (1975) (score 0.15)"
+    },
+    {
+      "stem": "IMG_1128",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.08)"
+    },
+    {
+      "stem": "IMG_0444",
+      "reason": "weak match: Styring, informasjon og demokrati (1972) (score 0.13)"
+    },
+    {
+      "stem": "IMG_0445",
+      "reason": "weak match: Innføring (1975) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0452",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.08)"
+    },
+    {
+      "stem": "IMG_0451",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0453",
+      "reason": "weak match: Innføring (1975) (score 0.09)"
+    },
+    {
+      "stem": "IMG_1126",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.07)"
+    },
+    {
+      "stem": "IMG_0443",
+      "reason": "weak match: Innføring (1975) (score 0.13)"
+    },
+    {
+      "stem": "IMG_0513",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0611",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0442",
+      "reason": "weak match: Innføring (1975) (score 0.10)"
+    },
+    {
+      "stem": "IMG_0616",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.12)"
+    },
+    {
+      "stem": "IMG_0338",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.08)"
+    },
+    {
+      "stem": "IMG_0512",
+      "reason": "weak match: Innføring (1975) (score 0.15)"
+    },
+    {
+      "stem": "IMG_0514",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0518",
+      "reason": "weak match: Innføring (1975) (score 0.03)"
+    },
+    {
+      "stem": "IMG_0520",
+      "reason": "weak match: Innføring (1975) (score 0.09)"
+    },
+    {
+      "stem": "IMG_1162",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.12)"
+    },
+    {
+      "stem": "IMG_0522",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.10)"
+    },
+    {
+      "stem": "IMG_0523",
+      "reason": "weak match: Innføring (1975) (score 0.15)"
+    },
+    {
+      "stem": "IMG_1144",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.07)"
+    },
+    {
+      "stem": "IMG_0524",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.12)"
+    },
+    {
+      "stem": "IMG_0525",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.14)"
+    },
+    {
+      "stem": "IMG_0526",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0438",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0528",
+      "reason": "weak match: Innføring (1975) (score 0.14)"
+    },
+    {
+      "stem": "IMG_0530",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.16)"
+    },
+    {
+      "stem": "IMG_0529",
+      "reason": "weak match: Innføring (1975) (score 0.15)"
+    },
+    {
+      "stem": "IMG_3156 2",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.20)"
+    },
+    {
+      "stem": "IMG_0505",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.07)"
+    },
+    {
+      "stem": "IMG_0511",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.10)"
+    },
+    {
+      "stem": "IMG_0617",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.16)"
+    },
+    {
+      "stem": "IMG_1140",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.11)"
+    },
+    {
+      "stem": "IMG_0533",
+      "reason": "weak match: Innføring (1975) (score 0.12)"
+    },
+    {
+      "stem": "IMG_0534",
+      "reason": "weak match: Innføring (1975) (score 0.19)"
+    },
+    {
+      "stem": "IMG_0535",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.10)"
+    },
+    {
+      "stem": "IMG_0536",
+      "reason": "weak match: Innføring (1975) (score 0.01)"
+    },
+    {
+      "stem": "IMG_0546",
+      "reason": "weak match: Innføring (1975) (score 0.03)"
+    },
+    {
+      "stem": "IMG_0547",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.12)"
+    },
+    {
+      "stem": "IMG_0540",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.08)"
+    },
+    {
+      "stem": "IMG_0545",
+      "reason": "weak match: Grunnbok Vol 2 (1974) (score 0.07)"
+    },
+    {
+      "stem": "IMG_0551",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.08)"
+    },
+    {
+      "stem": "IMG_1134",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.14)"
+    },
+    {
+      "stem": "IMG_0575",
+      "reason": "weak match: Innføring (1975) (score 0.18)"
+    },
+    {
+      "stem": "IMG_2438",
+      "reason": "weak match: Innføring (1975) (score 0.12)"
+    },
+    {
+      "stem": "IMG_3199",
+      "reason": "weak match: Forskningsressursene (1973) (score 0.12)"
+    },
+    {
+      "stem": "IMG_3190",
+      "reason": "weak match: Innføring (1975) (score 0.07)"
+    },
+    {
+      "stem": "IMG_2381",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.09)"
+    },
+    {
+      "stem": "IMG_0527",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.05)"
+    },
+    {
+      "stem": "IMG_2357",
+      "reason": "weak match: KVPOL vurdering (1974) (score 0.06)"
+    },
+    {
+      "stem": "IMG_3186",
+      "reason": "weak match: Hydraulik handlingsprogram (1974) (score 0.08)"
+    }
+  ],
+  "threshold": 0.25
+}
