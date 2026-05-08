@@ -1864,10 +1864,8 @@ function renderMilestones() {
         ).join('');
 
         const secLinks = m.links.map(lk => {
-          if (lk.note) {
-            return `<a class="ms-sec-link" href="secondary-sources.html" target="_blank">${esc(lk.label)} ↗</a>`;
-          }
-          return `<a class="ms-sec-link" href="secondary-sources.html" target="_blank">${esc(lk.label)} ↗</a>`;
+          const hash = lk.src ? '#' + lk.src : '';
+          return `<a class="ms-sec-link" href="secondary-sources.html${hash}" target="_blank">${esc(lk.label)} ↗</a>`;
         }).join('');
 
         const hasSources = m.docs.length > 0 || m.links.length > 0;
@@ -1898,15 +1896,20 @@ function renderMilestones() {
       }).join('')}
     </div>`;
 
-  // Wire up card clicks
+  // Wire up card clicks — preserve the clicked card's screen position
+  // when other open cards collapse (no jumpy scroll on click)
   root.querySelectorAll('.ms-card').forEach(card => {
     card.addEventListener('click', e => {
-      // Don't toggle if clicking a link or thumb
       if (e.target.closest('a') || e.target.classList.contains('ms-doc-thumb')) return;
-      const id = card.dataset.msId;
+      const before = card.getBoundingClientRect().top;
       const isOpen = card.classList.contains('open');
       root.querySelectorAll('.ms-card.open').forEach(c => c.classList.remove('open'));
       if (!isOpen) card.classList.add('open');
+      requestAnimationFrame(() => {
+        const after = card.getBoundingClientRect().top;
+        const delta = after - before;
+        if (delta) window.scrollBy(0, delta);
+      });
     });
   });
 
@@ -2196,21 +2199,31 @@ function renderCrossover() {
     </div>
     <div class="cx-body">${beatsHTML}</div>`;
 
-  // clicks — nodes
+  // clicks — nodes (preserve clicked card position)
   root.querySelectorAll('.cx-node[data-cx-id]').forEach(n => {
     n.addEventListener('click', e => {
       if (e.target.classList.contains('ms-doc-thumb')) return;
+      const before = n.getBoundingClientRect().top;
       root.querySelectorAll('.cx-node.open').forEach(o => { if (o !== n) o.classList.remove('open'); });
       n.classList.toggle('open');
+      requestAnimationFrame(() => {
+        const delta = n.getBoundingClientRect().top - before;
+        if (delta) window.scrollBy(0, delta);
+      });
     });
   });
 
-  // clicks — crossover cards
+  // clicks — crossover cards (preserve clicked card position)
   root.querySelectorAll('.cx-cross-card[data-cx-id]').forEach(c => {
     c.addEventListener('click', e => {
       if (e.target.classList.contains('ms-doc-thumb')) return;
+      const before = c.getBoundingClientRect().top;
       root.querySelectorAll('.cx-cross-card.open').forEach(o => { if (o !== c) o.classList.remove('open'); });
       c.classList.toggle('open');
+      requestAnimationFrame(() => {
+        const delta = c.getBoundingClientRect().top - before;
+        if (delta) window.scrollBy(0, delta);
+      });
     });
   });
 

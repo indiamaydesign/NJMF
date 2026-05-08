@@ -683,8 +683,14 @@ const SOURCES = [
   }
 ];
 
-let currentSourceId = 'avtalt-spill';
-let DATA = AVTALT_DATA;
+// Honour ?src=… or #… in the URL so links from the timeline open
+// directly on the right source instead of dumping the user at the
+// top of the page.
+const _hashSrc = (location.hash || '').replace(/^#/, '').trim();
+const _initialSrcId = _hashSrc && SOURCES.some(s => s.id === _hashSrc) ? _hashSrc : 'avtalt-spill';
+const _initialSource = SOURCES.find(s => s.id === _initialSrcId);
+let currentSourceId = _initialSrcId;
+let DATA = _initialSource.data;
 let TOTAL = DATA.length;
 
 // ── Utilities ─────────────────────────────────────────────────────────
