@@ -1,0 +1,965 @@
+Scandinavian Journal of Information Systems
+Volume 22 | Issue 1                                                                                                                           Article 5
+
+
+
+Summer 6-30-2010
+
+Bridging the Gap Between Politics and Techniques:
+On the next practices of participatory design
+Morten Kyng
+Aarhus University, mkyng@cs.au.dk
+
+
+
+
+Follow this and additional works at: http://aisel.aisnet.org/sjis
+
+Recommended Citation
+Kyng, Morten (2010) "Bridging the Gap Between Politics and Techniques: On the next practices of participatory design,"
+Scandinavian Journal of Information Systems: Vol. 22 : Iss. 1 , Article 5.
+Available at: http://aisel.aisnet.org/sjis/vol22/iss1/5
+
+
+This material is brought to you by the Journals at AIS Electronic Library (AISeL). It has been accepted for inclusion in Scandinavian Journal of
+Information Systems by an authorized administrator of AIS Electronic Library (AISeL). For more information, please contact elibrary@aisnet.org.
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+
+
+
+      Bridging the Gap Between Politics and
+      Techniques
+      On the next practices of participatory design
+
+      Morten Kyng
+      Aarhus University, Denmark
+      mkyng@cs.au.dk
+
+
+      Abstract: This paper discusses how we in the participatory design (PD) research community
+      may contribute to the evolution of ICT design1 practices into something that is much more
+      attuned to people using ICT and to their interests. The main idea is that to do so we need
+      to focus more on issues in the gap between politics and techniques, e.g., project funding,
+      types of users and of use settings, the role of companies and of Intellectual Property Rights
+      and the types of projects we work on. The paper presents material illustrating that impor-
+      tant changes are going on in the dimensions outlined by these issues and argues that these
+      changes create important, new opportunities for PD to contribute to the ‘next practices’ of
+      ICT design—as well as serious problems. Thus to exploit these new opportunities we need
+      to improve our understanding of the issues involved and to develop new ways of taking
+      them into account when we design and do research projects.
+
+
+
+      1 Introduction
+      Participatory Design is about design and about participation in design by people who are poten-
+      tial users2 of the result of the design activities. To this end PD research has produced numerous
+      useful results in the form of techniques, methods and conceptual frameworks, e.g. to support
+      users in being creative and innovative in design and in exploring design ideas in relation to fu-
+      ture use-practices (see, e.g., Greenbaum and Kyng 1991; Schuler and Namioka 1993; Jacucci
+      and Kensing 2006).
+           However, often PD is also about how to do design in ways that support the participating
+      users in pursuing their own goals and interest as a supplement to a management agenda. Thus
+
+
+
+                        © Scandinavian Journal of Information Systems, 2010, 22(1), 49–68
+
+Published by AIS Electronic Library (AISeL), 2010                                                         1
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+
+      several PD research papers address different aspects of user interests in relation to PD and often
+      do so in the context of a political agenda for democratization (Ehn and Kyng 1987; Beck 2002;
+      Shapiro 2005).
+          While these concerns are important there is more to a PD agenda than politics and tech-
+      niques—especially if we want to influence future ICT design practices to be more attuned to
+      people using ICT and to their interests. This article then is an invitation and a challenge to
+      develop PD into an important part of the next practices of ICT design.
+          I believe that the conditions for the PD research community to meet this challenge are good
+      for three related reasons. First of all ICT is becoming highly integrated into the everyday life of
+      most people in ways that PD seems in a much better position to handle successfully than cur-
+      rent ICT design practices which have a tendency to underestimate the complexity of work and
+      misunderstand the nature of human activity (Shapiro 2005). Secondly, the cost of failure or bad
+      design of ICT is increasing rapidly due to the ubiquitous nature of ICT. Health care and care
+      are two prominent examples of this: an aging population and so-called lifestyle diseases are chal-
+      lenging current approaches to the delivery of health care and care. Thus several countries look to
+      ICT as a key element in radically different future systems. Thirdly there is a growing recognition
+      of the crucial role of users in innovation. Standard textbooks on innovation management (Tidd
+      and Bessant 2009) point to users as an important element in radical and especially discontinu-
+      ous innovation. Furthermore when it comes to functionally new innovations, several researchers
+      have identified users as key innovators (see, e.g., Hippel 2005).
+          However, to seize this opportunity we have to demonstrate that PD can deliver ICT designs
+      that appeal both to users and to those who pay. To do so we need to deconstruct the current
+      discussions on ‘politics’ and find new practical ways to cater for the PD aspects of ICT design,
+      including user interests. If we continue with the current focus on politics and techniques only,
+      we run the risk of ending up in a situation where a diminishing group of PD researchers do
+      politically correct research projects while the next practices of ICT design are being shaped by
+      others whose main interest in users are as providers of useful input to traditionally, management
+      controlled processes.
+          Thus in the sections below I present a supplementary framework for understanding, discussing
+      and doing PD research with the aim of increasing the influence of PD research on the next practices
+      of ICT design. First a short section introduces the conceptual framework. Then follows the main
+      section that uses the framework to investigate and discuss past, present and future PD research.
+      The paper is concluded with a set of recommendations for future PD projects.
+
+
+
+      2 A conceptual framework to bridge the gap between
+        politics and techniques
+      The first part of the framework concerns ideals. Explicit discussions of ideals like democracy have
+      been on the agenda of the PD research community for decades, but over time they have come to
+      play a less dominant role in writing on PD projects (Beck 2002). To better understand the ideals
+
+
+                                                          50 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                   2
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+      of PD research projects and how they have developed I also look at the ideals of PD vis-à-vis
+      ideals of society relating to research and development.
+           The two following parts of the framework concern the roles of companies and of intellectual
+      property rights. Companies in the role of ‘user-companies’, i.e., settings were ICT is used, have
+      often been discussed in PD, especially in the early days of PD in Scandinavia. Such user com-
+      panies were often considered to be the counterpart of users (see, e.g., Bjerknes et al. 1987).
+      However, companies have other important roles, especially the role of producers of ICT. I argue
+      that in relation to companies in PD projects fewer changes have occurred than we might think.
+      In our society the role of ‘producer-companies’ is tightly coupled to intellectual property rights,
+      IPR. I use this category to discuss some of the changes in how PD projects and society at large
+      look at and handle IPR. I argue that some of the changes that have occurred might impede the
+      implementation and dissemination of the results of PD projects.
+           Funding is the next part of the framework, and an area where important changes have oc-
+      curred. A major trend is that basic university funding for research projects decreases compared
+      to external project funding acquired through competition. Such external funding schemes—at
+      least in Scandinavia—increasingly encourage cooperation with non-research partners (Mathias-
+                                                                                                 ���������
+      sen and Nielsen     2008)����������������������������������������������������������������������
+                                 . Not much is written about this  funding in PD papers, except the cus-
+      tomary acknowledgement of external funding sources. However, I will argue that some of the
+      changes taking place add to our possibilities to influence ICT design in the future.
+           Then follows two areas where profound changes have occurred. First the types of users and
+      settings in PD projects, which now include much more than workers and workplaces. Secondly,
+      the handling of user interests, where changes are illustrated by the vanishing roles of trade unions.
+      While these changes have obvious positive aspects—and several of these have been discussed in
+      several papers—I argue that new serious problems have been introduced, but not debated. So
+      far they reside in the gap, but we need to address them more directly than hitherto to allow for
+      stronger safeguarding of user interests in the future.
+           Then I look at the types of projects we in the PD research community engage in and the
+      criteria for success that they entail. Once more profound changes have occurred as illustrated by
+      the decreased emphasis placed on production of knowledge for potential users beyond those
+      participating in the project.
+           Finally I consider techniques. Techniques are probably the most common topic for PD re-
+      search papers and the direct link to ICT design practices and practitioners. I will briefly discuss
+      some of the challenges and difficulties that especially the changing user groups and settings
+      entail for PD techniques.
+           Table 1 presents an overview of the elements of the framework. Column two and three
+      respectively list some early and some recent key examples for each element to illustrate changes
+      over time and the last column lists some challenges for next practice.
+           Obviously there are many other important questions for PD researchers to consider than
+      those outlined by the framework. One is how to increase the impact of existing PD research
+      results on current ICT practice (see, e.g., Kensing 2003, section V). However, uptake of current
+      PD research results is limited. In this paper I argue that a refocus of our research to include is-
+      sues in the gap between politics and techniques may produce more useful results with respect
+      to influencing next practices. Secondly, there is the question of how to improve work through
+      improving the quality of software available on the market for use at the workplace through cer-
+
+                               Bridging the Gap Between Politics and Techniques • 51
+
+Published by AIS Electronic Library (AISeL), 2010                                                             3
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+      tification (Walldius et al. 2009). While work on certification is a useful path forward towards
+      better work conditions, it is reactive and not really a question of design. Finally, if one focuses on
+      the political aspects of PD there are questions of how to promote a political agenda of democ-
+      ratization (Beck 2002). Politics in PD do receive quite a lot of attention (Bjerknes et al. 1987;
+      Monteiro 2002; Monteiro 2003; Bertelsen et al. 2005). In fact the framework and discussion
+      presented in this paper are partly a reaction to the discussions on PD and politics: I argue for
+      more focus on the issues in the gap between politics and techniques as a way to increase our
+      impact on the next practices of ICT design.
+
+
+
+
+                                                                                                Challenges for next
+           Element          Examples from Early PD           Examples from Recent PD
+                                                                                                     practice
+                          Workplace democracy              User involvement throughout To design better systems
+            Ideals        Supporting user interests        Better systems for all        for users and for
+                                                                                         organizations
+          Company         User companies:                  Users and producers: Partners Effective involvement of
+            roles         Counterpart                                                    producers of ICT
+                          Results free for all to use      Results a protected asset          Increased
+                                                                                              implementation,
+              IPR                                                                             dissemination of and
+                                                                                              continued development
+                                                                                              of ICT designs
+                          Internal                         External                           Focus on users, not just
+           Funding                                                                            use organizations and
+                                                                                              research
+                          Workers as opposed to            Non-wage earners, e.g.             High involvement of
+             Users        managers and owners              patients, customers, families      non-wage earners, e.g.
+                                                                                              customers
+                          Workplaces                       Non-workplaces, e.g. homes         High involvement in
+           Settings
+                                                                                              non-work settings
+                          Trade Unions                     PD researchers                     New alliances
+        Safeguarding
+                                                                                              safeguarding diverse user
+        user interests                                                                        interests
+                          Teaching material for users      Research papers                    Materials supporting
+            Project
+                                                                                              qualified use and
+           outcome                                                                            dissemination
+                          Experimental prototyping         Experimental prototyping           Techniques for both
+         Techniques       Amateur fieldwork                Professionalized fieldwork         work and private
+                                                                                              settings
+
+      Table 1: A framework for the gap between politics and techniques
+
+
+                                                          52 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                                 4
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+
+      3 Research for ‘Next practice’
+      In the following I use the framework to investigate developments in PD research projects over
+      the last decades. As already mentioned the framework conceptualises issues that belong in what
+      I term the gap between politics and techniques. I use the word “gap” because these issues usually
+      aren’t debated in PD papers. A consequence of this is that not much material is available. In
+      addition, local circumstances are an important determining factor. For these two reasons I often
+      use material from the local environment I know best, i.e., Denmark. However, I hope that the
+      way I present and discuss the material makes it possible for the reader to use it in developing his/
+      her own understanding of PD in general and especially to use it in developing new PD research
+      projects.
+
+
+      3.1 Ideals of PD research projects: from political ideals to
+          design ideals
+      I begin my investigations by considering how the ideals of PD research have evolved and how
+      these ideals relate to more broad societal ideals on development and innovation.
+          There seems to be an agreement among most of those that discuss PD and politics that PD
+      originally was attractive because it entailed notions of ethics, values and democracy (see, e.g.,
+      Bjerknes et al. 1987; Greenbaum and Kyng 1991; Kyng and Mathiassen 1997; Bertelsen et al.
+      2005; Balka 2006). Indeed the early Scandinavian projects that had a strong impact on PD in
+      the 1980s and early 1990s emphasized workplace democracy, and partnering with trade un-
+      ions. Two primary examples are the project by the Norwegian Iron and Metals Workers Union
+      (Nygaard and Bergo     1975)�����������������������������������������������������������������
+                                    and the Scandinavian Utopia      project on ICT support and organiza-
+      tion of work at newspapers with a strong focus on graphic workers (Bødker et al. 1987; Ehn
+      and Kyng 1987; Ehn and Kyng 1991). However, most PD projects from the early 1990s and
+      on do not include trade unions as partners. They do not even explicitly mention democratic
+      ideals. In fact it seems that design ideals like ‘user involvement throughout the project’ and
+      often ‘prototyping’ are what is common among the projects, or at least the research papers and
+      the public debate on PD, see, e.g., (Bannon 1991; Bødker and Grønbæk 1991; Henderson and
+      Kyng 1991; Kensing 2003; CPSR).
+          There are several elements in explaining this development. First of all the role of trade unions
+      was never undisputed (Bjerknes et al.
+                              �������������������������������������������������������������������������������
+                                              1987)���������������������������������������������������������
+                                                     . Their role in relation to concrete initiatives on tech-
+      nology varied widely from country to country, based on differences in, e.g., traditions, agree-
+      ments, and legislation (see Einhorn and Logue 1982). Furthermore, from the 1990s on—i.e., in
+      the decades following the Utopia project—trade unions gradually lost influence in general, their
+      unifying role diminished (Shapiro
+                                  ���������������������������������������������������������������������
+                                            2005)�������������������������������������������������������
+                                                   while the role of   other organizations like non-govern-
+      mental organisations in representing more diversified democratic interests increased. In addition
+      the role of ICT changed: from a technology most often used by engineering and administrative
+      departments in an effort to rationalize the work of others to pervasive technology used by most
+      people in the industrial world for many different types of activities. In a democratic perspective,
+      especially workplace democracy, this means that ICT has become more like other technologies;
+
+                               Bridging the Gap Between Politics and Techniques • 53
+
+Published by AIS Electronic Library (AISeL), 2010                                                                5
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+
+      and in a trade union perspective this again means that specific ‘ICT and democracy’ initiatives
+      are not as obvious as in the early days of PD (Kyng 1998).
+           Today most PD projects do not talk much about democracy, but focus on user participa-
+      tion and the results of design. At the same time a crucial part of their rationale is that they have
+      positive effects for the participating and affected users and companies. As illustrations I men-
+      tion two such projects. In the first, the Dragon project, a group of PD researchers cooperated
+      with employees and managers from the Maersk Line Shipping Company to produce a design
+      for a global container booking system. The project developed a prototype that was effective
+      and efficient for the skilled booker and allowed skilled bookers to provide high quality service
+      (Christensen et al. 1998; COT 1998). In the second, the iHospital project, PD researchers and
+      health care personnel developed a prototype for improved communication on and coordination
+      of surgery. An independent assessment of the use of the prototype showed better utilization of
+      resources and improved work environment (iHospital
+                                                      �������������������������������������������������
+                                                                2005)���������������������������������
+                                                                      . Both the Dragon and the iHospi-
+      tal projects used explicit PD techniques, and the participating users were very much aware that
+      their participation had been crucial to the quality of the designs.
+           To characterize such projects, I quote Mike Robinson, who in a note on PD (Robinson
+      1998, p. 64) writes: “I believe that the results will stand on their own, and, when undertaken
+      self-consciously, will enhance dignity, self-respect, and self-confidence. Although there is a con-
+      nection, I do not believe such work will per se remedy injustice or significantly shift power-re-
+      lations. This is a task for political action—and some of the actors will be Trade Unions.” Others
+      have characterized this development as a “gradual softening” with the result that the approach
+      “has lost most of its critical edge” (Ivari and Lyytinen 1998, p. 147). From my point of view two
+      relevant observations are:
+           First, the ideals of PD, including Scandinavian PD projects, have evolved as part of more
+      general societal trends—PD is not something isolated from the rest of society, but develops in
+      interaction with others, with technology and its use. Thus one could also say that the critical
+      potential of PD is not a question that can be answered by analyzing PD in isolation, but should
+      be seen as a relation between PD and possibilities for influencing ICT development and use.
+      In (Kyng 1998) I briefly touched upon some of these issues using the term normalization to
+      characterize the changing role of ICT from special to mundane (see also Shapiro 2005, p. 34).
+           Secondly, these developments in ideals continue to place PD in a strong position to generate
+      high impact. To illustrate: Originally Scandinavian PD projects produced high impact through
+      questioning the ideology of value free IT systems and sketching an effective way of involving
+      users and safeguarding user interests in design through a trade union strategy. Today PD is in
+      a position where it has the potential to produce results that are better for both employees/users
+      and management/owners than non-PD approaches, especially when designing for complex situ-
+      ations, as illustrated by the projects Dragon and iHospital. However, when no explicit politics
+      are involved the outcome for the users is more uncertain, especially at workplaces where conflicts
+      are involved and no trade unions are active.
+           I now move on to consider the role of companies and then of IPR in PD projects. I argue
+      that fewer changes have occurred than we might think—and that some of the changes that have
+      occurred might impede the implementation of the results of PD projects.
+
+
+                                                          54 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                    6
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+      3.2 Companies in the roles of users and producers:
+          from counterparts to partners
+      Inspired by, e.g., (Braverman
+                         ������������������������������������������������������������������������
+                                     1974)��������������������������������������������������������
+                                            early Scandinavian PD  projects viewed companies as set-
+      tings of use implementing capitalist logic such as deskilling; a view that projects like Utopia
+      found ample evidence of in the introduction of computers at workplaces where, e.g., deskilling
+      often was an intended result (Ehn and Kyng 1987). However, the Utopia project had a more
+      nuanced view as evidenced by the cooperation agreement with the Swedish company Liber. The
+      intention of the Utopia project was that the producer company Liber should develop a comput-
+      er based newspaper system using the specifications from Utopia (cf., Bødker et al. 1987). Thus
+      Liber would help promote Utopia ideals like quality of work and product by selling an IT system
+      to newspaper companies. This role of companies as producers turning PD designs into products
+      on the market has continued till this day. At the same time this positive role for companies as
+      producers assumes that a reasonable number of use companies will buy the systems. This line of
+      argument may be spelled out under the label of Concrete Consensus:
+          • The system and organization of work/activities will have positive effects for both users/
+              employees and for buyers/employers (representing the owners of the organization using
+              the system).
+          •    It is possible to find or establish one or more companies that will implement and market
+               the system.
+          • A market exists for the system, i.e. there are companies/individuals who will buy it.
+          In the case of Utopia reaching Concrete Consensus was deemed to require a major initia-
+      tive by the trade unions and involve struggle, negotiations and education as well as design and
+      implementation of new ICT systems and new ways of organizing work. In more recent PD pro-
+      jects creating such Concrete Consensus is usually considered to be a direct result of good design
+      work, cf. the Dragon and the iHospital projects dis­cussed above where no explicit initiatives
+      were taken but those related to design itself.
+
+
+      3.3 IPR: from non-issue to potential stumbling block
+      In addition to the increasingly positive stance of, e.g., Scandinavian PD projects towards compa-
+      nies that use ICT something has changed in relation to companies that produce ICT systems—
+      and one such change concerns IPR.
+          Most PD projects want to get the designs they make out into the world. At the time of the
+      Utopia project the simple way to do this seemed to be to convince different companies that they
+      should develop ICT systems based on the PD work. Intellectual Property Rights were not con-
+      sidered a hindrance for companies that wanted to use the designs. Thus agreements such as the
+      Utopia/Liber agreement did not involve royalties or other forms of payment from Liber to Uto-
+      pia. The same regime was also present in the Dragon project where Maersk Line was free to use
+      the designs in their subsequent system implementation as well as in their training of employees.
+      In recent years this has changed. Generally there is a much greater focus on knowledge as a basis
+
+                               Bridging the Gap Between Politics and Techniques • 55
+
+Published by AIS Electronic Library (AISeL), 2010                                                         7
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+
+
+      for making money, and more specifically a focus on IPR. This is supplemented with an organi-
+      zational focus where universities try to generate income based on the work of their researchers.
+          There are also individuals and their rights. The most common contracts for funding schemes
+      in the Framework programmes of the European Union give the IPR to those who have gener-
+      ated them. From the point of view of the individual this is a positive development in terms of
+      economic fairness. Many claim that this is also a positive development in terms of getting good
+      designs on the market and through this used by many. The argument is that if IPR is not pro-
+      tected companies will not invest in developing the systems. However, disputes over IPR between
+      individuals and companies may make it difficult to get companies to implement and market
+      new systems. In addition the current focus on the rights of the individual to make money
+      through protecting ideas challenge the positive effect on groups of users using systems based on
+      protected ideas. Open Source (OSI 2009) and the Free Software Foundation (Stallman 2009)
+      are prominent counter examples to the necessity of traditional IPR.
+
+
+      3.4 Funding: from neutral to supportive
+      Most PD research papers acknowledge the agency funding the research, typically a research
+      council, but do not discuss the influence of funding schemes. A few borderline cases exist: Balka
+      (2006) who considers the value of tenure, Sørensen (2003) who discusses perceived research
+      quality and potential implications on academic behaviour and Mathiassen and Nielsen (2008)
+      who consider the impact of funding on Scandinavian information systems research.
+         One reason for not discussing funding could be its rather stabile and uniform character.
+      However, using Denmark as an example, I illustrate that dramatic changes are occurring in
+      funding and that these changes potentially have equally dramatic consequences for projects and
+      project outcomes. Specifically I look at two groups of funding schemes that have been major
+      sources of funding for Danish PD projects.
+
+
+      Funding schemes supporting research/non-research cooperation
+      In 1996 The Danish National Centre for IT Research, CIT, was set up by the Ministry of Sci-
+      ence, Technology and Innovation in a move to circumvent the traditional focus on pure research
+      in the existing Research Council structure (CIT 1998). In 2002 CIT was followed by a few
+      regional funding schemes, including ISIS Katrinebjerg, which operated from 2002 to 2008
+      (Madsen 2007).
+          Danish PD researchers used the opportunities created by CIT and ISIS to get funding for a
+      number of PD projects, including the Dragon and iHospital projects mentioned above. How-
+      ever, PD was not used because participants from the companies (managers and employees) knew
+      about PD in advance. PD was used because the researchers, as part of project establishment,
+      convinced managers and employees that specific PD tools and techniques should be used.
+
+
+
+                                                          56 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                 8
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+      Funding schemes supportive of PD
+      I discuss one such scheme: Caretech Innovation (Wells 2009), which operates from 2008 to
+      2012. It is funded jointly by the Central Danish Region and the European Union and the focus
+      is creation and funding of projects in the health care area that have a business potential and are
+      based on ICT research and User Driven Innovation. The management of Caretech interprets
+      User Driven Innovation to mean PD.
+           Thus with Caretech funding opportunities moved from being neutral with respect to devel-
+      opment approach to actively supporting the use of PD. This development is primarily due to the
+      growing popularity of user driven innovation as a strategy for so-called knowledge based econo-
+      mies, and, especially in Denmark, as a strategy adopted by government institutions (Rosted
+      2009). When these global trends began to affect discussions of Danish funding, the Århus PD
+      research group had established itself as a major player both in research and in development of
+      funding schemes. The latter role was based on the group’s key role in CIT and ISIS. This in turn
+      resulted in the Århus PD group being able to propose the Caretech funding scheme and win
+      support for its implementation.
+           In summary: local expressions of international trends in government policy making met
+      with local expressions of PD anchored in more than 30 years of international cooperation to
+      create ‘pro-PD funding schemes’.
+           Currently it seems that Denmark is in the front with respect to public funding in support
+      of PD and other forms of user driven innovation. On the other hand there is a growing interna-
+      tional interest in the Danish funding schemes both in Europe and Japan. Thus in the spring of
+      2010 a conference on user driven innovation was organized in Osaka, Japan, where the Danish
+      funding schemes played a prominent role.
+
+
+      3.5 Users and settings: from workers at workplaces to many
+          in most places
+      As use of ICT has evolved PD research has gone through a broadening of scope from workers
+      and workplaces to numerous types of people using ICT in many different places. This develop-
+      ment has been both necessary and exciting. However, the fact that users in early PD projects
+      were mainly wage earners working at specific work places made a lot of things related to involve-
+      ment of users and organization of project work easier. Today we lack structures to support users,
+      especially non-wage earners, in design. To illustrate: when organizing fieldwork, design work-
+      shops, experiments with prototypes, etc. PD researchers were drawing on established procedures
+      at the different workplaces. Furthermore the workplaces were a non-private setting where the
+      PD work usually blended in smoothly with work and work related activities. Finally users par-
+      ticipating in PD could be paid for their participation just like they were paid for other parts of
+      their work—and just like the researchers were paid.
+          Now this has changed—and we do not have well-established procedures for dealing with
+      many of the new situations. This may be illustrated with a story from a Danish PD project �����
+                                                                                                  (Aar-
+      hus et al. 2009). The project researched ICT-support for pregnant, diabetic women with a focus
+      on the home. The participating users were pregnant diabetic women and employees at the hos-
+
+                               Bridging the Gap Between Politics and Techniques • 57
+
+Published by AIS Electronic Library (AISeL), 2010                                                          9
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+      pital involved with these women. Important parts of the work were field studies and contextual
+      interviews in the different homes of the women. However, a year into the project the researchers
+      found that they had done relatively more PD with the health care professionals than with the
+      pregnant, diabetic women. They concluded that this was because arranging workshops and de-
+      sign sessions with the professionals was much simpler than with the pregnant women who typi-
+      cally lived one or two hours of transport away from the hospital (which was located close to the
+      university where the researchers worked). This again led the researchers to develop techniques
+      suited for doing PD in waiting rooms. Other ways to deal with the issue of non-work related
+      PD include workshops in the evening, i.e., when the participants are not at work. However, in
+      most cases this is not a good solution. Problems include transport, baby-sitting, and conflicting
+      schedules (e.g., with hobbies). Furthermore lack of community among non wage-earner users
+      often makes it hard to identify and involve users who have special interests in and ideas related to
+      the project at hand. Finally when the target user groups include disadvantaged users, organizing
+      PD work is further complicated (Grönvall et al. 2010).
+
+
+      3.6 User interests: no trade unions and what we may loose
+      Work place democracy and trade unions no longer play an important role in PD. However,
+      while the vanishing role of explicit democratic ideals has been debated at quite some length
+      (Beck 2002; Monteiro 2003), not much has been said about the consequences of lack of trade
+      union involvement—except when lack of democratic ideals has been debated. But other im-
+      portant issues are at stake and need to be explicitly considered by the PD research community.
+           First of all there is the question of user interests. Even if the assumptions on “concrete
+      consensus” presented above hold in many cases, there are variations. One of the challenges for
+      PD is to find better ways to safeguard user interests and to create opportunities for groups of
+      users to pursue their own interests in relation to PD activities and the results of PD. One way
+      to approach this issue is to team up with different interest groups representing users, e.g., in-
+      terests groups for people with a handicap or elderly citizens. To illustrate: in a project on user
+      driven health care innovation for elderly people, the group of partners includes “Ældresagen”,
+      a national interest group for elderly people (Wells 2007). However, such interest groups vary in
+      many respects and specific strategies should be developed in each case.
+           Secondly, many PD projects produce knowledge that may have value beyond research. A
+      very important goal of the first Scandinavian PD projects was to produce knowledge for work-
+      ers. To illustrate: in the Utopia project the final report was produced in five languages, printed
+      in 70.000 copies and distributed by the Nordic graphic workers unions to all their members.
+      The subject matter was information technology in the graphic industry: trends, consequences
+      and possibilities, with a focus on the alternative ICT systems design and organization of work
+      that the project had developed. Similarly in the Norwegian Iron and Metal Workers project
+      (Nygaard and Bergo 1975), two main reports were books written for Trade Union members. In
+      the Danish project “Democracy, Development and IT”, the main deliverables were also teaching
+      material for trade union members. These materials were used for several years as the basis for
+      one-week courses for shop stewards (Kyng and Mathiassen 1982). In more recent PD projects
+      explicit knowledge generation for users, i.e., non-researchers and non-IT developers has played
+
+                                                          58 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                    10
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+      a minor role—except for those users involved in the projects, cf. the discussion below on project
+      types. I find it likely that a major reason for this is the lack of new visions and new structures to
+      substitute ‘work place democracy’ and trade unions in setting an agenda for the generation and
+      distribution of such knowledge.
+          If we in the PD research community want to continue to claim that our work has important
+      positive consequences for potential users, then we need to rethink how they may benefit. Es-
+      pecially, if our goal is that potential users too, i.e., people beyond those that use our prototype
+      designs, should benefit, then it seems that we need to put considerably more resources into this.
+          However, it should be noted that remarkable results have been achieved among the partici-
+      pants in many PD projects. For example, the Regional Hospital in Horsens, the hospital partner
+      in the iHospital project, won a prize as the most innovative Danish hospital in 2008 and as the
+      most innovative public Danish company in 2009. Probably not as a consequence of the PD
+      project, but probably related to their work in this project and the improved understanding of
+      local innovation that they developed. These positive effects are primarily based on the hospital
+      as an organisational frame for innovation. It is not clear how to support the dissemination of
+      knowledge, experience, etc., to other hospitals. So far such issues have been outside the scope of
+      PD. It is probably something that will require cooperation with researchers and organizations
+      outside the PD research community if we want to pursue this line of work.
+          Finally, in recent years the role of local trade unions in the development and implementa-
+      tion of Concrete Consensus on specific systems and organization of work is increasing together
+      with the increased focus on user driven innovation in Danish municipalities. To illustrate: The
+      Municipality of Aarhus has placed trade unions on their list of important partners in innova-
+      tion—together with citizens and employees (Lauridsen 2009).
+
+
+      3.7 Project types, goals and outcomes: from user focus to
+          research publications
+      An initial observation is that we are not very good at presenting and discussing the different
+      types of projects we do. Thus we don’t learn as much as we could about how to increase the
+      chances of success outside our home ground, the ‘research only’ arena. Furthermore we don’t
+      have an established typology, and the four types of goals used to characterize projects below only
+      represent a first attempt at finding some of the important distinctions.
+          The PD research only projects are classical research projects in the sense that if research pa-
+      pers are produced most people will agree that the project is a success—the better the papers,
+      the greater the success. Those of us who work in a university environment will know quite a lot
+      about how to do such projects and how to write research papers. Thus there may be a tendency
+      to choose this kind of project because we know how to do them.
+          Many PD research projects involve users as active participants in design and include user
+      experience among their goals or outcomes because they produce interesting experiences for all
+      or most participants. Typically, however, the main goal is doing PD research. The materials
+      produced by the PD researchers are research papers plus what is needed to carry out the project.
+      Such projects do not involve themselves in producing and disseminating knowledge that makes
+      the work in the project useful to wider groups of users outside the project, see, e.g., (COT 1998;
+
+                               Bridging the Gap Between Politics and Techniques • 59
+
+Published by AIS Electronic Library (AISeL), 2010                                                             11
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+      iHospital 2005; Mogensen and Kyng 2008). Reasons for this are discussed below in connection
+      with the next type of goal.
+          Some PD research projects have goals related to user knowledge, i.e., goals that concern
+      production and dissemination of knowledge to user groups beyond the project participants.
+      The first Scandinavian PD projects (Nygaard and Bergo 1975; Carlson et al. 1978; Kyng and
+      Mathiassen   1982)�������������������������������������������������������������������������
+                           and the Utopia project (Bødker et
+                                                    �������������������������������������������������
+                                                                al. 1987)�����������������������������
+                                                                          had  such goals—and the rela-
+      tive weight given to the project goals favoured production and dissemination of knowledge for
+      the user groups over writing research papers. Today this has changed—knowledge production
+      directed towards users other than those directly involved is seldom given priority. I have already
+      mentioned the lack of vision and structure on the user side to support and push for generation
+      and dissemination of such knowledge. Furthermore, evaluation of university researchers is be-
+      coming more and more quantified and producing knowledge for users doesn’t count as much
+      as research papers3.
+          Goals related to development is the last type. To succeed projects with such goals should
+      develop artefacts that are useful for bringing ICT-designs into real use. The projects Utopia,
+      Dragon and iHospital had such goals. When we look at the development aspects in terms of pro-
+      totypes and organization of work the projects produced remarkable results (Bødker et al. 1987;
+      Ehn and Kyng 1991; COT 1998; iHospital 2005; Cetrea 2009). However, when we look at the
+      issue of getting designs into use it is not so easy to find successes. Utopia failed in this respect,
+      Dragon was a limited success, and only iHospital has succeeded: In the Utopia project a coop-
+      eration agreement was made with the company Liber according to which Liber was supposed to
+      develop a system using the specification produced by the Utopia project. However, Liber failed
+      to produce such a system. Looking back at the process this is not a big surprise. The Utopia
+      project developed a new prototype-based, experimental approach to system specification. The
+      Liber company was developing software based on very volatile hardware basis4. Add to this the
+      now well-known problems of one organization developing an implementation based on specifi-
+      cations made by another organization plus rather non-harmonious relations between newspaper
+      owners/management and employees/trade unions. The chances of success under these circum-
+      stances are small. Indeed success wasn’t reached. In the Dragon case the shipping company Mae-
+      rsk Line quite late in the process decided to hire an external company to develop the new system
+      based on the Dragon specifications. Again this is never easy with new innovative designs. The
+      external company did indeed run into severe difficulties. The work was subsequently taken over
+      by Maersk IT, a software company with the same owners as Maersk Line. Thereafter the process
+      came back on track. Although it was not a smooth ride a rather successful system was eventually
+      implemented and put into use by Maersk Line (Christensen et al. 1998; COT 1998; Shapiro
+      2005). The iHospital project is probably the greatest success with respect to implementing a
+      system and organization of work based on a Danish PD Research and development project. Fol-
+      lowing a successful trial period it was decided to form a company with responsibility for making
+      a product based on the prototype, as well as for marketing, sales, installation, maintenance,
+      further development, etc. As for many other start-ups, the researchers were founders of the
+      company and worked as software architects and programmers. In this way implicit knowledge
+      from the PD project was available to the company. However, equally important to the success
+      of the company was probably the work experience of the senior researcher from an international
+      IT company and the hiring of a CEO with management experience from a company making
+
+                                                          60 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                     12
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+      IT systems for hospitals. The start-up company, Cetrea, implemented a product based on the
+      prototype and installed it at the hospital in Horsens who had participated in the PD project.
+      The installation got a very positive evaluation, and the changes attributed to the system included
+      improved utilization of operating theatres and improved work environment. In the summer of
+      2009 the company made their second installation at one of the largest hospitals in Denmark, the
+      University Hospital at Skejby (Cetrea 2009).
+
+
+      3.8 Techniques: from public only to inclusion of the private
+      Over the years the PD research community has developed a large number of useful techniques.
+      Many are characterized by use of prototypes and by experimentation in realistic settings simulat-
+      ing future work and organization. In addition field work based on ethnography plays a crucial
+      role, see, e.g., (Greenbaum and Kyng 1991; Schuler and Namioka 1993) as well as proceedings
+      from recent PD conferences (Jacucci and Kensing 2006; PDC
+                                      ������������������������������������������������������������
+                                                                          2008)������������������������
+                                                                                 . Experience in organiz-
+      ing e.g. PD field work has made it reasonably straightforward to work with sensitive areas like
+      emergency response (Kristensen et al. 2006; Kyng et al. 2006). However, as discussed above in
+      the section on Users and settings, practical ways of organizing PD work and of doing PD design
+      have to a large degree been exploiting the fact that we were usually dealing with employees at
+      work. A major current challenge for PD is how to deal with the home as an area for ICT.
+          One of the techniques available is probes (Gaver et al. 1999; Gaver et al. 2004). Probes
+      are well suited for the home, but have recently been criticized for moving the focus from the
+      involvement of users to the interpreter (Crabtree et al.
+                                               ����������������������������������������������������������
+                                                               2009)������������������������������������
+                                                                     . A very different approach to deal-
+      ing with the home is represented by ‘home-labs’ or ‘experimental smart homes’. A home-lab is
+      a controlled lab-environment built as, e.g., an apartment, with the difference that it is designed
+      to facilitate easy installation of new technologies and easy monitoring to allow experimenta-
+      tion with and evaluation of novel technology in a controlled, but still home-like setting where
+      people may live for days or weeks or just participate in evaluation sessions lasting a few hours.
+      Several universities and research institutions have established such labs. However, without going
+      into details, it seems that these labs are more oriented towards technology push and test, than
+      towards participatory design.
+          So the question of PD techniques for the home remains open. We do believe though that we
+      have some promising ideas: In one of our ongoing projects we have begun to experiment with
+      an approach where we take advantage of the Danish folk high schools, where people live and
+      study non-degree subjects of many different kinds. A typical period is 4-6 months, but recently
+      one- and two-week summer courses have become popular. In the HandiVison project one of
+      the partners is the Egmont folk high school, where the students are mainly young people with
+      physical handicaps and their helpers. As part of the project we have developed a six months
+      course on participatory design for these groups, called “The innovative user”. The course focuses
+      on development of aids for the participants by the participants and includes methods on idea de-
+      velopment, design aesthetics and development of prototypes (Kyng and Spure 2008). Recently
+      we have decided to expand this idea to other groups. We are currently investigating how to set
+      up one- and/or two-week courses targeting different kinds of ‘home settings’. One example is
+      elderly who want to continue to live in their current home, but don’t feel comfortable and safe
+
+                               Bridging the Gap Between Politics and Techniques • 61
+
+Published by AIS Electronic Library (AISeL), 2010                                                           13
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+      as it is. Another is families where one member has a (specific) chronic disease. We believe that
+      such courses, where people live together at a folk high school for one or two weeks, will provide a
+      good basis for workshops generating and exploring ideas on support and even for setting up and
+      experimenting using home-like labs. At least our preliminary experiences from the PD course at
+      Egmont are positive (Spure 2009).
+          Furthermore, as ‘users’ become still more diversified PD techniques have to deal with new
+      types of hierarchies, inequalities and dependencies in addition to the old employee/employer. As
+      mentioned above in the HandiVison project user groups includes people with a handicap plus
+      their helpers—and in some cases only the helpers have a language. In several other projects we
+      have worked with PD involving both health care professionals and people receiving care/treat-
+      ment, e.g., pregnant diabetic women. (Ballegaard et al. 2008) describes some of the dilemmas
+      facing the pregnant women who get caught between the views and recommendations of health
+      care professionals and their desire to live as normal a life as possible.
+
+
+
+      4 From research to ICT design practice:
+        recommendations for bridging the gap
+      This article is an invitation and a challenge to develop PD into the next practices of ICT design.
+      I believe that the prospects for the PD research community to meet this challenge are good.
+      However, research papers are not enough. We have to demonstrate that PD can deliver more
+      than politics for the users and techniques for IT-professionals pursuing a management agenda.
+      We have to demonstrate that PD can deliver ICT designs that appeal both to users and to those
+      who pay—this is what I have termed Concrete Consensus above. At the same time we have to
+      continue to cater for the PD aspects of ICT design, e.g., how to provide space for users to handle
+      their interests. To this end we have to develop answers that are also valid for people who do not
+      condone a political agenda of, e.g., workplace democracy. The material in the sections above is
+      intended as food for thought for those who want to work with these questions. For those who
+      also want to develop new PD projects along these lines I have the suggestions in table 2.
+          These are my suggestions for filling the gap. I hope that they will inspire debate—and most
+      of all that the paper will encourage readers to participate in shaping the next practices of ICT
+      design through new projects, new courses for users and designers and through political action.
+
+
+
+
+                                                          62 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                   14
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+             Element                                            PD for next practice
+                             Consider the kind of ideals that you as a person and as a member of a research group want
+                             to pursue, and then consider what kind of ideals you want to pursue in a specific project
+                             and how to engage in a discussion with the other project partners on their goals for the
+                             project.
+              Ideals         For the more political ideals consider what partners you may work with to promote these
+                             and to create new visions for future work.
+                             On the more practical side it may include thoughts on pros and cons for individual users,
+                             group of users and management of user organisations as well as for producer companies and
+                             IT-professionals.
+                             Consider possibilities for creation of Concrete Consensus and how to get an ICT design
+                             into broad use—when relevant. This may include both employees and management
+                             at involved workplaces, issues of IPR, cooperation with ICT producer companies or
+         Company roles       investigating possibilities for creating start-ups. It may also include thoughts on a possible
+           and IPR           business case for a vendor.
+                             Consider if use of the Free Software model or Open Source Software may be suited for your
+                             project. In some cases such models seem to be a good way to protect PD solutions from
+                             being bought and diluted over time—at least for some time.
+                             Consider the possibilities and restrictions of different funding options carefully.
+                             Involvement with companies is increasingly a possibility, but look into the options for
+            Funding          involving users, especially for involving users on more than an individual level, e.g. as
+                             representatives of a group.
+                             When possible make room for experiments with how to involve non-wage-earners and
+                             non-workplace settings to compensate for the historical bias in PD towards wage earners
+                             and workplaces.
+                             Pay special attention to the handling of user involvement and user interests in cases where
+                             potential users are not interacting on a regular basis based on their role as users, e.g., when
+       Users and settings    doing PD with patients, families and customers. With respect to ‘compensation’ some
+                             options are:
+                             •     Low end: support for travel, paying for participation in workshops in nice resorts and
+                                   providing free versions of the ICT being designed.
+                             •     High end: shares in a start-up.
+                             Consider possibilities for organisational alliances on the user side to supplement
+                             cooperation with companies. Depending on the specific organisation such alliances
+          Safeguarding       may support the safeguarding of user interests, generation of input on user interests and
+          user interests     dissemination of user knowledge on a larger scale, including knowledge on concrete
+                             consensus. Such alliances may include trade unions, but probably in a less prominent role
+                             than during e.g. the Utopia project.
+                             Deliberate project outcomes in relation to the interests of all involved parties and
+                             specify expected outcomes, e.g., research papers, prototypes, learning for those involved,
+                             knowledge for user groups not directly involved and teaching materials. Consider setting up
+        Project outcome      ongoing monitoring of progress on these issues.
+                             Materials supporting qualified use and dissemination in relation to ICT designs and
+                             systems as well as organization of work/activities.
+                             Continue to support users as active participants throughout the PD processes.
+                             Consider the use of social media, e.g. to promote different project outcomes, such as:
+                             •     new ICT design and new ways of working
+           Techniques        •     new knowledge for users
+                             •     new techniques
+                             •     and to create and sustain an ongoing dialogue, especially for non-wage earners.
+
+
+      Table 2: PD for next practice: Filling the gap between politics and techniques
+
+                               Bridging the Gap Between Politics and Techniques • 63
+
+Published by AIS Electronic Library (AISeL), 2010                                                                              15
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+
+      5 Acknowledgements
+      Thanks to Susanne Bødker, Olav Bertelsen, Kaj Grønbæk and Preben Mogensen for cornering
+      me in such a way that I had to write this paper. And thanks to my other numerous colleagues
+      and project partners. Our joint work over the years made this paper possible. Finally, I thank the
+      editor, Samuli Pekkola, who’s patience, interest and numerous comments have been indispensa-
+      ble in shaping the paper. His effort went far beyond the line of duty.
+
+
+
+      6 Notes
+           1. I prefer to use the concept ‘ICT design’ in stead of ‘systems development’ or ‘systems
+              design’ for two reasons: I take ICT design to include the other two and I find that it
+              better encompasses the flavour of what current design and development involving ICT
+              is about, i.e., not only ‘systems’. However, none of the three concepts are good at em-
+              phasising the role of human activity in design and suggestions for an alternative will be
+              appreciated.
+           2. For ease of reading I’ll just write “user” also when I mean “potential user”.
+           3. A related discussion on research papers and relevance for practitioners may be found in
+              (Mathiassen and Nielsen 2008).
+           4. During the Utopia/Liber cooperation hardware for the graphics industry changed from
+              being special purpose, e.g., bit sliced, to being general purpose.
+
+
+
+      7 References
+      Balka, E., (2006). Inside the belly of the beast: the challenges and successes of a reformist par-
+           ticipatory agenda. In: Proceedings of the Ninth Conference on Participatory Design: Expanding
+           boundaries in design, ACM, p. 143.
+      Ballegaard, S. A., Hansen, T. R., and Kyng, M. (2008). Healthcare in everyday life: designing
+           healthcare services for daily life. In: Proceeding of the twenty-sixth annual SIGCHI conference
+           on Human factors in computing systems, Florence, Italy, ACM, pp. 1807-1816.
+      Bannon, L., (1991). From human factors to human actors: The role of psychology and human-
+           computer interaction studies in system design. In: Design at work: Cooperative design of
+           computer systems, pp. 25-44.
+      Beck, E., (2002). P for political: Participation is not enough. Scandinavian Journal of Informa-
+           tion Systems, (14:1): 77-92.
+      Bertelsen, O., Bouvin, N., Krogh, P., and Kyng, M., editors, (2005). Critical computing: between
+           sense and sensibility, Aarhus, Denmark, ACM.
+
+
+                                                          64 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                    16
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+      Bjerknes, G., Ehn, P., and Kyng, M., (1987). Computers and democracy: a Scandinavian chal-
+          lenge, Avebury.
+      Braverman, H., (1974). Labor and Monopoly Capital, Monthly Review Press.
+      Bødker, S., Ehn, P., Kammersgaard, J., Kyng, M., and Sundblad, Y., (1987). A UTOPIAN
+          Experience: On design of powerful computer-based tools for skilled graphic workers. In:
+          Computers and Democracy, G. Bjerknes, P. Ehn and M. Kyng (eds.), Avebury, pp. 251–278.
+      Bødker, S., and Grønbæk, K., (1991). Design in action: From prototyping by demonstration to
+          cooperative prototyping. In: Computers and Democracy, G. Bjerknes, P. Ehn and M. Kyng
+          (eds.), Avebury, pp. 197-218.
+      Carlson, J., Ehn, P., and Sandberg, A., (1978). Planning and control from the Perspective of
+          Labour: A Short Presentation of the Demos Project. Accounting Organizations and Society,
+          (3:3-4).
+      Cetrea, (2009). Cetrea – logistics and communication. 2009, from http://cetrea.com/.
+      Christensen, M. A., Crabtree, A., Damm, C., Hansen, K. M., Madsen, O. L., Marqvardsen,
+          P., Mogensen, P., Sandvad, E., Slot, L., and Thomsen, M. (1998). The M.A.D. Experience:
+          Multiperspective Application Development in evolutionary prototyping. In: ECOOP’98 –
+          Object-Oriented Programming, Vol. 1445, Springer, Berlin/Heidelberg, pp. 13-40.
+      CIT, (1998). Annual Report 1998. From http://www.cit.dk/download/CITaarsb98.pdf.
+      COT, (1998). Case 5: Dragon Object-Oriented Architecture of a Global Customer Service
+          System. From http://www.cit.dk/COT/case5-eng.html.
+      CPSR, (2005). Participatory design. From http://cpsr.org/issues/pd/introInfo/.
+      Crabtree, A., Rodden, T., Tolmie, P., and Button, G. (2009). Ethnography considered harmful.
+          In: Proceedings of the 27th international conference on Human factors in computing systems.
+          ACM, Boston.
+      Ehn, P., and Kyng, M., (1987). The Collective Resource Approach to Systems Design. In: Com-
+          puters and Democracy, G. Bjerknes, P. Ehn and M. Kyng (eds.), Avebury, pp. 17-57.
+      Ehn, P., and Kyng, M., (1991). Cardboard Computers: Mocking-it-up or Hands-on the Future.
+          In: Design at Work: cooperative design of computer systems, J. Greenbaum and M. Kyng, edi-
+          tors, Lawrence Erlbaum Associates, Mahwah, NJ, pp. 169-195.
+      Einhorn, E., and Logue, J., editors, (1982). Democracy at the shop floor—An American Look at
+          Employee Influence in Scandinavia Today, Kent Press.
+      Gaver, B., Dunne, T., and Pacenti, E., (1999). Design: Cultural probes. Interactions, (6:1): 21-
+          29.
+      Gaver, W. W., Boucher, A., Pennington, S., and Walker, B., (2004). Cultural probes and the
+          value of uncertainty. Interactions, (11:5): 53-56.
+      Greenbaum, J., and Kyng, M., editors, (1991). Design at Work: cooperative design of computer
+          systems, Lawrence Erlbaum Associates, Mahwah, NJ.
+      Grönvall, E., Aarhus, R., and Kyng, M., (2010). Challenges in participation—Users and their
+          roles in the development of home-based pervasive healthcare applications, submitted.
+      Henderson, A., and Kyng, M., (1991). There’s no place like home: Continuing design in use. In:
+          Design at Work: cooperative design of computer systems, J. Greenbaum and M. Kyng, editors,
+          Lawrence Erlbaum Associates, Mahwah, NJ, pp. 219-240.
+      von Hippel, E., (2005). Democratizing Innovation, MIT Press, Boston.
+      iHospital, (2005). From http://ihospital.dk/.
+
+                               Bridging the Gap Between Politics and Techniques • 65
+
+Published by AIS Electronic Library (AISeL), 2010                                                        17
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+      Ivari, J., and Lyytinen, K., (1998). Research on Information systems Development in Scandina-
+           via—Unity in Plurality. Scandinavian Journal of Information Systems, (10:1&2): 135-186.
+      Jacucci, G., and Kensing, F., editors, (2006). Proceedings of the ninth conference on participatory
+           design, Trento, Italy, ACM.
+      Kensing, F., (2003a). Methods and Practices in Participatory design, ITU Press, Copenhagen.
+      Kensing, F., (2003b). Participatory Design in Commercial Settings. In: Methods and Practices in
+           Participatory design, F. Kensing, editor, ITU Press, Copenhagen, pp. 317-348.
+      Kristensen, M., Kyng, M., and Palen, L., (2006). Participatory design in emergency medical
+           service: designing for future practice. In: Proceedings of the SIGCHI conference on Human
+           factors in computing systems, Montreal, Quebec, Canada, ACM, pp. 161-170.
+      Kyng, M., (1998). Users and computers: A contextual approach to design of computer artifacts.
+           Scandinavian Journal of Information Systems, (10:1&2): 7-44.
+      Kyng, M., and Mathiassen, L., (1982). Systems development and trade union activities. In:
+           Information Society, for Richer, for Poorer, N. Bjørn-Andersen, editor, Amsterdam, North
+           Holland, pp. 247-260.
+      Kyng, M., and Mathiassen, L., editors, (1997). Computers and design in context, Cambridge,
+           Mass., MIT Press.
+      Kyng, M., Nielsen, E. T., and Kristensen, M., Challenges in designing interactive systems for
+           emergency response. In: Proceedings of the 6th ACM Conference on Designing Interactive
+           Systems, pp. 301-310.
+      Kyng, M., and Spure, J., (2008). Handicap - a knowledge resource for developing better aids.
+           From http://www.pervasivehealthcare.dk/projects/index.php#14.
+      Lauridsen, I. K. (2009). Challenges and possibilities for elderly citizens. In T. u. d. h. i. group
+           (Ed.). Aarhus, Denmark: Municipality of Aarhus.
+      Madsen, O. L., (2007). ISIS Katrinebjerg – Slutrapport, Århus, Denmark.
+      Mathiassen, L., and Nielsen, P. A., (2008). Engaged Scholarship in IS Research. Scandinavian
+           Journal of Information Systems, (20:2): 3-20.
+      Mogensen, P., and Kyng, M., (2008). PalCom project webpage. From http://www.ist-palcom.
+           org/.
+      Monteiro, E., editor, (2002). Scandinavian Journal of Information Systems, (14:1).
+      Monteiro, E., editor, (2003). Scandinavian Journal of Information Systems, (15).
+      Nygaard, K., and Bergo, O. T., (1975). The trade unions, new users of research. Personnel Re-
+           view, (4:2).
+      OSI, (2009). The Open Source Initiative (OSI). From http://www.opensource.org.
+      PDC, (2008). Proceedings of the 10th anniversary conference on Participatory Design: Experiences
+           and Challenges, Indiana University, Bloomington, Indiana, ACM Press.
+      Robinson, M., (1998). The one that got away: comments on users and computers. Scandinavian
+           Journal of Information Systems, (10:1&2): 61-66.
+      Rosted, J., (2009). FORA – Division for research and analysis. From http://www.ebst.dk/fo.
+      Schuler, D., and Namioka, A., editors, (1993). Participatory Design: Principles and Practices, L.
+           Erlbaum Associates Inc.
+      Shapiro, D., Participatory Design: the will to succeed. In: Critical computing – Between Sense
+           and sensibility, O. W. Bertelsen, N. O. Bouvin, P. G. Krogh and M. Kyng, editors, ACM,
+           pp. 29-38.
+
+                                                          66 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                   18
+                                Kyng: Bridging the Gap Between Politics and Techniques
+
+
+
+
+      Spure, J., (2009). Handivision - en videnressource til bedre hjælpemidler. From http://www.
+           alexandra.dk/hjaelpemidler/.
+      Stallman, R., (2009). The GNU Manifesto. From http://www.gnu.org/gnu/manifesto.html.
+      Tidd, J., and Bessant, J., (2009). Managing Innovation, John Wiley.
+      Walldius, A., Sundblad, Y., Bengtsson, L., Sandblad, B., and Gulliksen, J., (2009). User certifi-
+           cation of workplace software: assessing both artefact and usage. Behaviour and Information
+           Technology, (28:2): 101-120.
+      Wells, L., (2007). User Driven Healthcare Innovation. From http://www.pervasivehealthcare.
+           dk/projects/index.php#13.
+      Wells, L., (2009). Caretech Innovation – En platform for sundheds-it projekter (A platform for
+           healthcare IT projects). From http://www.caretechinnovation.dk/.
+      Aarhus, R., Ballegaard, S. A., and Hansen, T. R., (2009). SundtHjem projektet - slutrapport
+           (final report). Aarhus University, Århus, Denmark.
+
+
+
+
+                               Bridging the Gap Between Politics and Techniques • 67
+
+Published by AIS Electronic Library (AISeL), 2010                                                         19
+                           Scandinavian Journal of Information Systems, Vol. 22 [2010], Iss. 1, Art. 5
+
+
+
+
+                                                          68 • Kyng
+
+http://aisel.aisnet.org/sjis/vol22/iss1/5                                                                20
+

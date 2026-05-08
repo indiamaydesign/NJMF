@@ -1,0 +1,377 @@
+2.4 How Many Choices Do We Make?
+    How Many Are Difficult?
+       Kristen Nygaard
+
+
+
+
+I have been asked to write about some of the choices I have had to make as
+a scientist - choices relating to social responsibility. This is a very dangerous
+task, since it may easily become a tale of a battle between evil and good, with
+oneself as the hero. In fact, I do not know how to avoid that trap: there have
+been battles with very much to lose, and one had to mobilize a strong belief in
+the cause one was fighting for.
+    Some people believe that scientists lead a noble life, aloof and relieved from
+conflicts, escaping annoying decisions, only guided by the quest for new discov-
+eries and truths, so different from the tumultuous and hazardous existence of a
+businessman. Other people, like myself, would rather state that being engulfed
+in the research and development jungle, one is sometimes longing for the peace
+and safety of the marketplace. This is only a general remark, and my paper will
+not live up to any expectations raised by it.
+
+    Informatics (computer science) and Operational Research (OR) emerged as
+sciences in the wake of the last world war. I started at the University of Oslo in
+1945, with computing in 1948, programming around 1950, and with Operational
+Research in 1952. I got my cando real.-degree in Mathematics in 1956, having
+worked (mostly full time) at the Norwegian Defense Research Establishment
+(NDRE) since 1948. From 1956 on I had the task of building up the use of
+OR in the Norwegian Defense. I was active politically from 1945 on in the non-
+socialist but left-oriented party "Venstre" ("The Left", corresponding to, say,
+the left wing of the British Liberals).
+    For me, informatics and OR have always been closely related, and I tend
+to see many tasks in informatics from the perspective of OR. I left OR in the
+mid-1960s, however, mainly because the OR community in my opinion became
+too obsessed with optimization and too little with decision support, and because
+it failed to realize that a thorough knowledge and mastery of the computer is a
+necessary part of competence in OR.
+    A major and, at the time, largely undebated assumption in the development
+of the post-war culture was that "technological progress happens, it is politically
+neutral - and good!" . (The concern about atomic weapons was one of the excep-
+tions.) In Operational Research, however, the situation was somewhat different:
+The task was to find the best use of men and equipment, dependent upon a stated
+set of objectives. If the objectives were modified, the "best use" changed. Also,
+the development of new equipment had to be fine tuned to a proper understand-
+ing of the objectives of the decision-makers. And those objectives could be highly
+     C. Floyd et al. (eds.), Software Development and Reality Construction
+     © Springer-Verlag Berlin Heidelberg 1992
+2.4 How Many Choices Do We Make? How Many Are Difficult?                       53
+
+political, particularly in the military field. The application of OR techniques to
+conflicts between interest groups within organizations was an idea dear to an OR
+researcher.
+    Our OR work turned out to be quite successful, and that created an un-
+expected conflict. I wanted OR to be a science and our work to be research,
+providing support for decisions made by those having the responsibility for the
+activities we analyzed. I discovered that many in the military establishment were
+only too happy to have the researchers point out "the correct solution" to some
+of the hot issues, and that my Director at the NDRE was only too happy to
+see a development that gave more power to his institute. I tried to counter this
+by being very careful in pointing out which conclusions could be validly drawn
+from our work and also the factors that we had not taken into account. I felt
+that unless we did, both OR and the decision structures would be undermined.
+    The military people appreciated this attitude after some clarifying discus-
+sions. The conflict with the Director developed further, and as a consequence
+I left the NDRE in 1960 to build up the Norwegian Computing Center as a
+research institute in computing and OR.
+    The conflict also made me aware of corresponding problems in keeping demo-
+cratic control in the planning processes in Norwegian politics, both at the local
+and at the national level. As a result, a debate was initiated among planners
+about our professional role, and I once more went into party politics. (At the
+time when Simula was finished, I was the chair of my party's Strategy Com-
+mittee. Soon after I became a member of the 5-person top leader group of the
+party whose parliamentary group then participated in the Norwegian coalition
+government.)
+
+    When the first version of Simula, Simula I, was made available in the spring
+of 1965, it was immediately used in a series of jobs in Norway and, even more,
+in Sweden. It was of course fascinating to see the tool we had developed being
+put to practical use and influencing the design of organizations and production
+facilities.
+    It was evident that the Simula-based analyses were going to have a strong
+influence on the working conditions of the employees: job content, work intensity
+and rhythm, social cooperation patterns were typical examples. The impacts
+clearly tended to be negative. Not surprising, since the analyses were founded
+upon a Tayloristic view of management.
+    My own sympathies were with the employees, and the question was unavoid-
+able: Should I continue to support the propagation of a tool that to a large
+extent was used against those to whom I wanted to show my solidarity?
+    As I have said, it was not at all a new experience for me that research had
+implications in politics. But these had mainly been consequences from one world
+into another, relating to commonly hailed democratic ideals. I was active in the
+research world and in the political world, but they were separate.
+    Now matters were different: The demand I had to make was that analyses
+should be made as in Operational Research. The "best use" of labour and equip-
+54                                                                Kristen Nygaard
+
+ment ought to be evaluated both from the objectives of management and from
+the objectives of the employees, taking into account that these objectives nor-
+mally were at least partially conflicting. The alternative "best" solutions should
+then, in my opinion, be communicated to both management and labour.
+    I realized of course that this demand would not be accepted by the users con-
+trolling the resources for the applications of Simula in business and production
+planning. When I tried to state my views, I was not taken seriously, as expected.
+The question then became: May more realistic alternatives be created?
+    I could not disinvent Simula, and I also believe that computers enrich the
+set of feasible social structures. I did not believe that I could find "a general
+solution". In the beginning of 1967 I decided to contact the Trade Unions and
+propose the building up of competence in information technology within their
+ranks.
+
+    As it happened, the Trade Union School at the same time had decided to
+ask me to lecture on a course named: "The Trade Unions Facing the Future".
+The lecture was followed by many more, and it was quickly understood that
+it was necessary for the unions to develop an information technology policy. A
+discussion group was formed, and it is interesting to note that a large fraction
+of the young trade unionists in the group are among the top leaders of the
+Norwegian Trade Unions today.
+    Politically, the end of the 1960s were also for me quite eventful. I started
+doubting my engagement in traditional party politics, and left the Liberal Party
+when I realized that I had become a socialist. I was the chair of the committee on
+environment problems within the Norwegian Association for the Protection of
+Nature for a couple of years, and I worked closely with socially outcast alcoholics
+in an alternative institution experiment. Both tasks showed me other realities,
+very different from those I had known before.
+    You have observed that the main personal pronoun used till now has been
+"I". This does not mean that I was working alone. On the contrary, nearly
+all my work has been done in teams. But the decisions discussed above were
+made by me. From 1967 on I became a member of a group within a broad,
+democratic movement genuinely representing the interests of the workers. (In
+Norway unionization is at the 80% level.) It was no longer a question about
+what I felt was good for other people, but instead participation in a collective
+effort to shape a strategy for all of us.
+    The group members came from a wide range of sectors in the society: Job
+shops, chemical plants, transportation, white collar work, hotels and restaurants,
+the public sector. I was the only researcher in the group and had for that reason
+special functions in our work. But the other members had their own areas of
+competence, equally important for the task.
+    We first discussed possible consequences of the imminent introduction of
+information technology in various sectors, then how we should build up our
+own competence. We never considered building that competence by teaching to
+union members the curriculum used by programmers, engineers or managers.
+2.4 How Many Choices Do We Make? How Many Are Difficult?                      55
+
+Knowledge is organized for a purpose and reflects the world view of the authors
+in terms of corporate values, power structures, objectives to be achieved and so
+on. Uncritical acceptance of such material would make us brainwash ourselves.
+What we needed was a reevaluation of the use of information technology based
+upon the world view of the union members, emphasizing solidarity, industrial
+democracy, safe employment, safe working conditions, decent wages and so on.
+    Since no such exposition of information technology existed, we concluded
+that it was a research task to produce one. In Norway the Royal Norwegian
+Council for Scientific and Industrial Research supports a wide range of projects
+in information technology, and the Norwegian Iron and Metal Workers' Union
+decided on its convention in 1970 to apply for money to "evaluate planning,
+control and data processing, based upon the perspective of organized labour"
+and to ask the Norwegian Computing Center (where I was working) to carry out
+the project.
+    This was the first project application of its kind to the Research Council. It
+was handed over to its Committee for the Mechanical Industry which, no sur-
+prise, had its offices in the building of the association of the employers in that
+industry. Their responses, internal discussions and attempts at getting control
+of the project have recently been published in a research report. They are inter-
+esting, but the end result was that the Iron and Metal Workers' Union got the
+funding and the Norwegian Computing Center got the contract.
+    In order to understand what happened behind the scene, one has to be famil-
+iar with the Norwegian labour market situation which, at least till recently, has
+been rather different from, say, the US and the British situation. The Norwegian
+Unions have been both stronger and also more actively interested in having a
+responsible influence upon company policies. As a result, the employers accepted
+that all information about the planning, control and data processing systems in
+four selected company sites were made available to the Iron and Metal Project
+team.
+    This does not at all imply that there was no resistance and conflict sur-
+rounding the project or the other projects referred to. Those stories do not, in
+my opinion, belong in this paper.
+
+    The Iron and Metal Project turned out to be very different from other
+projects. Not only did the shift from a managerial to a labour perspective
+generate a range of new observations and insights, even the basic criteria for
+achievement had to be reconsidered.
+    The project was organized as usual with a steering committee which, as
+usual, was expected to do next to nothing. In our committee we had key union
+people. From the very start it became the forum for thorough policy discussions
+where necessary mutual understanding and consensus about main decisions was
+established.
+    Associated with the project were four local unions at four companies, dis-
+tributed over the country. They were intended to function as reference forums,
+sources for information and criticism. The group at the Norwegian Computing
+56                                                                 Kristen Nygaard
+
+Center consisted of two researchers, and we had a very active and helpful contact
+person in the national union offices acting as our most important advisor.
+    Our first plan for the project was presented to the steering committee, the
+local unions and even to the national board of the Iron and Metal Workers' Union
+in the spring of 1971. It was well received, and well conceived (we believed). We
+intended to examine the planning systems being used in the four companies,
+interview the local union members about what they wanted (and did not want)
+from the systems. Then we would examine the possibilities for modifications of
+the systems to make them conform better to union objectives. From this we
+wanted to extract guidelines both for system design and for trade union policies
+relating to new systems.
+    During the summer 1971 I felt more and more uneasy about this plan, but I
+could not spot what was wrong. Gradually it dawned upon me that our strategy
+would produce some reports about systems, and two researchers who had knowl-
+edge on behalf of the union members. The reports and the knowledge would not
+be linked directly to the action possibilities of the local unions, and no action
+strategy would be developed and tested by the unions themselves. No compre-
+hensive learning process was incorporated, and the interviews would be oflimited
+value when no serious knowledge had been built among the members.
+    The reorientation was painful, but eventually we chose to tell the steering
+committee that we had to completely change the project plan. I hope that similar
+choices will not turn up too often in the future.
+The key decision was the acceptance of the following statement:
+
+      "In most research projects the results of the project may be said to be
+     what is written in the project reports. In this project another definition
+     will be applied: We will regard as results actions carried out by the trade
+     unions, at the local and national levels, as a part of or triggered off by
+     the project. "
+
+The statement was even, at the insistence of the researchers, made subject to
+vote and passed unanimously.
+    The immediate consequence was that the local unions got a new and pivotal
+role. The task was to create knowledge-building processes locally, and to initi-
+ate action relating to the local situation, supported by analyses made by the
+researchers and working groups of local union members and elected shop stew-
+ards. The researchers became consultants and participants in a mutual learning
+process.
+    Each of the four local unions formed working groups. Approximately 30 mem-
+bers participated at each site, split into groups of 6-8 members. Each local union
+selected tasks they wanted done, and the results of their work appeared in re-
+ports, to a large extent also written by the unionists. The reports were presented
+at meetings with the rest of the members, and important decisions were sub-
+jected to ordinary decision-making procedures.
+    One of the unions made a "Company Policy Action Program" , concentrating
+upon the planning of work within the union itself. Another made a comprehensive
+2.4 How Many Choices Do We Make?      How Many Are Difficult?                    57
+
+study of a production control information system, and succeeded in modifying
+the system in a number of important ways. The other two unions also produced
+interesting results, according to the above definition.
+    The main result of the project was a self-sustaining process which did not
+depend upon the presence of external researchers and project money. In 1975
+an agreement (the "Data Agreement") was signed between the Trade Union
+Congress (corresponding to, say, AFLjCIO) and the National Federation of Em-
+ployers, stating the right for the trade unions to be informed and participate in
+the development and introduction of computer-based system impacting upon
+their working conditions. They got the right to elect specialized shop stewards
+("data shop stewards") to work with information technology issues. There are
+about 2000 data shop stewards in Norway today. They also have the right to ne-
+gotiate privacy issues. We do not have many, if any, information systems spying
+upon their users.
+
+    What we gained in terms of general knowledge was a much better under-
+standing of system development and cooperative knowledge-building processes.
+Today these insights are more relevant than ever, particularly in the area labelled
+"Computer Supported Cooperative Work".
+    A standard question during the numerous confrontations with "mainstream"
+people in the 1970s was: "Do you agree that your work with the unions is politi-
+cized research?"
+    Our standard reply: "You may get the answer you want - 'yes' or 'no' . If
+you regard the research along traditional lines going on in research institutions
+as politicized, reflecting the interests of management - then the answer is 'yes'.
+Our research is also political. If your regard traditional research as non-political
+- then the answer is 'no'."
+    The Iron and Metal Project was followed by other trade union projects car-
+ried out along similar lines, in Denmark, Sweden and Norway. A number of
+gifted young researchers were running these projects together with trade union
+members. A community sharing a common basic perspective on system devel-
+opment emerged and was joined by other competent scientists doing other kinds
+of projects.
+    We felt that the effort we were engaged in was urgently needed, and that
+it was necessary to avoid that any single person became indispensable. This
+was easy to state but somewhat less pleasant to experience: When two Danish
+colleagues told me that we for the first time had been asked to give a one-week
+course at the Danish Trade Union School, I enthusiastically started to discuss
+how we should do the course. I got no response, and finally they told me that
+they had decided that I should not participate, except perhaps during the last
+day. Cooperation with Danish unions should be handled by Danish researchers.
+Yes.
+    I have been criticized for not using more time in the 1970s to promote the
+Simula language. Many other people have done a much larger job than I. It was
+a conscious choice. Should a single idea or project use up your whole life as a
+58                                                                 Kristen Nygaard
+
+researcher? Simula (and object oriented programming) is like a child: You have
+helped create it, you are responsible for its young years, you must see to that it
+gets a chance to succeed. Then your responsibility ends. You may be proud of
+it, wish it well, but realize that it will develop on its own and is no longer your
+property. Your duty is now to care for the new baby and then for any future
+children.
+    In addition, the Iron and Metal project demanded attention. My intention
+was initially to supervise the activities in that project. Then I had to realize,
+as my boss and a colleague strongly pointed out to me, that a failure for the
+project would mean that it would be the last of its kind. I had to work full time
+for nearly three years.
+    When the project was finished, the results had to be turned into an activity
+which could survive as an ongoing and integrated part of trade union work.
+To contribute to the initiation of similar activities in Sweden and Denmark
+was regarded as having second priority. This implied that the dissemination of
+information about the project in the scientific community only got third priority,
+and the researchers in the project never published any comprehensive account
+about the Iron and Metal Project in English. Much has been said about the
+projects by others, but I still feel that many of the most important insights
+have not been recorded properly. The original reports in Norwegian are still
+being referred to but, I suspect, never read. Reference lists are mostly proofs of
+awareness of what one ought to have read, and Norwegian is understood by less
+than 15 million people (and spoken by less than 5 million).
+    I regret this situation, particularly since I believe that much of our hard-
+gained practical experience in how to do this kind of research is just as relevant
+for publication today as then.
+
+    After the Iron and Metal Project it became important to make what had
+been understood about the system development process and the societal im-
+plications of information technology a part of academic teaching and research
+on information systems. As a part of that process I ended up as a university
+professor (there were additional reasons) working in teams with students - now
+colleagues - trying to build up an alternative curriculum in system development.
+    A main problem was to get our field accepted as first-class research. It was
+at that time frequently referred to as "boxology". Informatics is populated with
+people like myself, having a background in mathematics, natural sciences or
+engineering. Most of us share a common arrogance on behalf of our fields and
+a lack of understanding of social sciences and philosophy, two areas providing
+essential knowledge for any serious approach to system development. A strategy
+was definitely called for, even if colleagues at our own institute supported us.
+    The first part of that strategy was to make our courses very real-life oriented,
+with theory that was both demanding and useful in practice, and very tough. The
+second part was to be always active in explaining, arguing, defending, attacking
+when necessary. The third was to embark upon sufficiently ambitious (and thus
+risky) research projects.
+2.4 How Many Choices Do We Make? How Many Are Difficult?                       59
+
+     The fourth was an agenda for myself: I decided that I would have to stay
+active both in traditional informatics (programming languages) and in system
+development, and also acquire and keep updated "hands-on" familiarity with im-
+portant new developments (workstation hardware and software). If I succeeded,
+everyone would have to admit that we at least had some real qualifications. (In
+addition all three areas are great fun.) Or, more seriously: My work in languages
+could be used to legitimize our work on system development. This may sound
+silly, and perhaps it is. But it has worked.
+
+    Reading this paper I start wondering. How many basic choices were really
+made? The political work combined with the implications of Simula led to the
+Iron and Metal Project. The Iron and Metal Project led to cooperation with
+unions in other countries and to the building of our approach to system devel-
+opment. We had to try to introduce those ideas to education and academia.
+    The basic Simula ideas were generalized in the Delta system description
+language, providing a first platform for the unifying efforts and further general-
+ization attempted in the BETA programming language and for general concepts
+in object oriented programming. The integration of information technology in
+professions created the need for an examination of extensions to the concepts
+and languages of these professions, the agenda for the SYDPOL project. (The
+project changed content, but that is another story.)
+    The movement from traditional party politics to work at grass root level
+helped in shaping the participation and knowledge-building strategy of the Iron
+and Metal Project. That strategy combined with BETA and the development
+of the modern workstations created an important part of the research agenda
+for a large ESPRIT project proposal: The 0-4 Proposal (Object Oriented Office
+Organization) with cooperating teams from France, Great Britain, Denmark,
+Greece and Norway. We did not get the project, but the agenda remains and
+has to be carried out in the years to come.
+    How many basic choices were really made? How many were difficult? When
+I try to remember, I feel that most choices were consequences, and that those
+remaining seldom were difficult. We had burnt so many bridges behind us that
+few options were open - a good strategy for keeping yourself in shape under
+pressure.
+
+    I have not given the names of all the persons who have been doing the work
+referred to in this paper. They are too many, and I will only say this: The Iron
+and Metal Project was carried out by approximately 120 persons. Two were
+researchers, one was working at the national union level, the rest were local shop
+stewards and union members. To work in such a project demands a different kind
+of self-discipline and understanding of your own role than traditional projects.
+To make this well understood in academia is next to impossible. One has to be
+exposed to it through own participation. The cooperation in the Iron and Metal
+Project certainly is one of the most valuable and significant experiences of my
+work.
+

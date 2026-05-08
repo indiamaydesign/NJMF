@@ -1,0 +1,300 @@
+AI & Soc (1996) 10:51-57
+© 1996 Sprlnger-VertagLondon Limited                               Ai & S O C I E T Y
+
+
+
+
+Learning and Knowing with Artifacts: An Interview with
+Donald A. SchSn
+Thomas Binder
+
+Donald Sch6n is professor emeritus and senior lecturer at the Department for Urban
+Studies and Planning at Massachusetts Institute of Technology. He has taken active
+part in the debate about professional competence and professional education. In his
+book: The reflective practitioner (Basic Books, 1983) he rejects the idea that
+professions such as Architecture, Medicine or Law can be seen as applied sciences,
+and argues in dispute with aoo. Herbert Simon that the professional constructs
+competent action through engaging in conversation with a problematic situation.
+He develops his core concepts of knowing-in-action and reflection-in-action further
+in the book: Educating the reflective practitioner (Josey-Bass Publ., 1987). In this
+book he delivers a strong argument for, why teaching is basically impossible. He
+demonstrates through a number of case studies from architectural education how
+coaching is the only workable approach to professional education, because learning
+must always stem from the learner's personal encounter with the problems of the
+profession. In dealing with the issue of learning with artifacts one of the very
+interesting things about Donald SchOn's work is that he directly addresses the
+question of how the individual engage with the physical world around him. I started
+the interview by asking him if he could think of learning that takes place without
+engagement with the physical world?
+
+DONALD SCHON: It is very interesting to think of learning or thinking without
+objects. For example, I often find it very important for me to be able to picture
+things: to make diagrams to show relationships. When I think without objects, then
+my impression is that I am trying to recreate in my mind the experience of having
+them s011, as a kind of: holding them in my mind. So I w o u l d say that learning with
+objects, if you include diagrams as objects, or pictures as objects, may be a kind of
+prototype for learning without objects, since I seem to be trying to reproduce that
+experience, when I am deprived of the things which I need to anchor my thoughts.
+    Take this experience that the thought gets away from you - you can't hold onto
+it? It's a very strange thing, because you are trying to control something which is
+not quite controllable. Even if you could control it, you wouldn't want to control it
+completely, because if you control it completely, you never get anything else than
+ 52                                                                                 T. Binder
+
+ what you were using to control it with. I think the conversational metaphor is a good
+ one for what's going on here. You want to let the object control you, in a way, at the
+ same time as you're trying to control it. I think that's not unlike my experience with
+thought. When I was much younger, I was very interested in invention, trying to
+understand more about creativity and invention, and I was myself an inventor in a
+small way. I worked with a group of technologists inventing products and I remember
+paying attention to my wanderings and fantasies, and discovering that fantasy was
+very important. Having fantasies of doing things often became the basis of suggesting
+the directions that I would pursue, or other people would try to pursue.
+    What I ' m fishing for, I think, is a certain kind of experience of being engaged
+with something. To be making a diagram and paying attention to the diagram could
+be an example. Playing a piano, when you're trying to learn a piece, that's also an
+example. And so is trying to think something through when you don't have anything
+to think with, an example. They're all examples of this process of engaging with
+something, seeking to control what happens when you do so, but being unable to
+control it, and not wanting to control it fully. Hence the power of the image of your
+conversation with that 'something' came out: creating the diagram, engaging thoughts,
+which you partly control and partly allow to control you .... leaving room for surprise,
+and the metaphor of the conversation as knowing that what you are engaging has
+"its own mind", seems here to me to be very powerful.
+
+
+THOMAS BINDER: When we talk about things to think with or engaging with ob-
+jects, someone could hear it as a purely cognitive issue. But is it not so that objects
+in for example the educational setting actually transport or convey important aspects
+of the competence that we are trying to acquire.
+
+
+DONALD SCH¢)N: I have two thoughts in response to what you are saying. One is
+that if you ask the question, "where is knowledge?", one answer is: it is in the
+objects. In other words: where is your knowledge about how to operate that video
+recorder? In your head? In your hands? It is when you actually touch it and position
+it and look at it and move it that you get access to what you know. If I ' m typing, and
+if you ask me the question, "Where is the T?" I may have a hard time telling you.
+But if I ' m beginning to type, I go through the actions, I get access to the knowledge.
+And ah... I get access to it in the sense that I could perhaps not have told you ahead
+of time what I know. And if I think about a typewriter, that's a kind of discrete
+object in front of me If I think about a setting, like this office or like this corridor, or
+like MIT as a setting, then engaging with the object is more like engaging with the
+environment. I know how to negotiate this environment, it's not strange to me.
+Now, I remember, when I once spent a year in Israel, the strangeness of the place,
+and my: not knowing how to negotiate it, and not having the sort of "unthinking
+conscience" about how to deal with it, that was very troublesome. It took time. Six
+months actually, for me to get to the place where this relationship with the setting
+was evoking what I knew.
+   That's one whole line of thought that comes out of your questions. If you ask:
+how do we design artifacts to promote learning?, one starting point is to say, "How
+do we understand the way people hold knowledge to begin with?".
+ Learning and Knowing with Artifacts                                                    53
+
+     The other line o f thought that your questions stimulate in me, is this issue of
+  how learning happens as a result o f commerce with an artifact? And specifically,
+  commerce with a computer program. I find that the people who write computer
+  software with the aim of promoting learning have a peculiar blindness about what
+  they do. For one thing, they tend to over-value their intentions. They tend to assume
+  that the meaning of the object is what they intended it to be and that its capability
+  of generating learning is what they take it to be. In Project Athena at MIT, we
+  studied two programs that were called, Computer Aiding Teaching Systems. Both
+  of them are based on the use of finite element methods, and both of them are related
+  to statics and teaching statics.
+     The one was seen by its designer as a teaching program. It was designed as an
+ intelligent tool so that if you came to it, it would ask you a series of statics problems
+ and if you didn't produce the right answers it would stop you and give you an
+ explanation and ask you to do it again. The other program was not conceived as a
+ teaching program at all, it was conceived as a design tool. You had a screen, you
+ could draw a structure on the screen, like a truss or a bridge, and if you did, you
+ could then specify what material it is made of, what are its dimensions and what is
+ the loading? Then you could "load it" and you could observe it deflecting. You
+ could also see shear diagrams, and all that would happen very quickly. You could
+ re-design and iterate very quickly. The effect was that when we interviewed the
+ students about these two programs, with the first programme - the so-called intelligent
+ tutor - the effect was that the students here at MIT found it very boring, very dull,
+ and they subverted it, so that instead of coaching them, it just gave out the fight
+ answer. And then for the second program, which was not intended to be a teaching
+ program, a third o f the students we interviewed, said that it showed how they really
+ learned. For example, they would set up a structure like a bridge, they would load it
+ and they would be surprised by what happened. Like they might say: it got stiffer
+ when I took material away. H o w could that happen? How could it get stiffer when I
+ removed something? And that would make them think about it and try to build
+ hypotheses and test the hypotheses by redesigning the construction. One of the
+ students said, "I took the basic static course, and I understood all the formulas, but I
+never understood the structure, the behaviour of structures until I tried this" So, for
+many students - about a third of those who interacted with the design tool - that
+turned out to be an extremely educational program. It enabled them to get surprised
+in terms of what they expected as they designed, and then to raise puzzles about the
+phenomenon, and in order to resolve these puzzles, they had to re-think the meaning
+of the formulas they had learned. And the program had not been designed to do that.
+So it isn't so much a matter o f humility on the part of the designer, as blindness to
+anything that falls outside of his intent.
+      Another example, someone had designed - this was in Israel - a program to
+make rooms. There were pieces of furniture. Each one had a sort of view of it in
+plan and then you had to set that into the room, meeting certain criteria. It was seen
+as educational, and what they were focusing on was how you went about the process
+of solving the problem of design. You had to get all of these pieces in there, and the
+space and the shape of the space constrained you, as to how you could do it. But
+there were other issues in the program. For example, seeing the meaning o f certain
+objects in plan. And seeing if that was a chair, or if this was a chair - the idea of
+54                                                                                   T. Binder
+
+looking at something represented in plan and seeing what it means in terms of the
+object seen when you are face to face with it, turned out to pose a real difficulty for
+the students.
+
+
+T H O M A S B I N D E R : A difficulty so great that the application did not work?
+
+
+D O N A L D SCH()N: For some. But for others the difficulty was great, but they could
+overcome it, in other words, so that they could get to the place where they could
+learn, that this is a chair. But that leaming was not included in what was build into
+the software. The program was not seen as being about that. It was seen as being
+about something else.
+
+
+T H O M A S B I N D E R : And do you then think that it would have been worth while to
+address that directly?
+
+
+D O N A L D SCH(3N: What I think is that the software designer needed to take the
+view that he didn't know what he had until he found out what they made of it. He
+should have been interested in the question o f what do they make of m y s t u f f - and
+he should have been aware that the object is not anything until the users make
+something of it. W h a t ' s there depends on how the user calls it. The meanings
+constructed by the user are the key things you need to worry about.
+
+
+T H O M A S B I N D E R : But the programmes seem to make some kind o f educational
+sense for you after all?
+
+
+D O N A L D S C H O N : It makes some sense, but I think it is very important to try to
+discover what sense it makes; and that is where this blindness that I thought I was
+detecting among the designers seems to be. One of the things y o u ' r e doing, when
+you think about the computer as creating an environment in which you could learn
+to do something, is that you are saying that we are talking about the computer, or
+especially the computer program, as an artifact. Y o u ' r e deliberately blurring the
+distinction between the real world and the computer world. Y o u ' r e saying: that
+representation o f a room is a room. That representation o f a chair is a chair. But it is
+riot a chair. It is not a room. It is a representation of a chair. A representation of a
+room. And therefore you have all of these issues about representation, both what
+representations can capture and what they can't capture, and what it means to interact
+with a representation vs. what it means to interact with the "real" stuff. That doesn't
+mean to me that it's not a promising enterprise. It just points you in the line of
+certain things to think about when you pursue the enterprise.
+    Take the diagrams which I find so useful: You make a drawing [constructs a
+diagram] and you say: well, here we are on this project, and we have these clients.
+And here's the boss, and then we have these two engineers, and there's a marketing
+person and he's a little bit further away, and here we are. Now, if we do that, we can
+say, well, what kind o f a relationship do we have with him? But is it not important
+Learning and Knowingwith Artifacts                                                     55
+
+that this is the person who has a very strong linkage, and this one not? And if that's
+true, what is our relationship with these people, and why are we ignoring him? So
+the diagram immediately engages you with a set of relationships which it evokes
+only because of its presence as marks on space.
+
+
+THOMAS BINDER: And by taking that example, you're also saying that this issue
+of representation is not a question of creating an illusion. When you point to the
+diagram, you say that one of the important things is not that it creates an illusion.
+The important thing is to acknowledge that it is a representation and to see what we
+can get out of it.
+
+
+DONALD SCHON: Yes, I think there are a lot of things you could say about that.
+One of them is that it leaves almost everything out. There's almost nothing there,
+which is why it's good, because then I can deal with it. Another thing is that just by
+being in space - two-dimensional space, it has a kind of - you might say grammar,
+you might say logic, or you might say, physical structure, as though it were a field
+of forces. So that whether I wish to or not, certain ideas and questions come to mind.
+For example, once I make these two things and I give them a referent, I say: that is
+the box, this is us, we are entering into the post office, what is the nature of our
+relationship? Okay, then this spatial relationship [between actors in the situation]
+immediately comes up. You might then even say: Shouldn't we be closer? So that
+the idea of the amount of distance is there, the spatial distance signifying some
+social distance - it's all there. You don't have to invent it; it's there for you. So the
+fact that he's over here, and there's some kind of an obstacle, some kind of a
+boundary, a barrier between him and the rest, that idea of a barrier or boundary is
+there. If you have a boundary, you also have a possibility of penetrating the boundary
+or going around the boundary, that's also there. The size of these things, signifying
+importance; what kind of importance is there? You see, everything is there the
+moment you put your pencil to the paper. And that's extraordinary. Not only is
+it all there. It will stay there. It is in time in the sense that I apprehend it in time.
+But it stays there for me. I don't have to work to hold it steady. I have to work to
+change it.
+
+
+THOMAS BINDER: My last question concerns the process of designing artifacts
+for learning. Do participatory design approaches in your view make sense here?
+
+
+DONALD SCHON: Maybe the issue should rather be participation and conversation
+and the difference between those things.
+
+
+THOMAS BINDER: In what sense?
+
+
+DONALD SCHON: The movement toward participatory design, I think, really did
+have a Scandinavian origin. Or: It didn't have a Scandinavian origin, it had a
+Scandinavian flowering after World War II, through the Tavistock Institute and in
+ 56                                                                              T. Binder
+
+places like Norway where Einar Thorsrud' s work was important, as well as in Sweden.
+And there, it had connotations of industrial democracy. It was definitely a political
+act, maybe as I think about it now, as a reaction against the authoritarianism of the
+fascist regimes. The notion of participatory design, or collective design, or co-design
+says something about the formation of governments. It's a microcosm of the creation
+of the state. You want to create a social world of designers, so you have all the
+issues that a state has: Authority, how is it exercised; power, how is it contained;
+control, how is it distributed; justice, how is it managed, how is it protected; goods,
+how are they distributed; reward, who gets them; competence, where is it, how do
+you find it - I mean, all of the issues that Plato's "Republic" presents are there in the
+problem of managing participatory design. I think that helps to explain why most
+participatory design exercises have not been of durable satisfaction.
+
+
+THOMAS BINDER: But you mentioned earlier that the designers seemed not to be
+paying enough attention to how the artifacts were actually used. Couldn't that call
+for some kind of participatory process?
+
+
+D O N A L D S C H O N : Well, I was trying to make a distinction b e t w e e n the
+conversational approach to designing and the participatory approach to designing.
+They are not the same. In other words, if you are designing a video camera, and
+you are concerned with a lot of issues about how people will actually use it, what
+it will mean to them, how they'll employ it, how the design of the artifact will
+support or fight against the kind of uses that people will actually want to make
+of that, what features are there that will be seen as precious or endearing or as
+problematic or ugly - if you want to address those issues, you will need to be in
+conversation with users. In conversation in the literal as well as the figurative sense
+of the word conversation. You'll need to be understanding of what it means to
+them, how they perceive it, what they do with it, how it fits in to their world - as
+you say, how they appropriate it as part of that process, how they make sense of
+it, how it is in their hand and what they think about it, and so on. You can get
+that through conversation, including wordless conversation. You can get it by
+observing what people will do with it and then thinking about what you observe -
+perhaps feeding back what you observed; remaking, reworking your artifact per-
+haps using rapid prototyping that enables you to rework in response to what you
+think you are learning from going back to the people, who will be using it. This is
+what I mean by conversational design. Participatory design is something else.
+Participatory design says: Now you try to create a group. Maybe the group includes
+those who will use the object. You want them to become designers. That means
+you want control over design to be shared. You want design to be co-constructed
+and co-managed.
+
+
+THOMAS BINDER: And so, to my question: what is called for in the process of
+designing artifacts for learning, you're saying that we definitely need a conversational
+approach, and then you leave it open and say that, well, talking about participatory
+design is in your view something beyond that.
+Learning and Knowing with Artifacts                                          57
+
+DONALD SCHCIN: Yes, it's well beyond that. And I think it poses a set of issues
+whose depths goes beyOnd what the participatory designers were usually prepared
+to cope with.
+

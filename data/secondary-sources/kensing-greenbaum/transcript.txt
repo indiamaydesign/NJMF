@@ -1,0 +1,840 @@
+                                                                                                           2
+                                                                                    Heritage
+                                                                                Having a say
+
+                                                          Finn Kensing and Joan Greenbaum
+
+
+
+
+   This chapter focuses on the early history of Participatory Design projects up to the ﬁrst Participatory
+   Design Conference in 1990. It explains how the political and social movements of the 1970s and 80s
+   formed a stage for translating participatory research into development of computer applications. Some
+   of the early action projects are described in order to give readers an understanding of the problems
+   and challenges. A central focus is on the roots of Participatory Design in enabling workers to gain a
+   voice in the technologies that aﬀect their working lives. It concludes with reviewing theoretical
+   underpinnings as well as summarising some guiding principles.
+      The Introduction focuses on the motivations and struggles in early work-oriented design. The general
+   political context is described in order to situate the early projects in the complexity of enabling
+   workers to gain a voice in decision-making about technology. Both action-based projects and
+   theoretical sources are used to explain the development of Participatory Design’s guiding principles.
+      Readers will learn about the early struggles to give voice to those who traditionally lack power
+   in the development process. Equalising power relations and mutual learning are both a motivation
+   and an outcome of the Participatory Design heritage. Of equal importance is the understanding that
+   design and development must be situated in the real, everyday actions of people using technology.
+   The early history is not intended as a ‘birth story’ but rather as a series of struggles that grew out of
+   some mistakes and into new ways of looking at computer system development, traces of which can
+   be seen today in many design situations.
+      The early heritage demonstrates how diﬃcult it is to do more than ‘involve’ users in design.
+   Bringing about more equal power relations and actually fostering emancipatory participation
+   remains a critical challenge. The projects discussed here each begin with motivating factors and
+   conclude with lessons learned and the need for further research. Participatory Design history tells us
+   that mistakes and unanswered questions still abound.
+
+
+
+
+Introduction
+The roots of Participatory Design are deep and broad. We begin here in the 1970s when
+progressive ideas spread from the society at large into emerging computer system development in
+
+
+                                                                                                               21
+Finn Kensing and Joan Greenbaum
+
+
+the workplace. This early heritage is intriguing in many ways because the seeds of later parti-
+cipatory approaches have inherited some of the victories of earlier projects as well as some of the
+continuing challenges.
+   This chapter lays out some of the struggles in the history of the now maturing – after more
+than four decades of growth – ﬁeld of Participatory Design. We discuss some of the lessons
+learned in the 1970s and 1980s as we address the following questions: What motivated initial
+projects for choosing a Participatory Design approach? What was in fact designed? How may
+the heritage be conceptualised? What does the heritage have to oﬀer to those who strive to
+apply Participatory Design inspired approaches today? Our focus is on Participatory Design
+action projects where the needs of groups of workers drove researchers to take note of how
+previously unheard voices could be important in design of technologies. These early projects are
+discussed within the political context of the 1960s, 70s and 80s, a cold war environment that
+gave rise to the importance of strong voices speaking out on social issues that aﬀected groups
+with access to fewer resources. The chapter takes us up to the ﬁrst Participatory Design Con-
+ference in 1990, where the ideas and practices in the early period began to be pulled together
+into a coherent set of principles. The following chapters will cover later developments within
+Participatory Design.
+   We start in Scandinavia in the 1970s with some exemplary cases of projects with what was
+then known as data processing. In some ways it is no surprise that the heritage discussed here
+starts in places where trade unions and collective bargaining were strong and able to inﬂuence
+power relations in the workplace. These cases involved trade union activists who sought ways to
+inﬂuence the fast-paced automation that was emerging on their shop ﬂoor. The early trade
+union work set out to ask systems researchers as ‘experts’ to help them better cope with
+workplace problems – and indeed Participatory Design helped the workers do this, but it also ﬂipped
+the project on its ear by introducing the system designers to a whole new set of problems.
+   We then proceed with a short introduction to another strong inspiration for Participatory
+Design – ethnographic studies about the introduction of technology into workplaces. These
+types of studies gave voice to oﬃce workers and technicians as they experienced the con-
+sequences of workplace change. Chapter 5 gives more detail about the ethnographic
+approach.
+   Finally, the chapter provides an overview of some of the main theoretical roots of participation;
+a topic that will be further explored in Chapter 3. The more speciﬁc principles, practices and
+techniques that Participatory Design has provided may be – and have indeed been – used for
+other purposes and with other intentions. Understanding and appreciating the theoretical roots
+of participation are seen as necessary for obtaining what this chapter will begin to describe
+as genuine participation. And we conclude with some principles we feel are instrumental for
+carrying out contemporary, genuine and action-based Participatory Design.
+   While this book describes concepts and practices aﬀecting tools that are applied now to a wide
+range of digital artefacts – going well beyond the workplace – this chapter focuses on the work-
+oriented heritage of this ﬁeld. But the lessons learned bear repeating, as without history we are often
+left to repeat some of the same mistakes – and as we know too well, the challenges of
+multi-party participation combined with constantly changing technologies are fertile ground
+for making mistakes! The participatory perspective we introduce here brings those issues back up to
+the surface.
+   The need for participation, in essence, recognises that tensions exist between those with some
+form of knowledge and power and those without. Kensing (1983) argues that basic require-
+ments for genuine participation include access to information, resources (time, money and
+expert assistance) and the power to inﬂuence decisions. In an extensive review of
+
+22
+                                                                                              Heritage
+
+
+Participatory Design projects, Clement and van den Besselaar (1993) suggest further that
+appropriate participatory development methods and organisational and technical ﬂexibility are
+also needed.
+
+
+Political context
+What came to be known as Participatory Design started as a reaction to changes in society at
+large, rooted in local communities as well as in workplaces. In Germany and Austria, for example,
+where some community groups were experimenting with ways to actively involve citizens in
+local issues, a new type of process, called a ‘Future Workshop’, engaged citizens in important
+issues (see Jungk and Müllert 1987). In the US, where burning social issues such as civil rights and
+urban problems needed to be addressed through grass-roots action, Participatory Action Research
+(PAR) began to gain serious hold in the research and public sector communities (see Whyte
+1991). Also in the US, the war in Vietnam propelled activists to examine technology through
+groups such as Computer People for Peace and, later, Computer Professionals for Social
+Responsibility (CPSR), which became involved in key inﬂuencing political policies around
+technology issues, and which sponsored the Participatory Design conferences from the very start.
+In England the path-breaking socio-technical approach, among other activities, evolved to
+directly confront the fact that technology had social and political roots (Mumford 1972). The
+socio-technical approach spread well beyond England and was, in fact, used widely in Scandi-
+navia among employers’ associations.
+    Within the ﬁeld of computer science the times and tensions were also reﬂected through the lens
+of professional organisations. Until the later 1980s, most computer programs were custom designed
+for huge mainframe computers; there were no generic applications to re-apply to different
+companies or situations. Systems analysis and design – the process of developing mainframe com-
+puter systems – was strongly inﬂuenced by management principles that controlled the ﬂow of
+how programs were designed. Classic textbooks on design (e.g. Yourdon 1982; Demarco 1979)
+advocated a ‘waterfall model’ where problems were deﬁned by management with no input from those
+who would be using the system. In the early 1980s as micro-computers (precursors to mini and
+desktop computing) began to emerge, the concept of ‘users’ began to emerge. Human–Computer
+Interaction, and its professional association Computer Human Interaction (CHI), focused on how
+then-emerging interfaces could be designed for presumed ‘users’. Computer Human Interaction,
+however, borrowed the cognitive assumption from earlier computer system design, establishing a
+set of procedures that stemmed from how designers thought users might think. From a participa-
+tory perspective, this cognitive approach is considered a central fallacy in that it assumes that indi-
+vidual users’ thoughts could be transcribed into programmed interfaces and applications. Even
+when users were invited to laboratories to test out interface designs, the focus was on ‘capturing’
+user eye movement or keystrokes, rather than actually involving the users in the context of their own
+work. Computer Supported Cooperative Work (CSCW), a professional conference group,
+distanced itself from the single-user cognitive approach, focusing instead on the social and
+cooperative nature of work. CSCW’s origins coincided with the beginning of network and dis-
+tributed systems in the late 1980s as it introduced ethnographic and social science analysis into
+computer system design. But CSCW also had a central fallacy to many who moved into what
+later became Participatory Design: namely, the focus levelled work and workers with management and
+failed to examine the political nature of work and its power relations. The CSCW conference of 1988
+gave birth to a sub-group that was concerned with the conﬂicting and politically sensitive issues
+of workers and their muted voices. This sub-group created the ﬁrst Participatory Design Conference
+in 1990, joining forces with CSCW colleagues, yet giving voice to the politics behind all design.
+
+                                                                                                    23
+Finn Kensing and Joan Greenbaum
+
+
+Early action projects
+The action-based stories in this chapter begin in Norway, where workers in the Iron and Metal
+union teamed up with Kristen Nygaard, a computer scientist, and Olav Terje Bergo, an econ-
+omist, from the Norwegian Computing Centre (Norsk Regnesentral) in order to have a say at
+the bargaining table about how computers should be introduced at the workplace.
+   Kristen Nygaard, who pioneered this stream of work in Norway in the early 1970s, referred
+to it as a ‘knowledge strategy’ for trade unions (Nygaard and Bergo 1975a). Nygaard, an early
+developer of what is considered the ﬁrst object-oriented computer language,1 stressed that in
+order to have a say in relation to the ways in which technology is introduced at the workplace,
+workers and their organisations have to build up a ‘knowledge base’ to draw on when they met
+with management. While unions had the right to bargain about wages and working conditions,
+the idea of having the right to bargain about the type of technology-mediated change brought
+into the workplace was very radical for its time. Yet, as we shall see, the knowledge-base strategies
+worked up to a point. Nygaard and the unions soon found that other forces came into play.
+   Out of these early experiences grew three types of projects that tried to take workplace actions
+and workers seriously; each addressed concerns that didn’t have clear problem deﬁnitions or
+methods for solving them, and each brought forth new lessons for new problems that still need
+to be attacked. The ﬁrst we call Knowledge Strategy projects, which began to unravel the very
+unequal balance between workers, who knew little about technology, with system developers
+who, like designers today, spoke in a language that was hard for the workers to understand and relate
+to. The second set of early projects are called Design and Intervention projects where, building
+on and expanding the knowledge base of workers, the concern was to show, by concrete
+examples, that there are technological alternatives, and that those alternatives reﬂect diﬀerent
+starting values. Indeed, this is very much the case with social networking and communication
+design situations now: the clear need to demonstrate alternative visions. The third type of pro-
+jects involved ethnographic analyses of relations between work, workers and technology. As a
+reaction to the decontextualised studies of such relations that were most common at the time,
+American anthropologists, who were aﬃliated with the Xerox Palo Alto Research Center
+(located in Silicon Valley, California), applied their skills in the interest of understanding a new
+domain. Today various versions of ethnographically informed analysis have found their way –
+with or without anthropologists – to the design of many diﬀerent kinds of technologies.
+
+
+Knowledge strategy projects
+The idea of involving workers in decisions about technology didn’t suddenly spring out of the air;
+two signiﬁcant management and political situations acted as triggers. One factor, not unique to
+Scandinavia, was the widespread use of management strategies to divide and conquer workers’ power by
+automating tasks and de-skilling workers. For an elaborate discussion of such issues see Greenbaum
+(1975) and Sandberg (1979). These management actions, while having precursors at the turn of the
+twentieth century in Scientiﬁc Management, sought to standardise and simplify work tasks in
+order to create interchangeable workers as well as interchangeable manufactured parts. Standardisation
+and simpliﬁcation were intended to lower wages and better control the workforce (see Greenbaum
+1979). Charlie Chaplin’s ﬁlm Modern Times (from 1936) illustrates the outrageous eﬀects on
+workers whose skill is removed and inserted into automated equipment. The process of de-skilling
+workers can still be seen in jobs such as those in call centres, where work practices are standardised to
+reduce labour costs and ﬁt into computerised routines. The Norwegian Iron and Metal workers
+were experiencing this as Nygaard and Bergo began working with them in the early 1970s.
+
+
+24
+                                                                                           Heritage
+
+
+   The second factor was indeed unique to Scandinavia, where legislation and workplace agreements
+had been written in the late 1960s and through the 70s allowing workers the right to infor-
+mation and some degree of co-determination over the conditions of their work. The limitations
+in these arrangements, however, were contested in the knowledge strategy projects described
+here, where workers often had to ﬁght for information about management’s technology plans.
+   The Norwegian NJMF2 project from 1970 to 1973 (Nygaard and Bergo 1975a, 1975b), the
+Swedish DEMOS3 project from 1975 to 1980 (Ehn and Sandberg 1983; Ehn 1988) and the
+Danish DUE4 project from 1977 to 1980 (Kensing 1981; Jacobsen et al. 1981; Kyng and
+Mathiassen 1982) were based on similar concerns. While we discuss lessons learned from all
+these projects, we have chosen to give a detailed account of the rationale and activities of only
+one of these, the NJMF project, as it became an inspiration for later work.
+   In these early projects workers and researchers analysed the speciﬁc problems with new technology
+at the workplace and developed strategies to boost workers’ power in relation to management’s
+technology initiatives. The projects were carried out as action research and were organised as a
+reaction to workers’ experiences from a vast number of co-determination experiments carried
+out cooperatively between the employers’ federation and the labour movements in each of the
+Scandinavian countries. In the Danish case, for instance, workers reported that these experi-
+ments stopped before any substantial changes towards real inﬂuence had been achieved, and
+workers were reluctant to press for more inﬂuence for fear of reprisals (Tjørnehøj 1976; Ehn
+and Kyng 1987). These experiments were inspired by socio-technical research at the Tavistock
+Institute in England (see e.g. Trist et al. 1963; Trist 1981; Mumford 1983).
+   The English projects were rooted in the path-breaking notion that technology was a result of
+a social and political process, and therefore attention to technical design was embedded in all
+levels of discourse from the shop ﬂoor through political action. Since the early 1970s, Mumford
+and associates had worked on a socio-technical approach (see Mumford 1972, 1993a, 1993b;
+Mumford et al. 1978) advocating development of the social and technical systems more or less
+parallel to each other. This approach strove for eﬃcient use of technology and increased job
+satisfaction for the intended users. The approach was heavily critiqued by Scandinavian
+researchers involved in trade union projects in the mid to late 1970s. The critique was twofold
+(Ehn and Sandberg 1979; Kyng and Mathiassen 1982). From an ideological point of view, the
+approach to workers’ participation was evaluated as too narrow, because workers were mainly
+participating as informants in a process dominated by managers and their specialists. Further, the
+proposed techniques for decision-making in projects were evaluated as naïve, because they
+suggested that decisions should be taken by voting, thus not reﬂecting the distribution of power
+at the workplace. However, the socio-technical approach should be acknowledged for insisting
+on a focus on organisational as well as technical issues, and also for introducing prototyping as
+early as 1978 (Mumford et al. 1978, p. 250).
+
+
+The Iron and Metal project
+The Iron and Metal project started as workers realised that their deteriorating working process
+involved dislocation, de-skilling and less inﬂuence on their own working conditions. Addi-
+tionally they saw the need to push co-determination rights to include the right to information
+about technology (see Nygaard and Bergo 1975a).
+   Nygaard and Bergo (1975b) report on an important lesson they learned at the very beginning
+of the project, and one that pops up again and again: namely, that the best-laid plans are not the
+way the project will end up! So though plans are helpful resources for action (Suchman 1987)
+in complex situations, participatory designers need to be prepared to alter plans as they learn
+
+                                                                                                 25
+Finn Kensing and Joan Greenbaum
+
+
+more about the situation and the context. When the Iron and Metal project began, there had
+been very few projects that had taken the interests of trade unions as their starting point, so there
+was little experience to build on. Initially, Nygaard and Bergo describe that they had planned
+the project in a rather traditional way, without the active participation of the workers, relying
+instead on the researchers to conduct the analysis. This comprised:
+
+
+! mapping the goals and interests of the workers and their union;
+! analysing three other management systems used in Norway, showing how the purpose
+  and mechanisms inscribed in these systems aﬀected the interests of the workers and their
+  union;
+! formulating workers’ requirements for these systems;
+! analysing the trade union’s earlier experience with building competences;
+! analysing which competencies were needed in relation to information technology and
+  management.
+
+
+In the initial plan these activities were to be carried out by the researchers, while workers and the
+union were to be involved mainly through interviews.
+   The reaction from trade unionists was that it would be interesting to see the results, but that
+they couldn’t see any practical relevance. How were the workers supposed to make use of the
+knowledge produced? The two researchers then realised that they were in the process of pro-
+ducing reports that would end up unread on the bookshelves in the trade union hall. The
+results they were about to produce did not ﬁt into the reality of the workers’ lives; they could
+not use the knowledge developed as a resource for action.
+   In order to ﬁll this gap, Nygaard and Bergo got together with the workers and their union
+and began to apply action research practices in order to build technical and organisational
+knowledge for the workers to use in negotiations with employers and their management
+experts. Action research, an important component of Participatory Design, seeks to engage both
+the aﬀected workers and the outside researchers in studying and remedying existing problems
+(Greenwood and Levin 1998).
+   Nygaard and Bergo describe the rationale for the new research design, involving action
+research, in the following way:
+
+
+! The purpose is to develop new knowledge geared towards the workers’ ability to take
+  action to increase their say over the ways in which the computer systems are introduced at
+  the workplace.
+! Actions for change require that the goals are discussed (and shared) among the workers, and
+  that the actions are part of a plan.
+! Results of the research are not reports and papers, but all actions taken by workers, at
+  the local or the central level, that are based on the research project, and that intend
+  to increase the inﬂuence of workers on information technology and management in the
+  companies.
+! Therefore reports and papers are useful only if they lead to such actions among workers.
+
+
+Thus, the project had a triple focus on what Wagner and Gärtner (1996) later called Arenas A, B and
+C: namely the individual project arena (A), the company arena (B) and the national arena (C).
+  Based on such a rationale, the new research design had the following elements:
+
+26
+                                                                                           Heritage
+
+
+! A strategy report focusing on actions that would call for new knowledge
+! Iterative development of teaching materials
+! A working process: at the four participating companies 20–30 workers in smaller groups met
+  every other week for a few hours to discuss problems with computer systems and manage-
+  ment – and how to deal with such problems. The researchers functioned as lecturers and
+  consultants and sometimes as students, as they realised they had much to learn about how
+  mainframe management systems worked in practice. The groups then produced reports that
+  were primarily written by the workers.
+
+While the ﬁrst research design was oriented towards analysis and proposals made by the researchers,
+the second research design focused on establishing a learning cycle within the union, where actions
+for change generated needs for new knowledge, which furthered new actions. And the workers involved
+found their own voice and technical vocabulary to use in negotiations with management.
+   And here, through the ﬁrst mistakes, we ﬁnd a key argument for what is now called Parti-
+cipatory Design. Literature in the ﬁeld commonly bases the need for participation on several
+arguments. One, a political argument, emphasises that people should have the right to inﬂuence
+their working conditions. Another central argument is pragmatic. Its focus is that in the process
+of involving people who will be aﬀected as active participants, learning will take place between
+the ‘experts’ and the participants which can result in better designs. And as we will see, this
+process of learning between and among the diﬀerent power groups came to be known as
+‘mutual learning’, a cornerstone of Participatory Design.
+   For Nygaard and Bergo it was both arguments and at the same time – not one without the
+other. It is through participation that new ideas and knowledge would be produced or sought
+for, and this was part of the process for standing up for one’s rights. The project showed that
+rights were not something given by those in power – rather, rights were something workers had
+to ﬁght for through knowledge-based negotiations.
+
+
+Voicing participation
+In this way, what we call genuine participation as practised by proponents of Participatory Design
+is signiﬁcantly diﬀerent from participation as seen by other traditions such as user-centred design,
+contextual design and user-driven innovation (Norman and Draper 1986; Beyer and Holtzblatt
+1998), and other approaches that oﬀer some form of ‘user empowerment’, which have become
+more ‘mainstream’ today. While Participatory Design diﬀerentiates itself from these other
+approaches we place the practice within a spectrum of ways that prospective users of a technology
+can get involved. However, Participatory Design as an emancipatory approach has little regard for
+approaches that solely involve users as informants through interviews, focus groups or other one-
+way techniques in a process otherwise controlled by information technology designers and their
+clients/managers. Such one-way data-gathering approaches we do not consider to be genuine
+participation.
+    In addition to the local achievements obtained by active participation of union members, the
+early Scandinavian projects also contributed with other types of results that should be brieﬂy
+mentioned. For instance, the Scandinavian researchers reacted against the idea that technology
+at the workplace should take place solely under the co-determination agreements that were in
+place in their countries. Instead, in the Swedish DEMOS project, Ehn and Sandberg (1979)
+proposed that introduction of technology at the workplace should be based on negotiation
+within collective bargaining rights, just as wages and working conditions are negotiated.
+Second, and perhaps more signiﬁcantly in terms of lasting eﬀect, the Iron and Metal project was
+
+                                                                                                 27
+Finn Kensing and Joan Greenbaum
+
+
+the basis for the formulation of the Norwegian technology agreement signed by the trade
+unions and the employers’ federation in 1975 (see Ciborra and Schneider 1983; Mathiassen et
+al. 1983). Third, many tools and techniques that have been developed within Participatory
+Design (see, for example, Kensing and Blomberg 1998, and also Chapter 7 of this volume) have
+been adopted by other approaches, although more often than not without the emancipatory
+rationale upon which Participatory Design approaches are founded. Fourth, another long-lasting
+result came from the Danish DUE project. For more than a decade, up to ten one-week
+technology courses for trade unionists were organised by the researchers, who had also devel-
+oped the teaching materials (Kyng and Mathiassen 1982). Finally, the researchers also developed
+new university courses on technology analysis and design based on their experiences with the
+trade unions. Such courses, in updated versions, are still oﬀered at bachelor’s and master’s levels.
+Further, master’s and PhD theses were produced and contributed to building an additional
+branch of computer science and information systems called Human–Computer Interaction and
+Computer Supported Cooperative Work.
+   Not all issues were dealt with in these early projects. Indeed, the Iron and Metal workers did
+not end up implementing any new technology; rather, the outcome was a new process. The
+most apparent missing link was probably the idea that in order for workers to gain real inﬂuence
+on technology at their workplace, new technologies have to be designed based on workers’
+interests and values. This became a key issue in the subsequent projects.
+
+
+Design and intervention projects
+The knowledge strategy projects began to nibble away at the problem of how workers could
+learn more about computers and how the systems designers/researchers could learn more about
+what workers really needed in the workplace. But then came the problem that if workers really
+got involved – not just as users but as participants – would the design of alternative systems be
+diﬀerent? The answer, as we will see, is still part of an ongoing conundrum, lurking today at the
+heart of designing truly new tools and applications.
+   While participants in the earlier projects did not engage themselves directly in the design and
+implementation of new information technology applications, this became the focal point of
+later strategies like UTOPIA (1981–4) and Florence (1984–7) and many subsequent projects.
+The rationale for this was that while experience from the early projects had shown that strong
+unions may increase the workers’ inﬂuence on technology, this was a necessary but not a suf-
+ﬁcient condition for real changes to take place. It appeared to be necessary to create alternative
+technologies as well as to ﬁght vendors’ monopoly over technological choices.
+   The UTOPIA project was carried out by computer and social science researchers at the
+Swedish Centre for Working Life, the Royal Institute of Technology, also in Sweden, and
+Aarhus University in Denmark. The project cooperated with a supplier Liber/TIPS and a
+Swedish and a Danish newspaper. It focused on typographical issues such as page make-up and
+image processing in the newspaper industry. The goals of the UTOPIA project were to develop
+technology for graphical workers that contributed to high-quality newsprint products, skilled
+work and a democratic organisation of work, goals that sharply contrasted with the management-
+driven objective of de-skilling workers (Ehn and Kyng 1984; Bødker et al. 1987; Ehn 1988).
+The project aimed at creating technological alternatives with an involved trade union based on
+their interests and concerns. The researchers set up a technology laboratory, in which trade
+union representatives participated as skilled workers in prototyping technology for page make-
+up and image processing. For the workers, control over their work process and the quality of
+work and results were paramount issues.
+
+28
+                                                                                           Heritage
+
+
+   The motivation for engaging in alternative technology production was that the knowledge
+strategy projects of the 1970s in Norway (Iron and Metal), Sweden (DEMOS) and Denmark
+(DUE) had realised that existing production technology more and more often constitutes an
+insurmountable barrier preventing the realisation of trade union demands for the quality of
+work and a meaningful job (Bødker et al. 1987). Further, the rationale was that it could be
+more realistic to try to develop technology applicable for a whole industry rather than local
+unions formulating alternatives for each of their employers to implement. The project therefore
+set out to produce a ‘demonstration example’, showing that trade union development of
+technology would be a feasible strategy (ibid.).
+   The idea of cooperating with the technology companies and the newspapers aimed to bring
+the research prototypes closer to commercially viable products that could be tested in real-life
+situations. However, it turned out, not too surprisingly, that management and even the funding
+research agency were not interested in the changes in work organisation and training that the
+research project had crafted. Further, the journalists’ union also lost interest in the idea as they
+began to pursue other interests – an issue that occurs all too frequently in participatory projects,
+as workers and community groups also have other things to do (Ehn 1988). As a result, the
+prototypes were never turned into commercial products. Interestingly, the problems of vendor
+monopoly and worker or user lack of interest still loom large in the challenges facing
+participatory practitioners.
+   However, through the technology laboratory, the UTOPIA project went one step further than
+the earlier work: it brought workers out of their workplace into a joint space where they could
+freely experiment and imagine the types of digital tools they might need. This was long before
+prototyping and oﬀ-the-shelf applications were common, and so it was diﬃcult to help spark
+people’s imagination of future alternatives. Even now, with all the building blocks of interface
+designs, applications and social networking software, the problem of imagining alternative solu-
+tions still rears its head. The UTOPIA project’s concept of setting up laboratory-like settings
+where designers/researchers and prospective users could work together to mock-up or proto-
+type new technologies and new ways of working, is one of the lessons that still stay with us.
+Further, the UTOPIA project developed and designed new ways of looking at future possibilities
+that inspired and inﬂuenced Participatory Design methods (see Chapter 6) and Participatory
+Design tools and techniques (see Chapter 7).
+   The Florence project was another example of a research project with design and intervention
+strategies. Unlike the UTOPIA research, though, it brought the focus directly back into the
+workplace (Bjerknes and Bratteteig 1987, 1988). A motivation for the project was to build
+computer systems for nurses’ daily work, focusing on communication and the professional lan-
+guage and skills of nurses in order for them to gain control over the computer systems and their
+own working conditions. And a central idea was that technological solutions should be tested in
+real work situations. Florence was also carried out by researchers and workers, this time nurses
+at two hospitals in Oslo, Norway, and two computer scientists and an anthropologist from the
+university, although in this case the union was not a partner.
+   As with earlier projects, Florence focused on workers whose voices were rarely heard, and
+feminist concepts from the period were an important inﬂuence, particularly in relation to
+fostering an environment where nurses felt comfortable to speak out about what was important
+in their work. While the project did not involve unions it did actively engage nurses who saw
+their work through the eyes of their patients, rather than through the lens of doctors’ orders or
+computerised procedures.
+   The project made a prototype based on the existing paper-based ‘kardex’ – the nurses’
+equivalent to the physicians’ medical record. Reﬂecting on the ﬁnal evaluation meeting, the
+
+                                                                                                 29
+Finn Kensing and Joan Greenbaum
+
+
+researchers note (Bjerknes and Bratteteig 1988) that while the nurses used the system, it was not
+easy to grasp how the system actually ﬁtted their work. Developing an understanding of the
+way work gets done and listening to the voices of the actual people in the ﬁeld remain key
+lessons that still live on with Participatory Design today – lessons that continue to present an
+enormous challenge in the national and international development of medical records systems.
+   The Florence project was among the pioneers – for the purpose of designing new computer
+applications – in applying observations of real work situations in combination with more
+detached techniques such as interviews and workshops. Inspiration for this came from, and
+overlapped with the work of, American anthropologists, as we shall see in the next section.
+   While the motivation for Florence was to help the nurses give voice to their concerns at
+work, a strict workplace orientation on the nursing profession was diﬃcult to maintain; other
+occupational groups, like physicians and nursing assistants, wanted to be considered as well. This
+is a problem that remains today as diﬀerent groups or stakeholders within an organisation may
+have conﬂicting power relations and thus diﬀering views about what activities an application
+should support. There are no easy ﬁxes for this problem, but as we will see in the concluding
+part of this chapter and in subsequent chapters, there are principles and tools and techniques that
+help groups speak for themselves.
+
+
+Ethnographic analysis of relations between work and technology
+Another important part of the Participatory Design heritage is the inﬂuence of the work practice
+and technology research area at the Xerox Palo Alto Research Center (PARC) on early
+explorations of the role of ethnography in Participatory Design. Anthropologists at PARC were
+involved in studies of the relations between people, technology and work in the service sector in
+the US. They performed detailed analyses of the ways work gets done, the in situ rationales that
+workers apply, and the technologies and other resources they bring to bear. They were able to
+show how new technologies, when introduced into the workplace, shape the working practices
+of oﬃce workers and service technicians and the people with whom they interact. Their work
+demonstrated the consequences of relying solely on the managers’ or information technology
+designers’ understanding of work, and began to argue for the importance of involving workers in
+the design of new technologies.
+   These workplace studies dealt with: oﬃce workers (Wynn 1979; Suchman 1983; Suchman
+and Wynn 1984; Blomberg 1987); service technicians (Orr 1990); and ground operations at an
+airport (Brun-Cottan et al. 1991). In her much acclaimed book Plans and Situated Actions,
+Suchman gives a profound critique of the then dominant cognitive science approach to tech-
+nology design as it relied on an understanding of human activity where plans direct action. She
+advocated an alternative view, where plans are seen as potential resources for action but need to
+be understood as they unfold in situ (Suchman 1987, 2007).
+   Later, the anthropologists at PARC joined forces with computer scientists to ﬁnd ways that
+such detailed studies of work practices could inform a participatory approach to the design of
+technology. Here we will just mention some of the earlier works, as Chapter 5 goes into more
+detail. Suchman and Trigg (1991) and Jordan and Henderson (1995) describe how video
+recordings may be used for analysis and design. Blomberg et al. (1990; further developed in
+Blomberg et al. 1993) were among the ﬁrst to provide a methodological introduction to the
+guiding principles of ethnographically informed analysis when it is conducted as part of tech-
+nology design. Ethnographic approaches strive to gain an appreciation for what workers are
+doing and how they see things. Blomberg et al. (1993) describe ‘four main principles that guide
+much ethnographic work’:
+
+30
+                                                                                          Heritage
+
+
+! [Ethnographers make] a commitment to study the activities of people in their everyday
+  settings … as opposed to a laboratory or experimental setting.
+! [Ethnographers hold] a belief that particular behaviours can only be understood in the
+  everyday context in which they occur.
+! Ethnographers describe how people actually behave, not how they ought to behave.
+! [E]thnographers are concerned with describing behavior in terms relevant and meaningful to
+  study participants. This contrasts with the requirements of survey research where relevant
+  categories must be known before the study begins.
+                                                             (Blomberg et al. 1993, pp. 125–6)
+
+
+In the rest of the book you will ﬁnd many examples of how ethnographically informed analysis
+has found its way – with or without the involvement of anthropologists – into the design of
+work-related technologies, as well as other forms of Participatory Design.
+
+
+Voice and democracy: theoretical roots for participation
+In the deep-rooted system of Participatory Design heritage, there are many theoretical currents
+that have served to nurture active involvement in technological design. It was apparent in the
+cases described in this chapter that supporting new voices meant breaking with the Cartesian
+dualism inherent in traditional computer development work. As Ehn, one of the UTOPIA
+project researchers, explained it in Work-Oriented Design of Computer Artifacts,
+
+
+    The prototypical Cartesian scientist or system designer is an observer. He does not partici-
+    pate in the world he is studying, but goes home to ﬁnd the truth about it by deduction
+    from the objective facts that he has gathered.
+                                                                              (Ehn 1988, p. 52)
+
+
+And, growing out of the Xerox PARC studies mentioned earlier, Lucy Suchman’s book Plans
+and Situated Actions (1987) set the stage for understanding that human actions – in and outside the
+workplace – are not simple steps followed according to plans, but rather actions situated in the
+concrete situations before us.
+   From inside the world of computer science, inﬂuential works such as Winograd and Flores’s
+Understanding Computers and Cognition: A New Foundation for Design (1986) critiqued the Cartesian
+and rationalistic traditions of system design, and set in motion a new framework for under-
+standing that ‘in designing tools we are designing ways of being’ (p. xi). And setting these ideas
+in motion, Schön’s book, The Reﬂective Practitioner (1979), helped early experimenters under-
+stand how both workers and designers could actively reﬂect on their work in the midst of
+concrete situations.
+   Here we focus on three crucial roots in the early history that both inspired projects and
+helped set up working principles and practices: (1) Political economy, workers’ movements
+and rights in the struggles between workers and management/capital; (2) Democracy, the
+belief in the right of people to express themselves in governments and communities, and its
+extension in the workplace and in the design of technology; and (3) Feminism, the grass-roots
+movement of women asking questions and initiating change through direct actions.
+   There are, in addition, multiple strands of inﬂuential thinkers and writers whose work has
+inﬂuenced the need for participatory actions about technologies. Clearly, a movement as broad
+
+                                                                                                31
+Finn Kensing and Joan Greenbaum
+
+
+as this has numerous starting points and what are often called ‘birth stories’. Our intention is not
+to seek out these ‘birth’ myths, but rather to weave heritage stories together in a pattern that
+newcomers can understand. It should be noted that computer system design, as technological
+practice, was embedded in top-down thinking, and that books like Understanding Computers and
+Cognition (Winograd and Flores 1986), as well as Herbert and Stuart Dreyfus’s Mind over Machine
+(Dreyfus and Dreyfus 1986), were instrumental in breaking down the barriers that formal
+rule-oriented computer science placed in the way of user participation.
+   The early Iron and Metal workers project in Norway was based in a Marxist critique of
+capital and the mechanism through which the power of capitalist control pushed workers into
+corners where their skills and knowledge were taken away in the interest of faster, cheaper
+production. Later projects, such as UTOPIA with the graphic workers, sought to directly
+confront management rule with creative worker involvement. These works were inspired by
+Braverman’s Labor and Monopoly Capital (1974), which showed that management, acting in the
+‘best interests’ of corporate boards and shareholders, got more labour out of workers by a pro-
+cess called ‘de-skilling’ – removing the knowledge of workers from their daily tasks and
+embedding it into the control of technical systems – both administrative and machine- (com-
+puter) driven. In In the Name of Eﬃciency (Greenbaum 1979) Greenbaum showed that the de-
+skilling process, while being transported to the very computer programmers and operators who
+were thought of as ‘highly’ skilled, was not a natural or inevitable occurrence, and therefore
+could be fought.
+   For many, the pragmatic philosophy of John Dewey has been inspirational as it addresses
+active engagement in creating and maintaining democratic practices. While much of Dewey’s
+writing has been directly applied to education, it has resounding notes for Participatory Design
+of technologies. At root is the concept of bottom-up active engagement through personal
+experience. This means, of course, that ideas and actions that grow out of one’s experience in a
+work situation, as in an educational experience, form a cornerstone in shaping the tools that are
+applied to that experience. In essence, Dewey’s beliefs go far beyond the idea of user involve-
+ment, or simple user-centred design. Like the early heritage cases described in this chapter, his
+work seeks not only to help people gain (and retain) knowledge but to use that knowledge
+towards broader, more fundamental goals such as freedom and democratic rights.
+   On the issue of freedom, for example, Dewey argues that:
+
+     There can be no greater mistake, however, than to treat freedom as an end in itself … For
+     freedom from restrictions, the negative side is to be prized only as a means to freedom which
+     is power; power to frame purposes; to judge wisely, to evaluate desires by the consequences,
+     which will result from acting upon them; power to select and order means to select chosen
+     ends into operation.
+                                                                               (Dewey 1938, p. 64)
+
+Feminism is a third strand underpinning participatory actions. An integral part of feminism gives
+voice to personal experience. In the 1960s, women around the developed world acted upon their
+experience and developed grass-roots practices to gain and regain voice and control over their
+own lives. By the 1970s and 80s these actions were supported by a wealth of literature giving
+voice to previously invisible thoughts and actions. In the sciences, for example, Evelyn Fox Keller
+(1985) asked why ‘objectivity’ and ‘impersonal judgment’ were the basis of what was considered
+good science. And, by extension, research like the Florence project with nurses asked why
+computer systems designed for nurses should be designed by systems professionals without the
+experience and personal knowledge of nurses’ daily work (Greenbaum 1990). In fact, today,
+
+32
+                                                                                          Heritage
+
+
+feminist movements, including those now strongly based in developing countries, are giving
+voice to previously invisible questions and actions, examples of which will be given in Chapter 10.
+
+
+Reﬂecting on heritage: guiding principles
+The heritage of Participatory Design is not set in stone. Movement from simple involvement to
+active participation has many beginnings in diﬀerent situations. However, for those entering the
+ﬁeld we oﬀer our interpretation of a set of basic principles. Further, we acknowledge that such
+principles have been practised in diﬀerent ways because of power relations in local conditions, as
+well as the ethical and political concerns of individual Participatory Design projects.
+   Understanding the conditions for and the consequences of ‘in some way’ actively including
+people in technology design and implementation has been the glue that keeps this maturing
+ﬁeld of academics and professionals together. The principles and practices of these groups have
+further been stimulated by ongoing discussions of the theoretical and political underpinning of
+participation, as well as experimenting with new ways of developing methods that facilitate
+participation.
+   While the early cases described in this chapter grew out of strong union movements, the
+basic set of beliefs and practices lives on in areas where trade unions are not a central focus of
+power relations or may not exist. These principles are based ﬁrmly on:
+
+! Equalising power relations – ﬁnding ways to give voice to those who may be invisible or
+  weaker in organisational power structures. Clearly, in the workplace settings described in
+  this chapter both management and technical experts had more power than the workers on
+  the shop ﬂoor, thus giving voice to workers was a critical starting point. In community and
+  local government settings it is important to help people with less money, power or inﬂuence
+  to ﬁnd ways of asserting their needs to those in power. This is an integral part of:
+! Democratic practices – putting into play the practices and role models for equality among those
+  some call ‘stakeholders’. Democracy is often thrown around as a concept that is assumed to
+  happen by itself but, as Dewey and others point out, it requires educated and engaged
+  people acting on their own interests and in the interests of the common good. The projects
+  described here made strides in attempting to bring participants up to speed in this process by
+  educating them in technical jargon, where necessary, and engaging them in the process of
+  project-building. But democracy does not happen in the abstract, and is rooted in:
+! Situation-based actions – working directly with people in their workplace or homes to
+  understand actions and technologies in actual settings, rather than through formal abstrac-
+  tions. As we saw from the studies in this chapter, the early projects broke the mould by
+  moving away from formal, abstract technical description towards activities by and with
+  people in their working environment. These actions gave rise to:
+! Mutual learning – encouraging and enhancing the understanding of diﬀerent actors by ﬁnding
+  common ground and ways of working. As people with technical expertise work with
+  workers on the shop ﬂoor – when they actually engage and listen and take note of condi-
+  tions and questions – then both the technical experts and the workers have a chance to learn
+  from each other. The process of mutual learning can give rise to:
+! Tools and techniques – that actually, in practical situations, help diﬀerent actors express their
+  needs and visions. These early projects developed a range of techniques for active engage-
+  ment through training programmes, paper-based mock-ups, prototypes and workshops.
+  Later chapters will describe additional tools and techniques that have been added to a
+  participatory repertoire. These tools are important for helping people develop:
+
+                                                                                                33
+Finn Kensing and Joan Greenbaum
+
+
+! Alternative visions about technology – whether it be in the workplace, home, public place or
+  elsewhere – ideas that can generate expressions of equality and democratic practices. And as
+  mentioned earlier, alternative visions about technical choice are diﬃcult to imagine, even
+  with new software tools and applications. But the book returns to this issue later on.
+
+The pre-1990 heritage cases described in this chapter each experimented with confronting several
+of these guiding principles in order to give people a voice in technology that aﬀected their daily
+lives. The following chapters proceed from these roots, expanding on lessons learned and
+problems left unsolved.
+
+
+Notes
+ 1 Simula, considered the ﬁrst object-oriented programming language, was designed to simulate traﬃc
+   ﬂow patterns for streets. Instead of the focus on procedures, which marked all earlier programming
+   languages, Simula introduced the concept of objects – or data elements which could be integrated into
+   any part of the program.
+ 2 NJMF is a Norwegian acronym for Norwegian Iron and Metal Workers Union.
+ 3 DEMOS is a Swedish acronym for Democratic Control and Planning in Working Life.
+ 4 DUE is a Danish acronym for Democracy, Development and EDP (Electronic Data Processing).
+
+
+References
+Beyer, H. and K. Holtzblatt (1998) Contextual Design: Deﬁning Customer Centered Systems, Waltham, MA:
+  Morgan Kaufmann.
+Bjerknes, G. and T. Bratteteig (1987) ‘Florence in Wonderland: System development with nurses’, in
+  G. Bjerknes, P. Ehn and M. Kyng (eds) Computers and Democracy: A Scandinavian Challenge, Aldershot:
+  Avebury, 279–95.
+Bjerknes, G. and T. Bratteteig (1988) ‘The memoirs of two survivors’, Proceedings of the ACM Conference on
+  Computer Supported Cooperative Work, New York: ACM.
+Blomberg, J. (1987) ‘Social interaction and oﬃce communication: eﬀects on users’ evaluation of new
+  technologies’, in R. Kraut (ed.) Technology and the Transformation of White Collar Work, Hillsdale, NJ:
+  Lawrence Erlbaum Associates, 195–210.
+Blomberg, J., J. Giacomi, A. Mosher and P. Swento-Wall (1990) ‘Ethnographic ﬁeld methods and their
+  relation to design’, in A. Namioka and D. Schuler (eds) Proceedings of the First Biennial Participatory Design
+  Conference, PDC 1990, Seattle, WA, March 31 – April 1, 1990, Palo Alto, CA: CPSR.
+Blomberg, J., J. Giacomi, A. Mosher and P. Swento-Wall (1993) ‘Ethnographic ﬁeld methods and their
+  relation to design’, in D. Schuler and A. Namioka (eds) Participatory Design: Principles and Practices,
+  Hillsdale, NJ: Lawrence Erlbaum Associates, 123–55.
+Bødker, S., P. Ehn, J. Kammersgaard, M. Kyng and Y. Sundblad (1987) ‘A Utopian experience’, in G.
+  Bjerknes, P. Ehn and M. Kyng (eds) Computers and Democracy: A Scandinavian Challenge, Aldershot:
+  Avebury, 251–78.
+Braverman, H. (1974) Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century, New
+  York: Monthly Review Press.
+Brun-Cottan, F., K. Forbes, C. Goodwin, M. H. Goodwin, B. Jordan, L. Suchman and R. Trigg (1991)
+  Workplace Project: Designing for Diversity and Change Video, Palo Alto, Xerox PARC Video Production,
+  Xerox Palo Alto Research Center. Videotape.
+Ciborra, C. and L. Schneider (1983) ‘Technology bargaining in Norway’, in U. Briefs, C. Ciborra and L.
+  Schneider (eds) Systems Design for, with, and by the Users: Proceedings of the IFIP WG 9.1 Working Con-
+  ference on Systems Design for, with, and by the Users, Riva De Sole, Italy, 1982, Amsterdam: North-Holland,
+  20–24.
+Clement, A. and P. van den Besselaar (1993) ‘A retrospective look at PD projects’, Communications of the
+  ACM, 36(6): 29–37.
+Demarco, T. (1979) Structured Analysis and System Speciﬁcation, New York: Prentice Hall.
+Dewey, J. (1938) Experience and Education, New York: Macmillan.
+
+
+34
+                                                                                                      Heritage
+
+
+Dreyfus, H. and Dreyfus, S. (1986) Mind over Machine: The Power of Human Intuition and Expertise in the Era
+   of the Computer, New York: Free Press.
+Ehn, P. (1988) Work-Oriented Design of Computer Artifacts, Stockholm: Arbetslivscentrum.
+Ehn, P. and M. Kyng (1984) ‘A tool perspective on design of interactive computer support for skilled
+   workers’, in M. Saaksjarvi (ed.) Report of the Seventh Scandinavian Research Seminar on Systemeering,
+   Helsinki: ECIS, 211–42.
+Ehn, P. and M. Kyng (1987) Computers and Democracy: A Scandinavian Challenge, Avebury: Aldershot.
+Ehn, P. and Å. Sandberg (1979) Företagsstyrning och Löntagarmakt, Falköping: Prisma (in Swedish).
+Ehn, P. and Å. Sandberg (1983) ‘Local union inﬂuence on technology and work organization: some results
+   from the DEMOS Project’, in U. Briefs, C. Ciborra and L. Schneider (eds) Systems Design for, with, and
+   by the Users: Proceedings of the IFIP WG 9.1 Working Conference on Systems Design for, with, and by the
+   Users, Riva De Sole, Italy, 1982, Amsterdam: North-Holland, 427–37.
+Greenbaum, J. (1975) ‘Automation and unemployment: a look at the basic assumptions in the computer
+   ﬁeld’, Computers and Society, 6(3): 4–5.
+Greenbaum, J. (1979) In the Name of Eﬃciency: Management Theory and Shopﬂoor Practice in Data Processing
+   Work, Philadelphia, PA: Temple University Press.
+Greenbaum, J. (1990) ‘The head and the heart: using gender analysis to study the social creation of com-
+   puter systems’, Computers and Society, 20(2): 9–17.
+Greenbaum, J. and M. Kyng (1991) Design at Work: Cooperative Design of Computer Systems, Hillsdale, NJ:
+   Lawrence Erlbaum Associates.
+Greenwood, D. and M. Levin (1998) Introduction to Action Research: Social Research for Social Change,
+   Thousand Oaks, CA: Sage.
+Jacobsen, H., F. Kensing, M. Kyng and L. Mathiassen (1981) Klubarbejde og EDB, Copenhagen: Fremad (in
+   Danish).
+Jordan, B. and Henderson, A. (1995) ‘Interaction analysis: foundation and practice’, Journal of Learning
+   Sciences, 4(1): 39–103.
+Jungk, R. and Müllert, N. (1987) Future Workshops: How to Create Desirable Futures, London: Institute for
+   Social Inventions.
+Keller, E. (1985) Reﬂections on Gender and Science, Cambridge, MA: Yale University Press.
+Kensing, F. (1981) ‘Handlingsorienteret partsforskning med fagbevægelsen’, in Å. Sandberg (ed.) Forskning
+   for forandring, Stockholm: Arbeidslivscentrum (in Danish).
+Kensing, F. (1983) ‘The trade unions’ inﬂuence on technological change’, in U. Briefs, C. Ciborra and L.
+   Schneider (eds) Systems Design for, with, and by the Users: Proceedings of the IFIP WG 9.1 Working Con-
+   ference on Systems Design for, with, and by the Users, Riva De Sole, Italy, 1982, Amsterdam: North-Holland.
+Kensing, F. and J. Blomberg (1998) ‘PD meets CSCW – issues and concerns’, Computer Supported
+   Cooperative Work – The Journal of Collaborative Computing, 7: 3–4.
+Kyng, M. and L. Mathiassen (1982) ‘Systems development and trade union activities’, in N. Bjørn-
+   Andersen (ed.) Information Society, For Richer, For Poorer, Amsterdam: North-Holland, 247–60.
+Mathiassen, L., B. Rolskov and E. Vedel (1983) ‘Regulating the use of EDP by law and agreement’, in U.
+   Briefs, C. Ciborra and L. Schneider (eds) Systems Design for, with, and by the Users: Proceedings of the IFIP
+   WG 9.1 Working Conference on Systems Design for, with, and by the Users, Riva De Sole, Italy, 1982,
+   Amsterdam: North-Holland, 251–64.
+Mumford, E. (1972) ‘Job satisfaction: a method of analysis’, Personnel Review, 1(3): 48–57.
+Mumford, E. (1983) Designing Human Systems for New Technology: The ETHICS Method, Manchester:
+   Manchester Business School.
+Mumford, E. (1993a) ‘The ETHICS approach’, Communications of the ACM, 36(6): 82.
+Mumford, E. (1993b) ‘The participation of users in system design: an account of the origin, evolution, and
+   use of the ETHICS method’, in D. Schuler and A. Namioka (eds) Participatory Design: Principles and
+   Practices, Hillsdale, NJ: Lawrence Erlbaum Associates, 257–70.
+Mumford, E., F. Land and J. Hawgood (1978) ‘A participative approach to the design of computer sys-
+   tems’, Impact of Science on Sociology, 28(3): 235–53.
+Norman, D. and S. Draper (1986), User-Centered System Design: New Perspectives on HCI, New York: CRC
+   Press.
+Nygaard, K. and O. T. Bergo (1975a) ‘The trade unions – new users of research’, Personnel Review, 4(2):
+   5–10.
+Nygaard, K. and O. T. Bergo (1975b) En vurdering av styrings-og informasjonssystemet KVPOL, Tiden Norsk
+   Forlag (in Norwegian).
+
+
+                                                                                                             35
+Finn Kensing and Joan Greenbaum
+
+
+Orr, J. E. (1990) ‘Sharing knowledge, celebrating identity: war stories and community memory in a service
+  culture’, in D. Middleton and D. Edwards (eds) Collective Remembering: Memory in Society, Newbury
+  Park, CA: Sage, 169–89.
+Sandberg, Å. (1979) Computers Dividing Man and Work: Recent Scandinavian Research on Planning and Com-
+  puters from a Trade Union Perspective, Stockholm: Arbetslivscentrum.
+Schön, D. (1979) The Reﬂective Practitioner: How Professionals Think in Action, London: Temple Smith.
+Suchman, L. (1983) ‘Oﬃce procedures as practical action: models of work and system design’, ACM
+  Transactions on Oﬃce Information Systems, 1(4): 320–8.
+Suchman, L. (1987) Plans and Situated Actions: The Problem of Human–Machine Communication, New York:
+  Cambridge University Press.
+Suchman, L. and R. Trigg (1991) ‘Understanding practice: video as a medium for reﬂection and design’, in
+  J. Greenbaum and M. Kyng (eds) Design at Work: Cooperative Design of Computer Systems, Hillsdale, NJ:
+  Erlbaum Associates, 65–90.
+Suchman, L. and E. Wynn (1984) ‘Procedures and problems in the oﬃce’, Oﬃce: Technology and People,
+  2(2): 133–54.
+Tjørnehøj, H. (1976) Arbejdsmiljøet i jernindustrien, Aarhus, Denmark: Modtryk (in Danish).
+Trist, E. (1981) The Evolution of Socio-technical Systems, Toronto: Quality of Working Life Center.
+Trist, E., G. W. Higgin, H. Murray and A. B. Pollock (1963) Organizational Choice, London: Tavistock.
+Wagner, I. and J. Gärtner (1996) ‘Mapping actors and agendas: political frameworks of systems design and
+  participation’, Human–Computer Interaction, 11(3): 187–214.
+Whyte, W. (1991) Participatory Action Research, Newbury Park, CA: Sage.
+Winograd, T. and F. Flores (1986) Understanding Computers and Cognition: A New Foundation for Design,
+  Norwood, NJ: Ablex.
+Wynn, E. (1979) ‘Oﬃce conversation as an information medium’, unpublished PhD thesis, University of
+  California, Berkeley.
+Yourdon, E. (1982) Managing the System Life Cycle: A Software Development Methodology Overview, New
+  York: Yourdon Press.
+
+
+
+
+36
+

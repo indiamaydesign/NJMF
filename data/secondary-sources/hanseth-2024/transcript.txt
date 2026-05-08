@@ -1,0 +1,644 @@
+Scandinavian Journal of Information Systems
+
+Volume 36       Issue 1                                                                                    Article 4
+
+
+6-30-2024
+
+My road to Infrastructure
+Ole Hanseth
+Department of Informatics, University of Oslo, Norway, oleha@ifi.uio.no
+
+
+
+
+Follow this and additional works at: https://aisel.aisnet.org/sjis
+
+
+Recommended Citation
+Hanseth, Ole (2024) "My road to Infrastructure," Scandinavian Journal of Information Systems: Vol. 36:
+Iss. 1, Article 4.
+Available at: https://aisel.aisnet.org/sjis/vol36/iss1/4
+
+
+This material is brought to you by the AIS Journals at AIS Electronic Library (AISeL). It has been accepted for
+inclusion in Scandinavian Journal of Information Systems by an authorized administrator of AIS Electronic Library
+(AISeL). For more information, please contact elibrary@aisnet.org.
+                       © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                                 Hanseth: My road to Infrastructure
+
+    Reflection note
+
+
+
+    My Road to Infrastructure
+    Ole Hanseth
+    Department of Informatics, University of Oslo
+    Ole.Hanseth@ifi.uio.no
+
+
+    1 Introduction
+    More or less all my research has been related to information or digital infrastructures—
+    more specifically: innovations in information infrastructures which has been the theme
+    of a series of workshops Robin Williams established. My approach to this topic, how-
+    ever, was the outcome of a long journey. It all started with, and was most influenced by,
+    Kristen Nygaard who was giving two lectures on his pet topic, “systems development
+    as a technical, organizational, and political process” in the introductory course to in-
+    formatics during the spring 1977 (where we learned object-oriented programming in
+    Simula). Kristen was at this time just hired as an adjunct professor and developed three
+    courses on systems development—one at the bachelor level (Data processing and soci-
+    ety), and two on master level (Large data systems—two cases, and Methods of systems
+    development) which I attended. This convinced me that systems development was a
+    “technical, organizational and political process”, which implied that also organizational
+    and political issues had to be considered in the design processes. One way to do so was
+    to organize the development processes so that users actively got involved. Another issue
+    was how social, organizational, and political issues were supported or constrained in a
+    system’s specific design (architecture, functionality, whatever). The focus on my edu-
+    cation was computer science and software engineering. So as a software designer my
+    primary concern was how to account for social, organizational, and political issues in
+    the design of artifacts.
+        Kristen has had strong influence on me in addition to his thinking about technolo-
+    gy1. This included his approach to life and work. He was a political activist, most clearly
+    demonstrated in his role as head of the No-movement in connection with Norway’s
+    referendum about EU membership in 1994, but he also had an activist approach to
+    research. Rather than reading, reflecting, and writing in solitude in his office or study,
+
+
+
+Published by AIS Electronic Library (AISeL), 41
+                                                        Hanseth:
+                                                        My Road to Infrastructure                 1
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                Scandinavian Journal of Information Systems, Vol. 36 [], Iss. 1, Art. 4
+
+
+     he gathered people around him, locally and globally, discussing what mattered and how
+     to get things done2. This meant that he was connected to a large community of schol-
+     ars with vastly different backgrounds, a community where lots of interesting ideas and
+     issues emerged and were explored and discussed. This community represented a huge
+     resource for a curious young mind.
+         NCC/NR, in the wake of Kristen’s pioneering project together with the Iron and
+     Metal Workers’ Union, hired a group of social scientists to complement their computer
+     science and statistics expertise, making it a very attractive employer for me. And luckily,
+     I was offered a position from 1st of January 1982 after having completed my master
+     (cand. real.) thesis. My intellectual development and research interest was from then on
+     shaped by the issues and challenges I confronted in the projects I engaged with, at the
+     same time as my interpretations of and lessons I drew from these confrontations were
+     strongly influenced by discussions I had with colleagues and people I met (at NCC/
+     NR and in Kristen’s wider network), and literature these people made me aware of and
+     which my curiosity led me to read.
+
+
+     2 Projects
+     When I started, I got involved in two projects: a pilot implementation of the ISO OSI
+     session layer communication protocol, and to extend the Pascal programming language
+     with concepts for concurrent processes need for programming a Norwegian supercom-
+     puter designed for processing satellite data (for surveillance of Norwegian sea). The
+     next project was the design of a Simula machine, i.e., a computer especially tailored
+     to the Simula programming language where my task was to micro-code the Simula
+     specific instruction set called Sipofix, including its memory management system. This
+     was followed by a project aiming at implementing and extending Kristen’s new pet
+     programming language BETA.
+         Over the years, my activities became more concentrated on communication tech-
+     nology. And what turned out to become a ‘critical juncture’ or path creation event in
+     my career was a project we conducted for the Norwegian tele-directorate’s research
+     organization. The aim of was to implement a pilot solution where documents could be
+     produced or edited, exchanged between users/computers, stored, and retrieved based
+     on the ISO OSI ODA multimedia document standard. The solution was based on the
+     integration of several modules developed by various organizations (and individuals we
+     did not know). We succeeded in the end, but the integration of all software modules
+     turned out to be far more challenging than expected, bringing the project at one point
+     to the brink of total failure.
+
+
+
+https://aisel.aisnet.org/sjis/vol36/iss1/4       42      Hanseth:
+                                                         My Road to Infrastructure                 2
+                       © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                                 Hanseth: My road to Infrastructure
+
+
+        While we were working on this project, our client, the Norwegian tele-directo-
+    rate’s research organization, established a centre in Tromsø called Telemedicine in North-
+    ern-Norway which was given the task to develop solutions for new telecommunica-
+    tion-based services for health care—with a focus on utilizing multi-media technology.
+    Staff at this centre became aware of our project. They though ODA was an appropriate
+    standard for this task, so Gisle Hannemyr and me were engaged (in 1988) to set up
+    a demo solution exchanging medical multi-media information based on ODA on the
+    one hand and to contribute to the development of international standards for exchange
+    of such information on the other. This engagement led me to leave NCC in 1990 and
+    join a software company developing solutions for information exchange in health care,
+    returning to the NCC/NR towards the end of 1992.
+        The two ODA projects and the two years working for the software company sealed
+    my destiny as a researcher. After the first ODA project led me to conclude that future
+    software development is not just about developing software from scratch, but rather by
+    integrating existing modules developed by others; that doing so is far from trivial; and
+    that this issue needs research. Further, an important conclusion I draw from my work
+    for the software company was that communication technology has a huge potential for
+    enabling information sharing between organization within all industries and that this
+    required and opened a huge space for research. Finally, the ODA project also brought
+    me, by accident I would say, into the health care domain which has been the main em-
+    pirical domain for all my research.
+
+
+    3 Issues, people, readings
+    Some issues I repeatedly discussed with colleagues were also discussed widely in IS
+    communities. This included approaches to software development: top-down (water-
+    fall) vs. bottom-up and iterative or evolutionary approaches. In these discussions, Kari
+    Thoresen insisted that software development was fundamentally a learning process and
+    had to be conducted and organized as such, a view I came to share, and which became
+    fundamental to my thinking about infrastructures.
+        During the 1980s and -90s there was also a heated debate about fundamental prin-
+    ciples for the establishment of communication standards—often referred to as a reli-
+    gious standards war between the proponents of the ISO OSI protocol suite and the
+    Internet community, a war where my colleagues at NCC/NR were all on the ISO OSI
+    side—with one exception: ‘Internet evangelist’ Gisle Hannemyr. Discussions with Gisle
+    was important for understating what was going on in the Internet community and
+
+
+
+
+Published by AIS Electronic Library (AISeL), 43
+                                                        Hanseth:
+                                                        My Road to Infrastructure                3
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                Scandinavian Journal of Information Systems, Vol. 36 [], Iss. 1, Art. 4
+
+
+     contrasts between OSI and Internet at technological (architectural), methodological,
+     organizational, as well as political levels.
+         My discussion with Gisle combined with my experiences in the ODA projects and
+     in particular in the software company had for me two important implications. First,
+     over time I came to see that the discussions between waterfall and evolutionary software
+     development approaches could be seem as analogue to the religious war about stand-
+     ards, and accordingly standardization should also be seen as, for instance, a learning
+     process. Second, Gisle forwarded to me an email sent by Einar Stefferud to Eva Kuiper
+     with copy to IETF’s mailing list (on 12th of May 1992) where he argued that the prob-
+     lem with the OSI protocols was that they were “installed base hostile,” i.e., they were
+     specified to communicate only with instances of the same protocol and, accordingly, an
+     OSI networks could not communicate with or connect to any existing network. This
+     notion of the installed base and installed base hostility was and eye opener: it pointed
+     to key differences between both ordinary software solutions and solutions integrated
+     across computers and organizational borders and between OSI and Internet approaches
+     to standards development.
+         I was constantly feeling a need for a deeper understanding of the issues I have men-
+     tioned. And the community I was a part of or had links to make me aware of rich sourc-
+     es of literature that I thought would help. I will here mention some important ones.
+         Lars Matthiessen did his PhD in Oslo. The Swedish sociologist Joachim Israel was
+     his second supervisor (Kristen was the first). This brought Israel to Oslo, giving a lecture
+     at NCC/NR in 1981 presenting his recent book “The Dialectics of Language and the
+     Language of Dialectics,” which I attended (while a master student). Israel talked about
+     ontology and epistemology in addition to dialectics—words I had never heard before. I
+     didn’t understand a word but bought the book and read it—still without understanding
+     anything. But a second careful reading helped a lot.
+         During 1982 Kristen established together with other Scandinavians a research pro-
+     gram called “Systems Development and Profession-oriented Languages” (Sydpol). Stan-
+     ford Professor Terry Winograd was invited to the kick-off seminar in early 1983 where I
+     also participated. Winograd brought with him a draft of the book he co-authored with
+     Fernando Flores, “Understanding Computers and Cognition. A New Foundation for
+     Design,” (1997) which he shared with us. The book included a chapter on Gadamer’s
+     hermeneutics (another very strange new word) and presented a ‘teaser’ of Heidegger.
+     The latter hit my curiosity leading to many evenings struggling with Being and Time.
+         Sociologist and colleague Tom Pape was closely affiliated with Scandinavian action
+     research community, and one day he gave me a copy of the draft of a book with the
+     title “Sociology as Action,” written by Bjørn Gustavsen—one of the community’s most
+
+
+
+https://aisel.aisnet.org/sjis/vol36/iss1/4       44      Hanseth:
+                                                         My Road to Infrastructure                  4
+                       © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                                 Hanseth: My road to Infrastructure
+
+
+    experienced members3. Here Gustavsen summarized the experiences of three decades
+    of action research and three major working life reforms in Norway and outlined a
+    methodology he called “democratic dialogue,” drawing extensively upon Habermas,
+    (the late) Wittgenstein, and Foucault. While spending some time reading Habermas,
+    the latter two got much more of my attention over a few years. I found in particular
+    Foucault’s “Discipline and Punish” and Wittgenstein’s analysis of following a rule (and
+    its difference to acting in accordance with a rule) helpful in getting deeper into issues
+    related to software and standards development approaches.
+        Lucy Suchman engaged with the Scandinavian technology-oriented research fol-
+    lowing Kristen’s Iron and Metal Workers project and visited Scandinavia presenting
+    her work, first her early paper on “Problems and Procedures in the Office Workspace”
+    (which she later elaborated and published as her hugely influential “Plans and Situated
+    Action.”) I found Lucy’s analysis as closely related to my understanding of and inter-
+    est in Foucault and Wittgenstein. She used however, yet another strange word—eth-
+    nomethodology. This triggered my curiosity again. There was not much literature to
+    find—just Harold Garfinkel’s thin book “Studies in Ethnomethodology” and Michael
+    Lynch’s “Art and Artefact in Laboratory Science.” Lynch’s book turned out to be my
+    first meeting with the at that time emerging STS field. This brought me further to
+    Latour and Woolgar’s “Laboratory Life” and to Knorr-Cetina’s “The Manufacture of
+    Knowledge,” followed by a broad stream of STS literature of which ANT and Thomas
+    Hughes’ “Network of Power” and his theory of Large Technological Systems became
+    most important.
+        The theory of science and philosophy I had been reading—Israel, Heidegger, Witt-
+    genstein, Foucault—was certainly not easy for me to operationalize in the projects I
+    worked on but turned out to be very helpful in getting a better grasp of the STS liter-
+    ature.
+        In January 1987, Eric Monteiro started at NCC/NR. (Actually, I hired him, being
+    the head of the programming languages and environment group, but when he arrived,
+    he decided he did not want to work in my group.) Eric was trained as a traditional civil
+    engineer in computing and found what the social scientists were talking about rather
+    odd, but having an open and curious intellectual mind, he wanted to understand them.
+    Eric and me also started to discuss what he found strange or odd—discussions that have
+    continued on a more or less daily basis ever since, drifting into STS and over time more
+    or less any topic. These discussions have been very important in the sense of having had
+    a huge impact on my intellectual development, but also in the sense of cultivation a
+    close friendship.
+
+
+
+
+Published by AIS Electronic Library (AISeL), 45
+                                                        Hanseth:
+                                                        My Road to Infrastructure               5
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                Scandinavian Journal of Information Systems, Vol. 36 [], Iss. 1, Art. 4
+
+
+
+         Soon after he started at NCC/NR, Eric got a scholarship and started on a PhD (on
+     intuitionistic logic as a foundation for programming languages). After finishing in his
+     PhD in 1992 he got a position at the university in Trondheim at the same time as I
+     returned from industry to the Norwegian Computing Center. And around that time,
+     our discussions also turned towards the writing of joint papers, the first on participatory
+     standardization presented at IRIS in 1992.
+
+
+     4 Crystallization of a research agenda
+     The Norwegian Computing Centre was a lively and inspirational place. All employees
+     were entitled researchers, but there was absolutely no culture for proper academic pub-
+     lishing. Personally, I wrote a few working papers (or internal research reports) from the
+     programming language projects I was involved in. Based on the ODA projects I wrote
+     a couple of papers on integration challenges and a more theoretical one the standard-
+     ization approach taken for informal conferences and workshops (criticizing the naïve
+     realist assumptions of its focus on a data modelling approach and its shortcomings).
+         While the ODA projects provided me with some ‘food’ for research, it was my
+     work in the software company that really gave me access to (or rather dumped on me)
+     an inexhaustible source of valuable data. I saw that using communication technology
+     supporting collaboration and information sharing, i.e., integration of information sys-
+     tems, in particular across organizational borders, held a great potential for beneficial
+     use of IT—in the health sector as well as all others. And I also saw that this generated
+     many practical challenges as well as research questions—none of which addressed by
+     the Scandinavian Participatory Design (PD) dominated Scandinavian IS community,
+     the research community closest to me. Helpful in this regard was Bo Dahlbom. He
+     argued that the research of the PD community, with its narrow focus on only user in-
+     volvement in in-house projects developing moderately complex solutions from scratch,
+     was outdated. Software was now (1990), he argued, all about off-the-shelf products
+     developed by software companies, and, accordingly, research should focus on use, not
+     development, of such products. Bo’s argument helped me sharpen my view. I agreed
+     that the PD community was to some extent outdated, but there was also a need for in-
+     tegrating software products, in particular into what I at that time called inter-organiza-
+     tional information systems. In my view, and based on my experience, such integration
+     tasks, and the development of interorganizational systems raised several new challenges
+     and required extensive research. And so did the development of the standards such
+     solutions required.
+
+
+
+https://aisel.aisnet.org/sjis/vol36/iss1/4       46      Hanseth:
+                                                         My Road to Infrastructure                 6
+                       © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                                 Hanseth: My road to Infrastructure
+
+
+        The development of inter-organizational information systems also differed substan-
+    tially from the assumptions the PD (and actually more or less all IS) research were
+    based on: the development as well as adoption and use of such systems involved many
+    autonomous but interdependent organizational—what today most would call ecosys-
+    tems—which made the organizing and ‘management’ of the development process rad-
+    ically different.
+        In 1993 I dropped the term inter-organisation systems and replaced it with infor-
+    mation infrastructures which was popularized by the Clinton/Gore National Informa-
+    tion Infrastructure (often called electronic superhighways) strategy. I liked this term for
+    mainly two reasons: first, it was helpful in conveying that what we were dealing with
+    was fundamentally different from information system—that the difference was more
+    fundamental than what would be communicated by just adding inter-organizational,
+    or complex for that matter, in front of information systems. Second, traditional infra-
+    structures are complex, big and heavy, build on standards and evolves slowly over long
+    time—aspects that it was important to highlight and focus on.
+        While information infrastructures were different from information systems in im-
+    portant respects as pointed out, they were also equal in equally important ways. Infra-
+    structures as well as their standards are technological artifacts, and as such they are of
+    course also socio-technical systems—although more complex ones. And as technolog-
+    ical artifacts, they can only be developed through an innovation process based on ele-
+    ments of trial and error, i.e., a learning process, and they have to be adapted to changing
+    user requirements. However, standards and infrastructures become increasingly resist-
+    ant to change as their installed bases grow. In addition, the availability of stable stand-
+    ards is a precondition for scaling infrastructures. I identified this dilemma—i.e., the
+    need for stable standards at the same time as infrastructures, including their standards,
+    need to evolve as we learn how to design them and as users’ requirements change—as
+    fundamental to successful infrastructure development.
+        Practically all my research has been related to this tension between standardization
+    and flexibility, or, alternatively, the stability/change duality. And this issue has been
+    explored through empirical inquiries drawing upon various theories and through dis-
+    cussions and collaborations with many colleagues.
+        In terms of theory, I have drawn upon STS as mentioned above, but also Complex-
+    ity Science, Ulrich Beck and Anthony Giddens’ theory of Reflexive Modernization,
+    and more recently Gilles Deleuze’s Assemblage Theory (as interpreted and presented by
+    Manuel DeLanda). While much of my research may appear theory driven, I still believe
+    I am a computer scientist at the core. So, the use of theories has been guided by what I
+    believe could help me develop ‘better’ technologies.
+
+
+
+Published by AIS Electronic Library (AISeL), 47
+                                                        Hanseth:
+                                                        My Road to Infrastructure                 7
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                Scandinavian Journal of Information Systems, Vol. 36 [], Iss. 1, Art. 4
+
+
+         My most formative exploration of the standardization/flexibility tension took place
+     in the first half of the 1990s in collaboration and discussions with Eric Monteiro, Bo
+     Dahlbom and Langdon Winner (who visited the TMV centre (that later became part
+     of the TIK Centre) at the University of Oslo during 1991-92). In this period, Eric and
+     I were reading and discussing lots of STS literature. At this time, Social Constructivism
+     had a strong position (among the members of the STS centre in Trondheim which Eric
+     had close contact with), and its claim about ‘everything’ having endless (interpretive)
+     flexibility seemed to be in contradiction with the stability and rigidity of standards and
+     infrastructures. This contradiction was also illuminated by Langdon Winner’s criticism
+     of Social Constructivist (and STS more broadly) for neglecting the materiality and
+     politics of technology. Further, Bo Dahlbom, a philosopher that became professor of
+     Information System, was fascinated with information technology’s flexibility, and what
+     we later would have called generativity. In our discussions, I often found it appropriate
+     to take the opposite position.
+         In 1991 Lucy Suchman initiated an annual 5-day workshop at the Oksnøen sum-
+     mer camp for youths and schoolchildren south of Oslo called the Osknøen Symposi-
+     um. Lucy brought with her her group of anthropologists from Xerox PARC and invited
+     about 20 others to this event. I was very lucky to be invited in 1992 (for reasons that are
+     hard to understand) and participated the next 5-6 years. This gave me the opportunity
+     to meet and learn to know some absolutely brilliant scholars. In addition to Lucy, most
+     notably was Susan Leigh Star, Geof Bowker and Marc Berg who was also doing research
+     on standards and infrastructures. Of course, I learned a lot from discussing—also my
+     own ideas—with these scholars for 5 days. But just as important, it boosted my interest
+     in pursuing a research agenda related to standards and infrastructures.
+         At this time (early—mid 1990s), I had no plans for obtaining an ordinary position
+     at a university. However, in early 1996, Tone Bratteteig asked me if I was interested in
+     a position in the IS group (called the systems work group at that time—systemarbeid
+     in Norwegian) at the Department of Informatics which they would announce soon.
+     That sounded like an interesting idea. But then I needed a PhD. With the support of
+     Bo Dahlbom, I put together the relevant papers I had published (3 out of 4 together
+     with Eric Monteiro), wrote a few more4, and submitted a thesis to the University of
+     Gothenburg (the same day as the deadline for the position). I defended it in mid-De-
+     cember 1996 with Giovan Francesco Lanzara as opponent and Claudio Ciborra and
+     Kalle Lyytinen on the grading committee—leading to close and for me very fruitful
+     collaboration with all three.
+         I got the position and started at the University in April 1997. I continued doing
+     infrastructure research together with friends and colleagues mentioned above as well as
+
+
+
+https://aisel.aisnet.org/sjis/vol36/iss1/4       48      Hanseth:
+                                                         My Road to Infrastructure                 8
+                       © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                                 Hanseth: My road to Infrastructure
+
+
+    new ones. Most important was the collaboration with Claudio Ciborra until he unfor-
+    tunately passed away all too early in February 2005. Through Claudio I also established
+    broader contact and tighter relations with people at London School of Economics, in
+    particular Jannis Kallinikos who I first meet in 2001 and established close relations
+    to during my stay there in 2003-2004. Even though we have not published any joint
+    papers, we have had frequent contacts and discussion about issues of shared interest
+    from which I have learned a lot. At the University of Oslo, I have worked together with
+    inspiring colleagues and PhD students I have supervised. Some in the latter group have
+    stayed on at the university after their PhDs and become colleagues: Margunn Aanestad,
+    Miria Grisot, Petter Nielsen and Egil Øvrelid. Margunn was the first PhD student I
+    supervised from beginning to end—26 years of fruitful and stimulating collaboration at
+    the University of Oslo. And I have also had a very close, long and fruitful collaboration
+    with Bendik Bygstad for at least 15 years after we first met around 2005 when he was
+    taking my course on information infrastructures as a PhD student (at the University of
+    Agder) after he got tired of a 20-year career as IT manager and consultant.
+        To summarize, my research career has been shaped by luck and accidents. I was cer-
+    tainly lucky in finding a place to work which provided me a very fertile environment.
+    NCC/NR, and the larger community it was a part of, was extremely heterogeneous in
+    terms of interests and disciplinary background. NCC/NR, as an applied research cen-
+    tre, was not defined by belonging to a specific discipline. So, there was no constrains
+    on reading and thinking outside the box—actually, there was no box! Lack of structure
+    may be a double-edged sword of course. It stimulates creativity, but one may also just
+    get confused and lost. For me, the positive clearly outweighed the negative.
+        Further, the software development projects I worked on were without doubt a most
+    valuable resource. And it was indeed lucky for me that I was engaged on the ODA pro-
+    ject and by the software company. I think the projects, in particular the ODA projects,
+    was the factor that has shaped my career the most.
+        Finally, the fact that NCC/NR lacked focus on and a culture for academic publish-
+    ing was also an advantage for me. That meant that I did not work all night to reach a
+    deadline for a conference, but rather spent afternoons and evenings on reading. I think
+    that has been beneficial for me (even though Eric and I had to learn how to write a
+    paper on our own when we started collaborating).
+
+
+    5 The infrastructuring of computing
+    Having examined the past, I will end this piece with a brief comment on the present
+    and the future. In recent years, there has been a discussion about the unique charac-
+
+
+
+Published by AIS Electronic Library (AISeL), 49
+                                                        Hanseth:
+                                                        My Road to Infrastructure               9
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                Scandinavian Journal of Information Systems, Vol. 36 [], Iss. 1, Art. 4
+
+
+     teristics of the digital realm and how digital innovation differs from other innovation
+     processes. One important characteristic that in my view has been overlooked in this
+     discussion is the essential infrastructural nature of the digital. Theoretically, one could
+     argue that this stems from the generative nature of the digital technology. Additionally,
+     data itself is inherently infrastructural, as evidenced by the fact that integration, or data
+     sharing, has always been considered the holy grail of IS.
+         But we need to go beyond the theoretical. Just as Marxists distinguish between the
+     idea of capitalism and what they call “the real existing capitalism,” we also need to dis-
+     tinguish between the properties of digital material as such and the “real existing digital
+     material.” The “real existing digital material” has become increasingly infrastructural
+     throughout its history. Looking at the computer first. In the beginning, one computer
+     could run only one application at the time. Then virtualization technology started to
+     evolve, enabling a single computer to appear as multiple machines. This allowed it to
+     run several applications simultaneously and serve a larger number of users in parallel,
+     effectively becoming a shared physical infrastructure for these users. Todays’ virtualiza-
+     tion technology, i.e., cloud computing, integrates hundreds of thousands of computers
+     within a data centre, making them operate as if they were a single machine. In 2022,
+     Google had approximately 2,5 million computers integrated, operating as a computing
+     infrastructure for millions, if not billions, of users. So, while we often may think of
+     our laptop as our primary computer, it is only a thin layer ¾the ‘icing on the cake’¾
+     on top the global infrastructure where the applications or services we use are running.
+     The infrastructural character of computing is also illustrated by the European Gaia-X
+     initiative, which aims to facilitate the establishment of ‘sovereign data centres’.
+         Research on information (or digital) infrastructures has focused on the growing
+     number of information systems in use in organizations and their increasingly tighter
+     integration within and across organizational boundaries. This growth in the number
+     and degree of integration of information systems is clearly an ongoing trend, resulting
+     in increasingly complex infrastructures that are shared among a continually expanding
+     user base. While more complex infrastructures will have many features in common with
+     existing ones, they will also develop new characteristics that require further research.
+     Here, I will highlight a few examples, focusing on how the scope of these infrastructures
+     is expanding.
+         Healthcare has been an important domain for me, as well as for infrastructure re-
+     search more broadly. This domain exemplifies the importance and challenges of in-
+     formation sharing. It also illustrates the growing complexity of the domain, driven by
+     new technologies that generate more information and by increased specialization and
+     organizational diversity. These factors necessitate information sharing among a larger
+
+
+
+https://aisel.aisnet.org/sjis/vol36/iss1/4       50      Hanseth:
+                                                         My Road to Infrastructure                   10
+                       © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                                 Hanseth: My road to Infrastructure
+
+
+    number of actors. The complexity of infrastructures will continue to grow with the
+    introduction of sensors, specialized solutions for monitoring and communicating with
+    patients at home, AI and ML. A general trend, evident in healthcare and other sectors,
+    is the integration of infrastructures across increasingly larger geographical and sectoral
+    spaces. This is exemplified by EU’s European Health Data Space Health Union (called
+    EU4Health) initiatives.
+        Another domain in the public sector is the European level, for instance, through
+    EU’s Pan-European eGovernment Infrastructures initiative. One example is the es-
+    tablishment of EU-LISA in 2011—the “European Union Agency for the Operational
+    Management of Large-Scale IT Systems in the Area of Freedom, Security and Justice.”
+    Eu-LISA develops and operates several platforms supporting the control and manage-
+    ment of immigration and asylum seekers within the Schengen are including the Schen-
+    gen Information System (SIS), Eurodac (asylum seekers’ fingerprints), SIS and VIS sys-
+    tems, as well as systems currently under development, such as ECRIS-TCN, EES and
+    ETIAS. While each of these systems represent complex infrastructures in themselves,
+    their integration with each other as well as systems used by police and immigration au-
+    thorities in the member states constitutes an infrastructure of considerable complexity.
+        Similar developments are occurring in the private sector, as illustrated by the bank-
+    ing sector. Banks started adopting IT solutions to manage their accounts and customers
+    in the 1960s. Today, large banks have several thousand different solutions, integrated in
+    various ways. In a cash-based economy, we interact with banks only directly to deposit
+    and withdraw cash. Today, however, our interaction with banks primarily involves in-
+    terbank payment services, such as paying bills, shopping in stores and restaurants, and
+    making on-line purchases. In Norway, the implementation of these services started in
+    1972 when banks established a new organization, BBS (The Banks Payment Central).
+    BBS developed a solution for interbank payments that banks could integrate with their
+    back-office systems, one year before SWIFT was established to develop a solution for
+    international interbank transfers. The first SWIFT-based money transfer took place in
+    1977. One core element in the payment service was a clearing system called NICS. In
+    parallel, the national bank, Norges Bank, developed a settlement system, NBO.
+        In the BBS’ development of the interbank payment solution, several additional ser-
+    vices were introduced. These included ATMs connected to a network allowing any
+    bank customer to withdraw cash from any bank’s ATM, BankAxept for card payments
+    in shops and restaurants, which later expanded with BankAccess for card payments on
+    on-line shopping platforms, an e-invoicing solution, BankID (a common identification
+    and authentication service), and a solution for instant interbank payments. These ser-
+    vices were developed and operated by a handful of organizations, all collectively owned
+
+
+
+Published by AIS Electronic Library (AISeL), 51
+                                                        Hanseth:
+                                                        My Road to Infrastructure                11
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                Scandinavian Journal of Information Systems, Vol. 36 [], Iss. 1, Art. 4
+
+
+     by the Norwegian banks. In addition, the largest Norwegian bank, DNB, developed a
+     peer-to-peer payment service for mobiles called Vipps. Other banks also started plan-
+     ning similar services. However, these banks soon realized they could not compete with
+     Vipps, which had already achieved substantial adoption. DNB, fearing competition
+     from Apple and Google, offered to turn Vipps into an independent company collec-
+     tively owned by all the banks, similar to other service providers. This transition was
+     successfully implemented.
+         This illustrates that the variety of payment services and the banks’ back-office sys-
+     tems together constitute a vast and complex information infrastructure, which has con-
+     tinuously evolved and grown over the years, accompanied by the virtual disappearance
+     of cash and an explosion in electronic transaction. More recently, however, a new trend
+     has emerged. In 2010, BBS merged with its Danish sister organization, PBS, estab-
+     lishing Nets, collectively owned by Danish and Norwegian banks. In 2014, the banks
+     sold Nets to a consortium consisting of the three equity funds Advent International,
+     ATP og Bain Capital. In 2021, the clearing platform NICS were sold to Mastercard
+     while the rest merged with the Italian based payment service company Nexi which is
+     providing payment service in many European countries. The same year Vipps merged
+     with the Danish MobiPay company (where the Norwegian banks own about 72% and
+     the Danish DanskeBank the rest. Vipps and MobiPay also wanted to merge with the
+     Finnish service but was denied doing so by EU. The Norwegian national bank, is also
+     considering replacing the NGO settlement platform with the Eurozone’s TARGET2
+     which is developed and operated in a collaboration by The Banque de France, Deutsche
+     Bundesbank and Banca d’Italia—known as the 3CB
+         These examples aim to illustrate the ever-growing complexity and expanding scope
+     of information infrastructures in both public and private sectors. However, they also
+     highlight several significant trends. The evolving infrastructures are not just about add-
+     ing more solutions and connections; we observe that key components of the infrastruc-
+     tures are emerging as platforms and institutions that mediate between traditional en-
+     tities like banks or national immigration authorities. These institutions and platforms,
+     such as BBS, BankID, BankAxept, and Nexi, are increasing in number and becoming
+     more independent over time. This trend is exemplified by the evolution of BBS, orig-
+     inally owned by Norwegian banks, which became part of Nets, and subsequently part
+     of Nexi and Mastercard. Additionally, the technological and institutional complexity is
+     compounded by the fact that all mentioned platforms, as well as the internal systems
+     of banks and other private companies and public agencies, operate in independent data
+     centres and communicate via services provided by independent network providers.
+
+
+
+
+https://aisel.aisnet.org/sjis/vol36/iss1/4       52      Hanseth:
+                                                         My Road to Infrastructure                12
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                                  Hanseth: My road to Infrastructure
+
+
+        The infrastructures discussed here represent important examples of digital inno-
+    vation, contributing to digitalization and digital transformation. In my view, banks
+    have been radically transformed over the years. In a cash-based economy, banks op-
+    erated as almost entirely independent organizations. However, with the digitalization
+    of payments, banks have become part of an industry that provides payment services
+    collectively. Further, the bank industry now includes numerous non-bank institutions
+    responsible for core banking (payment) services which all banks depend on. This means
+    that this industry can only undergo digital transformation as a whole. This trend is ev-
+    ident in most industries. Thus, one overall one key issue for future research is the tight
+    coupling between the evolution and transformation of industry-wide infrastructures
+    and the digital transformation of an industry as a whole.
+        In conclusion, I have attempted to argue that information technology—“the real ex-
+    isting”—is continuously becoming more infrastructural, making infrastructure research
+    more important than ever before.
+
+
+    Notes
+     1.   This also includes my passion for wine—he gave his first “lesson” in 1992 when he guided
+          us through Chas.E’s wine cellar in Aarhus followed by a wine tasting in the evening and
+          many more wine tastings over the years at his home.
+     2.   Most of Kristen’s discussion partners were non-Norwegians, many of them Americans,
+          causing his telephone bills to create major concern for his employers (Norwegian Comput-
+          ing Center (NCC or, in Norwegian, NR) until 1984, University of Oslo from then on).
+     3.   The manuscript was published in a substantially revised version with the title “Dialogue
+          and development—”Theory of communication, action research and the restructuring of
+          working.”
+     4.   One of them with the title “Information Infrastructure Development: Cultivating the In-
+          stalled Base” was published with Kalle Lyytinen as co-author in 2010, with the title “De-
+          sign theory for information infrastructures: The case of building the Internet.”
+
+
+
+
+Published by AIS Electronic Library (AISeL), 53
+                                                         Hanseth:
+                                                         My Road to Infrastructure                    13
+                        © Scandinavian Journal of Information Systems, 2024 36(1), 41-54
+
+                Scandinavian Journal of Information Systems, Vol. 36 [], Iss. 1, Art. 4
+
+
+
+
+https://aisel.aisnet.org/sjis/vol36/iss1/4       54      Hanseth:
+                                                         My Road to Infrastructure         14
+

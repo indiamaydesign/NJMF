@@ -1,0 +1,1491 @@
+Scandinavian Journal of Information Systems
+Volume 7 | Issue 1                                                                                                                            Article 1
+
+
+
+1995
+
+User Participation and Democracy: A Discussion
+of Scandinavian Research on System Development
+Gro Bjerknes
+gro.bjerknes@avenir.msmail.telemax.no
+
+Tone Bratteteig
+University of Oslo, tone@ifi.uio.no
+
+
+
+
+Follow this and additional works at: http://aisel.aisnet.org/sjis
+
+Recommended Citation
+Bjerknes, Gro and Bratteteig, Tone (1995) "User Participation and Democracy: A Discussion of Scandinavian Research on System
+Development," Scandinavian Journal of Information Systems: Vol. 7 : Iss. 1 , Article 1.
+Available at: http://aisel.aisnet.org/sjis/vol7/iss1/1
+
+
+This material is brought to you by the Journals at AIS Electronic Library (AISeL). It has been accepted for inclusion in Scandinavian Journal of
+Information Systems by an authorized administrator of AIS Electronic Library (AISeL). For more information, please contact elibrary@aisnet.org.
+                                                      Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+                           User Participation and Democracy:
+                          A Discussion of Scandinavian Research
+                                 on System Development
+
+
+                                                    Gro Bjerknes
+                        Avenir A.S., P.O.Box 6824 St. Olavs pl., N-0130 Oslo, Norway
+                                   gro.bjerknes@avenir.msmail.telemax.no
+
+                                                    Tone Bratteteig
+                                 University of Oslo, Department of Informatics
+                                    N-0316 Oslo, Norway, tone@ifi.uio.no
+
+
+
+
+          Abstract                                              1. Introduction
+          Scandinavian research projects in system de-          In the Scandinavian countries, user par-
+          velopment have traditionally put a strong em-         ticipation in system development has
+          phasis on user participation as a strategy for        been discussed and practised for more
+          increasing working life democracy. The arti-          than two decades (Aarhus 1975, Bjerk-
+          cle analyses a few of these projects with re-         nes et al. 1987). User participation refers
+          spect to this goal. We argue that there has           to the involvement of users in work ac-
+          been a development from politics to ethics in
+                                                                tivities during system development—the
+          system development research, and that the
+                                                                forms and degree of involvement vary
+          political dimension should be reintroduced.
+                                                                (representative or direct involvement,
+          A reorientation of system development strate-         consultants, or collaborators). Influence
+          gies aiming at increasing working life democ-
+                                                                refers to users having power to make de-
+          racy can learn from the historical success
+                                                                sign decisions—the degree of actual in-
+          stories, in particular the combination of glo-
+          bal strategy and local action used in the trade       fluence and power varies. User participa-
+          union projects in the 60’s. Recent develop-           tion aims at involving future users of a
+          ment in technology and working life will,             computer based system in decisions dur-
+          however, introduce new challenges to system           ing system development.
+          development.                                              Three reasons for user participation
+                                                                in design are normally given, e.g.,
+                                                                (Bjørn-Andersen & Hedberg 1977):
+
+
+
+
+                             © Scandinavian Journal of Information Systems, 1995, 7(1):73–98
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                                 1
+                                            Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           •    improving the knowledge           upon        ments usually concern several interest
+                which systems are built,                      groups thus workplace democracy also
+           •    enabling people to develop realistic          includes balancing claims from the dif-
+                expectations, and reducing resist-            ferent stakeholders. Many of the Scandi-
+                ance to change, and                           navian research projects also aimed at in-
+                                                              creasing working life democracy, i.e.,
+           •    increasing workplace democracy by
+                                                              ‘industrial democracy’, expanding the
+                giving the members of an organisa-
+                                                              workers’ influence to include the soci-
+                tion the right to participate in deci-
+                                                              etal level as well.
+                sions that are likely to affect their
+                work.                                             Jørgen Bansler and Philip Kraft start-
+                                                              ed a debate about Scandinavian research
+           The first two reasons are rather practical,        on user participation at the Participatory
+           and they can be found in several system            Design Conference in 1992 (Kraft and
+           development approaches. The belief is              Bansler 1992). They claimed that the re-
+           that users’ knowledge will improve the             search had little or no effect in society,
+           fit between the computer system and the            and that it had outlived itself. The debate
+           work. The third reason is culturally and           about the success or impact on society by
+           politically biased, and found in, e.g., leg-       Scandinavian approaches continued in
+           islation and political literature.                 panels at the following IRIS Conferen-
+                Many Scandinavian research projects           ce1 (Knudsen 1993), and in the April ’94
+           in system development during the last              issue of Scandinavian Journal of Infor-
+           decades have subscribed to the third rea-          mation Systems, including the Kraft and
+           son—to increase workplace democracy.               Bansler article (1992), a commentary
+           Democratic ideals emphasise the right to           from Morten Kyng (1994), and an an-
+           maintain a different opinion than those in         swer to this by Bansler and Kraft (1994).
+           power to forward opposing positions and            We want to join the debate with a slightly
+           to build knowledge on an alternative ba-           different approach: we want to discuss
+           sis to support a different view. In a de-          the underlying ideas of this research
+           mocracy those affected by a decision               rather than the practical results thus tak-
+           take part in the making of the decision.           ing into consideration how user partici-
+           Historically this means giving equal               pation in system development can con-
+           rights for people with little or no power.         tribute to democracy in working life and
+           All members in a democratic society                workplaces. The historical basis for
+           should have the opportunity to take part           much of the Scandinavian research on
+           in decision making through direct voting           user participation has been aimed at find-
+           or through representatives voting for              ing strategies for increased working life
+           them. An organisation can be seen as an            democracy. We believe that the experi-
+           arena for different opinions to meet               ences from the last decades may be rele-
+           and—having a democratic ideal—be                   vant to future system developers, even if
+           given a voice. Workplace democracy                 the conditions for system development
+           means the right for all employees to have          are rapidly changing. We want to create
+           influence on their work situation through          a discussion within the research commu-
+           work arrangements and participation in             nity itself about how to utilise the large
+           decision making fora. Work arrange-                volume of experiences and knowledge.
+
+
+                                           G. Bjerknes & T. Bratteteig 74
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                 2
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+              Scandinavian approaches to system                    The first part of the article describes
+          development have been characterised as               and discusses earlier system develop-
+          user-oriented rather than management                 ment research. We start with a descrip-
+          oriented and by their critical attitude (Ii-         tion of the first trade union projects. Sec-
+          vari & Hirschheim 1992, Karasti 1994).               tion three describes a branch of projects
+          One of several Scandinavian research                 characterised by their emphasis on de-
+          approaches in which user participation               sign for the skilled worker. In section
+          has been predominant, has been called                four we look at another project series
+          the Collective Resource approach (Ehn                starting approx. at the same time with the
+          & Kyng 1987) or the Critical approach                same basic values, but taking a different
+          (Bansler 1989). The Collective Resource              path by its focus on the use of computers
+          approach to design explicitly aims at ‘de-           in an organisational context. We summa-
+          mocracy and skill’ (Ehn & Kyng 1987, p.              rise the projects in section five by dis-
+          56) for the workers, using the collec-               cussing the contradictions between har-
+          tive—the trade union—as a strategy to                mony and conflict, and politics and eth-
+          achieve this. This article follows two dif-          ics. Section six discusses the four differ-
+          ferent trends of the Collective Resource             ent levels of influence used in the
+          approach that have ended up being rather             research projects: work situation, work
+          different although they share the same               organisation, inter-organisational rela-
+          starting point: the Scandinavian trade               tions, and working life. In section seven
+          union projects in the early 70’s. The fact           we point at some characteristics of cur-
+          that the projects are so similar with re-            rent development having consequences
+          spect to their objectives make the differ-           for future research on user participation
+          ences between them interesting. We have              in system development. In the last sec-
+          chosen two trends that we know very                  tion we discuss user participation as a
+          well: we are part of one of them hence               means of achieving democracy.
+          the article does not give an overview of
+          all Scandinavian research on user partic-
+          ipation in system development.2 There
+          are many reasons for basing our discus-              2. The Scandinavian Trade Union
+          sions on projects rather than theoretical            Projects
+          contributions or influential persons.                Historically the starting point for user
+          Within this particular tradition, the main           participation in system development was
+          theoretical contributions have come after            the discussion about the relationship be-
+          the projects, as a result of the projects. A         tween work and democratic values in
+          strong opposition to methods has empha-              Scandinavia around 1960 (Gustavsen
+          sised the building of an empirical basis to          1986). At that time, it was generally
+          criticise and improve existing methods.              agreed that industry should level the gen-
+          The fact is that the subsequent projects             eral democratic principles in society, and
+          involved many of the same researchers.               that opportunities for increased individu-
+          Thus the projects also reflect a develop-            al engagement should be created as a
+          ment of ideas in some of the Scandinavi-             means to increase productivity and effi-
+          an research communities.                             ciency (Thorsrud et al. 1964, Thorsrud &
+                                                               Emery 1970). A large action programme
+
+
+                                              G. Bjerknes & T. Bratteteig 75
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               3
+                                            Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           for improving the working life in Scandi-          ogy in order to produce an action plan
+           navia was designed and conducted as an             that would represent and strengthen the
+           industrial democracy programme by The              workers’ position with respect to intro-
+           Norwegian Federation of Trade Unions               duction and use of computer technology.
+           (LO) in cooperation with The Norwe-                    The NJMF project emphasised that
+           gian Employers’ Federation (NAF).                  knowledge gained locally should be a
+           NAF was interested in rationalisation              basis for the trade unions to act on a cen-
+           and improved organisational develop-               tral level. The results from the project in-
+           ment; LO wanted to empower the work-               cluded technology agreements (the first
+           ers. One of the results of the Cooperation         made at A/S Viking Askim in 1973),
+           Projects was a revised Worker Protection           textbooks, and vocational training pro-
+           and Working Environment Act (AML                   grammes on technology.
+           1977, Sørensen 1992). AML’s section 12                 The Swedish DEMOS project
+           states that workers and their representa-          (DEMOkratiske Styringssystemer) from
+           tives shall be kept informed about sys-            1975 to 1979 did research on behalf of
+           tems used for planning and performing              the responsible and skilled worker
+           work, and about planned changes in such            (DEMOS 1979, Ehn & Sandberg 1979).
+           systems. Sufficient education for using            The basic assumptions were that the use
+           the systems, and participation in the de-          of computer technology contributes to
+           sign process is emphasised. The main               rationalising work and deskilling work-
+           idea is that the workers themselves shall          ers, and that there is a fundamental con-
+           control and be responsible for perform-            flict between workers and employers
+           ing work.                                          that cannot be resolved. The responsible
+               Within this cooperative climate,               worker has the right and duty to partici-
+           some more explicitly stated political              pate in decisions concerning both what is
+           projects were carried out to support and           produced and how it is produced. Power
+           strengthen the trade unions. Stronger              is not equally distributed between work-
+           trade unions were supposed to contribute           ers and management, however, and a
+           to democracy by giving workers a voice             model for negotiations between manage-
+           and an opportunity to influence their              ment and unions on the introduction of
+           work situation. The trade unions were              computers was proposed. The negotia-
+           part of the existing power structures in           tion model more or less institutionalises
+           society established to empower the                 the conflict between employers and
+           workers.                                           workers.
+               The first political project was initiat-           The objectives of the Danish DUE
+           ed by the Norwegian Iron and Metal                 project (Demokrati, Udvikling og Edb)
+           Workers’ Union (NJMF) in a resolution              from 1977 to 1980 were to build up re-
+           made at the annual meeting in 1970                 sources within unions to increase the un-
+           (Nygaard and Bergo 1974, Nygaard                   ions’ influence on the use of computer
+           1979). The NJMF project started in the             systems. The project also aimed at con-
+           beginning of January 1971, and ended               tributing to a professional curriculum
+           before summer 1973. The objective was              and research programme in systems de-
+           to apply a workers’ perspective on devel-          velopment (DUE 1978 & 1979, Kyng &
+           opment and introduction of new technol-            Mathiassen 1979).
+
+
+                                           G. Bjerknes & T. Bratteteig 76
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                 4
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+              The first trade union projects, NJMF,            spektiv) from 1981 to 1984 was a joint
+          DEMOS and DUE, have some character-                  research project including several Scan-
+          istics in common. They were based on                 dinavian research institutions and the
+          the contradiction between capital and                Nordic Graphical Union (UTOPIA
+          labour3 claiming that there is an antago-            1981).
+          nistic relationship between the two. They                The goal of the UTOPIA project was
+          aimed at strengthening the labour side of            to develop technology for graphical
+          the contradiction between workers, rep-              workers that contributed to high quality
+          resenting the labour, and management,                graphical products, skilled work, and a
+          representing the capital in order to make            democratic organisation of work. The
+          the struggle more even. They were striv-             project aimed at creating technological
+          ing for a democratic research and devel-             alternatives for the involved trade union.
+          opment process claiming that research-               The project limited its focus to work
+          ers have the duty to support those with              processes concerned with page make-up
+          less power and resources. They also                  and image processing in the newspaper
+          claimed that, when not reflecting on their           industry. The research site was a labora-
+          role, researchers often support those in             tory, in which trade union representa-
+          power (Sandberg 1975). The projects de-              tives participated as skilled workers.
+          parted from strong trade unions, and they                In order to make a requirements spec-
+          were mainly concerned with the organ-                ification for a computer system to sup-
+          ised work force and mainly with produc-              port the chosen work process traditional
+          tion. The researchers believed that work-            as well as less formal system descrip-
+          ing life democracy can be reached                    tions were used. The descriptions were
+          through trade unions as institutions rep-            not successful as means of communica-
+          resenting a workers’ collective.                     tion as they were too abstract. It turned
+                                                               out to be easier to involve graphical
+                                                               workers in the design process through a
+                                                               rather concrete approach using mock-
+          3. Design for the Skilled Worker                     ups and simulations of computer based
+          The experience from the trade union                  working environments (Ehn 1989). The
+          projects showed that strong unions may               mock-ups were more or less sophisticat-
+          increase the workers influence on tech-              ed, like paper boxes representing mouse
+          nology, but that this is not sufficient. It          and laser printers, or large paper draw-
+          appeared to be necessary to create alter-            ings and (later on) slides showing alter-
+          native technologies as well, to fight ven-           native screen layouts (Bødker et al.
+          dors’ monopoly. The focus shifted to the             1987, UTOPIA 1985). It has been put
+          means of production and the form and                 forward that one of the benefits from this
+          content of the working conditions. The               approach is that the workers do not have
+          next ‘generation’ of projects thus con-              to explicate their work processes, they
+          centrated on technological alternatives.             can express their craft skills by demon-
+                                                               strating and doing their work. This ap-
+          3.1. The UTOPIA project                              proach was called ‘design-by-doing’.
+          The UTOPIA project (Utbildning, Tek-                     The concrete result from the UTO-
+          nik, och Produkt I Arbetskvalitetsper-               PIA project was a requirements specifi-
+
+
+                                              G. Bjerknes & T. Bratteteig 77
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               5
+                                            Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           cation for a computer system for graphi-           Computer systems can act as specialised
+           cal workers delivered to the vendor Lib-           tools controlled by workers, and give the
+           er. A pilot system Text and Image                  them more control over their work.
+           Processing System (TIPS) was devel-                    Formal institutions like trade unions
+           oped based mainly on the specification,            are modern versions of guilds. Like the
+           and the application was tested in some             guilds, trade unions emphasise one
+           newspaper test sites. However, the ven-            group of workers without relating to oth-
+           dor ran short of capital before the devel-         er groups or the workers collective; they
+           opment of a commercial product was                 want to control the means of production,
+           ended, and the application was never               and they want to protect the professional
+           used (Ehn 1989).                                   interests and jobs of their members.
+                At the end of the UTOPIA project,             Since democratic ideals emphasise a le-
+           the ‘tool perspective’ was developed,              gitimate right for all groups to further
+           summarising the basic ideals of the                their interests research on behalf of one
+           project (Ehn & Kyng 1984). The tool                union does not necessarily contribute to
+           perspective is a design approach inspired          a more democratic working life. An ex-
+           by the tool design within traditional              ample from UTOPIA is the (female) per-
+           crafts and influenced by the workers’              forator typists. Their work has been con-
+           control movement (Sandberg 1984). The              ceived as just typing on PCs the text that
+           computer should be a tool for the skilled          journalists have written on typewriters.
+           worker, and the worker should be in con-           Their work thus depends on the fact that
+           trol of the tool. The tool is conceived as         journalists do not use PCs. Gunnarson &
+           a means of forming raw material into               Lodin (1983) discuss how the perforator
+           more refined products—tools are exten-             typists in their work situation can benefit
+           sions of the accumulated knowledge                 from the new technology by arguing that
+           about tools and materials in a given work          they take over some of the work tasks
+           process. A specialised tool presupposes            traditionally performed by graphical
+           professional skills from the users. The            workers. It is difficult to spot effects of
+           tool perspective fits with the design-by-          this view in the concrete work agree-
+           doing approach.                                    ments approved by the UTOPIA project,
+                The basic assumption in UTOPIA                e.g., (Dilschmann & Ehn 1984).
+           was that democracy can be increased by                 We consider the UTOPIA project as a
+           changing the balance of the contradic-             continuation of the history of guilds and
+           tion between labour and capital, by                trade unions as a support to graphical
+           strengthening the labour side. The labour          workers at the expense of women and
+           side can be strengthened through trade             unskilled men in the composers’ room,
+           unions. The work force was to build its            described by Cockburn (1983). Conse-
+           power on knowledge about work—as do                quently, the UTOPIA project has not
+           guilds and professions. Control over               contributed to the sort of workplace de-
+           work can be achieved through special-              mocracy in which all stakeholders have a
+           ised tools controlled by workers through           voice in the design of a new computer
+           (i) tools requiring specific knowledge for         system. Besides, the laboratory setting of
+           use, and (ii) a collective that controls the       the design process may have weakened
+           production of professional knowledge.              the possibilities for influencing real life
+
+
+                                           G. Bjerknes & T. Bratteteig 78
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                 6
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+          work situations. The basis for design of             analysis and design. Many of the contrib-
+          the TIPS system was to control the                   utors place themselves within a tradition
+          craftsmanship by one occupational                    of workplace democracy and worker par-
+          group rather than to support a set of work           ticipation in design. Greenbaum and
+          tasks carried out by that group in coordi-           Kyng argue for participation emphasis-
+          nation with other occupational groups.               ing usefulness and quality of the product
+                                                               rather than workplace democracy.
+          3.2. Cooperative design                                  Cooperative design certainly sup-
+          The UTOPIA project has inspired re-                  ports user participation. But the focus on
+          search in the 90’s aimed at understanding            process, action, and situatedness tends to
+          and supporting the process of design as a            disconnect the design process from the
+          cooperative effort, e.g., (Greenbaum &               larger organisational context in which
+          Kyng 1991, Grønbæk 1991, Bødker &                    power is enacted. The scope is the design
+          Grønbæk 1991, Mogensen 1994, Kyng                    process itself viewed as a (rather harmo-
+          1991).4 The basis for this research is the           nious) dialogue between a designer and a
+          tool perspective and the design-by-doing             user about the design of a particular com-
+          approach. The basic assumption is that a             puter application. For a cooperative de-
+          computer system that fits work and is                sign process to increase workplace de-
+          controlled by a worker can improve his/              mocracy, the design must be realised in a
+          her work situation. The process of devel-            computer system—and the organisation
+          oping the system needs to be influenced              must be willing to introduce the pro-
+          by the worker in order to get a good                 posed changes. If this is not the case, the
+          ‘tool’. Focus is on how to conduct a par-            participatory design process becomes a
+          ticipatory design process in which users             pleasant experiment for those who par-
+          can influence the system. The design                 ticipated—but the democratic ideals turn
+          process is closely tied to a concrete work           into an illusion, cf., (Procter & Williams
+          situation.                                           1992). The underlying belief is that a
+              The cooperative design process fo-               democratic process will give a democrat-
+          cuses on the future use situation. In addi-          ic result (i.e., an improved work situa-
+          tion to what is described through formal             tion) therefore computer systems devel-
+          system descriptions, it is important to              oped in a cooperative process have a lib-
+          pay attention to tacit knowledge and im-             erating power. This is not always the
+          plicit, shared understanding. Even, if               case.
+          possible conflicts within the organisa-
+          tional context is discussed (Bødker &
+          Grønbæk 1991), the emphasis is put on
+          activities for facilitating user involve-            4. Use of Computers in an
+          ment in the design process. Cooperative              Organisational Context
+          prototyping may uncover conflicts, but               The second branch of projects also had
+          the ‘conflicts cannot be dealt with or re-           their basis in the first trade union projects
+          solved by experimental design’ (Grøn-                and shared the same values, ideas, and
+          bæk 1991, p. 47).                                    beliefs as UTOPIA. Due to practical dif-
+              Greenbaum & Kyng (1991) include a                ferences, however, the projects devel-
+          collection of techniques for cooperative             oped differently—towards a focus on the
+
+
+                                              G. Bjerknes & T. Bratteteig 79
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               7
+                                           Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           organisational context rather than the            should be designed as instruments for
+           skilled worker.                                   work. The benefit of a computer system
+                                                             should be evaluated with respect to its
+           4.1. The Florence project                         users, not to the organisation as a whole.
+           The starting point for the Florence               The basis for design should therefore be
+           project, from 1984 to 1987, was con-              the knowledge needed to maintain daily
+           cerned with the fact that the large com-          work routines rather than production
+           puter manufacturers may get too much              routines.
+           influence on the workplaces through                   The aim of the Florence project was
+           computer systems mainly aimed at auto-            to build computer systems for nurses’
+           mation and rationalisation. A counter             daily work, based on their professional
+           strategy based on the trade unions’ pow-          language and skills. Technological solu-
+           er and will to negotiate the introduction         tions should be tested in real work situa-
+           of computer technology in an organisa-            tions, cf., the application perspective.
+           tion or a branch was considered to be too         The project therefore took place in a hos-
+           defensive. A more appropriate answer to           pital ward. To avoid the bias from one
+           the large manufacturers would be com-             workplace two hospital wards were in-
+           puter systems based on the knowledge of           volved in the project.5 Due to the work-
+           a profession. A profession was consid-            place orientation a strict bias towards the
+           ered to be the knowledge workers’ coun-           nursing profession was difficult to main-
+           terpart to the trade unions—sometimes             tain; other occupational groups, like phy-
+           coinciding with a union. Like the trade           sicians and nursing assistants, had to be
+           unions, a profession organise employees           considered as well. These groups were
+           across many different organisations, e.g.,        therefore also represented in the project
+           the medical profession.                           group. A representative from the profes-
+               The Florence project focused on               sional nursing federation participated in
+           nursing for several reasons. Nursing is a         the steering committee of the project.
+           profession interacting with other profes-             The project resulted in two proto-
+           sions. It is female dominated as opposed          types (Bjerknes & Bratteteig 1987a;
+           to previous trade union projects. Nursing         Bjerknes et al. 1985) and a pilot system
+           includes ‘non-production work’, i.e., re-         which was used in the hospital ward even
+           production, service and information giv-          after the formal completion of the project
+           ing activities, and involves an interesting       (Bjerknes & Bratteteig 1988a). The pilot
+           mix of manual and knowledge based                 system is an example of a computer sys-
+           work.                                             tem built to support a profession. Even if
+               Before the Florence project started,          the organisation of the professionals’
+           the ‘application perspective’ was devel-          (trained nurses’) work activities varies in
+           oped as a background for the research,            different workplaces, the project con-
+           cf., (Bjerknes & Bratteteig 1984). The            cluded that it is possible to build profes-
+           application perspective emphasises that           sion oriented systems.6 This requires,
+           computers should be understood in the             however, that the system is based on an
+           context in which they are used, the value         understanding of the basic nature of the
+           of computer systems is demonstrated               profession. And in order to be useful, an
+           when the computer is used. Computers              application has to be tailored for specific
+
+
+                                           G. Bjerknes & T. Bratteteig 80
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                8
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+          work situations. The project came to the             subject to the same criticism as the
+          conclusion that computer applications                ‘UTOPIA branch’ of projects, even if the
+          depend on the organisational and physi-              Florence project included several inter-
+          cal design of the use context.                       est groups in the design decisions (Bjerk-
+              Even with its focus on use, the appli-           nes & Bratteteig 1988a).
+          cation perspective is centred around                     The project addressed the organisa-
+          computers. The future use situation is the           tion as a whole to a certain extent, by dis-
+          basis for design. Hence, expertise from              cussing the totality of the information
+          both the application domain and infor-               systems in the ward. The totality of an
+          mation systems development is needed                 organisation can be addressed in two
+          in system development projects. Mutual               ways, through a management perspec-
+          learning is essential; both users and de-            tive or by emphasising that there are sev-
+          signers need knowledge about each other              eral differing perspectives depending on
+          in order to communicate (Bjerknes et al.             various stakeholders’ organisational po-
+          1985). The activities labelled ‘mutual               sitions and roles. In the Collective Re-
+          learning’ resemble activities later de-              source approach, the notion of organisa-
+          scribed as cooperative prototyping and               tion as a whole has been interpreted as a
+          participatory design (Bjerknes & Brat-               management’s perspective on the organ-
+          teteig 1987a, 1987b, 1987c, 1988b).                  isation. A computer system supporting
+              The project was limited as to the size           the organisation as a whole thus is a com-
+          of the system development effort. The                puter system supporting the capital side
+          pilot system could have been more use-               of the contradiction between labour and
+          ful if integrated with other computer sys-           capital. This interpretation goes well
+          tems in the hospital. This raised the ques-          with how the notion of organisation as a
+          tion of how local and situated it makes              whole was described in system develop-
+          sense to be. A focus on local needs en-              ment approaches at that time.7
+          sures an awareness of particular local in-               The Florence project experienced the
+          terests. However, sometimes a local unit             second interpretation to be just as valid.
+          will benefit from improved communica-                A computer system for the organisation
+          tion and coordination with other units.              as a whole realises a compromise be-
+          Relations between work groups cannot                 tween the interests and needs of a variety
+          be properly catered for from an applica-             of user groups. The goal is to balance the
+          tion perspective.                                    interests because there is no such thing as
+              The application perspective is a ‘one-           a homogeneous user group, not even
+          party perspective’. In spite of its basis in         within a single ward. The view that there
+          the institutionalised conflict between la-           are different stakeholders in a systems
+          bour and capital, the project was rather             development process fits the Collective
+          harmony oriented as the one-party per-               Resource approach. The Collective Re-
+          spective implicitly assumes harmony                  source approach predefines the stake-
+          within the workers’ collective. Several              holder groups to be workers vs manage-
+          important conflicts in working life will             ment. In real life, however, the different
+          be ruled out as ‘uninteresting’ within this          interests can involve conflicts within the
+          perspective. By its emphasis on one per-             workers’ collective, or (groups of) work-
+          spective the application perspective is
+
+
+                                              G. Bjerknes & T. Bratteteig 81
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               9
+                                            Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           ers and management may share the same              puter based systems often unveil con-
+           interests.                                         flicts between different parts of the or-
+                                                              ganisation and between local and central
+           4.2. Integration and redesign                      interests. The basis for redesign is the
+           The FIRE project (Functional Integra-              work situation, but the overall organisa-
+           tion through REdesign) from 1992 to                tional objectives are given more weight
+           1994 aimed at developing principles,               than any single work process.
+           techniques, and guidelines for redesign                Many of the FIRE project activities
+           of computer based systems so that the              are not easily characterised as inheritors
+           systems could become functionally inte-            of the Collective Resource approach,
+           grated for groups of users (Bjerknes et            even if power and differences between
+           al. 1991, Braa et al. 1992a & 1992b).              groups of stakeholders are emphasised.
+           The objective was to explore how to                The work of data shop stewards and the
+           build computer systems for an organisa-            work environment agreements are dis-
+           tion as a whole, given that organisations          cussed with respect to redesign (Kaas-
+           include a variety of interest groups with          bøll & Øgrim 1994). FIRE’s focus on the
+           partly conflicting goals, and given that a         technological infrastructure results in
+           number of computer systems coexist, but            emphasis on common interests through
+           do not interact properly. The project was          dialogue based strategies (Braa 1994).
+           concerned with problems in large devel-            The aim at making practical compromis-
+           opment projects and in maintenance of              es that can be accepted by everyone may
+           computer systems—addressing some of                lead to a position similar to the Socio-
+           the weaknesses of the application per-             Technical approach, criticised by the
+           spective.                                          trade union projects for being manipula-
+               One of the basic assumptions in the            tive (Ehn & Kyng 1987).
+           FIRE project is that users have a stake in
+           redesign as well as in design, thus the re-
+           design process must be properly organ-
+           ised to facilitate user participation (Braa,       5. Historical Lines in the
+           Bratteteig, and Øgrim 1994). Many users            Scandinavian Research
+           have to relate to several applications in          The projects described are so far all
+           order to carry out their work tasks, and           aimed at increasing the degree of partic-
+           the applications often do not fit each oth-        ipation and influence of users in the sys-
+           er or the work. Functional integration re-         tem development process. We summa-
+           fers to that users should experience the           rise the discussions by drawing some
+           applications as an integrated whole. Re-           historical lines that concern the political
+           design is an opportunity for functional            debate in system development research
+           integration, and the wish for integration          (cf., Figure 1). The first part of this dis-
+           may lead to redesign. Post-implementa-             cussion is concerned with where to start
+           tion changes of computer based systems             when doing the research; whether it
+           must be expected; thus it is necessary to          should be from a particular interest
+           organise and plan for continuous rede-             group or from an organisation seen as a
+           sign of the system (Bjerknes, Bratteteig           whole. The second part of the discussion
+           and Espeseth 1991). Integration of com-            is concerned with the strategy for achiev-
+
+
+                                           G. Bjerknes & T. Bratteteig 82
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                 10
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+          FIGURE 1. Illustrates the dimensions used in analysing the research projects
+
+
+                                           Institution                         Situation
+
+
+                      Organisa-                                            Integration
+                      tion as a           The LO/NAF
+                                                                           and redesign
+                      whole               Cooperation
+                                          projects
+                                                                                    Florence
+
+
+                      Particular           NJMF,
+                      interest             DUE,                                 Cooperative
+                      groups               DEMOS            UTOPIA              design
+
+
+
+
+          ing democracy, by using existing institu-            whole is addressed, and the emphasis is
+          tions, i.e., structural regulations like leg-        on balancing different interests.
+          islation and working life organisations,                 The Collective Resource approach,
+          or by acting in the system development               on the other hand, emphasises the fact
+          situation, emphasising knowledge and                 that there is an inherent conflict between
+          techniques possessed by the actors in the            employers and employees, and that it is
+          situation.                                           the researchers’ duty to support the
+                                                               weaker party, i.e., the employees (Sand-
+          5.1. Conflict or harmony perspective                 berg 1975). Here the conflict refers to the
+          as basis for a strategy                              antagonism between capital and labour.
+          The difference between considering the               The conflict orientation emphasises fight
+          organisation as a whole or as a particular           and confrontation as a strategy for
+          interest group in the system development             strengthening the labour side in order to
+          process may characterise the difference              make the fight between the sides more
+          between the Socio-Technical and the                  even. Followers of the Collective Re-
+          Collective Resource approach. The So-                source approach have criticised the So-
+          cio-Technical approach stresses on the               cio-Technical approach for being harmo-
+          one hand that employers and employees                ny oriented through its stress on balance
+          have a common interest in developing                 and consensus (Sandberg 1975, Ehn &
+          useful computer systems, and has dis-                Kyng 1987, Ehn 1989, Bansler 1989).
+          cussed and developed techniques for                  The Socio-Technical approach has han-
+          stakeholder participation (Bjørn-An-                 dled the contradiction between labour
+          dersen and Hedberg 1977, Bostrom and                 and capital by emphasising the depend-
+          Heinen 1977a & 1977b, Markus 1983,
+          Mumford 1983). The organisation as a
+
+
+                                              G. Bjerknes & T. Bratteteig 83
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               11
+                                             Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           encies and common interests between                 management perspective. Management
+           the two sides (the identity).                       friendly approaches support manage-
+                Interestingly enough, it is difficult to       ment, whereas the Collective Resource
+           see a difference between Socio-Techni-              approach supports the workers. At this
+           cal and Collective Resource approaches              point some will be tempted to jump to a
+           in practice. Knowledge about conflicts              synthesis consisting of a balanced view,
+           between labour and capital has been an              the perfect mix of conflict and harmony.
+           important basis for the organisation of             We hold the view, however, that the har-
+           projects in both traditions. In all projects        mony-conflict axis simply is not a good
+           carried out within an organisational con-           way to handle the contradiction between
+           text a certain degree of cooperation with           labour and capital. The axis is based on
+           management has been necessary—it                    the assumption that labour equals em-
+           seems to be very difficult to introduce             ployees—represented by trade unions—
+           technology against a management’s will.             instead of the more general labour. As
+           It is difficult to act in accordance with a         the capital side is seen as equal to the
+           ‘pure’ conflict-oriented view emphasis-             management many aspects and levels of
+           ing only the struggle between the sides of          capitalistic influence are not addressed at
+           the contradiction (the caricature being no          all, e.g., ownership of information. Im-
+           common interests at all between employ-             portant aspects of working life, e.g., dif-
+           ees and employers). The interdependen-              ferent employment contracts (full time,
+           cies in a contradiction creates a mutual            part time, temporised) and qualifications
+           interest in preserving the relationship—            (skilled, unskilled) are left out when the
+           often resulting in creating common inter-           labour side equals organised workers. It
+           ests at some level of abstraction. The use          is also important to notice that when the
+           of negotiation models, in which workers             worker side of the contradiction alone
+           and management are seen to have both                defines the area of discussion, the (cur-
+           conflicting and common interests, both              rent) division of work is taken for grant-
+           being interested in achieving an accepta-           ed. This makes the labour side vulnera-
+           ble solution, has been suggested by ad-             ble to all sorts of actions from the capital
+           vocates for the conflict oriented view,             side, e.g., radical organisational changes
+           e.g., (Ehn and Sandberg 1979). A moder-             like business process reengineering or
+           ate emphasis on identity can be found in            the conflict between employed and un-
+           techniques like participative design (Em-           employed (cf., Section 7).
+           ery 1993), democratic dialogue (Gustav-
+           sen 1992), and search conference (Påls-             5.2. Political or ethical roads to
+           haugen 1986) aimed at giving all stake-             democracy
+           holders an opportunity to have a say and            The arena for achieving democracy can
+           through this process create a common                be discussed along the distinction be-
+           understanding.                                      tween established institutions and situat-
+                The Collective Resource approach is            ed actions. The early projects used insti-
+           an anti-thesis to management friendly               tutions as means to develop and introdu-
+           approaches by assuming that computer                ce stronger institutional regulations in
+           systems built for the organisation as a             order to achieve and secure democracy.
+           whole support an economic oriented                  At the same time, the active use of insti-
+
+
+                                            G. Bjerknes & T. Bratteteig 84
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                  12
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+          tutions strengthened the position of those           ment process. The shift from emancipa-
+          institutions. The early projects contribut-          tion to professionalism has been support-
+          ed to laws and agreements that (still) reg-          ed by numerous suggestions to profes-
+          ulate the introduction and use of comput-            sionalise systems development (e.g.,
+          ers in working life. The LO-NAF Coop-                (Andersen et al. 1986, Dahlbom &
+          eration projects achieved to get workers             Mathiassen 1994)), and an increased in-
+          represented in board of directors                    terest in professional ethical rules, e.g.,
+          (Thorsrud et al. 1964), the early trade un-          ACM code of ethics (ACM 1993b). The
+          ion projects developed a model for nego-             snag here is that the individual system
+          tiations between workers and manage-                 developer should undertake a rather im-
+          ment to ensure a democratic negotiation              pressive personal responsibility for the
+          process (Ehn & Sandberg 1979).                       systems s/he is developing, without a
+              When the focus of the projects shift-            professional organisation to support
+          ed from working life in general to specif-           them when running into problems or
+          ic workplaces, the arena for system de-              conflicts (unlike, e.g., physicians or
+          velopment—and democracy—shifted                      trained nurses).
+          from structural institutions to actions in               We interpret this as a shift from the
+          particular situations. Now, the efforts              political to the ethical system developer.
+          were concerned with how the (individu-               The political system developer is an
+          al) system developer should act in a par-            emancipator, carrying out an action pro-
+          ticular setting. The objective still was to          gramme to give the weak parties knowl-
+          ensure workplace democracy and to in-                edge they can use to increase their pow-
+          crease the possibilities for a weak group            er. The emancipator uses and strengthens
+          to have influence. Design-by-doing and               existing institutions as means to achieve
+          mutual learning are examples of ap-                  working life democracy. The ethical sys-
+          proaches that fit this perspective.                  tem developer is mainly responsible to-
+              All the projects in the 70’s had an ex-          wards their own individual ethical co-
+          plicit political bias in wanting to change           dex—which might happen to be politi-
+          the preconditions for system develop-                cal. Ethical individuals act morally in the
+          ment. The system developers played the               particular work situations in which they
+          emancipator role. In addition to structur-           find themselves, promoting workplace
+          al regulations for controlling resources             democracy through engagement in sys-
+          and rights to influence and participate,             tem development situations. We see a
+          the workers were given power through                 historical development from focusing on
+          development of alternative knowledge.                politics and organisations as a whole (the
+          The alternative technological solutions              LO-NAF Cooperation projects), to par-
+          were conceived to be liberating. From                ticular interest groups and politics
+          the middle 80’s, the quest for democracy             (NJMF, DUE, DEMOS, UTOPIA),
+          was left to the individual system devel-             through a focus on particular interest
+          oper, the creator of the liberating tech-            groups and ethics (Florence, Coopera-
+          nology. The responsibility of a profes-              tive design), to a focus on the ethics and
+          sional system developer changed to-                  organisation as a whole (FIRE). The de-
+          wards being a facilitator of a morally—              velopment is illustrated in figure one,
+          and legally—‘correct’ system develop-                starting at the upper left square, proceed-
+
+
+                                              G. Bjerknes & T. Bratteteig 85
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               13
+                                           Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           ing through the lower left, the lower             tivities have contributed to the means for
+           right, and the upper right squares.               influence in this category, as have NJMF,
+                                                             DUE, and DEMOS.
+
+                                                             6.2. The workplace or organisational
+           6. Arenas for Participation and                   level
+           Democracy                                         At this level the use of technology will
+           The Scandinavian system development               depend on how different activities are
+           research projects describe several ways           coordinated and integrated in the organi-
+           to strive for democracy. The projects de-         sation. The use is argued for with refer-
+           scribed in this article give examples of          ence to an overall organisational goal.
+           four levels of influence: (1) work situa-             Computer technology at this level in-
+           tion, (2) workplace, (3) inter-organisa-          cludes the technological information in-
+           tional relations, and (4) working life. All       frastructure, realised as, e.g., centralised
+           four levels of technological influence re-        mainframe systems, common systems,
+           quire different strategies and means for          or networks; it also includes choices of
+           influence. This section summarises the            standards and basic software. The infra-
+           historical account with a discussion of           structure is a frame for possible future
+           strategies and means used at each level.          applications, and a need for particular
+                                                             applications may have impact on the
+           6.1. The work situation level                     choice of infrastructure.
+           At this level the use of technology de-               In order to ensure the right of all
+           pends on the nature of the work tasks.            workers to influence their work situation
+           Computer technology is used as instru-            and to achieve workplace democracy, it
+           ments and communication media at                  is necessary to address the whole organ-
+           work.                                             isation. The users’ influence on the tech-
+               The computer technology to be influ-          nology may therefore be more indirect at
+           enced is computer applications: off-the-          this level; they may just as well try to in-
+           shelf products, tailored commercial ap-           fluence overall organisational goals as
+           plications, or in-house developed appli-          the chosen information technological in-
+           cations.                                          frastructure. Changes in organisational
+               Employees can achieve influence by            structures will be based on the organisa-
+           participating in development projects, or         tional goals. Influencing the infrastruc-
+           by selecting applications. Current organ-         ture is relevant to the extent that the tech-
+           isation of work is taken for granted, and         nological infrastructure may support or
+           the influence is concerned with improv-           hinder the development of desirable ap-
+           ing the work situation. Means of influ-           plications, i.e., alignment of infrastruc-
+           ence are project management and tech-             ture with business goals. The Socio-
+           niques for user participation in the con-         Technical approach aim at influencing
+           crete system design processes. The influ-         this organisational level, cf., (Hirschhe-
+           ence on this level increases as user-             im & Klein 1994), as does FIRE. Busi-
+           driven system development projects are            ness Process Reengineering (BPR) also
+           becoming more common (Clark 1992).                addresses this level with the objective to
+           Florence and the Cooperative design ac-           neglect the current work organisation
+
+
+                                           G. Bjerknes & T. Bratteteig 86
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                14
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+          (Hammer 1990, Hammer & Champy                             composed of representatives from
+          1993).                                                    different use organisations using
+                                                                    products from the same software
+          6.3. The inter-organisational level                       vendor, e.g., a software house selling
+          At this level, the use of technology aims                 software to local authorities (Braa
+          at facilitating the relationship between                  1994). The UTOPIA project fits in
+          an organisation and its environment—                      here. The Nordic Union of graphical
+          potential business partners, competitors,                 workers had a strategic interest in
+          customers, the market. In order to design                 developing alternative knowledge
+          a technological infrastructure that sup-                  and technology that could strengthen
+          ports both the organisation internally and                the position of their members. This
+          its relation to the environment, it is nec-               was also the case in the Florence
+          essary to understand how changes in the                   project.
+          environment can and will affect the in-                       The importance of the inter-
+          ternal structure of the organisation.8                    organisational level has increased
+               We distinguish between two different                 during the decades, and we believe
+          inter-organisational relations, a) busi-                  that it will be even more important
+          ness relations and b) strategic relations.                for future system developers as net-
+          a. Business relations are regulated by                    work technology becomes wide-
+             contracts, like the relation between a                 spread. We expect that the two forms
+             subcontractor and a contractor. This                   of inter-organisational relations dis-
+             kind of relation can be supported by                   cussed above will merge. The ‘vir-
+             networks and standards, like Elec-                     tual organisation’, a network
+             tronic Document Interchange (EDI).                     consisting of small and medium-
+             Technological influence may in                         sized enterprises that cooperate for
+             some situations be restricted to                       improving their position on the
+             selecting a subset of the EDI stand-                   market9 have aspects that are ori-
+             ard that will be used in the business                  ented to both business and strategic
+             relation.                                              alliances. Current Socio-Technical
+          b. The second inter-organisational rela-                  approaches, e.g., (Gustavsen 1992)
+             tion, the strategic one, is found when                 encourage building and maintaining
+             several organisations have a com-                      networks between organisations in
+             mon, strategic interest in influencing                 order to exchange and develop
+             something or someone. The subject                      knowledge and common business
+             of interest may be related to compu-                   strategies, seeking to integrate the
+             ter technology. The means of influ-                    two kinds of inter-organisational
+             ence can include lobbying or                           relations.
+             forming of inter-organisational
+             groups, e.g., international user
+                                                               6.4. The social or working life level
+             groups like DECUS and ITU’s
+                                                               This level comprises legal laws and reg-
+             standardisation work groups. How-
+                                                               ulations for the society, including the
+             ever, more local level arrangements
+                                                               working life. The means for influence is
+             fit here as well, e.g., pressure groups
+                                                               in the legislation and social institutions.
+
+
+                                              G. Bjerknes & T. Bratteteig 87
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               15
+                                             Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           Important examples are The Worker Pro-              The lesson to learn from history is that
+           tection and Working Environment Act                 techniques aimed at user participation in
+           (AML 1977) and laws to protect the pri-             system design should be accompanied
+           vacy of citizens with accompanying in-              by means and strategies aimed at other
+           stitutions undertaking the control and              levels of influence. The LO-NAF Coop-
+           fulfilment of the laws. Non-governmen-              eration projects and the NJMF project
+           tal institutions at this level are society-         are good examples. They both empha-
+           wide associations or multi-national com-            sised local action and global strategy,
+           panies.                                             and their success lay in the way the two
+               Use of technology at this level in-             levels of influence were combined. Glo-
+           cludes societal infrastructures like roads,         bal strategies should provide a frame-
+           railways, telephones, mass media—and                work for local action, local actions
+           electronic networks. Computer technolo-             should be exemplars informing and
+           gy at this level is public accessible soft-         grounding the global strategy.11 Local
+           ware or information, e.g., games and in-            action can benefit from many years of
+           formation from bulletin boards via the              development and experiments with user
+           Internet. The integration of computers              participation techniques. In our view the
+           with telephones, broadcasting, and pub-             one-party perspective is too limited,
+           lishing makes the every-day life of a cit-          therefore the boundaries of the locale
+           izen more dependent of technology.                  should include more than one particular
+               At this level the information and soft-         interest group. We suggest more empha-
+           ware distributed by the technology is just          sis on the organisational level than in the
+           as important (and a more realistic) arena           early projects, addressing not only local
+           for influence as the technology itself. An          and societal levels (e.g., local and central
+           illustration of this is the current debate in       trade union), but also trying to handle is-
+           Norway about how to control the Inter-              sues across groups and organisational
+           net with respect to prohibiting distribu-           boundaries.
+           tion of pornographic material.10 A tradi-
+           tional institution for controlling this
+           would be a legally responsible editor-in-
+           chief for every bulletin board. However,            7. The Conditions for User
+           an editor-in-chief cannot possibly con-             Participation are Changing
+           trol every message on the net that can be           The environment for systems develop-
+           reached through her/his bulletin board              ment is changing. Computer technology
+           (Hannemyr 1994). The debate illustrates             is developing, integrating different kinds
+           that new institutions may be needed in              of technology, and the support for com-
+           order to control and influence current              munication and information processing
+           technology.                                         is becoming more important. The focal
+               The LO-NAF Cooperation projects                 point of organisational development is
+           and the first trade union projects (NJMF,           the customer rather than the employee.
+           DUE, DEMOS) can be seen as rather                   The competition on the market has in-
+           successful attempts also to address this            creased, and today the market is global.
+           level of influence.                                 Computer technology is used for a varie-
+                                                               ty of work and leisure activities—not
+
+
+                                            G. Bjerknes & T. Bratteteig 88
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                  16
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+          mainly for production. Information tech-             fact that telecommunications can con-
+          nology contributes to changing the rela-             nect employees to work-related informa-
+          tions between work, leisure, and educa-              tion through portable computers, mo-
+          tion. Technological infrastructures serv-            dems, and networks. Employees may
+          ing both professional and customer mar-              work at home, a long way from the em-
+          kets change the division of work                     ployer’s headquarters, and they may reg-
+          between employees and customers (tele-               ulate their working hours according to
+          shopping etc). We are going from a soci-             their own wishes. Technology is being
+          ety where labour is a critical resource to           used to manage the distributed work or-
+          a society where information and knowl-               ganisation.
+          edge are conceived to be critical, e.g.,                 Change processes like system devel-
+          (Fortune 1994). At the same time work-               opment normally aim at a limited effect
+          ers and unions have lost their influence             when it comes to organisational changes.
+          in society compared with the 70’s due to             More radical changes like business proc-
+          the global economy and the increasing                ess reengineering are aimed at reducing
+          rate of unemployment. We expect that                 management staff and giving more re-
+          the differences between ‘information                 sponsibility, freedom, and challenges to
+          rich’ and ‘information poor’ people, or-             the individual employee as this enhances
+          ganisations, and societies will grow.                the flexibility and competitiveness of the
+              Significant changes for system de-               organisation—even though workers may
+          velopment that have an impact on the                 lose their jobs during a BPR process.
+          Scandinavian tradition can be found in                   Change processes are full of con-
+          the recent organisational development,               flicts, and the use of power is often nec-
+          the changing role of unions and techno-              essary to introduce the required changes,
+          logical changes.                                     in particular when the change is radical.
+                                                               Some of the organisational changes we
+          7.1. Organisational development                      can expect in the future will probably be
+          In general, working life is subject to in-           characterised by coercion and use of
+          creased demands for productivity. More               power. The climate for organisational
+          work is left to the client (like tele-shop-          changes is not as cooperative and harmo-
+          ping, banking). The high demands result              nious as it was in the 70’s, thus one of the
+          in less resources for organisational slack           premises for the Collective Resource ap-
+          thus organisation and coordination of                proach has changed. The Collective Re-
+          work tasks become even more important.               source approach will have to adapt to or-
+              This has resulted in radical changes             ganisational changes that take place in
+          in the way work is organised. Some of                hostile and coercive environments.
+          the new opportunities are connected to
+          the introduction of telecommunication.               7.2. The changing role of trade unions
+          The European Union expects and pro-                  The role of trade unions as social actors
+          motes a rapid growth in ‘virtual organi-             promoting working life democracy is a
+          sations’, i.e., organisations that consist of        major point in the debate on the ‘export
+          (parts of) well established organisations            of Scandinavian participatory tech-
+          that may exist temporarily. The number               niques’ to non-unionised cultures, e.g.,
+          of teleworkers is increasing, due to the             the US, cf., e.g., (Kraft & Bansler 1992,
+
+
+                                              G. Bjerknes & T. Bratteteig 89
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               17
+                                            Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           Bansler & Kraft 1994, Kyng 1994,                   different set of strategies and institutions
+           Greenbaum 1993). The American tradi-               for achieving democracy.
+           tion of democracy is based on the en-
+           gagement of individuals in social move-            7.3. Technological changes
+           ments (feminists, ecologists etc) which            Technology itself may affect the possi-
+           practice democracy in a limited scale—             bility for influence at different levels.
+           some of them opposing trade unions as a            Computer networks connect people from
+           part of the existing power structure. The          different departments within organisa-
+           European tradition emphasises formal               tions, between organisations, and be-
+           structures giving democratic rights to             tween societies and countries, across
+           citizens, e.g., trade unions. Trade unions         well-established borders, and thus give
+           are created to address the institutional-          new opportunities to seek partners and
+           ised contradiction between labour and              strategic alliances. The technology con-
+           capital, thus they can participate as polit-       stitutes an infrastructure that can be used
+           ical actors in the public debate. They can         by individuals or groups to make a
+           be pressure groups on both organisation-           change. Company-wide (electronic) bul-
+           al and inter-organisational levels. But the        letin boards can be used as means for
+           trade unions are not as powerful as they           changing management decisions (Bish-
+           used to be. The patterns of organisation           op 1994). A news group on the Internet
+           change in Scandinavia, and unemploy-               can force a computer manufacturer like
+           ment weakens the position of the trade             Intel to admit a serious error in one of its
+           unions both locally and centrally. The             processors, a contrast to Intel’s current
+           high unemployment rate may result in               practice of only admitting errors to cus-
+           more confrontations between different              tomers that do not inform anyone (Lev-
+           trade unions, and between different                eraas 1995). Network technology could
+           groups of workers—even if some trade               be used by trade unions to make connec-
+           unions unite to gain strength. The trade           tions across departmental, organisation-
+           unions constitute an inter-organisational          al, and national borders, to address and
+           network, but the network has become an             counter-challenge the capitalistic move
+           institution that only addresses the contra-        to higher levels of influence (Leonardsen
+           diction between the employees and the              1994).
+           management/owners—as opposed to the                    Social networks is transformed into
+           contradiction between labour and capi-             technical ones, and the technical net-
+           tal. The trade unions have difficulties in         works give new opportunities for creat-
+           relating to unemployed and temporary               ing social networks. Still, the technolog-
+           workers as well as conflicts between               ical infrastructure is a tool for those who
+           groups of workers or between organisa-             control it, and a structural institution for
+           tional units, cf., e.g., (Bos et al. 1994).        those who do not.
+                Thus it is no longer obvious that trade
+           unions are the most strategic institutions
+           through which democracy can be
+           achieved. The changing role of the trade
+           unions may lead to a need for applying a
+
+
+
+                                           G. Bjerknes & T. Bratteteig 90
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                 18
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+                                                               linked to global strategies aiming at a
+          8. User Participation and                            democratic result at the central union
+          Democracy?                                           level. In the locally oriented projects, the
+          The Collective Resource approach is                  link between the local democratic proc-
+          based on the assumption that there is a              ess and some global democratic result
+          connection between a democratic proc-                disappeared. A computer systems itself
+          ess and a democratic result. The demo-               cannot be a means for emancipation; if it
+          cratic result should be a workplace—and              is used in a context in which its users
+          a working life—in which everybody has                have influence, it may support their pow-
+          a voice and in which all voices are heard            er.
+          and have an impact. A democratic proc-                   The challenge for future research is
+          ess is a process in which everybody has a            to contribute to democracy in a changing
+          voice and in which all voices are heard              working life and workplaces. To achieve
+          and have an impact. This definition rules            this it is not obvious that user participa-
+          out computer solutions that favour one               tion in system development activities is a
+          interest group at the expense of others,             means or the only means. User participa-
+          like the UTOPIA project, even if the                 tion in coercive change processes might
+          process can be characterised as demo-                not be a contribution to democracy. The
+          cratic because both graphical workers                change of power structures in society
+          and the management of the newspapers                 during the last decades is an important
+          have a say. The definition also points to            challenge for system development re-
+          the difficulty of being democratic when              search which cannot be dealt with with-
+          being very local, like the Florence                  out discussing the political dimension.
+          project because the local process delim-             All the four levels of influence: (1) work
+          its the number of groups that have the               situation, (2) workplace, (3) inter-organ-
+          chance to be heard.                                  isational relations, and (4) working life
+              Sometimes a democratic result re-                need to be addressed and put into action.
+          quires a non-democratic process. One                 Further discussion and experiments on
+          example is arrangements for admitting                other kinds of institutions and local ac-
+          more women into male dominated areas,                tions different from the ones we know
+          in which quotas and special arrange-                 from the Collective Resource approach
+          ments may seem unfair to an individual               are necessary to reintroduce the demo-
+          male not offered a job or position, but              cratic dimension in system development
+          which in the long run will make working              research.
+          life more democratic. A truly democratic
+          process can be conflicting and may have
+          to challenge the present perspectives and
+          traditions. The basic assumption in the              Notes
+                                                               1The Information Systems Research seminar in
+          first trade union projects was that the
+                                                               Scandinavia (IRIS) is an annual seminar for
+          world is not democratic, and that a dem-             researchers in system development in Scandinavia.
+          ocratic process will confirm and even                The 16th IRIS was held in Denmark in 1993.
+          strengthen the differences between those             2Overviews are given in, e.g., (Clement & Van den
+
+          with power and those without. The dem-               Besselar 1993) and can be found in (Aarhus 1975,
+          ocratic processes at a local level were
+
+
+                                              G. Bjerknes & T. Bratteteig 91
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                                  19
+                                                   Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+           Briefs et al. 1983, Bjerknes et al. 1987, ACM
+           1993a).
+           3Marx formulated the notion of contradiction, cf.
+                                                                     Acknowledgements
+           also (Braverman 1974). In dialectical thinking a          We have had discussions with many peo-
+           contradiction is a relation between two mutually          ple while writing this article. An earlier
+           dependent sides. A contradiction is characterised         version of the article was presented at
+           by having both ‘identity’ and ‘struggle’. The ‘iden-
+           tity’ between the sides explains what makes the           IRIS’94 where Olav Bertelsen, Per
+           relation a whole. The ‘struggle’ or conflict              Flensburg, Bai Guohua, Ann Hägerfors,
+           between the sides threatens to tear the relationship      Janne Ropponen, and Erik Stolterman
+           apart. The use of dialectics in systems development
+           is discussed in, e.g., (Bjerknes 1992).                   provided useful comments. Anonymous
+           4
+            Other research efforts have been carried out by the      reviewers of PDC’94 and SJIS helped
+           UTOPIAn successors as well, e.g., production of           clarifying the main arguments. We par-
+           computer support for cooperative work, the EuroC-         ticularly want to thank Ivan Aaen, Jørgen
+           ODE project (cf., e.g., (Grønbæk et al. 1993)) and
+           cooperative design in an organisational setting: the      Bansler, Joan Greenbaum, Mike Hales,
+           AT project (ArbejdsTilsynet) (Bødker et al. 1993,         and Frieder Nake for constructive and
+           Bødker 1994). We do not discuss these projects in         thorough comments. The critique and
+           depth in this article because our aim is to make
+           clear how the tool and the design-by-doing                discussions with Leikny Øgrim, Kristin
+           approach was followed up.                                 Braa, Jens Kaasbøll, and Annita Fjuk
+           5
+            Two regional, public hospitals were involved in          have been engaging and inspiring, just as
+           the project through an asthma/allergy ward for chil-      the comments from Susanne Bødker and
+           dren and a cardiological ward.
+           6
+                                                                     her colleagues in Aarhus. Sara Selmark
+            Florence was closely linked to the Nordic research
+           programme SYDPOL (SYstem Development envi-                helped us improve the language.
+           ronment and Profession Oriented Languages:
+           1982-1988), cf., (Kaasbøll 1983).
+           7According to Iivari (1991) most system develop-
+           ment approaches still basically have an economical
+           perspective, even if more user-oriented attitudes         References
+           have been incorporated.                                   Aarhus (1975): The Aarhus conference Janu-
+           8In some decentralised and distributed organisa-            ary 1975. Forms of working in system
+           tions different departments act so independently            development (Aarhus-konferencen januar
+           that their interrelation has some of the characteris-       1975. Arbejdsformer i systemudvikling)
+           tics of the inter-organisational level. We neverthe-
+                                                                       DAIMI PB-46, University of Aarhus
+           less find the distinction between the organisational
+           and the inter-organisational level useful.                ACM (1993a): Communications of the ACM:
+           9As advocated in, e.g., (Bangemann et al. 1994).            Special Issue on Participatory Design vol
+           10Pursuant to Norwegian legislation distribution of         36 no 4 (6) June 1993
+           pornographic material is prohibited.                      ACM (1993b): ACM Code of Ethics and Pro-
+           11This corresponds with a proposal for influence in         fessional Conduct, Communications of the
+           a local government by Hales & O’Hara (1993).                ACM vol 36, no 2 Feb. 1993, pp. 98-105
+           12
+             Industry based trade unions lose members, pro-          AML (1977): Law of Workers’ Protection
+           fessional and academic trade unions get members;            and Working Environment (Lov om arbei-
+           in total a small growth of the number of people             dervern og arbeidsmiljø: Arbeidsmiljø-
+           organised in trade unions (Statistisk årbok 1994).          loven) Oslo, February 4.
+           The Collective Resource approach concerns the
+           industry based trade unions, just as the technology
+                                                                     Andersen, N.E., Kensing, F., Lassen, M.,
+           related legislation in Norway.                              Lundin, J., Mathiassen, L., Munk-Mad-
+                                                                       sen, A., and Sørgaard, P. (1986): Profes-
+                                                                       sional System Development (Professionel
+
+
+
+
+                                                  G. Bjerknes & T. Bratteteig 92
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                        20
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+             Systemudvikling),        Teknisk     Forlag,      Bjerknes, G. and Bratteteig, T. (1987c): Flor-
+             Copenhagen                                           ence in Wonderland, in Bjerknes, G., Ehn,
+          Bangemann, M. et al. (1994): Europe and the             P., and Kyng, M. (eds): Computers and
+             global information society, Recommenda-              Democracy—a Scandinavian Challenge
+             tions to the European Council, Brussels              Avebury, Aldershot, pp. 279-295
+          Bansler, J. (1989): Systems Development              Bjerknes, G. and Bratteteig, T. (1988a): The
+             Research in Scandinavia: Three theoreti-             memoirs of two survivors—or evaluation
+             cal schools, Scandinavian Journal of                 of a computer system for cooperative
+             Information Systems vol 1, Aug. 1989, pp.            work, Proceedings for The Second Con-
+             3-20                                                 ference on Computer Supported Coopera-
+          Bansler, J. and Kraft, P. (1994): Privilege and         tive Work ACM, 26-28 Sept. 1988, Port-
+             Invisibility in the New York Order: A                land, Oregon, pp. 167-177
+             reply to Kyng, in Scandinavian Journal of         Bjerknes, G. and Bratteteig, T. (1988b): Com-
+             Information Systems vol 6 no 1, April                puters—Utensils or Epaulets? The Appli-
+             1994, pp. 97-106                                     cation Perspective Revisited AI and Soci-
+          Bishop, L. (1994): "Engaged Effort" and                 ety vol 2 no 3, pp. 258-266
+             Local Area Networks, in Clement, A.,              Bjerknes, G., Bratteteig, T., Braa, K., Kautz,
+             Kolm, P., and Wagner, I. (eds): NetWORK-             K, Kaasbøll, J., and Øgrim, L. (1991):
+             ing: Conneting Workers In and Between                Project FIRE: Functional Integration
+             Organizations IFIP Transactions A-38,                through REdesign FIRE Report no 1,
+             North-Holland, Amsterdam, pp. 35-44                  Research Report no 154, Department of
+          Bjerknes, G. (1992): Dialectical Reflection in          Informatics, University of Oslo
+             Information Systems Development, in               Bjerknes, G., Bratteteig, T., and Espeseth, T.
+             Scandinavian Journal of Information Sys-             (1991): Evolution of finished systems:
+             tems vol 4, August 1992, pp. 55-78                   The dilemma of enhancement, Scandina-
+          Bjerknes, G. and Bratteteig, T. (1984): The             vian Journal of Information Systems vol 3,
+             Application Perspective—An Other Way                 Aug. 1991, pp. 25-45
+             of Conceiving Edp-based Systems and               Bjerknes, G., Bratteteig, T., Kaasbøll, J.,
+             Systems Development, in Sääksjärvi, M.               Sannes I., and Sinding-Larsen, H. (1985):
+             (ed): Report of the Seventh Scandinavian             Mutual Learning (Gjensidig læring) Flor-
+             Research Seminar on Systemeering Hel-                ence Report no 1, Department of Infor-
+             sinki School of Economics, Studies B-75,             matics, University of Oslo
+             Helsinki, pp. 204-225                             Bjerknes, G., Ehn, P., and Kyng, M. (eds)
+          Bjerknes, G. and Bratteteig, T. (1987a):                (1987): Computers and Democracy—a
+             Implementing an idea—cooperation and                 Scandinavian Challenge Avebury, Alder-
+             construction in the Florence Project (Å              shot
+             implementere en idé—samarbeid og kon-             Bjørn-Andersen, N. and Hedberg, B. (1977):
+             struksjon i Florence-prosjektet) Florence            Designing Information Systems in an
+             Report no 3, Department of Informatics,              Organizational Perspective, Studies in the
+             University of Oslo                                   Management Sciences Prescriptive Mod-
+          Bjerknes, G. and Bratteteig, T. (1987b): Per-           els of Organizations vol 5, 1977, pp. 125-
+             spectives on description tools and tech-             142
+             niques in system development, Docherty            Bos, T., de Rue, E., and Sips, C. (1994): Net-
+             et al, (eds): System Design for Human                work Technology and Organizational
+             Development and Productivity: Participa-             Control: A Case Study of Decision Mak-
+             tion and Beyond North-Holland, Amster-               ing and Industrial Relations in a Privatized
+             dam, pp. 319-330                                     Public Enterprise, in Clement, A., Kolm,
+                                                                  P., and Wagner, I. (eds): NetWORKing:
+
+
+
+                                              G. Bjerknes & T. Bratteteig 93
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                                21
+                                              Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+              Connecting Workers In and Between                 Bødker, S., Ehn, P., Kammersgaard, J., Kyng,
+              Organizations IFIP Transactions A-38,                M., and Sundblad, Y. (1987): A UTO-
+              North-Holland, Amsterdam                             PIAN Experience: On Design of Powerful
+           Bostrom, R. and Heinen, S. (1977a): MIS                 Computer-Based Tools for Skilled Graph-
+              Problems and Failures: A Socio-Technical             ical Workers, in Bjerknes et al, (1987), pp.
+              Perspective, Part I: The Causes MIS Quar-            251-278
+              terly September 1977, pp. 17-31                   Bødker, S. and Grønbæk, K. (1991): Design
+           Bostrom, R. and Heinen, S. (1977b): MIS                 in Action: From Prototyping by Demon-
+              Problems and Failures: A Socio-Technical             stration to Cooperative Prototyping, in
+              Perspective, Part II: The Application of             Greenbaum and Kyng (1991), pp. 197-
+              Socio-Technical Theory, MIS Quarterly                218
+              December 1977, pp. 11-20                          Bødker, S. , Christiansen, E., Ehn, P.,
+           Braa, K. (1994): Priority Workshops as a                Markussen, R., Mogensen, P., and Trigg,
+              Springboard for Participatory Design in              R. (1993): The AT-Project: practical
+              Redesign Activities, in Kerola, P. et al.            research in cooperative design, DAIMI
+              (eds): Precedings of the 17th Information            PB 454, Aarhus University
+              systems Research seminar In Scandinavia,          Clark, T. (1992): Corporate Systems Man-
+              University of Oulu, pp. 875-889                      agement: An Overview and Research Per-
+           Braa, K., Bratteteig, T., Kaasbøll, J., and             spective, Communications of the ACM vol
+              Øgrim L. (1992a): ENtry to the FIRE                  35 no 2, pp. 61-75
+              project FIRE Report no 2, Research                Clement, A. and P. Van den Besselar (1993):
+              Report no 168, Department of Informat-               A Retrospective Look at PD Projects,
+              ics, University of Oslo                              Communications of the ACM vol 36 no 4
+           Braa, K., Bratteteig, T., Kaasbøll, J., Mørch,       Cockburn, C. (1983): Brothers. Male Domi-
+              A., Smørdal, O., and Øgrim, L. (1992b):              nance and Technological Change Pluto
+              Final Report from the Pilot Project FIRE             Press, London
+              Report no 9, Research Report no 177,              Dahlbom, B. and Mathiassen, L. (1994): A
+              Department of Informatics, University of             Scandinavian View on the ACM’s Code of
+              Oslo                                                 Ethics, ACM Computers and Society vol
+           Braa, K., Bratteteig, T., and Øgrim, L. (1994):         24 no 2, (June 1994), pp. 14-20
+              Organising the redesign process in system         DEMOS Project Group (1979): The Demos
+              development, Proceedings of the Interna-             Project: A Presentation, in Sandberg
+              tional Conference on Information Systems             (1979), pp. 108-121
+              Development, Slovenia, September 1994             Dilschmann, A. and Ehn, P. (1984): The bor-
+           Braverman, H. (1974): Labor and Monopoly                derland (Gränslandet) Utopia Report no
+              Capital, Monthly Review Press, New                   11, Swedish Center for Working Life,
+              York                                                 Stockholm
+           Briefs, U., Ciborra, C., and Schneider, L.           DUE Project Group (1978): Democracy,
+              (eds) (1983): Systems Design For, With,              Development, and EDP (Demokrati,
+              and By the Users North-Holland, Amster-              Udvikling og Edb) DUE Report no. 2,
+              dam                                                  DAIMI, University of Aarhus
+           Bødker, S. (1994): Creating conditions for           DUE Project Group (1979): Project DUE:
+              participation: Conflicts and resources in            Democracy, Development, and EDP, in
+              systems design, in Trigg, R. et al. (eds):           Sandberg (1979), pp. 122-130
+              Proceedings of the Participatory Design           Ehn, P. (1989): Work-Oriented Design of
+              Conference PDC’94, Chapel Hill, North                Computer Artifacts Lawrence Erlbaum
+              Carolina, 27-28 Oct. 1994, CPSR and                  Ass., Hillsdale, New Jersey
+              ACM
+
+
+
+                                              G. Bjerknes & T. Bratteteig 94
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                   22
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+          Ehn, P. and Kyng, M. (1984): A Tool perspec-         Gustavsen, B. (1992): Dialogue and Devel-
+             tive on Design of Interactive Computer               opment Arbetslivscentrum & Van Gor-
+             Support for Skilled Workers, in Sääksjärvi           cum, Assen/Maastricht
+             (ed): Report of the Seventh Scandinavian          Hales, M. and O’Hara, P. (1993): Strengths
+             Research Seminar on Systemeering Hel-                and Weaknesses of Participation: Learn-
+             sinki School of Economics, Studies B-74,             ing by Doing in Local Government, in
+             Helsinki, pp. 211-242                                Green et al, (eds): Gendered by Design?
+          Ehn, P. and Kyng, M. (1987): The collective             Taylor & Francis, London, pp. 153-172
+             resource approach to system design, in            Hammer, M. (1990): Reengineering Work:
+             Bjerknes et al, (1987), pp. 17-57                    Don’t Automate, Obliterate, in Harvard
+          Ehn, P. and Sandberg, Å. (1979): Manage-                Business Review, July-August 1990, pp.
+             ment Control and Wage Earners’ Power                 104-112
+             (Företagsstyrning och Löntagarmakt)               Hammer, M. and Champy, J. (1993): Reengi-
+             Prisma, Falköping                                    neering the Corporation Harper Collins
+          Emery, M. (ed) (1993): Participative Design             Publ., New York
+             for Participative Democracy, Centre for           Hannemyr, G. (1994): Editor-in-Chief
+             Continuing       Education,       Australian         Responsibility of Bulletin Boards (Redak-
+             National University                                  tøransvar for BBSer) feature article in the
+          Fortune (1994): Your Company’s Most Valu-               Aftenposten July 12. 1994
+             able Asset: Intellectual Capital, cover           Hirschheim, R. and Klein, H. (1994): Realiz-
+             story by T.A. Stewart, Fortune, Oct. 3,              ing Emancipatory Principles in Informa-
+             1994, pp. 28-33                                      tion Systems Development: The Case for
+          Greenbaum, J. (1993): A Design of One’                  ETHICS, MIS Quarterly (March 1994),
+             Own: Towards Participatory Design in the             pp. 83-109
+             United States, in Schuler and Namioka             Iivari, J. (1991): A paradigmatic analysis of
+             (1993), pp. 27-37                                    contemporary schools of IS development,
+          Greenbaum, J. and Kyng, M. (eds.) (1991):               European Journal of Information Systems,
+             Design at Work: Cooperative Design of                Vol. 1, No. 4, pp. 249-272
+             Computer Systems Lawrence Erlbaum                 Iivari, J. and Hirschheim, R. (1992): Paradig-
+             Ass., Hillsdale, New Jersey                          matic analysis of four emerging IS devel-
+          Grønbæk, K. (1991): Prototyping and Active              opment approaches, in Proceedings of the
+             User Involvement in System Development:              3rd Australian Conference on Information
+             Towards a Cooperative Prototyping                    Systems, Wollongong (referred to in Kara-
+             Approach PhD.Thesis, DAIMI, Univer-                  sti 1994)
+             sity of Aarhus                                    Kaasbøll, J. (1983): The Research Pro-
+          Grønbæk, K., Kyng, M., and Prebensen, M.                gramme SYDPOL: SYstem Development
+             (1993): CSCW Challenges: Cooperative                 environment and Profession Oriented
+             design in engineeing projects, in Commu-             Languages (in Scandinavian), Nordforsk
+             nications of the ACM vol 36 no 6, pp. 67-            Publikationnserie 1983:2, Department of
+             77                                                   Informatics, University of Oslo
+          Gunnarson, E. and Lodin, E. (1983): The per-         Kaasbøll, J. and Øgrim, L. (1994): Super-
+             forator typists’ working conditions (Per-            Users: Hackers, Management Hostages,
+             foratörernas     arbetssituation)    Utopia          or Working Class Heroes? A study of user
+             Report no. 7, Swedish Center for Working             influence on redesign in distributed organ-
+             Life, Stockholm                                      izations, FIRE Report no 15, in Kerola, P.
+          Gustavsen, B. (1986): Sociology as Action:              et al. (eds): Precedings of the 17th Infor-
+             On the Construction of Alternative Reali-            mation systems Research seminar In
+             ties Unpublished manuscript
+
+
+
+                                              G. Bjerknes & T. Bratteteig 95
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               23
+                                             Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+             Scandinavia, University of Oulu, pp. 784-         Mogensen, P. (1994): Challenging Prac-
+             798                                                  tice—an approach to Cooperative Analy-
+           Karasti, H. (1994): What’s different in gender         sis, PhD thesis, DAIMI PB-465, Univer-
+             oriented ISD? Identifying gender oriented            sity of Aarhus
+             systems development approach. In Adam             Mumford, E. (1983): Designing Human Sys-
+             and Owen (eds): Breaking Old Bounda-                 tems Manchester Business School
+             ries: Building New Forms, Proceedings of          Nygaard, K. (1979): The ‘Iron and Metal
+             the 5th International Conference on                  Project’: Trade Union Participation, in
+             Women, Work and Computerization, Man-                Sandberg (1979), pp. 94-107
+             chester, July 2-5 1994, pp. 685-698               Nygaard, K. and Bergo, O.T. (1974): Plan-
+           Knudsen, T. (1993): The Scandinavian                   ning, Control, and Computing. Basic Book
+             Approaches: Theories in Use, of Use and              for the Trade Unions (Planlegging, Sty-
+             Organization of Interdisciplinarity, in              ring og databehandling. Grunnbok for
+             Bansler, J. et al. (eds): Proceedings of the         Fagbevegelsen) Tiden Norsk Forlag, Oslo
+             16th IRIS, DIKU Report no. 93/16, Uni-            Procter, R.N. and Williams, R.A. (1992):
+             versity of Copenhagen, pp. 29-38                     HCI: Whose Problem Is IT Anyway?, in
+           Kraft, P. and Bansler, J. (1992): The Collec-          Larson and Unger (eds): Engineering for
+             tive Resource Approach: The Scandina-                Human-Computer Interaction North-Hol-
+             vian Experience, in Müller, M., Kuhn, S.,            land, Amsterdam, pp. 385-396
+             and Meskill, J.A. (eds.): PDC’92: Pro-            Pålshaugen, Ø. (1986): Means of designing a
+             ceedings of the Participatory Design Con-            starting conference, AI-dok.28/86, Work
+             ference Nov. 6-7. 1992, MIT, Cambridge               Research Institute, Oslo
+             MA US, pp. 127-135 (also published in             Sandberg, Å. (1975): Harmony and Conflict
+             slightly modified version in Scandinavian            Perspectives in System Development
+             Journal of Information Systems vol 6 no 1,           Work (Harmoni- och konfliktperspektiv i
+             April 1994, pp. 71-84)                               systemutvecklingsarbetet), in Aarhus
+           Kyng, M. (1991): Designing for cooperation,            (1975), pp. 237-265
+             Communications of the ACM vol vol 34 no           Sandberg, Å. (ed.) (1979): Computers divid-
+             12                                                   ing man and Work Swedish Center for
+           Kyng, M. (1994): Collective Resources                  Working Life, Demos Project Report no
+             Meets Puritanism, Scandinavian Journal               13, Utbildningsproduktion, Malmö
+             of Information Systems vol 6 no 1, April          Sandberg, Å. (1984): Between alternative
+             1994, pp. 85-96                                      production and industrial R&D (Mellan
+           Kyng, M. and Mathiassen, L. (1979): A "New             alternativ produktion och industriell FoU)
+             Systems Development": Trade Union and                Utopia Report no 16, Swedish Center for
+             Research Activities, in Sandberg (1979),             Working Life, Stockholm
+             pp. 54-74                                         Schuler, D. and Namioka, A. (eds.) (1993):
+           Leonardsen, A. (1994): Conditions for the              Participatory Design. Principles and
+             collective in computer based networks                Practices Lawrence Erlbaum Ass., Hills-
+             (Kollektivets kår i databaserte nettverk),           dale, New Jersey
+             essay, Department of Informatics, Univer-         Statistisk årbok (1994): Statistical Yearbook
+             sity of Oslo                                         for 1994, Statistisk Sentralbyrå, Oslo
+           Leveraas, P. (1994): Internet as a pressure         Sørensen, Aa. (1992): Action research about
+             group (Nettet som pressgruppe), Com-                 and in working life (Aktionsforskning om
+             puterworld Norway, vol 13 no 2, p. 2                 og i arbejdslivet), Tidsskrift for samfunns-
+           Markus, L. (1983): Power, Politics and MIS             forskning vol 33, pp. 213-230
+             Implementation, Communications of the             Thorsrud, E. and Emery, F. (1970): Towards a
+             ACM vol 26 no 6, pp. 430-444                         new Company Organisation (Mot en ny
+
+
+
+                                             G. Bjerknes & T. Bratteteig 96
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                  24
+                                                    Bjerknes and Bratteteig: User Participation and Democracy
+
+
+
+
+            bedriftsorganisasjon),     Universitetsfor-
+            laget, Oslo
+          Thorsrud, E., Emery, F., and Trist, E. (1964):
+            Industrial Democracy. Representation in
+            the board of directors? (Industrielt
+            demokrati; representasjon på styreplan i
+            bedriften?), Universitetsforlaget, Oslo
+          UTOPIA Project Group (1981): Training,
+            Technology, and Product from the Quality
+            of Work Perspective Utopia Report no 1,
+            Swedish Center for Working Life, Stock-
+            holm
+          UTOPIA Project Group (1985): An Alterna-
+            tive in Text and Images Grafitti no 7,
+            Swedish Center for Working Life, Stock-
+            holm
+
+
+
+
+                                              G. Bjerknes & T. Bratteteig 97
+
+
+
+
+Published by AIS Electronic Library (AISeL), 1995                                                               25
+                                           Scandinavian Journal of Information Systems, Vol. 7 [1995], Iss. 1, Art. 1
+
+
+
+
+                                           G. Bjerknes & T. Bratteteig 98
+
+
+
+
+http://aisel.aisnet.org/sjis/vol7/iss1/1                                                                                26
+

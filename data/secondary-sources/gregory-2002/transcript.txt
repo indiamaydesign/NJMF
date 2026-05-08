@@ -1,0 +1,844 @@
+Int. J. Engng Ed. Vol. 19, No. 1, pp. 62±74, 2003                                                                                 0949-149X/91 $3.00+0.00
+Printed in Great Britain.                                                                                                    # 2003 TEMPUS Publications.
+
+
+
+
+Scandinavian Approaches to Participatory
+Design*
+JUDITH GREGORY
+Department of Informatics, University of Oslo, P.O. Box 1080 Blindern, N-0316 Oslo, Norway.
+E-mail: judithg@ifi.uio.no
+                                                    What is distinctive about Scandinavian participatory design approaches? What can we learn from
+                                                    Scandinavian participatory design approaches that we can take into our own design practices,
+                                                    collaborations in design, and design pedagogy? The discussion argues that three principles
+                                                    distinguish Scandinavian approaches to participatory design: striving for democracy and demo-
+                                                    cratisation; explicit discussions of values in design and imagined futures; and ways that conflicts
+                                                    and contradictions are regarded as resources in design. The author draws on recent experiences in
+                                                    Norway, in multi-disciplinary and international collaborations in health informatics. Background
+                                                    on Scandinavian approaches to participatory design is provided to give a sense of their distinctive
+                                                    history and critiques reflecting on problems and limits encountered. An instance of information
+                                                    systems interface design is presented in order to talk concretely about Scandinavian participatory
+                                                    design principles in contrast to mainstream systems design traditions in the United States.
+
+
+
+
+                         INTRODUCTION                                               Professionals for Social Responsibility (1990 to the
+                                                                                    present) [2±7], and my recent experiences as a
+IN PARTICIPATORY DESIGN, `the people                                                social scientist working in the Systemarbeid
+destined to use the system play a critical role in                                  (System Development) group of the Department
+designing it' [1, p. xi, original emphasis]. Participa-                             of Informatics, University of Oslo (1999±2000,
+tory design thus entails collaborative partnerships                                 2001±2002). The Systemarbeid group, founded by
+and co-construction of knowledge in analysis and                                    Kristen Nygaard, has a history of intellectual
+co-construction of changes in social practices.                                     leadership and research programs related to parti-
+Diverse participatory design methods adopted                                        cipatory design and multidisciplinary collabora-
+from and inspired by Scandinavian participatory                                     tion in information systems design for which they
+design projects have been practised in North                                        regularly invite visiting scholars from the social
+America and elsewhere since the mid-1980s.                                          sciences and humanities. (Members of the System-
+However, the discussion that follows takes up the                                   arbeid group who have been active in participatory
+question: What is distinctive about Scandinavian                                    design over the years, include GroÈ Bjerknes, Jùrn
+participatory design approaches? The discussion                                     Braa, Tone Bratteteig, and Kristen Nygaard.
+includes reflections upon recent experiences in                                     Among international scholars who have worked
+Norway in which the author has participated,                                        with Systemarbeid over the years are Claudio
+and focuses on three principles that distinguish                                    Ciborra, Joan Greenbaum, Jonathan Grudin,
+Scandinavian approaches to participatory design:                                    Markku Nurminen, Julian Orr, Toni Robertson,
+. deep commitments to democracy and demo-                                           Susan Leigh Star, Lucy Suchman, and Langdon
+                                                                                    Winner.)
+  cratisation;
+. discussions of values in design and imagined                                         Working with Systemarbeid gave me the chance
+                                                                                    to begin working with two ongoing projects that
+  futures; and
+. how conflict and contradictions are regarded as                                   adapt Scandinavian, particularly Norwegian,
+                                                                                    participatory design principles in international
+  resources in design.
+                                                                                    and multidisciplinary collaborations in health
+A few biographical notes indicate my relationship                                   informatics. The two projects are: the Health
+to Scandinavian participatory design. My discus-                                    Information Systems Project (HISP), a collabora-
+sion draws on my introduction in 1981 to people                                     tion comprising medical and computer science
+involved with the Scandinavian Technology                                           faculties in Norway, South Africa, and Mozambi-
+Projects in the 1970s and early 1980s. (I was                                       que and the Ministries of Health in South Africa
+fortunate to have a research travel grant from                                      and Mozambique [8, 9]; and the Health Informa-
+the German Marshall Fund of the United                                              tion project begun during the International
+States.) My participation in the bi-annual Partici-                                 Women's University (IFU), Project Area Informa-
+patory Design Conference founded by Computer                                        tion, in Hamburg, Germany during the summer of
+                                                                                    2000 [10, 11].
+                                                                                       The discussion proceeds as follows. Background
+   * Accepted 22 August 2002.                                                       on Scandinavian approaches to participatory
+
+                                                                               62
+                              Scandinavian Approaches to Participatory Design                              63
+
+design is provided to give a sense of their distinc-     participatory design per se, there are broadly
+tive history and critiques reflecting on problems        shared traditions in mainstream informatics and
+and limits encountered. Secondly, three principles       information systems design that favour `user-
+distinguishing Scandinavian participatory design         oriented' and `human-centred' design. [see, e.g.,
+are discussed: democracy and democratisation,            15, 26]; there is also an orientation towards
+values in design, and conflict as a resource in          action research. Morten Kyng observes that the
+design. Finally, two works in progress are               emphasis in participatory design on design as an
+described, as they suggest possibilities for practis-    experimental inquiring process, as a learning
+ing participatory design in contexts outside of          process, is broadly shared. `In other words, a
+Scandinavia. An instance of information systems          growing body of work in CSCW, HCI, Require-
+interface design is presented in order to talk           ments Engineering, Information Systems research
+concretely about Scandinavian participatory              and experimental system development shares with
+design principles.                                       PD [sic] a profound dissatisfaction with the short-
+                                                         comings of a traditional, mechanistic approach to
+                                                         system developmentÐand some of the attempts at
+                 BACKGROUND                              overcoming them' [15, p. 17]. Regarding multi-
+                                                         disciplinary as well as designer-user collaborations
+  User participation in design is desirable for          in design, Kristen Nygaard and Pal Sùrgaard
+several reasons with mixed motivations [12]:             argued in the mid-1980s that `the capability of
+. improving the knowledge upon which systems             multiperspective reflection is essential for all
+                                                         computer professionals' [27].
+  are built;
+. enabling people to develop realistic expecta-             Scandinavian participatory design approaches
+                                                         emphasise change and development, not only
+  tions, and reducing resistance to change; and
+. increasing workplace democracy by giving the           technological change and systems development,
+                                                         but change and development of people, organ-
+  members of an organisation the right to partici-
+                                                         isations, and practices, occurring in changing
+  pate in decisions that are likely to affect their
+                                                         socio-historical contexts. `Design is about chan-
+  work.
+                                                         ging: changing artefacts as well as changing
+The first two rationales for user participation are      people, organisations, communities' [28]. Thus,
+not unique to Scandinavian participatory design;         there is an emphasis on imagined future use with
+they are found in several system development             new tools and changed infrastructures and inter-
+approaches. It is the third motivationÐthe desire        actions. From this perspective on design as change,
+to increase workplace democracyÐthat is cultu-           ` . . . participatory design approaches seek to
+rally and politically based in Scandinavia, in           include future users in most parts of the design
+legislation and in participatory design approaches       process, even as co-designers. Ideally, users at
+[13]. Over the years, Scandinavian participatory         many levels participate so that change can be
+design has also been known as the Collective             shaped from several perspectives' [28]. At a mini-
+Resource Approach [see, e.g., 14, 15], Cooperative       mum, as Finn Kensing put it, employees collabor-
+design [see, e.g., 16, 17], and, more recently,          ating in a participatory design project `must have
+Cooperative Experimental System Development              access to relevant information, they must have the
+[18]. (In the United States and elsewhere, partici-      possibility for taking an independent position on
+patory design approaches include work-oriented           the problem, and they must in some way partici-
+design, situated activity [19, 20], contextual inquiry   pate in the process of decision making' [29, p. 223].
+[21] and situated design [22].)                          Knowledge about the politics and power structures
+   Participatory design methods are diverse [1, 22]      in social settings is essential; such local knowledge
+including but not limited to `design-by-doing,'          also recognises possibilities for change already
+`mock-up envisionment' [see, e.g., 23], future           there [30, see also 31]. Creating the preconditions
+circles, future workshops, organisational games,         for viable participation includes working to bring
+co-operative prototyping, ethnographic field             forward tacit knowledge and shared knowledge
+research, and democratic dialogue [see, e.g. 24].        that is taken for granted and therefore usually
+As for motivations to improve design through user        unspoken or invisible. Mutual learning between
+participation, participatory methods are employed        and among designers and users is a core principle
+in a wide variety of design contexts; Scandinavian       in working relations. The generative nature of
+participatory design practices are not distinguished     social, symbolic, and material threads of designers'
+by particular methods but rather by political            and users' experience in formulating multidisci-
+commitments to societal concerns and relation-           plinary design collaborations are highlighted by
+ships with participating users and communities.          Cherkasky [32].
+Pelle Ehn writes: `In the interest of emancipation,
+we deliberately made the choice of siding with
+workers and their organisations, supporting the           DEMOCRACY AND DEMOCRATISATION
+development of their resources for a change
+towards democracy at work . . .' [25, p. 47].              Deep commitments to democracy and demo-
+In the Scandinavian countries, in addition to            cratisation continue to motivate Scandinavian
+64                                               J. Gregory
+
+participatory design projects and ways of working       workplace democracy, understood as the rights of
+[9, 13, 15, 23, 24, 33±37]. The participatory design    all employees to participate in decision-making
+movements in Scandinavia have their roots in            about their work and how it is changing. Striving
+post-war political movements striving for indus-        for goals of democratisation, a number of the early
+trial democracy including forms of co-determina-        projects devised strategies combining global and
+tion by unions and `shopfloor' workers in decision-     local actions: acting `globally' at the central level of
+making and efforts to improve the quality of            institutions and in the political arena and making
+working life, in the broad context of demo-             use of legislation; acting `locally' to engage the
+cratisation of society. (Kuhn offers a definition       expert knowledge of workers in systems develop-
+of the principle of co-determination as `unions and     ment projects including critiquing the present and
+management making joint decisions on matters            envisioning future use. Co-operation projects
+that affect the company and the workforce' [38,         between the Norwegian Iron and Metal Workers
+p. 287].) The example of the Norwegian work             Union and the Norwegian Federation of Trade
+environment law requiring employers to redesign         Unions and Norwegian Employers Federation
+jobs to eliminate monotony illustrates these rela-      (LO-NAF) contributed to the passage of legisla-
+tionships: the regulation was not only premised on      tion (notably a revised Worker Protection and
+concerns regarding the ergonomics of increasingly       Working Environment Act), union-negotiated
+computer-based work but also motivated by social        `technology agreements,' and workers' representa-
+research that showed that monotonous repetitive         tion on boards of directors. These laws and agree-
+work contributes to apathy and alienation from          ments govern rights regarding technological
+political participation. The Norwegian industrial       change in working life to this day.
+democracy movement, part of the renewal of                 The next generation of participatory design
+democracy following the Nazi occupation of              projects in the 1980s extended their focus to
+Norway during World War II, was an important            include technological alternatives, the development
+pre-cursor to the trade union-based technology          of alternative technologies to what software
+projects and the participatory design movement          vendors offered, and on involving users in the
+engaging computer scientists, social scientists, and    design of alternatives. The UTOPIA project is
+trade union leaders and members. The work of            especially known for its emphasis on quality of
+Paulo Freire, Brazilian educator and theorist of a      work and quality of the product, in training, work
+pedagogy for critical consciousness and liberation      organisation, participation and skills as well as in
+[39, 40], was another contributing influence to the     technology design [25, 44, 47]. In the Florence
+participatory design movement. Action research          project, a project with nurses to design an informa-
+and participatory action research also provide          tion system and tools to facilitate computer use,
+significant inspirations and broad methodological       systems design and design of tools were evaluated
+grounding for participatory design practices,           as resources for enhancing learning, commun-
+particularly in emphases on mutual learning and         ication, co-operation, and for addressing conflict
+reciprocity in relationships in research in             [see, e.g., 48].
+community-based and organisation-based change              A shift `from the political to the ethical system
+projects [41±43].                                       developer' occurred in the second generation of
+   Leading early projects that were inspirational       Scandinavian participatory design projects in the
+include the technology project of the Norwegian         1980s, associated with shifts in arenas for partici-
+Iron and Metal Workers' Union, begun in 1970 in         pation and democratisation. `When the focus of
+collaboration with the Norwegian Computing              the projects shifted from working life in general to
+Centre, the Swedish DEMOS project (Democratic           specific workplaces, the arena for system develop-
+Planning and Control in Working Life) (1975±            mentÐand democracyÐshifted from structural
+1979), the Danish project DUE (Development,             institutions to actions in particular situations.
+Democracy and EDP) (1977±1980), UTOPIA                  Now, the efforts were concerned with how the
+(1981±1984), a joint project including the Nordic       (individual) system developer should act in a
+Graphical Union and computer scientists, sociol-        particular setting' [13]. In other words, although
+ogists, economists, and engineers from several          all of these projects shared democracy as an
+research institutions such as the Swedish Arbet-        explicit goal, the projects entailed shifts from
+slivscentrum (Centre for Working Life), and the         political to ethical action and from larger multi-
+Florence project (1984±1987), a collaboration of        level contexts to specific workplace situations.
+computer scientists and nurses, focused on the
+knowledge of a profession and knowledge needed            Co-operative design certainly supports user participa-
+in daily work (in situ, in specific work contexts)        tion. But the focus on process, action, and situated-
+[see, e.g., 1, 13, 14, 44±46]. (UTOPIA is a Swedish       ness tends to disconnect the design process from the
+                                                          larger organisational context in which power is
+acronym for Training, Technology, and Products
+                                                          enacted. The scope is the design process itself viewed
+from a Quality of Work Perspective.)                      as a (rather harmonious) dialogue between a designer
+   Many of the early Scandinavian technology              and a user about the design of a particular computer
+projects aimed at expanding working life demo-            application . . . The underlying belief is that a
+cracyÐ`industrial democracy'Ðto include work-             democratic process will give a democratic result (i.e.,
+ers' influence at the societal level, as well as          an improved work situation) therefore computer
+                              Scandinavian Approaches to Participatory Design                             65
+
+  systems developed in a co-operative process have a     democracy. Social movementsÐamong women,
+  liberating power. This is not always the case. [13]    environmentalists, for multicultural diversity,
+                                                         physicians and computer professionals for social
+In a retrospective review of participatory design
+                                                         responsibility, non-governmental organisations
+projects in the 1970s and 1980s, Andrew Clement
+                                                         (NGOs)Ðmay provide viable bases for strategies
+and Peter Van den Besselaar also point to the
+                                                         and alliances to realise democracy. [see, e.g.,
+complexity and elusiveness of the relationship
+                                                         50±52]
+between the goals of improving workplace demo-
+                                                            To summarise, Scandinavian participatory
+cracy and participation in systems design, and to
+                                                         design approaches have a history of striving for
+the dilemmas of practising participatory design
+                                                         democracy, always with complications and short-
+`without organisational reform in the direction of
+                                                         comings, always in dynamic, changing circum-
+greater democratisation at all levels' [33, p. 36; see
+                                                         stances, always with the need to involve new
+also 35]. (Clement and Van den Besselaar were
+                                                         actors and new ideas as well as new technologies,
+concerned with participatory design projects inclu-
+                                                         and always requiring iterative analyses of changing
+sively, not only in Scandinavia, and therefore used
+                                                         situations and power relations as well as iterative
+a broader definition of participatory design, that
+                                                         design of technological artefacts. In Scandinavia,
+projects have `the intention to involve users as
+                                                         questions about democracy and democratisation in
+central actors in system development activities'
+                                                         relation to design have been asked persistently for
+[33, p. 29].) Kari Thoresen states the problem
+                                                         three decades. Has greater democratisation been
+succinctly: `Without democracy, we lose the
+                                                         achieved, in a workplace and/or in society? Do the
+general dimension, and are left with just a
+                                                         design intentions and imagined future uses of a
+number of local methods for designing IT systems.'
+                                                         particular design promote or diminish the condi-
+[Thoresen quoted in 33.]
+                                                         tions and possibilities for democratic practices?
+   To pursue democracy requires multi-level stra-
+                                                         Does a newly designed information system and
+tegies, including activities in relation to the work
+                                                         its associated informational and communicative
+situation, the workplace and organisation, inter-
+                                                         tools and affordances facilitate greater influence
+organisational relationships and alliances, working
+                                                         among all employees, more widely shared partici-
+life, internationalisation of labour and production,
+                                                         pation in decision-making, and resources for co-
+and processes of globalisation facilitated by infor-
+                                                         ordination, collaboration, and for creatively work-
+mation and communication technologies. To do
+                                                         ing with differences, argument, heterogeneity,
+anything `local' requires analysis of national, inter-
+                                                         conflict and contradictions? Such considerations
+organisational and international alliances, and
+                                                         about democracy and more broadly about values
+global networks. Structural changes since the
+                                                         implicated in design processes and products of
+early to mid-1980s include but are not limited to:
+                                                         design are included among criteria for evaluations
+. considerable loss of influence for both individual     of and theorising from participatory design
+  workers and unions [see, e.g. 49], resulting in        projects and practices.
+  more pressured, coercive, or openly hostile work
+  environments; greater focus on customers than
+  employees in many companies;                                         VALUES IN DESIGN
+. changes in organisational structures and employ-
+  ment relationships including the evolution of             Writing of Morten Kyng's contributions to
+  `virtual organisations';                               creating the Collective Resource Approach, Lucy
+. the increased importance of computer networks          Suchman describes the explicit emphasis on values
+  and interlaced technological infrastructures.          in design as one of the orienting premises of the
+                                                         alternative that Scandinavian participatory design
+By the late 1990s, `the notion of worker-controlled      represents in computer science and systems devel-
+resources and independent worker activities in           opment: ` . . .designing computer artefacts is an
+combination with negotiations with management,           inherently value-based activity, deeply implicated
+as a strategy for influence, has almost totally          in longstanding political struggles of the wider
+disappeared' [Kyng quoted in 51]. `The change of         society in which computer science is embedded.
+power structures in society during the last decades      Rather than viewing this fact as a breakdown in
+is an important challenge for system development         what should be a disinterested project, this alter-
+research which cannot be dealt with without              native position embraces the place of systems devel-
+discussing the political dimension' [13].                opment as a critical arena for the expression and
+   Furthermore, as Bjerknes and Bratteteig (1995)        enhancement of values of industrial democracy'
+point out, to achieve democracy may require non-         [Suchman: 51, p. 46]. This stands in sharp contrast
+democratic strategic moves, for example, affirma-        to the still dominant mainstream view in the United
+tive action to achieve the inclusion of women,           States of systems design and research and develop-
+people of colour, and people otherwise under-            ment in engineering and computer science as
+represented in the workplace and in society.             `strictly technical and commercial arenas' in which
+Trade unions, as important as they have been in          technical expertise is privileged above other forms
+participatory design projects, are not necessarily       of knowledge and co-modification powerfully
+the most strategic institutions for working toward       shapes and constrains design.
+66                                                          J. Gregory
+
+   Discussions of values in designÐexplicit discus-                    participation should occur in every aspect of
+sions of design intentions; explication of values                      design (`phases' of design that may be concurrent
+embedded in design strategies and choices;                             rather than sequential in time). Methods for parti-
+shared discussions among participants of the                           cipatory design include techniques for involving
+values that are implicit and explicit in imagined                      future users, people who know the work, in all
+futures and changes in practices envisioned in                         parts of the development process:
+design projectsÐall characterise collaborative                         . determining design objectives on social {not
+work in Scandinavian participatory design
+                                                                         only technical} bases;
+projects. Embracing value-oriented design thus                         . analysis of the current situation and co-con-
+encompasses care in building working relation-
+                                                                         struction of problem formulation; conceptuali-
+ships of trust, reciprocity, and mutual learning,
+                                                                         sation of design, designing and evaluating
+with the understanding that these are relationships
+                                                                         possible design solutions;
+with (and within) communities that need to last                        . implementing changes including training people
+over time, to form the basis for viable participation
+                                                                         for new practices;
+and codetermination, as design and changes in                          . evaluation, maintenance and ongoing improve-
+practices unfold iteratively. The orientation
+                                                                         ments;
+towards imagined futures, including participatory                      . iterative design.
+design methods for critiquing the present and
+envisioning change, is related to: conceptualisation                   Local knowledges of individuals and communities
+of design in relation to social practices, continuous                  are respected, such as the expert knowledge of
+learning and change, and imagined futures, rather                      workers in work-oriented design. `In addition,
+than a narrower focus on design in relation to a                       co-operative approaches argue that workplace
+product or system; to openness in designÐkeeping                       language and daily experience of users need to be
+design decisions open; and to conceptualising                          placed centre stage in an effort to enable users. For
+participation and `diverse forms of ongoing                            enabling users implies not just using their experi-
+design-in-use' [15, 51] along cyclical design and                      ence, but creating and fostering an environment
+development over time. (For discussions contrast-                      where they can feel empowered to express their
+ing the `product-oriented' and `process-oriented'                      ideas' [50, p. 31].
+perspectives, see [17, 53].) Yet, in practice, it is rare
+that designers and user communities maintain
+contact after the intensive period of collaboration.                     CONFLICT AS A RESOURCE IN DESIGN
+   Figure 1 highlights the iterative and cyclical
+nature of design and development over time. The                          When conceptualising conflict as a resource in
+depiction of an organisation can be extended to                        design, conflict is broadly conceived and may,
+a community or communities. The graphic                                variously, refer to different perspectives, argu-
+suggests how important relations of design are, as                     ment, heterogeneity, or contradictions. Early
+
+
+
+
+Fig. 1. T. Bratteteig, `Participatory Design: Ideas, Methods, Practices', lecture, International Women's University (IFU), Project Area
+                                            Information, Hamburg, Germany, July 26, 2000.
+                                Scandinavian Approaches to Participatory Design                                    67
+
+Scandinavian participatory projects took up                  contradictions as they present opportunities for
+conflicts between management and labour as a                 innovation when people figure out how to over-
+matter of principle, asserting a `conflict perspec-          come troubles that confront them. Because dilem-
+tive' in contradistinction to the prevailing                 mas point to systemic tensions in activity systems
+`harmony perspective' [see, e.g, 15, 25]. Kyng               that confront individuals in their everyday activ-
+(1998) writes [15, p. 23]:                                   ities, they are especially important, not only for the
+  The design process is a political one and includes         analysis of everyday troubles, but also as clues
+  conflicts at almost every step of the way . . . If the     toward the analysis of contradictions. Structural
+  inevitable conflicts are pushed to one side or ignored     dilemmas and contradictions are openings for
+  in the rush toward an immediately workable solution,       expansive transitions that go beyond situated
+  that system may be dramatically less useful and            problem-solving to potential transformation of
+  continue to create problems.                               an activity system through the emergence of new
+Cherkasky points to participatory design as a                ways of learning, working, and imagining [57, 58]
+field that offers resources for addressing diverse           Trouble and opportunities for innovation are
+interests in design projects [32]:                           understood to be related, both motivated by the
+                                                             dynamics of contradictions. Following dialectical
+  Participatory design provides a framework for indivi-      historical materialist principles, activity theory
+  dual designers to deal with issues raised during           posits `the idea of contradictions as the driving
+  collaboration in design, including how to negotiate
+                                                             force of change and development in human organ-
+  conflicting constraints and values, make visible
+  diverse stakeholders' interests and knowledge, and         isations' [59, p. 181].
+  assess design success along a variety of metrics . . . .      I now turn to two case examples of design
+  The field provides an enormous set of resources for        projects in progress outside of Scandinavia
+  investigating the social thread of design, including       that are particularly influenced by Norwegian
+  organisational structures and collaborative tools.         participatory design.
+What does it mean to see conflict as a resource in
+design? In Susanne Bùdker's analysis of interface
+                                                              THE HEALTH INFORMATION SYSTEMS
+design, conflict in design is an important resource
+                                                                       PROJECT (HISP)
+for creativity [54, p. 48]:
+  Design is fundamentally a collective activity, in which       The District Health Information System (DHIS)
+  the various practices of the participants meet in a        is an open source software for health management
+  process of mutual learning. This meeting creates           information developed in South Africa in the
+  conflicts that create new possibilities in design.
+                                                             Health Information System Project (HISP), a
+Conflicts arise in relation to multiple needs, multi-        Norwegian±South African development collabora-
+ple objects (motives), and the alienation that               tion comprising the computer science and medical
+individuals experience within institutions and the           faculties of University of Oslo (Norway), the
+order imposed by work and societal institutions.             University of the Western Cape (South Africa),
+`Furthermore, the needs of the individual as part of         and the Ministry of Health in South Africa. The
+different collective activities might differ and even        DHIS software was first piloted in three health
+conflict. We can say that the human being has not            districts in Cape Town (1996±98) and was subse-
+one need in the concrete activity but a whole                quently introduced into all 173 health districts in
+cluster, some of which are conflicting' [54, pp. 23,         South Africa (during the period 1999±2001) [9].
+24]. In Cecelia SjoÈberg's (1996) study of a Swedish         HISP was one of Norway's highest-ranked inter-
+participatory design project in primary healthcare,          national development projects for the year 1999±
+the design process is understood as a culture of             2000 because of its success in promoting self-
+argument. SjoÈberg frames doubt and doubts,                  sustainable grassroots implementation, following
+openness, incompleteness and lack of closure,                principles of participatory design and develop-
+iterative processes, critique of both the product            ment. Jùrn Braa and Calle Hedberg acknowledge
+and processes of design, and argumentation as                the early Scandinavian participatory design
+important resources to be valued in the design               projects as sources of inspiration for HISP's
+process [24, pp. 125, 126]: ` . . . conflict and             objectives [9, p. 3]:
+disagreement seem to be unavoidable elements in                Our approach to action research and information
+participatory design in practice, and have to be               systems design was initially influenced by a number
+acknowledged and managed.' The principle of                    of union-based action research projects in Scandina-
+`democratic dialogue' in participatory design and              via in the 70s and 80s. . . . Adaptation of information
+argumentative design strategies hold that: `Power              systems to the local context, empowerment through
+and dominance are . . . meant to be visualised, not            practical learning, and the creation of local ownership
+neutralised' [24, p. 4].                                       through participative processes are central issues in
+   In analyses for design drawing on cultural                  the Scandinavian projects which, despite differences
+historical activity theory and Finnish develop-                in context, offer important lessons for third world IS
+                                                               design.
+mental work research [see, e.g., 54±56], attention
+is especially directed to systemic disturbances,             The overall objective of the Health Information
+discoordination, dilemmas, breakdowns, and                   System Project is `to develop a local information
+68                                                    J. Gregory
+
+culture which we firmly believe. . . can result in              outcome of the design process is not given, but is
+more efficient use of available resources, meaning              negotiated within a broader set of goals' [9, p. 5].
+better healthcare, and in the end, a better outcome             The design strategy is characterised by both impro-
+in health terms for the population. That's the                  visations and by a strong emphasis on keeping
+crucial thing, that's our aim' [60].                            design options open. Tools associated with the
+   The project employs a rapid prototyping                      information system need to be immediately
+strategyÐ'cyclical prototyping with guided user                 usable and practical for users and, at the same
+participation'Ðadapting participative proto-                    time, to be designed as `vehicles for learning.'
+typing. Whereas ` . . . prototyping as described in
+the literature . . . is usually quite formal and                Case example: an instance of interface design
+structured, with well-established user groups,                     The following instance of information systems
+channels of communication and conflict resolu-                  interface design is presented in order to talk
+tion' [9, p. 15], informality, improvisation, creating          concretely about how Scandinavian participatory
+tools that become vehicles for learning, and keeping            design principles may be materialised in design. In
+design decisions open are important features of                 the discussion of this instance from the DHIS
+participatory systems development in the contexts               interface, a relation is drawn between conflict
+of South Africa and HISP. Improvisation refers,                 (potential conflict) and `errors' in use of the soft-
+for example, to the informality of communication                ware, in order to contrast how conflict is regarded
+between developers and users, that `any interested              as a resource in design, a distinguishing principle
+or innovative user, regardless of her place in the              of Scandinavian participatory design, and the
+hierarchy, had full access to the development                   difficulty of working with conflict in design in
+team. . .' In guided user participation, `the devel-            mainstream US systems design. In the mainstream
+opment team normally has to guide users to a                    discourse of systems design in the United States,
+significant degree in understanding their own                   there is a near obsession with `human error' and its
+requests and how they can be implemented in                     elimination. The longstanding principle to `elim-
+practice' [9, p. 16]. Braa and Hedberg think of                 inate human error' has often meant to eliminate
+participatory design as cultivation. `By cultivation,           peopleÐregarded as the sources of errorÐfrom
+we mean a slow incremental bottom-up process of                 work processes, i.e. `to automate'. This deeply
+. . . gradually transforming social structures and              embedded design tradition in the US dedicated to
+information infrastructures where the resources                 eliminating human error and favouring the inscrip-
+already available form the base. The precise                    tion of automated `quality control' processes in
+
+
+
+
+                  Fig. 2. An interface example from the District Health Information System (DHIS), 2001.
+                              Scandinavian Approaches to Participatory Design                               69
+
+systems design stands in sharp contrast to the           throughout the system; so, for example, local
+DHIS design which deliberately allows people to          health district staff and individual users have
+make mistakes, in order to promote continuous            similar flexibility in deciding how to define, name
+learning and to achieve other purposes that are          and adjust clinical indicators for primary health-
+expressed in design principles. The values orienta-      care. As one result, Hedberg concedes that `the
+tion of the HISP team includes commitments to            heavy bias towards flexibility pursued by HISP
+local autonomy, localisation, and flexibility of the     and its partners [early in the project] to some extent
+software (including the ability of individual users      perpetuated variations even as it reduced overall
+to make adjustments), as aspects of developing a         fragmentation' in the collection and comparative
+local information culture as a building block            analysis of primary healthcare data across facilities
+towards empowerment and democratisation in               and districts. `You give people flexibility which
+the context of the reconstruction of the healthcare      they can exercise however they wish, but [that
+sector in post-apartheid South Africa since 1994.        should be done] without undermining the basic
+   Figure 2 is a `screen shot' from the DHIS inter-      principle of [creating] and using an essential data
+face, showing a computer screen for the entry of         set . . . without jeopardising the quality of the
+monthly health management data in a health               data.' In hindsight and despite the generation of
+district. The reader is invited to imagine two           errors and the proliferation of definitional vari-
+moments of DHIS in use.                                  ations, Hedberg, the principal software designer
+   In the first entry, for the `Primary Healthcare       for DHIS, says they would design the system the
+(PHC) headcount under five years,' the entry was         same way again. (Personal communication with
+`too high,' meaning that it was above the maxi-          Calle Hedberg, April 2001 and April 2002.)
+mum number regarded as possible in relation to              The design choice represented in Fig. 2 greatly
+the population in the catchment area. The person         surprised me in contrast with the design approach
+entering the information chose to `zero out' the         to which I had been exposed in the US-based
+minimum and maximum values, in order to make             Electronic Health Record design project in which
+the entry beyond the expected maximum accepta-           I participated during its iterative prototyping
+ble by the system. (See the `Min' and `Max'              phase (1993±98) [61]. (Distinctions must also be
+columns to the immediate left of the first entry         acknowledged between electronic patient records
+`1251'.)                                                 and health management information systems, and,
+   In the second entry, `Seen by doctor,' for the        for these two cases, distinctions between proprie-
+number of persons seen by a doctor for curative          tary software development in a private healthcare
+services (rather than a nurse or other healthcare        company, on the one hand, and open source soft-
+worker), the entry `2154' is too low to be accepted      ware development for healthcare districts that are
+according to the minimum and maximum settings.           part of a national public healthcare system. My
+This triggers the pop-up window, `Warning: Entry         interest is in discerning contrasting design strate-
+out of range' that we see in the centre of the screen.   gies and principles in order to understand how such
+   In the pop-up window, the user is warned that         differences in principle and strategy inform infor-
+the value of the attempted entry is beyond the           mation technology design orientations towards
+parameters of the minimum and maximum                    software development, implementation and infra-
+settings. He or she is offered three choices: (1)        structure-building in relation to social systems and
+Add: `If . . . correct, please add a comment to          cultural-historical contexts.)
+explain the cause of it being too low/high'; (2)            Some background contrasting DHIS and main-
+Correct: `If it is a typing mistake, correct the         stream US health information systems design may
+entry'; or (3) Modify: `You can modify the min           help readers to appreciate how unusual certain
+or max value.' One option sometimes exercised by         design features of DHIS are in comparison to US
+new users is to modify the minimum and maximum           design conventions regarding quality control for
+values to `zeros', to `zero out' the parametersÐthis     errors in health management information. The
+is what we see for the first entry for `PHC head-        strong structured content design strategy of the
+count under five years'. Not only are the minimum        Electronic Health Record ProjectÐdesigned for
+and maximum values set locally, they can also be         patient record documentation to be generated
+modified by individual users in the course of work.      from standardised, codified clinical and medical
+Allowing what seem by US design standards to be          terminologiesÐexemplifies efforts to create highly
+extraordinary degrees of local autonomy and flex-        aligned, centrally defined systems in which dataÐ
+ibility certainly contributes to the generation of       and individuals using the systemÐare to be closely
+errors in the use of DHIS. These require the time-       monitored for adherence and variance from clin-
+consuming attention of HISP and clinic staff, to         ical and organisational protocols and guidelines.
+diagnose the errors and clean up the database (to        In such systems, it is often impossibleÐby
+ensure the integrity of the data). At the same time,     designÐfor an individual user to enter values
+working with DHIS users to understand and fix            beyond parameters that are determined `automa-
+errors represents opportunities for localisation and     tically' or at a central organisational level to be
+mutual learning; not all entries that appear to be       clinically or otherwise logical. There is great stress
+`errors' are in fact errors. The design principles       on eliminating errors in patient records; for one
+of local autonomy and flexibility are extended           thing, the poor quality and fragmented state of
+70                                                 J. Gregory
+
+patient information are implicated in medical             working relations in design [10, 11]. The IFU
+mistakes. Another motivation for US design                health information project comprised twelve
+strategies that rely on highly aligned information        women from eleven countries, a multi-disciplinary
+is the desire that a health information system            group of women in the health professions and
+should simultaneously serve an array of purpose-          health informatics from Brazil, Egypt, Ethiopia,
+sÐclinical, epidemiological, quality assurance,           Georgia, Germany, India, Indonesia, Norway,
+clinical research, regulatory, managerial, and            Tanzania, Togo, and the United States. For three
+financialÐaspart of large-scale clinical information      and a half months (July±October 2000), members
+infrastructure building.                                  of the project collaborated intensively to design
+   But is the instance of DHIS interface design           health information resources focused on nutrition
+shown in Fig. 2 simply an instance of `bad                and reproductive health information for adoles-
+design'? Why would designers make it easy for             cents (teenagers) in diverse cultural and socio-
+users to commit errors in health management               economic contexts. Project work entailed partici-
+information data? The design feature represented          patory design principles and methods in creating
+above makes little or no sense without some under-        conceptual and material prototypes. The group
+standing of the specific contexts for this design         decided to begin with the initial designs for inter-
+decision including the long-term vision of societal       active websites to reach urban educated teenagers
+change, the imagined future for its use. The              and school teachers. (The participants in the
+example from the DHIS interface needs to be               Health Information project also intend to design
+understood in relation to the primary objective of        parallel informational resources including posters
+the HISP team to create an information culture,           and in-person discussions to reach adolescents,
+more specifically to create local information             parents, and teachers in rural areas without
+cultures in each primary healthcare facility in           Internet access.) The project team aims to realise
+diverse health districts, and in the context of the       the initially envisioned websites for primary
+movements for democratisation, empowerment,               healthcare through continued international colla-
+and transformation underway in South Africa.              boration, as a `virtual working group', and
+An information system is seen as a social system          through engagement of teenagers in different
+requiring cultivation over time. Concepts of              cultures in participatory design of the website.
+community and continuous learning are primary                Participatory design and participatory commu-
+and integral (from the start of and through itera-        nity development were broadly shared themes in
+tive design cycles) rather than secondary or addi-        Project Area Information of IFU. (The Dean for
+tive (to be phased in later). Hedberg estimates that      Project Area Information of IFU, Christiane
+fifteen to twenty percent of software development         Floyd, has long been active in discussions of
+time in HISP is spent in software development per         participatory design, and is especially known for
+se; the remainder is devoted to extensive inter-          her work developing participatory software engin-
+actions with district health staff using the system       eering practices in Germany [see, e.g., 62, 63].)
+and with the HISP staff involved in training,                Participatory design concepts and methods in
+technical support, ongoing evaluation and report-         the Health Information project included informa-
+ing. To carry out systems design in the changing          tion mapping, `rich pictures' [64] to explore
+context of South Africa, `You need some kind of a         tensions between medical and social perspectives
+long-term vision. You might not even activate             and between situations in differing cultural
+parts of that vision until further down the line,         contexts, brainstorming, participatory community
+because some of your vision is basically unattain-        development perspectives for primary healthcare,
+able in the short-term . . . But you need some kind       and open planning. Project team members also
+of a vision, and that vision is not really anything to    drew on inspirations from concepts and ways of
+do with the softwareÐthe tools' [60]. Design              working in the arts (sketching, narrative, montage,
+features may well change as the base of participa-        multi-media representations) and architecture
+tion and skill changes; the design principles to          (mock-ups, portfolios, models), and gender
+support local autonomy, localisation, and flexibil-       research methods and principles. The IFU
+ity in use may be realised differently over time. The     summer project highlights participatory design
+design of a system is iterative and contexts of           processes and illustrates how participatory design
+design change over time: `Your choices are                facilitates the development of people in relation to
+constantly changing because of all sorts of external      social change projects. At the heart of project
+factors. . . You muddle along. . ., you gain              members' work together were conceptualisations
+experience and you learn. It's very much a learning       of initial designs and learning how to articulate
+process. . . . I think we've done what we could with      shared design visions in words, in concepts, and in
+the best motives and, you know, history will judge'       visual representations. In the experience of concep-
+[60].                                                     tualising the design of the interactive websites, the
+                                                          women health professionals in the project were
+Case example: the ifu's project area information          `becoming designers'. (As project facilitators,
+  The second case example, the health information         Tone Bratteteig and I saw the women in the project
+project of the International Women's University           becoming designers', although we were surprised
+(IFU), returns us to themes of values in design and
+                              Scandinavian Approaches to Participatory Design                                  71
+
+that they did not see themselves becoming               basis with trade unions for participatory design
+designers as we did.)                                   strategies striving for democratisation in society
+   The period of in-person collaboration created        has nearly disappeared, according to Kyng quoted
+important preconditions for ongoing participation       in [51]. There are few examples of sustained
+in design projects, not only in the imaginative co-     collaborations between designers and users in
+construction of design artefacts amongst team           relation to long-term iterative designÐ`diverse
+members but also in ways that these health profes-      forms of ongoing design-in-use' [51]Ðand it
+sionals began to learn how to communicate and           becomes ever more complex to create truly
+collaborate with technical designers and vice versa.    independent resources and spaces for design.
+Introductory technical skills gained in the IFU            What can we learn from Scandinavian partici-
+Health Information project provided a basis of          patory design approaches that we can take into our
+familiarity with information technology that can        own design practices, collaborations in design, and
+enable collaborations with designers working with       design pedagogy? First, we can begin by asking, as
+interactive multi-media in computer science,            the leaders of Scandinavian participatory design
+communication, and the arts. Most importantly,          asked and continue to ask, how do we create the
+introductions to generative conceptualisations of       preconditions necessary for participatory design?
+information as a social resource and practices in       How do we create alternative `contexts for design'
+participatory design expand resources for working       [15]? Suchman suggests that, `as contexts for
+creatively with differences, heterogeneity, and         design in Scandinavia are coming to bear greater
+potential conflicts regarding complex questions         resemblance to those of the United States' there is
+engaged in designing health information resources       `more than ever a need to form alliances and
+for communities in diverse cultural contexts.           develop common strategies' [51, p. 48]. Secondly,
+   Discussion of the IFU Health Information             we can design with values and politics in mind in
+project raises some challenges that stretch the         our design work and teaching about design. Parti-
+boundaries for participatory design [see also 34]:      cularly, as Scandinavian participatory design
+How can participatory design be extended to web         approaches are about striving for democracy, we
+design and to `virtual teamwork' over the Internet?     can critically reflect on our design practices in
+How can the principles of participatory design be       relation to democracy and democratisation. To
+extended to design projects that are not work-          give one example: in medical informatics, how
+based, for example, involving new constituencies        might design change if we ask about democracy?
+such as teenagers? How can the emphasis on values       One can work in clinical information systems
+and politics in design help us in international         design and development in the USA without
+collaborations that entail profound cross-cultural      concerning oneself with the dual crises in the lack
+differences regarding substantive areas, in this        of access to healthcare for 20% of the population
+case deeply differing cultural perspectives on          who are excluded from healthcare coverage and
+reproductive health and nutrition for youth?            problems in the quality of care (increasingly
+                                                        defined by market benchmarking schema and
+                                                        cost-benefit regimes). Once we begin questioning
+       POSSIBILITIES FOR PRACTICE                       how bounded health information design practices
+                                                        are, it seems remarkable that we are trained not to
+   The social, political, and economic contexts of      ask such political questions. A third reflection
+Scandinavian countries are uniquely shaped by           derives from understanding design as being about
+their respective histories, cultures, and traditions.   imagined possible futures and possibilities for
+Social democratic traditions in working life, union-    dynamic change. If we think of the relationship
+isation, relative homogeneity and small size of         between design and democracy dialectically, we
+populations, established relationships between          can see that Scandinavian approaches to partici-
+designers, university researchers, workers, unions,     patory design are about striving to redefine demo-
+and companiesÐthese represent different cultural        cracy as much as they are about redefining design
+historical bases for possible collaborations in         practices and relations in design. (I am indebted to
+design and design research projects. To offer a         Ron Eglash for discussion of design and demo-
+specific contrast with the United States context,       cracy as a `co-evolutionary pair'.) Finally, current
+Norway has a population of 4.5 million and a rate       works in progress suggest that prospects are alive
+of unionisation estimated at 90% compared to less       and well for practising participatory design outside
+than 15% in the US. Together these different            Scandinavian contexts, with commitments to
+conditions shape far different circumstances for        democracy and democratisation, discussions of
+participation and co-determination that structure       values in design, and how difference and conflict
+time differently, creating better opportunities to      may be regarded as resources in design.
+participate in decision-making within daily work-
+life and to sustain such participation. Yet, the        AcknowledgementsÐI wish to acknowledge helpful discussions
+ambitious goals of the early Scandinavian partici-      with Bill Anderson, Susan Irwin Anderson, Tone Bratteteig,
+patory design projects remain as great challenges.      Benjamin Cimerman, Ron Eglash, Calle Hedberg, Sarah Kuhn,
+                                                        Lucy Suchman, stimulating discussions with participants in
+It has proved difficult to support `user/worker         Mudd Design Workshop III, and discussions amongst the
+participation in design activities proper' and the      participants in the STS Design Seminar 2001 as part of the
+72                                                         J. Gregory
+
+project `STS Focus on Design' supported by a grant from the          Studies Department at Rensselaer Polytechnic Institute, Troy,
+National Science Foundation to the Science & Technology              NY.
+
+
+
+
+                                                       REFERENCES
+               1. D. Schuler and A. Namioka, (eds), Participatory design: Principles and practices, Lawrence
+                  Erlbaum, Hillsdale, NJ (1993).
+               2. Namioka and D. Schuler (eds), PDC '90: Proceedings of the Participatory Design Conference, Palo
+                  Alto, CA, Computer Professionals for Social Responsibility (1990).
+               3. M. Muller, S. Kuhn et al. (editors), PDC '92: Proceedings of the Participatory Design Conference,
+                  Palo Alto, CA, Computer Professionals for Social Responsibility (1992).
+               4. R. Trigg, S. I. Anderson et al. (eds), PDC '94: Proceedings of Participatory Design Conference, Palo
+                  Alto, CA, Computer Professionals for Social Responsibility (1994).
+               5. J. Blomberg, F. Kensing et al. (eds), PDC '96: Proceedings of Participatory Design Conference,
+                  PDC `96. CPSR, Palo Alto, CA (1996).
+               6. R. H. Chatfield, S. Kuhn et al. (eds), PDC `98 Proceedings of the Participatory Design Conference,
+                  CPSR, Palo Alto, CA (1998).
+               7. T. Cherkasky, J. Greenbaum et al. (eds), PDC 2000 Proceedings of the Participatory Design
+                  Conference, Palo Alto, CA, Computer Professionals for Social Responsibility (2000).
+               8. J. Braa, `Community-based Participatory Design in the Third World,' in J. Blomberg et al.
+                  (editors), Proceedings of Participatory Design Conference, PDC `96. CPSR, Palo Alto, CA (1996).
+               9. J. Braa and C. Hedberg, The struggle for district-based health information systems in South Africa,
+                  The Information Society, 18(2), 2002. http://www.slis.indiana.edu/TIS/.
+              10. T. Bratteteig and J. Gregory, Spreading Health Information (1.1), International Women's
+                  University, Project Area Information, University of Hamburg (2000).
+              11. Floyd, G. Kelkar, S. Klein-Franke, C. Kramarae and C. P. Limpangog (eds), Feminist Challenges
+                  in the Information Age, Vrelag Leske & Budrich, Germany (2002). See also the websites for the
+                  International Women's University (IFU) and for Project Area Information: http://www.vifu.de
+                  and http://www.ifu.uni-hamburg.de.
+              12. N. Bjùrn-Andersen and B. Hedberg, Designing information systems in an organisational
+                  perspective, Studies in the Management Science: Prescriptive Models of Organisations, 5, 1977
+                  pp. 125±142.
+              13. G. Bjerknes and T. Bratteteig, User participation and democracy: a discussion of Scandinavian
+                  research on system development, Scandinavian Journal of Information Systems, 7(1), April 1995,
+                  pp. 72±97.
+              14. G. Bjerknes, P. Ehn and M. Kyng (eds), Computers and Democracy: A Scandinavian Challenge,
+                  Avebury, Brookfield, UT (1987).
+              15. M. Kyng, Users and computers: a contextual approach to design of computer artifacts,
+                  Scandinavian Journal of Information Systems, 10(1,2), 1998, pp. 7±44.
+              16. S. Bùdker, K. Grùnbñk, and M. Kyng, Cooperative design: techniques and experiences from the
+                  Scandinavian scene, in D. Schuler and A. Namioka, (eds), Participatory Design: Principles and
+                  Practices, Lawrence Erlbaum, Hillsdale, NJ (1993).
+              17. K. Grùnbñk, J. Grudin, S. Bùdker, and L. Bannon, Achieving cooperative systems design: shifting
+                  from a product to a process focus, in D. Schuler and A. Namioka, (eds), Participatory Design:
+                  Principles and Practices, Lawrence Erlbaum, Hillsdale, NJ (1993).
+              18. K. Grùnbñk, M Kyng, and P. Mogensen, Toward a cooperative experimental system development
+                  approach, in M. Kyng and L. Mathiassen (eds), Computers and Design in Context, The MIT Press,
+                  Cambridge, MA (1997).
+              19. J. Blomberg, L. Suchman, and R. Trigg, Reflections on a work-oriented design project, Human-
+                  Computer Interaction, 11, 1996, pp. 237±265.
+              20. L. A. Suchman, Plans and Situated Actions: The Problem of Human Machine Communication,
+                  University Press, Cambridge, UK and New York (1987).
+              21. K. Holtzblatt and S. Jones, Contextual inquiry: a participatory technique for systems design, in D.
+                  Schuler and A. Namioka (editors), Participatory Design: Principles and Practices, Lawrence
+                  Erlbaum, Hillsdale, NJ (1993).
+              22. J. Greenbaum and M. Kyng, (eds), Design at Work: Cooperative Design of Computer Systems,
+                  Lawrence Erlbaum Associates, Publishers, Hillsdale, NJ (1991).
+              23. P. Ehn and M. Kyng, Cardboard computers: mocking-it-up or hands-on the future, in J.
+                  Greenbaum and M. Kyng, (eds), Design at Work: Cooperative Design of Computer Systems,
+                  Lawrence Erlbaum Associates, Publishers, Hillsdale, NJ (1991).
+              24. SjoÈberg, Activities, Voices and Arenas: Participatory Design in Practice, PhD dissertation,
+                  Department of Computer and Information Science and Department of Community Medicine,
+                  LinkoÈping University, LinkoÈping, Sweden (1996).
+              25. P. Ehn, Scandinavian design: on participation and skill, in D. Schuler and A. Namioka, (eds),
+                  Participatory Design: Principles and Practices, Lawrence Erlbaum, Hillsdale, NJ (1993).
+              26. IRIS Association, Proc. Information Systems Research Seminar in Scandinavia (IRIS), in its 24th
+                  year in 2001.
+              27. K. Nygaard and P. Sùrgaard, The perspective concept in informatics, in G. Bjerknes et al. (eds),
+                  Computers and Democracy: A Scandinavian Challenge, Avebury, Brookfield, UT (1987).
+              28. T. Bratteteig and J. Gregory, Understanding design, paper for IRIS 24, the Information Systems
+                  Research Seminar in Scandinavia, Ulvik, NO, 2001.
+              29. F. Kensing, The trade unions' influence on technological change, in U. Briefs et al. (eds),
+                  Systems Design For, With, and By the Users, Proceedings of the IFIP TC9/WG9.1 Conference,
+                  North-Holland, Amsterdam (1983).
+                    Scandinavian Approaches to Participatory Design                                     73
+
+30. T. Bratteteig, Participatory design: ideas, methods, practices, lecture, International Women's
+    University (IFU), Project Area Information, Hamburg, Germany, July 26, 2000.
+31. L. Suchman, Practice-based design of information systems: notes from the hyper-developed world,
+    The Information Society, 18(2), 2002. http://www.slis.indiana.edu/TIS/.
+32. T. Cherkasky, Designing experience, this volume, 2002.
+33. Clement and P. Van den Besselaar, A retrospective look at PD projects, Communications of the
+    ACM. 36(6), 1993, pp. 29±37.
+34. P. Ehn and L. Malmborg, The design challenge, Scandinavian J. Information Systems, 10(1,2),
+    1998, pp. 211±218.
+35. F. Kensing and J. Blomberg, Participatory Design: Issues and Concerns, Computer Supported
+    Cooperative Work, 7, 1998, pp. 167±185.
+36. Moser, G. H. Aas (eds), Technology and Democracy: Gender, Technology and Politics in Transition?
+    TMV Skriftserie Nr. 29, Senter for Teknologi og Menneskelige Verfier (TMV), Universitet I Oslo
+    (1997).
+37. M. Muller and S. Kuhn (guest editors), Taxonomy of PD practices: A brief practitioner's
+    guide, Special issue on participatory design, Communications of the ACM, 36(6), 1993,
+    pp. 26±28.
+38. S. Kuhn, Design for People at Work, Profile: Participatory Design, in T. Winograd, Bringing
+    Design to Software, ACM Press, NY (1996).
+39. P. Freire, Pedagogy of the Oppressed, trans. M. B. Ramos, Penguin, London (1972).
+40. P. Freire, Education for Critical Consciousness, trans. M. B. Ramos, Penguin, London (1974).
+41. M. Elden and R. F. Chisholm, Emerging varieties of action research: introduction to the special
+    issue, Human Relations, 46(2) February 1993, pp. 121±142.
+42. J. Greenwood and M. Levin, Introduction to Action Research: Social Research for Social Change,
+    Sage Publications, Thousand Oaks, CA London (1998).
+43. W. F. Whyte (editor), Participatory Action Research, Sage Publications, Newbury Park (1991).
+44. P. Ehn, Work-Oriented Design of Computer Artifacts, Arbetslivscentrum, Stockholm (1988).
+45. AÊ . Sandberg (ed.), Computers Dividing Man and Work, Arbetslivscentrum, Stockholm (1979).
+46. U. Briefs, C. Ciborra, and L. Schneider (eds), Systems Design For, With, and By the Users,
+    Proceedings of the IFIP TC9/WG9.1 Conference, North-Holland, Amsterdam (1983).
+47. S. Bùdker, P. Ehn, J. Kammersgaard, M. Kyng, and Y. Sundblad, A UTOPIAN experience: on
+    design of powerful computer-based tools for skilled graphic workers, in G. Bjerknes, P. Ehn and
+    M. Kyng (eds), Computers and Democracy: A Scandinavian Challenge, Avebury, Brookfield, UT
+    (1987).
+48. G. Bjerknes and T. Bratteteig, Florence in wonderland: system development with nurses, in G.
+    Bjerknes, P. Ehn and M. Kyng (eds), Computers and Democracy: A Scandinavian Challenge,
+    Avebury, Brookfield, UT (1987).
+49. M. Castells, Relationships of advanced information technology, economic organisation, and the
+    social structure of cities, Colloquium on Advanced IT, Low-income Communities, and the City, MIT,
+    Cambridge, MA (1996).
+50. J. Greenbaum, A design of one's own: towards participatory design in the United States, in D.
+    Schuler and A. Namioka, (eds), Participatory Design: Principles and Practices, Lawrence Erlbaum,
+    Hillsdale, NJ (1993).
+51. L. Suchman, Strengthening our collective resources: a comment on Morten Kyng's `A Contextual
+    Approach to the Design of Computer Artifacts,' Scandinavian Journal of Information Systems,
+    10(1,2), 1998, pp. 45±52.
+52. Emspak, Workers, unions, and new technology, in D. Schuler and A. Namioka, (eds),
+    Participatory design: Principles and practices, Lawrence Erlbaum, Hillsdale, NJ (1993).
+53. Floyd, Outline of a paradigm change in software engineering, in G. Bjerknes, P. Ehn and M.
+    Kyng (eds), Computers and Democracy: A Scandinavian Challenge, Avebury, Brookfield, UT
+    (1987).
+54. S. Bùdker, Through the Interface: A Human Activity Approach to User Interface Design, Lawrence
+    Erlbaum Associates, Publishers, Hillsdale, NJ (1991).
+55. M. Korpela, Nigerian Practice in Computer Systems Development: A Multidisciplinary Theoretical
+    Framework Applied to Health Informatics, Ph.D. dissertation, Otaniemi, Helsinki University of
+    Technology, FI (1994).
+56. M. Korpela, H.A. Soriyan et al., Community participation in health informatics in africa: an
+    experiment in tripartite partnership in Ife-Ife, Nigeria, in J. Blomberg et al. (eds), Proc.
+    Participatory Design Conference, PDC `96. CPSR, Palo Alto, CA (1996).
+57. Y. EngestroÈm, Learning by Expanding, An Activity-Theoretical Approach to Developmental
+    Research. Orienta-Konsultit Oy, Helsinki, FI (1987).
+58. Y. EngestroÈm, Learning, Working and Imagining, Twelve Studies in Activity Theory,
+    Orienta-Konsultit Oy, Helsinki, FI (1990).
+59. Y. EngestroÈm, Communication, discourse and activity, The Communication Review, 3(1,2), 1999,
+    pp. 165±185.
+60. Hedberg, Interview by Erich Schienke for the Centre for Ethics in Complex Systems (CECS),
+    Rensselaer Polytechnic Institute, Troy, NY, March 2001.
+61. J. Gregory, Sorcerer's Apprentice: Creating the Electronic Health Record, Re-Inventing Medical
+    Records and Patient Care, Ph.D. Dissertation, Department of Communication, University of
+    California-San Diego, La Jolla, CA (2000).
+62. Floyd, W.-M. Mehl, F.-M. R. Schmidt, and G. Wolf, Out of Scandinavia: alternative approaches
+    to software design and system development, Human-Computer Interaction, 4(4), 1989, pp. 253±350.
+63. C. Floyd, Software development as reality construction, in C. Floyd et al., Software Development
+    and Reality Construction, Springer-Verlag, Berlin (1992).
+64. P. Checkland and J. Scholes, Soft Systems Methodology in Action, John Wiley & Sons Ltd., West
+    Sussex, UK (1990).
+74                                           J. Gregory
+
+     Judith Gregory is an Associate Professor in the Systems Development (Systemarbeid) group
+     of the Department of Informatics, University of Oslo. A social scientist, she has been
+     working in informatics, particularly in health informatics, since 1992. Among her
+     responsibilities in the University of Oslo, Judith Gregory participates in the International
+     Health Informatics program, a collaboration comprising the computer science and medical
+     faculties of the University of Oslo (Norway) and University of Eduardo Mondlane
+     (Mozambique), and community medicine in University of Western Cape (South Africa),
+     a Systemarbeid working group on electronic patient records, and project KNOWMOBILE
+     exploring potential uses of mobile technologies in medical education. Her dissertation, from
+     the Department of Communication, University of California-San Diego, is entitled
+     Sorcerer's Apprentice: Inventing the Electronic Health Record, Re-inventing Medical
+     Records and Patient Care (2000), concerning the large-scale electronic health record
+     development project in which she worked for five years, analyzing clinical work practices
+     and patient care interactions to contribute to prototyping the new system (1993±98).
+     Professional experience includes appointments as: Post-Doctoral Fellow, Science &
+     Technology Studies, Rensselaer Polytechnic Institute, Troy, New York; Resident Faculty,
+     International Women's University, Project Area Information, Hamburg; Visiting Fellow
+     and Instructor, Department of Informatics, University of Oslo; Research Associate,
+     Clinical Systems Development, Kaiser Permanente; Research Associate, Department for
+     Professional Employees, AFL-CIO; Research Director, 9to5, National Association of
+     Working Women; Editorial Board Member, Office: Technology & People; Advisory
+     Panel Member, Office of Technology Assessment, U.S. Congress. Areas of research interest
+     include: Design: understanding design practices and processes, especially organisational
+     and institutional perspectives that inform design; Medical and health informatics: design and
+     use of electronic patient records; clinical information systems and health management
+     information systems, potential uses of mobile technologies, web-based and interactive
+     media in medical education and clinical practice; Theory: social theory approaches to
+     design and use of information systems; conceptualising standardisation of practices and
+     systems in balance with local autonomy, flexibility and participation.
+

@@ -1,0 +1,644 @@
+                                                                                                                                     PDF Download
+                                                                                                                                     584955.584986.pdf
+                                                                                                                                     27 February 2026
+                                                                                                                                     Total Citations: 45
+                                                                                                                                     Total Downloads: 1964
+    .
+
+
+
+
+    .
+
+
+
+
+        Latest updates: hps://dl.acm.org/doi/10.1145/584955.584986
+                                                                                                                                     .
+
+
+
+
+                                                                                                                                     .
+
+
+
+
+        .
+
+
+
+
+                                                                                                                          Published: 20 October 2002
+        .
+
+
+
+
+                                                                                                                          .
+
+
+
+
+    ARTICLE
+                                                                                                                          .
+
+
+
+
+                                                                                                                          Citation in BibTeX format
+    A Scandinavian challenge, a US response: methodological assumptions                                                   .
+
+
+
+
+                                                                                                                          .
+
+
+
+
+                                                                                                                          SIGDOC02: 20th International
+    in Scandinavian and US prototyping approaches                                                                         Conference on Systems Documentations
+                                                                                                                          October 20 - 23, 2002
+    CLAY SPINUZZI, The University of Texas at Austin, Austin, TX, United States                                           Ontario, Toronto, Canada
+                                                                                                                          .
+
+
+
+
+    .
+
+
+
+
+                                                                                                                          .
+
+
+
+
+                                                                                                                          Conference Sponsors:
+    .
+
+
+
+
+    .
+
+
+
+
+    Open Access Support provided by:                                                                                      SIGDOC
+    .
+
+
+
+
+    The University of Texas at Austin
+    .
+
+
+
+
+                                                    SIGDOC '02: Proceedings of the 20th annual international conference on Computer documentation (October 2002)
+                                                                                                                             hps://doi.org/10.1145/584955.584986
+                                                                                                                                                 ISBN: 1581135432
+.
+          A Scandinavian Challenge, a US Response:
+      Methodological Assumptions in Scandinavian and US
+                   Prototyping Approaches
+                                                                     Clay Spinuzzi
+                                                            University of Texas at Austin
+                                                                     Parlin 003
+                                                             Austin, Texas 78712-1122
+                                                                   512.471.6109
+                                                      clay.spinuzzi@mail.utexas.edu
+
+ABSTRACT                                                                             Keywords
+In the early 1980s, Scandinavian software designers who sought                       CARD, collective resource approach, contextual design,
+to make systems design more participatory and democratic turned                      cooperative prototyping, democracy, participatory design,
+to prototyping. The “Scandinavian challenge” of making                               PICTIVE, prototyping, Scandinavian design, user-centered design
+computers more democratic inspired others who became
+interested in user-centered design; information designers on both
+sides of the Atlantic began to employ prototyping as a way to
+                                                                                     1. INTRODUCTION
+                                                                                     Sweden, 1981: Pelle Ehn and collaborators at the Royal Institute
+encourage user participation and feedback in various design
+                                                                                     of Technology in Stockholm and the University of Aarhus,
+approaches. But, as European and North American researchers
+                                                                                     Denmark began the UTOPIA project. This project was a
+have pointed out, prototyping is seen as meeting very different
+                                                                                     collaboration between academics and a typesetter’s union that was
+needs in Scandinavia and in the US. Thus design approaches that
+                                                                                     meant to give the typesetters a say in how computer technology
+originate on either side of the Atlantic have implemented
+                                                                                     would be implemented at a newspaper. As committed Marxists,
+prototyping quite differently, have deployed it to meet quite
+                                                                                     the academics saw the workplace as a continuing conflict between
+different goals, and have tended to understand prototyping results
+                                                                                     capital (employers) and labor (employees); in this struggle, the
+in different ways.
+                                                                                     employers had traditionally had the upper hand. Backed by the
+These differences are typically glossed over in technical                            union, the academics sought to provide a proactive way for
+communication research. Technical communicators have lately                          workers to implement industrial democracy in their workplace.
+become quite excited about prototyping’s potential to help design                    One important part of that strategy was mock-ups. Mock-ups
+documentation, but the technical communication literature shows                      provided a common language for academics and workers; a way
+little critical awareness of the methodological differences between                  to iteratively try out solutions; a way for workers to
+Scandinavian and US prototyping. In this presentation, I map out                     democratically develop consensus on what they wanted from a
+some of these differences by comparing prototyping in a variety of                   computer system; and a path for further training and empowering
+design approaches originating in Scandinavia and the US, such as                     workers in systems design.
+mock-ups, cooperative prototyping, CARD, PICTIVE, and                                The United States, 1998: Hugh Beyer and Karen Holtzblatt of
+contextual design. Finally, I discuss implications for future                        InContext Enterprises published a book describing their design
+technical communication research involving prototyping.                              approach, contextual design. The book supplements the training
+                                                                                     sessions that InContext provides (typically over $1000 for a three-
+Categories and Subject Descriptors                                                   day training session) and reflects the consulting work that
+K.4.3 [Computers and Society]: Organizational Impacts –                              InContext does for companies. Aimed at managers and IT
+automation,  computer-supported   collaborative   work,                              personnel in US companies, the book describes contextual design
+employment.                                                                          as a “customer-centered” design approach that revolves around
+                                                                                     observing aspects of employees’ work, developing work models
+General Terms                                                                        based on the observations, and basing new system designs on the
+Management, Documentation, Design, Human Factors, Theory.                            work models. Once these systems have been outlined and
+                                                                                     prototyped, designers hold one-on-one “prototyping sessions”
+                                                                                     with workers to get feedback and gather ideas. The workers,
+                                                                                     although they are termed “co-designers,” are emphatically not
+   Permission to make digital or hard copies of all or part of this work for         designing the system using the prototypes: “It’s their job to do
+   personal or classroom use is granted without fee provided that copies
+                                                                                     their job, not design systems” [5].
+   are not made or distributed for profit or commercial advantage and that
+   copies bear this notice and the full citation on the first page. To copy          The two prototyping approaches are startling in their differences.
+   otherwise, or republish, to post on servers or to redistribute to lists,          Whereas UTOPIAn mock-ups are based on Marxist theory,
+   requires prior specific permission and/or a fee.                                  contextual design is emphatically capitalist. In the UTOPIA
+   SIGDOC’02, October 20-23, 2002, Toronto, Ontario, Canada.                         project, the academics were called in by the union and were
+   Copyright 2002 ACM 1-58113-543-2/02/0010…$5.00.
+                                                                                     financed with grant money from the government; InContext is
+
+
+
+
+                                                                               208
+hired by managers and paid from company coffers. UTOPIAn                    scholars in this tradition saw the political researcher as an
+mock-ups are meant to draw workers into the design process and              “emancipator” [7]). Others built on this work, and eventually the
+make them designers, not just to test, ratify, or tweak the work of         Collective Resource Approach took shape.
+external designers; contextual design’s prototyping component is            CRA projects dealt with how new technologies were introduced
+designed to disrupt work as little as possible and to relieve               into workplaces and how they devalued workers’ traditional craft
+workers of the additional work of design, so it encourages them to          skills, deskilling jobs, removing workers’ ability to make
+make minor changes and suggestions – but explicitly not to                  decisions, and intensifying work. At first CRA projects involved
+become designers themselves or to disrupt the division of labor             educating workers about technology and organizing resistance to
+established by the design team.                                             technologies that reduced industrial democracy. But in the
+What is so striking about this contrast is that when Beyer and              UTOPIA project, led by Pelle Ehn, the academics began to realize
+Holtzblatt describe their prototyping component, they cite the              that workers had to be empowered to provide practical
+Scandinavian researchers who were involved in the UTOPIA                    alternatives to management-based initiatives. That is, workers had
+project. How did this shift come about? How did the                         to be able to describe a computer system that could automate
+“Scandinavian challenge” of workplace democracy [8; compare                 work while still valuing their craft skills and upholding their
+with 18] become translated so radically as it migrated to the               autonomy. The problem was that the workers had no experience
+shores of the United States?                                                in systems design. Thus they could not begin to speculate on how
+To make sense of the transformation, I look to the distinction              to build such a system. So the UTOPIA team began experimenting
+between democratic and functional empowerment. Jeanette                     with a range of techniques for discussing and exploring the
+Blomberg, Lucy Suchman, and Randy Trigg [10] draw on Andrew                 possibilities, including mockups and other low-fidelity prototypes,
+Clement’s work [19] to distinguish between the two sorts of                 but also “future workshops” and organizational toolkits [13].
+empowerment: “Put simply, functional empowerment holds work                 The UTOPIA project was a critical success, if not a commercial
+groups accountable for the results of tasks, and in return gives            one. Although the project failed to produce a working system, it
+them a degree of power over how to execute the tasks. Democratic            did produce a design approach and a range of techniques for
+empowerment ideally gives workers a decision-making role in                 participatory design work. Based on UTOPIA and other projects
+operational planning as well as organizational and technological            that came after it, the Scandinavians issued the “Scandinavian
+change” (281). In these terms, UTOPIAn mock-ups reflect a                   challenge” in a 1987 book: develop and use design approaches
+desire for democratic empowerment, in which workers make                    that encourage industrial democracy [8].
+decisions along with management; contextual design strives for              Many took up this challenge, particularly in Great Britain and the
+functional empowerment, in which workers are better able to                 United States [37]. But, particularly in the US, the Scandinavian
+perform their jobs.                                                         approach lost some things in the translation. For instance, in
+In this paper, I review a few of the many overlapping prototyping           Scandinavia unions had been considered a key ingredient for
+approaches that have sprung up in the wake of UTOPIA – mock-                participatory design. Pelle Ehn called unions “the only real social
+ups, cooperative prototyping, PICTIVE, CARD, and contextual                 ‘carrier’ of the ideals of work-oriented design” [21]. That made
+design – and examine how each approach compares to the                      sense in a region with a workforce that was 90% unionized, but in
+Scandinavian challenge. (See [41] for a more comprehensive                  the US, far fewer workers were unionized – after a postwar high
+survey of approaches.) I sum up by describing how technical                 of 40%, unionization has dropped to around 15% [32; see also 3,
+communicators might use this understanding of prototyping when              7, 49]. Although some in the US were still hopeful that unions
+selecting and using prototyping approaches.                                 could be a driving force in US participatory design [25], others
+                                                                            discounted that possibility and sought other avenues for
+2. BACKGROUND: THE SCANDINAVIAN                                             empowering workers [26].
+CHALLENGE                                                                   Nevertheless, US academics and researchers sought to find other
+The “Scandinavian challenge” was based in the Collective                    ways to apply the Scandinavian approach, and in doing so, they
+Resources Approach (CRA), sometimes known as the critical                   modified its techniques and goals and added their own.
+tradition of Scandinavian information technology [2, 6] or simply
+the Scandinavian approach. In 1971, Scandinavian academics and              3. “UTOPIAN” MOCK-UPS
+unions, led by Kristen Nygaard, began a series of projects aimed            (SCANDINAVIA)
+at empowering labor in its struggle with management, particularly
+in terms of the introduction of new technologies [43, 2]. This              3.1 Description
+struggle was framed in terms of democracy, based on Marx’s                  The use of mock-ups – low-fidelity prototypes that serve to
+observation that in a capitalist society, democracy stops at the            introduce new technologies – was one of the techniques pioneered
+factory gates – democracy in the workplace was counter to                   in the UTOPIA project, and it quickly became a central technique
+management’s goals of higher profits for less pay. Nygaard and              in participatory design. It was based on the tool perspective, the
+his collaborators chose to work with unions in the manufacturing            idea that “computer support is designed as a collection of tools for
+industry. At the time, Scandinavia was about 90% unionized, so              the skilled worker to use. The tool perspective takes the work
+unions had considerable power, yet unions were not well                     process as its origin rather than data or information flow. This
+equipped to proactively guide the introduction of technologies.             means: not detailed analysis, description, and formalization of
+                                                                            qualifications, but the development of professional education
+Nygaard’s work was overtly political; he argued that research is
+                                                                            based on the skills of professionals; not information flow analysis
+always political, but his work was overt because it advocated the
+                                                                            and systems description but specification of tools” [13, p.261].
+case of labor rather than management [43, 2]. (Indeed, later
+
+
+
+                                                                      209
+The tool perspective involved recognizing the skilled craft that                easier to use, but the mock-ups’ primary goal was democratic
+workers had developed over the years so that new tools would fit                empowerment. The UTOPIA researchers explicitly rejected
+into that craft, rather than disrupting it: “a tools is developed as an         efficiency as a goal, recognizing that it often equals work
+extension of the accumulated knowledge of tools and materials                   intensification and deskilling.
+within a domain” [13, p.261; see also 21, p.339-40]. In contrast to             On the other hand, Gro Bjerknes and Tone Bratteig have pointed
+design approaches favored by management that served Tayloristic                 out that UTOPIA failed to achieve its democratic aims, largely
+goals (deskilling, work intensification), the tool perspective                  because the research and design were done on behalf of a single
+involved building “computer-based tools by which the craftsman                  union rather than the host of unions at the site: “research on
+[sic] can still apply and develop original skills” [13, p.261; see              behalf of one union does not necessarily contribute to a more
+21, p.34; 23, p.34-38].                                                         democratic working life” [7, p.78]. They concluded, “We consider
+In the UTOPIA project, mock-ups became important in bridging                    the UTOPIA project … as a support to graphical workers at the
+the experience of researchers and workers. The researchers had                  expense of women and unskilled men in the composers’ room …
+begun by using traditional design description methods such as                   the UTOPIA project has not contributed to the sort of democracy
+scenarios and data flow. But the graphical workers had difficulty               in which all stakeholders have a voice in the design of a new
+understanding these unfamiliar notations, so the researchers and                computer system” (78).
+workers turned to mock-ups [13, p.263]. “The principle behind
+the mock-up was simple. Using sheets of paper, matchboxes,                      4. COOPERATIVE PROTOTYPING
+some plywood, etc., one ‘builds’ a workstation with a ‘high-
+resolution display,’ a ‘mouse,’ etc.” [21, p.335]. Then, under the              (SCANDINAVIA)
+researcher’s guidance, workers used the mock-ups to simulate                    4.1 Description
+work [22].                                                                      Cooperative prototyping developed as a part of the cooperative
+Mock-ups had several advantages. One was that they provided an                  design approach that emerged in the wake of UTOPIA ([17]; see
+easy way for researchers to introduce new technologies (such as                 [23] for an early volume on cooperative design and [33] for a later
+laser printers, which existed only in advanced research labs during             perspective). Introduced in [16], cooperative prototyping was
+the time of the UTOPIA project; see [22, p.172]. Another was that               intended to be “a cooperative activity between users and
+workers were able to explore how these new technologies might                   designers, rather than an activity of designers utilizing users’ more
+fit into their existing tacit knowledge about their craft, allowing             or less articulated requirements” (p.200).
+them and the researchers to refine the design in ways that made                 Cooperative prototyping was based on the “tool perspective” first
+use of their existing skills. They were also cheap – a requirement              described in the UTOPIA project. Like UTOPIAn mock-ups,
+in this project, which ran on quite limited resources, and also a               prototypes in the cooperative prototyping technique served as a
+boon to other projects supported by unions rather than                          common design language for designers; provided a way to try out
+management. Most importantly, mockups provided a “language                      common solutions before committing to them; and allowed the
+game” that made sense to all participants – a way for researchers               two parties to cooperatively design tools that fit into the craftwork
+and workers to pool their expertise and share design responsibility             of the workers. Importantly, the latter meant that researchers could
+for the project [22, p.176-77]. This “language game” meant that                 explore workers’ tacit knowledge, something that became a major
+workers could even modify the prototypes to better suit their tacit             theme in cooperative prototyping literature.
+knowledge of their craft [22, p.183]. The new design, then, would
+                                                                                This exploration of tacit knowledge happened primarily through
+be co-designed with the workers and would extend their craft
+                                                                                examining breakdowns. In a cooperative design session, users
+skills rather than doing away with them.
+                                                                                would “experience a fluent work-like situation with a future
+3.2 Comparison to the Scandinavian                                              computer application; that is, users’ current skills must be brought
+                                                                                into contact with new technological possibilities” [16, p.200]. As
+Challenge                                                                       the workers used the prototype, they sometimes encountered
+As they were used by Ehn and his colleagues in the UTOPIA                       breakdowns, points at which they shift their focus from the work
+project, mock-ups were an important component of the                            to the tool because the tool is behaving unexpectedly (cf. [12]). At
+Scandinavian challenge. They were explicitly developed to                       these points, “users and designers can analyze the situation and
+promote democratic empowerment: they provided a common                          discuss whether the breakdown occurred because of the need for
+language for designers and workers and they allowed workers to                  training, a bad or incomplete design solution, or for some other
+co-design the system, giving them an avenue to control the                      reason” [16, p.200]. If a breakdown was caused by the design,
+introduction of new technologies in ways that were beneficial to                users and designers could modify the prototype on the spot,
+them. Additionally, the workers who participated in mock-up                     exploring other design solutions that might minimize breakdowns.
+sessions were representative users in the democratic sense, the                 The result was ideally a modified prototype that was the result of
+sense that they were chosen by the local union to represent the                 a user-designer collaboration and that complemented the craft
+other members of the union.                                                     skills of the workers rather than deskilling them. Indeed,
+Democratic empowerment was the ultimate goal, but it was                        cooperative prototyping saw prototypes as part of users’ learning,
+achieved partially through functional empowerment: mock-ups                     not just feedback to designers [17, p. 170].
+encouraged an exploration of workers’ tacit craft knowledge and                 Unlike mock-ups, cooperative prototyping focused almost
+modeled the new tools on that craft knowledge (some might say                   exclusively on computer applications and involved rapid
+that it leveraged that knowledge). Certainly these changes resulted             development tools (such as HyperCard; see [15]). Since these
+in a system that workers found functionally empowering and                      prototypes were automated on a computer screen, they were
+
+
+
+                                                                          210
+interactive, providing users with a better understanding of how                 the Communication Workers of America; see [34]). But
+they might work with a finished product. In addition, simple                    representatives within PICTIVE studies appear to be approached
+changes to online prototypes could be easier than changes to                    directly by researchers, not elected or selected by their
+mock-ups, meaning that workers and designers could                              constituencies. That’s not surprising given the relative lack of
+collaboratively redesign on the fly [16]. Cooperative prototyping               labor organization within the US. In Scandinavia, unions are well
+became more flexible in collaboratively designing computer                      organized and have an established organization for selecting
+applications, but at the expense of shutting out other sorts of                 representatives; in the US, so little of the workforce is unionized
+design work.                                                                    that work often happens in non-union shops.
+
+4.2 Comparison to the Scandinavian                                              Indeed, in sidestepping the unions, Muller found that his focus
+                                                                                broadened to workers other than end users whose work lives
+Challenge                                                                       would be affected, such as technical writers. Whereas the
+Cooperative prototyping was still concerned with democratic                     UTOPIA project partnered with a specific union, and
+empowerment, but it assumed that democratic empowerment                         consequently ran into conflicts of interest with other unions,
+would necessarily follow from functional empowerment [7].                       PICTIVE led researchers to interact with workers of various
+Consequently, cooperative prototyping’s focus narrowed to                       stripes, often without affiliation to workers’ organizations. For
+individual workers and tools, and unions were no longer seen as a               instance, one project involved home users of Microsoft software,
+vital part of the equation [27, p.14]. Most notably, the Marxist                users who included executives, home business people, and
+theme of capital vs. labor became muted. In one striking example,               firefighters [35, pp.94-95].
+Bodker and Gronbaek counseled against bringing middle
+managers in as participants, not because they would co-opt the                  PICTIVE’s interpretation of the Scandinavian approach
+process and disempower workers, but because they simply didn’t                  resembled cooperative prototyping: it “emphasizes a tradition of
+have the tacit knowledge that their workers do [16, p.210].                     user participation in workplace decisions in improving the quality,
+Finally, researchers began to make arguments for cooperative                    productivity, and satisfaction related to computing systems” [39,
+prototyping that appealed to management’s interests and that had                p.212]. In PICTIVE, “users act as fully empowered participants in
+little to do with democratic empowerment: avoiding unnecessary                  the design process” (212), which was based on a “partnership
+work and lowering costs [16, pp.215-16]. Although cooperative                   model” (213). The design that resulted represented a synthesis of
+prototyping emerged from the same Scandinavian milieu and                       different views (219), and in fact, “often, decisions are made by
+indeed the same researchers who had issued the Scandinavian                     consensus rather than by voting or other approaches that might
+challenge, it had begun to lose its focus on the ideals embedded in             disenfranchise the minority” (220). So, although the ideal was
+the challenge.                                                                  democratic, PICTIVE often relied on consensus within meetings
+                                                                                – an important distinction, since democracy assumed competing
+5. PICTIVE AND CARD (US)                                                        interests that were sometimes hard to reconcile. (Imagine deciding
+                                                                                the results of elections or bond issues by consensus.) Appealing to
+5.1 Description                                                                 consensus is more common in management teamwork approaches
+As the “Scandinavian challenge” began to be publicized in the                   such as TQM (see [55]).
+US, many academics and researchers became interested in taking
+up the challenge. Two of the more notable results are PICTIVE                   PICTIVE was a “microscopic”2 design approach [51, p.51],
+(Plastic Interface for Collaborative Technology Initiatives through             focusing on individual screens or pages. Although a strong
+Video Exploration) and CARD (Collaborative Analysis of                          technique for supporting the development of systems, it assumed
+Requirements and Design)1, two complementary approaches                         that the overall task is correct. But Leslie Tudor found that
+developed by Michael Muller and colleagues.                                     assumption to be suspect. To complement PICTIVE with a
+                                                                                “macroscopic” approach that allowed workers to develop
+In developing PICTIVE, Muller related the Scandinavian                          workflow, Tudor et al. developed CARD [51]. Together,
+commitment to workplace democracy to US democratic ideals                       PICTIVE and CARD provided a “bifocal” approach [42; see also
+through his admittedly “glib” slogan of “no mechanization                       40] that allowed designers and workers to partner on both levels.
+without representation,” a paraphrase of the phrase from the US
+Declaration     of   Independence,    “no     taxation  without                 CARD originated as “an informal or semistructured card game
+representation” [36, p.391]. Muller wanted “to enfranchise users                that supports collaborative analysis and critique of a software
+in the design of systems that would have impact on their work-                  system by a group of people [including users, developers, and
+lives” (p.391).                                                                 designers] who have a variety of disciplines and skill sets” [51, p.
+                                                                                51]. Since then, it has been expanded to support other types of
+In contrast to the Scandinavian approach, however, Muller looked                work [34, p.35]. Like PICTIVE, CARD could be used one-on-one
+beyond unions for his representatives. He did sometimes discuss                 or in groups. Like mock-ups and cooperative prototyping, CARD
+work with unions (for instance, his team at US West discussed the               provided a common language for stakeholders.
+results of one study with telephone operators and union officers of
+                                                                                As CARD developed, it became more sophisticated, allowing a
+                                                                                layered approach that distinguished among “(1) observable,
+1
+    Although CARD is technically not a prototyping approach in the
+    sense of mock-ups and cooperative prototyping ([51] compares
+                                                                                2
+    it to the organizational toolkits of cooperative design), I include              “Microscopic” is Muller’s term. Elsewhere, I describe a
+    it here because it uses prototyping techniques and is tightly                   taxonomy under which PICTIVE would be classified as
+    connected to PICTIVE.                                                           “mesoscopic” [50].
+
+
+
+                                                                          211
+formal components, (2) skill and craft, and (3) interpretive                 Prototyping is actually a rather small component of the contextual
+description” [35, p.90]. Its outcomes included “enhanced personal            design process, just as in cooperative design (cf. [33]). First,
+and organizational communication, improved teamwork, greater                 researchers conduct short observations of work and interviews
+organizational cohesion, and stronger commitment by participants             with representative users. (The users do not elect their own
+to the success of a project in which they (and, by extension, the            representatives; researchers typically approach them individually,
+constituencies that they represent) now have shared ownership”               and sometimes they are selected by managers.) Next, the design
+(91). Tudor et al. said that in one project, “co-creation and co-            team reviews the observational notes and interviews and
+evaluation of new task flows, and shared responsibility for the              constructs several models of the work. These models are
+resulting design, helped to reestablish trust in what had been a             consolidated so that designers can get a macroscopic view of the
+tense political situation” [51, p.52].                                       work (see [50]). Based on these models, the design team creates a
+                                                                             User Environment Description (UED), an outline of the new
+5.2 Comparison to the Scandinavian                                           system to design. The UED leads to a series of low-fidelity
+Challenge                                                                    prototypes.
+Muller listed three goals for PICTIVE: to improve design by                  Initially, these prototypes were used in a confirmatory rather than
+leveraging workers’ expertise; to improve the flow of the software           a cooperative fashion, in usability tests ([53, 54]; Beyer &
+engineering process by bringing in representative workers as co-             Holtzblatt [5] later reject this approach). Later, prototypes were
+owners of the design; and to empower workers to contribute to the            used in “prototyping interviews,” in which “the interviewer
+process [38, 39]. These three motives of quality, commitment, and            narrows the focus [of the investigation] considerably to find out
+democracy were seen as convergent and mutually beneficial to                 what problems might exist with a storyboard or prototype” [4,
+employers and workers [39] – an interesting contrast to the                  p.412]. Finally, prototyping was adapted as an integral part of the
+Collective Resources Approach, in which researchers saw a                    contextual design process, even meriting its own chapter in Beyer
+fundamental, irreconcilable contradiction between capital’s and              and Holtzblatt’s book (see also [29, 46, 47]).
+labor’s interests, and explicitly rejected the notion that the two           In [5], contextual design used prototypes to supply a common
+could be balanced [7, p.84]. Unlike UTOPIAn mock-ups, but like               design language between design teams and customers. The
+cooperative prototyping, PICTIVE saw functional empowerment                  common language was needed because customers cannot
+as leading to (or at least convergent with) democratic                       understand the design team’s specialized notations (p.369).
+empowerment. Methodologically, PICTIVE represented a                         Contextual design reinforced a division of labor between the
+continuation of the shift in assumptions away from Marxist                   design team (who constructed an overall picture of the work using
+capital-labor conflict (the perpetual, irreconcilable struggle               specialized notations) and the users (who understood their own
+between higher profit margins and industrial democracy) and                  work at an individual level, tacitly and unreflectively).
+towards US-style capitalism (in which the interests of labor and
+capital are seen to converge, and conflicts between them are seen            Beyer and Holtzblatt have argued that “customers aren’t
+as the failure of either side to find common ground). The                    technologists – they don’t know the range of possibilities that
+workforce was seen as divergent and involving multiple                       technology could support. They may be either unrealistic or
+stakeholders, not divided between the two sides of capital and               excessively cautious as a result. And they don’t know what it
+labor. And PICTIVE entailed bringing representatives of these                takes to make a design hang together. And why should they, after
+different stakeholders together to explore each others’                      all? It’s their job to do their job, not to design systems” (p.371).
+perspectives [38, p.228].                                                    Workers were shut out of the design process itself, although they
+                                                                             were encouraged to give suggestions.
+To that end, CARD’s goals included providing an effective means
+of communication among stakeholders, leading to a shared                     6.2 Comparison to the Scandinavian
+responsibility for redesigned task flows and products based on               Challenge
+them [51]. It represented a continuation of the exploration of tacit         Although Beyer and Holtzblatt presented prototyping as one
+knowledge that originated with UTOPIAn mockups and became                    technique for drawing the worker into the design process, and
+more central with cooperative prototyping: an understanding of               they even said that it involves making the worker a “co-designer,”
+what is done in work, but also why it is done [35]. The results are          they described prototyping as an avenue to functional
+posters that could be viewed by all stakeholders, including                  empowerment. Indeed, the issue of democratic empowerment has
+management. Again, CARD represented a shift away from overtly                not even made an appearance in contextual design literature as far
+political democratic empowerment and toward functional                       as I can tell, even though it figured so prominently in the literature
+empowerment.                                                                 that Beyer and Holtzblatt cited when describing their prototyping
+                                                                             approach. The issue of workplace democracy simply ceased to be
+6. CONTEXTUAL DESIGN (US)                                                    an issue of concern.
+6.1 Description                                                              But contextual designers continued to use some of the language
+Contextual design is a well-developed set of techniques for                  of the Scandinavian approach. For instance, Beyer and Holtzblatt
+examining a workplace, gathering requirements, and developing                said that “we want to co-design the system with the users” [5,
+solutions based on those requirements. Based in usability                    p.370], but their idea of co-design was quite different from the
+engineering efforts at Digital Equipment Corporation [52],                   Scandinavian approach. They argued that prototyping was
+contextual design represents the application of ethnographic                 necessary because “no one articulates their work practice as an
+methods and quality management tools to software engineering.                ordinary thing” (p.370); the Collective Resource Approach
+                                                                             actually involved teaching workers to do just that – to critically
+
+
+
+                                                                       212
+examine their work practices, explore their tacit knowledge, and             empowerment hasn’t [3, p.98]. Later work, even from CRA
+determine how to integrate these with technology.                            firebrands such as Ehn and Kyng, has talked far less about the
+Designers were seen as best equipped to make design decisions                struggle between capital and labor and rarely invokes unions as
+and can be trusted to make them with the workers’ good in mind.              partners (e.g., [24, 33]). Kyng [33] even includes managers as
+Beyer and Holtzblatt, then, wanted to provide functional                     participants! Despite calls to revive the political agenda [7, 10],
+empowerment. Workers were empowered to be more efficient,                    that agenda seems to have taken a back seat to the development of
+more productive, more flexible – in short, to meet management’s              methods and techniques.
+goals! They were not empowered to redesign their work flow or                Why? Some link the change to the fact that despite the Marxist
+control their own tools; designers had that prerogative because              ideology of the CRA, Scandinavian unions never really bought
+only they have the training to do so.                                        into the antagonistic model that pitted capital against labor,
+In contrast, the Scandinavian approach revolved around                       preferring to see their relationship with management as
+democratic empowerment, and a major component of the                         cooperative [3, 32]. Others argue that the simple Marxist story of
+approach involved making workers into actual co-designers and                capital vs. labor, although perhaps valuable for critiquing the
+teaching them the possibilities of integrating technology into their         industrial capitalism of Marx’s time, does not take into account
+work. Workers were actually encouraged to question designers                 the multidisciplinary nature of the modern workplace with its
+who had been hired by management, since in the Scandinavian                  many competing stakeholders [7] and its blurred lines between
+approach these designers were unlikely to represent the interests            management and workers [1]. Still others attribute the shift to a
+of workers.                                                                  larger shift in Western Europe away from unions and
+                                                                             manufacturing [20]. Whatever the case, later Scandinavian work
+Contextual design’s prototyping component, indeed, could be                  tends to focus on functional rather than democratic empowerment.
+seen as the realization of the Scandinavians’ worst fears.                   That is, the most important response to the Scandinavian
+Repeatedly, the insights from prototyping were warranted in terms            challenge has been the Scandinavians’: methodologically, they
+of profits and efficiency. For instance, when Beyer and Holtzblatt           have crept ever closer to their compatriots in the US.
+remarked that prototypes could help designers to spot emergent
+work practices, they emphasized that this understanding provided
+a competitive advantage (p.375). In another example, designers
+                                                                             8. IMPLICATIONS FOR TECHNICAL
+were told to ask commercially oriented questions at the end of the           COMMUNICATORS
+prototyping session: “Does he [sic] like it? Would he buy or                 What lessons can we as technical communicators draw from this
+recommend buying it? How much would he pay for it?” (p.400).                 comparison of Scandinavian and US approaches?
+Furthermore, prototyping was framed as primarily giving insight              Technical communicators have often treated participatory design
+to the knowledgeable designers rather than the workers, who were             as a monolith – as long as users are somehow involved, it’s
+not to be distracted with actual design work. For instance, Beyer            participatory design ([11, 28, 31, 48]; see [44] for a
+and Holtzblatt said that the results of the prototyping session were         counterexample). But human-computer interaction researchers
+useful data for the designer, but not actually a co-designed                 have argued that participatory design also involves the
+product: “As long as the user’s intent is met, the UI designer is            relationship among designers and users and the manner in which
+free to think up a better mechanism” (p.400).                                the two interact [9]. In this paper, I’ve explored one participatory
+The goals of contextual design, then, matched up with what the               design technique, prototyping, and in the process I’ve
+Scandinavian approach has labeled management’s goals:                        differentiated between the assumptions of four different sets of
+efficiency, productivity, and flexibility (work intensification);            methodological assumptions for participatory design. If technical
+increased competitiveness in the marketplace (the maximization               communicators uncritically adopt a technique such as prototyping,
+of profits); and redesign with minimal interruption to work                  we may find that it does not match our exigencies or ideology.
+(separating decision-making from labor).                                     And if we adopt a range of different techniques, we may find that
+                                                                             they actually work against each other.
+7. BUT HOW HAVE THE                                                          For instance, without the ideological apparatus and social
+SCANDINAVIANS RESPONDED TO THE                                               conditions of Scandinavia in the early 1980s, UTOPIAn mockups
+                                                                             do not make much sense in the US. They require unions to drive
+SCANDINAVIAN CHALLENGE?                                                      the process, workers who have been selected by unions as
+Based on the declarations of Ehn, Kyng, and the other                        representatives, and a commitment to democratic improvement
+Scandinavians who issued the “Scandinavian challenge,” it’s easy             that works directly against employers’ interests. They presume a
+to think that the Scandinavian approach is a strong democratic               conflict between capital and labor and are meant to be weapons in
+movement that has been corrupted with US-style capitalism as its             that struggle. And they are emphatically not meant to make the
+prototyping techniques migrated to the US – that the                         workplace more efficient. These conditions in turn require long-
+Scandinavian challenge has been fumbled in transition. Indeed,               term employment, which is to say low career mobility, so that
+contextual design in particular may seem to be the confirmation of           employers and workers share a long-term commitment to each
+Bansler and Kraft’s fears that “US managers are likely to ‘cherry            other. Implementing UTOPIAn mockups in a non-unionized
+pick’ those aspects of the ‘Scandinavian model’ they find useful             workplace, one in which workers do not presume a struggle with
+for their own ends and integrate them with familiar strategies” [3,          employers, would not only be difficult but counterproductive – to
+p.103]. But it’s worth noting that the Scandinavians themselves              the interests of all involved. Imagine applying this time-
+have backed away from the challenge they issued – even though,               consuming, work-disrupting technique in conjunction with
+as Bansler and Kraft point out, their language of democratic                 contextual design, which has been adapted to the time and
+
+
+
+                                                                       213
+resource constraints of engineering in US companies [30]! The                 [13] Bødker, S., Ehn, P., Kammersgaard, J., Kyng, M. and
+UTOPIAn mock-up technique would have to be severely revised                       Sundblad, Y. A UTOPIAN Experience: On Design of
+– some would say co-opted – to work with contextual design.                       Powerful Computer-Based Tools for Skilled Graphical
+My hope is that this paper can help technical communicators to                    Workers. in Bjerknes, G., Ehn, P. and Kyng, M. eds.
+find a “best fit” prototyping technique for their current situation.              Computers and Democracy - A Scandinavian Challenge,
+But it can also help them to develop new techniques that are a                    Avebury, Aldershot, England, 1987, 251-278.
+better fit. They might examine their own ideological goals and                [14] Bødker, S., Greenbaum, J. and Kyng, M. Setting the Stage
+work situation in this light.                                                     for Design as Action. in Greenbaum, J. and Kyng, M. eds.
+                                                                                  Design at Work: Cooperative Design of Computer Systems,
+9. ACKNOWLEDGMENTS                                                                Lawrence Erlbaum Associates, Hillsdale, NJ, 1991.
+Thanks to three anonymous reviewers who commented on the                      [15] Bødker, S. and Gronbæk, K. Cooperative prototyping: Users
+abstract and the reviewer of the final manuscript.                                and designers in mutual activity. International Journal of
+                                                                                  Man-Machine Studies, 34. 453-478.
+10. REFERENCES                                                                [16] Bødker, S. and Grønbæk, K. Design in Action: From
+[1] Asaro, P.M. Transforming Society by Transforming                              Prototyping by Demonstration to Cooperative Prototyping. in
+     Technology: The Science and Politics of Participatory                        Greenbaum, J. and Kyng, M. eds. Design at Work:
+     Design. Accounting, Management, and Information                              Cooperative Design of Computer Systems, Lawrence
+     Technologies, 10 (4). 257-290.                                               Erlbaum Associates, Hillsdale, NJ, 1991, 197-218.
+[2] Bansler, J. Systems development research in Scandinavia:                  [17] Bødker, S., Grønbæk, K. and Kyng, M. Cooperative design:
+     Three theoretical schools.       Scandinavian       Journal   of             Techniques and experiences from the Scandinavian scene. in
+     Information Systems, 1. 3-20.                                                Schuler, D. and Namioka, A. eds. Participatory Design:
+[3] Bansler, J.P. and Kraft, P. Privilege and invisibility in the                 Principles and Practices, Lawrence Erlbaum Associates,
+     new work order: A reply to Kyng. Scandinavian Journal of                     Hillsdale, New Jersey, 1993, 157-175.
+     Information Systems, 6 (1). 97-106.                                      [18] Budde, R., Kautz, K., Kuhlenkamp, K. and Züllighoven, H.
+[4] Beabes, M.A. and Flanders, A. Experiences with using                          Prototyping: An approach to evolutionary                system
+     contextual inquiry to design         information.     Technical              development. Springer-Verlag, New York, 1991.
+     Communication, 42 (3). 409-420.                                          [19] Clement, A. Computing at work: Empowering action by
+[5] Beyer, H. and Holtzblatt, K. Contextual design: Defining                      "low-level" users. Communications of the ACM, 37 (1). 52-
+     customer-centered systems. Morgan Kaufmann Publishers,                       63.
+     Inc., United States of America, 1998.                                    [20] Clement, A. and Van den Besselaar, P. A retrospective look
+[6] Bjerknes, G. Shared responsibility: A field of tension. in                    at PD projects. Communications of the ACM, 36 (4). 29-39.
+     Floyd, C., Zullighoven, H., Budde, R. and Keil-Slawik, R.                [21] Ehn, P. Work-Oriented Design of Computer Artifacts.
+     eds. Software development and reality construction,                          Lawrence Erlbaum Associates, Hillsdale, NJ, 1989.
+     Springer-Verlag, New York, 1992, 295-301.
+                                                                              [22] Ehn, P. and Kyng, M. Cardboard computers: Mocking-it-up
+[7] Bjerknes, G. and Bratteteig, T. User participation and                        or hands-on the future. in Greenbaum, J. and Kyng, M. eds.
+     democracy: A discussion of Scandinavian research on system                   Design at Work: Cooperative Design of Computer Systems,
+     development. Scandinavian Journal of Information Systems,                    Lawrence Erlbaum Associates, Hillsdale, NJ, 1991.
+     7 (1). 73-98.
+                                                                              [23] Ehn, P. and Kyng, M. The Collective Resource Approach to
+[8] Bjerknes, G., Ehn, P. and Kyng, M. (eds.). Computers and                      Systems Design. in Bjerknes, G., Ehn, P. and Kyng, M. eds.
+     Democracy - A Scandinavian             Challenge.     Avebury,               Computers and Democracy: A Scandinavian Challenge,
+     Aldershot, England, 1987.                                                    Gower, Brookfield, VT, 1987, 17-58.
+[9] Blomberg, J. and Henderson, A., Reflections on Participatory              [24] Ehn, P., Meggerle, T., Steen, O. and Svedemar, M. What
+     Design: Lessons from the Trillium Experience. in CHI '90                     kind of car is this sales support system? On styles, artifacts,
+     Human Factors in Computing Systems, (Seattle, Washington,                    and quality-in-use. in Kyng, M. and Mathiassen, L. eds.
+     1990), ACM, 353-359.                                                         Computers and Design in Context, MIT Press, Cambridge,
+[10] Blomberg, J., Suchman, L. and Trigg, R. Back to work:                        MA, 1997, 111-144.
+     Renewing old agendas for cooperative design. in Kyng, M.                 [25] Emspak, F. Workers, unions, and new technology. in
+     and Mathiassen, L. eds. Computers and Design in Context,                     Schuler, D. and Namioka, A. eds. Participatory Design:
+     MIT Press, Cambridge, MA, 1997, 267-288.                                     Principles and Practices, Lawrence Erlbaum Associates,
+[11] Blythe, S. Designing online courses: User-centered practices.                Hillsdale, New Jersey, 1993, 13-26.
+     Computers and Composition, 18 (4). 329-346.                              [26] Greenbaum, J. A design of one's own: Towards Participatory
+[12] Bødker, S. Through the Interface – a Human Activity                          Design in the United States. in Schuler, D. and Namioka, A.
+     Approach to User Interface Design. Lawrence Erlbaum                          eds. Participatory Design: Principles and Practices,
+     Associates, Hillsdale, NJ, 1991.                                             Lawrence Erlbaum Associates, Hillsdale, New Jersey, 1993,
+                                                                                  27-37.
+
+
+
+                                                                        214
+[27] Greenbaum, J. and Kyng, M. (eds.). Design at Work:                        Carroll, J. ed. Scenario-based design for human-computer
+    Cooperative Design of Computer Systems. Lawrence                           interaction, Wiley, New York, 1995.
+    Erlbaum Associates, Hillsdale, NJ, 1991.                               [43] Muller, M.J., Wildman, D.M. and White, E.A. Taxonomy of
+[28] Henry, P. User-centered information design for improved                   PD practices: A brief practicioner's guide. Communications
+    software usability. Artech House, Boston, 1998.                            of the ACM, 36 (4). 26-27.
+[29] Holtzblatt, K. and Beyer, H. Contextual design: Principles            [44] Novick, D.G., Testing documentation with "low-tech"
+    and practices. in Wixon, D. and Ramey, J. eds. Field                       simulation. in SIGDOC 2000, (Cambridge, MA, 2000),
+    methods casebook for software design, John Wiley & Sons,                   ACM, 55-68.
+    New York, 1996, 301-334.                                               [45] Nygaard, K. How many choices do we make? How many are
+[30] Holtzblatt, K. and Beyer, H. Making customer-centered                     difficult? in Floyd, C., Zullighoven, H., Budde, R. and Keil-
+    design work for teams. Communications of the ACM, 36                       Slawik, R. eds. Software development and reality
+    (10). 93-103.                                                              construction, Springer-Verlag, New York, 1992, 52-59.
+[31] Johnson, R.R. User-centered technology: A rhetorical theory           [46] Page, S.R. User-centered design in a commercial software
+    for computers and other mundane artifacts. SUNY Press,                     company. in Wixon, D. and Ramey, J. eds. Field methods
+    New York, 1998.                                                            casebook for software design, John Wiley & Sons, New
+                                                                               York, 1996, 197-213.
+[32] Kraft, P. and Bansler, J.P. Privilege and invisibility in the
+    new work order: A reply to Kyng. Scandinavian Journal of               [47] Rantzer, M. The Delta method -- A way to introduce
+    Information Systems, 6 (1). 97-106.                                        usability. in Wixon, D. and Ramey, J. eds. Field methods
+                                                                               casebook for software design, John Wiley & Sons, New
+[33] Kyng, M., Scandinavian design: Users in product                           York, 1996, 91-112.
+    development. in Human Factors in Computing Systems,
+    (Boston, Massachusetts, 1994), ACM, 3-9.                               [48] Salvo, M.J. Ethics of engagement: User-centered design and
+                                                                               rhetorical   methodology.      Technical     Communication
+[34] Muller, M.J. Invisible work of telephone operators: An                    Quarterly, 10 (3). 273-290.
+    ethnocritical analysis. Computer Supported Cooperative
+    Work, 8. 31-61.                                                        [49] Salzman, H. and Rosenthal, S.R. Software by design:
+                                                                               Shaping technology and the workplace. Oxford University
+[35] Muller,   M.J., Layered participatory analysis: New
+                                                                               Press, New York, 1994.
+    developments in the CARD technique. in SIGCHI '01,
+    (Seattle, WA, 2001), ACM, 90-97.                                       [50] Spinuzzi, C. Toward integrating our research scope: A
+                                                                               sociocultural field methodology. Journal of Business and
+[36] Muller, M.J., No Mechanization without Representation:                    Technical Communication, 16 (1). 3-32.
+    Who Participates in Participatory Design of Large Software
+    Products? in CHI'91, (New Orleans, LA, 1991), ACM, 391.                [51] Tudor, L.G., Muller, M.J. and Dayton, J.T., A C.A.R.D.
+                                                                               Game for Participatory Task Analisys and Redesign:
+[37] Muller, M.J., Panel: Participatory Design in Britain and                  Macroscopic Complement to PICTIVE. in INTERCHI'93,
+    North America: Responses to the "Scandinavian Challenge.".
+                                                                               (Amsterdam, 1993).
+    in CHI'91, (New Orleans, LA, 1991), ACM, 389-392.
+                                                                           [52] Whiteside, J., Bennett, J. and Holtzblatt, K. Usability
+[38] Muller, M.J., PICTIVE -- An Exploration in Participatory                  Engineering: Our experience and evolution. in Helander, M.
+    Design. in CHI'91, (New Orleans, LA, 1991), ACM, 225-
+                                                                               ed. Handbook of Human-Computer Interaction, Elsevier,
+    231.
+                                                                               Amsterdam, 1988, 791-817.
+[39] Muller, M.J. PICTIVE: Democratizing the Dynamics of the               [53] Wixon, D. and Jones, S. Usability for fun and profit: A case
+    Design Session. in Namioka, A. and Schuler, D. eds.
+                                                                               study of the design of the DEC Rally Version 2. in Rudisill,
+    Participatory Design: Principles and Practices, Lawrence
+                                                                               M., Lewis, C., Polson, P.G. and McKay, T.D. eds. Human-
+    Erlbaum Associates, Hillsdale, NJ, 1993.
+                                                                               computer interface design: Success stories, emerging
+[40] Muller, M.J. and Carr, R. Using the CARD and PICTIVE                      methods, and real-world context, Morgan Kaufmann, San
+    participatory design methods for collaborative analysis. in                Francisco, California, 1996, 3-35.
+    Wixon, D. and Ramey, J. eds. Field methods casebook for
+                                                                           [54] Wixon, D.R., Pietras, C.M., Huntwork, P.K. and Muzzey,
+    software design, John Wiley & Sons, New York, 1996, 17-
+                                                                               D.W. Changing the rules: A pragmatic approach to product
+    34.
+                                                                               development. in Wixon, D. and Ramey, J. eds. Field methods
+[41] Muller, M.J. and Kuhn, S. Introduction to special issue on                casebook for software design, John Wiley & Sons, New
+    participatory design. Communications of the ACM, 36 (4).                   York, 1996, 57-89.
+    24-28.
+                                                                           [55] Zachry, M. Management discourse and popular narratives:
+[42] Muller, M.J., Tudor, L.G., Wildman, D.M., White, E.A.,                    The myriad plots of Total Quality Management. in Perkins,
+    Root, R.W., Dayton, T., Carr, R., Diekmann, B. and Dykstra-                J.M. and Blyler, N. eds. Narrative and professional
+    Erickson, E.A. Bifocal tools for scenarios and                             communication, Ablex, Stamford, Connecticut, 1999, 107-
+    representations in participatory activities with users. in                 120.
+
+
+
+
+                                                                     215
+

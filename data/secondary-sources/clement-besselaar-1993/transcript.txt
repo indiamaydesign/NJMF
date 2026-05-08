@@ -1,0 +1,596 @@
+                                        Andrew Clement and Peter Van den Besselaar
+
+             A RETROSPECTIVE    LOOK                                                                                              AT
+                    PD PROJECTS
+                                  While modern methods for information                                system
+                              development            generally accept that users should be
+                          i n v o l v e d in s o m e w a y [15], t h e f o r m o f t h e i n v o l v e m e n t
+                                 differs considerably. Mostly, users are viewed as
+                               relatively passive sources of information,                                and the
+                            i n v o l v e m e n t is r e g a r d e d a s " f u n c t i o n a l , " i n t h e s e n s e
+                             that it should yield better system requirements and
+                                                 increased acceptance by users.
+
+    A different tradition in systems               Work). T h e r e were several reasons                    rent state o f the project, factors that
+d e v e l o p m e n t stresses a more active       for this. WG9.1 has played an impor-                     contributed to the continuation or
+participation by users. T h e focus of             tant role in bringing together re-                       decline o f the project, most/least suc-
+participatory design (PD) is not only              searchers in this field, particularly to                 cessful aspects, as well as more gen-
+the i m p r o v e m e n t o f the information      the Systems Design For, With, and                        eral reflections on their PD experi-
+system, but also the e m p o w e r m e n t o f     By Users Conference held in 1982                         ences. F r o m the 15 responses
+workers so they can codetermine the                [4]. Several subsequent conferences                      received, we selected the 10 most
+d e v e l o p m e n t o f the information sys-     also provided forums where partici-                      substantive reports. These we list in
+tem and o f their workplace. Al-                   patory initiatives have been r e p o r t e d             Table 1 and summarize in the next
+though some researchers in Scandi-                 [7, 9, 20, 21, 23, 24]. These projects                   section. T h e s e 10 reports cover 16
+navia and other E u r o p e a n countries          span the 1970s and 1980s and reflect                     different PD projects. For conven-
+have had long experience with these                many o f the most p r o m i n e n t experi-              ience and clarity, we identify projects
+approaches to participatory informa-               ments in PD. Altogether reports                          by principal a u t h o r in each case, rec-
+tion systems design, it is only in the             from 10 c o u n t r i e s - - A u s t r i a , Austra-    ognizing that the correspondence
+last few years that PD has received                lia, Canada, Denmark, Finland, Ger-                      between authors, researchers, pa-
+b r o a d e r attention. While the settings        many (formerly East and West), Italy,                    pers, and projects is more complex
+in which participatory innovations                 Norway, Sweden, and the U K - - w e r e                  than would a p p e a r from this. Quota-
+first e m e r g e d differ in important            presented.                                               tions or comments based on ques-
+ways from settings in other countries                  T h e definition o f PD we used to                   tionnaire responses we denote by
+[12], many o f the fundamental issues              identify the initial sample o f projects                 placing [QR] after the author's name.
+are c o m m o n across settings.                   was intentionally broad. A promi-                        We further sent a d r a f t o f this article
+    This article contributes to such a             nent feature o f the projects had to be                  to each o f these individuals and drew
+historically based u n d e r s t a n d i n g o f   the intention to involve users as cen-                   from their written comments (indi-
+PD by offering a retrospective look at             tral actors in system d e v e l o p m e n t              cated with a [DC]) in making revi-
+PD projects conducted since the                    activities. We only studied PD o f soft-                 sions. 1
+ 1970s. While there are by now many                ware systems, and not other projects                         O u r m e t h o d o f constructing the
+reports on PD projects, as well as                 launched to increase workers' influ-                     sample o f projects has implications
+prescriptive articles that often draw              ence on technological change; some                       for interpreting the results and
+directly on just a few projects for il-            of those other projects are discussed                    drawing conclusions. Since h u n d r e d s
+lustration, there are no systematic                in [18].                                                 o f PD projects have been conducted
+surveys o f these experiences as a                     We thus identified 25 papers re-                     in the past two decades and largely
+whole. To address this shortcoming                  porting on PD projects. All of these                    in non-English-speaking countries,
+we revisit a range o f projects, to as-             accounts o f PD experiences essen-                      those included in this study do not o f
+sess how they h a n d l e d key PD issues           tially r e p r e s e n t e d "snapshots" and do         course form a statistically representa-
+and to identify c o m m o n themes. O u r           not adequately reflect their nature as                  tive sample. Nevertheless, they do
+goal is to draw lessons that may guide              ongoing processes. T h e longitudinal                   represent a good sample o f studies
+further research and development o f                aspect is missing, and since we                         r e p o r t e d at the I F I P conferences a n d
+PD.                                                 wanted not only to review the proj-                      may therefore be conceived as lead-
+                                                    ects as reported, but also to bring the                 ing experiments in the d e v e l o p m e n t
+Method                                              experiences up to date, we wrote to                     o f PD.
+As the basis o f this study, we chose               an author o f each of the 25 reports                     aWealso include some valuablecomments from
+the PD projects that were r e p o r t e d at        asking them to complete a short,                         two researchers, G. Bradley and A. Kj~er,who
+                                                                                                             responded to our initial questionnaire, but
+conferences sponsored by I F I P                    o p e n - e n d e d questionnaire. We were               whose projectsdid not in the end fit our criteria
+Working G r o u p 9.1 (Computers and                interested in learning about the cur-                    for PD projects.
+
+
+
+                                                                                                    ¢ONNUMICA'rlOMS    OPTHm   ACMJune 1993/Vol.36,No.4 2 9
+Project Overviews                            of information.                           tion and confrontation, and in learn-
+The earliest of the projects were con-          Probably the best known PD proj-       ing during the development of infor-
+ducted by the Norwegian Computing            ect, U T O P I A , was led by Susanne     mation systems.
+Centre (NCC) in the 1970s. Vidal             B6dker, Pelle Ehn, Morten Kyng,               Marja Vehvil~iinen conducted an
+Keul worked with three unions to             and several other researchers from        investigation of "study circles" in the
+provide them with knowledge about            institutions in Sweden and Denmark.       offices of a large Finnish ministry
+how the use of new information tech-         T h e project started as a response to    involving weekly meetings with a
+nology could affect their working            the problems encountered in earlier       group of women office workers. T h e
+conditions and how its introduction          Scandinavian projects, such as the        main goal in the study circles was to
+can affect their interests. An addi-         NCC projects, DDE, and Demos.             build up the knowledge and practice
+tional aim was to encourage unions           The researchers in these projects had     the skills the office women need to
+to develop and implement their own           found that existing technologies set      develop their work and computer
+technology control activities and pol-       limits on the possibilities for workers   systems supporting it. T h e members
+icies. Karl Thoresen, also at the            to influence technological and orga-      should be able to explain what they
+NCC, carried on this work through-           nizational changes in the workplace.      really need and what kind of infor-
+out the 1980s, with a focus on sup-          As a consequence they formulated          mation systems would be most use-
+porting local work groups' design            the need for an offensive and long-        ful.
+systems attuned to specific local situ-      term technology policy for trade un-          T h e Self-Managed Office Auto-
+ations. The: early projects were con-        ions [8]. U T O P I A , set up as a re-   mation Project (SMOAP) was con-
+ducted in manufacturing (metals and          search and development project, was       ducted at a large Canadian university
+chemicals) and in office work. T h e         a first attempt to influence the actual   in late 1987 and early 1988. It was
+later projects were in public adminis-       development of (graphic) technol-         initiated jointly by a faculty computer
+tration and in health care. The early        ogy. Working closely with unions for      scientist, Andrew Clement, and the
+projects, especially the Norwegian           graphics workers, the overall objec-      chair o f the staff union's Technology
+Iron and Metal Workers Project, in-          tive was to "contribute to the devel-     and Job Evaluation committee, Ann
+spired many other Scandinavian PD            opment of powerful skill-enhancing        Zelechow, in response to chronic dif-
+projects, notably the Swedish Demos          tools for graphics workers" [3, p.        ficulties experienced by support staff
+project (started in 1975) and the            254]. Stress was placed on the quality     in dealing with microcomputers, pri-
+Danish DDE project.                          of the work and product, not only in       marily for word processing. T h e aim
+    Kensing reports on one of three          the design of the technology, but also    of the project was to assist academic
+cases carried out within the Develop-        in training, work organization, and        department secretaries in exercising
+ment, Democracy, and EDP (DDE,               h u m a n skills.                          greater control in the computeriza-
+DUE, in Danish) research project.                Peter Mambrey and his colleagues       tion of their work.
+This was a large-scale undertaking           at GMD, a large German research               T h e H u m a n Centred Office Sys-
+conducted in cooperation with the            institution, conducted PD research in      tems Project (HCOSP), headed by
+Danish trade unions in the late 1970s        the mid-1980s. One PD project as-          Eileen Green, J e n n y Owen, and Den
+through 1981. Its stated objectives          sisted users in a small school to de-      Pain, involved the close collaboration
+were to increase trade union influ-          velop their own local information          of managers, clerks, and systems spe-
+ence over the introduction of infor-         system. In a second PD project, in a       cialists at a major UK city library.
+mation teclhnology and to develop            more rigidly bureaucratic setting of       From 1987 to 1989, the researchers
+research and education in the field of       local government, a system for pro-        acted as facilitators for a series of
+ system work. The case discussed here        viding information of interest to citi-    study circles, which helped support
+involved a large Danish multina-             zens was developed. A major focus in       the participation o f library assistants
+ tional manufacturing enterprise.            each case was for workers to investi-      in a more formal, multiparty Design
+    Claudio Ciborra lead a PD project        gate which particular tasks should be      Team. T h e central goal was to assist
+ in two small towns in southern Italy         automated.                                the 395 clerical workers in gaining an
+ where the aim was to de~/elop an in-            Gro Bjerknes and Tone Bratteteig,      effective voice in the specification of
+ formation system for local socio-           researchers at the University of Oslo,     a new integrated library system pack-
+ economic information to be used in           initiated the Florence Project in a       age, based on a careful analysis of
+ planning activities by the local au-         Norwegian hospital. T h e aim of the      existing work processes and skills.
+ thorities. Because the local commu-          project was twofold: first, to develop       Siv Friis describes two research
+ nity is a loosely coupled network,           an information system for providing      .projects carried out recently in Swe-
+ much of the information needed was           daily information about patients          den, in which she attempts to evalu-
+ not known by the local authorities           while decreasing the paperwork in-        ate the use of the PROTEVS (PRO-
+ but owned by other actors who were           volved, and second, researchers tried     Totyping for EVolutionary System
+ only willing to provide information          to develop instruments that nurses        design) PD methodology. The first
+ for the system if they saw advantages        could use when dealing with comput-       case involves the application of the
+ for themselves. Within the project,          ers. Techniques and tools were eval-      methodology in a local government
+ participation was used as a tool to          uated in terms of the role they could     administration setting. T h e second
+ negotiate contracts on the provision         play in communication, in coopera-        case is in a pharmaceutical manufac-
+
+
+
+30   June 1993/Vol.36, N0.4COMMUNICATIOllSOFTHEACM
+Table 1. PD Projects
+
+
+
+
+Table 2. I n g r e d i e n t s in PD Projects
+
+
+
+
+ Legend:
+ 1) NCC 2) DDE 3) Local Authorities 4) UTOPIA 5) Government and School Information System 6) Florence 7) Study Circle 8) SMOAP 9)
+ HCOSP 10) PROTEVS
+
+
+ turing company. A principal focus of           tion that the other projects also,                    for alternative (technical and/or or-
+ the research was to investigate the            more implicitly, subscribed to: "The                  ganizational) arrangements? Table 2
+ potential o f PD to affect the relation-       employees must have access to rele-                   shows which o f these five ingredients
+ ship between users and systems de-             vant information; they must have the                  was a p r o m i n e n t issue in the projects.
+ velopers.                                      possibility for taking an i n d e p e n d e n t       Participation manifested itself in a
+                                                position on the problems, and they                    variety o f ways: the creation of tech-
+ General P a t t e r n s and Analysis           must in some way participate in the                   nology assessment criteria and
+ While these reports share a c o m m o n        process o f decision making" [4, p.                   guidelines (Kensing, Keul), creation
+ theme, they are as striking for their          223].                                                 o f new organizational forms includ-
+ diversity as their commonality. T h e y           Two more ingredients were im-                      ing s u p p o r t infrastructure (Clement,
+ defy easy categorization in terms o f          portant in the various PD projects.                   Green, Vehviltiinen), the design o f
+ industrial sector, methods used, or            One is the availability o f a p p r o p r i a t e     specific c o m p u t e r systems (B6dker,
+ scope o f action. Kensing provides             participatory d e v e l o p m e n t methods.          Bjerknes, Mambrey), and the devel-
+ perhaps the clearest formulation of            T h e other is organizational or tech-                o p m e n t of participatory techniques
+ the basic requirements for participa-          nical flexibility--i.e., is there room                (B6dker, Friis).
+
+
+
+                                                                                             C O M M U N I C A T I O N S O S V N I A C M June 1993/Vo|.36, No.4 3 1
+    Within this overall diversity, the                                     velopment began with union initia-                health while providing advice on how
+projects do share some common                                              tives and that many of the projects               to organize for finding local solu-
+characteristics. In almost every case                                      were conducted in countries with                  tions. T h o r e s e n [DC] notes that this
+researchers provided the initiative                                        high rates o f unionization and code-             focus on frameworks, not detailed
+for participatory approaches, and                                          termination legislation, it is not sur-           prescriptions "reflects the national
+the aim was to s u p p o r t a specific                                    prising that unions are very much in              work life tradition where local auton-
+g r o u p o f participants, not develop a                                  evidence? Keul [17], in reviewing                 omy and problem solving are highly
+product for wider distribution. T h e                                      three Norwegian cases, remarks on                 valued." She further observes that
+resulting projects were generally                                          the need to g r o u n d the work firmly           participation can function suffi-
+small-scale and isolated from other                                        at the local level for participation in           ciently smoothly t h r o u g h the local
+levels o f the host and sponsoring                                         technology assessment projects to                 Work Environment committees and
+organization. Only two projects,                                           have a reasonable hope o f success.               that unions sometimes r e g a r d it un-
+U T O P I A and a later NCC project,                                       Similarly, Kj~er [QR] observes the                necessary to involve themselves di-
+were intended to develop a market-                                         need for the project to be "deeply                rectly.
+able product.                                                              rooted in local activities." T h e                    T h e general lack o f c o m m i t m e n t
+    T h e r e appears to be a general shift                                U T O P I A project cooperated closely            o f central unions and the variable
+in orientation o f PD projects over the                                    with both local and central bodies in             involvement o f the local unions sug-
+decade from which these reports are                                        the Nordic Graphic Workers Union,                 gest the strong orientation o f the
+drawn. As Kensing [QR] notes,                                              but partly as a result, was then not              early PD project toward the labor
+"While the main focus in the early                                         able to work with the journalists                 m o v e m e n t is at least partly the result
+work was on developing the qualifi-                                        union. W h e r e present, the local               o f the ideological position o f the re-
+cations o f workers~trade unionists for                                    union provided support, occasionally              searchers and some local union offi-
+the p u r p o s e o f democratization o f                                  resources, and in one case mobilized              cials involved [18]. Kensing, for ex-
+working life, and to some extent also                                      a strike.                                         ample,         reports      "differences in
+on developing alternative technolo-                                            However, the importance and role              political perspectives" with the cen-
+gies from the workers' perspective,                                        o f unions are not always clear. Kens-            tral unions [QR].
+lately the :main focus has been on                                         ing [QR] remarks on the lack o f in-                  T h e r e are some signs that this
+methods for PD in an organizational                                        terest shown by the central union                 "Scandinavian model" o f user and
+setting involving users, systems de-                                       office in the results o f his work with a         union involvement in technical
+signers and[ management."                                                  local branch o f the union. " T h e proj-         change is becoming weakened. As
+    In part t]his change may be related                                    ect was a n c h o r e d to the local levels o f   Bradley [QR] notes, d u e to recent
+to the industrial sectors in which the                                     the trade unions, and we never really             political changes in Sweden, the ap-
+projects took place. T h e list o f proj-                                  succeeded in getting a trustful rela-             proach that developed d u r i n g the
+ects shows a shift from PD in manu-                                        tion to the central levels o f the un-            long-term domination o f the social
+facturing industry in the 1970s and                                        ions." T h o r e s e n [QR] notes, as one o f     democrats is now u n d e r very inten-
+early 1980s to PD in offices and ser-                                      the least successful aspects o f h e r            sive debate. This is manifest in part
+vice industries in the late 1980s. In                                      projects, the "difficulties in engaging           by the increasing role o f manage-
+the earlier projects, the emphasis was                                     the unions in practical work . . .                ment. She sees signs today that con-
+on m a l e - d o m i n a t e d crafts in union-                            [They generally p r e f e r r e d ] to take       cern about the psychosocial work
+ized environments. This stands in                                          part in the steering committee only."             environment, which was primarily
+sharp contrast to the later projects,                                      Green also mentioned the ambiva-                  initiated by trade unions and their
+which focus on settings in which                                           lent and passive a p p r o a c h of the           central federations, is "now driven
+women workers and traditionally                                            union to the project, mainly because              from the employers' side and more-
+female occupations dominate. As a                                          it did not fit with their "traditional"           ow~r in a m o r e decentralized way"
+consequence, in the later PD proj-                                         way o f representing workers' inter-               [QR]. This appears to be part of a
+ects, m o r e attention is paid to g e n d e r                             ests.                                             growing trend that likely reflects sig-
+issues than to union issues. This                                              T h e role that the codetermination            nificant ideological shifts in Western
+growth o f a g e n d e r dimension is re-                                  legislation plays in PD is an interest-           E u r o p e generally.
+flected in tlhe n u m b e r o f female re-                                 ing one. Created as an enabling                       A n o t h e r salient aspect o f the set-
+searchers in o u r sample, which is                                        mechanism, it is not viewed as any-               ting o f a project is the availability and
+significantly higher than for infor-                                       thing m o r e than a b r o a d framework          control o f r e s o u r c e s - - m o n e y , space,
+mation system (IS) d e v e l o p m e n t as a                              within which local strategies have to             time, and equipment. As Mambrey
+whole. T h e last five projects all had                                    be devised to address the local situa-             notes, a critical objective is to over-
+women as principal coresearchers.                                          tion. T h e Norwegian Work Environ-               come the "asymmetric distribution o f
+                                                                           ment Act (1977), in particular, is de-            resources" as part o f the attempt to
+Setting                                                                    signed to function in this way and                create the necessary "room for
+An i m p o r t a n t part o f a project set-                               provides participatory rights to all              manoeuvre."            Funding           generally
+ting is the industrial relations context                                   employees ("users"), not only union-              came with the researchers. Friis [QR]
+in which it operates. Given that par-                                      ized ones. It identifies concerns in              describes how technology was avail-
+ticipatory approaches to systems de-                                       the area o f psychological/social                 able for use but only for the d u r a t i o n
+
+
+
+
+3~   June 1993/Vol.36,N O . 4 C O M M U N I I C A T I O N B O I n T N I E A C M
+                                                                              r~D
+
+
+o f the project, after which it was re-                   ory building." This constant j u g g l i n g           experiences, and develop mutually
+moved from the user site. This re-                        o f disparate roles puts unusual bur-                  supportive relationships away from
+sulted in the elimination o f prototyp-                   dens on researchers, especially in                     the pressures o f daily work, this or-
+ing from the techniques available to                      light o f conventional research norms.                 ganizational form is seen as particu-
+the users. T h e time that was available                  However, at this stage in the devel-                   larly suitable for encouraging the
+for users to participate was also vari-                   o p m e n t o f PD, it is likely that action           active participation o f women in low-
+able: T h e SMOAP project was able to                     research will remain the most fruitful                 status positions. Vehvil~iinen used
+provide funds to enable participants                      a p p r o a c h to its u n d e r s t a n d i n g and   study circles to help 10 office s u p p o r t
+to hire t e m p o r a r y staff to do their               furtherance.                                           staff who met regularly to learn from
+work while they engaged in the Anal-                          Even within a framework o f action                 the researcher and one a n o t h e r
+ysis g r o u p meetings and other proj-                   research, there is o f course no guar-                 about c o m p u t e r technology and how
+ect activities. In contrast, the partici-                 antee that the desired participation                   to overcome the c o m m o n problems
+pants in the Florence, Study Circles,                     process will occur. Somewhat ironi-                    they faced. T h e SMOAP project used
+and HCOSP projects were still re-                         cally, part of the difficulty stems                    a similar approach, but with a rotat-
+sponsible for their regular duties, al-                   from the key role played by the re-                    ing set o f representatives from six
+though m a n a g e m e n t did agree to                   searcher. Every project was led by                     secretarial groups involving 25 par-
+allow them to participate d u r i n g                     one o r more o f the researchers, and                  ticipants in all. HCOSP researchers
+working hours.                                            even in the cases where this leader-                   also facilitated a series of small, all-
+                                                          ship role was shared jointly with a                    women study circles, each consisting
+Process                                                   participant from the user commu-                       o f six to eight library assistants.
+All projects a d o p t e d an "action re-                 nity, it was a challenge to overcome                   These study circles enabled several
+search" a p p r o a c h [14, 26]. This was                the usual division of labor and to                     of them to become active members o f
+done in part to address two of the                        shift initiative to users. Friis r e p o r t e d       the Design Team and its subcommit-
+main barriers to effective participa-                     instances o f the researchers, who also                tees, in which people of different sta-
+tion in d e s i g n - - p o o r access to rele-           acted as technical experts for user                    tus and specialties decided on such
+vant information and a lack o f ap-                       prototyping, lapsing into stereotypi-                  issues as systems specifications, j o b
+preciation          for      the     knowledge            cal system developers' roles. She                      design, health and safety, and train-
+employees already had about their                         remarks that "it seemed to be extra                    ing.
+own work. As Kensing notes: "It is a                      difficult to let go o f the reins, and                     In the Norwegian cases r e p o r t e d
+widespread opinion a m o n g workers                      leave the d e v e l o p m e n t work to the             by Keul [17] and Mambrey's [19]
+that they themselves know nothing                         'coresearchers' (the users)" [20, p.                    G e r m a n School Administration proj-
+about technology, and that the neces-                     297). This reflects d e e p - r o o t e d pat-          ect, researchers set u p o p e n forums
+sary information must be obtained                         terns o f behavior on the part o f both                 to facilitate interaction. Steering
+from management. This paralyzes                           systems developers and users. One                       committees were also established in
+the workers as far as actions are con-                    user in h e r study expressed the di-                   several cases to handle liaison tasks
+c e r n e d . . . [It] is at least as i m p o r t a n t   lemma o f expert-led participation                      and conflict resolution. Generally,
+to collect and p r e p a r e the knowledge                with the following remark: "But you                     the reports suggest that participation
+of the workers, a knowledge they                           don't always listen to u s - - y o u do                was an intermittent rather than a
+have obtained t h r o u g h their jobs" [4,                what you think is right for us and the                 continuous process: most of the
+p. 232].                                                   project. And, you are the one who                      groups met once every week or two,
+    Unlike conventional research,                          knows; you are the expert; so who                      d u r i n g regular working hours, in or
+which is directed primarily at pro-                        are we to dispute your decisions" [20,                 near the users' workplace. Occasion-
+ducing results o f interest to those                       p. 297). Bjerknes and Kensing were                     ally teams m a d e visits to other work-
+beyond the immediate research site,                        also concerned about the "passivity"                   sites and held seminars.
+an essential goal o f action research is                   o f user participants and their exces-                     Techniques employed by re-
+to achieve practical or political im-                      sive d e p e n d e n c e on researchers. As            searchers were similarly varied: soft-
+provements in the participants' lives                      Kensing [QR] observed, "Participa-                     ware prototyping, organizational
+(e.g., less routine work, greater au-                      tion does not mean 'holding hands'                     prototyping, and other forms o f
+tonomy, more effective tools). T h e                       all the time."                                         practical envisionment; diaries; and
+researcher becomes directly involved                           T h e projects employed a variety of               work analysis. However, several re-
+in the ongoing work and feeds re-                          organizational forms to create a                       searchers observed that it was not the
+ sults back to the participants. Ac-                       framework for user participation.                      particular methods and techniques
+cording to T h o r e s e n [DC], an impor-                 T h e basic form was the working                       that were decisive, but a strong politi-
+ tant characteristic of action research                    group, consisting o f researchers and                  cal focus on participation, communi-
+ is, "the alternation between practical                    user representatives. Several projects                 cation, and learning. Mambrey noted
+ work in the field to s u p p o r t the de-                used study circles, a variant on the                   that while a wide range o f methods
+ sired changes, and systematic data                        working group, in which participants                   were suitable for participation, what
+collection and analysis o f the practi-                    come together on a voluntary basis to                  was critical to their successful appli-
+ cal work with the aims o f improving                      discuss c o m m o n concerns. In being                 cation was effective animation.
+ the action and contribut(ing) to the-                     able to set their own agenda, share                        A n o t h e r feature o f these projects
+
+
+
+                                                                                                          ¢OMMUNII~ATIOH|OliTHIIACMJune 1993/Vol.36,No.'~ ~
+                                                                                            r-at
+
+is the conspicuous absence of man-                                          ported result, especially in the tech-          the software continued to be used
+agement as a direct participant. To be                                      nology assessment projects, is the              after it ended. Bjerknes [QR] reports
+sure, management decisions, often                                           increased consciousness by workers              that the Florence project succeeded
+led to the creation of a project to in-                                     of the social implications o f informa-         in building a pilot computer system
+vestigate fi'ameworks for enabling                                          tion technology for t h e m - - t h a t tech-   for nurses' daily work, which oper-
+technology assessment by workers.                                           nology is neither neutral nor value-            ated until the machine crashed the
+Management representatives partici-                                         free. Some projects have led to union           following year. The nurses wanted
+pated in some of the working groups,                                        educational programs and materials              the system restored, but in spite of
+and actions were often aimed at                                             that have been used for years [QR:              considerable pressure from the re-
+management. But their particular                                            Ciborra; Kensing; Kj~er; Mambrey].              searchers, the computer vendor
+contributions or influence on the                                           In Kensing's case, the research team            failed to fulfill its contract obligations
+process is seldom noted. T h e projects                                     contributed to subsequent technol-              (i.e., getting the machine operational
+were clearly set up as instruments for                                      ogy agreements.                                 again). Their refusal to respond re-
+workers in their negotiation with                                              Respondents generally note that in           flects in part the relatively weak posi-
+management. In the later projects,                                          various ways the local participants             tion of the nurses within the hospital
+the role of" management seems to                                            increased their competence on new               hierarchy and the isolation of the
+become larger. In SMOAP, manage-                                            technology and became more willing              project from more senior authorities.
+ment got involved following a strike                                        to take initiatives around it [QR:              Mambrey [QR] was surprised to
+when it agreed to fund the establish-                                       Bjerknes; Clement; Friis; Kensing;              learn that the software he helped
+ment o f the Microcomputer Training                                         Mambrey; Thoresen; Vehvil~inen].                develop is still operating years later,
+Program, w]hich it jointly ran with the                                     Kensing notes that in line with proj-           independent of personal continuity.
+union. In H[COSP, management was                                            ect objectives, the local unions "de-           He does note, however, that the user
+involved from the beginning and                                             veloped their competence on new                 orientation o f PD led to a 1 : 1 copy of
+provided some essential resources.                                          technology, 1) how it was used in               existing thoughts into the new sys-
+Managers also acted as leaders and                                          their workplaces, 2) the conse-                 tem, and is therefore "conservative."
+members of the design teams. While                                          quences as to work and 3) their possi-          Ciborra [QR] also mentioned this
+top managers and library assistants                                         bilities to influence the use o f tech-          potential for conservatism. Thoresen
+were generally very positive about                                          nology at their workplace." In                   [QR] too was pleased by the unex-
+the project, some middle managers,                                          addition to this improved learning,              pected market success of the Case
+however, had difficulty dealing with                                        there are reports of opened commu-               Handling System among town plan-
+the unusually democratic practices of                                       nication between workers and man-                ning departments, while the person-
+the project. They appeared "threat-                                         agement and/or systems personnel                 nel administration system which she
+ened" by the growing competence                                             [QR: Clement; Friis; Green;                      helped one hospital department to
+and assertiveness o f those lower than                                      Mambrey; Thoresen]. For instance,               develop continues to be in demand
+them, which led to delays and frus-                                         Friis describes how users moved                  by other departments a decade later.
+trations in the design team [Green                                          from their traditional passive roles                Surprisingly, the most ambitious
+QR].                                                                        into analyzing, designing, and evalu-            PD software development project,
+   The increasing involvement of                                            ating roles. EDP specialists changed             U T O P I A , did not achieve market
+management in the later projects                                            from being traditional experts into              success with its state-of-the-art soft-
+might indicate a more general                                               "teaching and consultative experts."             ware designed to support skilled
+change, for as Bradley noted earlier,                                       In some cases the users learned to               graphics workers. B6dker [QR]
+the political climate is changing, and                                      think about work and organization                largely attributes this failure to the
+management is taking more initiative                                        design and exercised a significant               small size of the Scandinavian mar-
+in this area.                                                               influence on workplace organization.             ket, only 3% of the American one in
+                                                                            However, as Mambrey found, this                  this software area, and to a lack of
+Results                                                                     better understanding of systems and              technical competence within the
+While there has been no detailed,                                           the workplace does not always lead to            company responsible for developing
+long-term follow-up to any of the                                           more positive attitudes toward the               and marketing the software product.
+projects, most respondents have                                             technology, as is conventionally as-             Implementation of U T O P I A (in a
+maintained ;at least informal contacts                                      sumed. He observed that "participa-              Swedish newspaper) was frustrated
+with their former collaborators.                                            tion alone does not further the ac-              by opposition from both manage-
+They all report that their original                                         ceptance of information technology,"             ment and the union of journalists [8].
+findings remain valid and in several                                        because the gaps between the goals               These problems may be due to the
+cases have been reinforced by subse-                                        elaborated by the users and the sys-             complexity and ambitious scope of
+quent experience. T h e general con-                                        tems designed by the DP specialists              the project.
+clusion from all these projects is that                                     "are not covered up but made [more]                 However, the shortcomings of the
+under appropriate conditions, users                                         visible" [7, p. 356].                            project should not overshadow its
+are capable of participating actively                                           In most cases where the creation             many positive achievements. T h e
+and effectively in information sys-                                         of a computerized information sys-               project has been widely reported and
+tems development. A frequently re-                                           tem was a major focus of the project,           has had considerable influence on
+
+
+
+34   j~o 1993/'VO|.36, N o . 4 ¢ O l i l M U H I C A T I O l I | O F T H | A C I H
+discussions within the labor move-             could claim to p r o d u c e a labor-                     It appears that an animator, or a
+ment as well as a m o n g software re-         oriented technological alternative,                   g r o u p o f animators, with strong ties
+searchers. While 10 years ago there            did not in the end accomplish this                    to the work setting is vital. To attract
+was not much interest in the projects'         feat. As T h o r e s e n [QR] notes, this             the interest of users, it is important
+notions about work organization and            goal o f long-term viability needs to                 that the focus be on addressing their
+use of technology, graphics workers            be m a d e a main ambition o f PD                     immediate needs. T h e project g r o u p
+unions are "now getting to the point           research.                                             is likely to function better in an envi-
+where they are implementing some                                                                     r o n m e n t away from everyday pres-
+o f the project ideas about how PC's           Lessons for Future Projects                           sures so participants can focus on
+can be applied to alternate produc-            T h e projects in o u r study suggest                 learning from each other, practicing
+tion (what has become known as                 some guidelines for those who would                   skills, and developing systems. While
+desktop publishing)" [B6dker, QR].                                                                   the relationships within the g r o u p
+T h e participation techniques and                                                                   may be relatively informal and flexi-
+rationales developed in connection                                                                   ble, protecting it from the outside
+with the project are becoming widely                                                                 may require formal contracts and
+known [2,13].                                                                                        bureaucratic structures, such as
+    Although the PD projects re-                                                                     steering committees and advisory
+viewed here have justifiable claims to                                                               panels.        [QR:   Bjerknes,     Friis,
+success in a wide range o f areas, the                                                               Mambrey]. Resources such as time,
+actual participatory experiments that                                                                space, relief workers, and access to
+spawned these innovations a p p e a r to                                                             technology will need to be negoti-
+be much more fragile. In cases where                                                                 ated, with some control over these
+projects have not e m b e d d e d them-                                                              residing within the project g r o u p it-
+selves well within their host organiza-                                                              self.
+tions and where animators have left
+                                                                                                         Once underway, an e x p a n d i n g
+the scene, the attention to active user
+                                                                                                     range o f techniques, such as evolu-
+involvement has ended. In Friis's
+                                                                                                     tionary prototyping and envision-
+[QR] experience, " T h e traditional
+                                                                                                     ment exercises, become available to
+work organization was regained [by
+                                                                                                     help participants design new work
+management] the minute most o f the
+                                                                                                     practices and supportive c o m p u t e r
+research projects stopped." In the
+                                                                                                     systems [13, 22]. For the process to
+case o f the SMOAP project, where a
+                                                                                                     become self-sustaining and diffuse
+subsequent strike led to the creation
+                                                                                                     within the organization, two distinct
+of a training p r o g r a m modeled on
+                                                                                                     developments need to occur. Inter-
+the demonstration project, the origi-
+                                                                                                     nal to the group, users must increas-
+nal animator continued to play a vital
+                                                                                                     ingly gain in their ability and willing-
+role in ensuring its survival. T h e lack
+                                                                                                     ness to take on the roles of the
+o f self-sustaining PD activity is of          initiate self-sustaining PD projects.
+                                                                                                     animator(s). As T h o r e s e n [QR]
+course not entirely surprising given           We have assembled these mainly
+                                                                                                     notes, the goals, plans, and rationales
+that (1) the projects had an inherent          from the advice o f the authors in re-
+short-term focus and (2) critical re-                                                                have to be discussed, refined, reaf-
+                                               flecting on their own experiences
+                                                                                                     firmed "again and again, t h r o u g h o u t
+sources were withdrawn on their                with PD.
+                                                                                                     the project, not just at the begin-
+completion. In the Norwegian cases,                 Two fundamental notions recur
+                                                                                                     ning." At the same time, a wide range
+where longevity was made a primary             t h r o u g h o u t the project reports. T h e
+                                                                                                     o f actors outside a g r o u p must learn
+goal, local PD work did continue               first is that PD is a complex process
+                                                                                                     o f its achievements and care about its
+after the projects were finished,              involving technology and multiple
+                                                                                                     survival. This is perhaps the most
+though sometimes in ways that were             levels o f organization. T h e second is
+                                                                                                     difficult challenge, for it requires
+not anticipated by the researcher              that it is highly d e p e n d e n t on specific
+                                                                                                     careful attention to organizational
+[Thoresen QR]. These experiences               organizational contexts. For project
+                                                                                                     communications and politics. In this
+suggest that successes according to            participants, this means there are no
+                                                                                                     regard, Green [QR] notes that in
+the usual criteria of PD p r o j e c t s - -   p r o g r a m m a t i c solutions. Consider-
+                                                                                                     addition to gaining top managerial
+active involvement o f users, in-              able improvisation informed by a
+                                                                                                     support, attention must be paid to
+creased learning and communica-                holistic u n d e r s t a n d i n g o f local condi-
+                                                                                                     involving the middle managers who
+tions, and more effective, better-             tions will always be necessary. Initi-
+                                                                                                     are in direct contact with project ac-
+a d a p t e d systems--can be achieved,        ators should expect the process to
+                                                                                                     tivities. This should help the PD initi-
+but are by themselves not sufficient           involve j u g g l i n g many items and bal-
+for local self-sustaining processes o f                                                              ative become m o r e broadly accepted
+                                               ancing             competing             demands.
+                                                                                                     and more firmly e m b e d d e d within
+participation to continue. Even the            Bjerknes [QR] further advises that
+                                                                                                     the organization.
+U T O P I A project, which perhaps was         the project should be "fun and inter-
+the most successful in these areas and         esting!"                                                While m a n a g e m e n t must be per-
+
+
+
+                                                                                              COMMUNICATIONSOFTHllACM~une 1993/Vol.36,No.4 3 5
+suaded o f the benefits, if they are                               productivity. Now the trend is to-               practices and animation o f local initi-
+alone in this view they will be more                               ward realizing and sharing possible              atives seems a promising place to
+likely to confine PD to being merely a                             gains. It is time to revive the democ-           look. Questions o f power and whose
+sophisticated way of "picking" work-                               racy dimension, without losing the               interests are being served remain
+ers' brains and initiative. It is not j u s t                      productivity and gains aspects. With-            central, but will require a sensitive
+competing interests that have to be                                out democracy, we lose the general~              interpretation o f b r o a d democratic
+dealt with, but also the passivity, con-                           dimension, and are left with just a              ideals in light of the particular op-
+servatism, and widespread "social                                  n u m b e r o f local methods for design-        portunities and constraints pre-
+inertia" that Ciborra finds imprison-                              ing I T systems."                                sented by immediate circumstances.
+ing both m a n a g e m e n t and workers.                              Central to the whole notion o f
+His dramatic advice on this is to                                  "user participation" is the right o f            Conclusions
+"smash pre-existing formative con-                                                                                  T h e experiences from the projects
+texts; engage in tinkering at all orga-                                                                             r e p o r t e d here offer some encourage-
+nization levels" [Ciborra QR]. Expect                                                                               m e n t and guidance for f u r t h e r de-
+surprises.                                                                                                          velopment o f PD. T h e basic tenets o f
+    Published reports o f project case                                                                              PD are seen to work in a variety o f
+studies are essential for refining PD                                                                               settings. Researchers r e p o r t that
+and b r o a d e n i n g its adoption. How-                                                                          users have become better i n f o r m e d
+ever, since there is little commonality                                                                             about the nature o f information
+in the way projects are r e p o r t e d , it is                                                                     technology and m o r e self-confident
+difficult to c o m p a r e them systemati-                                                                          in taking initiative with it. Several o f
+cally. It would be particularly helpful                                                                             the c o m p u t e r systems that have re-
+if the specific technical and organiza-                                                                             sulted a p p e a r to function well from
+tional contexts (principal stakehold-                                                                               the user's perspective and are still in
+ers, interests pursued, resources                                                                                   operation.            Systems d e v e l o p m e n t
+available, scope o f activity, and so                                                                               approaches specifically suited to sup-
+forth) were included explicitly in ac-                                                                              porting PD activities are also gaining
+counts. Discussion o f political consid-                                                                            acceptance. However, PD is still char-
+erations and economic outcomes                                                                                      acterized by isolated projects with
+would also be valuable.                                                                                             few signs that it leads to self-sustain-
+    Since most projects have been rel-                                                                              ing processes within work settings.
+atively small, we do not yet have                                                                                   While in part this reflects short-term
+much experience on which to draw                                                                                    project aims, the reasons for this
+for participative approaches to de-                                                                                 a p p e a r mainly to do with organiza-
+veloping large applications, integrat-                                                                              tional inertia and resistance. T h e
+ing existing systems [Bjerknes QR],                                                                                 main challenge now for PD is to deal
+or creating technical and organiza-                                                                                 effectively with the political and ide-
+tional infrastructures to s u p p o r t PC-                                                                         ological aspects of the b r o a d e r orga-
+based "end[ user computing." Fur-                                  people to have a direct influence on             nizational contexts on which PD initi-
+thermore, all reports so far have only                             matters that concern them in their               atives d e p e n d for their long-term
+looked at participation as a short-                                work. It cannot be restricted simply             survival. T h e d i l e m m a remains that
+term, project-based p h e n o m e n o n ,                          to the design of information systems,            without organizational r e f o r m in the
+and not as an ongoing process. While                               but inevitably brings in wider ele-              direction o f greater democratization
+laborious to conduct, longitudinal                                 ments o f working life. I f employees            at all levels, the knowledge and com-
+research that studied diffusion pro-                               are to overcome the passivity and                mitment that PD can stimulate in
+cesses after the initial project phase                             conservatism that we have seen hold-             users will ultimately reinforce pat-
+would contribute a great deal to this                              ing back their contributions to the              terns that limit the growth o f their
+field [QR: Friis, Vehvil~iinen].                                   projects reviewed, then such rights              capabilities and thus u n d e r m i n e fur-
+                                                                   must become an established part o f              ther initiative. T h e projects evalu-
+Democratization                                                    everyday work. With the advocacy                 ated here suggest that an increased
+While an ambition in all these proj-                               role o f unions weak in N o r t h A m e r -      and positive role for m a n a g e m e n t
+ects has been to further the processes                             ica, and u n d e r pressure in Europe,           PD would be useful. A careful in-
+o f democratization, the relationship                              additional approaches to s u p p o r t           volvement with management, with-
+between user participation in systems                              workplace democratization have to                out a b a n d o n i n g the desirability o f an
+design and the b r o a d e r pursuit o f                           be found. One a p p r o a c h is becoming        i n d e p e n d e n t perspective, could open
+workplace democracy is a complex                                   visible in the later PD projects, where          up i m p o r t a n t possibilities for PD.
+one. As T h o r e s e n [QR] notes: "PD                            much attention has been paid to the              Only by giving participation the
+started as a question o f information                              position o f women workers and re-               meaning o f full e n g a g e m e n t in vital
+and workers' rights . . . It [later be-                            lated g e n d e r issues. Also, a d e e p e r    organizational affairs is the process
+came] an instrument for increasing                                 u n d e r s t a n d i n g of the situated work   likely to flourish.
+
+
+
+36 June 19931Vol.36, No.4 ¢ O M I m U H e C A T I O N S   OF TIllA¢M
+Acknowledgments                                              development: Case study of changing              and J~irvinen, P., Eds. Information Sys-
+We wish to t h a n k Marc Griffiths for                      actor roles. Comput. Soc. 18, 1 (1988).           tem, Work and Organization Design. Pro-
+his substantial contributions to the                     11. Green, E., Owen, J. and Pain, D. City             ceedings of the IFIP TC9/WG9.1 Con-
+earlier stages o f this research. We are                     Libraries: Human-centred opportu-                ference (Berlin).      North-Holland,
+also g r a t e f u l to the following, who                   nities for women. In Gendered by De-            Amsterdam, 1991.
+                                                             sign, E. Green, J. Owen, and D. Pain,       25. Vehvilfiinen, M. Gender in informa-
+r e s p o n d e d g e n e r o u s l y to o u r ques-
+                                                             Ed. Falmer. To be published.                    tion system development--a women
+tionnaire requests: Ellen Balka, G r o                                                                       office workers' standpoint. In [9],
+                                                         12. Greenbaum,J. A design of one's own.
+Bjerknes, S u s a n n e B6dker, Gunilla                      Towards participatory design in the             1991, pp. 247-262.
+Bradley, J u l i e C a m e r o n , Claudio                   US. In Participatory Design, Perspectives   26. Whyte, W.F., Ed. Participatory Action
+CilSorra, Eileen G r e e n , Siv Friis,                      on Systems Design, D. Schuler and A.            Research. Sage, Newbury Park, 199l.
+H e i d r u n Kaiser-Roy, Finn Kensing,                      Namioka, Eds. Lawrence Erlbaum,
+Vidal Keul, A r n e                   Kj~er, P e t e r       Hillsdale, N.J., 1992.                        CR Categories and Subject Descrip-
+M a m b r e y , D e n Pain, Carol Smolawa,               13. Greenbaum, J. and Kyng, M., Eds.            tors: J.7 [Computer Applications]: Com-
+Kari T h o r e s e n , a n d Marja Veh-                      Design at Work: Cooperative Design of       puters in Other Systems; K.4.2 [Comput-
+vilainen. Patricia M c D e r m o t t pr O-                   Computer Systems. Lawrence Erlbaum,         ers and Society]: Social Issues; K.6.1
+                                                             Hillsdale, N.J., 1991.                      [Management of Computing and Infor-
+vided useful advice for revisions. []
+                                                         14. Gustavsen, B. Dialogue and Develop-         mation Systems]: Project and People
+                                                             ment. Van Gorcum, Assen, The Neth-          Management
+References                                                   erlands, 1992.                                General Terms: Human Factors, Man-
+ 1. Bjerknes, G. and Bratteteig, T. Flor-                15. Hornby, P., et al. Human and organi-        agement
+    ence in wonderland, systems develop-                     zational issues in information systems        Additional Key Words and Phrases:
+    ment with nurses. In [2], 1987, pp.                      development. Behav. Inf. Tech. 11           Participatory design
+    279-295.                                                 (1992), 160-174.
+ 2. Bjerknes, G., Ehn, P. and Kyng, M.,                  16. Kensing, F. and Halskov-Madsen, K.
+    Eds. Computers and Democracy---A                         Generating visions: Future work-             About the Authors:
+    Scandinavian Challenge. Avebury, AI-                     shops and metaphorical design. In            ANDREW CLEMENT is an associate
+    dershot, UK, 1987.                                       [13], 1991, pp. 155-168.                     professor at the Faculty of Library and
+ 3. B6dker, S., Ehn, P., Kammersgaard,                   17. Keul, V. Trade union planning and            Information Science and department of
+    J., Kyng, M. and Sundblad, Y. A Uto-                     control of new technology. In [4],           Computer Science, University of To-
+    pian experience. In [2], Avebury,                        1983.                                        ronto. His research interests include the
+    Aldershot, UK, 1987, pp. 251-278.                    18. Leydesdorff, L. and Van den Be-              implications of computerization in the
+ 4. Briefs, U., Ciborra, C. and Schneider,                   sselaar, P. Squeezed between capital         workplace. Author's Present Address:
+    L., Eds. Systems Design For, With, and                   and technology, on the participation         Faculty of Library and Information Sci-
+     By the Users. Proceedings of the IF1P                   of labour in the knowledge society.          ence, 140 St. George Street, University of
+     TC9/WG9.1 Conference (Riva del Sole,                    Acta Sociologica 30 (1987), 339-353.         Toronto, Toronto, Ontario, Canada M5S
+     Italy). North-Holland, Amsterdam,                   19. Mambrey, P., Opperman, R. and                1A 1, emaih clement@flis.utoronto.ca
+     1983.                                                   Tepper, A. Experiences in participa-
+  5. Ciborra, C., Gasbarri, G. and Mag-                      tive systems design. In [7], 1987.           PETER V A N DEN BESSELAAR is an
+     giolini, P.C. System design for local               20. Nurminen, M.I. and Weir, G., Eds.            assistant professor at the department of
+     authorities: Participation based on                     Computer Jobs and Human Interfaces.          Social Science Informatics, Faculty of Psy-
+     information contracts. In [7], 1987,                    Proceedings of the IFIP TC9/WG9.1            chology, University of Amsterdam. His
+     pp. 219-236.                                            Working Conference (Tampere, Fin-            research interests include the implications
+  6. Clement, A. A Canadian case study                       land). North-Holland, Amsterdam,             of information technology for work and
+     report: Towards self-managed auto-                      1991.                                        employment and the sociology of techno-
+     mation in small offices, h ~ Tech. Dev.             21. Olerup, A., Schneider, L. and                logical change. Author's Present Ad-
+     4, 2 (1989), 185-233.                                   Monod, E., Eds. Women, Work and              dress: Department of Social Science In-
+  7. Docherty, P., Fuchs-Kittowski, K.,                      Computerization: Opportunities and Dis-      formatics, University of Amsterdam,
+     Kolm, P. and Mathiassen, L., Eds. Sys-                  advantages. Proceedings of the 1FIP          Roetersstraat 15, NL-1018 WB Amster-
+      tems Design for Human Development and                  TC9/WG9.1 Working Conference (Riva           dam, The Netherlands, email: peter@
+      Productivity: Participation and Beyond.                del Sole, Italy). North-Holland, Am-         swi.psy.uva.nl
+      Proceedings of the 1FIP TC9/WG9.1                      sterdam, 1985.
+      Conference (Berlin). North-Holland,                22. Thoresen, K. Principles in practice,
+     Amsterdam, 1987.                                        two cases of situated participatory
+  8. Ehn, P. Work-Oriented Design of Com-                    design. In Participatory Design, Per-        Financial support was provided by SSHRC and
+     puter Artifacts. Arbetslivcentrurn,                                                                  ITRC (Canada) and by CEC (Esprit, Basic Re-
+                                                             spectives on Systems Design, D. Schuler      search Grant 6225).
+     Stockholm, and Lawrence Erlbaum,                        and A. Namioka, Eds. Lawrence
+     Hillsdale, N.J., 1988.                                  Erlbaum, Hillsdale, N.J., 1992.              Permission to copy without fee all or part of this
+  9. Eriksson, I., Kitchenham, B. and Tij-               23. Tijdens, K., Jennings, M., Wagner, I.        material is granted provided that the copiesare not
+     dens, K., Eds. Women, Work and Com-                     and Weggelaar, M., Eds. Women, Work          made or distributed for directcommercialadvantage,
+      puterization: Understanding and Over-                   and Computerization: Forming New Alli-      the ACM copyrightnoticeand the title of the publi-
+      coming Bias in Work and Education.                      ances. Proceedings of the IFIP TC9/         cation and its date appear, and notice is give that
+                                                                                                          copying is by permission of the Association for
+      Proceedings of the IFIP TC9/WG9.1                       WG9.1     Conference (Amsterdam).           Computing Machinery. "lb copy otherwise, or to
+      Conference (Helsinki). North-Holland,                  North-Holland, Amsterdam, 1989,              republish, requires a fee and/or specificpermission.
+     Amsterdam, 1991.                                        pp. 217-232.
+ 10. Friis, S. Action research on systems                24. Van den Besselaar, P., Clement, A.            ©ACM0002-0782/93/0600-029 $1.50
+
+
+
+                                                                                                   ClOMMUNICAYIONtiOlu'IrNIEAIIMJune 1993/Vol.36,No.4 ll~mJ~
+

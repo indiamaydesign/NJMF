@@ -1,0 +1,880 @@
+LA P OSIBILIDAD
+DE QUE COSAS DEL
+DISEÑO PUEDAN
+SER SOCIALISTAS-
+DEMOCRÁTICAS:
+ENTREVISTA A
+P ELLE EHN
+Entrevista realizada por Ignacio Farías y Tomás Sánchez Criado a
+través de videoconferencia el 20 de septiembre de 2017.
+
+
+Diseña 12    |   enero 2018     |   ISSN: 0718 8447     |   entrevista
+Cómo citar esta entrevista:
+Ehn, P., Farías, I., & Sánchez Criado, T. (2018). La posibilidad de
+que cosas del diseño puedan ser socialistas-democráticas: Entrevista a
+Pelle Ehn. Entrevistadores: I. Farías & T. Sánchez Criado. Diseña, (12),
+52-69. Doi: 10.7764/disena.12.52-69
+Traducción: José Miguel Neira.
+
+
+
+
+ON THE P OSSIBILITY
+OF SOCIALIST-
+DEMOCRATIC DESIGN
+THINGS: INTERVIEW
+WITH P ELLE EHN
+Interview conducted by Ignacio Farías and Tomás Sánchez
+Criado via videoconference on September 20, 2017.
+
+
+Diseña 12    |   january 2018       |   ISSN: 0718 8447     |   interview
+How to cite this interview:
+Ehn, P., Farías, I., & Sánchez Criado, T. (2018). On the Possibility
+of Socialist-democratic Design Things: Interview with Pelle Ehn.
+Interviewers: I. Farías, & T. Sánchez Criado. Diseña, (12), 52-69.
+Doi: 10.7764/disena.12.52-69
+
+
+
+
+            53
+                                         Pelle Ehn es profesor emérito en la Escuela de Artes y Comuni-
+                                         cación de la Universidad de Malmö. Ha estado involucrado en el
+                                         diseño colaborativo y participativo durante más de cuatro déca-
+                                         das. Durante los últimos 15 años, su investigación se ha centrado
+                                         en el diseño y los medios digitales. Ehn es co-autor de Design
+                                         Things (MIT Press, 2011) y co-editor de Making Futures: Marginal
+
+
+
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         Notes on Innovation, Design, and Democracy (MIT Press, 2014). En
+                                         esta entrevista identifica algunas de sus influencias y habla sobre
+                                         diseño participativo, STS, socialismo, “cosas del diseño” (design
+                                         things), educación, artefactos, cambio social y experimentos de
+                                         diseño democrático.
+
+
+
+
+interview | entrevista
+                                         Pelle Ehn is Professor Emeritus at the School of Arts and Communi-
+                                         cation at Malmö University. He has been involved in collaborative
+                                         and participatory design for more than four decades. For the last 15
+                                         years his research has been focused on design and digital media. He
+                                         is co-author of Design Things (MIT Press, 2011) and co-editor of Making
+                                         Futures: Marginal Notes on Innovation, Design, and Democracy (MIT Press,
+                                         2014). In this interview he describes some of his influences and he
+                                         talks about participatory design, STS, socialism, design things, educa-
+
+
+
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                         tion, artefacts, social change and democratic design experiments.
+
+
+
+
+                                                 54
+                                                                                       Ignacio Farías: Para comenzar, nos gustaría pre-          Noruega, esta tarea no era sencilla. Basados en esa
+                                                                                           guntarle sobre sus primeras influencias y el
+
+
+
+
+La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+                                                                                                                                                 experiencia, desarrollaron y distribuyeron material
+                                                                                           papel que jugó la teoría social en las elucubra-      pedagógico desde la perspectiva sindical, formaron
+                                                                                           ciones iniciales de lo que terminaría siendo la       grupos locales de investigación para comprender
+                                                                                           tradición escandinava del diseño participativo.       las consecuencias de la computadora para la remu-
+                                                                                       Pelle Ehn: Me gustaría enfatizar el papel que             neración y el contenido del trabajo, etc.1 Poste-
+                                                                                       jugaron dos personas, Kristen Nygaard y Paulo             riormente, también desarrollaron la estrategia de
+                                                                                       Freire. El primero, Nygaard, fue un informático           contar con un “ombudsman”, un funcionario local
+                                                                                       noruego que inventó la programación orientada a           responsable de la temática tecnológica, el ambiente
+                                                                                       objetos, por lo cual recibió el premio Turing. Fue        laboral y la organización del trabajo. Cuando conocí
+                                                                                       una especie de liberal y luego un socialdemócrata         a Nygaard a comienzos de los setenta, trajimos esta
+                                                                                       radical. A comienzos de los setenta fue contratado        estrategia a Suecia.
+                                                                                       por el sindicato de los trabajadores del metal para            Junto con esto, Paulo Freire visitó Estocolmo
+                                                                                       ayudarlos a comprender de qué se trataba este nue-        en 1970. Eso tuvo una influencia muy poderosa.
+                                                                                       vo invento llamado “computadora” y qué era lo que         Mientras los noruegos desarrollaban una estrategia
+                                                                                       debían hacer con él. En esa época, Nygaard era muy        para apoyar la acción local a partir de una orga-
+                                                                                       activo en el movimiento noruego contra el merca-          nización central, con Freire teníamos lo opuesto:
+                                                                                       do europeo que existió desde fines de los sesenta         actividades locales que abordaban problemáticas
+                                                                                       llamado “No a la Comunidad Económica Europea”.            y preocupaciones locales y que las transformaban
+                                                                                       Allí adoptaron la estrategia de realizar actividades                                      en acciones y temáticas
+                                                                                                                                                 1 Consultar Nyggard, K., &
+                                                                                       locales y coordinar acciones políticas locales a nivel                                    políticas más amplias.
+                                                                                                                                                 Bergo, O. T. (1975). The Trade
+                                                                                       nacional. En ese entonces, en un país de pueblos          Unions – New Users of Research. ¿Saben lo que propone
+                                                                                       pequeños separados por fiordos y montañas, como           Personal Review, 4(2), 5-10.    en su libro Pedagogía del
+
+
+
+
+P. Ehn , I . Faría s & T. S ánchez Criad o
+                                                                                       Ignacio Farías: We would like to start by asking you      fjords and mountains, was not easy. Based on that
+                                                                                           about your earliest influences and the role that      experience, they developed and distributed teaching
+                                                                                           social theory played in early formulations of         materials from a trade union perspective, formed lo-
+                                                                                           what came to be the Scandinavian tradition of         cal investigation groups to understand what the con-
+                                                                                           participatory design?                                 sequences of the computer were for wages, for the
+                                                                                       Pelle Ehn: I would like emphasize the role of two         content of work, etc.1 Later on, they also developed
+                                                                                       figures here, Kristen Nygaard and Paulo Freire.           the strategy of having an ‘ombudsman’: a local officer
+                                                                                       Nygaard was a Norwegian computer scientist, the           who was responsible for issues of new technology,
+                                                                                       inventor of contemporary object oriented program-         work environment and work organization. When I
+
+
+
+
+On the P os sibility of Socialist-democratic . . .
+                                                                                       ming, a recipient of the Turing Award ‒ a kind of         met Kristen Nygaard in the early ’70s, we brought
+                                                                                       liberal and later radical social democrat ‒, who in the   that strategy to Sweden.
+                                                                                       early ’70s was engaged by the Metal Workers Union              In addition, Paulo Freire visited Stockholm in
+                                                                                       to help them answer the question of what is this new      1970. That had a very strong influence. Whereas the
+                                                                                       thing called the computer and what they should do         Norwegians developed a strategy for supporting lo-
+                                                                                       with it. At the time, Nygaard was very active in the      cal action from a central organization, with Freire we
+                                                                                       Norwegian movement against the European market            had the opposite: how you could have local activity
+                                                                                       from the late ’60s called ‘No to EEC’. So they took the   that developed local issues and concerns into broad-
+                                                                                       strategy of local activity that had been developed                                            er political issues and ac-
+                                                                                                                                                 1 See Nyggard, K. & Bergo, O. T.
+                                                                                       in this movement to coordinate local participative                                            tions. You know what he
+                                                                                                                                                 (1975). The Trade Unions – New
+                                                                                       political action at a national scale, which back then,    Users of Research. Personal Review, proposes in his book the
+                                                                                       in a country of small villages like Norway divided by     4(2), 5-10.                         Pedagogy of the Oppressed,
+                                                                                                                             55
+                                         oprimido, sí? Uno comienza con lo que esté más a la         de trabajo. Existía, después de todo, la creencia
+                                         mano, lo que le interesa a la gente. Pero uno trabaja       de que, de algún modo, un socialismo democrá-
+                                         para llegar a temáticas más amplias sobre las que           tico era posible.
+                                         posicionarse con firmeza.
+                                             Entonces, nuestra estrategia era una combina-           Tomás Sánchez Criado: Es muy interesante que
+                                         ción de ambas. En términos políticos, esto estaba                exista una combinación de, por un lado,
+                                         más a la izquierda de las políticas laborales social-            actividades locales muy prácticas y orientadas
+
+
+
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         demócratas, que fundamentalmente se centraban                    a la metodología, las que, en algún punto,
+                                         en regular el mercado laboral. Resonaba más con                  se combinan o juntan con la pedagogía del
+                                         una especie de eurocomunismo que con estrate-                    oprimido; y, por otro lado, una atmósfera
+                                         gias anarquistas, ya que partía de la idea de que el             socialista-democrática marxista propia de
+                                         Estado de bienestar se extendiera un poco más allá.              fines de los sesenta o inicio de los setenta. ¿De
+                                         Esto sucedía en una época en la que los sindicatos               qué manera se catalizaron estas dinámicas?
+                                         suecos luchaban con fuerza por algo que llamaban            PE: Ciertamente, leímos bastante a Marx, especial-
+                                         “democracia económica”. Sumemos a eso que el                mente el capítulo 13 de El capital, relacionado con
+                                         Primer Ministro Olof Palme, posteriormente asesi-           el proceso del trabajo. En este sentido, hubo una
+                                         nado, proponía que los setenta fueran la década en          tercera influencia: un libro de Harry Braverman
+                                         la que la democracia entraba en el lugar de trabajo.        llamado Trabajo y capital monopolista2 que, de cierto
+                                         Conectado con esa atmósfera política, el gobierno                                                modo, actualizó a Marx
+                                                                                                     2 Braverman, H. (1974). Labor
+                                         creó a mediados de los setenta una institución úni-                                              para el siglo XXI. Es
+                                                                                                     and Monopoly Capital: The Degra-
+                                         ca, llamada “Centro Sueco por la Vida Laboral”, que         dation of Work in the Twentieth Cen- cierto que simplificaba
+
+
+
+
+interview | entrevista
+                                         sería la encargada de abordar los temas relaciona-          tury. Nueva York, NY: Monthly        en demasía cuando
+                                         dos con la reforma y democratización de los lugares         Review Press.                        predecía la degradación
+
+
+
+                                         right? You start with whatever is at hand, what people      Tomás Sánchez Criado: It’s very interesting how
+                                         are interested in, but you work towards opening up               there is a combination of, on the one hand,
+                                         broader issues on which you can take a stand.                    very practical, methodologically-oriented local
+                                             So, our strategy was very much a combination                 activities that at some point combine or conjoin
+                                         of those two. In political terms, this was to the left           with the pedagogy of the oppressed and, on the
+                                         of the social democrat labor policy, which funda-                other hand, a general late ’60s, early ’70s Marx-
+                                         mentally focused on regulating the labor market. It              ist socialist democratic milieu. How were those
+                                         resonated with some kind of Eurocommunism rather                 things catalyzed?
+                                         than with more anarchist strategies, as it started          PE: We certainly read our Marx well, especially
+
+
+
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                         from the idea that the welfare State could be taken         chapter 13 of The Capital on the labor process. So,
+                                         further. This was at a time when the trade unions           along these lines, there was a third influence: a book
+                                         in Sweden were pushing very strongly for what they          by Harry Braverman called Labor and Monopoly Cap-
+                                         called ‘economic democracy’. Also the later assassinat-     ital2 that kind of updated Marx for the twenty-first
+                                         ed Prime Minister Olof Palme would talk about how           century. It was a bit oversimplified in terms of how it
+                                         the ’70s should be the decade when democracy entered        predicted the degradation of work when technology
+                                         the workplace. Attuned with that political atmosphere,      came in. But it provided a very interesting under-
+                                         the government set up in the mid ’70s a unique institu-                                        standing of how labor
+                                         tion called ‘Swedish Centre for Working Life’ in order to   2 Braverman, H. (1974). Labor      and valorization pro-
+                                                                                                     and Monopoly Capital: The Degra-
+                                         work with issues of reforming and democratizing the                                            cesses are intertwined.
+                                                                                                     dation of Work in in the Twentieth
+                                         workplaces. There was, after all, a belief that in some     Century. New York, NY: Monthly     So, based on this, we
+                                         way a democratic socialism was a possibility.               Review Press.                      also wrote a book for the
+                                                                                 56
+                                                                                       «En lugar de tomar los STS como una
+
+
+
+
+La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+                                                                                       inspiración teórica para analizar los
+                                                                                       actores-redes del diseño, pensamos
+                                                                                       que un enfoque para el diseño
+                                                                                       inspirado en los STS implicaría
+                                                                                       participar en la creación misma de esas
+                                                                                       redes, de modo tal que la actividad
+                                                                                       del diseño se transforme en un nodo
+                                                                                       que forma parte de actores-redes en
+                                                                                       constante evolución, al tiempo que
+                                                                                       intenta entenderlos».
+
+
+
+P. Ehn , I . Faría s & T. S ánchez Criad o
+                                                                                       “Instead of taking STS as a theoretical
+                                                                                        inspiration for analyzing the actor-
+                                                                                       networks of design, we thought that a
+                                                                                       STS-inspired design approach would
+                                                                                        involve participating in the very making
+
+
+
+On the P os sibility of Socialist-democratic . . .
+                                                                                        of those networks, so that the design
+                                                                                       activity becomes a node in ongoing
+                                                                                        evolving actor-networks, while at the
+                                                                                        same time trying to understand them.”
+                                                                                                     57
+                                         del trabajo con la llegada de la tecnología, pero             ¿Hasta qué punto esto tuvo una influencia en
+                                         ofrecía una perspectiva muy interesante de cómo               la formación de diseñadores? ¿Pasó a ser parte
+                                         se entrelazaban los procesos de trabajo y valoriza-           del programa de estudios de los diseñadores de
+                                         ción. Basados en esto, también escribimos un libro            países escandinavos?
+                                         para los sindicatos, llamado Företagsstyrning och         PE: Bueno, en realidad fue sólo a comienzos de los
+                                         Löntagarmakt (Control de gestión y poder del trabajo).    ochenta que nos comenzamos a considerar dise-
+                                         En él, nos basábamos en Marx, Braverman y otros           ñadores. Nosotros nos dedicábamos a las ciencias
+
+
+
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         para describir estrategias de acumulación de capi-        computacionales, éramos arquitectos, sociólogos,
+                                         tal, para luego elaborar y sugerir contraestrategias      ingenieros, etc. Y nos interesaba lo que llamába-
+                                         para luchar contra la descualificación del trabajo,       mos un “enfoque de recursos colectivos”. Con este
+                                         contra la economización del espacio, contra los re-       enfoque, como aparece en el libro Control de gestión y
+                                         cortes salariales, contra el nuevo papel que juega la     poder del trabajo, intentamos elaborar una perspec-
+                                         tecnología, etc. Esto surgió del primer proyecto que      tiva democrática socialista para la planificación, el
+                                         hicimos en el Centro Sueco para la Vida Laboral,          diseño y la tecnología. El libro fue escrito para la
+                                         llamado DEMOS (el acrónimo en sueco de Planifica-         educación sindical y se usó con ese fin en Suecia,
+                                         ción Democrática y Control de la Vida Laboral), en        Noruega y Dinamarca. Pero lo interesante es que
+                                         el que, inspirados por las experiencias en Noruega,       se divulgó y usó en todas las universidades más
+                                         trabajamos durante varios años con varios sindica-        importantes de Escandinavia. Ese no era el objetivo
+                                         tos y lugares locales de trabajo para así desarrollar     original, pero es el único libro que he escrito que
+                                         estas contraestrategias.                                  fue un éxito en cuanto al volumen de ventas. Para
+                                                                                                   la portada del libro queríamos una imagen que
+
+
+
+
+interview | entrevista
+                                         TSC: Esto suena a una especie de diseño activista         representara la lucha de clases, pero la editorial
+                                            o diseño ejecutado como un tipo de activismo.          quería poner a un trabajador con una bandera roja
+
+
+
+                                         trade unions entitled Företagsstyrning och Löntagar-      scientists, architects, sociologists, engineers, etc. And
+                                         makt (Management Control and Labor Power). There,         we were interested in what we called a ‘collective
+                                         we started from Marx, Braverman and others to de-         resource approach’. With this approach, as put for-
+                                         scribe capital accumulation strategies, but then we       ward in the textbook Management Control and Labor
+                                         elaborated upon and suggested counterstrategies to        Power, we tried to elaborate a socialistic democratic
+                                         the deskilling of work, to the economization of space,    perspective on planning, design and technology. It
+                                         to wage cuts, to the new role of technology, etc. This    was primarily written for trade union education and
+                                         came out of the first project we did at the Swedish       it was also used for this purpose in Sweden, Norway
+                                         Center for Working Life called DEMOS for Democratic       and Denmark. But, interestingly, it also spread and
+
+
+
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                         planning and control in working life where, inspired      became used in education at all major universities in
+                                         by the Norwegian experiences, we worked with a            Scandinavia. That wasn’t the intention, but it’s actu-
+                                         number of local trade unions and workplaces over a        ally the only book I’ve written that’s been a success
+                                         number of years to develop such counterstrategies.        in terms of numbers of sales. For the book cover, we
+                                                                                                   wanted to have an image representing class struggle,
+                                         TSC: This sounds like some kind of activist design or     but the publisher wanted it to be a worker with a red
+                                             design performed as some form of activism. To         flag fighting a computer monster coming to take
+                                             what extent did this go into the actual training      over. It was a compromise we ended up accepting,
+                                             of designers or enter the curriculum in Scandi-       but we were not very happy with it, for we didn’t see
+                                             navian countries?                                     this as a fight against technology, but as a struggle
+                                         PE: Well, it was not until the early ’80s that we would   to control and ultimately design it. If you take a close
+                                         think of ourselves as designers. We were computer         look at the picture, you can actually see the hidden
+                                                                               58
+     On the P os sibility of Socialist-democratic . . .   P. Ehn , I . Faría s & T. S ánchez Criad o   La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+
+
+
+
+59
+                                         que lucha contra un monstruo computacional que            una respuesta local a un nuevo artefacto introducido
+                                         quiere invadirlo todo. Finalmente, terminamos             en el lugar de trabajo, pero no influían en el diseño
+                                         cediendo y aceptamos esa propuesta, aunque no             en sí mismo de esos artefactos. Entonces nos pre-
+                                         quedamos muy contentos. Para nosotros, esta no            guntamos si sería posible diseñar artefactos y tecno-
+                                         era una lucha contra la tecnología, sino una lucha        logías desde la perspectiva del trabajo, enfocándonos
+                                         por diseñarla y controlarla. Si uno mira de cerca la      en el desarrollo de competencias o habilidades.
+                                         imagen, se puede ver al capitalista que está escon-           Cuento corto: terminamos trabajando en
+
+
+
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         dido, controlando al monstruo de la tecnología. Era       tecnologías alternativas para la producción de
+                                         eso contra lo que queríamos luchar.                       periódicos. Los sindicatos gráficos de Estados Uni-
+                                                                                                   dos y el Reino Unido estaban perdiendo la batalla;
+                                         TSC: Avancemos en la historia: nos podría contar          Rupert Murdoch estaba construyendo una fábrica
+                                             un poco acerca del proceso de transición más          en Wapping, despidiendo a todos los trabajadores
+                                             reciente en su trabajo, el paso del diseño parti-     gráficos y contratando electricistas. La situación
+                                             cipativo hacia lo que usted ha denominado úl-         era desesperada. Entonces, los sindicatos gráficos
+                                             timamente “cosas participativas”. Me gustaría         y de imprentas de Suecia, Noruega, Dinamarca
+                                             comprender cómo sucedió ese proceso, cuáles           y Finlandia sumaron fuerzas en un proyecto que
+                                             fueron los papeles que jugaron ciertas reflexio-      llamamos UTOPIA, encabezado por mí, y que
+                                             nes teóricas o invenciones metodológicas, y si        buscaba desarrollar tecnologías alternativas para
+                                             esto se contrapone con la historia cargada de         la industria de la imprenta basándonos en ideas de
+                                             política que nos ha relatado.                         trabajo calificado y una organización democrática
+                                         PE: A comienzos de los ochenta tuvimos que enfren-        del trabajo.
+
+
+
+
+interview | entrevista
+                                         tar otro problema: tal vez las estrategias que había-         Aquí comenzamos a interesarnos por el diseño
+                                         mos desarrollado hasta entonces eran útiles como          industrial y a desarrollar nuevos métodos basados
+
+
+
+                                         capitalist in the background controlling the technol-          The short story is that we ended up working on
+                                         ogy monster. This is what we wanted to challenge.         alternative technologies for newspaper production.
+                                                                                                   The graphic trade unions in the US and the UK were
+                                         TSC: Let’s move on in the story: could you also give      being defeated; Rupert Murdoch was building his
+                                             us the background story of the most recent            factory in Wapping, firing all the graphic workers and
+                                             transitioning process in your work from partic-       hiring electricians. It was a desperate situation. So
+                                             ipatory design towards what you have called           the printers’ and graphic unions in Sweden, Norway,
+                                             as of late ‘participatory things’. I would like to    Denmark and Finland came together in a project we
+                                             understand how that happened, what was the            called UTOPIA, which I was heading, and which tried
+
+
+
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                             role of certain theoretical reflections or meth-      to develop alternative technologies for the printing
+                                             odological inventions, and whether this stands        industry based on ideas of skilled work and demo-
+                                             in contrast to the very politically inflected story   cratic work organization.
+                                             you have been telling us.                                  This is where we started to be interested in indus-
+                                         PE: In the early ’80s, we were confronted with an-        trial design and to develop new methods based on
+                                         other problem: the strategies that we had developed       mock-ups and prototypes. This is also where Donald
+                                         so far were perhaps useful as a local response to a new   Schön and John Dewey come in. But this is also
+                                         artefact that was introduced in the workplace, but they   when the later Wittgenstein’s philosophy comes in.
+                                         had no influence on the very design of these artefacts.   It seems like a long shot, but one way to understand
+                                         So, we asked ourselves whether it would be possible to    how to work with mock-ups, prototypes, games etc.
+                                         design artefacts and technology from the perspective of   came through an unconventional reading of the later
+                                         labor, focusing on skills or competence development.      Wittgenstein, and how we can do meaningful things
+                                                                               60
+                                                                                       en maquetas y prototipos. Fue aquí también cuan-           Artes y Comunicación de Malmö en 1998, trajimos
+
+
+
+
+La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+                                                                                       do Donald Schön y John Dewey entraron en escena.           a Bruno para que diera una charla y se enamoró un
+                                                                                       Pero también aparece la filosofía tardía de Witt-          poco de la atmósfera, de la escuela, de la pedagogía
+                                                                                       genstein. Puede parecer increíble, pero un modo de         y de cómo intentábamos combinar arte y tecno-
+                                                                                       comprender cómo trabajar con maquetas, prototi-            logía en una suerte de “Bauhaus digital”. Incluso
+                                                                                       pos, juegos, etc., provino de una lectura poco con-        hubo planes para hacer una clase de doctorado
+                                                                                       vencional del trabajo tardío de Wittgenstein y sobre       juntos, sobre diseño, democracia y drama. Final-
+                                                                                       cómo podemos hacer cosas significativas juntos sin         mente, nunca sucedió.
+                                                                                       que sea necesario entendernos. De hecho, esta fue              El punto de partida para nuestro enfoque de
+                                                                                       la base de mi tesis de doctorado. Este fue un desvío       “cosas del diseño” fue la charla que dictó Latour en
+                                                                                       extraño, pero muy útil para desarrollar estrategias        la Design Society en 2008, cuando describió al di-
+                                                                                       prácticas de diseños colaborativos en los que los          seño desde la perspectiva de la teoría del actor-red
+                                                                                       diseñadores podrían aprender de los trabajadores y         (ANT) como una actividad modesta, distribuida y
+                                                                                       otros posibles “usuarios”, y vice versa.                   recursiva. Nos pareció un muy buen desafío. Sin
+                                                                                           Bruno Latour vino mucho después, durante los           embargo, y tal vez de manera simplista, pensamos
+                                                                                       noventa, básicamente a través de una colega, Bar-          que podríamos darle una vuelta al desafío, tal como
+                                                                                       bara Czarniewska, quien había publicado una tra-           Marx alguna vez lo hizo con Hegel. Entonces, en
+                                                                                       ducción al sueco de algunos de los textos de Latour,       lugar de tomar los estudios de ciencia y tecnología
+                                                                                       con el título El regreso del artefacto. Para mí, fue una   (STS) como una inspiración teórica para analizar los
+                                                                                       puesta al día muy importante para repensar el rol          actores-redes del diseño, pensamos que un enfoque
+                                                                                       que tienen los artefactos en el diseño. Parecía tan        para el diseño inspirado en los STS implicaría parti-
+                                                                                       poco político como Wittgenstein, pero obviamente           cipar en la creación misma de esas redes, de modo
+                                                                                       era muy polémico. Cuando abrimos la Escuela de             tal que la actividad del diseño se transforme en un
+
+
+
+
+P. Ehn , I . Faría s & T. S ánchez Criad o
+                                                                                       together without actually understanding one anoth-             But the starting point for our ‘design things’
+                                                                                       er – which was the basis for my own PhD thesis. This       approach was really Latour’s address to the Design
+                                                                                       was a strange detour, but it worked out really well        Society in 2008, where he described design from an
+                                                                                       for developing hands-on strategies for collaborative       ANT perspective as a modest, distributed and recur-
+                                                                                       design in which designers could learn from workers         sive activity. We thought this was a really good chal-
+                                                                                       and other potential ‘users’ and vice versa.                lenge. But, in a maybe simplistic way, we thought
+                                                                                           Bruno Latour came in much later, during the            that we could turn the challenge on its head – just
+                                                                                       1990’s, mainly through a colleague, Barbara                as Marx had done with Hegel. So instead of taking
+                                                                                       Czarniewska, who had published a Swedish transla-          STS as a theoretical inspiration for analyzing the
+
+
+
+
+On the P os sibility of Socialist-democratic . . .
+                                                                                       tion of some Latour’s texts under the title The Return     actor-networks of design, we thought that a STS-in-
+                                                                                       of the Artefact. For me, this was a really interesting     spired design approach would involve participating
+                                                                                       update to rethink the role of artefacts in design. It      in the very making of those networks, so that the
+                                                                                       seemed just as little political as Wittgenstein, but it    design activity becomes a node in ongoing evolving
+                                                                                       was obviously very controversial. When we started          actor-networks, while at the same time trying to
+                                                                                       the School of Art and Communication in Malmö in            understand them.
+                                                                                       1998, we had Bruno come over to give a talk, and he            That’s a proposition that fits very well with
+                                                                                       kind of fell in love with our environment and school       design, we thought, for if STS is replacing the social
+                                                                                       and the pedagogy and how we were trying to mix art         with the collective of humans and non-humans,
+                                                                                       and technology in a kind of digital Bauhaus version. We    design has in parallel to replace objects with things,
+                                                                                       even planned to do a PhD class together on Design, De-     in the sense of evolving socio-material assemblies of
+                                                                                       mocracy and Drama that eventually didn’t come about.       which you are a part. But not only that: the assembly
+                                                                                                                              61
+                                         nodo que forma parte de actores-redes en constante           acerca de este proyecto educativo?
+                                         evolución, al tiempo que intenta entenderlos.            PE: La ciudad de Malmö creó su universidad en
+                                             Pensamos que la propuesta calzaba muy bien           1998 con el objetivo de abordar las circunstancias
+                                         con el diseño, ya que si los STS reemplazan lo social    específicas de una ciudad multiétnica en creci-
+                                         por un colectivo de humanos y no-humanos, el di-         miento y con graves problemas económicos, pero
+                                         seño también debe reemplazar los objetos por co-         también con una potente subcultura urbana. Tuve
+                                         sas, entendidas como asambleas socio-materiales          la suerte de ser parte de la creación de la Escuela
+
+
+
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         en constante evolución de las que uno forma parte.       de Artes y Comunicación, que debía enfocarse en lo
+                                         Pero además, el aspecto asambleario de la cosa es        que nosotros denominamos una “Bauhaus digital”
+                                         también una semilla democrática para el diseño. Es       y articular arte y tecnología en el siglo XXI.
+                                         tanto una asamblea, en la cual tomamos decisiones,           Encontramos una antigua papelera, que re-
+                                         como un objeto que se transforma materialmente.          construimos de acuerdo con el tipo de pedagogía
+                                         La “cosa del diseño” involucra estos dos aspectos de     que queríamos desarrollar y que estaba inspirada
+                                         manera simultánea o con una rápida alternancia           principalmente en Donald Schön y varios talleres
+                                         entre ambos. Es por eso que, finalmente, todas las       participativos con potenciales alumnos y personal.
+                                         “cosas del diseño” que hemos hecho las hemos lla-        Todo giraba en torno a seis estudios grandes, don-
+                                         mado “experimentos del diseño democrático”.              de se reunían profesores, estudiantes de doctorado
+                                                                                                  y algunos alumnos de magíster, cada uno con un
+                                         IF: Mencionó que cuando Latour lo visitó en              tema diferente. En medio había un gran café con
+                                             Malmö se mostró muy impresionado por la              espacio para hacer exposiciones y escaleras donde
+                                             escuela y los métodos a través de los cuales         sentarse. Junto a ese espacio central había una caja
+
+
+
+
+interview | entrevista
+                                             combinaban diseño, tecnología y ciencias             negra para performances y un auditorio tradicio-
+                                             sociales o filosofía. ¿Nos podría contar más         nal. En el subterráneo había varios laboratorios.
+
+
+
+                                         aspect of the thing introduces also a democratic         what we called a digital Bauhaus, articulating art and
+                                         kernel for design. It is both an assembly, in which we   technology in the twenty-first century.
+                                         make decisions, and an object that is being material-        We found an old paper factory, which we rebuilt
+                                         ly transformed. The ‘design thing’ involves these two    according to the kind of pedagogy that we wanted to
+                                         aspects at the same time, or as a flickering between     have, mostly inspired by Donald Schön and a number
+                                         the two. That’s why we’ve ended up calling all the       of participatory workshops with potential students
+                                         design things we’ve been doing ‘democratic design        and staff. It was built up around six big studio spaces,
+                                         experiments’.                                            which brought together teachers, PhD students, and
+                                                                                                  some Master’s students, each around a different
+
+
+
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                         IF: You mentioned that when Latour visited you in        theme. In the middle, there was a big café with also
+                                             Malmö he was very impressed by the school and        exhibition space and stairs to sit on. Attached to that
+                                             the ways in which you were bringing together         central space, there was a full performance black box
+                                             design, technology and social science or philoso-    and a traditional lecture hall. In the underground,
+                                             phy. Could you tell us more about this educative     there were different labs. We even had a 3D printer
+                                             project?                                             that made it into the national newspapers, but this
+                                         PE: The city Malmö created its university in 1998        fetish of new technology was in reality too expensive
+                                         with the aim of addressing the specific circumstanc-     to use in the everyday practice at the school. Further-
+                                         es of a growing multi-ethnic city with severe eco-       more, we were not allowed to build studios for the
+                                         nomic problems and a strong underground culture.         undergrad students, only for the Master’s students
+                                         I had the fortune to be part of setting up the School    in interaction design – the only Master’s program we
+                                         of Arts and Communication, which should focus on         had in the beginning. So, for the undergraduates we
+                                                                               62
+                                                                                       Incluso teníamos una impresora 3D que apareció           alumnos, hoy hay alrededor de 1.400. Después de
+
+
+
+
+La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+                                                                                       en los periódicos del país, pero ese fetiche tecnoló-    que nos trasladamos, ha habido un proceso de “ofi-
+                                                                                       gico en realidad era demasiado costoso como para         cinación” al que una vez, por error, pero también de
+                                                                                       utilizarlo en las prácticas diarias de la escuela. Por   manera muy acertada, me referí como “osificación”.
+                                                                                       otro lado, no se nos permitió construir estudios
+                                                                                       para los alumnos de pregrado, sino sólo para los         IF: Me gusta el juego de palabras. ¿Tuvo algunas
+                                                                                       alumnos de magíster en diseño de interacción, que            libertades en términos de diseñar un programa
+                                                                                       fue el único programa de magíster que tuvimos                de estudios para los alumnos de magíster, que tal
+                                                                                       al inicio. Para los alumnos de pregrado teníamos             vez se alejaba de otros programas tradicionales?
+                                                                                       pensados grandes salones de clases. Cada curso de        PE: La universidad en la que estábamos era una
+                                                                                       30 alumnos tenía un salón, que también funciona-         universidad tradicional, no una escuela de diseño,
+                                                                                       ba como su propio estudio que podían equipar de          pero tuvimos la oportunidad de construir un pro-
+                                                                                       diversas maneras.                                        grama basado en talleres. También elaboramos un
+                                                                                           Quedamos muy contentos con el resultado.             manifiesto pedagógico acerca del aprendizaje ba-
+                                                                                       Pero después de diez años, terminó el contrato y         sado en problemas. Tal vez no era muy diferente de
+                                                                                       la universidad nos trasladó a un lugar horrible, sin     muchas escuelas de diseño arquitectónico, pero era
+                                                                                       espacio para armar estudios. Se podría argumentar        muy poco convencional que una universidad tradi-
+                                                                                       que los estudios no son los espacios más eficientes      cional contara con esto. Finalmente, por eso tuvimos
+                                                                                       ni económicos, pero en términos de creatividad           todas esas peleas. La administración de la universidad
+                                                                                       fueron muy productivos y funcionaban las 24 horas        no podía entender que necesitáramos talleres.
+                                                                                       del día y los siete días de la semana. Siempre había
+                                                                                       alumnos utilizándolos. Pero, bueno, estos fueron         IF: El aprendizaje basado en problemas es exac-
+                                                                                       años pioneros. El primer año sólo tuvimos 200            tamente uno de los desafíos clave que nosotros
+
+
+
+
+P. Ehn , I . Faría s & T. S ánchez Criad o
+                                                                                       planned big classrooms; each class of thirty students    design school, but we had the opportunity to build
+                                                                                       had one classroom that functioned as their own stu-      a studio-based program. We also had a pedagogy
+                                                                                       dio and they could equip it in different ways.           manifesto on problem-based learning. Maybe it was
+                                                                                            We were very happy with the result. But, ten        not very different from many architecture design
+                                                                                       years down the line, the contract expired and the        schools, but it was quite unconventional for a tradi-
+                                                                                       university moved us into a horrible place without        tional university to have this. In the end, this is why
+                                                                                       studio spaces. You could say that studio spaces are      we had all these fights; the university administration
+                                                                                       not the most efficient or economic, but in terms         could not understand why we needed studio space.
+                                                                                       of creativity they really worked well and were in
+
+
+
+
+On the P os sibility of Socialist-democratic . . .
+                                                                                       operation 24/7, with students hanging around all the     IF: Problem-based learning is exactly one of the
+                                                                                       time. But these were, of course, pioneering years. The       key challenges that we are trying to explore in
+                                                                                       first year we only had 200 students, now it’s around         this special issue, in relation to how to render
+                                                                                       1,400. So, after we moved, there has been a process          problematizations from the social sciences into
+                                                                                       of ‘officification’ that I, once by mistake, but also        problems that might be productive for design.
+                                                                                       accurately, called ‘ossification’.                           Could you perhaps elaborate on the role played
+                                                                                                                                                    by social theory in this educational philosophy
+                                                                                       IF: I like the pun. Did you have also freedoms in            of problem-based design?
+                                                                                            terms of designing a curriculum for Master’s        PE: We put together some key readings. But this
+                                                                                            students that perhaps diverged from what is         was also resisted. I remember many colleagues who
+                                                                                            usually offered in other Master’s programs?         would say: “Well, I went to design school here or
+                                                                                       PE: We were at a traditional university, not at a        there and we did not have books”. So we were, and
+                                                                                                                             63
+                                         intentamos explorar en relación a cómo transfor-           que ellos comienzan con un interés en una pregun-
+                                         mar problematizaciones de las ciencias sociales            ta específica, leen sobre eso y profundizan en este
+                                         en problemas que puedan ser productivos para el            interés. Finalmente, terminan sabiendo mucho
+                                         diseño. ¿Podría elaborar un poco acerca del rol            más que uno sobre el tema al que se dirigen. A
+                                         que tuvo la teoría social en esta filosofía educa-         algunos exalumnos de doctorado les recomendé
+                                         tiva del diseño basado en problemas?                       leer a Latour, pero rápidamente continuaron con
+                                         PE: Recopilamos algunas lecturas importantes.              Haraway, Barad y la avanzada de la tecnociencia
+
+
+
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         Pero también hubo resistencia a esto. Recuerdo             feminista. Es un tipo de interés que se desarrolla
+                                         que muchos colegas nos dijeron: «Yo fui a tal o tal        gradualmente cuando los alumnos reflexionan
+                                         escuela de diseño y nunca tuvimos que leer libros».        acerca de su propia práctica de diseño.
+                                         Entonces estábamos, y seguimos estando, en una                 Pero en la educación de pregrado, es complica-
+                                         lucha contra una tradición en la que la lectura            do. Ayer asistí a una clase de co-diseño, en la que
+                                         no forma parte de la práctica pedagógica. Ya               estaban haciendo un workshop. Al comienzo, un
+                                         llevamos varios años impartiendo una clase de              colega estaba dictando una clase acerca de los mé-
+                                         co-diseño internacional, en la que leemos algunos          todos de investigación que se adoptan de las ciencias
+                                         textos introductorios de los STS y los ubicamos            sociales. Estaba sentado en la última fila y podía ver
+                                         en el contexto del diseño. Son muy pocos los que           que al menos un tercio de los alumnos estaba en Fa-
+                                         realmente lo entienden y se sienten estimulados            cebook y cosas así. ¡No sé cómo enfrentarme a eso!
+                                         por esto. Al resto le tengo que repetir constan-
+                                         temente que la lectura de textos es una práctica           IF: ¿Cree que tal vez algunos de estos estudiantes
+                                         que uno debe aprender, sí o sí. Pero, al parecer, no           adquieren las habilidades o, lo que es más im-
+
+
+
+
+interview | entrevista
+                                         somos muy buenos en ello.                                      portante, la sensibilidad del diseño participa-
+                                             Con los alumnos de doctorado es diferente, por-            tivo o de las “cosas del diseño” de otra manera?
+
+
+
+                                         still are, fighting against a tradition where reading      workshop. In the beginning, a colleague was giving
+                                         is not a part of the pedagogical practice. For sev-        a lecture on research methods borrowed from social
+                                         eral years now, we’ve been giving an international         sciences. I was sitting in the back and seeing that at
+                                         co-design class, where we read some introductory           least one third was Facebooking and the like. I don’t
+                                         STS texts and put them into the context of design.         know how to deal with it!
+                                         There are only a few who really get it and get excited.
+                                         To the rest, I constantly need to repeat that reading      IF: Do you think that perhaps some of these
+                                         texts is also a practice that you need to learn. But           students acquire the skills, and perhaps more
+                                         we’re just not very good at it.                                importantly, the sensibilities of PD or ‘design
+
+
+
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                              It is different with PhD students, because they           things’ by other means? They might not read,
+                                         start with an interest in a specific question and they         but you might be anyway sensitizing them for
+                                         start to read and they get into it. In the end, they are       questions and issues in other ways. They might
+                                         much more knowledgeable than you are yourself                  not know who Latour is, and still be trying to
+                                         in the direction that they are going. I have former            think design objects as say design things…
+                                         PhD students who I introduced to Latour, but quickly       PE: I’ve been giving classes in many places abroad
+                                         went on to read Haraway, Barad and the frontline of        to students who don’t know any of this. Last Spring,
+                                         feminist technoscience. That’s a kind of interest that     for instance, I was for a week in Naples at the School
+                                         develops gradually when they actually have to reflect      of Architecture, and it was fascinating to work with
+                                         upon their design practice.                                architecture students who had not read any of these
+                                              But in undergrad education it is difficult. Yes-      texts. The course involved doing a design thing
+                                         terday I was sitting in this co-design class doing a       around activism in a city that had been affected by
+                                                                                64
+                                                                                           Quizás no lean, pero es posible que igual les        TSC: Entonces, ¿diría que las “cosas del diseño”
+                                                                                           esté entregando esa sensibilidad para hacerse            pueden ser más un efecto que una perspectiva
+
+
+
+
+La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+                                                                                           preguntas y abordar problemáticas de otras               pedagógica?
+                                                                                           maneras. Tal vez no sepan quién es Latour,           PE: Buen punto. Es cierto que hay que repensar
+                                                                                           pero aún así puedan pensar en los objetos del        lo que uno hace al momento de diseñar, pero esto
+                                                                                           diseño como “cosas del diseño”, por ejemplo.         también se aplica para el resultado del diseño.
+                                                                                       PE: He dictado clases en muchos lugares fuera del        Pensar que uno puede hacer algo que no es sola-
+                                                                                       país, a estudiantes que no conocen nada de esto.         mente un objeto se transforma en un desafío muy
+                                                                                       Por ejemplo, la primavera pasada pasé una semana         importante, especialmente para los diseñadores
+                                                                                       en Nápoles, en la Escuela de Arquitectura, y fue fas-    industriales. Es algo que va en contra de todas sus
+                                                                                       cinante trabajar con alumnos de arquitectura que         teorías. Pero a mí no me preocupa hacer talleres de
+                                                                                       no habían leído ninguno de estos textos. El curso        una, dos o tres semanas para introducir algunos
+                                                                                       involucraba crear una “cosa del diseño” en torno al      de estos conceptos, siempre que involucren una
+                                                                                       activismo en una ciudad que había sido afectada          actividad práctica en la que se aplique el concepto.
+                                                                                       por un terremoto, por lo que tuvimos que comuni-         Entonces, ¿es un efecto? Sí, tal vez lo sea.
+                                                                                       carnos con varias organizaciones sociales y juveni-
+                                                                                       les. En un principio, no hubo ninguna comprensión        TSC: Muchas personas culpan al Acuerdo de
+                                                                                       ni respuesta al concepto de parte de los alumnos;           Educación Superior de Bolonia por la forma en
+                                                                                       pero después, y como pasa casi siempre, tuve una            que ha logrado encapsular la educación. Tengo
+                                                                                       respuesta muy, pero muy positiva en términos de:            la sensación de que esta encapsulación de la
+                                                                                       «Bueno, nunca antes hicimos algo así, pero esto             educación es, en cierto modo, análoga a lo que
+                                                                                       tiene sentido». Es interesante que nunca les haga           usted dice sobre los objetos de los diseñadores.
+                                                                                       sentido al inicio.                                          La encapsulación de la educación se transfor-
+
+
+
+
+P. Ehn , I . Faría s & T. S ánchez Criad o
+                                                                                       an earthquake, so we had to contact various dif-         concepts, if it involves a practical activity instantiating
+                                                                                       ferent local youth and social organizations. In the      the concept in an event. So, is it an effect? Yes, maybe.
+                                                                                       beginning, there was absolutely no understanding or
+                                                                                       response to the concept on the part of the students,     TC: Many people are blaming the Bologna Higher
+                                                                                       but afterwards (and this happens almost always) I            Education Agreement for the way it has encap-
+                                                                                       had a very, very positive response in terms of: “Well        sulated education. I have a feeling that this en-
+                                                                                       we did nothing like this before, but this really makes       capsulation of education is somehow analogous
+                                                                                       sense”. But interestingly, it never makes sense from         to what you were saying about designers’ se-
+                                                                                       the beginning.                                               cluded objects. The encapsulation of education
+
+
+
+
+On the P os sibility of Socialist-democratic . . .
+                                                                                                                                                    becomes an encapsulation of the profession:
+                                                                                       TSC: So, could you say that maybe the design thing           you are trained as a designer and that means
+                                                                                          is something like an effect rather than a peda-           that you are going to be doing this and that.
+                                                                                          gogical stance?                                           There is a certain instrumentalism attached
+                                                                                       PE: That’s a good point. You certainly have to rethink       both to education and to the role of designers in
+                                                                                       what is it that you’re doing when you’re designing,          society. How do you see this parallelism?
+                                                                                       but also the outcome of designing. To think that         PE: That’s a good point. Two things: one is that Bo-
+                                                                                       you can make something that isn’t a secluded object      logna or not, to me, in general, the ramifications and
+                                                                                       becomes a real challenge, especially for industrial      the enormous impact of new public management on
+                                                                                       designers. It goes against all their theories. But I’m   education has made it very difficult to be a teacher
+                                                                                       not worried about doing these one or two or three        today, especially to be a design teacher, because
+                                                                                       weeks workshops trying to introduce some of these        you’re not supposed to teach in a designerly way.
+                                                                                                                             65
+                                         «Las ramificaciones y el
+                                         enorme impacto de la nueva
+                                         administración pública sobre
+                                         la educación ha hecho que, en
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         general, hoy sea muy difícil ser
+                                         profesor, especialmente para un
+                                         profesor de diseño, porque no
+                                         se espera que uno enseñe como
+                                         diseñador».
+
+
+
+interview | entrevista                   “The ramifications and the enormous
+                                          impact of new public management
+                                          on education has made it very
+                                          difficult to be a teacher today,
+                                          especially to be a design teacher,
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                          because you’re not supposed to
+                                          teach in a designerly way.”
+
+
+                                                     66
+                                                                                           ma en la encapsulación de la profesión: a uno lo       pedagógicos. Tradicionalmente, existen dos tipos
+                                                                                           capacitan como diseñador, lo que significa que
+
+
+
+
+La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+                                                                                                                                                  de libros o materiales pedagógicos en el diseño y
+                                                                                           uno va a hacer esto y esto otro. Hay un cierto         la arquitectura. Uno trata básicamente del estilo y
+                                                                                           instrumentalismo en la educación y en el rol de        entrega una comprensión de lo que es bueno, malo,
+                                                                                           los diseñadores en la sociedad. ¿Cómo inter-           feo, hermoso, etc. El otro material son los libros de
+                                                                                           preta usted este paralelismo?                          método. Y estos libros de método no son muy ade-
+                                                                                       PE: Buen punto. Dos cosas: lo primero es que,              cuados para el diseño. Intentan que los alumnos
+                                                                                       con el Acuerdo de Bolonia o sin él, en mi opinión,         aprendan a ir del punto A al punto B del modo más
+                                                                                       las ramificaciones y el enorme impacto de la               eficaz, con un poquito de creatividad, pero dentro
+                                                                                       nueva administración pública sobre la educación            de plazos determinados y, lo que más les importa,
+                                                                                       ha hecho que, en general, hoy sea muy difícil              ceñidos a un presupuesto. Eso se parece bastante
+                                                                                       ser profesor, especialmente para un profesor de            a la nueva administración pública. Lo que perde-
+                                                                                       diseño, porque no se espera que uno enseñe como            mos con esto es un material más asociativo, a tra-
+                                                                                       diseñador. Se espera que uno enseñe de acuerdo a           vés del cual uno aprende a actuar en condiciones
+                                                                                       un programa que se puede estandarizar y medir,             de incertidumbre. No existe terra firma sobre la
+                                                                                       y para el que no hay tiempo suficiente como para           cual construir un diseño: los diseñadores siempre
+                                                                                       preparar la enseñanza. No envidio a ninguno                están en un pantano, como bien lo dijera Donald
+                                                                                       de mis colegas más jóvenes que hoy trabajan en             Schön. El desafío es adquirir las habilidades para
+                                                                                       instituciones de diseño. Incluso en relación con           navegar y seguir avanzando. Esta habilidad no se
+                                                                                       el norte de Europa, es importante mencionar la             puede encontrar en métodos objetivos, sino en un
+                                                                                       precariedad de la situación en la que se encuentra         repertorio de prácticas en varios escenarios.
+                                                                                       el personal de las universidades.
+                                                                                           Lo segundo tiene relación con los materiales           IF: Y, sin embargo, hoy en día tenemos varios
+
+
+
+
+P. Ehn , I . Faría s & T. S ánchez Criad o
+                                                                                       You’re supposed to teach according to a program that       becomes one of acquiring the skills to navigate one’s
+                                                                                       can be standardized and measured and without suf-          way ahead. This skill does not come from objective
+                                                                                       ficient time for preparing the teaching. I do not envy     methods, but from a repertoire of situated practices.
+                                                                                       my younger colleagues at design institutions today.
+                                                                                       Even in Northern Europe, it is relevant to talk about      IF: And yet, nowadays, we have a number of devel-
+                                                                                       the precarious situation of university staff.                  opments in design – such as speculative design,
+                                                                                           The second point is about teaching materi-                 prototyping, design things and other related
+                                                                                       als. Traditionally, there are two kinds of books or            propositions – that aim to reimagine the profes-
+                                                                                       teaching materials in design and architecture. One             sional practice and the role of the designer. Are
+
+
+
+
+On the P os sibility of Socialist-democratic . . .
+                                                                                       is basically about style, providing an understanding           these only lucky exceptions or are they initiat-
+                                                                                       of what is good, bad, ugly, beautiful, etc. The other is       ing a larger transformation of the field?
+                                                                                       the methods textbooks. And the methods textbooks           PE: It’s a big question. Firstly, I think it’s important to
+                                                                                       are not very designerly. They try to teach students        rethink the design agency in terms of who and what
+                                                                                       how to go from A to B, and in the most efficient way,      designs, considering that a professional designer will
+                                                                                       with a little bit of creativity, but on time and, most     work with people with other and different concerns
+                                                                                       importantly, on budget. So, that looks similar to          from themselves. It is the ‘inter-action’ or rather
+                                                                                       new public management. What is lost here is the            the ‘intra-action’ with those actors that should be
+                                                                                       more associative material, where you learn how to          the main design competence, if the aim is really
+                                                                                       act under uncertainty. There is no terra firma from        enabling a collective creativity that operates not
+                                                                                       which design can be made, designers are always             necessarily in consensus, but agonistically. That does
+                                                                                       in a ‘swamp’ as Donald Schön put it. The challenge         not reduce the co-designer or professional designer
+                                                                                                                              67
+                                              desarrollos en diseño, como el diseño especu-          diferente ver a alguien de una escuela de negocios
+                                              lativo, el prototipado, las “cosas del diseño” y       haciendo design thinking que ver a alguien que pasó
+                                              otras propuestas relacionadas, que apuntan a           cinco años en una escuela de diseño y que hace algo
+                                              reimaginar la práctica profesional y el rol del        que tal vez sea parecido, pero que en realidad es
+                                              diseñador. ¿Son estas solamente excepciones            muy diferente. Aparte de esta competencia en lo
+                                              afortunadas o son el inicio de una verdadera           material, la pregunta clave es quiénes están invita-
+                                              transformación de este campo?                          dos a esta “cosa del diseño” o a este proceso del di-
+
+
+
+
+  Diseña 12. enero 2018 | Pp. 52-69
+                                         PE: Esta pregunta da para mucho. Primero, creo              seño. Me preocupan mucho las tendencias contem-
+                                         que es importante repensar el diseño en cuanto a            poráneas que corren el riesgo de reificar enfoques
+                                         quién y qué diseña, considerando que un diseñador           del diseño participativo en otro método productivo
+                                         profesional trabaja con personas que tienen sus             más para obtener ganancias financieras.
+                                         propios intereses, que generalmente son diferentes              No me atrevo a predecir quién va a ganar, pero los
+                                         al del diseñador. Es la “inter-acción”, o mejor dicho       50 años que llevo en esta industria me han transfor-
+                                         la “intra-acción” con estos actores la que debiera          mado en una persona un poco melancólica, al menos
+                                         ser la competencia más importante del diseño, si            en términos de cuán optimista se puede ser. A veces
+                                         es que realmente creemos que el objetivo es abrirle         me gusta citar al escritor sueco de novelas policiales
+                                         las puertas a una creatividad colectiva que opera           Henning Mankell, quien escribe acerca de un policía
+                                         no necesariamente en consenso, pero sí agonísti-            que vive en el sur de Suecia y cuyo cuerpo se está des-
+                                         camente. Esto no reduce el rol del co-diseñador o           integrando físicamente. Su vida emocional y social se
+                                         del diseñador profesional al de un facilitador. Creo        está destruyendo y el Estado de bienestar, que debie-
+                                         que los diseñadores tienen una competencia vital            ra ayudarlo, también se está desvaneciendo. A pesar
+
+
+
+
+interview | entrevista
+                                         con distintos tipos de materiales y que aportan esa         de todo esto, dice: «¡Tenemos que seguir defendiendo
+                                         competencia a este colectivo. De hecho, es muy              la democracia!» No sé si es muy optimista, pero es
+
+
+
+                                         to a facilitator. I think that designers have a key com-    him is also vanishing. And yet he says: “But we still
+                                         petence with different kinds of materials that they         have to stand up for democracy!” I don’t know if that
+                                         bring into this collective. It’s indeed very different to   is very optimistic, but it’s a stance. I don’t think we
+                                         see someone from a business school doing ‘design            should be willing to give up over the commercializing
+                                         thinking’, and then someone who’s been five years in        and the reification of people’s creativity, but see the
+                                         a design school program and does something that             current situation as a socialist democratic possibility.
+                                         might look similar, but is quite different. But apart            And if it is true that social change does not come
+                                         from the material competence, the key question and          about so much through big projects, as we maybe
+                                         difference is who is invited to this design thing or to     once believed, but in serendipitous situations of
+
+
+
+
+  Diseña 12. j anuary 2018 | Pp. 52-69
+                                         this design process. I’m very worried about contem-         crises, then the question becomes: How can schools
+                                         porary trends that risk reifying participatory design       and institutions prepare students, in this case design
+                                         approaches into yet another productive method for           students, to act with competence in these situations,
+                                         profit creation.                                            where there is no project they can join into? Maybe
+                                             I’m not willing to predict which side will win,         it’s not a new challenge, but, for me at least, this is
+                                         but fifty years in this business have made me a bit         a major challenge, because it’s so easy to propose
+                                         melancholic, at least in terms of how optimistic you        ideas about how to organize more democratic
+                                         can be. I sometimes quote the Swedish crime writer          assemblies, but how, for instance, do you react to
+                                         Henning Mankell, who writes about this policeman            critical situations such as the so called ‘refugee crisis’
+                                         in the south of Sweden, whose body is physically            in Europe or in Sweden? How young designers could
+                                         disintegrating, whose social and emotional life is go-      engage and act in such situations is crucial. I think
+                                         ing down and the welfare State that should support          this is a major challenge for education. :d
+                                                                                 68
+                                                                                       una opinión. No creo que debiéramos estar dispues-
+
+
+
+
+La p o sibilid ad de que cos a s del diseño pued an ser socialistas-democrátic as...
+                                                                                       tos a rendirnos a la comercialización y la reificación
+                                                                                       de la creatividad de las personas; creo que debiéra-
+                                                                                       mos ver la situación actual como una posibilidad para
+                                                                                       el socialismo democrático.
+                                                                                           Y si es cierto que el cambio social no llega a través
+                                                                                       de los grandes proyectos, como tal vez alguna vez lo
+                                                                                       creímos, sino en inesperadas situaciones de crisis,
+                                                                                       entonces la pregunta es esta: ¿De qué manera pueden
+                                                                                       las escuelas y las instituciones preparar a los estu-
+                                                                                       diantes (en este caso, a los estudiantes de diseño)
+                                                                                       para actuar de manera competente en estas situacio-
+                                                                                       nes, en las que no hay proyectos a los cuales unirse?
+                                                                                       Tal vez este desafío no es nuevo, pero al menos para
+                                                                                       mí, es un desafío muy grande, porque es tan fácil
+                                                                                       proponer ideas para organizar asambleas más demo-
+                                                                                       cráticas, pero, por ejemplo, ¿cómo se debe reaccionar
+                                                                                       a situaciones tan críticas como la llamada “crisis
+                                                                                       de los refugiados” en Europa o Suecia? Es crucial
+                                                                                       preguntarnos de qué manera los diseñadores jóvenes
+                                                                                       pueden intervenir y actuar en este tipo de situacio-
+                                                                                       nes. Creo que ese es un desafío muy importante para
+                                                                                       la educación.:d
+
+
+
+
+P. Ehn , I . Faría s & T. S ánchez Criad o
+
+
+
+
+On the P os sibility of Socialist-democratic . . .
+
+
+
+
+                                                                                                                              69
+
