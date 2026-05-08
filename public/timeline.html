@@ -312,6 +312,21 @@
     .en.starred .en-star { opacity: 1; color: #c8923a; }
     .en.starred::before { background: #c8923a; }
 
+    /* Project credit (visible on Milestones / Crossover) */
+    .sb-project { padding: 24px 20px 0; flex: 1; }
+    .sb-project-eyebrow {
+      font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--faint); margin-bottom: 18px;
+    }
+    .sb-project-people { margin-bottom: 14px; }
+    .sb-project-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+    .sb-project-affil { font-size: 11.5px; color: var(--mid); margin-top: 2px; font-style: italic; }
+    .sb-project-blurb {
+      margin-top: 22px; padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      font-size: 11.5px; line-height: 1.55; color: var(--mid);
+    }
+
     /* Document-type filter — checkbox list */
     .type-filter-label {
       font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
@@ -1028,41 +1043,57 @@
       <h1 class="sb-title">NJMF</h1>
       <div class="sb-dates">1970 — 1975</div>
     </div>
-    <div class="sb-search">
-      <div class="search-row">
-        <input id="search" type="search" autocomplete="off" spellcheck="false"
-               placeholder="Keyword or historical actor…">
-        <button id="search-clear" title="Clear">&#215;</button>
+    <div id="sb-archive-tools" style="display:none;">
+      <div class="sb-search">
+        <div class="search-row">
+          <input id="search" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="Keyword or historical actor…">
+          <button id="search-clear" title="Clear">&#215;</button>
+        </div>
+        <div class="chips" id="chips">
+          <button class="chip" data-term="DEMOS">DEMOS</button>
+          <button class="chip" data-term="EDB">EDB</button>
+          <button class="chip" data-term="Regnesentral">Regnesentral</button>
+          <button class="chip" data-term="NTNF">NTNF</button>
+        </div>
+        <div class="type-filter-label">People mentioned</div>
+        <div class="type-filter" id="name-filter">
+          <label class="type-row"><input type="checkbox" data-name="Nygaard"> <span>Kristen Nygaard</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Bergo"> <span>Olav Terje Bergo</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Lange"> <span>Knut Lange</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Thorsrud"> <span>Einar Thorsrud</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Tangnes"> <span>Kåre Tangnes</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Balstad"> <span>Jan Balstad</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Skau"> <span>Leif Skau</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Aarset"> <span>Svein Aarset</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Elgsa"> <span>Knut Elgsaass</span></label>
+          <label class="type-row"><input type="checkbox" data-name="Berntsen"> <span>Drude Berntsen</span></label>
+        </div>
+        <div class="type-filter-label">Document type</div>
+        <div class="type-filter" id="type-filter">
+          <label class="type-row"><input type="checkbox" data-type="letter" checked> <span>Letters</span></label>
+          <label class="type-row"><input type="checkbox" data-type="report" checked> <span>Reports</span></label>
+          <label class="type-row"><input type="checkbox" data-type="misc" checked> <span>Archival misc</span></label>
+        </div>
       </div>
-      <div class="chips" id="chips">
-        <button class="chip" data-term="DEMOS">DEMOS</button>
-        <button class="chip" data-term="EDB">EDB</button>
-        <button class="chip" data-term="Regnesentral">Regnesentral</button>
-        <button class="chip" data-term="NTNF">NTNF</button>
-      </div>
-      <div class="type-filter-label">People mentioned</div>
-      <div class="type-filter" id="name-filter">
-        <label class="type-row"><input type="checkbox" data-name="Nygaard"> <span>Kristen Nygaard</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Bergo"> <span>Olav Terje Bergo</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Lange"> <span>Knut Lange</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Thorsrud"> <span>Einar Thorsrud</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Tangnes"> <span>Kåre Tangnes</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Balstad"> <span>Jan Balstad</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Skau"> <span>Leif Skau</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Aarset"> <span>Svein Aarset</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Elgsa"> <span>Knut Elgsaass</span></label>
-        <label class="type-row"><input type="checkbox" data-name="Berntsen"> <span>Drude Berntsen</span></label>
-      </div>
-      <div class="type-filter-label">Document type</div>
-      <div class="type-filter" id="type-filter">
-        <label class="type-row"><input type="checkbox" data-type="letter" checked> <span>Letters</span></label>
-        <label class="type-row"><input type="checkbox" data-type="report" checked> <span>Reports</span></label>
-        <label class="type-row"><input type="checkbox" data-type="misc" checked> <span>Archival misc</span></label>
+      <div class="sb-ft">
+        <div id="entry-count">118 entries</div>
+        <button id="starred-filter"><span class="sf-star">★</span> Starred only</button>
       </div>
     </div>
-    <div class="sb-ft">
-      <div id="entry-count">118 entries</div>
-      <button id="starred-filter"><span class="sf-star">★</span> Starred only</button>
+    <div id="sb-project-info" class="sb-project">
+      <div class="sb-project-eyebrow">A research project by</div>
+      <div class="sb-project-people">
+        <div class="sb-project-name">Alina Krogstad</div>
+        <div class="sb-project-affil">Høyskolen Kristiania</div>
+      </div>
+      <div class="sb-project-people">
+        <div class="sb-project-name">India Anderson</div>
+        <div class="sb-project-affil">The University of Queensland</div>
+      </div>
+      <div class="sb-project-blurb">
+        Tracing Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) and its place in the global history of participatory design.
+      </div>
     </div>
     <div style="padding:14px 20px 0; flex-shrink:0; border-top: 1px solid var(--rule); margin-top: auto;">
       <div style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--faint);margin-bottom:8px;">Secondary Sources</div>
@@ -2041,6 +2072,11 @@ document.getElementById('view-tabs').addEventListener('click', e => {
   document.getElementById('view-milestones').style.display = isMilestones ? '' : 'none';
   document.getElementById('view-crossover').style.display  = isCrossover  ? '' : 'none';
   document.getElementById('tl-terminus').style.display     = isArchive   ? '' : 'none';
+
+  // Sidebar swaps: Archive shows filter tools; other tabs show project credit
+  document.getElementById('sb-archive-tools').style.display = isArchive ? '' : 'none';
+  document.getElementById('sb-project-info').style.display  = isArchive ? 'none' : '';
+
   if (isMilestones && !document.getElementById('ms-root').hasChildNodes()) renderMilestones();
   if (isCrossover  && !document.getElementById('cx-root').hasChildNodes()) renderCrossover();
 });
