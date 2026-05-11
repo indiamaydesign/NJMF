@@ -909,9 +909,10 @@
 
     /* ── Milestone timeline ── */
     #view-milestones {
-      padding: 48px 56px 80px;
-      max-width: 860px;
+      padding: 0 0 80px;
+      max-width: 1200px;
     }
+    #view-milestones #ms-root { padding: 0 56px; max-width: 860px; margin: 0 auto 0 0; }
     .ms-intro {
       font-size: 13px;
       color: var(--mid);
@@ -1106,7 +1107,13 @@
     .page-search-clear:hover { color: var(--accent); }
 
     /* ── Reference library hub ─────────────────────────────────────── */
-    #view-library { padding: 56px 56px 80px; max-width: 1200px; }
+    /* No outer padding — the inner .page-hd owns the top spacing, same as
+       view-archive. Content below the header (count, grid, detail) gets
+       its own side padding so it sits inside the 1200px column. */
+    #view-library { padding: 0 0 80px; max-width: 1200px; }
+    #view-library .lib-count,
+    #view-library .lib-grid,
+    #view-library .lib-detail { margin-left: 56px; margin-right: 56px; }
     .lib-eyebrow {
       font-family: var(--sans);
       font-size: 10px; font-weight: 500;
@@ -1662,6 +1669,9 @@
 
       /* Reference library / archive view inner padding */
       #view-library { padding: 0 0 60px; }
+      #view-library .lib-count,
+      #view-library .lib-grid,
+      #view-library .lib-detail { margin-left: 20px; margin-right: 20px; }
       #view-milestones { padding: 28px 20px 60px; }
       #view-crossover  { padding: 0 0 60px; }
       .cx-beat { grid-template-columns: 1fr; }
@@ -1713,27 +1723,32 @@
     "1970 — 1975 and beyond": "1970 — 1975 og videre",
     "A research project by": "Et forskningsprosjekt av",
     "Tracing Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) and its place in the global history of participatory design.": "Sporer Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) og dets plass i den internasjonale historien om deltakende design.",
-
     "Milestones": "Milepæler",
     "Crossover": "Kryssløp",
     "Archival sources": "Arkivkilder",
     "Reference library": "Referansebibliotek",
-
+    "References": "Referanser",
+    "Scholarship & oral history": "Forskning og muntlig historie",
+    "Key moments": "Nøkkelmomenter",
+    "Two traditions": "To tradisjoner",
+    "The NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to read linked archive documents and secondary sources.":
+      "NJMFs forskningsprosjekt (1970–1975) og dets arv i skandinavisk deltakende design. Klikk på en milepæl for å lese tilknyttede arkivdokumenter og sekundærkilder.",
+    "The Thorsrud sociotechnical lineage and the Nygaard collective-resource lineage, running side by side and occasionally crossing. Click any node to read the detail.":
+      "Den sosiotekniske linjen fra Thorsrud og den kollektive ressurslinjen fra Nygaard, side om side, av og til i kryssløp. Klikk på en node for å lese detaljen.",
+    "18 works — academic scholarship, an institutional history, and one oral history — tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.":
+      "18 verk — akademisk forskning, en institusjonshistorie, og én muntlig historie — som sporer NJMF, skandinavisk deltakende design og linjene som fulgte. Filtrer i sidemenyen; klikk på et kort for å lese kilden.",
     "Primary documents": "Primærdokumenter",
     "Secondary sources": "Sekundærkilder",
     "109 photographs of letters, reports, drafts and working papers from Olav Terje Bergo's archive. Filter in the sidebar; search across keywords here.": "109 fotografier av brev, rapporter, utkast og arbeidspapirer fra Olav Terje Bergos arkiv. Filtrer i sidemenyen; søk på tvers av nøkkelord her.",
     "17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.": "17 akademiske verk som sporer NJMF, skandinavisk deltakende design og linjene som fulgte. Filtrer i sidemenyen; klikk på et kort for å lese kilden.",
-
     "Source type": "Kildetype",
     "People & topics": "Personer og tema",
     "People mentioned": "Personer omtalt",
     "Document type": "Dokumenttype",
     "Year": "År",
     "Starred only": "Bare stjernemerket",
-
     "From": "Fra",
     "To": "Til",
-
     "Letters": "Brev",
     "Reports": "Rapporter",
     "Report drafts": "Rapportutkast",
@@ -1744,7 +1759,6 @@
     "Admin / budgets": "Administrasjon / budsjetter",
     "Handwritten": "Håndskrevet",
     "Other": "Annet",
-
     "Book": "Bok",
     "Book chapter": "Bokkapittel",
     "Journal article": "Tidsskriftartikkel",
@@ -1752,22 +1766,18 @@
     "Interview": "Intervju",
     "Oral history": "Muntlig historie",
     "Institutional record": "Institusjonell oversikt",
-
     "Search title, author, or topic…": "Søk i tittel, forfatter eller tema…",
     "Search keywords across the archive…": "Søk på tvers av arkivet…",
-
     "About this source": "Om denne kilden",
     "Read source": "Les kilden",
     "← Back to library": "← Tilbake til biblioteket",
     "No sources match these filters.": "Ingen kilder samsvarer med disse filtrene.",
     "Loading…": "Laster…",
     "Could not load this source.": "Kunne ikke laste denne kilden.",
-
     "sources": "kilder",
     "of": "av",
     "matching": "treff",
     "entries": "oppføringer",
-
     "Date": "Dato",
     "Archival reference": "Arkivreferanse",
     "Description": "Beskrivelse",
@@ -1777,9 +1787,25 @@
     "Published in": "Publisert i",
     "Critical find": "Kritisk funn",
     "Notable find": "Bemerkelsesverdig funn",
-    "Context": "Kontekst"
+    "Context": "Kontekst",
+    "Thorsrud": "Thorsrud",
+    "Nygaard": "Nygaard",
+    "Samarbeidsprosjektet": "Samarbeidsprosjektet",
+    "NJMF": "NJMF",
+    "Sociotechnical Design": "Sosioteknisk design",
+    "& Everyday Democracy": "& Hverdagsdemokrati",
+    "Sociotechnical Design & Everyday Democracy": "Sosioteknisk design & hverdagsdemokrati",
+    "Collective Resource": "Kollektiv ressurs",
+    "& Participatory Design": "& deltakende design",
+    "AFI · Tavistock · Gustavsen": "AFI · Tavistock · Gustavsen",
+    "Norsk Regnesentral · Ehn · Bødker": "Norsk Regnesentral · Ehn · Bødker",
+    "Methodological cousin": "Metodologisk slektning",
+    "Critical crossover": "Kritisk kryssløp",
+    "★ Critical crossover": "★ Kritisk kryssløp",
+    "Divergence": "Divergens",
+    "Connection": "Forbindelse",
+    "Key moments in the NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to see linked archive documents and secondary sources.": "Nøkkelmomenter i NJMFs forskningsprosjekt (1970–1975) og dets arv i skandinavisk deltakende design. Klikk på en milepæl for å se tilknyttede arkivdokumenter og sekundærkilder."
   },
-
   "milestone": {
     "landsmote-70": {
       "displayDate": "Landsmøtet 1970",
@@ -1856,6 +1882,302 @@
       "title": "FIRE — linjen fortsetter ved UiO Informatikk",
       "body": "FIRE (Functional Integration through REdesign), 1992–1994, ved Institutt for informatikk, Universitetet i Oslo. Jørn Braa, Tone Bratteteig, Jens Kaasbøll og Leikny Øgrim arbeider med prinsipper og teknikker for redesign av databaserte systemer slik at de blir funksjonelt integrerte på tvers av brukergrupper med delvis motstridende mål. En bevisst utvidelse fra Collective Resource-tilnærmingen mot dialogbaserte strategier som tar organisatorisk kompleksitet (flere interessegrupper, flere sameksisterende systemer) på større alvor. Bærer den arbeidsorienterte deltakende design-tradisjonen videre gjennom det tidlige 1990-tallet under en ny institusjonell adresse — UiO Informatikk, der Nygaard hadde vært en av grunnleggerne. Samme Bratteteig som i Florence: hun er den gjennomgående forbindelsen mellom 1980-tallets helse-deltakende design og 1990-tallets universitetsforskning."
     }
+  },
+  "ann": {
+    "IMG_0338": {
+      "headline": "Thorsrud-forbindelsen — det eneste papirsporet",
+      "body": "Dette er det eneste kjente dokumentet der spenningen mellom Thorsrud og Nygaard kommer fram som en levende intern uenighet. Knut Lange — en forsker fra Arbeidspsykologisk institutt (Thorsruds institutt) som satt i NJMFs styringskomité — skriver eksplisitt at han skulle ønske han kunne rådføre seg med Thorsrud, men må tenke selv. Sekundærlitteraturen (Ehn, Avtalt Spill) beskriver dette skillet bare som en ren teoretisk uenighet. Dette brevet viser at det var en levende intern strid inne i selve prosjektet.",
+      "link": "Kryssløp → «Jeg skulle gjerne ha snakket med Thorsrud om dette»"
+    },
+    "IMG_0438": {
+      "headline": "Langes avgang — intern konflikt usynlig i sekundærkilder",
+      "body": "Langes formelle uttreden fra NJMFs styringskomité. Han anklager utkastet til Grunnboka (Arbeidsrapport 2) for svak pedagogikk, manglende empirisk forankring fra de fire bedriftene, og en «primitiv» polemisk stil. Verken Ehn eller Avtalt Spill nevner dette — de framstiller Thorsrud/Nygaard-separasjonen som gradvis og teoretisk. Dette dokumentet viser at det endte i en eksplisitt, navngitt strid med en navngitt forsker fra AFI-linjen.",
+      "link": "Kryssløp → «Lange trekker seg — broen brister»"
+    },
+    "IMG_2398": {
+      "headline": "Grunnleggelsesdokumentet — og en direkte avvisning av Thorsrud",
+      "body": "Landsmøtevedtaket fra 1970 som startet hele prosjektet. Det inneholder også formuleringer som direkte kritiserer Samarbeidsprosjektet: vedtaket advarer mot at autonome arbeidsgruppe-eksperimenter «ikke må forveksles med og må ikke avlede oppmerksomhet fra» handlinger som styrker kollektiv fagforeningsmakt. Bekreftet av Avtalt Spill (s. 193) men kilden parafraserer — dette er originalteksten til den eksplisitte avvisningen.",
+      "link": "Kryssløp → 1970; Milepæler → Landsmøtet 1970"
+    },
+    "IMG_2404": {
+      "headline": "Marx og Engels — den ideologiske registeret sekundærkildene utelater",
+      "body": "Et dokument fra Nygaard, mai 1972, med eksplisitte referanser til Marx og Engels om arbeiderklassens frigjøring — den ideologiske rammen som senere ble forordet til Grunnboka. Ehn og Avtalt Spill beskriver prosjektet med begreper som «konfliktperspektiv» og «emansipasjon», men unngår direkte marxistiske sitater. Dette dokumentet viser at prosjektet opererte i et åpent marxistisk register, noe som gjør den senere rammeavtalen i 1975 — signert av NAF/arbeidsgiverne — desto mer bemerkelsesverdig.",
+      "link": "Sekundærkilder → Ehn, «Scandinavian Design» (1992), s. 103–108"
+    },
+    "IMG_3186": {
+      "headline": "Prosjektavslutning — navngir broen til 1980-tallet",
+      "body": "Forbundsstyrets vedtak fra august 1973 som formelt avslutter prosjektet og oppretter en oppfølgings­komité. Blant de navngitte: Jan Balstad, som i Avtalt Spill omtales som en av to «fadre» for HABUT-avtalen om bedriftsutvikling i 1982. Komiteens mandat knytter det radikale prosjektet fra 1973 direkte til det institusjonaliserte rammeverket som kommer i det påfølgende tiåret.",
+      "link": "Kryssløp → 1982; Jan Balstad-buen"
+    },
+    "IMG_0442": {
+      "headline": "Langes private avgang — to dager før Thorsrud-brevet",
+      "body": "Et personlig brev fra Knut Lange (skrevet fra Hedmark/Oppland Distriktshøgskole) til Harry O. Hansen i NJMF, 11. september 1972. Lange refererer eksplisitt til den uoffisielle dialogen som ledet til avgangsbeslutningen: «etter våre samtaler, og etter at jeg har snakket med andre, har jeg kommet til en konklusjon som du kanskje synes er ganske drastisk, og som kanskje, hvis noen tar meg alvorlig nok, kan sette administrasjonen i en knipe.» Han konkluderer: 1½ års prosjektarbeid har produsert noe så ulikt det det burde vært, med så liten innflytelse over retningen, at han trekker seg. Dette er det private «røykfylte bakrom»-brevet — to dager før IMG_0338 og lenge før den formelle avgangen i IMG_0438. Det metodologiske bruddet er forhåndsbestemt gjennom uformelle samtaler, ikke gjennom dokumentert uenighet."
+    },
+    "IMG_0649": {
+      "headline": "To tradisjoner planla å samarbeide — bruddet kom senere",
+      "body": "Den opprinnelige prosjektplanen fra 1971 inneholdt et delprosjekt som direkte brukte Thorsruds rammeverk for «psykologiske jobbkrav», og foreslo å knytte til seg en forsker fra Arbeidspsykologisk institutt (Thorsruds eget institutt). Ved oppstarten planla de to linjene å arbeide sammen, ikke mot hverandre. Den motsetningsfylte innrammingen utviklet seg senere, gjennom Langes uttreden og prosjektets egen ideologiske utvikling. Dette kompliserer enhver ryddig «Nygaard vs. Thorsrud»-fortelling.",
+      "link": "Kryssløp → «Felles delprosjekt planlagt om psykologiske jobbkrav»"
+    },
+    "IMG_1110": {
+      "headline": "AFIs første brev — institusjonell bro før Langes utnevnelse",
+      "body": "12. juni 1970, to dager etter at Norsk Regnesentral skrev til NJMF, svarer Knut Lange på fullt Arbeidsforskningsinstituttene-brevpapir — han representerer eksplisitt alle tre instituttene, inkludert Arbeidspsykologisk (Thorsruds). Han gir substansielle innrammingskommentarer til fagforeningens NTNF-søknad. Dette er før Langes formelle plass i styringskomiteen, og viser at AFI–NJMF-broen ble bygget i kollegialt samspill fra prosjektets aller første dager, lenge før den metodologiske spenningen som dukker opp i 1972.",
+      "link": "Kryssløp → 1970 (Knut Lange: AFI inn i NJMF-prosjektet)"
+    },
+    "IMG_0656": {
+      "headline": "Den opprinnelige styringskomiteen — begge linjene på samme lag",
+      "body": "En side fra prosjektorganiseringen i 1971 som navngir hele styringskomiteen: Skau (formann), Balstad, Hansen og Løver fra NJMF; Lange fra AFI; Tangnes fra NPI; Elgsaass fra UiO; Nygaard og Brostigen fra Norsk Regnesentral. Tangnes — medinitiativtaker til prosjektet — er nevnt som tjenestegjorde fram til han døde i august 1971. Organisasjonskartet for øyeblikket da begge linjene var institusjonelt forent i ett prosjekt. Leses som strukturell parallell til IMG_0649 (prosjektplanen fra 1971).",
+      "link": "Kryssløp → 1971 (Felles delprosjekt planlagt)"
+    },
+    "IMG_2397": {
+      "headline": "Den glemte feltmedarbeideren — Svein Aarset",
+      "body": "En forordsside fra Arbeidsrapport nr. 1 (mars 1972) som krediterer Svein Aarset ved Grafisk kontor, NTNF, for prosjektets illustrasjoner. Aarset er navngitt i fagforeningens aller første publiserte forskningsrapport — men verken Ehn (Scandinavian Design) eller Bergh (Avtalt Spill) nevner ham. En liten påminnelse om at den kanoniske Nygaard/Bergo/Ehn-linjen visker ut medarbeidere som sto på originalmasthodet.",
+      "link": "Milepæler → 1972 (Arbeidsgrupper aktive)"
+    },
+    "IMG_0444": {
+      "headline": "Broen er fremdeles funksjonell — Lange i rommet tre måneder før bruddet",
+      "body": "Styringskomitéreferat fra 19. juni 1972. Lange er til stede. Sak 6 på dagsordenen: fortsettelse av diskusjonen om AR2 (Arbeidsrapport 2). Møtet er ellers rutinemessig — budsjettet godkjent, seminaret på Kongsberg i august planlagt, Hydraulik-klubbens kurs under forberedelse. Tre måneder senere vil Lange skrive IMG_0338 fra Hedmark; til slutt trekker han seg (IMG_0438). Dette er «før»-bildet av bruddet.",
+      "link": "Kryssløp → 1972 («Jeg skulle gjerne ha snakket med Thorsrud»)"
+    },
+    "IMG_0451": {
+      "headline": "Tre dager på Nyseterstova — feltarbeidet presser videre under uenigheten",
+      "body": "Et arbeidsmøte på Nyseterstova, Ørskogfjellet, 7.–9. juli 1972. Nygaard, Bergo, og hele Hydraulik-laget — Berle, Dahl, Kvalvåg, Osvold, Rønning, Røv, Sandvik, Sårheim, Winsjansen. Bedriftsdemokrati, arbeidsmiljø, skiftarbeid — alt på dagsorden. Bare tre uker etter styringskomitémøtet i IMG_0444 presser case-arbeidet videre med full intensitet, selv mens broen til AFI brister.",
+      "link": "Milepæler → 1972 (Arbeidsgrupper aktive)"
+    },
+    "IMG_0513": {
+      "headline": "Lange skriver fra eksil — ni dager før «jeg skulle ønske jeg kunne snakke med Thorsrud»",
+      "body": "Et brev fra Knut Lange datert 4. september 1972, på brevpapir fra Hedmark/Oppland Distriktshøgskole i Lillehammer. Lange har allerede fysisk forlatt AFI på dette tidspunktet — han er nå akademiker ved en annen institusjon. Han skriver for å koordinere en tur til Oslo til neste styringskomitémøte, betinget av at et styremøte ved hans Distriktshøgskole utsettes. Den byråkratiske forløperen til IMG_0338 (13. september 1972). Viser at den institusjonelle separasjonen kom før det dokumenterte teoretiske bruddet med minst ni dager.",
+      "link": "Kryssløp → 1972 («Jeg skulle gjerne ha snakket med Thorsrud»)"
+    },
+    "IMG_1162": {
+      "headline": "Tre dagers Hydraulik-feltmøte — case-arbeidet fortsetter gjennom bruddet",
+      "body": "Et tre dagers NJMF-Prosjektet-arbeidsmøte i Brattvåg, 26.–28. oktober 1972. Nygaard holder en forelesning om planlegging med utgangspunkt i CLASS-kapittelet i AR2 — den samme Arbeidsrapporten Lange nettopp hadde gjort innvendinger mot. Hele Hydraulik-laget er til stede. Viser at selv mens den metodologiske uenigheten med Lange eskalerte gjennom høsten 1972, bremset ikke fabrikkgulv-forskningen. Prosjektet stoppet ikke opp for å løse bruddet — det akselererte forbi det.",
+      "link": "Milepæler → 1972 (Arbeidsgrupper aktive)"
+    },
+    "IMG_0575": {
+      "headline": "Ekstern industriinteresse begynner — Norsk Hydro bestiller Grunnboka",
+      "body": "En bibliotekbestilling fra Norsk Hydro a.s. (Porsgrunn Fabrikker), 22. juni 1973, der de ber Norsk Regnesentral om alle tre publikasjonene av Nygaard og Bergo fra 1972: begge bind av Grunnboka og den grunnleggende Arbeidsrapport nr. 1. Den første dokumenterte eksterne industriinteressen for NJMFs forskningsresultater. Kommer sju måneder før den lokale LO/NAF-dataavtalen (januar 1974) og tjueto måneder før den sentrale rammeavtalen (april 1975). Grunnboka begynner å lekke ut av fagforeningsforskningskretsen og inn i industriene den ble skrevet om.",
+      "link": "Milepæler → 1974 (Lokal og sentral LO/NAF-dataavtale)"
+    },
+    "IMG_3167": {
+      "headline": "NJMF ber Norsk Regnesentral om å ta på seg prosjektet",
+      "body": "NJMFs brev av 13. mai 1970 til Norsk Regnesentral, der de formelt ber NR delta i det foreslåtte forskningsprosjektet om planlegging, styring og EDB. Dette er fagforeningens åpningstrekk — skrevet i ukene rett etter landsmøtevedtaket (IMG_2398). Det er dokumentet NR svarer på 10. juni (IMG_3170) og som AFI svarer på 12. juni (IMG_1110). Brevet eksisterer i arkivet som den ene gjenstanden som utløser hele korrespondansekjeden som utgjør prosjektets formelle grunnleggelse.",
+      "link": "Milepæler → 13. mai 1970 (NJMF ber NR delta)"
+    },
+    "IMG_3170": {
+      "headline": "Norsk Regnesentral aksepterer — og avslører at AFI allerede koordinerte",
+      "body": "NRs svar 10. juni 1970 til NJMF, der de formelt aksepterer prosjektet. Signert av Drude Berntsen (instituttsjef ved NR) og Kristen Nygaard (forskningssjef). Brevet inneholder en kritisk setning: «Siden brevet ble mottatt har NR hatt konferanser med representanter for forbundet og en representant for Instituttet for Arbeidspsykologi» — siden brevet ble mottatt, har NR hatt konferanser med representanter for NJMF OG en representant fra Arbeidspsykologisk institutt (AFI/Thorsruds institutt). Dette dokumenterer eksplisitt at AFI koordinerte med NR før noen av dem offentlig hadde forpliktet seg til prosjektet — og styrker «de to tradisjonene planla å samarbeide»-funnet (IMG_0649).",
+      "link": "Milepæler → 10. juni 1970 (NR aksepterer; AFI allerede koordinerer)"
+    }
+  },
+  "lib": {
+    "bergo-oral-history-2025": {
+      "title": "Bergos muntlige historie",
+      "venue": "Intervjuer + korrespondanse (mai 2025)",
+      "summary": "Intervjuer gjennomført med Olav Terje Bergo i mai 2025, etterfulgt av omfattende skriftlig korrespondanse. Inneholder Bergos rekonstruksjon av hvordan han kom til NJMF (en lunsj i 1970 med Hans Jørgen Raastad), det bergenske «Sosialistiske siviløkonomer»-studentnettverket som gikk forut for prosjektet, og hans lesning av hvorfor finansieringen ble kuttet i 1974 (EF-avstemningen i 1972). Én deltakers fortelling, femti år senere — å veies mot arkivet, ikke til å overskrive det."
+    },
+    "nygaard-1992": {
+      "title": "Hvor mange valg tar vi? Hvor mange er vanskelige?",
+      "venue": "Essaysamling, 1992",
+      "summary": "Kristen Nygaards eget retrospektive essay om de samfunnsansvarlige valgene han tok som forsker. Primærkilden for hans innramming av NJMF-prosjektet — hvordan det ble finansiert mot arbeidsgivermotstand, hvorfor forskningsdesignet snudde sommeren 1971, og hva det betydde å forske for en fagforening i stedet for om arbeidere."
+    },
+    "bjerknes-bratteteig-1995": {
+      "title": "Brukermedvirkning og demokrati",
+      "venue": "Scand. J. Information Systems",
+      "summary": "En grunnleggende oversikt og selvhistorie over skandinavisk forskning på deltakende design, skrevet av Bratteteig (medforfatter på Florence og FIRE) sammen med Gro Bjerknes. Kartlegger feltets tre teoretiske retninger, navngir sentrale prosjekter i linjen, og daterer FIRE spesifikt til 1992–1994 — den autoritative referansen for diskusjonene om linjen på dette nettstedet."
+    },
+    "ehn-scandinavian-design": {
+      "title": "Skandinavisk design",
+      "venue": "I Adler & Winograd (red.), Usability. Oxford UP",
+      "summary": "Pelle Ehns kapittel fra 1992 i Usability-boka — den mest siterte engelskspråklige framstillingen av skandinavisk deltakende design. Navngir NJMF-prosjektet som grunnleggelses­saken, sporer linjen via DEMOS og UTOPIA, og artikulerer «verktøyperspektivet» og «design ved å gjøre»-metodikken."
+    },
+    "avtalt-spill": {
+      "title": "Avtalt spill",
+      "venue": "Gyldendal",
+      "summary": "Trond Berghs offisielle historie om den norske Hovedavtalen — det sentrale LO/NAF (senere LO/NHO) tariffsystemet — utgitt til 75-årsjubileet. Sidene som er valgt her dekker perioden 1970–1980: NJMF-forskningsprosjektet, EDB-dataavtalene, og det institusjonelle grunnlaget for HABUT-bedriftsutviklingsavtalen fra 1982."
+    },
+    "afi-history": {
+      "title": "AFI / OsloMet-historie",
+      "venue": "OSLM/AKT-47 · 1964–2013",
+      "summary": "En institusjonell historie om Arbeidsforskningsinstituttet (AFI) — det norske arbeidsforskningsinstituttet som Thorsrud ledet fra 1965/66 og fremover, der Samarbeidsprosjektet ble huset, og der Lange var ansatt da han ble med i NJMFs styringskomité. Dokumenterer den institusjonelle settingen for Thorsrud-linjen."
+    },
+    "fallan-2023": {
+      "title": "Nordiske designkulturer i forvandling, 1960–1980",
+      "venue": "Routledge",
+      "summary": "Et bind fra Routledge i 2023 som omformer nordisk designhistorie mellom 1960 og 1980 — utover det kanoniske «Scandinavian Design»-bildet av århundremidte-objekter. Nyttig her for den politiske og institusjonelle konteksten rundt NJMF-prosjektets periode: hvordan designdiskurs, kritikk og statlige institusjoner formet hverandre på nytt."
+    },
+    "bjerknes-1992": {
+      "title": "Delt ansvar — et spenningsfelt",
+      "venue": "Refleksjoner fra Florence-prosjektet",
+      "summary": "Gro Bjerknes' kapittel som reflekterer over Florence-prosjektet — norsk deltakende design med sykepleiere ved Rikshospitalet, 1983–1987. Behandler «delt ansvar» mellom dataforskere og fagfolk som et spenningsfelt mellom prosjektkontroll og reell fagdeltakelse."
+    },
+    "kensing-greenbaum": {
+      "title": "Arv: Å ha noe å si",
+      "venue": "I Routledge Handbook of Participatory Design",
+      "summary": "Et historisk kapittel om den tidlige deltakende design-bevegelsen frem til den første Participatory Design Conference i 1990. Røtter feltet i de politiske og sosiale bevegelsene fra 1970- og 80-tallet og sporer hvordan deltakende forskning ble til deltakende teknologidesign."
+    },
+    "clement-besselaar-1993": {
+      "title": "Et tilbakeblikk på PD-prosjekter",
+      "venue": "I Schuler & Namioka, PD: Principles and Practices",
+      "summary": "Andrew Clement og Peter Van den Besselaars retrospektive oversikt over deltakende design-prosjekter verden over, skrevet for IFIP WG9.1. Inkluderer NJMF / Jern- og Metall-prosjektet som en av de kanoniske sakene."
+    },
+    "bansler-1989": {
+      "title": "Systemutviklingsforskning i Skandinavia: Tre teoretiske skoler",
+      "venue": "Scand. J. Information Systems",
+      "summary": "Jørgen Banslers klassifisering fra 1989 av skandinavisk systemutviklingsforskning i tre teoretiske skoler — nyttig som strukturelt kart over feltet i det øyeblikket deltakende design ble institusjonalisert i akademia."
+    },
+    "gregory-2002": {
+      "title": "Skandinaviske tilnærminger til deltakende design",
+      "venue": "Int. J. Engng Ed (UiO Informatikk)",
+      "summary": "Judith Gregory (da ved UiO Informatikk) om hva som kjennetegner skandinavisk deltakende design: streben etter demokratisering, eksplisitt verdidiskusjon, og å behandle konflikter som designressurser i stedet for problemer som må undertrykkes."
+    },
+    "kyng-2010": {
+      "title": "Å bygge bro mellom politikk og teknikk",
+      "venue": "Scand. J. Information Systems",
+      "summary": "Morten Kyngs refleksjon fra 2010 over gapet mellom PDs politiske prosjekt og dens tekniske praksis. En direkte motpart til Spinuzzi 2002 og en forløper til Bødker/Kyng 2018 — samme diagnose, tre perspektiver på hva som gikk tapt da PD ble internasjonalt adoptert."
+    },
+    "bodker-kyng-2018": {
+      "title": "Deltakende design som betyr noe — å ta opp de store spørsmålene",
+      "venue": "ACM ToCHI",
+      "summary": "Bødker og Kyngs oppgjør med dagens tilstand i deltakende design, et kvart århundre etter grunnleggergenerasjonen. Navngir det som er vunnet (metoder, institusjonell aksept) og det som er tapt (politisk innhold, ambisjonen om demokratisk kontroll over teknologi). En oppfordring til en fornyet PD som «betyr noe»."
+    },
+    "hanseth-2024": {
+      "title": "Min vei til infrastruktur",
+      "venue": "Scand. J. Information Systems (UiO IFI)",
+      "summary": "Ole Hanseth (UiO Informatikk) om sin egen intellektuelle reise fra deltakende design til studier av informasjonsinfrastruktur. En sen refleksjon fra en av skikkelsene som bar den norske linjen videre gjennom 1990- og 2000-tallet."
+    },
+    "spinuzzi-2002": {
+      "title": "En skandinavisk utfordring, et amerikansk svar",
+      "venue": "SIGDOC '02",
+      "summary": "Clay Spinuzzis sammenligning av skandinavisk PD (marxistisk, fagforeningsledet, mockup-som-designverktøy) og den amerikanske tilpasningen av den (konsulent-ledet, prototype-som-tilbakemeldingsverktøy). Den klareste artikuleringen av hvordan PDs politiske innhold ble fjernet på veien over Atlanteren."
+    },
+    "binder-1996-schon": {
+      "title": "Å lære og å vite med artefakter — intervju med Donald A. Schön",
+      "venue": "AI & Society",
+      "summary": "Thomas Binders intervju med Donald Schön — teoretikeren bak «den reflekterte praktiker» — om læring og kunnskap gjennom artefakter. Leses som en metodologisk slektning av PD-tradisjonen: hvordan dyktige fagfolk kommer til kunnskap gjennom å gjøre."
+    },
+    "ehn-2018-interview": {
+      "title": "Om muligheten for sosialdemokratiske design-ting",
+      "venue": "Diseña 12",
+      "summary": "Pelle Ehn i samtale med Ignacio Farías og Tomás Sánchez Criado for designtidsskriftet Diseña. Ser tilbake på UTOPIA og DEMOS, det marxistiske registeret i 1970-tallets skandinaviske PD, og hva «sosialdemokratiske design-ting» kunne bety i dag."
+    }
+  },
+  "cx": {
+    "cx-2-r-njmf-landsm-te-edb-resolution-passed": {
+      "title": "NJMFs landsmøte — EDB-resolusjonen vedtas",
+      "body": "NJMFs landsmøte i 1970 vedtar å bygge fagforeningens egen forskningskapasitet på databehandling, planlegging og styring. Vesentlig: resolusjonen advarer eksplisitt mot at autonome arbeidsgruppe-eksperimenter «ikke må forveksles med og må ikke avlede oppmerksomhet fra» handlinger som styrker kollektiv fagforeningsmakt — en direkte offentlig avvisning av Samarbeidsprosjektets enkeltarbeidsplass-fokus. Der ledelsen ikke vil samarbeide, må fagforeningen kunne gjennomføre egne undersøkelser."
+    },
+    "cxc-2-knut-lange-afi-enters-the-njmf-project": {
+      "label": "Knut Lange: AFI inn i NJMF-prosjektet",
+      "body": "AFIs Knut Lange — en av Thorsruds egne forskere ved Arbeidspsykologisk institutt — blir formelt utnevnt som AFI-representant i NJMFs styringskomité. For første gang er de to linjene institusjonelt forent i samme prosjekt."
+    },
+    "cxc-9-i-would-have-liked-to-talk-with-thorsrud-about-this": {
+      "label": "«Jeg skulle gjerne ha snakket med Thorsrud om dette»",
+      "body": "Knut Lange, som skriver fra Hedmark midt i en eskalerende metodologisk krise med Nygaard om Arbeidsrapport 2, strekker seg mot Thorsrud-tradisjonen for veiledning — men Thorsrud er på reise. Lange må tenke selv. En direkte, dokumentert linje fra innsiden av NJMF-prosjektet tilbake til AFI."
+    },
+    "cxc-10-lange-resigns-the-bridge-breaks": {
+      "label": "Lange trekker seg — broen brister",
+      "body": "Etter uforsonlige uenigheter med Nygaard om AR2 (Arbeidsrapport 2) trekker Lange seg formelt fra NJMFs styringskomité. Den institusjonelle forbindelsen mellom AFI og NJMF-prosjektet er brutt. Herfra utvikler de to linjene seg hver for seg."
+    },
+    "cx-0-l-tavistock-institute-fred-emery": {
+      "title": "Tavistock-instituttet / Fred Emery",
+      "body": "Britisk sosioteknisk systemteori: arbeidsgrupper trenger både tekniske og sosiale krav oppfylt samtidig. Emery og Trist utvikler det teoretiske fundamentet som Thorsrud senere skal anvende i Skandinavia."
+    },
+    "cx-1-l-lo-naf-samarbeidsprosjektet": {
+      "title": "LO/NAF Samarbeidsprosjektet",
+      "body": "Thorsrud, ved IFIM/NTH i Trondheim, starter Samarbeidsprosjektet LO/NAF sammen med Emery — feltforsøk med autonome arbeidsgrupper ved norske bedrifter. Målet: å demokratisere arbeidslivet gjennom sosioteknisk omforming."
+    },
+    "cx-2-l-afi-founded-thorsrud-leads-psychology-institute": {
+      "title": "AFI grunnlegges — Thorsrud leder Arbeidspsykologisk institutt",
+      "body": "AFI (Arbeidsforskningsinstituttet) opprettes i Oslo. Thorsrud flytter fra Trondheim og tar med seg prosjektet. Knut Lange og Thoralf Qvale slutter seg til som forskere. Prosjektet blir den dominerende forskningsaktiviteten ved det nye instituttet."
+    },
+    "cx-3-l-industrial-democracy-field-experiments": {
+      "title": "Feltforsøk i industrielt demokrati",
+      "body": "Feltforsøk ved Christiania Spigerverk, Hunsfoss, Norsk Hydro og NOBØ innfører autonome arbeidsgrupper. Tilnærmingen sprer seg internasjonalt — men i Norge klarer ikke fagforeningsnettverkene å føre den videre. Qvale diagnostiserer senere denne svikten for LO."
+    },
+    "cx-4-r-a-bergen-precursor-in-bergo-s-account": {
+      "title": "En bergensk forløper (i Bergos versjon)",
+      "body": "I Olav Terje Bergos muntlige historie fra 2025 har prosjektets forskningstilnærming en bergensk forløper: et nettverk av sosialdemokratiske NHH-studenter (siviløkonomer) som rekrutterte ekstern kompetanse for å hjelpe vestlandets fagforeninger i kamp mot industrinedgang. Hans Jørgen Raastad (AUF) arrangerer en lunsj i Oslo der Bergo går med på å begynne hos Nygaard ved NR etter studiene. Dette er Bergos rekonstruksjon; ingen NJMF-dokumenter omtaler lunsjen, og det bergenske nettverket («Sosialistiske siviløkonomer») nevnes ikke i publisert sekundærlitteratur. Listet som ett perspektiv verdt å veie — ikke som etablert opprinnelsesfortelling."
+    },
+    "cxc-6-joint-sub-project-planned-on-psychological-job-requirements": {
+      "label": "Felles delprosjekt planlagt om psykologiske jobbkrav",
+      "body": "Den opprinnelige prosjektplanen fra 1971 (IMG_0649) inkluderer et delprosjekt om å formulere «psykologiske jobbkrav» — Thorsrud og Emerys rammeverk fra Samarbeidsprosjektet — og foreslår eksplisitt å knytte til seg en forsker fra Arbeidspsykologisk institutt (Thorsruds institutt). Ved oppstarten planla de to linjene å samarbeide, ikke konkurrere. Det teoretiske bruddet kom senere, gjennom Langes uttreden og prosjektets egen utvikling."
+    },
+    "cx-6-r-research-project-begins-at-norsk-regnesentral": {
+      "title": "Forskningsprosjektet starter ved Norsk Regnesentral",
+      "body": "Kristen Nygaard leder forskningslaget ved Norsk Regnesentral. Lange sitter i styringskomiteen som AFI-broen. Det opprinnelige opplegget — at forskere skulle studere arbeidere — erstattes raskt: forskerne skal støtte arbeiderne i deres egne undersøkelser."
+    },
+    "cx-8-r-working-groups-active-at-four-factory-sites": {
+      "title": "Arbeidsgrupper aktive ved fire bedrifter",
+      "body": "Undersøkelsesgrupper ved hver bedriftsklubb møtes to til tre ganger ukentlig, bygger kunnskap om EDB-systemer, utformer krav og foreslår omorganiseringer. Arkivets 109 primærdokumenter stammer fra denne perioden."
+    },
+    "cx-9-l-gustavsen-succeeds-thorsrud-at-afi": {
+      "title": "Gustavsen tar over etter Thorsrud ved AFI",
+      "body": "Bjørn Gustavsen overtar som instituttsjef. Thorsrud fortsetter som seniorforsker. AFI-linjen begynner å bevege seg mot demokratisk dialog og bred deltakelse — distinkt fra, men parallelt med, det NJMF-linjen utvikler."
+    },
+    "cx-9-r-njmf-project-complete-8-research-reports": {
+      "title": "NJMF-prosjektet ferdig — 8 forskningsrapporter",
+      "body": "Prosjektet avsluttes. Åtte forskningsrapporter dokumenterer funn fra fire bedrifter. Den kollektive ressurstilnærmingen er etablert som en distinkt metodikk — eksplisitt posisjonert mot den sosiotekniske tradisjonen."
+    },
+    "cx-10-r-local-then-central-lo-naf-data-agreement": {
+      "title": "Lokal, så sentral LO/NAF-dataavtale",
+      "body": "Først en lokal avtale (januar 1974), så en banebrytende sentral avtale (april 1975) mellom LO og NAF som etablerer fagforeningens rett til informasjon om datasystemer og oppretter rollen som datatillitsmann. Hundrevis av lokale avtaler følger."
+    },
+    "cx-11-l-afi-workplace-development-programmes": {
+      "title": "AFI: programmer for bedriftsutvikling",
+      "body": "Gustavsen og kollegene utvikler bredere deltakende programmer for arbeidsplassendringer — mindre ekspertstyrt enn de sosiotekniske forsøkene, mer dialogbasert. En stille konvergens med retningen NJMF-linjen tar."
+    },
+    "cx-11-r-demos-project-sweden": {
+      "title": "DEMOS-prosjektet — Sverige",
+      "body": "Direkte inspirert av NJMF starter svenske forskere og LO DEMOS ved fire bedrifter. Pelle Ehn og Åke Sandberg utdyper den kollektive ressurstilnærmingen. Rapporten «Vi er imot detaljstyring» blir et merkepunkt."
+    },
+    "cxc-11-qvale-bridges-evaluates-both-traditions": {
+      "label": "Qvale bygger bro — evaluerer begge tradisjonene",
+      "body": "Thoralf Qvale (AFI, fra Thorsruds opprinnelige team) skriver den sentrale LO-evalueringen av hvorfor den sosiotekniske tilnærmingen ikke leverte fagforeningsdrevet demokratisering. Ehn siterer den i NJMF-kapittelet som den grunnleggende kritikken som rettferdiggjorde den kollektive ressurstilnærmingen. Qvale bidrar dermed til NJMF-linjens selvdefinisjon."
+    },
+    "cx-12-r-swedish-mbl-norwegian-work-environment-act": {
+      "title": "Svensk MBL; norsk arbeidsmiljølov",
+      "body": "Lovseire: MBL gir svenske arbeidere medbestemmelsesrett i produksjonsbeslutninger. NJMF/DEMOS-linjens politiske program blir lov. I Norge vedtas Arbeidsmiljøloven — det eneste industriland som lovgir direkte om arbeidsorganisering (§12). Ehn kaller dette senere «unikt i verden». Norge ligger nå foran Sverige i juridisk forankring for medvirkning."
+    },
+    "cxc-12-12-arbeidsmilj-loven-both-lineages-written-into-law": {
+      "label": "§12 i Arbeidsmiljøloven — begge linjene skrevet inn i loven",
+      "body": "Arbeidsmiljøloven av 1977 er det lovgivende øyeblikket der begge tradisjonene møtes på papiret. §12 (arbeidsorganisering) skylder sin innramming til NJMF/NR-linjens data-rettighetsarv; verneombudsbestemmelsene ble utarbeidet av Bjørn Gustavsen ved AFI — Thorsruds etterfølger. De to forskningslinjene som hadde stridd internt siden 1972 former samtidig nasjonal lovgivning. Avtalt Spill påpeker at AFIs forskning hadde «større innflytelse på arbeidsmiljøloven enn på Hovedavtalen av 1966»."
+    },
+    "cx-13-l-gustavsen-democratic-dialogue-conferences": {
+      "title": "Gustavsen: demokratiske dialogkonferanser",
+      "body": "Gustavsen utvikler «dialogkonferansen» — en bred metode for organisasjonsendring som trekker hundrevis av arbeidere og ledere inn i strukturerte samtaler. Noen ganger framstilt som hverdagsdemokrati: nedenfra og opp, dialogdrevet, ikke ekspertdesignet."
+    },
+    "cx-13-r-utopia-project-design-by-doing": {
+      "title": "UTOPIA-prosjektet — design ved å gjøre",
+      "body": "Ehn og det nordiske grafiske arbeiderforbundet utformer nye verktøy for faglært avissetting. Verktøyperspektivet og design-ved-å-gjøre-metoder (mockups, prototyper) definerer global deltakende design-praksis."
+    },
+    "cx-14-r-florence-pd-goes-into-healthcare": {
+      "title": "Florence — deltakende design i helsesektoren",
+      "body": "Gro Bjerknes og Tone Bratteteigs Florence-prosjekt, med fokus på sykepleiernes arbeidssituasjon, tar den arbeidsorienterte design-tradisjonen inn i helsevesenet. Ehn (1992) nevner det blant en håndfull «andre generasjons arbeidsorienterte prosjekter» — en direkte videreføring av den metodologiske linjen som går Nygaard → DEMOS → UTOPIA, men nå anvendt på en ikke-industriell arbeidsstyrke. Bratteteig blir senere professor i informasjonssystemers design ved UiO og en sentral figur i det globale PD-feltet."
+    },
+    "cx-15-l-habut-bedriftsutvikling-enters-hovedavtalen": {
+      "title": "HABUT — bedriftsutvikling inn i Hovedavtalen",
+      "body": "Tilleggsavtale I (HABUT) føyes til Hovedavtalen LO/NAF, og skaper et felles rammeverk for bedriftsutvikling. Gustavsens AFI former metodikken for «bred deltakelse». Samarbeidsprosjektet og NJMF-linjen har nå begge bidratt til samme institusjonelle ordning."
+    },
+    "cxc-15-jan-balstad-from-njmf-committee-member-to-habut-godfather": {
+      "label": "Jan Balstad: fra NJMF-komitémedlem til HABUT-fadder",
+      "body": "Jan Balstad — som var arbeidsutvalgsmedlem i NJMF-prosjektet i 1971–73 — er en av to personer som senere krediteres som «fadre» for bedriftsutviklingsavtalen HABUT fra 1982 (markert ved 25-årsjubileet i 2007). En enkeltkarriere sporer hele buen: fra det radikale NJMF-forskningsprosjektet til det institusjonaliserte, LO/NAF-felles-administrerte utviklingsprogrammet. Den individuelle biografien er det tydeligste beviset på hvordan de to linjene til slutt smelter sammen."
+    },
+    "cx-16-r-fire-the-lineage-continues-at-uio-informatics": {
+      "title": "FIRE — linjen fortsetter ved UiO Informatikk",
+      "body": "FIRE (Functional Integration through REdesign), 1992–1994, ved Institutt for informatikk, UiO. Jørn Braa, Tone Bratteteig, Jens Kaasbøll og Leikny Øgrim utvider den arbeidsorienterte PD-tradisjonen mot redesign av eksisterende systemer — tar organisatorisk kompleksitet (flere interessegrupper, flere sameksisterende systemer) mer alvorlig enn det opprinnelige rammeverket for Collective Resource gjorde. Florence-laget fortsetter under en ny institusjonell adresse: UiO Informatikk, der Nygaard hadde vært en grunnleggende skikkelse."
+    },
+    "cx-17-l-broad-based-workplace-development": {
+      "title": "Bred bedriftsutvikling",
+      "body": "AFI-tradisjonen bidrar til nasjonale programmer for bedriftsutvikling (BU i Norge). Mer deltakende og arbeiderdrevet enn den sosiotekniske opprinnelsen — de to linjene har hver beveget seg mot hverandre, uten noensinne helt å smelte sammen."
+    },
+    "cx-17-r-participatory-design-global-field": {
+      "title": "Deltakende design — internasjonalt fagfelt",
+      "body": "PDC (Participatory Design Conference, fra 1990) etablerer PD som et internasjonalt felt. NJMF-prosjektet anerkjennes som grunnleggelses-saken. Nygaards arbeid med SIMULA og språk som verktøy preger hele tradisjonen."
+    },
+    "cx-18-r-service-design-at-aho-methods-inherited-politics-dropped": {
+      "title": "Tjenestedesign ved AHO — metoder arvet, politikken tonet ned",
+      "body": "AHOs Institutt for design blir et internasjonalt betydelig knutepunkt for tjenestedesign — Senter for tjenesteinnovasjon, AT-ONE-metoden, dypt samarbeid med norsk offentlig sektor og industri. Verktøykassa (co-design-workshops, prototyping med brukere, interessentkartlegging, «design ved å gjøre») nedstammer gjenkjennelig fra UTOPIA. Men den institusjonelle familien er annerledes: designskole, ikke informatikk, med formative påvirkninger fra skandinavisk industridesign og den internasjonale tjenestedesign-bølgen (Live|Work, IDEO). Det politiske innholdet — arbeidernes kollektive ressurser, klassekonflikt, fagforeningen som designsubjekt — er i stor grad falt bort, erstattet av bruker-, kunde- og borger-orienterte innramminger. AHO og UiO Informatikk krysspollinerer (Bratteteig samarbeider på tvers), men tjenestedesign ved AHO leses best som en metodologisk slektning av NJMF-tradisjonen, ikke som en direkte etterkommer. Å plassere det på denne linjen er en posisjon, ikke en etablert kjensgjerning: noen forskere ser tjenestedesign som videreføringen av PD; andre ser det som design-tenkning som plukket opp noe PD-vokabular mens politikken ble lagt bort."
+    }
   }
 }
 </script>
@@ -1888,11 +2210,18 @@
         <button id="search-clear"></button>
       </div>
       <div class="sb-search">
-        <div class="chips" id="chips">
-          <button class="chip" data-term="DEMOS">DEMOS</button>
-          <button class="chip" data-term="EDB">EDB</button>
-          <button class="chip" data-term="Regnesentral">Regnesentral</button>
-          <button class="chip" data-term="NTNF">NTNF</button>
+        <div class="type-filter-label" style="margin-top: 4px;" data-i18n="Document type">Document type</div>
+        <div class="type-filter" id="type-filter">
+          <label class="type-row"><input type="checkbox" data-type="letter"> <span data-i18n="Letters">Letters</span></label>
+          <label class="type-row"><input type="checkbox" data-type="report"> <span data-i18n="Reports">Reports</span></label>
+          <label class="type-row"><input type="checkbox" data-type="draft"> <span data-i18n="Report drafts">Report drafts</span></label>
+          <label class="type-row"><input type="checkbox" data-type="meeting"> <span data-i18n="Meeting minutes">Meeting minutes</span></label>
+          <label class="type-row"><input type="checkbox" data-type="proposal"> <span data-i18n="Plans / proposals">Plans / proposals</span></label>
+          <label class="type-row"><input type="checkbox" data-type="agenda"> <span data-i18n="Programmes / agendas">Programmes / agendas</span></label>
+          <label class="type-row"><input type="checkbox" data-type="memo"> <span data-i18n="Memos / notater">Memos / notater</span></label>
+          <label class="type-row"><input type="checkbox" data-type="admin"> <span data-i18n="Admin / budgets">Admin / budgets</span></label>
+          <label class="type-row"><input type="checkbox" data-type="handwritten"> <span data-i18n="Handwritten">Handwritten</span></label>
+          <label class="type-row"><input type="checkbox" data-type="misc"> <span data-i18n="Other">Other</span></label>
         </div>
         <div class="type-filter-label" data-i18n="People mentioned">People mentioned</div>
         <div class="type-filter" id="name-filter">
@@ -1907,18 +2236,12 @@
           <label class="type-row"><input type="checkbox" data-name="Elgsa"> <span>Knut Elgsaass</span></label>
           <label class="type-row"><input type="checkbox" data-name="Berntsen"> <span>Drude Berntsen</span></label>
         </div>
-        <div class="type-filter-label" data-i18n="Document type">Document type</div>
-        <div class="type-filter" id="type-filter">
-          <label class="type-row"><input type="checkbox" data-type="letter"> <span data-i18n="Letters">Letters</span></label>
-          <label class="type-row"><input type="checkbox" data-type="report"> <span data-i18n="Reports">Reports</span></label>
-          <label class="type-row"><input type="checkbox" data-type="draft"> <span data-i18n="Report drafts">Report drafts</span></label>
-          <label class="type-row"><input type="checkbox" data-type="meeting"> <span data-i18n="Meeting minutes">Meeting minutes</span></label>
-          <label class="type-row"><input type="checkbox" data-type="proposal"> <span data-i18n="Plans / proposals">Plans / proposals</span></label>
-          <label class="type-row"><input type="checkbox" data-type="agenda"> <span data-i18n="Programmes / agendas">Programmes / agendas</span></label>
-          <label class="type-row"><input type="checkbox" data-type="memo"> <span data-i18n="Memos / notater">Memos / notater</span></label>
-          <label class="type-row"><input type="checkbox" data-type="admin"> <span data-i18n="Admin / budgets">Admin / budgets</span></label>
-          <label class="type-row"><input type="checkbox" data-type="handwritten"> <span data-i18n="Handwritten">Handwritten</span></label>
-          <label class="type-row"><input type="checkbox" data-type="misc"> <span data-i18n="Other">Other</span></label>
+        <div class="type-filter-label" data-i18n="Quick search">Quick search</div>
+        <div class="chips" id="chips">
+          <button class="chip" data-term="DEMOS">DEMOS</button>
+          <button class="chip" data-term="EDB">EDB</button>
+          <button class="chip" data-term="Regnesentral">Regnesentral</button>
+          <button class="chip" data-term="NTNF">NTNF</button>
         </div>
       </div>
       <div class="sb-ft">
@@ -1963,7 +2286,7 @@
       <button class="vtab active" data-view="milestones" data-i18n="Milestones">Milestones</button>
       <button class="vtab" data-view="crossover" data-i18n="Crossover">Crossover</button>
       <button class="vtab" data-view="archive" data-i18n="Archival sources">Archival sources</button>
-      <button class="vtab" data-view="library" data-i18n="Reference library">Reference library</button>
+      <button class="vtab" data-view="library" data-i18n="References">References</button>
     </div>
 
     <div id="view-archive" style="display:none;">
@@ -1981,16 +2304,28 @@
     </div><!-- /view-archive -->
 
     <div id="view-milestones">
+      <div class="page-hd">
+        <div class="lib-eyebrow" data-i18n="Milestones">Milestones</div>
+        <h2 class="lib-title" data-i18n="Key moments">Key moments</h2>
+        <div class="lib-sub" data-i18n="The NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to read linked archive documents and secondary sources.">The NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to read linked archive documents and secondary sources.</div>
+      </div>
       <div id="ms-root"></div>
     </div>
 
-    <div id="view-crossover" style="display:none;"><div id="cx-root"></div></div>
+    <div id="view-crossover" style="display:none;">
+      <div class="page-hd">
+        <div class="lib-eyebrow" data-i18n="Crossover">Crossover</div>
+        <h2 class="lib-title" data-i18n="Two traditions">Two traditions</h2>
+        <div class="lib-sub" data-i18n="The Thorsrud sociotechnical lineage and the Nygaard collective-resource lineage, running side by side and occasionally crossing. Click any node to read the detail.">The Thorsrud sociotechnical lineage and the Nygaard collective-resource lineage, running side by side and occasionally crossing. Click any node to read the detail.</div>
+      </div>
+      <div id="cx-root"></div>
+    </div>
 
     <div id="view-library" style="display:none;">
       <div class="page-hd">
-        <div class="lib-eyebrow" data-i18n="Reference library">Reference library</div>
-        <h2 class="lib-title" data-i18n="Secondary sources">Secondary sources</h2>
-        <div class="lib-sub" data-i18n="17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.">17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.</div>
+        <div class="lib-eyebrow" data-i18n="References">References</div>
+        <h2 class="lib-title" data-i18n="Scholarship &amp; oral history">Scholarship &amp; oral history</h2>
+        <div class="lib-sub" data-i18n="18 works — academic scholarship, an institutional history, and one oral history — tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.">18 works — academic scholarship, an institutional history, and one oral history — tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.</div>
         <div class="page-search-row">
           <input id="lib-search" class="page-search" type="search" autocomplete="off" spellcheck="false"
                  placeholder="Search title, author, or topic…" data-i18n-placeholder="Search title, author, or topic…">
@@ -2079,7 +2414,7 @@
           <span class="lbm-pub-label">Published in</span>
           <a id="lbm-pub-link" href="#" target="_blank" rel="noopener">
             <span id="lbm-pub-title"></span>
-            <span class="lbm-pub-arrow">↗</span>
+            <span class="lbm-pub-arrow">→</span>
           </a>
           <div id="lbm-pub-hint" class="lbm-pub-hint"></div>
         </div>
@@ -2647,10 +2982,18 @@ function lbOpen(entry) {
 
   // Annotation panel
   const stem = entry.stem || (entry.stems && entry.stems[0]);
-  const ann  = ANNOTATIONS[stem] || (entry.stems || []).map(s => ANNOTATIONS[s]).find(Boolean);
+  let annRaw = ANNOTATIONS[stem] || (entry.stems || []).map(s => ANNOTATIONS[s]).find(Boolean);
+  let annStem = stem;
+  if (!ANNOTATIONS[stem] && entry.stems) {
+    annStem = entry.stems.find(s => ANNOTATIONS[s]) || stem;
+  }
   const annEl = document.getElementById('lbm-annotation');
-  if (ann) {
-    document.getElementById('lbma-label').textContent    = ann.level === 'critical' ? '★ Critical find' : ann.level === 'major' ? 'Notable find' : 'Context';
+  if (annRaw) {
+    const ann = localise(Object.assign({}, annRaw, { id: annStem }), 'ann');
+    const levelLabel = ann.level === 'critical' ? t('★ Critical find')
+                     : ann.level === 'major'    ? t('Notable find')
+                                                : t('Context');
+    document.getElementById('lbma-label').textContent    = levelLabel;
     document.getElementById('lbma-headline').textContent = ann.headline;
     document.getElementById('lbma-body').textContent     = ann.body;
     const linkEl = document.getElementById('lbma-link');
@@ -2926,9 +3269,7 @@ function renderMilestones() {
   // the JSON-driven Norwegian text in proper string variables instead of inline
   // const declarations inside ${} expressions.
   const items = MILESTONES.map(m => localise(m, 'milestone'));
-  const intro = t('Key moments in the NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to see linked archive documents and secondary sources.');
   root.innerHTML = `
-    <p class="ms-intro">${esc(intro)}</p>
     <div class="ms-track">
       ${items.map(m => {
         const peopleTags = (m.people || []).map(p =>
@@ -2940,7 +3281,7 @@ function renderMilestones() {
 
         const secLinks = m.links.map(lk => {
           const hash = lk.src ? '#' + lk.src : '';
-          return `<a class="ms-sec-link" href="secondary-sources.html${hash}" target="_blank">${esc(lk.label)} ↗</a>`;
+          return `<a class="ms-sec-link" href="secondary-sources.html${hash}" target="_blank">${esc(lk.label)} →</a>`;
         }).join('');
 
         const hasSources = m.docs.length > 0 || m.links.length > 0;
@@ -3215,9 +3556,14 @@ function renderCrossover() {
     return `<details class="cx-sources"><summary>Secondary sources</summary><ul>${items}</ul></details>`;
   }
 
-  function nodeHTML(n, side) {
+  function slugify(s) {
+    return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').slice(0, 60) || 'x';
+  }
+
+  function nodeHTML(n, side, beatIdx) {
     if (!n) return '';
-    const id = 'cx-' + side + '-' + Math.random().toString(36).slice(2,7);
+    // Stable id derived from beat index + side + title — survives re-renders
+    const id = 'cx-' + beatIdx + '-' + side + '-' + slugify(n.title);
     const cls = 'cx-node' + (n.cousin ? ' cousin' : '');
     const people = (n.people||[]).map(p => `<span class="cx-node-person">${esc(p)}</span>`).join('');
     const docs   = (n.docs||[]).map(s => `<img class="ms-doc-thumb" src="images/previews/${esc(s)}.jpg" data-stem="${esc(s)}" title="${esc(s)}" alt="${esc(s)}">`).join('');
@@ -3232,9 +3578,9 @@ function renderCrossover() {
     </div>`;
   }
 
-  function crossHTML(c, yr) {
+  function crossHTML(c, yr, beatIdx) {
     if (!c) return '';
-    const id = 'cxc-' + Math.random().toString(36).slice(2,7);
+    const id = 'cxc-' + beatIdx + '-' + slugify(c.label);
     const people = (c.people||[]).map(p => `<span class="cx-node-person">${esc(p)}</span>`).join('');
     const docs   = (c.docs||[]).map(s => `<img class="ms-doc-thumb" src="images/previews/${esc(s)}.jpg" data-stem="${esc(s)}" title="${esc(s)}" alt="${esc(s)}">`).join('');
     const sigLabel = {major:'Crossover', critical:'★ Critical crossover', divergence:'Divergence', minor:'Connection'}[c.significance] || 'Crossover';
@@ -3255,33 +3601,41 @@ function renderCrossover() {
     </div>`;
   }
 
-  const beatsHTML = CX_DATA.map(beat => {
+  // Pre-localise each beat's left/right/cross before rendering. Localised
+  // content lives in I18N.no.cx, keyed by stable {beatIdx}-{side|cross}-{slug}.
+  const beatsHTML = CX_DATA.map((beat, beatIdx) => {
     const hasContent = beat.left || beat.right || beat.cross;
     if (!hasContent) return '';
 
-    const yr = `<div class="cx-yr">${esc(beat.year)}</div>`;
+    // Apply Norwegian overrides if active language is 'no'
+    const lLeft  = beat.left  ? localise(Object.assign({}, beat.left,  { id: 'cx-' + beatIdx + '-l-' + slugify(beat.left.title) }),  'cx') : null;
+    const lRight = beat.right ? localise(Object.assign({}, beat.right, { id: 'cx-' + beatIdx + '-r-' + slugify(beat.right.title) }), 'cx') : null;
+    const lCross = beat.cross ? localise(Object.assign({}, beat.cross, { id: 'cxc-' + beatIdx + '-' + slugify(beat.cross.label) }),  'cx') : null;
+    const localYear = (LANG === 'no' && I18N.no.cxYear && I18N.no.cxYear[beat.year]) || beat.year;
+
+    const yr = `<div class="cx-yr">${esc(localYear)}</div>`;
     return `<div class="cx-beat">
-      <div class="cx-cell-l">${nodeHTML(beat.left, 'l')}</div>
+      <div class="cx-cell-l">${nodeHTML(lLeft, 'l', beatIdx)}</div>
       <div class="cx-cell-s">${yr}</div>
-      <div class="cx-cell-r">${nodeHTML(beat.right, 'r')}</div>
-      ${beat.cross ? crossHTML(beat.cross, beat.year) : ''}
+      <div class="cx-cell-r">${nodeHTML(lRight, 'r', beatIdx)}</div>
+      ${lCross ? crossHTML(lCross, beat.year, beatIdx) : ''}
     </div>`;
   }).join('');
 
   root.innerHTML = `
     <div class="cx-intro-band">
       <div class="cx-lane-hd cx-lane-hd-left">
-        <div class="cx-lane-pill" style="background:${leftColor}">Thorsrud</div>
-        <div class="cx-lane-pill-sub">Samarbeidsprosjektet</div>
-        <div class="cx-lane-title">Sociotechnical Design<br>& Everyday Democracy</div>
-        <div class="cx-lane-sub">AFI · Tavistock · Gustavsen</div>
+        <div class="cx-lane-pill" style="background:${leftColor}">${esc(t('Thorsrud'))}</div>
+        <div class="cx-lane-pill-sub">${esc(t('Samarbeidsprosjektet'))}</div>
+        <div class="cx-lane-title">${esc(t('Sociotechnical Design'))}<br>${esc(t('& Everyday Democracy'))}</div>
+        <div class="cx-lane-sub">${esc(t('AFI · Tavistock · Gustavsen'))}</div>
       </div>
       <div></div>
       <div class="cx-lane-hd cx-lane-hd-right">
-        <div class="cx-lane-pill" style="background:${rightColor}">Nygaard</div>
-        <div class="cx-lane-pill-sub">NJMF</div>
-        <div class="cx-lane-title">Collective Resource<br>& Participatory Design</div>
-        <div class="cx-lane-sub">Norsk Regnesentral · Ehn · Bødker</div>
+        <div class="cx-lane-pill" style="background:${rightColor}">${esc(t('Nygaard'))}</div>
+        <div class="cx-lane-pill-sub">${esc(t('NJMF'))}</div>
+        <div class="cx-lane-title">${esc(t('Collective Resource'))}<br>${esc(t('& Participatory Design'))}</div>
+        <div class="cx-lane-sub">${esc(t('Norsk Regnesentral · Ehn · Bødker'))}</div>
       </div>
     </div>
     <div class="cx-body">${beatsHTML}</div>`;
@@ -3361,7 +3715,36 @@ function applyStaticStrings() {
   });
 }
 
-// Switch language. Re-renders dynamic views that are already mounted.
+// Capture which cards/nodes are open so language toggle doesn't collapse them
+function captureViewState() {
+  const state = {
+    scrollY: window.scrollY,
+    msOpen: [...document.querySelectorAll('.ms-card.open')].map(c => c.dataset.msId),
+    cxOpen: [...document.querySelectorAll('.cx-node.open, .cx-cross-card.open')].map(n => n.dataset.cxId),
+    libDetail: document.getElementById('lib-detail') &&
+               document.getElementById('lib-detail').style.display !== 'none'
+                 ? (window.__currentLibSourceId || null) : null
+  };
+  return state;
+}
+function restoreViewState(s) {
+  if (!s) return;
+  s.msOpen.forEach(id => {
+    const c = document.querySelector('.ms-card[data-ms-id="' + CSS.escape(id) + '"]');
+    if (c) c.classList.add('open');
+  });
+  s.cxOpen.forEach(id => {
+    const n = document.querySelector('[data-cx-id="' + CSS.escape(id) + '"]');
+    if (n) n.classList.add('open');
+  });
+  if (s.libDetail && typeof openLibrarySource === 'function') {
+    openLibrarySource(s.libDetail);
+  }
+  // Restore scroll on the next frame so layout has settled
+  requestAnimationFrame(() => window.scrollTo(0, s.scrollY));
+}
+
+// Switch language. Re-renders dynamic views, then restores open-card state.
 function setLang(lang) {
   LANG = lang === 'no' ? 'no' : 'en';
   document.body.dataset.lang = LANG;
@@ -3369,10 +3752,12 @@ function setLang(lang) {
   document.querySelectorAll('.lang-toggle button').forEach(b => {
     b.classList.toggle('active', b.dataset.lang === LANG);
   });
+  const state = captureViewState();
   applyStaticStrings();
   if (document.getElementById('ms-root') && document.getElementById('ms-root').hasChildNodes()) renderMilestones();
   if (typeof renderCrossover === 'function' && document.getElementById('cx-root') && document.getElementById('cx-root').hasChildNodes()) renderCrossover();
   if (typeof renderLibrary === 'function' && document.getElementById('lib-grid') && document.getElementById('lib-grid').hasChildNodes()) renderLibrary();
+  restoreViewState(state);
 }
 
 document.querySelectorAll('.lang-toggle button').forEach(b => {
@@ -3525,6 +3910,13 @@ function renderLibrary() {
       if (!hay.includes(ql)) return false;
     }
     return true;
+  }).sort((a, b) => {
+    // Sort A–Z by displayed (localised) title — strip leading "A "/"The "/non-letters
+    const norm = s => {
+      const lt = localise(s, 'lib').title || '';
+      return lt.replace(/^(the |a |an |«|"|')/i, '').toLowerCase();
+    };
+    return norm(a).localeCompare(norm(b), undefined, { sensitivity: 'base' });
   });
 
   // Count
@@ -3539,13 +3931,15 @@ function renderLibrary() {
     grid.innerHTML = '<div class="lib-empty">No sources match these filters.</div>';
     return;
   }
-  grid.innerHTML = filtered.map(s => `
+  // Pre-localise each source for Norwegian
+  const localisedCards = filtered.map(s => localise(s, 'lib'));
+  grid.innerHTML = localisedCards.map(s => `
     <button class="lib-card" data-src-id="${esc(s.id)}" type="button">
-      <span class="lib-card-type t-${esc(s.type)}">${esc(TYPE_LABELS[s.type] || s.type)}</span>
+      <span class="lib-card-type t-${esc(s.type)}">${esc(t(TYPE_LABELS[s.type] || s.type))}</span>
       <div class="lib-card-title">${esc(s.title)}</div>
       <div class="lib-card-meta">${esc((s.authors||[]).join(', '))} · ${esc(s.year)}<br><span style="font-style:italic">${esc(s.venue)}</span></div>
       ${(s.chips||[]).length ? `<div class="lib-card-chips">${s.chips.slice(0,5).map(c => `<span class="lib-card-chip">${esc(c)}</span>`).join('')}</div>` : ''}
-      <div class="lib-card-cta">Read source <span class="arr">→</span></div>
+      <div class="lib-card-cta">${esc(t('Read source'))} <span class="arr">→</span></div>
     </button>
   `).join('');
   grid.querySelectorAll('.lib-card').forEach(card => {
@@ -3555,11 +3949,13 @@ function renderLibrary() {
 
 // ── In-tab source reader ──────────────────────────────────────────────
 function openLibrarySource(id) {
-  const src = LIBRARY.find(s => s.id === id);
-  if (!src) return;
+  const raw = LIBRARY.find(s => s.id === id);
+  if (!raw) return;
+  window.__currentLibSourceId = id;
+  const src = localise(raw, 'lib');
 
   // Header
-  document.getElementById('lib-detail-type').textContent  = TYPE_LABELS[src.type] || src.type;
+  document.getElementById('lib-detail-type').textContent  = t(TYPE_LABELS[src.type] || src.type);
   document.getElementById('lib-detail-title').textContent = src.title;
   document.getElementById('lib-detail-meta').innerHTML    =
     '<b>' + (src.authors || []).map(esc).join(', ') + '</b> · ' + esc(src.year) +
@@ -3570,12 +3966,17 @@ function openLibrarySource(id) {
     src.summary ? '<p>' + esc(src.summary) + '</p>' : '';
   document.getElementById('lib-detail-summary').style.display = src.summary ? '' : 'none';
 
-  // Switch views
-  document.querySelector('.lib-hd').style.display      = 'none';
-  document.querySelector('.lib-filters').style.display = 'none';
-  document.getElementById('lib-count').style.display   = 'none';
-  document.getElementById('lib-grid').style.display    = 'none';
-  document.getElementById('lib-detail').style.display  = '';
+  // Switch views — null-guard each selector since some have been removed/moved
+  const _hide = (sel) => {
+    const el = (sel[0] === '.') ? document.querySelector(sel) : document.getElementById(sel);
+    if (el) el.style.display = 'none';
+  };
+  _hide('.lib-hd');
+  _hide('.lib-filters');
+  _hide('lib-count');
+  _hide('lib-grid');
+  const detail = document.getElementById('lib-detail');
+  if (detail) detail.style.display = '';
   window.scrollTo({ top: 0, behavior: 'instant' });
 
   // Load body content
@@ -3652,11 +4053,17 @@ function formatTranscript(raw) {
 }
 
 function closeLibrarySource() {
-  document.getElementById('lib-detail').style.display  = 'none';
-  document.querySelector('.lib-hd').style.display      = '';
-  document.querySelector('.lib-filters').style.display = '';
-  document.getElementById('lib-count').style.display   = '';
-  document.getElementById('lib-grid').style.display    = '';
+  window.__currentLibSourceId = null;
+  const _show = (sel) => {
+    const el = (sel[0] === '.') ? document.querySelector(sel) : document.getElementById(sel);
+    if (el) el.style.display = '';
+  };
+  const detail = document.getElementById('lib-detail');
+  if (detail) detail.style.display = 'none';
+  _show('.lib-hd');
+  _show('.lib-filters');
+  _show('lib-count');
+  _show('lib-grid');
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
 document.getElementById('lib-back').addEventListener('click', closeLibrarySource);

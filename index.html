@@ -47,7 +47,7 @@
 
     /* Top index / dates row */
     .top {
-      display: flex; justify-content: space-between; align-items: flex-start;
+      display: flex; justify-content: space-between; align-items: center;
       font-family: 'Inter', sans-serif;
       font-size: 11px;
       letter-spacing: 0.32em;
@@ -56,6 +56,27 @@
       font-weight: 500;
     }
     .top-rule { display: inline-block; width: 60px; height: 1px; background: var(--ink); margin-right: 14px; vertical-align: middle; }
+    .top-right { display: inline-flex; align-items: center; gap: 22px; }
+
+    /* Language toggle on the landing page */
+    .lang-toggle {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em;
+    }
+    .lang-toggle button {
+      background: none; border: none; cursor: pointer;
+      color: var(--mid);
+      padding: 2px 4px;
+      font-family: inherit;
+      font-size: inherit; font-weight: inherit; letter-spacing: inherit;
+      text-transform: uppercase;
+      transition: color .15s;
+    }
+    .lang-toggle button:hover { color: var(--ink); }
+    .lang-toggle button.active { color: var(--accent); }
+    .lang-toggle .lang-sep { color: var(--faint); }
 
     /* ── Hero area ─────────────────────────────────────────────────── */
     .hero {
@@ -303,6 +324,22 @@
 </head>
 <body>
 
+<!-- Norwegian translations — JSON form, no apostrophe escaping needed -->
+<script id="i18n-no" type="application/json">
+{
+  "ui": {
+    "Index 01 / 01": "Indeks 01 / 01",
+    "1970 — 2025": "1970 — 2025",
+    "A history of Participatory Design": "En historie om deltakende design",
+    "A research project by": "Et forskningsprosjekt av",
+    "Enter the archive": "Inn i arkivet"
+  },
+  "html": {
+    "tagline-body": "Det norske forskningsprosjektet som grunnla <em>deltakende design</em> — og linjene det satte i gang."
+  }
+}
+</script>
+
   <div class="frame"></div>
   <div class="cursor-cross" id="cursor-cross"><span class="x">+</span></div>
 
@@ -310,17 +347,24 @@
 
     <!-- Top index row -->
     <div class="top">
-      <div><span class="top-rule"></span>Index 01 / 01</div>
-      <div>1970 — 2025</div>
+      <div><span class="top-rule"></span><span data-i18n="Index 01 / 01">Index 01 / 01</span></div>
+      <div class="top-right">
+        <span data-i18n="1970 — 2025">1970 — 2025</span>
+        <span class="lang-toggle" role="group" aria-label="Language">
+          <button data-lang="en" class="active" type="button">EN</button>
+          <span class="lang-sep">·</span>
+          <button data-lang="no" type="button">NO</button>
+        </span>
+      </div>
     </div>
 
     <!-- Hero -->
     <div class="hero">
-      <div class="hero-eyebrow">A history of Participatory Design</div>
+      <div class="hero-eyebrow" data-i18n="A history of Participatory Design">A history of Participatory Design</div>
       <h1 class="wordmark" aria-label="NJMF+">
         <span>N</span><span>J</span><span>M</span><span>F</span><span class="plus">+</span>
       </h1>
-      <div class="tagline">
+      <div class="tagline" data-i18n-html="tagline-body">
         The Norwegian research project that founded
         <em>participatory design</em> — and the lineages
         it set in motion.
@@ -330,13 +374,13 @@
     <!-- Credits + enter -->
     <div class="credit-row">
       <div class="credit">
-        <div><span class="credit-label">A research project by</span></div>
+        <div><span class="credit-label" data-i18n="A research project by">A research project by</span></div>
         <div><b>Alina Krogstad</b> &nbsp;<em>Høyskolen Kristiania</em></div>
         <div><b>India Anderson</b> &nbsp;<em>The University of Queensland</em></div>
       </div>
       <a href="public/timeline.html" class="enter">
-        <span>Enter the archive</span>
-        <span class="arrow">↗</span>
+        <span data-i18n="Enter the archive">Enter the archive</span>
+        <span class="arrow">→</span>
       </a>
     </div>
 
@@ -386,6 +430,44 @@
           letters.forEach((o) => { o.style.opacity = ''; o.style.transform = ''; });
         });
       });
+    })();
+
+    // ── EN / NO language toggle ────────────────────────────────────────
+    (function() {
+      let I18N_NO = { ui: {}, html: {} };
+      try { I18N_NO = JSON.parse(document.getElementById('i18n-no').textContent); } catch (_) {}
+      let LANG = 'en';
+      try { LANG = localStorage.getItem('njmf-lang') === 'no' ? 'no' : 'en'; } catch (_) {}
+      function applyLang() {
+        document.body.dataset.lang = LANG;
+        document.querySelectorAll('.lang-toggle button').forEach(b => {
+          b.classList.toggle('active', b.dataset.lang === LANG);
+        });
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.dataset.i18n;
+          const v = LANG === 'no' ? (I18N_NO.ui[key] || key) : key;
+          el.textContent = v;
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+          const key = el.dataset.i18nHtml;
+          // English originals live in the markup; switch to Norwegian HTML
+          // when active, restore the original on switch back via a cache.
+          if (LANG === 'no' && I18N_NO.html[key]) {
+            if (!el.dataset.htmlOriginal) el.dataset.htmlOriginal = el.innerHTML;
+            el.innerHTML = I18N_NO.html[key];
+          } else if (el.dataset.htmlOriginal) {
+            el.innerHTML = el.dataset.htmlOriginal;
+          }
+        });
+      }
+      document.querySelectorAll('.lang-toggle button').forEach(b => {
+        b.addEventListener('click', () => {
+          LANG = b.dataset.lang === 'no' ? 'no' : 'en';
+          try { localStorage.setItem('njmf-lang', LANG); } catch (_) {}
+          applyLang();
+        });
+      });
+      applyLang();
     })();
   </script>
 </body>
