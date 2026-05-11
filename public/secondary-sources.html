@@ -23,6 +23,35 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    /* ── Spinning red + cursor (replaces system cursor on hover devices) ── */
+    @media (hover: hover) {
+      body, body * { cursor: none !important; }
+      body input, body textarea, body [contenteditable] { cursor: text !important; }
+    }
+    .cursor-cross {
+      position: fixed; top: 0; left: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity .25s ease;
+      will-change: transform;
+    }
+    .cursor-cross.on { opacity: 1; }
+    .cursor-cross .x {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--accent);
+      line-height: 1;
+      animation: cursor-spin 4s linear infinite;
+      transform-origin: 50% 55%;
+    }
+    @keyframes cursor-spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
     html, body {
       height: 100%;
       overflow: hidden;
@@ -1163,6 +1192,28 @@ function openNote(id) {
 renderNotes();
 loadSource('avtalt-spill');
 openPage(0);
+
+// Spinning red "+" cursor follower (matches landing page)
+(function() {
+  if (window.matchMedia('(hover: hover)').matches === false) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cross = document.createElement('div');
+  cross.className = 'cursor-cross';
+  cross.innerHTML = '<span class="x">+</span>';
+  document.body.appendChild(cross);
+  let tx = 0, ty = 0, cx = 0, cy = 0;
+  document.addEventListener('mousemove', (e) => {
+    tx = e.clientX; ty = e.clientY;
+    cross.classList.add('on');
+  });
+  document.addEventListener('mouseleave', () => cross.classList.remove('on'));
+  (function tick() {
+    cx += (tx - cx) * 0.22;
+    cy += (ty - cy) * 0.22;
+    cross.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
+    requestAnimationFrame(tick);
+  })();
+})();
 </script>
 </body>
 </html>

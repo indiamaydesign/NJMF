@@ -218,20 +218,36 @@
     /* Push the stage above the marquee band */
     .stage { bottom: 70px; }
 
-    /* ── Cursor-following accent dot ────────────────────────────────── */
-    .cursor-dot {
+    /* ── Cursor: spinning red plus follows the mouse ─────────────────── */
+    @media (hover: hover) {
+      body { cursor: none; }
+      a, button, .enter, .marquee-band a { cursor: none; }
+    }
+    .cursor-cross {
       position: fixed;
       top: 0; left: 0;
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
       pointer-events: none;
-      z-index: 50;
-      mix-blend-mode: multiply;
+      z-index: 100;
       opacity: 0;
-      transition: opacity .3s ease;
+      transform: translate(-50%, -50%);
+      transition: opacity .25s ease;
+      will-change: transform;
     }
-    .cursor-dot.on { opacity: 0.85; }
+    .cursor-cross.on { opacity: 1; }
+    .cursor-cross .x {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 26px;
+      color: var(--accent);
+      line-height: 1;
+      animation: cursor-spin 4s linear infinite;
+      transform-origin: 50% 55%;
+    }
+    @keyframes cursor-spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
 
     /* ── Animation primitives ───────────────────────────────────────── */
     @keyframes fade-in {
@@ -269,7 +285,7 @@
 <body>
 
   <div class="frame"></div>
-  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-cross" id="cursor-cross"><span class="x">+</span></div>
 
   <div class="stage">
 
@@ -317,21 +333,21 @@
   </div>
 
   <script>
-    // Cursor-following accent dot (only on devices with a real cursor)
+    // Cursor: a spinning red "+" follows the mouse (replaces system cursor)
     (function() {
       if (window.matchMedia('(hover: hover)').matches === false) return;
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      const dot = document.getElementById('cursor-dot');
+      const cross = document.getElementById('cursor-cross');
       let tx = 0, ty = 0, cx = 0, cy = 0;
       document.addEventListener('mousemove', (e) => {
         tx = e.clientX; ty = e.clientY;
-        dot.classList.add('on');
+        cross.classList.add('on');
       });
-      document.addEventListener('mouseleave', () => dot.classList.remove('on'));
+      document.addEventListener('mouseleave', () => cross.classList.remove('on'));
       (function tick() {
-        cx += (tx - cx) * 0.18;
-        cy += (ty - cy) * 0.18;
-        dot.style.transform = `translate(${cx - 4}px, ${cy - 4}px)`;
+        cx += (tx - cx) * 0.22;
+        cy += (ty - cy) * 0.22;
+        cross.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
         requestAnimationFrame(tick);
       })();
     })();
