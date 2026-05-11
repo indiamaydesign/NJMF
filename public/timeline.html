@@ -935,8 +935,11 @@
       border-radius: 4px;
       padding: 12px 15px 11px;
       cursor: pointer;
-      transition: border-color .12s, box-shadow .12s, max-width .2s ease;
       background: var(--bg);
+      transition:
+        max-width .35s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color .15s ease,
+        box-shadow .2s ease;
     }
     .cx-node:hover { border-color: #c0beba; box-shadow: 0 2px 6px rgba(0,0,0,.05); }
     .cx-node.open  { border-color: var(--ink); max-width: 500px; }
@@ -992,17 +995,20 @@
       border: 1.5px solid #b07d2a; border-radius: 4px;
       background: var(--bg); padding: 12px 16px;
       cursor: pointer; position: relative; z-index: 1;
-      transition: box-shadow .12s, max-width .2s ease;
       text-align: center;
       grid-column: 2;
       justify-self: stretch;
+      margin: 0;
+      transition:
+        margin .35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow .2s ease,
+        border-color .15s ease;
     }
     .cx-cross-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.08); }
-    /* Expand across all three columns when opened so long bodies have room */
+    /* Stay in centre column but extend outward via negative margins on open
+       (margin is animatable; grid-column changes are not) */
     .cx-cross-card.open {
-      grid-column: 1 / -1;
-      max-width: 720px;
-      margin: 0 auto;
+      margin: 0 calc((140px - min(720px, 80vw)) / 2);
       z-index: 3;
     }
     .cx-cross-label {
