@@ -1006,6 +1006,40 @@
     /* ── Crossover view ── */
     #view-crossover { padding: 0 0 80px; }
 
+    /* ── Page header shared by Archival sources and Reference library ── */
+    .page-hd {
+      padding: 56px 56px 40px;
+      max-width: 1200px;
+      border-bottom: 1px solid var(--ink);
+      margin-bottom: 32px;
+    }
+    .page-search-row {
+      display: flex; align-items: center;
+      margin-top: 28px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 4px;
+    }
+    .page-search {
+      flex: 1;
+      border: none; outline: none; background: transparent;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(20px, 2.4vw, 28px);
+      line-height: 1.2;
+      color: var(--ink);
+      padding: 8px 0;
+    }
+    .page-search::placeholder { color: var(--faint); font-style: italic; }
+    .page-search-clear {
+      background: none; border: none; cursor: pointer;
+      font-family: var(--sans);
+      font-size: 20px; color: var(--mid);
+      padding: 6px 12px;
+      display: none;
+    }
+    .page-search-clear.show { display: inline-block; }
+    .page-search-clear:hover { color: var(--accent); }
+
     /* ── Reference library hub ─────────────────────────────────────── */
     #view-library { padding: 56px 56px 80px; max-width: 1200px; }
     .lib-eyebrow {
@@ -1518,12 +1552,13 @@
       <div class="sb-dates">1970 — 1975 and beyond</div>
     </div>
     <div id="sb-archive-tools" style="display:none;">
+      <!-- Legacy inline search input kept hidden — JS still references #search/#search-clear
+           but the user-facing search is now the big one at the top of the main pane -->
+      <div style="display:none;">
+        <input id="search" type="search">
+        <button id="search-clear"></button>
+      </div>
       <div class="sb-search">
-        <div class="search-row">
-          <input id="search" type="search" autocomplete="off" spellcheck="false"
-                 placeholder="Keyword or historical actor…">
-          <button id="search-clear" title="Clear">&#215;</button>
-        </div>
         <div class="chips" id="chips">
           <button class="chip" data-term="DEMOS">DEMOS</button>
           <button class="chip" data-term="EDB">EDB</button>
@@ -1564,12 +1599,7 @@
     </div>
     <div id="sb-library-tools" style="display:none;">
       <div class="sb-search">
-        <div class="search-row">
-          <input id="lib-search-sb" type="search" autocomplete="off" spellcheck="false"
-                 placeholder="Search title, author, topic…">
-          <button id="lib-search-clear-sb" title="Clear">&#215;</button>
-        </div>
-        <div class="type-filter-label">Source type</div>
+        <div class="type-filter-label" style="margin-top: 4px;">Source type</div>
         <div class="type-filter" id="lib-type-list-sb"></div>
         <div class="type-filter-label">People &amp; topics</div>
         <div class="type-filter" id="lib-people-list"></div>
@@ -1608,10 +1638,15 @@
     </div>
 
     <div id="view-archive" style="display:none;">
-      <div class="lib-hd" style="padding: 56px 56px 32px; max-width: 1200px; margin-bottom: 0;">
+      <div class="page-hd">
         <div class="lib-eyebrow">Archival sources</div>
         <h2 class="lib-title">Primary documents</h2>
-        <div class="lib-sub">109 photographs of letters, reports, drafts and working papers from Olav Terje Bergo's archive. Filter in the sidebar by document type, by people mentioned, by keyword, or by starred-only.</div>
+        <div class="lib-sub">109 photographs of letters, reports, drafts and working papers from Olav Terje Bergo's archive. Filter in the sidebar; search across keywords here.</div>
+        <div class="page-search-row">
+          <input id="search-main" class="page-search" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="Search keywords across the archive…">
+          <button id="search-main-clear" class="page-search-clear" title="Clear">&#215;</button>
+        </div>
       </div>
       <div id="tl-root"></div>
     </div><!-- /view-archive -->
@@ -1623,18 +1658,18 @@
     <div id="view-crossover" style="display:none;"><div id="cx-root"></div></div>
 
     <div id="view-library" style="display:none;">
-      <div class="lib-hd">
+      <div class="page-hd">
         <div class="lib-eyebrow">Reference library</div>
         <h2 class="lib-title">Secondary sources</h2>
         <div class="lib-sub">17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.</div>
-      </div>
-      <!-- Inline filters are gone; the real filters live in the sidebar
-           (sb-library-tools) which the tab-switcher reveals on this view -->
-      <div style="display:none;">
-        <div class="lib-filter-row">
-          <input id="lib-search" class="lib-search" type="search" autocomplete="off" placeholder="Search title, author, or topic…">
-          <button id="lib-search-clear" class="lib-search-clear" title="Clear">&#215;</button>
+        <div class="page-search-row">
+          <input id="lib-search" class="page-search" type="search" autocomplete="off" spellcheck="false"
+                 placeholder="Search title, author, or topic…">
+          <button id="lib-search-clear" class="page-search-clear" title="Clear">&#215;</button>
         </div>
+      </div>
+      <!-- legacy inline filter elements kept hidden so existing JS refs stay live -->
+      <div style="display:none;">
         <div class="lib-filter-row">
           <div class="lib-filter-block">
             <div class="lib-filter-label">Type</div>
@@ -1976,19 +2011,30 @@ document.getElementById('type-filter').addEventListener('change', e => {
 
 // ── Search events ─────────────────────────────────────────────────────
 
-const inp = document.getElementById('search');
-const clr = document.getElementById('search-clear');
+const inp     = document.getElementById('search');         // legacy hidden input
+const clr     = document.getElementById('search-clear');
+const mainInp = document.getElementById('search-main');    // big main-pane search
+const mainClr = document.getElementById('search-main-clear');
 
-inp.addEventListener('input', () => {
-  clr.classList.toggle('show', inp.value.length > 0);
-  filter(inp.value);
-});
+function applyArchiveSearch(q) {
+  inp.value = q;
+  mainInp.value = q;
+  clr.classList.toggle('show', q.length > 0);
+  mainClr.classList.toggle('show', q.length > 0);
+  filter(q);
+}
+
+inp.addEventListener('input', () => applyArchiveSearch(inp.value));
+mainInp.addEventListener('input', () => applyArchiveSearch(mainInp.value));
 
 clr.addEventListener('click', () => {
-  inp.value = '';
-  clr.classList.remove('show');
   document.querySelectorAll('.chip.on').forEach(c => c.classList.remove('on'));
-  filter('');
+  applyArchiveSearch('');
+});
+mainClr.addEventListener('click', () => {
+  document.querySelectorAll('.chip.on').forEach(c => c.classList.remove('on'));
+  applyArchiveSearch('');
+  mainInp.focus();
 });
 
 document.getElementById('chips').addEventListener('click', e => {
@@ -3237,25 +3283,11 @@ document.getElementById('lib-year-to').addEventListener('input', e => {
   renderLibrary();
 });
 
-// ── Sidebar (sb-library-tools) bindings — same state as the inline (hidden) inputs ──
+// ── Sidebar library inputs (year only — search lives in the main pane) ──
 (function() {
-  const sbSearch = document.getElementById('lib-search-sb');
-  const sbClear  = document.getElementById('lib-search-clear-sb');
-  const sbFrom   = document.getElementById('lib-year-from-sb');
-  const sbTo     = document.getElementById('lib-year-to-sb');
-  if (!sbSearch) return;
-
-  sbSearch.addEventListener('input', e => {
-    libSearchQ = e.target.value;
-    sbClear.classList.toggle('show', !!libSearchQ);
-    renderLibrary();
-  });
-  sbClear.addEventListener('click', () => {
-    sbSearch.value = ''; libSearchQ = '';
-    sbClear.classList.remove('show');
-    renderLibrary();
-    sbSearch.focus();
-  });
+  const sbFrom = document.getElementById('lib-year-from-sb');
+  const sbTo   = document.getElementById('lib-year-to-sb');
+  if (!sbFrom) return;
   sbFrom.addEventListener('input', e => {
     libYearFrom = e.target.value ? parseInt(e.target.value, 10) : null;
     renderLibrary();
