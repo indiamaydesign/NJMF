@@ -905,6 +905,131 @@
 
     /* ── Crossover view ── */
     #view-crossover { padding: 0 0 80px; }
+
+    /* ── Reference library hub ─────────────────────────────────────── */
+    #view-library { padding: 50px 56px 80px; max-width: 1200px; }
+    .lib-eyebrow {
+      font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--mid); margin-bottom: 10px;
+    }
+    .lib-title { font-size: 32px; font-weight: 800; line-height: 1.1; margin: 0 0 14px; }
+    .lib-sub { font-size: 13.5px; color: var(--mid); line-height: 1.55; max-width: 720px; }
+    .lib-hd { margin-bottom: 32px; }
+
+    .lib-filters {
+      display: flex; flex-direction: column; gap: 16px;
+      padding: 22px 24px;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: #fbfaf7;
+      margin-bottom: 28px;
+    }
+    .lib-filter-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+    .lib-filter-block { flex: 1; min-width: 180px; }
+    .lib-filter-label {
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--faint); margin-bottom: 8px;
+    }
+
+    .lib-search {
+      flex: 1; padding: 10px 14px;
+      border: 1.5px solid var(--rule); border-radius: 4px;
+      font-family: inherit; font-size: 14px; color: var(--ink);
+      background: var(--bg); outline: none;
+      transition: border-color .12s;
+    }
+    .lib-search:focus { border-color: var(--ink); }
+    .lib-search-clear {
+      background: none; border: none; cursor: pointer;
+      font-size: 20px; color: var(--mid); padding: 0 12px;
+      display: none;
+    }
+    .lib-search-clear.show { display: inline-block; }
+
+    .lib-type-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .lib-type-btn {
+      font-size: 11px; padding: 4px 10px;
+      border: 1px solid var(--rule); border-radius: 14px;
+      background: var(--bg); color: var(--mid);
+      font-family: inherit; cursor: pointer;
+      transition: all .12s;
+    }
+    .lib-type-btn:hover { border-color: var(--mid); color: var(--ink); }
+    .lib-type-btn.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+
+    .lib-year-row {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: var(--mid);
+    }
+    .lib-year-row input {
+      width: 80px; padding: 6px 8px;
+      border: 1px solid var(--rule); border-radius: 3px;
+      font-family: inherit; font-size: 12px; color: var(--ink);
+      background: var(--bg); outline: none;
+    }
+    .lib-year-row input:focus { border-color: var(--ink); }
+
+    .lib-count {
+      font-size: 11px; color: var(--mid);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .lib-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 14px;
+    }
+    .lib-card {
+      display: flex; flex-direction: column;
+      padding: 18px 20px 16px;
+      border: 1px solid var(--rule); border-radius: 6px;
+      background: var(--bg);
+      cursor: pointer; text-decoration: none; color: inherit;
+      transition: border-color .12s, box-shadow .15s, transform .15s;
+    }
+    .lib-card:hover {
+      border-color: var(--mid);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      transform: translateY(-1px);
+    }
+    .lib-card-type {
+      display: inline-block; align-self: flex-start;
+      font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 2px 8px; border-radius: 11px;
+      margin-bottom: 12px; font-weight: 600;
+    }
+    .lib-card-type.t-book           { background: #f6e9d2; color: #6a4b1a; }
+    .lib-card-type.t-chapter        { background: #e6e2d4; color: #4a4530; }
+    .lib-card-type.t-journal        { background: #dde5ed; color: #2c4660; }
+    .lib-card-type.t-conference     { background: #e8d6d2; color: #5a2b22; }
+    .lib-card-type.t-interview      { background: #ddeae1; color: #1f4d36; }
+    .lib-card-type.t-oral-history   { background: #ece1ed; color: #4a2e58; }
+    .lib-card-type.t-institutional  { background: #eaeaea; color: #444; }
+
+    .lib-card-title {
+      font-size: 14px; font-weight: 700; line-height: 1.3;
+      margin-bottom: 8px; color: var(--ink);
+    }
+    .lib-card-meta {
+      font-size: 11px; color: var(--mid);
+      line-height: 1.5; margin-bottom: 12px;
+    }
+    .lib-card-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; }
+    .lib-card-chip {
+      font-size: 9px; letter-spacing: 0.04em;
+      padding: 2px 7px; border-radius: 10px;
+      border: 1px solid var(--faint); color: var(--mid);
+    }
+    .lib-card-cta {
+      margin-top: 12px; padding-top: 10px;
+      border-top: 1px solid var(--rule);
+      font-size: 11px; font-weight: 600; color: var(--ink);
+    }
+    .lib-empty {
+      text-align: center; padding: 60px 20px;
+      color: var(--mid); font-style: italic;
+    }
     .cx-intro-band {
       padding: 32px 56px 28px;
       border-bottom: 1px solid var(--rule);
@@ -1140,10 +1265,6 @@
         Tracing Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) and its place in the global history of participatory design.
       </div>
     </div>
-    <a href="secondary-sources.html" class="sb-sources-link">
-      <span class="sb-sources-eyebrow">Reference library</span>
-      <span class="sb-sources-cta">Browse 17 secondary sources <span aria-hidden="true">→</span></span>
-    </a>
   </aside>
 
   <!-- ── Timeline ── -->
@@ -1153,6 +1274,7 @@
       <button class="vtab active" data-view="milestones">Milestones</button>
       <button class="vtab" data-view="crossover">Crossover</button>
       <button class="vtab" data-view="archive">Archive</button>
+      <button class="vtab" data-view="library">Reference library</button>
     </div>
 
     <div id="view-archive" style="display:none;">
@@ -1164,6 +1286,36 @@
     </div>
 
     <div id="view-crossover" style="display:none;"><div id="cx-root"></div></div>
+
+    <div id="view-library" style="display:none;">
+      <div class="lib-hd">
+        <div class="lib-eyebrow">Reference library</div>
+        <h2 class="lib-title">Secondary sources</h2>
+        <div class="lib-sub">17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Use the filters to narrow by type, year, or topic. Click a card to read the source.</div>
+      </div>
+      <div class="lib-filters">
+        <div class="lib-filter-row">
+          <input id="lib-search" class="lib-search" type="search" autocomplete="off" placeholder="Search title, author, or topic…">
+          <button id="lib-search-clear" class="lib-search-clear" title="Clear">&#215;</button>
+        </div>
+        <div class="lib-filter-row">
+          <div class="lib-filter-block">
+            <div class="lib-filter-label">Type</div>
+            <div class="lib-type-list" id="lib-type-list"></div>
+          </div>
+          <div class="lib-filter-block">
+            <div class="lib-filter-label">Year</div>
+            <div class="lib-year-row">
+              <input id="lib-year-from" type="number" placeholder="From" min="1960" max="2026" step="1">
+              <span>—</span>
+              <input id="lib-year-to"   type="number" placeholder="To"   min="1960" max="2026" step="1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lib-count" id="lib-count"></div>
+      <div class="lib-grid" id="lib-grid"></div>
+    </div>
 
     <div class="terminus" id="tl-terminus" style="display:none;">
       <div class="t-label">The moment</div>
@@ -2118,13 +2270,15 @@ document.getElementById('view-tabs').addEventListener('click', e => {
   const view = btn.dataset.view;
   document.querySelectorAll('.vtab').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  const isArchive = view === 'archive';
+  const isArchive    = view === 'archive';
   const isMilestones = view === 'milestones';
   const isCrossover  = view === 'crossover';
-  document.getElementById('view-archive').style.display    = isArchive   ? '' : 'none';
+  const isLibrary    = view === 'library';
+  document.getElementById('view-archive').style.display    = isArchive    ? '' : 'none';
   document.getElementById('view-milestones').style.display = isMilestones ? '' : 'none';
   document.getElementById('view-crossover').style.display  = isCrossover  ? '' : 'none';
-  document.getElementById('tl-terminus').style.display     = isArchive   ? '' : 'none';
+  document.getElementById('view-library').style.display    = isLibrary    ? '' : 'none';
+  document.getElementById('tl-terminus').style.display     = isArchive    ? '' : 'none';
 
   // Sidebar swaps: Archive shows filter tools; other tabs show project credit
   document.getElementById('sb-archive-tools').style.display = isArchive ? '' : 'none';
@@ -2132,6 +2286,7 @@ document.getElementById('view-tabs').addEventListener('click', e => {
 
   if (isMilestones && !document.getElementById('ms-root').hasChildNodes()) renderMilestones();
   if (isCrossover  && !document.getElementById('cx-root').hasChildNodes()) renderCrossover();
+  if (isLibrary    && !document.getElementById('lib-grid').hasChildNodes()) renderLibrary();
 });
 
 
@@ -2430,6 +2585,122 @@ function renderCrossover() {
 }
 
 renderMilestones();
+
+// ── Reference library hub ─────────────────────────────────────────────
+// Mirrors the SOURCES array on secondary-sources.html, plus type / year /
+// authors metadata for hub rendering. Click-through opens the detail view
+// on secondary-sources.html via #id hash so the right source auto-selects.
+const LIBRARY = [
+  { id: 'avtalt-spill',             type: 'book',          year: 2010, authors: ['Trond Bergh (red.)'],                          title: 'Avtalt Spill',                                                                 venue: 'Gyldendal',                                            chips: ['Emery','Thorsrud','Bergh','LO','NHO','Nygaard','Balstad'] },
+  { id: 'fallan-2023',              type: 'book',          year: 2023, authors: ['Fallan','Zetterlund','Munch (eds.)'],          title: 'Nordic Design Cultures in Transformation, 1960–1980',                          venue: 'Routledge',                                            chips: ['design history','Scandinavia','1960-1980'] },
+  { id: 'ehn-scandinavian-design',  type: 'chapter',       year: 1992, authors: ['Pelle Ehn'],                                   title: 'Scandinavian Design',                                                          venue: 'In Adler & Winograd (Eds.), Usability. Oxford UP',     chips: ['NJMF','DEMOS','UTOPIA','Thorsrud','Nygaard','MBL'] },
+  { id: 'nygaard-1992',             type: 'chapter',       year: 1992, authors: ['Kristen Nygaard'],                             title: 'How Many Choices Do We Make? How Many Are Difficult?',                         venue: 'Essay collection, 1992',                               chips: ['Nygaard','NJMF','NDRE','OR'] },
+  { id: 'bjerknes-1992',            type: 'chapter',       year: 1992, authors: ['Gro Bjerknes'],                                title: 'Shared Responsibility — A Field of Tension',                                   venue: 'Florence project reflections',                          chips: ['Bjerknes','Florence','nurses','Rikshospitalet'] },
+  { id: 'kensing-greenbaum',        type: 'chapter',       year: 2013, authors: ['Finn Kensing','Joan Greenbaum'],               title: 'Heritage: Having a Say',                                                       venue: 'In Routledge Handbook of Participatory Design',         chips: ['PD history','early PD','1970s movements'] },
+  { id: 'clement-besselaar-1993',   type: 'chapter',       year: 1993, authors: ['Andrew Clement','Peter Van den Besselaar'],    title: 'A Retrospective Look at PD Projects',                                          venue: 'In Schuler & Namioka, PD: Principles and Practices',    chips: ['PD survey','WG9.1'] },
+  { id: 'bjerknes-bratteteig-1995', type: 'journal',       year: 1995, authors: ['Gro Bjerknes','Tone Bratteteig'],              title: 'User Participation and Democracy',                                             venue: 'Scand. J. Information Systems',                         chips: ['Bratteteig','Bjerknes','Florence','FIRE','Scandinavian'] },
+  { id: 'bansler-1989',             type: 'journal',       year: 1989, authors: ['Jørgen Bansler'],                              title: 'Systems Development Research in Scandinavia: Three Theoretical Schools',       venue: 'Scand. J. Information Systems',                         chips: ['Bansler','three schools','Scandinavian','theory'] },
+  { id: 'gregory-2002',             type: 'journal',       year: 2002, authors: ['Judith Gregory'],                              title: 'Scandinavian Approaches to Participatory Design',                              venue: 'Int. J. Engng Ed (UiO Informatics)',                    chips: ['Gregory','Scandinavian PD','democratisation','Oslo'] },
+  { id: 'kyng-2010',                type: 'journal',       year: 2010, authors: ['Morten Kyng'],                                 title: 'Bridging the Gap Between Politics and Techniques',                             venue: 'Scand. J. Information Systems',                         chips: ['Kyng','PD politics','next practices','Aarhus'] },
+  { id: 'bodker-kyng-2018',         type: 'journal',       year: 2018, authors: ['Susanne Bødker','Morten Kyng'],                title: 'Participatory Design that Matters — Facing the Big Issues',                    venue: 'ACM ToCHI',                                             chips: ['Bødker','Kyng','PD politics','next practices'] },
+  { id: 'hanseth-2024',             type: 'journal',       year: 2024, authors: ['Ole Hanseth'],                                 title: 'My Road to Infrastructure',                                                    venue: 'Scand. J. Information Systems (UiO IFI)',               chips: ['Hanseth','infrastructure','UiO IFI'] },
+  { id: 'spinuzzi-2002',            type: 'conference',    year: 2002, authors: ['Clay Spinuzzi'],                               title: 'A Scandinavian Challenge, a US Response',                                      venue: "SIGDOC '02",                                            chips: ['Spinuzzi','UTOPIA','US','depoliticisation','prototyping'] },
+  { id: 'binder-1996-schon',        type: 'interview',     year: 1996, authors: ['Thomas Binder','Donald A. Schön'],             title: 'Learning and Knowing with Artifacts — Interview with Donald A. Schön',         venue: 'AI & Society',                                          chips: ['Schön','Binder','reflective practitioner','artifacts'] },
+  { id: 'ehn-2018-interview',       type: 'interview',     year: 2018, authors: ['Pelle Ehn','Farías','Sánchez Criado'],         title: 'On the Possibility of Socialist-Democratic Design Things',                     venue: 'Diseña 12',                                             chips: ['Ehn','UTOPIA','Marxism','design things','Malmö'] },
+  { id: 'bergo-oral-history-2025',  type: 'oral-history',  year: 2025, authors: ['Olav Terje Bergo'],                            title: 'Bergo Oral History',                                                           venue: 'Interviews + correspondence (May 2025)',                chips: ['Bergo','Nygaard','Raastad','Bergen','AUF','EU 1972','Brattvåg','Kongsberg'] },
+  { id: 'afi-history',              type: 'institutional', year: 2013, authors: ['Arbeidsforskningsinstituttet'],                title: 'AFI / OsloMet History',                                                        venue: 'OSLM/AKT-47 · 1964–2013',                               chips: ['Thorsrud','Qvale','Gustavsen','AFI','LO','NHO','STAMI'] }
+];
+
+const TYPE_LABELS = {
+  'book': 'Book',
+  'chapter': 'Book chapter',
+  'journal': 'Journal article',
+  'conference': 'Conference paper',
+  'interview': 'Interview',
+  'oral-history': 'Oral history',
+  'institutional': 'Institutional record'
+};
+
+const ACTIVE_LIB_TYPES = new Set(); // empty = no filter
+let libSearchQ = '';
+let libYearFrom = null;
+let libYearTo = null;
+
+function renderLibrary() {
+  // Type filter buttons (one per type that appears in LIBRARY)
+  const typesList = document.getElementById('lib-type-list');
+  const present = [...new Set(LIBRARY.map(s => s.type))];
+  const ordered = ['book','chapter','journal','conference','interview','oral-history','institutional']
+    .filter(t => present.includes(t));
+  typesList.innerHTML = ordered.map(t => {
+    const n = LIBRARY.filter(s => s.type === t).length;
+    return `<button class="lib-type-btn${ACTIVE_LIB_TYPES.has(t) ? ' on' : ''}" data-type="${esc(t)}">${esc(TYPE_LABELS[t] || t)} <span style="opacity:.6">(${n})</span></button>`;
+  }).join('');
+  typesList.querySelectorAll('.lib-type-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      const t = b.dataset.type;
+      if (ACTIVE_LIB_TYPES.has(t)) ACTIVE_LIB_TYPES.delete(t); else ACTIVE_LIB_TYPES.add(t);
+      renderLibrary();
+    });
+  });
+
+  // Filter sources
+  const ql = libSearchQ.toLowerCase().trim();
+  const filtered = LIBRARY.filter(s => {
+    if (ACTIVE_LIB_TYPES.size && !ACTIVE_LIB_TYPES.has(s.type)) return false;
+    if (libYearFrom && s.year < libYearFrom) return false;
+    if (libYearTo   && s.year > libYearTo)   return false;
+    if (ql) {
+      const hay = (s.title + ' ' + (s.authors||[]).join(' ') + ' ' + s.venue + ' ' + (s.chips||[]).join(' ')).toLowerCase();
+      if (!hay.includes(ql)) return false;
+    }
+    return true;
+  });
+
+  // Count
+  document.getElementById('lib-count').textContent =
+    filtered.length === LIBRARY.length
+      ? LIBRARY.length + ' sources'
+      : filtered.length + ' of ' + LIBRARY.length + ' sources';
+
+  // Grid
+  const grid = document.getElementById('lib-grid');
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div class="lib-empty">No sources match these filters.</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(s => `
+    <a class="lib-card" href="secondary-sources.html#${esc(s.id)}">
+      <span class="lib-card-type t-${esc(s.type)}">${esc(TYPE_LABELS[s.type] || s.type)}</span>
+      <div class="lib-card-title">${esc(s.title)}</div>
+      <div class="lib-card-meta">${esc((s.authors||[]).join(', '))} · ${esc(s.year)}<br><span style="font-style:italic">${esc(s.venue)}</span></div>
+      ${(s.chips||[]).length ? `<div class="lib-card-chips">${s.chips.slice(0,5).map(c => `<span class="lib-card-chip">${esc(c)}</span>`).join('')}</div>` : ''}
+      <div class="lib-card-cta">Read source →</div>
+    </a>
+  `).join('');
+}
+
+// Library search + year filter
+document.getElementById('lib-search').addEventListener('input', e => {
+  libSearchQ = e.target.value;
+  document.getElementById('lib-search-clear').classList.toggle('show', !!libSearchQ);
+  renderLibrary();
+});
+document.getElementById('lib-search-clear').addEventListener('click', () => {
+  const inp = document.getElementById('lib-search');
+  inp.value = ''; libSearchQ = '';
+  document.getElementById('lib-search-clear').classList.remove('show');
+  renderLibrary();
+  inp.focus();
+});
+document.getElementById('lib-year-from').addEventListener('input', e => {
+  libYearFrom = e.target.value ? parseInt(e.target.value, 10) : null;
+  renderLibrary();
+});
+document.getElementById('lib-year-to').addEventListener('input', e => {
+  libYearTo = e.target.value ? parseInt(e.target.value, 10) : null;
+  renderLibrary();
+});
 
 </script>
 </body>
