@@ -312,6 +312,29 @@
     .en.starred .en-star { opacity: 1; color: #c8923a; }
     .en.starred::before { background: #c8923a; }
 
+    /* "Browse secondary sources" footer link */
+    .sb-sources-link {
+      display: block;
+      padding: 16px 20px;
+      flex-shrink: 0;
+      border-top: 1px solid var(--rule);
+      margin-top: auto;
+      text-decoration: none;
+      color: var(--ink);
+      transition: background-color .12s;
+    }
+    .sb-sources-link:hover { background: #f6f6f4; }
+    .sb-sources-eyebrow {
+      display: block;
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--faint); margin-bottom: 6px;
+    }
+    .sb-sources-cta {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 13px; font-weight: 600; color: var(--ink);
+    }
+    .sb-sources-link:hover .sb-sources-cta { color: var(--ink); }
+
     /* Project credit (visible on Milestones / Crossover) */
     .sb-project { padding: 24px 20px 0; flex: 1; }
     .sb-project-eyebrow {
@@ -1117,10 +1140,10 @@
         Tracing Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) and its place in the global history of participatory design.
       </div>
     </div>
-    <div style="padding:14px 20px 0; flex-shrink:0; border-top: 1px solid var(--rule); margin-top: auto;">
-      <div style="font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--faint);margin-bottom:8px;">Secondary Sources</div>
-      <a href="secondary-sources.html" style="display:block;font-size:11.5px;font-style:italic;color:var(--mid);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--rule);transition:color .1s;" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mid)'">Avtalt Spill (2010) &#8594;</a>
-    </div>
+    <a href="secondary-sources.html" class="sb-sources-link">
+      <span class="sb-sources-eyebrow">Reference library</span>
+      <span class="sb-sources-cta">Browse 17 secondary sources <span aria-hidden="true">→</span></span>
+    </a>
   </aside>
 
   <!-- ── Timeline ── -->
