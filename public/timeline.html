@@ -6,18 +6,21 @@
   <title>NJMF — Archive Timeline 1969–1975</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink:   #0f0f0e;
-      --mid:   #555555;
-      --faint: #777777;
-      --rule:  #d8d8d6;
-      --hl:    #f2efe6;
-      --bg:    #ffffff;
-      --img-bg:#f4f3f0;
-      --lx:    52px;   /* timeline line x-position */
-      --gap:   36px;   /* gap from line to content */
+      --ink:    #0a0a09;
+      --mid:    #6b6b67;
+      --faint:  #b8b6ae;
+      --rule:   #d3d1c6;
+      --hl:     #ebe7da;
+      --bg:     #f3f1e9;       /* warm cream — paper, not white */
+      --img-bg: #ebe7da;
+      --accent: #c8451f;       /* signature red */
+      --lx:     52px;          /* timeline line x-position */
+      --gap:    36px;          /* gap from line to content */
+      --sans:   'Inter', system-ui, -apple-system, sans-serif;
+      --serif:  'Playfair Display', 'Times New Roman', Georgia, serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -54,23 +57,39 @@
     }
 
     .sb-eyebrow {
-      font-size: 9px;
-      letter-spacing: 0.36em;
+      font-family: var(--sans);
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
       text-transform: uppercase;
-      color: var(--mid);
-      margin-bottom: 14px;
+      color: var(--ink);
+      margin-bottom: 16px;
     }
 
     .sb-title {
-      font-size: 54px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
+      font-family: var(--serif);
+      font-size: 58px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
       line-height: 0.9;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .sb-title-plus {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.78em;
+      display: inline-block;
+      transform-origin: 50% 55%;
+      animation: sb-plus-spin 28s linear infinite;
+    }
+    @keyframes sb-plus-spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
     }
 
     .sb-dates {
-      font-size: 13px;
+      font-family: var(--serif);
+      font-size: 13.5px;
       font-style: italic;
       color: var(--mid);
     }
@@ -117,15 +136,18 @@
 
     .chip {
       background: none;
-      border: 1px solid var(--faint);
-      font-family: inherit;
-      font-size: 9px;
-      letter-spacing: 0.16em;
+      border: 1px solid var(--rule);
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       color: var(--mid);
-      padding: 3px 8px;
+      padding: 5px 10px;
       cursor: pointer;
       transition: border-color .12s, color .12s, background .12s;
       white-space: nowrap;
+      border-radius: 0;
     }
 
     .chip:hover { border-color: var(--ink); color: var(--ink); }
@@ -352,13 +374,16 @@
 
     /* Document-type filter — checkbox list */
     .type-filter-label {
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--faint); margin: 18px 0 6px;
+      font-family: var(--sans);
+      font-size: 9.5px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--ink); margin: 22px 0 8px;
     }
     .type-filter { display: flex; flex-direction: column; gap: 4px; }
     .type-row {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 12px; color: var(--mid);
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--sans);
+      font-size: 12.5px; color: var(--mid);
       cursor: pointer; padding: 3px 0; user-select: none;
     }
     .type-row:hover { color: var(--ink); }
@@ -731,21 +756,22 @@
       z-index: 10;
     }
     .vtab {
-      font-family: 'Playfair Display', serif;
+      font-family: var(--sans);
       font-size: 11px;
-      letter-spacing: 0.12em;
+      font-weight: 500;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
       background: none;
       border: none;
       border-bottom: 2px solid transparent;
-      padding: 14px 0 12px;
-      margin-right: 28px;
+      padding: 18px 0 14px;
+      margin-right: 36px;
       cursor: pointer;
       color: var(--mid);
-      transition: color .15s;
+      transition: color .15s, border-color .15s;
     }
     .vtab:hover { color: var(--ink); }
-    .vtab.active { color: var(--ink); border-bottom-color: var(--ink); }
+    .vtab.active { color: var(--ink); border-bottom-color: var(--accent); }
 
     /* ── Milestone timeline ── */
     #view-milestones {
@@ -907,38 +933,53 @@
     #view-crossover { padding: 0 0 80px; }
 
     /* ── Reference library hub ─────────────────────────────────────── */
-    #view-library { padding: 50px 56px 80px; max-width: 1200px; }
+    #view-library { padding: 56px 56px 80px; max-width: 1200px; }
     .lib-eyebrow {
-      font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
-      color: var(--mid); margin-bottom: 10px;
+      font-family: var(--sans);
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: var(--ink); margin-bottom: 14px;
     }
-    .lib-title { font-size: 32px; font-weight: 800; line-height: 1.1; margin: 0 0 14px; }
-    .lib-sub { font-size: 13.5px; color: var(--mid); line-height: 1.55; max-width: 720px; }
-    .lib-hd { margin-bottom: 32px; }
+    .lib-title {
+      font-family: var(--serif);
+      font-size: 44px; font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.05; margin: 0 0 18px;
+    }
+    .lib-sub {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 17px; color: var(--ink);
+      line-height: 1.5; max-width: 720px;
+    }
+    .lib-hd { margin-bottom: 40px; }
 
     .lib-filters {
-      display: flex; flex-direction: column; gap: 16px;
+      display: flex; flex-direction: column; gap: 18px;
       padding: 22px 24px;
-      border: 1px solid var(--rule);
-      border-radius: 6px;
-      background: #fbfaf7;
-      margin-bottom: 28px;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      margin-bottom: 32px;
     }
-    .lib-filter-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+    .lib-filter-row { display: flex; gap: 28px; flex-wrap: wrap; align-items: flex-start; }
     .lib-filter-block { flex: 1; min-width: 180px; }
     .lib-filter-label {
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--faint); margin-bottom: 8px;
+      font-family: var(--sans);
+      font-size: 9.5px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--ink); margin-bottom: 10px;
     }
 
     .lib-search {
       flex: 1; padding: 10px 14px;
-      border: 1.5px solid var(--rule); border-radius: 4px;
-      font-family: inherit; font-size: 14px; color: var(--ink);
-      background: var(--bg); outline: none;
+      border: 1.5px solid var(--rule); border-radius: 0;
+      font-family: var(--sans);
+      font-size: 14px; color: var(--ink);
+      background: transparent; outline: none;
       transition: border-color .12s;
     }
     .lib-search:focus { border-color: var(--ink); }
+    .lib-search::placeholder { color: var(--mid); }
     .lib-search-clear {
       background: none; border: none; cursor: pointer;
       font-size: 20px; color: var(--mid); padding: 0 12px;
@@ -948,26 +989,30 @@
 
     .lib-type-list { display: flex; flex-wrap: wrap; gap: 6px; }
     .lib-type-btn {
-      font-size: 11px; padding: 4px 10px;
-      border: 1px solid var(--rule); border-radius: 14px;
-      background: var(--bg); color: var(--mid);
-      font-family: inherit; cursor: pointer;
+      font-family: var(--sans);
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 5px 10px;
+      border: 1px solid var(--rule); border-radius: 0;
+      background: transparent; color: var(--mid);
+      cursor: pointer;
       transition: all .12s;
     }
-    .lib-type-btn:hover { border-color: var(--mid); color: var(--ink); }
+    .lib-type-btn:hover { border-color: var(--ink); color: var(--ink); }
     .lib-type-btn.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 
     .lib-year-row {
       display: flex; align-items: center; gap: 10px;
+      font-family: var(--sans);
       font-size: 13px; color: var(--mid);
     }
     .lib-year-row input {
       width: 92px; padding: 8px 12px;
-      border: 1.5px solid var(--rule); border-radius: 4px;
-      font-family: inherit; font-size: 13px; color: var(--ink);
-      background: var(--bg); outline: none;
+      border: 1.5px solid var(--rule); border-radius: 0;
+      font-family: var(--sans);
+      font-size: 13px; color: var(--ink);
+      background: transparent; outline: none;
       transition: border-color .12s;
-      /* Hide the browser-default number spinner arrows */
       -moz-appearance: textfield;
     }
     .lib-year-row input::-webkit-outer-spin-button,
@@ -975,68 +1020,93 @@
       -webkit-appearance: none; margin: 0;
     }
     .lib-year-row input:focus { border-color: var(--ink); }
-    .lib-year-row input::placeholder { color: var(--faint); }
+    .lib-year-row input::placeholder { color: var(--mid); }
 
     .lib-count {
-      font-size: 11px; color: var(--mid);
-      letter-spacing: 0.12em; text-transform: uppercase;
-      margin-bottom: 14px;
+      font-family: var(--sans);
+      font-size: 11px; font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 0.18em; text-transform: uppercase;
+      margin-bottom: 16px;
     }
 
     .lib-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-      gap: 14px;
+      gap: 0;
+      border-top: 1px solid var(--ink);
     }
     .lib-card {
       display: flex; flex-direction: column;
-      padding: 18px 20px 16px;
-      border: 1px solid var(--rule); border-radius: 6px;
-      background: var(--bg);
+      padding: 22px 22px 20px;
+      border-right: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      border-radius: 0;
+      background: transparent;
       cursor: pointer; text-decoration: none; color: inherit;
-      transition: border-color .12s, box-shadow .15s, transform .15s;
+      transition: background-color .18s ease;
+      position: relative;
     }
-    .lib-card:hover {
-      border-color: var(--mid);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-      transform: translateY(-1px);
-    }
+    .lib-card:hover { background: rgba(200, 69, 31, 0.05); }
+    .lib-card:hover .lib-card-cta { color: var(--accent); }
+    .lib-card:hover .lib-card-cta .arr { transform: translateX(6px); }
     .lib-card-type {
       display: inline-block; align-self: flex-start;
-      font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
-      padding: 2px 8px; border-radius: 11px;
-      margin-bottom: 12px; font-weight: 600;
+      font-family: var(--sans);
+      font-size: 9.5px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      padding: 3px 0 4px;
+      margin-bottom: 18px;
+      border-bottom: 1.5px solid currentColor;
     }
-    .lib-card-type.t-book           { background: #f6e9d2; color: #6a4b1a; }
-    .lib-card-type.t-chapter        { background: #e6e2d4; color: #4a4530; }
-    .lib-card-type.t-journal        { background: #dde5ed; color: #2c4660; }
-    .lib-card-type.t-conference     { background: #e8d6d2; color: #5a2b22; }
-    .lib-card-type.t-interview      { background: #ddeae1; color: #1f4d36; }
-    .lib-card-type.t-oral-history   { background: #ece1ed; color: #4a2e58; }
-    .lib-card-type.t-institutional  { background: #eaeaea; color: #444; }
+    .lib-card-type.t-book           { color: #8a5a1f; }
+    .lib-card-type.t-chapter        { color: #6e6233; }
+    .lib-card-type.t-journal        { color: #34587a; }
+    .lib-card-type.t-conference     { color: #7c3527; }
+    .lib-card-type.t-interview      { color: #2c5a40; }
+    .lib-card-type.t-oral-history   { color: #5e3a6c; }
+    .lib-card-type.t-institutional  { color: #555; }
 
     .lib-card-title {
-      font-size: 14px; font-weight: 700; line-height: 1.3;
-      margin-bottom: 8px; color: var(--ink);
+      font-family: var(--serif);
+      font-size: 19px; font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px; color: var(--ink);
     }
     .lib-card-meta {
-      font-size: 11px; color: var(--mid);
-      line-height: 1.5; margin-bottom: 12px;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 12.5px; color: var(--mid);
+      line-height: 1.55; margin-bottom: 16px;
     }
-    .lib-card-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; }
+    .lib-card-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; padding-top: 12px; }
     .lib-card-chip {
-      font-size: 9px; letter-spacing: 0.04em;
-      padding: 2px 7px; border-radius: 10px;
-      border: 1px solid var(--faint); color: var(--mid);
+      font-family: var(--sans);
+      font-size: 9.5px; letter-spacing: 0.06em;
+      padding: 2px 0;
+      color: var(--mid);
+    }
+    .lib-card-chip + .lib-card-chip::before {
+      content: '· '; color: var(--faint); margin-right: 4px;
     }
     .lib-card-cta {
-      margin-top: 12px; padding-top: 10px;
+      margin-top: 14px; padding-top: 12px;
       border-top: 1px solid var(--rule);
-      font-size: 11px; font-weight: 600; color: var(--ink);
+      font-family: var(--sans);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--ink);
+      display: flex; align-items: center; gap: 8px;
+      transition: color .2s ease;
     }
+    .lib-card-cta .arr { transition: transform .25s cubic-bezier(0.22,1,0.36,1); }
     .lib-empty {
+      grid-column: 1 / -1;
+      font-family: var(--serif);
+      font-style: italic;
       text-align: center; padding: 60px 20px;
-      color: var(--mid); font-style: italic;
+      color: var(--mid);
     }
     .cx-intro-band {
       padding: 32px 56px 28px;
@@ -1211,7 +1281,7 @@
   <aside class="sidebar">
     <div class="sb-hd">
       <div class="sb-eyebrow">Archive Timeline</div>
-      <h1 class="sb-title">NJMF+</h1>
+      <h1 class="sb-title">NJMF<span class="sb-title-plus">+</span></h1>
       <div class="sb-dates">1970 — 1975 and beyond</div>
     </div>
     <div id="sb-archive-tools" style="display:none;">
@@ -2683,7 +2753,7 @@ function renderLibrary() {
       <div class="lib-card-title">${esc(s.title)}</div>
       <div class="lib-card-meta">${esc((s.authors||[]).join(', '))} · ${esc(s.year)}<br><span style="font-style:italic">${esc(s.venue)}</span></div>
       ${(s.chips||[]).length ? `<div class="lib-card-chips">${s.chips.slice(0,5).map(c => `<span class="lib-card-chip">${esc(c)}</span>`).join('')}</div>` : ''}
-      <div class="lib-card-cta">Read source →</div>
+      <div class="lib-card-cta">Read source <span class="arr">→</span></div>
     </a>
   `).join('');
 }
