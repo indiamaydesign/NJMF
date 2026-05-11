@@ -1243,6 +1243,31 @@
       color: var(--ink);
     }
 
+    .lib-detail-summary {
+      max-width: 720px;
+      margin-bottom: 56px;
+      padding: 24px 28px;
+      border: 1px solid var(--ink);
+      background: var(--hl);
+      position: relative;
+    }
+    .lib-detail-summary::before {
+      content: 'About this source';
+      display: block;
+      font-family: var(--sans);
+      font-size: 9.5px; font-weight: 600;
+      letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .lib-detail-summary p {
+      font-family: var(--serif);
+      font-size: 15.5px;
+      line-height: 1.65;
+      color: var(--ink);
+      margin: 0;
+    }
+
     .lib-detail-body {
       font-family: var(--serif);
       font-size: 16.5px;
@@ -1293,22 +1318,15 @@
       border-left: 3px solid var(--accent);
       background: rgba(156, 45, 18, 0.05);
     }
-    /* Page-by-page (image + OCR text) block — for Avtalt Spill etc. */
+    /* Page-by-page transcript block (Avtalt Spill etc — images kept in
+       the folder but not rendered; transcript is the reading surface) */
     .lib-detail-page {
-      max-width: 820px;
-      margin-bottom: 56px;
-      padding-bottom: 48px;
+      max-width: 720px;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
       border-bottom: 1px solid var(--rule);
     }
     .lib-detail-page:last-child { border-bottom: none; }
-    .lib-detail-page-img {
-      margin-bottom: 16px;
-      background: var(--img-bg);
-      border: 1px solid var(--rule);
-    }
-    .lib-detail-page-img img {
-      display: block; width: 100%; height: auto;
-    }
     .lib-detail-page-num {
       font-family: var(--sans);
       font-size: 10px; font-weight: 600;
@@ -1318,8 +1336,8 @@
     }
     .lib-detail-page-text {
       font-family: var(--serif);
-      font-size: 14.5px;
-      line-height: 1.75;
+      font-size: 15.5px;
+      line-height: 1.78;
       color: var(--ink);
     }
     .lib-detail-page-text p { margin-bottom: 0.9em; }
@@ -1618,6 +1636,7 @@
           <div class="lib-detail-meta" id="lib-detail-meta"></div>
           <div class="lib-detail-chips" id="lib-detail-chips"></div>
         </div>
+        <div class="lib-detail-summary" id="lib-detail-summary"></div>
         <div class="lib-detail-body" id="lib-detail-body">
           <div class="lib-detail-loading">Loading…</div>
         </div>
@@ -2898,24 +2917,60 @@ renderMilestones();
 // authors metadata for hub rendering. Click-through opens the detail view
 // on secondary-sources.html via #id hash so the right source auto-selects.
 const LIBRARY = [
-  { id: 'avtalt-spill',             type: 'book',          year: 2010, authors: ['Trond Bergh (red.)'],                          title: 'Avtalt Spill',                                                                 venue: 'Gyldendal',                                            chips: ['Emery','Thorsrud','Bergh','LO','NHO','Nygaard','Balstad'] },
-  { id: 'fallan-2023',              type: 'book',          year: 2023, authors: ['Fallan','Zetterlund','Munch (eds.)'],          title: 'Nordic Design Cultures in Transformation, 1960–1980',                          venue: 'Routledge',                                            chips: ['design history','Scandinavia','1960-1980'] },
-  { id: 'ehn-scandinavian-design',  type: 'chapter',       year: 1992, authors: ['Pelle Ehn'],                                   title: 'Scandinavian Design',                                                          venue: 'In Adler & Winograd (Eds.), Usability. Oxford UP',     chips: ['NJMF','DEMOS','UTOPIA','Thorsrud','Nygaard','MBL'] },
-  { id: 'nygaard-1992',             type: 'chapter',       year: 1992, authors: ['Kristen Nygaard'],                             title: 'How Many Choices Do We Make? How Many Are Difficult?',                         venue: 'Essay collection, 1992',                               chips: ['Nygaard','NJMF','NDRE','OR'] },
-  { id: 'bjerknes-1992',            type: 'chapter',       year: 1992, authors: ['Gro Bjerknes'],                                title: 'Shared Responsibility — A Field of Tension',                                   venue: 'Florence project reflections',                          chips: ['Bjerknes','Florence','nurses','Rikshospitalet'] },
-  { id: 'kensing-greenbaum',        type: 'chapter',       year: 2013, authors: ['Finn Kensing','Joan Greenbaum'],               title: 'Heritage: Having a Say',                                                       venue: 'In Routledge Handbook of Participatory Design',         chips: ['PD history','early PD','1970s movements'] },
-  { id: 'clement-besselaar-1993',   type: 'chapter',       year: 1993, authors: ['Andrew Clement','Peter Van den Besselaar'],    title: 'A Retrospective Look at PD Projects',                                          venue: 'In Schuler & Namioka, PD: Principles and Practices',    chips: ['PD survey','WG9.1'] },
-  { id: 'bjerknes-bratteteig-1995', type: 'journal',       year: 1995, authors: ['Gro Bjerknes','Tone Bratteteig'],              title: 'User Participation and Democracy',                                             venue: 'Scand. J. Information Systems',                         chips: ['Bratteteig','Bjerknes','Florence','FIRE','Scandinavian'] },
-  { id: 'bansler-1989',             type: 'journal',       year: 1989, authors: ['Jørgen Bansler'],                              title: 'Systems Development Research in Scandinavia: Three Theoretical Schools',       venue: 'Scand. J. Information Systems',                         chips: ['Bansler','three schools','Scandinavian','theory'] },
-  { id: 'gregory-2002',             type: 'journal',       year: 2002, authors: ['Judith Gregory'],                              title: 'Scandinavian Approaches to Participatory Design',                              venue: 'Int. J. Engng Ed (UiO Informatics)',                    chips: ['Gregory','Scandinavian PD','democratisation','Oslo'] },
-  { id: 'kyng-2010',                type: 'journal',       year: 2010, authors: ['Morten Kyng'],                                 title: 'Bridging the Gap Between Politics and Techniques',                             venue: 'Scand. J. Information Systems',                         chips: ['Kyng','PD politics','next practices','Aarhus'] },
-  { id: 'bodker-kyng-2018',         type: 'journal',       year: 2018, authors: ['Susanne Bødker','Morten Kyng'],                title: 'Participatory Design that Matters — Facing the Big Issues',                    venue: 'ACM ToCHI',                                             chips: ['Bødker','Kyng','PD politics','next practices'] },
-  { id: 'hanseth-2024',             type: 'journal',       year: 2024, authors: ['Ole Hanseth'],                                 title: 'My Road to Infrastructure',                                                    venue: 'Scand. J. Information Systems (UiO IFI)',               chips: ['Hanseth','infrastructure','UiO IFI'] },
-  { id: 'spinuzzi-2002',            type: 'conference',    year: 2002, authors: ['Clay Spinuzzi'],                               title: 'A Scandinavian Challenge, a US Response',                                      venue: "SIGDOC '02",                                            chips: ['Spinuzzi','UTOPIA','US','depoliticisation','prototyping'] },
-  { id: 'binder-1996-schon',        type: 'interview',     year: 1996, authors: ['Thomas Binder','Donald A. Schön'],             title: 'Learning and Knowing with Artifacts — Interview with Donald A. Schön',         venue: 'AI & Society',                                          chips: ['Schön','Binder','reflective practitioner','artifacts'] },
-  { id: 'ehn-2018-interview',       type: 'interview',     year: 2018, authors: ['Pelle Ehn','Farías','Sánchez Criado'],         title: 'On the Possibility of Socialist-Democratic Design Things',                     venue: 'Diseña 12',                                             chips: ['Ehn','UTOPIA','Marxism','design things','Malmö'] },
-  { id: 'bergo-oral-history-2025',  type: 'oral-history',  year: 2025, authors: ['Olav Terje Bergo'],                            title: 'Bergo Oral History',                                                           venue: 'Interviews + correspondence (May 2025)',                chips: ['Bergo','Nygaard','Raastad','Bergen','AUF','EU 1972','Brattvåg','Kongsberg'] },
-  { id: 'afi-history',              type: 'institutional', year: 2013, authors: ['Arbeidsforskningsinstituttet'],                title: 'AFI / OsloMet History',                                                        venue: 'OSLM/AKT-47 · 1964–2013',                               chips: ['Thorsrud','Qvale','Gustavsen','AFI','LO','NHO','STAMI'] }
+  { id: 'avtalt-spill',             type: 'book',          year: 2010, authors: ['Trond Bergh (red.)'],                          title: 'Avtalt Spill',                                                                 venue: 'Gyldendal',
+    summary: 'Trond Bergh\'s official history of the Norwegian Hovedavtalen — the central LO/NAF (later LO/NHO) collective agreement system — published for its 75th anniversary. The pages selected here cover the period 1970–1980: the NJMF research project, the EDB data agreements, and the institutional groundwork for the 1982 HABUT bedriftsutvikling settlement.',
+    chips: ['Emery','Thorsrud','Bergh','LO','NHO','Nygaard','Balstad'] },
+  { id: 'fallan-2023',              type: 'book',          year: 2023, authors: ['Fallan','Zetterlund','Munch (eds.)'],          title: 'Nordic Design Cultures in Transformation, 1960–1980',                          venue: 'Routledge',
+    summary: 'A 2023 Routledge volume reframing Nordic design history between 1960 and 1980 — beyond the canonical "Scandinavian Design" image of mid-century objects. Useful here for the political and institutional context surrounding the period of the NJMF project: how design discourse, criticism and state institutions reshaped each other.',
+    chips: ['design history','Scandinavia','1960-1980'] },
+  { id: 'ehn-scandinavian-design',  type: 'chapter',       year: 1992, authors: ['Pelle Ehn'],                                   title: 'Scandinavian Design',                                                          venue: 'In Adler & Winograd (Eds.), Usability. Oxford UP',
+    summary: 'Pelle Ehn\'s 1992 chapter in the Usability volume — the most-cited English-language account of Scandinavian participatory design. Names the NJMF project as the founding case, traces the lineage through DEMOS and UTOPIA, and articulates the "tool perspective" and "design-by-doing" methodology.',
+    chips: ['NJMF','DEMOS','UTOPIA','Thorsrud','Nygaard','MBL'] },
+  { id: 'nygaard-1992',             type: 'chapter',       year: 1992, authors: ['Kristen Nygaard'],                             title: 'How Many Choices Do We Make? How Many Are Difficult?',                         venue: 'Essay collection, 1992',
+    summary: 'Kristen Nygaard\'s own retrospective essay on the social-responsibility choices he made as a scientist. The primary source for his framing of the NJMF project — how it was funded against employer resistance, why the research design pivoted in summer 1971, and what it meant to do research for a trade union rather than about workers.',
+    chips: ['Nygaard','NJMF','NDRE','OR'] },
+  { id: 'bjerknes-1992',            type: 'chapter',       year: 1992, authors: ['Gro Bjerknes'],                                title: 'Shared Responsibility — A Field of Tension',                                   venue: 'Florence project reflections',
+    summary: 'Gro Bjerknes\'s chapter reflecting on the Florence project — Norwegian PD work with nurses at Rikshospitalet, 1983–1987. Treats "shared responsibility" between computer scientists and domain experts as a field of tension between project control and genuine domain-expert participation.',
+    chips: ['Bjerknes','Florence','nurses','Rikshospitalet'] },
+  { id: 'kensing-greenbaum',        type: 'chapter',       year: 2013, authors: ['Finn Kensing','Joan Greenbaum'],               title: 'Heritage: Having a Say',                                                       venue: 'In Routledge Handbook of Participatory Design',
+    summary: 'A historical chapter on the early PD movement up to the first Participatory Design Conference in 1990. Roots the field in the political and social movements of the 1970s and 80s and traces how participatory research became participatory technology design.',
+    chips: ['PD history','early PD','1970s movements'] },
+  { id: 'clement-besselaar-1993',   type: 'chapter',       year: 1993, authors: ['Andrew Clement','Peter Van den Besselaar'],    title: 'A Retrospective Look at PD Projects',                                          venue: 'In Schuler & Namioka, PD: Principles and Practices',
+    summary: 'Andrew Clement and Peter Van den Besselaar\'s retrospective survey of participatory design projects worldwide, written for IFIP WG9.1. Includes the NJMF / Iron and Metal project as one of the canonical cases.',
+    chips: ['PD survey','WG9.1'] },
+  { id: 'bjerknes-bratteteig-1995', type: 'journal',       year: 1995, authors: ['Gro Bjerknes','Tone Bratteteig'],              title: 'User Participation and Democracy',                                             venue: 'Scand. J. Information Systems',
+    summary: 'A foundational survey-and-self-history of Scandinavian participatory design research, written by Bratteteig (a co-author on Florence and FIRE) with Gro Bjerknes. Maps the field\'s three theoretical strands, names key projects in the lineage, and dates FIRE specifically to 1992–1994 — the authoritative citation for the lineage discussions on this site.',
+    chips: ['Bratteteig','Bjerknes','Florence','FIRE','Scandinavian'] },
+  { id: 'bansler-1989',             type: 'journal',       year: 1989, authors: ['Jørgen Bansler'],                              title: 'Systems Development Research in Scandinavia: Three Theoretical Schools',       venue: 'Scand. J. Information Systems',
+    summary: 'Jørgen Bansler\'s 1989 classification of Scandinavian systems-development research into three theoretical schools — useful as a structural map of the field at the moment of PD\'s institutionalisation in academia.',
+    chips: ['Bansler','three schools','Scandinavian','theory'] },
+  { id: 'gregory-2002',             type: 'journal',       year: 2002, authors: ['Judith Gregory'],                              title: 'Scandinavian Approaches to Participatory Design',                              venue: 'Int. J. Engng Ed (UiO Informatics)',
+    summary: 'Judith Gregory (then at UiO Informatics) on what distinguishes Scandinavian PD: striving for democratisation, explicit values discussion, and treating conflicts as design resources rather than problems to suppress.',
+    chips: ['Gregory','Scandinavian PD','democratisation','Oslo'] },
+  { id: 'kyng-2010',                type: 'journal',       year: 2010, authors: ['Morten Kyng'],                                 title: 'Bridging the Gap Between Politics and Techniques',                             venue: 'Scand. J. Information Systems',
+    summary: 'Morten Kyng\'s 2010 reflection on the gap between PD\'s political project and its technical practice. A direct counterpart to Spinuzzi 2002 and a precursor to Bødker/Kyng 2018 — same diagnosis, three perspectives on what was lost when PD became internationally adopted.',
+    chips: ['Kyng','PD politics','next practices','Aarhus'] },
+  { id: 'bodker-kyng-2018',         type: 'journal',       year: 2018, authors: ['Susanne Bødker','Morten Kyng'],                title: 'Participatory Design that Matters — Facing the Big Issues',                    venue: 'ACM ToCHI',
+    summary: 'Bødker and Kyng\'s reckoning with the current state of participatory design, a quarter-century after the founding generation. Names what has been gained (methods, institutional acceptance) and what has been lost (political content, ambition for democratic control of technology). A call for a renewed PD that "matters".',
+    chips: ['Bødker','Kyng','PD politics','next practices'] },
+  { id: 'hanseth-2024',             type: 'journal',       year: 2024, authors: ['Ole Hanseth'],                                 title: 'My Road to Infrastructure',                                                    venue: 'Scand. J. Information Systems (UiO IFI)',
+    summary: 'Ole Hanseth (UiO Informatics) on his own intellectual road from participatory design into information-infrastructure studies. A late reflection from one of the figures who carried the Norwegian lineage forward through the 1990s and 2000s.',
+    chips: ['Hanseth','infrastructure','UiO IFI'] },
+  { id: 'spinuzzi-2002',            type: 'conference',    year: 2002, authors: ['Clay Spinuzzi'],                               title: 'A Scandinavian Challenge, a US Response',                                      venue: "SIGDOC '02",
+    summary: 'Clay Spinuzzi\'s comparison of Scandinavian PD (Marxist, union-led, mock-up-as-design-tool) and the US adaptation of it (consultant-led, prototype-as-feedback-tool). The clearest articulation of how PD\'s political content was stripped on the way across the Atlantic.',
+    chips: ['Spinuzzi','UTOPIA','US','depoliticisation','prototyping'] },
+  { id: 'binder-1996-schon',        type: 'interview',     year: 1996, authors: ['Thomas Binder','Donald A. Schön'],             title: 'Learning and Knowing with Artifacts — Interview with Donald A. Schön',         venue: 'AI & Society',
+    summary: 'Thomas Binder\'s interview with Donald Schön — the reflective-practitioner theorist — on learning and knowing with artifacts. Reads as a methodological cousin to the participatory design tradition: how skilled professionals come to know through doing.',
+    chips: ['Schön','Binder','reflective practitioner','artifacts'] },
+  { id: 'ehn-2018-interview',       type: 'interview',     year: 2018, authors: ['Pelle Ehn','Farías','Sánchez Criado'],         title: 'On the Possibility of Socialist-Democratic Design Things',                     venue: 'Diseña 12',
+    summary: 'Pelle Ehn in conversation with Ignacio Farías and Tomás Sánchez Criado for the design journal Diseña. Looks back on UTOPIA and DEMOS, the Marxist register of 1970s Scandinavian PD, and what "socialist-democratic design things" could mean today.',
+    chips: ['Ehn','UTOPIA','Marxism','design things','Malmö'] },
+  { id: 'bergo-oral-history-2025',  type: 'oral-history',  year: 2025, authors: ['Olav Terje Bergo'],                            title: 'Bergo Oral History',                                                           venue: 'Interviews + correspondence (May 2025)',
+    summary: 'Interviews conducted with Olav Terje Bergo in May 2025, followed by extensive written correspondence. Includes Bergo\'s reconstruction of how he came to NJMF (a 1970 lunch with Hans Jørgen Raastad), the Bergen "Sosialistiske siviløkonomer" student-trade-union network that preceded the project, and his reading of why funding was cut in 1974 (the EU 1972 referendum politics). One participant\'s account, fifty years on — to be weighed against the archive, not used to overwrite it.',
+    chips: ['Bergo','Nygaard','Raastad','Bergen','AUF','EU 1972','Brattvåg','Kongsberg'] },
+  { id: 'afi-history',              type: 'institutional', year: 2013, authors: ['Arbeidsforskningsinstituttet'],                title: 'AFI / OsloMet History',                                                        venue: 'OSLM/AKT-47 · 1964–2013',
+    summary: 'An institutional history of Arbeidsforskningsinstituttet (AFI) — the Norwegian work research institute that Thorsrud led from 1965/66 onward, where the Samarbeidsprosjektet was housed, and where Lange was based when he joined the NJMF steering committee. Documents the institutional setting of the Thorsrud lineage.',
+    chips: ['Thorsrud','Qvale','Gustavsen','AFI','LO','NHO','STAMI'] }
 ];
 
 const TYPE_LABELS = {
@@ -3003,6 +3058,9 @@ function openLibrarySource(id) {
     '<br><em>' + esc(src.venue) + '</em>';
   document.getElementById('lib-detail-chips').innerHTML   =
     (src.chips || []).map(c => '<span class="lib-detail-chip">' + esc(c) + '</span>').join('');
+  document.getElementById('lib-detail-summary').innerHTML =
+    src.summary ? '<p>' + esc(src.summary) + '</p>' : '';
+  document.getElementById('lib-detail-summary').style.display = src.summary ? '' : 'none';
 
   // Switch views
   document.querySelector('.lib-hd').style.display      = 'none';
@@ -3016,11 +3074,11 @@ function openLibrarySource(id) {
   const body = document.getElementById('lib-detail-body');
   body.innerHTML = '<div class="lib-detail-loading">Loading…</div>';
 
-  // Avtalt Spill: page-image based — render each scanned page inline
+  // Avtalt Spill: 45 scanned pages — concatenate OCR text only, no images
   if (src.id === 'avtalt-spill') {
     fetch('../data/secondary-sources/avtalt-spill-2010/pages.json')
       .then(r => r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status)))
-      .then(pages => { body.innerHTML = formatImagePages(pages, 'images/secondary-sources/avtalt-spill-2010-previews/'); })
+      .then(pages => { body.innerHTML = formatPagedTranscript(pages); })
       .catch(err => { body.innerHTML = '<div class="lib-detail-error">Could not load this source.</div>'; });
     return;
   }
@@ -3034,8 +3092,11 @@ function openLibrarySource(id) {
     .catch(err => { body.innerHTML = '<div class="lib-detail-error">Could not load this source.</div>'; });
 }
 
-// Renders an array of {page, stem, text} entries as image+text page blocks
-function formatImagePages(pages, imgBase) {
+// Renders an array of {page, stem, text} entries as text-only page blocks.
+// Page-image scans (kept in images/) are intentionally NOT rendered — the
+// transcript is the reading surface; the images stay archived in the folder
+// in case we want to expose them later.
+function formatPagedTranscript(pages) {
   return pages.map(p => {
     const paras = (p.text || '')
       .split(/\n\s*\n/)
@@ -3044,9 +3105,6 @@ function formatImagePages(pages, imgBase) {
       .map(para => '<p>' + esc(para) + '</p>')
       .join('');
     return `<div class="lib-detail-page">
-      <div class="lib-detail-page-img">
-        <img src="${imgBase}${esc(p.stem)}.jpg" alt="Page ${esc(p.page || '')}" loading="lazy">
-      </div>
       ${p.page ? `<div class="lib-detail-page-num">Page ${esc(p.page)}</div>` : ''}
       <div class="lib-detail-page-text">${paras}</div>
     </div>`;
