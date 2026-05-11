@@ -958,16 +958,24 @@
     .lib-type-btn.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 
     .lib-year-row {
-      display: flex; align-items: center; gap: 8px;
+      display: flex; align-items: center; gap: 10px;
       font-size: 13px; color: var(--mid);
     }
     .lib-year-row input {
-      width: 80px; padding: 6px 8px;
-      border: 1px solid var(--rule); border-radius: 3px;
-      font-family: inherit; font-size: 12px; color: var(--ink);
+      width: 92px; padding: 8px 12px;
+      border: 1.5px solid var(--rule); border-radius: 4px;
+      font-family: inherit; font-size: 13px; color: var(--ink);
       background: var(--bg); outline: none;
+      transition: border-color .12s;
+      /* Hide the browser-default number spinner arrows */
+      -moz-appearance: textfield;
+    }
+    .lib-year-row input::-webkit-outer-spin-button,
+    .lib-year-row input::-webkit-inner-spin-button {
+      -webkit-appearance: none; margin: 0;
     }
     .lib-year-row input:focus { border-color: var(--ink); }
+    .lib-year-row input::placeholder { color: var(--faint); }
 
     .lib-count {
       font-size: 11px; color: var(--mid);
