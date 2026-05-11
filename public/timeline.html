@@ -127,6 +127,29 @@
     }
     body.nav-open .nav-backdrop { opacity: 1; }
 
+    /* ── Language toggle (EN / NO) ──────────────────────────────────── */
+    .lang-toggle {
+      position: fixed;
+      top: 18px; right: 22px;
+      z-index: 195;
+      display: inline-flex;
+      align-items: center; gap: 4px;
+      font-family: var(--sans);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.18em;
+    }
+    .lang-toggle button {
+      background: none; border: none; cursor: pointer;
+      color: var(--mid);
+      padding: 4px 6px;
+      font-family: inherit;
+      font-size: inherit; font-weight: inherit; letter-spacing: inherit;
+      transition: color .15s;
+    }
+    .lang-toggle button:hover { color: var(--ink); }
+    .lang-toggle button.active { color: var(--accent); }
+    .lang-toggle .lang-sep { color: var(--faint); font-weight: 400; }
+
     .sb-eyebrow {
       font-family: var(--sans);
       font-size: 9.5px;
@@ -1677,19 +1700,185 @@
   </style>
 </head>
 <body>
+
+<!-- ╔══════════════════════════════════════════════════════════════════════╗
+     ║ Norwegian translations — JSON form (no apostrophe-escaping needed)   ║
+     ║ Key 'ui' holds static UI strings; 'milestones' / 'cx' / 'ann' / 'lib'║
+     ║ hold dynamic content keyed by id.                                    ║
+     ╚══════════════════════════════════════════════════════════════════════╝ -->
+<script id="i18n-no" type="application/json">
+{
+  "ui": {
+    "Archive Timeline": "Arkivtidslinje",
+    "1970 — 1975 and beyond": "1970 — 1975 og videre",
+    "A research project by": "Et forskningsprosjekt av",
+    "Tracing Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) and its place in the global history of participatory design.": "Sporer Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) og dets plass i den internasjonale historien om deltakende design.",
+
+    "Milestones": "Milepæler",
+    "Crossover": "Kryssløp",
+    "Archival sources": "Arkivkilder",
+    "Reference library": "Referansebibliotek",
+
+    "Primary documents": "Primærdokumenter",
+    "Secondary sources": "Sekundærkilder",
+    "109 photographs of letters, reports, drafts and working papers from Olav Terje Bergo's archive. Filter in the sidebar; search across keywords here.": "109 fotografier av brev, rapporter, utkast og arbeidspapirer fra Olav Terje Bergos arkiv. Filtrer i sidemenyen; søk på tvers av nøkkelord her.",
+    "17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.": "17 akademiske verk som sporer NJMF, skandinavisk deltakende design og linjene som fulgte. Filtrer i sidemenyen; klikk på et kort for å lese kilden.",
+
+    "Source type": "Kildetype",
+    "People & topics": "Personer og tema",
+    "People mentioned": "Personer omtalt",
+    "Document type": "Dokumenttype",
+    "Year": "År",
+    "Starred only": "Bare stjernemerket",
+
+    "From": "Fra",
+    "To": "Til",
+
+    "Letters": "Brev",
+    "Reports": "Rapporter",
+    "Report drafts": "Rapportutkast",
+    "Meeting minutes": "Møtereferater",
+    "Plans / proposals": "Planer / forslag",
+    "Programmes / agendas": "Programmer / dagsordener",
+    "Memos / notater": "Memoer / notater",
+    "Admin / budgets": "Administrasjon / budsjetter",
+    "Handwritten": "Håndskrevet",
+    "Other": "Annet",
+
+    "Book": "Bok",
+    "Book chapter": "Bokkapittel",
+    "Journal article": "Tidsskriftartikkel",
+    "Conference paper": "Konferansebidrag",
+    "Interview": "Intervju",
+    "Oral history": "Muntlig historie",
+    "Institutional record": "Institusjonell oversikt",
+
+    "Search title, author, or topic…": "Søk i tittel, forfatter eller tema…",
+    "Search keywords across the archive…": "Søk på tvers av arkivet…",
+
+    "About this source": "Om denne kilden",
+    "Read source": "Les kilden",
+    "← Back to library": "← Tilbake til biblioteket",
+    "No sources match these filters.": "Ingen kilder samsvarer med disse filtrene.",
+    "Loading…": "Laster…",
+    "Could not load this source.": "Kunne ikke laste denne kilden.",
+
+    "sources": "kilder",
+    "of": "av",
+    "matching": "treff",
+    "entries": "oppføringer",
+
+    "Date": "Dato",
+    "Archival reference": "Arkivreferanse",
+    "Description": "Beskrivelse",
+    "OCR Transcript": "OCR-transkripsjon",
+    "Read more": "Les mer",
+    "Reset zoom": "Nullstill zoom",
+    "Published in": "Publisert i",
+    "Critical find": "Kritisk funn",
+    "Notable find": "Bemerkelsesverdig funn",
+    "Context": "Kontekst"
+  },
+
+  "milestone": {
+    "landsmote-70": {
+      "displayDate": "Landsmøtet 1970",
+      "title": "NJMFs landsmøte vedtar EDB-resolusjonen",
+      "body": "På NJMFs landsmøte i 1970 vedtar delegatene en resolusjon om EDB (databehandling) og lønnssystemer, og slår fast at fagforeningen må bygge opp egen kapasitet til å analysere og motvirke teknologidrevne endringer i arbeidet. Kåre Tangnes' åpningsforedrag om nye bedriftsøkonomiske metoder utløser en debatt som ender i et historisk vedtak: der ledelsen avviser samarbeid, må fagforeningen kunne gjennomføre sine egne utredninger. Dette utgjør startskuddet for NJMFs forskningsprosjekt."
+    },
+    "raastad-lunch-70": {
+      "displayDate": "Våren 1970 (per Bergo)",
+      "title": "En lunsj i Oslo (Bergos erindring)",
+      "body": "I Olav Terje Bergos muntlige historie fra 2025 husker han at Hans Jørgen Raastad — leder av AUF (Arbeiderpartiets ungdomsfylking) — arrangerte en lunsj i Oslo i 1970 med Kristen Nygaard. Bergo forteller at de «ble enige om at jeg skulle slutte meg til Kristen ved Norsk Regnesentral når jeg var ferdig med studiene ved NHH og universitetet i 1971». Denne samtalen finnes ikke i noe arkivdokument. Det er én deltakers rekonstruksjon femti år senere, og lunsjen kan stå sterkere i ettertid enn den føltes der og da. Listet her fordi det er den eneste tilgjengelige forklaringen på hvordan Bergo–Nygaard-samarbeidet oppsto, og fordi den peker mot et bergensk studentnettverk som forsker på prosjektet ikke har omtalt."
+    },
+    "njmf-letter-may70": {
+      "displayDate": "13. mai 1970",
+      "title": "NJMF ber formelt Norsk Regnesentral delta",
+      "body": "I ukene etter landsmøtevedtaket skriver NJMF til Norsk Regnesentral og ber dem ta på seg forskningsprosjektet om planlegging, styring og EDB. Det dokumenterte åpningstrekket i grunnleggelseskorrespondansen — setter i gang svarene fra NR (10. juni) og AFI (12. juni). I Bergos muntlige historie fra 2025 forteller han at den personlige beslutningen om at han skulle bli med, allerede var avgjort uformelt på en lunsj i Oslo våren 1970 arrangert av Hans Jørgen Raastad (AUF-leder). Den fortellingen er ett perspektiv, gjengitt femti år senere; arkivet viser bare den formelle brevvekslingen."
+    },
+    "nr-accepts-jun70": {
+      "displayDate": "10. juni 1970",
+      "title": "NR aksepterer — og AFI er allerede med",
+      "body": "Drude Berntsen (instituttsjef ved NR) og Kristen Nygaard svarer på Norsk Regnesentrals brevpapir og takker formelt ja til prosjektet. Brevet deres dokumenterer at NR allerede har holdt konferanser med representanter for NJMF og en representant fra Arbeidspsykologisk institutt (Thorsruds institutt) før de svarte. To dager senere (12. juni) svarer Knut Lange på Arbeidsforskningsinstituttenes brevpapir. De to tradisjonene koordinerer fra de aller første ukene — tidligere enn sekundærlitteraturens vanlige framstilling av et AFI/NJMF-«møte» antyder."
+    },
+    "project-launch-71": {
+      "displayDate": "Januar 1971",
+      "title": "Forskningsprosjektet starter formelt ved Norsk Regnesentral",
+      "body": "NJMF initierer formelt sitt forskningsprosjekt i samarbeid med Norsk Regnesentral, ledet av Kristen Nygaard. En prosjektgruppe på to forskere og to tillitsvalgte etableres. Fire bedriftsklubber velges som arbeidssteder. Det opprinnelige opplegget — at forskere skulle studere arbeidere — revideres raskt; den nye modellen har forskere som støtter arbeiderne i deres egne undersøkelser. Det finnes to deltakerfortellinger om hvorfor denne vendingen skjedde, skrevet tiår fra hverandre: i Nygaards retrospekt fra 1992 var dreiningen intern — han «følte seg mer og mer urolig med planen» sommeren 1971 og innså gradvis at den opprinnelige strategien bare ville «produsere noen rapporter om systemer». I Bergos muntlige historie fra 2025 var metodikken importert ferdigformet fra hans bergenske «Sosialistiske siviløkonomer»-nettverk. Bergo sluttet seg til NR sommeren 1971 — så de to fortellingene kan være utfyllende (Bergo som katalysator for den uroen Nygaard beskriver) heller enn motstridende."
+    },
+    "nr-meetings-71": {
+      "displayDate": "Okt–nov 1971",
+      "title": "Tre interne NR-møter — det politiske prosjektet artikuleres",
+      "body": "Tre interne møter ved Norsk Regnesentral dokumenterer en eksplisitt politisk prosjektagenda: rive ned skiller mellom forskere og forskningsobjekter, sikre arbeideres kontroll over kunnskap, og forme den offentlige diskursen ved å redefinere begreper som «planlegging» og «styring». Marx siteres direkte i referatene: «Arbeiderklassens frigjøring må være dens eget verk.»"
+    },
+    "working-groups-7173": {
+      "displayDate": "1971 – 1973",
+      "title": "Arbeidsgrupper aktive ved fire bedriftsklubber",
+      "body": "Undersøkelsesgrupper av fagforeningsmedlemmer ved fire bedriftsklubber (bl.a. Hydraulik A/S) møtes to til tre ganger i uken. De analyserer planleggings- og styringssystemer, foreslår omorganiseringer, utarbeider lokal fagforeningspolitikk og bygger felles kunnskap om EDB. Arkivets 109 primærdokumenter er hovedsakelig fra denne perioden."
+    },
+    "eu-referendum-72": {
+      "displayDate": "25. sept. 1972",
+      "title": "EF-avstemningen taper (Bergos lesning: et mulig finansieringsskygge)",
+      "body": "Norge stemmer mot EF-medlemskap. Ifølge Bergos muntlige historie fra 2025 var han og Nygaard «nøkkelmedlemmer i strategigruppa» mot norsk EF-medlemskap — et standpunkt som satte dem på kollisjonskurs med Arbeiderpartiets og LOs ledelse, som hadde drevet ja-kampanje. Bergo foreslår (i ettertid) at denne politiske skadeen kan ha bidratt til at prosjektet ikke fikk videre finansiering i 1974: «Det kan være grunnen til at vi ikke fikk finansiering til videre forskning i Norge.» Denne årsakssammenhengen er Bergos rekonstruksjon, og er ikke bekreftet av dokumenter i vårt arkiv. Verdt å merke seg fordi den faller kronologisk sammen med Langes avskjed (11.–13. september 1972) og bruddet med AFI — flere politiske press på prosjektet i løpet av samme fjorten dager."
+    },
+    "local-avtale-74": {
+      "displayDate": "Januar 1974",
+      "title": "Første lokale data-avtale signert",
+      "body": "Den første kollektivavtalen som regulerer utforming og innføring av datasystemer inngås på lokalt nivå — et direkte resultat av arbeidsgruppenes utrednings­arbeid. Avtalen etablerer fagforeningens rett til informasjon og høring i EDB-prosjekter før beslutninger fattes."
+    },
+    "central-avtale-75": {
+      "displayDate": "April 1975",
+      "title": "Sentral LO/NAF-rammeavtale om datasystemer",
+      "body": "Landsomfattende rammeavtale mellom LO og NAF signeres. Ledelsen må informere og høre tillitsvalgte før innføring av databaserte systemer; arbeidere får rett til å utnevne egne «datatillitsmenn» med tilgang til all relevant dokumentasjon. Hundrevis av lokale avtaler følger på tvers av norsk industri."
+    },
+    "demos-75": {
+      "displayDate": "1975 – 1979",
+      "title": "DEMOS-prosjektet — Sverige",
+      "body": "Direkte inspirert av NJMF starter svenske forskere og LO DEMOS («fagforeninger, industrielt demokrati og datamaskiner») ved fire bedrifter. Den fagforeningsledede undersøkelsen ved et lokomotivverksted i Örebro produserer det innflytelsesrike kravet: «Vi er imot detaljstyring.» Modellen sprer seg over Skandinavia."
+    },
+    "mbl-77": {
+      "displayDate": "Januar 1977",
+      "title": "MBL i Sverige; Arbeidsmiljøloven i Norge",
+      "body": "Sverige innfører Medbestämmandelagen (MBL), som krever at arbeidsgivere forhandler med fagforeningene før vesentlige endringer i produksjonen, inkludert nye datasystemer. Statsminister Palme kaller det den største reformen siden allmenn stemmerett. Norge vedtar sin egen Arbeidsmiljølov samme år, som gir arbeidere rett til å stoppe farlig produksjon."
+    },
+    "utopia-81": {
+      "displayDate": "1981 – 1985",
+      "title": "UTOPIA-prosjektet — neste generasjons deltakende design",
+      "body": "Nordiske grafiske arbeideres fagforeninger og skandinaviske forskere starter UTOPIA, et prosjekt for å utforme nye datamaskinverktøy for faglært ombrekking av avisproduksjon. Prosjektet introduserer «verktøyperspektivet» og «design ved å gjøre» (mockups, prototyper) som kjernemetoder — teknikker som påvirker deltakende designpraksis globalt og fortsatt er i bruk."
+    },
+    "florence-83": {
+      "displayDate": "1983 – 1987",
+      "title": "Florence — deltakende design i helsesektoren",
+      "body": "Gro Bjerknes og Tone Bratteteigs Florence-prosjekt tar den arbeidsorienterte deltakende design-tradisjonen ut av industrien og inn i helsevesenet, med fokus på sykepleiernes arbeidssituasjon ved norske sykehus. Opprinnelig rettet mot å utvikle «profesjonsorienterte programmeringsspråk» slik at yrkesgrupper kunne beholde kontroll over databruk i arbeidet sitt; bredder seg ut til det dypere spørsmålet om delt ansvar mellom forskere og sykepleiere. Ehn (1992) nevner det blant de kanoniske «andre generasjons arbeidsorienterte prosjektene» — en direkte videreføring av linjen fra NJMF via DEMOS og UTOPIA. Bratteteig blir senere professor i informasjonssystemers design ved Universitetet i Oslo."
+    },
+    "fire-90s": {
+      "displayDate": "1992 – 1994",
+      "title": "FIRE — linjen fortsetter ved UiO Informatikk",
+      "body": "FIRE (Functional Integration through REdesign), 1992–1994, ved Institutt for informatikk, Universitetet i Oslo. Jørn Braa, Tone Bratteteig, Jens Kaasbøll og Leikny Øgrim arbeider med prinsipper og teknikker for redesign av databaserte systemer slik at de blir funksjonelt integrerte på tvers av brukergrupper med delvis motstridende mål. En bevisst utvidelse fra Collective Resource-tilnærmingen mot dialogbaserte strategier som tar organisatorisk kompleksitet (flere interessegrupper, flere sameksisterende systemer) på større alvor. Bærer den arbeidsorienterte deltakende design-tradisjonen videre gjennom det tidlige 1990-tallet under en ny institusjonell adresse — UiO Informatikk, der Nygaard hadde vært en av grunnleggerne. Samme Bratteteig som i Florence: hun er den gjennomgående forbindelsen mellom 1980-tallets helse-deltakende design og 1990-tallets universitetsforskning."
+    }
+  }
+}
+</script>
+
 <div class="layout">
 
   <!-- ── Sidebar ── -->
   <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" type="button">
     <span></span><span></span><span></span>
   </button>
+
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button data-lang="en" class="active" type="button">EN</button>
+    <span class="lang-sep">·</span>
+    <button data-lang="no" type="button">NO</button>
+  </div>
   <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
 
   <aside class="sidebar">
     <a class="sb-hd" href="../index.html" aria-label="NJMF+ landing page">
-      <div class="sb-eyebrow">Archive Timeline</div>
+      <div class="sb-eyebrow" data-i18n="Archive Timeline">Archive Timeline</div>
       <h1 class="sb-title">NJMF<span class="sb-title-plus">+</span></h1>
-      <div class="sb-dates">1970 — 1975 and beyond</div>
+      <div class="sb-dates" data-i18n="1970 — 1975 and beyond">1970 — 1975 and beyond</div>
     </a>
     <div id="sb-archive-tools" style="display:none;">
       <!-- Legacy inline search input kept hidden — JS still references #search/#search-clear
@@ -1705,7 +1894,7 @@
           <button class="chip" data-term="Regnesentral">Regnesentral</button>
           <button class="chip" data-term="NTNF">NTNF</button>
         </div>
-        <div class="type-filter-label">People mentioned</div>
+        <div class="type-filter-label" data-i18n="People mentioned">People mentioned</div>
         <div class="type-filter" id="name-filter">
           <label class="type-row"><input type="checkbox" data-name="Nygaard"> <span>Kristen Nygaard</span></label>
           <label class="type-row"><input type="checkbox" data-name="Bergo"> <span>Olav Terje Bergo</span></label>
@@ -1718,32 +1907,32 @@
           <label class="type-row"><input type="checkbox" data-name="Elgsa"> <span>Knut Elgsaass</span></label>
           <label class="type-row"><input type="checkbox" data-name="Berntsen"> <span>Drude Berntsen</span></label>
         </div>
-        <div class="type-filter-label">Document type</div>
+        <div class="type-filter-label" data-i18n="Document type">Document type</div>
         <div class="type-filter" id="type-filter">
-          <label class="type-row"><input type="checkbox" data-type="letter"> <span>Letters</span></label>
-          <label class="type-row"><input type="checkbox" data-type="report"> <span>Reports</span></label>
-          <label class="type-row"><input type="checkbox" data-type="draft"> <span>Report drafts</span></label>
-          <label class="type-row"><input type="checkbox" data-type="meeting"> <span>Meeting minutes</span></label>
-          <label class="type-row"><input type="checkbox" data-type="proposal"> <span>Plans / proposals</span></label>
-          <label class="type-row"><input type="checkbox" data-type="agenda"> <span>Programmes / agendas</span></label>
-          <label class="type-row"><input type="checkbox" data-type="memo"> <span>Memos / notater</span></label>
-          <label class="type-row"><input type="checkbox" data-type="admin"> <span>Admin / budgets</span></label>
-          <label class="type-row"><input type="checkbox" data-type="handwritten"> <span>Handwritten</span></label>
-          <label class="type-row"><input type="checkbox" data-type="misc"> <span>Other</span></label>
+          <label class="type-row"><input type="checkbox" data-type="letter"> <span data-i18n="Letters">Letters</span></label>
+          <label class="type-row"><input type="checkbox" data-type="report"> <span data-i18n="Reports">Reports</span></label>
+          <label class="type-row"><input type="checkbox" data-type="draft"> <span data-i18n="Report drafts">Report drafts</span></label>
+          <label class="type-row"><input type="checkbox" data-type="meeting"> <span data-i18n="Meeting minutes">Meeting minutes</span></label>
+          <label class="type-row"><input type="checkbox" data-type="proposal"> <span data-i18n="Plans / proposals">Plans / proposals</span></label>
+          <label class="type-row"><input type="checkbox" data-type="agenda"> <span data-i18n="Programmes / agendas">Programmes / agendas</span></label>
+          <label class="type-row"><input type="checkbox" data-type="memo"> <span data-i18n="Memos / notater">Memos / notater</span></label>
+          <label class="type-row"><input type="checkbox" data-type="admin"> <span data-i18n="Admin / budgets">Admin / budgets</span></label>
+          <label class="type-row"><input type="checkbox" data-type="handwritten"> <span data-i18n="Handwritten">Handwritten</span></label>
+          <label class="type-row"><input type="checkbox" data-type="misc"> <span data-i18n="Other">Other</span></label>
         </div>
       </div>
       <div class="sb-ft">
         <div id="entry-count">118 entries</div>
-        <button id="starred-filter"><span class="sf-star">★</span> Starred only</button>
+        <button id="starred-filter"><span class="sf-star">★</span> <span data-i18n="Starred only">Starred only</span></button>
       </div>
     </div>
     <div id="sb-library-tools" style="display:none;">
       <div class="sb-search">
-        <div class="type-filter-label" style="margin-top: 4px;">Source type</div>
+        <div class="type-filter-label" style="margin-top: 4px;" data-i18n="Source type">Source type</div>
         <div class="type-filter" id="lib-type-list-sb"></div>
-        <div class="type-filter-label">People &amp; topics</div>
+        <div class="type-filter-label" data-i18n="People & topics">People &amp; topics</div>
         <div class="type-filter" id="lib-people-list"></div>
-        <div class="type-filter-label">Year</div>
+        <div class="type-filter-label" data-i18n="Year">Year</div>
         <div class="lib-year-row" style="margin-top:4px;">
           <input id="lib-year-from-sb" type="number" placeholder="From" min="1960" max="2026" step="1">
           <span>—</span>
@@ -1752,7 +1941,7 @@
       </div>
     </div>
     <div id="sb-project-info" class="sb-project">
-      <div class="sb-project-eyebrow">A research project by</div>
+      <div class="sb-project-eyebrow" data-i18n="A research project by">A research project by</div>
       <div class="sb-project-people">
         <div class="sb-project-name">Alina Krogstad</div>
         <div class="sb-project-affil">Høyskolen Kristiania</div>
@@ -1761,7 +1950,7 @@
         <div class="sb-project-name">India Anderson</div>
         <div class="sb-project-affil">The University of Queensland</div>
       </div>
-      <div class="sb-project-blurb">
+      <div class="sb-project-blurb" data-i18n="Tracing Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) and its place in the global history of participatory design.">
         Tracing Norsk Jern- og Metallarbeiderforbunds forskningsprosjekt (1970–1975) and its place in the global history of participatory design.
       </div>
     </div>
@@ -1771,20 +1960,20 @@
   <main class="main" id="main">
 
     <div class="view-tabs" id="view-tabs">
-      <button class="vtab active" data-view="milestones">Milestones</button>
-      <button class="vtab" data-view="crossover">Crossover</button>
-      <button class="vtab" data-view="archive">Archival sources</button>
-      <button class="vtab" data-view="library">Reference library</button>
+      <button class="vtab active" data-view="milestones" data-i18n="Milestones">Milestones</button>
+      <button class="vtab" data-view="crossover" data-i18n="Crossover">Crossover</button>
+      <button class="vtab" data-view="archive" data-i18n="Archival sources">Archival sources</button>
+      <button class="vtab" data-view="library" data-i18n="Reference library">Reference library</button>
     </div>
 
     <div id="view-archive" style="display:none;">
       <div class="page-hd">
-        <div class="lib-eyebrow">Archival sources</div>
-        <h2 class="lib-title">Primary documents</h2>
-        <div class="lib-sub">109 photographs of letters, reports, drafts and working papers from Olav Terje Bergo's archive. Filter in the sidebar; search across keywords here.</div>
+        <div class="lib-eyebrow" data-i18n="Archival sources">Archival sources</div>
+        <h2 class="lib-title" data-i18n="Primary documents">Primary documents</h2>
+        <div class="lib-sub" data-i18n="109 photographs of letters, reports, drafts and working papers from Olav Terje Bergo's archive. Filter in the sidebar; search across keywords here.">109 photographs of letters, reports, drafts and working papers from Olav Terje Bergo's archive. Filter in the sidebar; search across keywords here.</div>
         <div class="page-search-row">
           <input id="search-main" class="page-search" type="search" autocomplete="off" spellcheck="false"
-                 placeholder="Search keywords across the archive…">
+                 placeholder="Search keywords across the archive…" data-i18n-placeholder="Search keywords across the archive…">
           <button id="search-main-clear" class="page-search-clear" title="Clear">&#215;</button>
         </div>
       </div>
@@ -1799,12 +1988,12 @@
 
     <div id="view-library" style="display:none;">
       <div class="page-hd">
-        <div class="lib-eyebrow">Reference library</div>
-        <h2 class="lib-title">Secondary sources</h2>
-        <div class="lib-sub">17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.</div>
+        <div class="lib-eyebrow" data-i18n="Reference library">Reference library</div>
+        <h2 class="lib-title" data-i18n="Secondary sources">Secondary sources</h2>
+        <div class="lib-sub" data-i18n="17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.">17 academic works tracing NJMF, Scandinavian PD, and the lineages that followed. Filter in the sidebar; click a card to read the source.</div>
         <div class="page-search-row">
           <input id="lib-search" class="page-search" type="search" autocomplete="off" spellcheck="false"
-                 placeholder="Search title, author, or topic…">
+                 placeholder="Search title, author, or topic…" data-i18n-placeholder="Search title, author, or topic…">
           <button id="lib-search-clear" class="page-search-clear" title="Clear">&#215;</button>
         </div>
       </div>
@@ -2733,10 +2922,15 @@ function secSourceUrl(src) {
 
 function renderMilestones() {
   const root = document.getElementById('ms-root');
+  // Pre-localise every milestone *before* building the template literal — keeps
+  // the JSON-driven Norwegian text in proper string variables instead of inline
+  // const declarations inside ${} expressions.
+  const items = MILESTONES.map(m => localise(m, 'milestone'));
+  const intro = t('Key moments in the NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to see linked archive documents and secondary sources.');
   root.innerHTML = `
-    <p class="ms-intro">Key moments in the NJMF research project (1970–1975) and its legacy in Scandinavian participatory design. Click any milestone to see linked archive documents and secondary sources.</p>
+    <p class="ms-intro">${esc(intro)}</p>
     <div class="ms-track">
-      ${MILESTONES.map(m => {
+      ${items.map(m => {
         const peopleTags = (m.people || []).map(p =>
           `<span class="ms-person">${esc(p)}</span>`
         ).join('');
@@ -3125,6 +3319,72 @@ function renderCrossover() {
     img.addEventListener('click', e => { e.stopPropagation(); openByStem(img.dataset.stem); });
   });
 }
+
+// ─────────────────────────────────────────────────────────────────────
+//  i18n — Norwegian / English language toggle
+// ─────────────────────────────────────────────────────────────────────
+const I18N = {
+  no: (function() {
+    try { return JSON.parse(document.getElementById('i18n-no').textContent); }
+    catch (_) { return { ui: {}, milestone: {} }; }
+  })()
+};
+
+let LANG = (function() {
+  try { return localStorage.getItem('njmf-lang') === 'no' ? 'no' : 'en'; }
+  catch (_) { return 'en'; }
+})();
+
+// Translate a UI string. Returns the original if no translation exists.
+function t(en) {
+  if (LANG === 'en') return en;
+  return (I18N.no.ui && I18N.no.ui[en]) || en;
+}
+
+// Look up Norwegian overrides for a dynamic item (milestone, cx beat, etc.)
+function localise(item, kind) {
+  if (LANG === 'en' || !item || !item.id) return item;
+  const overrides = (I18N.no[kind] || {})[item.id];
+  if (!overrides) return item;
+  return Object.assign({}, item, overrides);
+}
+
+// Apply translations to all elements with data-i18n / data-i18n-placeholder
+function applyStaticStrings() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (key) el.textContent = t(key);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (key) el.placeholder = t(key);
+  });
+}
+
+// Switch language. Re-renders dynamic views that are already mounted.
+function setLang(lang) {
+  LANG = lang === 'no' ? 'no' : 'en';
+  document.body.dataset.lang = LANG;
+  try { localStorage.setItem('njmf-lang', LANG); } catch (_) {}
+  document.querySelectorAll('.lang-toggle button').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === LANG);
+  });
+  applyStaticStrings();
+  if (document.getElementById('ms-root') && document.getElementById('ms-root').hasChildNodes()) renderMilestones();
+  if (typeof renderCrossover === 'function' && document.getElementById('cx-root') && document.getElementById('cx-root').hasChildNodes()) renderCrossover();
+  if (typeof renderLibrary === 'function' && document.getElementById('lib-grid') && document.getElementById('lib-grid').hasChildNodes()) renderLibrary();
+}
+
+document.querySelectorAll('.lang-toggle button').forEach(b => {
+  b.addEventListener('click', () => setLang(b.dataset.lang));
+});
+
+// Apply on initial load
+applyStaticStrings();
+document.body.dataset.lang = LANG;
+document.querySelectorAll('.lang-toggle button').forEach(b => {
+  b.classList.toggle('active', b.dataset.lang === LANG);
+});
 
 renderMilestones();
 
