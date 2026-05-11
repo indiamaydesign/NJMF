@@ -80,10 +80,52 @@
     }
 
     .sb-hd {
+      display: block;
       padding: 48px 36px 28px;
       border-bottom: 1px solid var(--rule);
       flex-shrink: 0;
+      text-decoration: none;
+      color: inherit;
+      transition: background-color .15s;
     }
+    a.sb-hd:hover { background: var(--hl); }
+    a.sb-hd:hover .sb-title-plus { animation-play-state: paused; color: var(--ink); }
+
+    /* ── Mobile nav toggle (hamburger → ×) ────────────────────────── */
+    .nav-toggle {
+      display: none;        /* hidden on desktop, shown via media query */
+      position: fixed;
+      top: 14px; right: 14px;
+      z-index: 200;
+      width: 48px; height: 48px;
+      background: var(--bg);
+      border: 1.5px solid var(--ink);
+      border-radius: 0;
+      cursor: pointer;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1;
+      color: var(--accent);
+      align-items: center; justify-content: center;
+    }
+    .nav-toggle-plus {
+      display: inline-block;
+      transition: transform .3s cubic-bezier(0.22,1,0.36,1);
+      transform-origin: 50% 55%;
+    }
+    body.nav-open .nav-toggle-plus { transform: rotate(45deg); }
+
+    .nav-backdrop {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(10,10,9,0.4);
+      z-index: 150;
+      opacity: 0;
+      transition: opacity .25s ease;
+    }
+    body.nav-open .nav-backdrop { opacity: 1; }
 
     .sb-eyebrow {
       font-family: var(--sans);
@@ -1539,18 +1581,115 @@
     .cx-cross-people { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 8px; justify-content: left; }
     .cx-cross-docs   { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
     .cx-cross-sec { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--mid); margin-top: 10px; }
+    /* ── Mobile breakpoint ────────────────────────────────────────── */
+    @media (max-width: 880px) {
+      /* The spinning + cursor follower is too distracting on touch — keep
+         the system cursor on small screens */
+      body, body * { cursor: auto !important; }
+      .cursor-cross { display: none !important; }
+
+      /* Hamburger toggle visible only on mobile */
+      .nav-toggle { display: inline-flex; }
+      .nav-backdrop { display: block; pointer-events: none; }
+      body.nav-open .nav-backdrop { pointer-events: auto; }
+
+      /* Sidebar becomes a slide-in panel */
+      .layout { display: block; }
+      .sidebar {
+        position: fixed;
+        top: 0; left: 0; bottom: 0;
+        width: min(320px, 86vw);
+        z-index: 180;
+        background: var(--bg);
+        border-right: 1px solid var(--ink);
+        box-shadow: 0 0 0 1px transparent;
+        transform: translateX(-105%);
+        transition: transform .32s cubic-bezier(0.22,1,0.36,1);
+        overflow-y: auto;
+      }
+      body.nav-open .sidebar { transform: translateX(0); }
+
+      /* Main pane: full width */
+      .main { width: 100%; height: 100vh; overflow-y: auto; }
+      .view-tabs {
+        padding: 0 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 0;
+        scrollbar-width: none;
+      }
+      .view-tabs::-webkit-scrollbar { display: none; }
+      .vtab {
+        white-space: nowrap;
+        margin-right: 22px;
+        padding: 16px 0 12px;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+      }
+
+      /* Page header tightening */
+      .page-hd { padding: 28px 20px 24px; }
+      .lib-title { font-size: clamp(30px, 7vw, 44px); }
+      .lib-sub { font-size: 13px; }
+      .page-search { font-size: clamp(16px, 4vw, 20px); }
+
+      /* Single-column grids */
+      .lib-grid { grid-template-columns: 1fr; border-top-color: var(--ink); }
+      .lib-card { border-right: none; }
+
+      /* Reference library / archive view inner padding */
+      #view-library { padding: 0 0 60px; }
+      #view-milestones { padding: 28px 20px 60px; }
+      #view-crossover  { padding: 0 0 60px; }
+      .cx-beat { grid-template-columns: 1fr; }
+      .cx-beat::after { display: none; }
+      .cx-cell-l, .cx-cell-r { padding: 8px 20px; justify-content: flex-start; }
+      .cx-cell-s { display: none; }
+      .cx-node { max-width: 100%; }
+
+      /* Archive entries */
+      #tl-root { padding: 0 16px; }
+
+      /* Lightbox: stack image + meta vertically on small screens */
+      #lb-panel { width: 96vw; height: 92vh; flex-direction: column; }
+      #lb-img-area { flex: 1 1 auto; min-height: 200px; }
+      #lb-meta {
+        width: auto; border-left: none;
+        border-top: 1px solid var(--rule);
+        max-height: 45vh;
+        padding: 22px 20px;
+      }
+
+      /* Reference library detail (in-tab reader) — match padding */
+      #view-library .lib-detail { padding: 24px 20px 60px; }
+      .lib-detail-hd, .lib-detail-summary, .lib-detail-body,
+      .lib-detail-page { max-width: 100%; }
+    }
+
+    /* Tiny screens — squeeze tabs/header further */
+    @media (max-width: 480px) {
+      .nav-toggle { width: 42px; height: 42px; font-size: 26px; }
+      .sb-title { font-size: 44px; }
+      .page-hd { padding: 22px 16px 20px; }
+      .vtab { margin-right: 18px; font-size: 9.5px; }
+    }
   </style>
 </head>
 <body>
 <div class="layout">
 
   <!-- ── Sidebar ── -->
+  <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" type="button">
+    <span class="nav-toggle-plus">+</span>
+  </button>
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
   <aside class="sidebar">
-    <div class="sb-hd">
+    <a class="sb-hd" href="../index.html" aria-label="NJMF+ landing page">
       <div class="sb-eyebrow">Archive Timeline</div>
       <h1 class="sb-title">NJMF<span class="sb-title-plus">+</span></h1>
       <div class="sb-dates">1970 — 1975 and beyond</div>
-    </div>
+    </a>
     <div id="sb-archive-tools" style="display:none;">
       <!-- Legacy inline search input kept hidden — JS still references #search/#search-clear
            but the user-facing search is now the big one at the top of the main pane -->
@@ -3295,6 +3434,24 @@ document.getElementById('lib-year-to').addEventListener('input', e => {
   sbTo.addEventListener('input', e => {
     libYearTo = e.target.value ? parseInt(e.target.value, 10) : null;
     renderLibrary();
+  });
+})();
+
+// Mobile nav toggle — hamburger (red +) slides the sidebar in
+(function() {
+  const toggle   = document.getElementById('nav-toggle');
+  const backdrop = document.getElementById('nav-backdrop');
+  if (!toggle) return;
+  function close() { document.body.classList.remove('nav-open'); toggle.setAttribute('aria-label', 'Open menu'); }
+  function open()  { document.body.classList.add('nav-open');    toggle.setAttribute('aria-label', 'Close menu'); }
+  toggle.addEventListener('click', () => {
+    if (document.body.classList.contains('nav-open')) close(); else open();
+  });
+  backdrop.addEventListener('click', close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  // Close the slide-in after any tab is picked (so the user sees the content)
+  document.getElementById('view-tabs').addEventListener('click', e => {
+    if (e.target.closest('.vtab')) close();
   });
 })();
 
