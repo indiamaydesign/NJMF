@@ -270,10 +270,29 @@
     }
 
     @media (max-width: 720px) {
-      .stage { padding: 24px 22px 0; bottom: 60px; }
-      .wordmark { font-size: clamp(80px, 24vw, 160px); }
-      .tagline { font-size: clamp(16px, 4vw, 22px); }
-      .credit-row { grid-template-columns: 1fr; gap: 24px; }
+      html, body { overflow-y: auto; height: auto; min-height: 100vh; }
+      .frame { inset: 8px; }
+      .stage { position: relative; inset: auto; padding: 28px 22px 90px; bottom: auto; min-height: calc(100vh - 60px); }
+      .top { font-size: 9.5px; letter-spacing: 0.22em; }
+      .top-rule { width: 36px; margin-right: 10px; }
+      .hero-eyebrow { font-size: 10.5px; letter-spacing: 0.22em; margin-bottom: 20px; }
+      .wordmark { font-size: clamp(72px, 22vw, 140px); margin-bottom: 18px; }
+      .tagline { font-size: clamp(15px, 4.2vw, 20px); margin-top: 16px; margin-bottom: 44px; }
+      .byline { font-size: 13px; line-height: 1.85; margin-bottom: 36px; }
+      .enter { font-size: 18px; padding: 14px 36px; }
+      .enter::after { width: 5px; height: 14px; }
+      .credit-row { grid-template-columns: 1fr; gap: 22px; padding-bottom: 18px; }
+
+      .marquee-band {
+        height: 32px;
+        left: 8px; right: 8px; bottom: 8px;
+      }
+      .marquee-track { font-size: 12px; }
+      .marquee-track > span { padding: 0 18px; gap: 18px; }
+
+      /* The spinning + cursor is for desktop only; hide on touch */
+      body, body * { cursor: auto !important; }
+      .cursor-cross { display: none !important; }
     }
 
     @media (prefers-reduced-motion: reduce) {
