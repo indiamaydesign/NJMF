@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NJMF+ — A research project</title>
+  <title>NJMF+ — A history of Participatory Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg:    #f5f3ec;
-      --ink:   #0f0f0e;
-      --mid:   #555555;
-      --faint: #888888;
-      --warm:  rgba(195, 165, 110, 0.16);
-      --cool:  rgba(120, 140, 170, 0.12);
+      --ink:    #0a0a09;
+      --paper:  #f3f1e9;
+      --mid:    #6b6b67;
+      --faint:  #b8b6ae;
+      --rule:   #d3d1c6;
+      --accent: #c8451f;   /* signature red — for the + */
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -22,371 +22,334 @@
     html, body {
       height: 100vh;
       overflow: hidden;
-      font-family: 'Playfair Display', 'Times New Roman', Georgia, serif;
-      background: var(--bg);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--paper);
       color: var(--ink);
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Slow-drifting warm/cool radial gradients in the background */
-    .bg {
-      position: fixed; inset: 0;
+    /* ── Printed-page frame around the whole viewport ──────────────── */
+    .frame {
+      position: fixed; inset: 16px;
+      border: 1px solid var(--ink);
       pointer-events: none;
-      z-index: 0;
-      background:
-        radial-gradient(ellipse at 25% 25%, var(--warm), transparent 55%),
-        radial-gradient(ellipse at 75% 75%, var(--cool), transparent 55%);
-      animation: bg-drift 38s ease-in-out infinite;
-      will-change: transform;
+      z-index: 10;
     }
 
-    @keyframes bg-drift {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      33%      { transform: translate(2.5%, -1.5%) scale(1.06); }
-      66%      { transform: translate(-1.5%, 2%) scale(1.04); }
-    }
-
-    /* Very subtle paper grain (procedural via SVG filter) */
-    .grain {
-      position: fixed; inset: 0;
-      pointer-events: none;
+    /* ── Editorial grid layout ─────────────────────────────────────── */
+    .stage {
+      position: fixed; inset: 16px;
+      display: grid;
+      grid-template-rows: auto 1fr auto auto;
+      padding: 32px 48px 0;
       z-index: 1;
-      opacity: 0.18;
-      mix-blend-mode: multiply;
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.45 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
     }
 
-    /* Two diverging traditions — Thorsrud (warm) and Nygaard (cool) — slowly
-       drawing themselves across the page. The visual narrative of the project. */
-    .paths {
-      position: fixed; inset: 0;
-      width: 100vw; height: 100vh;
-      pointer-events: none;
-      z-index: 2;
+    /* Top index / dates row */
+    .top {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--ink);
+      font-weight: 500;
     }
-    .paths path {
-      fill: none;
-      stroke-width: 0.18;
-      stroke-linecap: round;
-      vector-effect: non-scaling-stroke;
-      stroke-dasharray: 100;
-      stroke-dashoffset: 100;
-      animation: draw-line 14s cubic-bezier(0.65, 0.02, 0.36, 1) forwards;
-    }
-    .p-thorsrud {
-      stroke: #b07d2a;
-      opacity: 0.42;
-      animation-delay: 1.6s;
-    }
-    .p-nygaard {
-      stroke: #4a6080;
-      opacity: 0.42;
-      animation-delay: 2.2s;
-    }
-    @keyframes draw-line {
-      to { stroke-dashoffset: 0; }
-    }
+    .top-rule { display: inline-block; width: 60px; height: 1px; background: var(--ink); margin-right: 14px; vertical-align: middle; }
 
-    /* Event markers — fade in once, then pulse forever */
-    .evt {
-      fill: transparent;
-      stroke-width: 0.35;
-      vector-effect: non-scaling-stroke;
-      opacity: 0;
-    }
-    .evt-t1 { stroke: #b07d2a; animation: dot-in 0.8s 5.6s forwards, dot-pulse 3.4s 6.4s ease-in-out infinite; }
-    .evt-t2 { stroke: #b07d2a; animation: dot-in 0.8s 9.6s forwards, dot-pulse 3.6s 10.4s ease-in-out infinite; }
-    .evt-n1 { stroke: #4a6080; animation: dot-in 0.8s 6.2s forwards, dot-pulse 3.2s 7.0s ease-in-out infinite; }
-    .evt-n2 { stroke: #4a6080; animation: dot-in 0.8s 10.2s forwards, dot-pulse 3.8s 11.0s ease-in-out infinite; }
-    @keyframes dot-in {
-      from { opacity: 0; r: 0; }
-      to   { opacity: 0.7; r: 0.7; }
-    }
-    @keyframes dot-pulse {
-      0%, 100% { opacity: 0.5; r: 0.55; stroke-width: 0.35; }
-      50%      { opacity: 0.95; r: 1.05; stroke-width: 0.5; }
-    }
-
-    /* Floating concept words — the vocabulary of the project drifting through */
-    .floating-words {
-      position: fixed; inset: 0;
-      pointer-events: none;
-      z-index: 2;
-    }
-    .fw {
-      position: fixed;
-      left: var(--x);
-      top: var(--y);
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: clamp(13px, 1.2vw, 16px);
-      color: rgba(15, 15, 14, 0.16);
-      letter-spacing: 0.02em;
-      white-space: nowrap;
-      animation: fw-drift var(--d, 40s) ease-in-out infinite alternate;
-      opacity: 0;
-      animation-delay: 1.5s;
-      will-change: transform, opacity;
-    }
-    @keyframes fw-drift {
-      from { transform: translate(0, 0);                    opacity: 0; }
-      8%   {                                                 opacity: 0.85; }
-      92%  {                                                 opacity: 0.85; }
-      to   { transform: translate(var(--dx), var(--dy));    opacity: 0; }
-    }
-
-    /* A single slow horizontal scanline drifting top → bottom (~22s) */
-    .scanline {
-      position: fixed; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(to right, transparent 0%, rgba(15,15,14,0.18) 35%, rgba(15,15,14,0.22) 50%, rgba(15,15,14,0.18) 65%, transparent 100%);
-      pointer-events: none;
-      z-index: 3;
-      animation: scan-sweep 22s linear infinite;
-      animation-delay: 3s;
-    }
-    @keyframes scan-sweep {
-      0%   { top: -2px;  opacity: 0; }
-      6%   { opacity: 1; }
-      94%  { opacity: 1; }
-      100% { top: 100vh; opacity: 0; }
-    }
-
-    .landing {
-      position: relative;
-      z-index: 4;
-      min-height: 100vh;
+    /* ── Hero area ─────────────────────────────────────────────────── */
+    .hero {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 64px 32px;
-      animation: rise 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+      padding: 0 0 40px;
+      position: relative;
     }
 
-    @keyframes rise {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .eyebrow {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 12px;
-      letter-spacing: 0.28em;
+    .hero-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.32em;
       text-transform: uppercase;
       color: var(--mid);
-      margin-bottom: 36px;
-      animation: rise-delayed 1.4s 0.1s cubic-bezier(0.22,1,0.36,1) both;
+      font-weight: 500;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fade-in 1.2s 0.3s ease-out forwards;
     }
 
-    .title {
-      font-size: clamp(96px, 16vw, 220px);
-      font-weight: 800;
-      line-height: 0.92;
-      letter-spacing: -0.02em;
-      margin-bottom: 28px;
-      animation: rise-delayed 1.4s 0.2s cubic-bezier(0.22,1,0.36,1) both;
-      cursor: default;
+    .wordmark {
+      display: flex;
+      align-items: baseline;
+      gap: 0;
+      line-height: 0.88;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      font-size: clamp(120px, 22vw, 320px);
+      opacity: 0;
+      animation: rise 1.5s 0.5s cubic-bezier(0.22,1,0.36,1) forwards;
     }
-    .title span {
+    .wordmark span { display: inline-block; }
+    .wordmark .plus {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.8em;
+      margin-left: 0.05em;
+      transform-origin: 50% 55%;
+      animation: plus-spin 28s linear infinite;
       display: inline-block;
-      transition: transform .4s cubic-bezier(0.22,1,0.36,1), color .3s ease;
+      will-change: transform;
     }
-    .title:hover span { color: rgba(15, 15, 14, 0.35); }
-    .title span:hover {
-      color: var(--ink);
-      transform: translateY(-8px);
-    }
-    .title .plus {
-      transition: transform .5s cubic-bezier(0.22,1,0.36,1), color .3s ease;
-    }
-    .title:hover .plus { color: #b07d2a !important; }
-    .title .plus:hover {
-      transform: rotate(90deg) translateY(0);
-      color: #b07d2a !important;
+    @keyframes plus-spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
     }
 
-    .dates {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: clamp(16px, 1.9vw, 22px);
-      color: var(--mid);
-      margin-bottom: 28px;
-      animation: rise-delayed 1.4s 0.3s cubic-bezier(0.22,1,0.36,1) both;
-    }
-
+    /* Tagline below wordmark */
     .tagline {
-      font-family: 'Playfair Display', Georgia, serif;
+      font-family: 'Playfair Display', serif;
       font-weight: 400;
-      font-size: clamp(14px, 1.4vw, 17px);
-      line-height: 1.55;
+      font-style: italic;
+      font-size: clamp(20px, 2.4vw, 30px);
+      line-height: 1.3;
+      max-width: 720px;
+      margin-top: 32px;
       color: var(--ink);
-      max-width: 560px;
-      margin-bottom: 64px;
-      animation: rise-delayed 1.4s 0.35s cubic-bezier(0.22,1,0.36,1) both;
+      opacity: 0;
+      animation: rise 1.5s 0.8s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    .tagline em {
+      color: var(--accent);
+      font-style: italic;
     }
 
-    .byline {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 13.5px;
-      line-height: 2;
+    /* ── Bottom row — credits + enter ──────────────────────────────── */
+    .credit-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      padding-bottom: 28px;
+      gap: 40px;
+      opacity: 0;
+      animation: rise 1.5s 1.1s cubic-bezier(0.22,1,0.36,1) forwards;
+    }
+    .credit {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       color: var(--mid);
-      margin-bottom: 72px;
-      max-width: 520px;
-      animation: rise-delayed 1.4s 0.4s cubic-bezier(0.22,1,0.36,1) both;
+      line-height: 1.9;
     }
-    .byline-label {
-      font-style: italic;
-      letter-spacing: 0.08em;
-      margin-bottom: 14px;
-      font-size: 12px;
-    }
-    .byline-name { color: var(--ink); font-weight: 600; }
+    .credit-label { color: var(--ink); font-weight: 600; margin-right: 12px; }
+    .credit b { color: var(--ink); font-weight: 600; }
+    .credit em { font-style: normal; color: var(--mid); }
 
     .enter {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      padding: 18px 56px;
-      border: 2px solid var(--ink);
-      background: transparent;
+      gap: 14px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 28px;
       color: var(--ink);
       text-decoration: none;
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 18px;
-      font-style: italic;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      cursor: pointer;
-      transition: background-color .25s ease, color .25s ease, transform .25s ease;
-      animation: rise-delayed 1.4s 0.55s cubic-bezier(0.22,1,0.36,1) both;
+      padding: 4px 0;
+      position: relative;
+      transition: color .3s ease;
     }
-    .enter:hover {
-      background: var(--ink);
-      color: var(--bg);
+    .enter::after {
+      content: ''; position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 2px; background: var(--ink);
+      transform-origin: right;
+      transform: scaleX(1);
+      transition: transform .35s cubic-bezier(0.22,1,0.36,1);
+    }
+    .enter .arrow {
+      transition: transform .35s cubic-bezier(0.22,1,0.36,1);
+      display: inline-block;
+    }
+    .enter:hover { color: var(--accent); }
+    .enter:hover::after { background: var(--accent); transform-origin: left; transform: scaleX(1.1); }
+    .enter:hover .arrow { transform: translateX(8px); }
+
+    /* ── Bottom marquee — vocabulary of the project ─────────────────── */
+    .marquee-band {
+      position: fixed;
+      left: 16px; right: 16px;
+      bottom: 16px;
+      height: 38px;
+      border-top: 1px solid var(--ink);
+      background: var(--paper);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      z-index: 5;
+    }
+    .marquee-track {
+      display: flex;
+      gap: 0;
+      white-space: nowrap;
+      animation: marquee 90s linear infinite;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--mid);
+    }
+    .marquee-track > span {
+      padding: 0 26px;
+      display: inline-flex; align-items: center; gap: 26px;
+    }
+    .marquee-track > span::before {
+      content: '⁕';
+      color: var(--accent);
+      font-style: normal;
+      font-size: 12px;
       transform: translateY(-1px);
     }
-    /* A subtle blinking cursor next to the word — old-terminal touch */
-    .enter::after {
-      content: '';
-      display: inline-block;
-      width: 7px;
-      height: 18px;
-      background: currentColor;
-      margin-left: 4px;
-      animation: blink 1.1s steps(2, end) infinite;
-    }
-    @keyframes blink {
-      0%, 50% { opacity: 1; }
-      50.01%, 100% { opacity: 0; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
     }
 
-    @keyframes rise-delayed {
-      from { opacity: 0; transform: translateY(16px); }
+    /* Push the stage above the marquee band */
+    .stage { bottom: 70px; }
+
+    /* ── Cursor-following accent dot ────────────────────────────────── */
+    .cursor-dot {
+      position: fixed;
+      top: 0; left: 0;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      pointer-events: none;
+      z-index: 50;
+      mix-blend-mode: multiply;
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+    .cursor-dot.on { opacity: 0.85; }
+
+    /* ── Animation primitives ───────────────────────────────────────── */
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(28px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* Respect reduced-motion users */
+    /* ── Subtle constant breathing on hero so it never feels static ── */
+    @keyframes hero-breathe {
+      0%, 100% { letter-spacing: -0.04em; }
+      50%      { letter-spacing: -0.038em; }
+    }
+    .wordmark {
+      animation: rise 1.5s 0.5s cubic-bezier(0.22,1,0.36,1) both,
+                 hero-breathe 12s 2s ease-in-out infinite;
+    }
+
+    @media (max-width: 720px) {
+      .stage { padding: 24px 22px 0; bottom: 60px; }
+      .wordmark { font-size: clamp(80px, 24vw, 160px); }
+      .tagline { font-size: clamp(16px, 4vw, 22px); }
+      .credit-row { grid-template-columns: 1fr; gap: 24px; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
-      .bg, .scanline, .landing, .eyebrow, .title, .dates, .tagline, .byline, .enter, .enter::after,
-      .paths path, .evt, .fw {
-        animation: none !important;
-      }
-      .paths path { stroke-dashoffset: 0; }
-      .evt { opacity: 0.7; r: 0.7; }
-      .fw { opacity: 0.4; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .wordmark, .hero-eyebrow, .tagline, .credit-row { opacity: 1; transform: none; }
     }
   </style>
 </head>
 <body>
 
-  <div class="bg"></div>
-  <div class="grain"></div>
+  <div class="frame"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
 
-  <!-- Floating concept words — the vocabulary of the project drifting through -->
-  <div class="floating-words" aria-hidden="true">
-    <span class="fw" style="--x: 8vw;  --y: 18vh; --d: 34s; --dx: 60px;  --dy: -40px;">Demokrati</span>
-    <span class="fw" style="--x: 82vw; --y: 12vh; --d: 41s; --dx: -50px; --dy: 30px;">EDB</span>
-    <span class="fw" style="--x: 14vw; --y: 78vh; --d: 38s; --dx: 70px;  --dy: -30px;">Samarbeid</span>
-    <span class="fw" style="--x: 78vw; --y: 72vh; --d: 45s; --dx: -40px; --dy: -50px;">Forskning</span>
-    <span class="fw" style="--x: 6vw;  --y: 48vh; --d: 50s; --dx: 90px;  --dy: 20px;">Sociotechnical</span>
-    <span class="fw" style="--x: 86vw; --y: 42vh; --d: 36s; --dx: -70px; --dy: 25px;">Collective resource</span>
-    <span class="fw" style="--x: 22vw; --y: 8vh;  --d: 43s; --dx: -30px; --dy: 60px;">Grunnbok</span>
-    <span class="fw" style="--x: 72vw; --y: 88vh; --d: 39s; --dx: 50px;  --dy: -55px;">Hovedavtalen</span>
-    <span class="fw" style="--x: 30vw; --y: 90vh; --d: 47s; --dx: -55px; --dy: -40px;">Bedrift</span>
-    <span class="fw" style="--x: 90vw; --y: 25vh; --d: 33s; --dx: -65px; --dy: 45px;">Worker control</span>
-    <span class="fw" style="--x: 4vw;  --y: 88vh; --d: 42s; --dx: 80px;  --dy: -35px;">Datatillitsmann</span>
-    <span class="fw" style="--x: 88vw; --y: 58vh; --d: 49s; --dx: -85px; --dy: -25px;">Participation</span>
-  </div>
+  <div class="stage">
 
-  <!-- Two diverging traditions trace themselves across the page:
-       gold = Thorsrud / sociotechnical lineage,
-       blue = Nygaard / NJMF collective-resource lineage. -->
-  <svg class="paths" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-    <path class="p-thorsrud" pathLength="100" d="M 50 -2 C 50 22, 42 40, 30 56 S 16 84, 6 102" />
-    <path class="p-nygaard"  pathLength="100" d="M 50 -2 C 50 22, 58 40, 70 56 S 84 84, 94 102" />
-    <circle class="evt evt-t1" cx="42" cy="40" r="0.5"/>
-    <circle class="evt evt-t2" cx="22" cy="73" r="0.5"/>
-    <circle class="evt evt-n1" cx="58" cy="40" r="0.5"/>
-    <circle class="evt evt-n2" cx="78" cy="73" r="0.5"/>
-  </svg>
-
-  <div class="scanline"></div>
-
-  <main class="landing">
-    <div class="eyebrow">A history of Participatory Design</div>
-    <h1 class="title"><span>N</span><span>J</span><span>M</span><span>F</span><span class="plus">+</span></h1>
-    <div class="dates">1970 — 1975 and beyond</div>
-    <div class="tagline">The Norwegian research project that founded participatory design — and the lineages it set in motion.</div>
-
-    <div class="byline">
-      <div class="byline-label">A research project by</div>
-      <span class="byline-name">Alina Krogstad</span> &middot; Høyskolen Kristiania<br>
-      <span class="byline-name">India Anderson</span> &middot; The University of Queensland
+    <!-- Top index row -->
+    <div class="top">
+      <div><span class="top-rule"></span>Index 01 / 01</div>
+      <div>1970 — 2025</div>
     </div>
 
-    <a href="public/timeline.html" class="enter">Enter</a>
-  </main>
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-eyebrow">A history of Participatory Design</div>
+      <h1 class="wordmark" aria-label="NJMF+">
+        <span>N</span><span>J</span><span>M</span><span>F</span><span class="plus">+</span>
+      </h1>
+      <div class="tagline">
+        The Norwegian research project that founded
+        <em>participatory design</em> — and the lineages
+        it set in motion.
+      </div>
+    </div>
+
+    <!-- Credits + enter -->
+    <div class="credit-row">
+      <div class="credit">
+        <div><span class="credit-label">A research project by</span></div>
+        <div><b>Alina Krogstad</b> &nbsp;<em>Høyskolen Kristiania</em></div>
+        <div><b>India Anderson</b> &nbsp;<em>The University of Queensland</em></div>
+      </div>
+      <a href="public/timeline.html" class="enter">
+        <span>Enter the archive</span>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Marquee at the bottom: vocabulary of the project, looping forever -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <!-- duplicate the set twice for seamless loop -->
+      <span>Demokrati</span><span>EDB</span><span>Samarbeid</span><span>Forskning</span><span>Sociotechnical</span><span>Collective resource</span><span>Grunnbok</span><span>Hovedavtalen</span><span>Bedrift</span><span>Worker control</span><span>Datatillitsmann</span><span>Participation</span><span>Tavistock</span><span>Norsk Regnesentral</span><span>Brattvåg</span><span>Kongsberg</span><span>Lange</span><span>Nygaard</span><span>Thorsrud</span><span>Bergo</span>
+      <span>Demokrati</span><span>EDB</span><span>Samarbeid</span><span>Forskning</span><span>Sociotechnical</span><span>Collective resource</span><span>Grunnbok</span><span>Hovedavtalen</span><span>Bedrift</span><span>Worker control</span><span>Datatillitsmann</span><span>Participation</span><span>Tavistock</span><span>Norsk Regnesentral</span><span>Brattvåg</span><span>Kongsberg</span><span>Lange</span><span>Nygaard</span><span>Thorsrud</span><span>Bergo</span>
+    </div>
+  </div>
 
   <script>
-    // Mouse parallax — gentle layer shifts as the cursor moves.
-    // (Skips .bg because its CSS animation already owns transform.)
+    // Cursor-following accent dot (only on devices with a real cursor)
     (function() {
+      if (window.matchMedia('(hover: hover)').matches === false) return;
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      const paths = document.querySelector('.paths');
-      const words = document.querySelector('.floating-words');
-      let targetX = 0, targetY = 0, currentX = 0, currentY = 0;
+      const dot = document.getElementById('cursor-dot');
+      let tx = 0, ty = 0, cx = 0, cy = 0;
       document.addEventListener('mousemove', (e) => {
-        targetX = (e.clientX / window.innerWidth  - 0.5) * 2;
-        targetY = (e.clientY / window.innerHeight - 0.5) * 2;
+        tx = e.clientX; ty = e.clientY;
+        dot.classList.add('on');
       });
+      document.addEventListener('mouseleave', () => dot.classList.remove('on'));
       (function tick() {
-        currentX += (targetX - currentX) * 0.06;
-        currentY += (targetY - currentY) * 0.06;
-        if (paths) paths.style.transform = `translate(${currentX * 20}px, ${currentY * 16}px)`;
-        if (words) words.style.transform = `translate(${currentX * 32}px, ${currentY * 24}px)`;
+        cx += (tx - cx) * 0.18;
+        cy += (ty - cy) * 0.18;
+        dot.style.transform = `translate(${cx - 4}px, ${cy - 4}px)`;
         requestAnimationFrame(tick);
       })();
     })();
 
-    // Magnetic Enter button — drifts slightly toward the cursor when nearby
+    // Hovering letters in the wordmark: lift the one you're over, dim the rest
     (function() {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      const btn = document.querySelector('.enter');
-      if (!btn) return;
-      btn.addEventListener('mousemove', (e) => {
-        const r = btn.getBoundingClientRect();
-        const dx = (e.clientX - (r.left + r.width / 2)) / r.width;
-        const dy = (e.clientY - (r.top  + r.height / 2)) / r.height;
-        btn.style.transform = `translate(${dx * 8}px, ${dy * 6}px)`;
-      });
-      btn.addEventListener('mouseleave', () => {
-        btn.style.transform = '';
+      if (window.matchMedia('(hover: hover)').matches === false) return;
+      const wm = document.querySelector('.wordmark');
+      const letters = wm.querySelectorAll('span');
+      letters.forEach((s, i) => {
+        s.addEventListener('mouseenter', () => {
+          letters.forEach((o) => { o.style.opacity = '0.25'; o.style.transition = 'opacity .25s, transform .35s'; });
+          s.style.opacity = '1';
+          s.style.transform = 'translateY(-12px)';
+        });
+        s.addEventListener('mouseleave', () => {
+          letters.forEach((o) => { o.style.opacity = ''; o.style.transform = ''; });
+        });
       });
     })();
   </script>
