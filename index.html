@@ -87,21 +87,53 @@
       to { stroke-dashoffset: 0; }
     }
 
-    /* Event markers along the diverging paths */
+    /* Event markers — fade in once, then pulse forever */
     .evt {
       fill: transparent;
       stroke-width: 0.35;
       vector-effect: non-scaling-stroke;
       opacity: 0;
-      animation: dot-in 0.8s ease-out forwards;
     }
-    .evt-t1 { stroke: #b07d2a; animation-delay: 5.6s; }
-    .evt-t2 { stroke: #b07d2a; animation-delay: 9.6s; }
-    .evt-n1 { stroke: #4a6080; animation-delay: 6.2s; }
-    .evt-n2 { stroke: #4a6080; animation-delay: 10.2s; }
+    .evt-t1 { stroke: #b07d2a; animation: dot-in 0.8s 5.6s forwards, dot-pulse 3.4s 6.4s ease-in-out infinite; }
+    .evt-t2 { stroke: #b07d2a; animation: dot-in 0.8s 9.6s forwards, dot-pulse 3.6s 10.4s ease-in-out infinite; }
+    .evt-n1 { stroke: #4a6080; animation: dot-in 0.8s 6.2s forwards, dot-pulse 3.2s 7.0s ease-in-out infinite; }
+    .evt-n2 { stroke: #4a6080; animation: dot-in 0.8s 10.2s forwards, dot-pulse 3.8s 11.0s ease-in-out infinite; }
     @keyframes dot-in {
       from { opacity: 0; r: 0; }
       to   { opacity: 0.7; r: 0.7; }
+    }
+    @keyframes dot-pulse {
+      0%, 100% { opacity: 0.5; r: 0.55; stroke-width: 0.35; }
+      50%      { opacity: 0.95; r: 1.05; stroke-width: 0.5; }
+    }
+
+    /* Floating concept words — the vocabulary of the project drifting through */
+    .floating-words {
+      position: fixed; inset: 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .fw {
+      position: fixed;
+      left: var(--x);
+      top: var(--y);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(13px, 1.2vw, 16px);
+      color: rgba(15, 15, 14, 0.16);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      animation: fw-drift var(--d, 40s) ease-in-out infinite alternate;
+      opacity: 0;
+      animation-delay: 1.5s;
+      will-change: transform, opacity;
+    }
+    @keyframes fw-drift {
+      from { transform: translate(0, 0);                    opacity: 0; }
+      8%   {                                                 opacity: 0.85; }
+      92%  {                                                 opacity: 0.85; }
+      to   { transform: translate(var(--dx), var(--dy));    opacity: 0; }
     }
 
     /* A single slow horizontal scanline drifting top → bottom (~22s) */
@@ -158,6 +190,24 @@
       letter-spacing: -0.02em;
       margin-bottom: 28px;
       animation: rise-delayed 1.4s 0.2s cubic-bezier(0.22,1,0.36,1) both;
+      cursor: default;
+    }
+    .title span {
+      display: inline-block;
+      transition: transform .4s cubic-bezier(0.22,1,0.36,1), color .3s ease;
+    }
+    .title:hover span { color: rgba(15, 15, 14, 0.35); }
+    .title span:hover {
+      color: var(--ink);
+      transform: translateY(-8px);
+    }
+    .title .plus {
+      transition: transform .5s cubic-bezier(0.22,1,0.36,1), color .3s ease;
+    }
+    .title:hover .plus { color: #b07d2a !important; }
+    .title .plus:hover {
+      transform: rotate(90deg) translateY(0);
+      color: #b07d2a !important;
     }
 
     .dates {
@@ -244,11 +294,12 @@
     /* Respect reduced-motion users */
     @media (prefers-reduced-motion: reduce) {
       .bg, .scanline, .landing, .eyebrow, .title, .dates, .tagline, .byline, .enter, .enter::after,
-      .paths path, .evt {
+      .paths path, .evt, .fw {
         animation: none !important;
       }
       .paths path { stroke-dashoffset: 0; }
       .evt { opacity: 0.7; r: 0.7; }
+      .fw { opacity: 0.4; }
     }
   </style>
 </head>
@@ -257,14 +308,28 @@
   <div class="bg"></div>
   <div class="grain"></div>
 
+  <!-- Floating concept words — the vocabulary of the project drifting through -->
+  <div class="floating-words" aria-hidden="true">
+    <span class="fw" style="--x: 8vw;  --y: 18vh; --d: 34s; --dx: 60px;  --dy: -40px;">Demokrati</span>
+    <span class="fw" style="--x: 82vw; --y: 12vh; --d: 41s; --dx: -50px; --dy: 30px;">EDB</span>
+    <span class="fw" style="--x: 14vw; --y: 78vh; --d: 38s; --dx: 70px;  --dy: -30px;">Samarbeid</span>
+    <span class="fw" style="--x: 78vw; --y: 72vh; --d: 45s; --dx: -40px; --dy: -50px;">Forskning</span>
+    <span class="fw" style="--x: 6vw;  --y: 48vh; --d: 50s; --dx: 90px;  --dy: 20px;">Sociotechnical</span>
+    <span class="fw" style="--x: 86vw; --y: 42vh; --d: 36s; --dx: -70px; --dy: 25px;">Collective resource</span>
+    <span class="fw" style="--x: 22vw; --y: 8vh;  --d: 43s; --dx: -30px; --dy: 60px;">Grunnbok</span>
+    <span class="fw" style="--x: 72vw; --y: 88vh; --d: 39s; --dx: 50px;  --dy: -55px;">Hovedavtalen</span>
+    <span class="fw" style="--x: 30vw; --y: 90vh; --d: 47s; --dx: -55px; --dy: -40px;">Bedrift</span>
+    <span class="fw" style="--x: 90vw; --y: 25vh; --d: 33s; --dx: -65px; --dy: 45px;">Worker control</span>
+    <span class="fw" style="--x: 4vw;  --y: 88vh; --d: 42s; --dx: 80px;  --dy: -35px;">Datatillitsmann</span>
+    <span class="fw" style="--x: 88vw; --y: 58vh; --d: 49s; --dx: -85px; --dy: -25px;">Participation</span>
+  </div>
+
   <!-- Two diverging traditions trace themselves across the page:
        gold = Thorsrud / sociotechnical lineage,
-       blue = Nygaard / NJMF collective-resource lineage.
-       They share a starting point at the top, then split. -->
+       blue = Nygaard / NJMF collective-resource lineage. -->
   <svg class="paths" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
     <path class="p-thorsrud" pathLength="100" d="M 50 -2 C 50 22, 42 40, 30 56 S 16 84, 6 102" />
     <path class="p-nygaard"  pathLength="100" d="M 50 -2 C 50 22, 58 40, 70 56 S 84 84, 94 102" />
-    <!-- Tiny event markers along each line, fade in in sequence -->
     <circle class="evt evt-t1" cx="42" cy="40" r="0.5"/>
     <circle class="evt evt-t2" cx="22" cy="73" r="0.5"/>
     <circle class="evt evt-n1" cx="58" cy="40" r="0.5"/>
@@ -275,7 +340,7 @@
 
   <main class="landing">
     <div class="eyebrow">A history of Participatory Design</div>
-    <h1 class="title">NJMF+</h1>
+    <h1 class="title"><span>N</span><span>J</span><span>M</span><span>F</span><span class="plus">+</span></h1>
     <div class="dates">1970 — 1975 and beyond</div>
     <div class="tagline">The Norwegian research project that founded participatory design — and the lineages it set in motion.</div>
 
@@ -288,5 +353,42 @@
     <a href="public/timeline.html" class="enter">Enter</a>
   </main>
 
+  <script>
+    // Mouse parallax — gentle layer shifts as the cursor moves.
+    // (Skips .bg because its CSS animation already owns transform.)
+    (function() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const paths = document.querySelector('.paths');
+      const words = document.querySelector('.floating-words');
+      let targetX = 0, targetY = 0, currentX = 0, currentY = 0;
+      document.addEventListener('mousemove', (e) => {
+        targetX = (e.clientX / window.innerWidth  - 0.5) * 2;
+        targetY = (e.clientY / window.innerHeight - 0.5) * 2;
+      });
+      (function tick() {
+        currentX += (targetX - currentX) * 0.06;
+        currentY += (targetY - currentY) * 0.06;
+        if (paths) paths.style.transform = `translate(${currentX * 20}px, ${currentY * 16}px)`;
+        if (words) words.style.transform = `translate(${currentX * 32}px, ${currentY * 24}px)`;
+        requestAnimationFrame(tick);
+      })();
+    })();
+
+    // Magnetic Enter button — drifts slightly toward the cursor when nearby
+    (function() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const btn = document.querySelector('.enter');
+      if (!btn) return;
+      btn.addEventListener('mousemove', (e) => {
+        const r = btn.getBoundingClientRect();
+        const dx = (e.clientX - (r.left + r.width / 2)) / r.width;
+        const dy = (e.clientY - (r.top  + r.height / 2)) / r.height;
+        btn.style.transform = `translate(${dx * 8}px, ${dy * 6}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+      });
+    })();
+  </script>
 </body>
 </html>
