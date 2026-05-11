@@ -666,19 +666,22 @@
     }
 
     .zb-btn {
-      background: none; border: 1px solid var(--faint);
-      cursor: pointer; font-family: inherit;
-      font-size: 14px; color: var(--ink);
+      background: none; border: 1px solid var(--ink);
+      cursor: pointer; font-family: var(--sans);
+      font-size: 14px; font-weight: 600;
+      color: var(--ink);
       width: 26px; height: 26px;
       display: flex; align-items: center; justify-content: center;
-      transition: border-color .1s;
+      transition: background-color .1s, color .1s;
     }
 
-    .zb-btn:hover { border-color: var(--ink); }
+    .zb-btn:hover { background: var(--ink); color: var(--bg); }
 
     #lb-zoom-pct {
-      font-size: 10px; letter-spacing: 0.18em;
-      color: var(--mid); min-width: 38px;
+      font-family: var(--sans);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--ink); min-width: 42px;
       text-align: center;
     }
 
@@ -796,17 +799,18 @@
 
     #lbm-read-more {
       display: block;
-      margin-top: 8px;
-      font-size: 9px;
+      margin-top: 10px;
+      font-size: 10px;
+      font-weight: 600;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--mid);
+      color: var(--ink);
       background: none; border: none;
       cursor: pointer; padding: 0;
-      font-family: inherit;
+      font-family: var(--sans);
       transition: color .1s;
     }
-    #lbm-read-more:hover { color: var(--ink); }
+    #lbm-read-more:hover { color: var(--accent); }
 
     /* ── View tabs ── */
     .view-tabs {
@@ -1109,11 +1113,14 @@
     .lib-card {
       display: flex; flex-direction: column;
       padding: 22px 22px 20px;
+      border: none;
       border-right: 1px solid var(--ink);
       border-bottom: 1px solid var(--ink);
       border-radius: 0;
       background: transparent;
       cursor: pointer; text-decoration: none; color: inherit;
+      text-align: left;
+      font-family: inherit;
       transition: background-color .18s ease;
       position: relative;
     }
@@ -1178,6 +1185,127 @@
       text-align: center; padding: 60px 20px;
       color: var(--mid);
     }
+
+    /* ── Source detail view (in-tab reader) ─────────────────────────── */
+    .lib-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: none; border: none; cursor: pointer;
+      font-family: var(--sans);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--ink);
+      padding: 0; margin-bottom: 40px;
+      transition: color .15s;
+    }
+    .lib-back:hover { color: var(--accent); }
+
+    .lib-detail-hd {
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 32px;
+      margin-bottom: 48px;
+      max-width: 800px;
+    }
+    .lib-detail-type {
+      font-family: var(--sans);
+      font-size: 10.5px; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+      display: inline-block;
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 4px;
+    }
+    .lib-detail-title {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4.4vw, 56px);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      color: var(--ink);
+      margin: 0 0 22px;
+    }
+    .lib-detail-meta {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 17px;
+      color: var(--ink);
+      line-height: 1.55;
+      margin-bottom: 18px;
+    }
+    .lib-detail-meta b { font-weight: 600; font-style: normal; }
+    .lib-detail-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .lib-detail-chip {
+      font-family: var(--sans);
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 4px 10px;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+    }
+
+    .lib-detail-body {
+      font-family: var(--serif);
+      font-size: 16.5px;
+      line-height: 1.8;
+      color: var(--ink);
+      max-width: 720px;
+    }
+    .lib-detail-body p { margin-bottom: 1.2em; }
+    .lib-detail-body h2, .lib-detail-body h3 {
+      font-family: var(--serif);
+      font-weight: 700;
+      margin: 2.2em 0 0.6em;
+      color: var(--ink);
+    }
+    .lib-detail-body h2 { font-size: 22px; letter-spacing: -0.01em; }
+    .lib-detail-body h3 { font-size: 18px; }
+    .lib-detail-body .sep {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2em 0;
+    }
+    .lib-detail-body .heading {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 11.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 2.4em 0 1em;
+    }
+    .lib-detail-body blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 4px 0 4px 20px;
+      margin: 1.4em 0;
+      font-style: italic;
+      color: var(--ink);
+    }
+    .lib-detail-loading {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--mid);
+      padding: 40px 0;
+    }
+    .lib-detail-error {
+      font-family: var(--serif);
+      color: var(--ink);
+      padding: 20px;
+      border-left: 3px solid var(--accent);
+      background: rgba(156, 45, 18, 0.05);
+    }
+    .lib-detail-pdf-link {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 14px 28px;
+      border: 1.5px solid var(--ink);
+      font-family: var(--sans);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      transition: background-color .15s, color .15s;
+    }
+    .lib-detail-pdf-link:hover { background: var(--ink); color: var(--bg); }
     .cx-intro-band {
       padding: 32px 56px 28px;
       border-bottom: 1px solid var(--rule);
@@ -1463,6 +1591,20 @@
       </div>
       <div class="lib-count" id="lib-count"></div>
       <div class="lib-grid" id="lib-grid"></div>
+
+      <!-- Detail view (shown when a card is clicked) -->
+      <div class="lib-detail" id="lib-detail" style="display:none;">
+        <button class="lib-back" id="lib-back" type="button">&larr; Back to library</button>
+        <div class="lib-detail-hd">
+          <div class="lib-detail-type" id="lib-detail-type"></div>
+          <h2 class="lib-detail-title" id="lib-detail-title"></h2>
+          <div class="lib-detail-meta" id="lib-detail-meta"></div>
+          <div class="lib-detail-chips" id="lib-detail-chips"></div>
+        </div>
+        <div class="lib-detail-body" id="lib-detail-body">
+          <div class="lib-detail-loading">Loading…</div>
+        </div>
+      </div>
     </div>
 
     <div class="terminus" id="tl-terminus" style="display:none;">
@@ -2818,15 +2960,106 @@ function renderLibrary() {
     return;
   }
   grid.innerHTML = filtered.map(s => `
-    <a class="lib-card" href="secondary-sources.html#${esc(s.id)}">
+    <button class="lib-card" data-src-id="${esc(s.id)}" type="button">
       <span class="lib-card-type t-${esc(s.type)}">${esc(TYPE_LABELS[s.type] || s.type)}</span>
       <div class="lib-card-title">${esc(s.title)}</div>
       <div class="lib-card-meta">${esc((s.authors||[]).join(', '))} · ${esc(s.year)}<br><span style="font-style:italic">${esc(s.venue)}</span></div>
       ${(s.chips||[]).length ? `<div class="lib-card-chips">${s.chips.slice(0,5).map(c => `<span class="lib-card-chip">${esc(c)}</span>`).join('')}</div>` : ''}
       <div class="lib-card-cta">Read source <span class="arr">→</span></div>
-    </a>
+    </button>
   `).join('');
+  grid.querySelectorAll('.lib-card').forEach(card => {
+    card.addEventListener('click', () => openLibrarySource(card.dataset.srcId));
+  });
 }
+
+// ── In-tab source reader ──────────────────────────────────────────────
+function openLibrarySource(id) {
+  const src = LIBRARY.find(s => s.id === id);
+  if (!src) return;
+
+  // Header
+  document.getElementById('lib-detail-type').textContent  = TYPE_LABELS[src.type] || src.type;
+  document.getElementById('lib-detail-title').textContent = src.title;
+  document.getElementById('lib-detail-meta').innerHTML    =
+    '<b>' + (src.authors || []).map(esc).join(', ') + '</b> · ' + esc(src.year) +
+    '<br><em>' + esc(src.venue) + '</em>';
+  document.getElementById('lib-detail-chips').innerHTML   =
+    (src.chips || []).map(c => '<span class="lib-detail-chip">' + esc(c) + '</span>').join('');
+
+  // Switch views
+  document.querySelector('.lib-hd').style.display      = 'none';
+  document.querySelector('.lib-filters').style.display = 'none';
+  document.getElementById('lib-count').style.display   = 'none';
+  document.getElementById('lib-grid').style.display    = 'none';
+  document.getElementById('lib-detail').style.display  = '';
+  window.scrollTo({ top: 0, behavior: 'instant' });
+
+  // Load body content
+  const body = document.getElementById('lib-detail-body');
+  body.innerHTML = '<div class="lib-detail-loading">Loading…</div>';
+
+  // Special-case sources without a transcript.txt — link out to legacy viewer
+  const NO_TRANSCRIPT = new Set(['avtalt-spill']);
+  if (NO_TRANSCRIPT.has(src.id)) {
+    body.innerHTML = '<p>This source is page-image-based; the existing viewer is the right place to read it.</p>' +
+      '<a class="lib-detail-pdf-link" href="secondary-sources.html#' + esc(src.id) + '">Open in legacy viewer →</a>';
+    return;
+  }
+
+  // Resolve transcript folder name: most sources sit at data/secondary-sources/{id}/transcript.txt
+  // afi-history is the one exception (folder is named afi-oslomet-history)
+  const folder = src.id === 'afi-history' ? 'afi-oslomet-history' : src.id;
+  fetch('../data/secondary-sources/' + folder + '/transcript.txt')
+    .then(r => r.ok ? r.text() : Promise.reject(new Error('HTTP ' + r.status)))
+    .then(text => { body.innerHTML = formatTranscript(text); })
+    .catch(err => {
+      body.innerHTML = '<div class="lib-detail-error">Could not load this source. ' +
+        '<a href="secondary-sources.html#' + esc(src.id) + '">Try the legacy viewer →</a></div>';
+    });
+}
+
+// Lightweight transcript formatter — paragraphs, ASCII section dividers,
+// SHOUTY-CAPS headings → styled heading.
+function formatTranscript(raw) {
+  // Normalise CRLF
+  const lines = raw.replace(/\r\n/g, '\n').split('\n');
+  let html = '';
+  let buf = [];
+  function flushPara() {
+    if (!buf.length) return;
+    const p = buf.join(' ').trim();
+    if (p) html += '<p>' + esc(p) + '</p>';
+    buf = [];
+  }
+  for (let line of lines) {
+    const stripped = line.trim();
+    if (!stripped) { flushPara(); continue; }
+    // ASCII rule lines (=====, ----, etc.) → separator
+    if (/^[═─_=\-]{4,}$/.test(stripped)) { flushPara(); html += '<hr class="sep">'; continue; }
+    // SHOUTY-CAPS heading lines (4+ chars, mostly uppercase, no period)
+    if (stripped.length > 4 && stripped.length < 90 &&
+        stripped === stripped.toUpperCase() &&
+        /[A-ZÆØÅ]/.test(stripped) && !/[.?!]$/.test(stripped)) {
+      flushPara();
+      html += '<div class="heading">' + esc(stripped) + '</div>';
+      continue;
+    }
+    buf.push(stripped);
+  }
+  flushPara();
+  return html;
+}
+
+function closeLibrarySource() {
+  document.getElementById('lib-detail').style.display  = 'none';
+  document.querySelector('.lib-hd').style.display      = '';
+  document.querySelector('.lib-filters').style.display = '';
+  document.getElementById('lib-count').style.display   = '';
+  document.getElementById('lib-grid').style.display    = '';
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+document.getElementById('lib-back').addEventListener('click', closeLibrarySource);
 
 // Library search + year filter
 document.getElementById('lib-search').addEventListener('input', e => {
