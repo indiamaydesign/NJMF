@@ -935,11 +935,11 @@
       border-radius: 4px;
       padding: 12px 15px 11px;
       cursor: pointer;
-      transition: border-color .12s, box-shadow .12s;
+      transition: border-color .12s, box-shadow .12s, max-width .2s ease;
       background: var(--bg);
     }
     .cx-node:hover { border-color: #c0beba; box-shadow: 0 2px 6px rgba(0,0,0,.05); }
-    .cx-node.open  { border-color: var(--ink); }
+    .cx-node.open  { border-color: var(--ink); max-width: 500px; }
     /* "Cousin" beats — methodologically related but not in the direct lineage */
     .cx-node.cousin { border-style: dashed; opacity: 0.85; background: #faf8f3; }
     .cx-node.cousin::before {
@@ -992,10 +992,19 @@
       border: 1.5px solid #b07d2a; border-radius: 4px;
       background: var(--bg); padding: 12px 16px;
       cursor: pointer; position: relative; z-index: 1;
-      transition: box-shadow .12s;
+      transition: box-shadow .12s, max-width .2s ease;
       text-align: center;
+      grid-column: 2;
+      justify-self: stretch;
     }
     .cx-cross-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.08); }
+    /* Expand across all three columns when opened so long bodies have room */
+    .cx-cross-card.open {
+      grid-column: 1 / -1;
+      max-width: 720px;
+      margin: 0 auto;
+      z-index: 3;
+    }
     .cx-cross-label {
       font-size: 11px; font-weight: 700; line-height: 1.3;
     }
